@@ -63,14 +63,14 @@
         "Bolt Pistol",
         "Heavy Bolt Pistol",
         "Plasma Pistol",
-        "Neo-Vulkite Pistol",
-        "Power Axe"
+        "Neo-Vulkite Pistol"
       ],
       "melee": [
         "Chain Sword",
         "Thunder Hammer",
         "Power Fist",
-        "Power Sword"
+        "Power Sword",
+        "Power Axe"
       ]
     },
     "Sniper": {
