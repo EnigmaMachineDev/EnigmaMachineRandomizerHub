@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Art Medium Generator</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90eHQ+PC9zdmc+=" type="image/svg+xml">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #222; /* Dark background */
+            color: #ccc; /* Slightly darker light text */
+        }
+        .container {
+            background-color: #333; /* Slightly lighter dark background for container */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Darker shadow */
+            text-align: center;
+        }
+        h1 {
+            color: #0c0; /* Darker green for heading */
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #0c0; /* Darker green for subheadings */
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #0a0; /* Green button */
+            color: #ddd; /* Slightly darker white text on button */
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #070; /* Darker green on hover */
+        }
+        #mediumDisplay,
+        #surfaceSizeDisplay {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0c0; /* Darker green for displayed medium and surface size */
+        }
+        .result-section {
+            border: 1px solid #070; /* Green border */
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #2a2a2a; /* Slightly darker background for sections */
+        }
+        .coffee-link {
+            margin-top: 30px;
+        }
+        .coffee-link a {
+            color: #0c0; /* Green color for the link */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        .coffee-link a:hover {
+            color: #070; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a Random Art Medium</h1>
+        <button id="generateButton">Generate Medium</button>
+        <div class="result-section">
+            <h2>Medium</h2>
+            <div id="mediumDisplay">...</div>
+        </div>
+
+        <div class="result-section">
+            <h2>Surface Size</h2>
+            <div id="surfaceSizeDisplay">...</div>
+        </div>
+    <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let mediums = [];
+
+        // Fetch mediums from mediums.json
+        fetch('mediums.json')
+            .then(response => response.json())
+            .then(data => {
+                mediums = data;
+            })
+            .catch(error => {
+                console.error('Error loading mediums:', error);
+                document.getElementById('mediumDisplay').textContent = 'Error loading mediums.';
+            });
+
+        document.getElementById('generateButton').addEventListener('click', () => {
+            if (mediums.length === 0) {
+                document.getElementById('mediumDisplay').textContent = 'Loading mediums... please wait.';
+                return;
+            }
+
+            const rollMedium = (excludeMixedMedia = false) => {
+                let availableMediums = mediums;
+                if (excludeMixedMedia) {
+                    availableMediums = mediums.filter(m => m.name !== "Mixed Media");
+                }
+                const randomIndex = Math.floor(Math.random() * availableMediums.length);
+                const medium = availableMediums[randomIndex];
+                let text = medium.name;
+                if (medium.options && medium.options.length > 0) {
+                    const randomOptionIndex = Math.floor(Math.random() * medium.options.length);
+                    text += ` - ${medium.options[randomOptionIndex]}`;
+                }
+                return text;
+            };
+
+            let displayText = "";
+            const selectedMedium = mediums[Math.floor(Math.random() * mediums.length)];
+
+            if (selectedMedium.name === "Mixed Media") {
+                const randomOptionIndex = Math.floor(Math.random() * selectedMedium.options.length);
+                const selectedOption = selectedMedium.options[randomOptionIndex];
+
+                if (selectedOption === "Free For All") {
+                    displayText = "Mixed Media";
+                } else {
+                    const numRolls = parseInt(selectedOption);
+                    if (!isNaN(numRolls) && numRolls > 0) {
+                        let rolledMedia = [];
+                        for (let i = 0; i < numRolls; i++) {
+                            rolledMedia.push(rollMedium(true)); // Exclude Mixed Media for sub-rolls
+                        }
+                        displayText = `Mixed Media - ${rolledMedia.join(", ")}`;
+                    } else {
+                        displayText = `Mixed Media - ${selectedOption}`; // Fallback for unexpected options
+                    }
+                }
+            } else {
+                displayText = selectedMedium.name;
+                if (selectedMedium.options && selectedMedium.options.length > 0) {
+                    const randomOptionIndex = Math.floor(Math.random() * selectedMedium.options.length);
+                    displayText += ` - ${selectedMedium.options[randomOptionIndex]}`;
+                }
+            }
+
+            document.getElementById('mediumDisplay').textContent = displayText;
+
+            // Generate and display surface size
+            const surfaceSizeRoll = Math.floor(Math.random() * 3) + 1; // 1, 2, or 3
+            let surfaceSizeText = "";
+            if (surfaceSizeRoll === 1) {
+                surfaceSizeText = "Small";
+            } else if (surfaceSizeRoll === 2) {
+                surfaceSizeText = "Medium";
+            } else {
+                surfaceSizeText = "Large";
+            }
+            document.getElementById('surfaceSizeDisplay').textContent = surfaceSizeText;
+        });
+    </script>
+</body>
+</html>

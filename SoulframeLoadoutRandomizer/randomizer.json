@@ -1,0 +1,170 @@
+{
+  "Primary": [
+    {
+      "name": "Blitzel",
+      "link": "https://wiki.avakot.org/wiki/Blitzel"
+    },
+    {
+      "name": "Juniper",
+      "link": "https://wiki.avakot.org/wiki/Juniper"
+    },
+    {
+      "name": "Thistle",
+      "link": "https://wiki.avakot.org/wiki/Thistle"
+    },
+    {
+      "name": "Igne Mora",
+      "link": "https://wiki.avakot.org/wiki/Ignemora"
+    },
+    {
+      "name": "Sollos-I",
+      "link": "https://wiki.avakot.org/wiki/Sollos-i"
+    },
+    {
+      "name": "Vetch",
+      "link": "https://wiki.avakot.org/wiki/Vetch"
+    },
+    {
+      "name": "Wulder",
+      "link": "https://wiki.avakot.org/wiki/Wulder"
+    },
+    {
+      "name": "Gwylen",
+      "link": "https://wiki.avakot.org/wiki/Gwylen"
+    },
+    {
+      "name": "Odiac",
+      "link": "https://wiki.avakot.org/wiki/Odiac"
+    },
+    {
+      "name": "Duhk Halic",
+      "link": "https://wiki.avakot.org/wiki/Duhkhalic"
+    },
+    {
+      "name": "Gathannan",
+      "link": "https://wiki.avakot.org/wiki/Gathannan"
+    },
+    {
+      "name": "Rook",
+      "link": "https://wiki.avakot.org/wiki/Rook"
+    },
+    {
+      "name": "Vasp-IV",
+      "link": "https://wiki.avakot.org/wiki/Vasp-iv"
+    },
+    {
+      "name": "Bog & Myrtle",
+      "link": "https://wiki.avakot.org/wiki/Bogmyrtle"
+    },
+    {
+      "name": "Oryn Umbr",
+      "link": "https://wiki.avakot.org/wiki/Oryn-umbr"
+    },
+    {
+      "name": "Rivt-II",
+      "link": "https://wiki.avakot.org/wiki/Rivt-ii"
+    },
+    {
+      "name": "The Royal Tines",
+      "link": "https://wiki.avakot.org/wiki/Theroyaltines"
+    },
+    {
+      "name": "Unsula",
+      "link": "https://wiki.avakot.org/wiki/Unsula"
+    }
+  ],
+  "Secondary": [
+    {
+      "name": "Precklies",
+      "link": "https://wiki.avakot.org/wiki/Precklies"
+    },
+    {
+      "name": "Skilter",
+      "link": "https://wiki.avakot.org/wiki/Skilter"
+    },
+    {
+      "name": "Grinn",
+      "link": "https://wiki.avakot.org/wiki/Grinn"
+    },
+    {
+      "name": "Nettle",
+      "link": "https://wiki.avakot.org/wiki/Nettle"
+    },
+    {
+      "name": "Virdigris",
+      "link": "https://wiki.avakot.org/wiki/Virdigris"
+    }
+  ],
+  "Pact": [
+    {
+      "name": "Garren Rood",
+      "link": "https://wiki.avakot.org/wiki/Garren_Rood_(Pact)"
+    },
+    {
+      "name": "Mora's Hand",
+      "link": "https://wiki.avakot.org/wiki/Mora%27s_Hand"
+    },
+    {
+      "name": "Ode Tempest",
+      "link": "https://wiki.avakot.org/wiki/Ode_Tempest"
+    },
+    {
+      "name": "Orengall",
+      "link": "https://wiki.avakot.org/wiki/Orengall_(Pact)"
+    },
+    {
+      "name": "Sirin",
+      "link": "https://wiki.avakot.org/wiki/Sirin"
+    },
+    {
+      "name": "Tethren",
+      "link": "https://wiki.avakot.org/wiki/Tethren"
+    },
+    {
+      "name": "Oscelda",
+      "link": "https://wiki.avakot.org/wiki/Oscelda"
+    }
+  ],
+  "Armor": [
+    {
+      "name": "Circade Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Deora Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Fire King Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Garren Rood Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Mendicant King Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Ornegall Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Signet Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Sproutfolk Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Tempest Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Tulvulkane Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    }
+  ]
+}

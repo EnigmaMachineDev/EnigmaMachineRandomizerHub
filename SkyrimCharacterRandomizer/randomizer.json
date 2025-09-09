@@ -1,0 +1,492 @@
+{
+  "races": [
+    "Imperial",
+    "Nord",
+    "Redguard",
+    "Breton",
+    "High Elf",
+    "Dark Elf",
+    "Wood Elf",
+    "Khajiit",
+    "Argonian",
+    "Orc"
+  ],
+  "skills": [
+    "One Handed",
+    "Two Handed",
+    "Archery",
+    "Block",
+    "Heavy Armor",
+    "Light Armor",
+    "Destruction",
+    "Restoration",
+    "Illusion",
+    "Conjuration",
+    "Alteration",
+    "Sneak",
+    "Lockpicking",
+    "Pickpocket",
+    "Speech",
+    "Smithing",
+    "Enchanting",
+    "Alchemy"
+  ],
+  "oneHandedTypes": [
+    "Dagger",
+    "Sword",
+    "Axe",
+    "Mace"
+  ],
+  "twoHandedTypes": [
+    "Greatsword",
+    "Battleaxe",
+    "Warhammer"
+  ],
+  "archeryTypes": [
+    "Bow",
+    "Crossbow"
+  ],
+  "allegiances": [
+    {
+      "name": "Companions",
+      "enemy": "Silver Hand"
+    },
+    {
+      "name": "Dark Brotherhood",
+      "enemy": "Penitus Oculatus"
+    },
+    {
+      "name": "Volkihar Clan",
+      "enemy": "Dawnguard"
+    },
+    {
+      "name": "Bards College",
+      "enemy": ""
+    },
+    {
+      "name": "Greybeards",
+      "enemy": ""
+    },
+    {
+      "name": "College of Winterhold",
+      "enemy": ""
+    },
+    {
+      "name": "Thieves Guild",
+      "enemy": ""
+    },
+    {
+      "name": "Imperial Legion",
+      "enemy": "Stormcloak Rebellion"
+    },
+    {
+      "name": "Stormcloak Rebellion",
+      "enemy": "Imperial Legion"
+    },
+    {
+      "name": "Dawnguard",
+      "enemy": "Volkihar Clan"
+    },
+    {
+      "name": "Thalmor",
+      "enemy": ""
+    },
+    {
+      "name": "Forsworn",
+      "enemy": "The Reach"
+    },
+    {
+      "name": "Silver Hand",
+      "enemy": "Companions"
+    },
+    {
+      "name": "Penitus Oculatus",
+      "enemy": "Dark Brotherhood"
+    },
+    {
+      "name": "Alik'r Warriors",
+      "enemy": ""
+    },
+    {
+      "name": "Bandits",
+      "enemy": "Holds"
+    },
+    {
+      "name": "Necromancers",
+      "enemy": ""
+    },
+    {
+      "name": "Vampires",
+      "enemy": ""
+    },
+    {
+      "name": "Dragons",
+      "enemy": ""
+    },
+    {
+      "name": "Daedra",
+      "enemy": "Vigilants of Stendarr"
+    },
+    {
+      "name": "Whiterun",
+      "enemy": ""
+    },
+    {
+      "name": "Haafingar",
+      "enemy": ""
+    },
+    {
+      "name": "Eastmarch",
+      "enemy": ""
+    },
+    {
+      "name": "The Rift",
+      "enemy": ""
+    },
+    {
+      "name": "The Reach",
+      "enemy": "Forsworn"
+    },
+    {
+      "name": "Falkreath",
+      "enemy": ""
+    },
+    {
+      "name": "Hjaalmarch",
+      "enemy": ""
+    },
+    {
+      "name": "The Pale",
+      "enemy": ""
+    },
+    {
+      "name": "Winterhold",
+      "enemy": ""
+    },
+    {
+      "name": "Vigilants of Stendarr",
+      "enemy": "Daedra"
+    }
+  ],
+  "starts": [
+    {
+      "name": "I arrived on board a ship",
+      "addOn": false,
+      "race": "all",
+      "options": ["Solitude", "Dawnstar", "Windhelm", "Raven Rock"]
+    },
+    {
+      "name": "I own property in one of the holds",
+      "addOn": false,
+      "race": "all",
+      "options": ["Proudspire Manor", "Vlindrel Hall", "Honeyside", "Breezehome", "Shoal's Rest Farm", "Heljarchen Hall", "Lakeview Manor", "Windstad Manor"]
+    },
+    {
+      "name": "I am a new member of a guild",
+      "addOn": false,
+      "race": "all",
+      "options": ["The Companions", "College of Winterhold", "Dark Brotherhood", "Thieves Guild", "Dawnguard", "Volkihar Clan"]
+    },
+    {
+      "name": "I am a patron at a local Inn",
+      "addOn": false,
+      "race": "all",
+      "options": ["Windpeak Inn", "Four Shields Tavern", "Dead Man's Drink", "Vilemyr Inn", "Braidwood Inn", "Silver-Blood Inn", "Moorside Inn", "Nightgate Inn", "Old Hroldan Inn", "Bee & Barb", "The Retching Netch", "Sleeping Giant Inn", "Frostfruit Inn", "Winking Skeever", "Bannered Mare", "Candlehearth Hall", "The Frozen Hearth"]
+    },
+    {
+      "name": "I got caught crossing the border illegally",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a soldier in the army",
+      "addOn": false,
+      "race": "all",
+      "options": ["Imperial Legion", "Stormcloak Rebellion"]
+    },
+    {
+      "name": "I woke up in a strange cell",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am an outlaw living in the wilds",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a vigilant of Stendarr",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a hunter / fisher / gatherer camping in the woods",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I was shipwrecked on the coast",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a vampire in a secluded lair",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a necromancer in a secret location",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a warlock's slave thrall",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I was attacked and left for dead",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I lived in helgen when the dragon attacked",
+      "addOn": false,
+      "race": "all"
+    },
+    {
+      "name": "I am a fisherman in the wilderness",
+      "addOn": false,
+      "race": "all",
+      "options": ["Quiet Cave", "Dayspring Canyon", "Riften", "Riverwood"]
+    },
+    {
+      "name": "I am an Argonian Dock Worker in Windhelm",
+      "addOn": false,
+      "race": "Argonian"
+    },
+    {
+      "name": "I am a forsworn native",
+      "addOn": false,
+      "race": "Breton"
+    },
+    {
+      "name": "I am a refugee from Morrowind in the Windhelm Grey Quarter",
+      "addOn": false,
+      "race": "Dark Elf"
+    },
+    {
+      "name": "I am a refugee from Morrowind in Raven Rock",
+      "addOn": false,
+      "race": "Dark Elf"
+    },
+    {
+      "name": "I am a Thalmor Agent in the Thalmor Embassy",
+      "addOn": false,
+      "race": "High Elf"
+    },
+    {
+      "name": "I am a member of the Penitus Oculatus",
+      "addOn": false,
+      "race": "Imperial"
+    },
+    {
+      "name": "I am a Khajiit Caravan Guard",
+      "addOn": false,
+      "race": "Khajiit"
+    },
+    {
+      "name": "I am living in an Orcish Stronghold",
+      "addOn": false,
+      "race": "Orc"
+    },
+    {
+      "name": "I am travelling with my friend since childhood, Erik the Slayer",
+      "addOn": false,
+      "race": "Nord"
+    },
+    {
+      "name": "I am a member of the Alik'r",
+      "addOn": false,
+      "race": "Redguard"
+    },
+    {
+      "name": "Follower of Talos",
+      "addOn": false,
+      "race": "Nord"
+    },
+    {
+      "name": "I am already the dragonborn on High Hrothgar",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a guard in one of the holds",
+      "addOn": true,
+      "race": "all",
+      "options": ["Darkwater Crossing", "Dawnstar", "Dragon Bridge", "Falkreath", "Ivarstead", "Kynesgrove", "Markarth", "Morthal", "Riften", "Rorikstead", "Shor's Stone", "Stonehills", "Solitude", "Whiterun", "Winterhold"]
+    },
+    {
+      "name": "Prisoner of the Thalmor",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a member of the dawnguard chasing a vampire from X Country",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I have come to Skyrim in Search of the Aetherium Forge",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Necromancer travelling to Helgen",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Live in Falkreath",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I was attacked by werewolves and contracted lycanthropy",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a merchant travelling to Helgen",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I had a vision of the return of the dragons and was compelled to run to Helgen to warn the people of imminent doom",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I was caving near helgen when the dragon attacked",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I was taken Prisoner a long time ago",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Headed to Bards College",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Awoke inside a prison cell",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Saved someone from death in Markarth",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Celebrating Saturalia",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Drinking in Helgen when Ulfric Brought In",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a priest",
+      "addOn": true,
+      "race": "all",
+      "options": ["Travelling to a shrine to akatosh", "Travelling to the shrine of arkay", "In the temple of the eight divines in solitude", "Initiate of Kynareth in Whiterun", "Initiate of Mara in Riften", "Vigilant of Stendarr at the Hall of Vigilant", "Priest of Talos at a shrine southwest of Windhelm", "Travelling to Shrine of Kynareth", "Travelling to Shrine of Stendarr", "Called to Mount Kilkreath by Meridia", "Champion of Hermaeus Mora"]
+    },
+    {
+      "name": "I was in the hall of the vigilant when it was attacked by vampires",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Shipwrecked near Solstheim",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "Travelling with Khajit Caravan when Captured by Falmer",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I live with my Family and am about to set out on my own path",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a vampire fleeing from vampire hunters",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I was attacked and dumped into the sewers",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I encountered a mishap creating a spell",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a courier",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am in a cell in Whiterun with a member of the Alikir",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I awoke in abandonded shack after being kidnaped by the dark brotherhood for a murder I commited long ago",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am a blacksmith's assistant",
+      "addOn": true,
+      "race": "all",
+      "options": ["Alvor in Riverwood", "Adrianne Avenicci In Whiterun", "Lod in Falkreath", "Zargo in Markarth"]
+    },
+    {
+      "name": "I am a pirate captain searching for the treasure of Velehk Sain",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am an alchemist",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I managed to miss the ambush at the border and made it to darkwater",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I am from beyond Nirn (wake up next to a dwarven mechanism and a skeleton)",
+      "addOn": true,
+      "race": "all"
+    },
+    {
+      "name": "I was in a ship that was attacked",
+      "addOn": true,
+      "race": "all"
+    }
+  ]
+}

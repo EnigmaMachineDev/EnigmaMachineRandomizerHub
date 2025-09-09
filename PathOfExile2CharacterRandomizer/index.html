@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoE2 Random Build Generator</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <h1>Path of Exile 2<br>Random Build Idea Generator</h1>
+            <div class="controls">
+                <button class="generate-btn" id="roll-all-btn" disabled>
+                    🎲 Roll All
+                </button>
+            </div>
+            <div class="build-section">
+                <div class="section-title">🏛️ Class & Ascendancy</div>
+                <div class="section-content">
+                    <p id="class-result"></p>
+                    <p id="ascendancy-result"></p>
+                </div>
+                <button class="reroll-btn" id="roll-class-btn" disabled>↻</button>
+            </div>
+            <div class="build-section">
+                <div class="section-title">⚔️ Weapon Type & Main Skill(s)</div>
+                <div class="section-content">
+                    <p id="weapon-type-result"></p>
+                    <p id="main-skills-result"></p>
+                </div>
+                <button class="reroll-btn" id="roll-weapon-skills-btn" disabled>↻</button>
+            </div>
+            <div class="build-section">
+                <div class="section-title">🛡️ Defense</div>
+                <div class="section-content">
+                    <p id="defense-strategy-result"></p>
+                </div>
+                <button class="reroll-btn" id="roll-defense-btn" disabled>↻</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Click the button above to generate a random build idea for Path of Exile 2!<br>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

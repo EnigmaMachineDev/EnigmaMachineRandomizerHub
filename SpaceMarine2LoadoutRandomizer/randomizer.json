@@ -1,0 +1,203 @@
+{
+  "classes": {
+    "Tactical": {
+      "primaries": [
+        "Auto Bolt Rifle",
+        "Bolt Rifle",
+        "Heavy Bolt Rifle",
+        "Stalker Bolt Rifle",
+        "Bolt Carbine",
+        "Plasma Incinerator",
+        "Melta Rifle",
+        "Pyreblaster"
+      ],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Plasma Pistol"
+      ],
+      "melee": [
+        "Chain Sword",
+        "Combat Knife"
+      ]
+    },
+    "Assault": {
+      "primaries": [],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Plasma Pistol",
+        "Inferno Pistol",
+        "Neo-Vulkite Pistol"
+      ],
+      "melee": [
+        "Chain Sword",
+        "Thunder Hammer",
+        "Power Fist",
+        "Power Sword",
+        "Power Axe"
+      ]
+    },
+    "Vanguard": {
+      "primaries": [
+        "Instigator Bolt Carbine",
+        "Bolt Carbine",
+        "Occulus Bolt Carbine",
+        "Melta Rifle"
+      ],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Inferno Pistol",
+        "Neo-Vulkite Pistol"
+      ],
+      "melee": [
+        "Chain Sword",
+        "Combat Knife",
+        "Power Axe"
+      ]
+    },
+    "Bulwark": {
+      "primaries": [],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Plasma Pistol",
+        "Neo-Vulkite Pistol",
+        "Power Axe"
+      ],
+      "melee": [
+        "Chain Sword",
+        "Thunder Hammer",
+        "Power Fist",
+        "Power Sword"
+      ]
+    },
+    "Sniper": {
+      "primaries": [
+        "Stalker Bolt Rifle",
+        "Instigator Bolt Carbine",
+        "Bolt Sniper Rifle",
+        "Bolt Carbine",
+        "Las Fusil"
+      ],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Inferno Pistol"
+      ],
+      "melee": [
+        "Combat Knife"
+      ]
+    },
+    "Heavy": {
+      "primaries": [
+        "Heavy Bolt Rifle",
+        "Heavy Bolter",
+        "Heavy Plasma Incinerator",
+        "Multi Melta",
+        "Pyrecannon"
+      ],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Plasma Pistol",
+        "Inferno Pistol"
+      ],
+      "melee": []
+    }
+  },
+  "chapters": {
+    "vanilla": [
+      "Ultramarines",
+      "Dark Angels",
+      "Blood Angels",
+      "Imperial Fists",
+      "Salamanders",
+      "Raven Guard",
+      "White Scars",
+      "Blood Ravens",
+      "Iron Hands",
+      "Space Wolves",
+      "Black Templars",
+      "Carcharodons",
+      "Taurans",
+      "Red Scorpions",
+      "Omega Marines",
+      "Storm Giants",
+      "Minotaurs",
+      "Exorcists"
+    ],
+    "DLC": [
+      "Doom Eagles",
+      "Genesis Chapter",
+      "Liberators",
+      "Novamarines",
+      "Praetors of Orpheus",
+      "Scythes of the Emperor",
+      "Iron Hounds",
+      "Tome Keepers",
+      "Void Tridents",
+      "Castellans of the Rift",
+      "Brazen Consuls",
+      "Hawk Lords",
+      "Angels of Absolution",
+      "Angels of Redemption",
+      "Angels of Vengeance",
+      "The Unnamed",
+      "Blades of Vengeance",
+      "Cowled Wardens",
+      "Bringers of Judgement",
+      "Angels of Defiance",
+      "Black Guard",
+      "Revilers",
+      "Raptors",
+      "Death Specters",
+      "Rift Stalkers",
+      "Necropolis Hawks",
+      "Iron Ravens",
+      "Knights of the Raven",
+      "The Blackmanes",
+      "The Deathwolves",
+      "The Ironwolves",
+      "The Grimbloods",
+      "The Seawolves",
+      "The Sons of Morkai",
+      "The Bloodmaws",
+      "The Red Moons",
+      "The Drakeslayers",
+      "The Firehowlers",
+      "The Stormwolves",
+      "Champions of Fenris",
+      "Angels Sanguine",
+      "Flesh Tearers",
+      "Angels Penitent",
+      "Lamenters",
+      "Blood Scythes",
+      "Atlantian Spears",
+      "Blood Dragons",
+      "Flesh Eaters",
+      "Destroyers",
+      "Marauders",
+      "Storm Lords",
+      "Rampagers",
+      "Mantis Warriors",
+      "Storm Reapers",
+      "Solar Hawks",
+      "Dark Hunters"
+    ]
+  },
+  "missions": [
+    "Inferno",
+    "Decapitation",
+    "Vox Liberatis",
+    "Reliquary",
+    "Fall of Atreus",
+    "Ballistic Engine",
+    "Termination",
+    "Obelisk",
+    "Exfiltration",
+    "Seige",
+    "Vortex"
+  ]
+}

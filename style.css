@@ -1,0 +1,241 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #00ff00;
+            --dark-green: #00cc00;
+            --bg-dark: #1a1a1a;
+            --bg-darker: #0f0f0f;
+            --card-bg: #2a2a2a;
+            --text-light: #e0e0e0;
+            --text-bright: #ffffff;
+            --shadow-glow: rgba(0, 255, 0, 0.2);
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+            color: var(--text-light);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-green);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-shadow: 0 0 20px var(--shadow-glow);
+            margin-bottom: 10px;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { text-shadow: 0 0 20px var(--shadow-glow); }
+            50% { text-shadow: 0 0 30px var(--shadow-glow), 0 0 40px var(--shadow-glow); }
+        }
+
+        .tagline {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Ad Space Placeholder */
+        .ad-space {
+            background: var(--card-bg);
+            border: 1px dashed rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 728px;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.9rem;
+        }
+
+        /* Main Container */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Tool Grid */
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Tool Cards */
+        .tool-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 255, 0, 0.1);
+            border-radius: 12px;
+            padding: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            position: relative;
+            text-decoration: none;
+            display: block;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-green), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+        }
+
+        .tool-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 0, 0.15);
+            border-color: var(--primary-green);
+        }
+
+        .tool-icon {
+            background: linear-gradient(135deg, rgba(0, 255, 0, 0.1) 0%, rgba(0, 255, 0, 0.05) 100%);
+            padding: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Game Logo Styles */
+        .game-logo {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        
+
+        .tool-content {
+            padding: 20px;
+        }
+
+        .tool-title {
+            color: var(--text-bright);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .tool-description {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-darker);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            color: var(--text-light);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #66cc66; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .coffee-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .ad-space {
+                margin: 20px 10px;
+            }
+        }
+
+        /* Accessibility */
+        .tool-card:focus {
+            outline: 2px solid var(--primary-green);
+            outline-offset: 2px;
+        }
+
+        /* Loading Animation */
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }

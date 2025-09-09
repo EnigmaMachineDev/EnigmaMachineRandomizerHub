@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Marine 2 Loadout Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            <h1>Space Marine 2 Loadout Randomizer</h1>
+            <button class="reroll-btn" id="generate-loadout">Generate Loadout</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Chapter</h2>
+                    <button class="reroll-btn" id="reroll-chapter">↻</button>
+                </div>
+                <input type="checkbox" id="enable-dlc" name="enable-dlc">
+                <label for="enable-dlc">Enable DLC Chapters</label>
+                <br/>
+                <br/>
+                <div class="item-container">
+                    <span id="chapter"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Class</h2>
+                    <button class="reroll-btn" id="reroll-class">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="class"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Primary Weapon</h2>
+                    <button class="reroll-btn" id="reroll-primary">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="primary"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Secondary Weapon</h2>
+                    <button class="reroll-btn" id="reroll-secondary">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="secondary"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Melee Weapon</h2>
+                    <button class="reroll-btn" id="reroll-melee">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="melee"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Mission</h2>
+                    <button class="reroll-btn" id="reroll-mission">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="mission"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coffee-link">
+        <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+            ☕ Buy me a coffee
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

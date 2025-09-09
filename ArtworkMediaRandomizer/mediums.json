@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Oil Paint"
+    },
+    {
+        "name": "Acrylic Paint"
+    },
+    {
+        "name": "Posca Paint Markers"
+    },
+    {
+        "name": "India Ink",
+        "options": [
+            "Dip Pen",
+            "Brush"
+        ]
+    },
+    {
+        "name": "Wood Burning"
+    },
+    {
+        "name": "Gel Pens"
+    },
+    {
+        "name": "Gouache"
+    },
+    {
+        "name": "Alcohol Markers"
+    },
+    {
+        "name": "Encaustic Wax",
+        "options": [
+            "Beeswax",
+            "Crayon Wax"
+        ]
+    },
+    {
+        "name": "Ink Pens",
+        "options": [
+            "Fountain Pen",
+            "Gel Pens",
+            "Brush Pens",
+            "Fineliner Pens",
+            "Ballpoint Pens",
+            "Rollerball Pens",
+            "Technical Pens"
+        ]
+    },
+    {
+        "name": "Graphite"
+    },
+    {
+        "name": "Colored Pencils"
+    },
+    {
+        "name": "Watercolor"
+    },
+    {
+        "name": "Mixed Media",
+        "options": [
+            "All",
+            "4",
+            "3",
+            "2"
+        ]
+    },
+    {
+        "name": "Airbrush"
+    },
+    {
+        "name": "Spray Paint"
+    },
+    {
+        "name": "Pastels"
+    },
+    {
+        "name": "Charcoal"
+    }
+]

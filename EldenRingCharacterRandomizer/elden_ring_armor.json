@@ -1,0 +1,773 @@
+{
+  "light": [
+    {
+      "name": "Alberich's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Alberich's+Set",
+      "WGT": 9.7
+    },
+    {
+      "name": "Albinauric Set",
+      "link": "https://eldenring.wiki.fextralife.com/Albinauric+Set",
+      "WGT": 12.6
+    },
+    {
+      "name": "Aristocrat Set",
+      "link": "https://eldenring.wiki.fextralife.com/Aristocrat+Set",
+      "WGT": 9.0
+    },
+    {
+      "name": "Ascetic's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Ascetic's+Set",
+      "WGT": 8.5
+    },
+    {
+      "name": "Astrologer Set",
+      "link": "https://eldenring.wiki.fextralife.com/Astrologer+Set",
+      "WGT": 13.3
+    },
+    {
+      "name": "Azur's Glintstone Set",
+      "link": "https://eldenring.wiki.fextralife.com/Azur's+Glintstone+Set",
+      "WGT": 14.3
+    },
+    {
+      "name": "Battlemage Set",
+      "link": "https://eldenring.wiki.fextralife.com/Battlemage+Set",
+      "WGT": 10.4
+    },
+    {
+      "name": "Bloodsoaked Set",
+      "link": "https://eldenring.wiki.fextralife.com/Bloodsoaked+Set",
+      "WGT": 3.6
+    },
+    {
+      "name": "Blue Festive Set",
+      "link": "https://eldenring.wiki.fextralife.com/Blue+Festive+Set",
+      "WGT": 5.8
+    },
+    {
+      "name": "Champion Set",
+      "link": "https://eldenring.wiki.fextralife.com/Champion+Set",
+      "WGT": 13.8
+    },
+    {
+      "name": "Commoner's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Commoner's+Set",
+      "WGT": 8.5
+    },
+    {
+      "name": "Consort's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Consort's+Set",
+      "WGT": 10.2
+    },
+    {
+      "name": "Dancer's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Dancer's+Set",
+      "WGT": 7.5
+    },
+    {
+      "name": "Dane's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Dane's+Set",
+      "WGT": 12.1
+    },
+    {
+      "name": "Depraved Perfumer Set",
+      "link": "https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Set",
+      "WGT": 13.4
+    },
+    {
+      "name": "Errant Sorcerer Set",
+      "link": "https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Set",
+      "WGT": 11.3
+    },
+    {
+      "name": "Festive Set",
+      "link": "https://eldenring.wiki.fextralife.com/Festive+Set",
+      "WGT": 5.8
+    },
+    {
+      "name": "Fia's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Fia's+Set",
+      "WGT": 6.8
+    },
+    {
+      "name": "Finger Maiden Set",
+      "link": "https://eldenring.wiki.fextralife.com/Finger+Maiden+Set",
+      "WGT": 9.3
+    },
+    {
+      "name": "Fur Set",
+      "link": "https://eldenring.wiki.fextralife.com/Fur+Set",
+      "WGT": 11.5
+    },
+    {
+      "name": "Godskin Apostle Set",
+      "link": "https://eldenring.wiki.fextralife.com/Godskin+Apostle+Set",
+      "WGT": 10.9
+    },
+    {
+      "name": "Godskin Noble Set",
+      "link": "https://eldenring.wiki.fextralife.com/Godskin+Noble+Set",
+      "WGT": 12.2
+    },
+    {
+      "name": "Goldmask's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Goldmask's+Set",
+      "WGT": 9.8
+    },
+    {
+      "name": "Guilty Set",
+      "link": "https://eldenring.wiki.fextralife.com/Guilty+Set",
+      "WGT": 6.6
+    },
+    {
+      "name": "High Page Set",
+      "link": "https://eldenring.wiki.fextralife.com/High+Page+Set",
+      "WGT": 9.2
+    },
+    {
+      "name": "High Priest Set",
+      "link": "https://eldenring.wiki.fextralife.com/High+Priest+Set",
+      "WGT": 9.8
+    },
+    {
+      "name": "Hornsent Set",
+      "link": "https://eldenring.wiki.fextralife.com/Hornsent+Set",
+      "WGT": 5.6
+    },
+    {
+      "name": "Juvenile Scholar Set",
+      "link": "https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Set",
+      "WGT": 5.5
+    },
+    {
+      "name": "Lazuli Sorcerer Set",
+      "link": "https://eldenring.wiki.fextralife.com/Lazuli+Sorcerer+Set",
+      "WGT": 12.3
+    },
+    {
+      "name": "Lusat's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Lusat's+Set",
+      "WGT": 14.3
+    },
+    {
+      "name": "Marionette Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Marionette+Soldier+Set",
+      "WGT": 12.6
+    },
+    {
+      "name": "Mushroom Set",
+      "link": "https://eldenring.wiki.fextralife.com/Mushroom+Set",
+      "WGT": 12.1
+    },
+    {
+      "name": "Noble's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Noble's+Set",
+      "WGT": 14.0
+    },
+    {
+      "name": "Nomadic Merchant's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Set",
+      "WGT": 14.6
+    },
+    {
+      "name": "Old Aristocrat Set",
+      "link": "https://eldenring.wiki.fextralife.com/Old+Aristocrat+Set",
+      "WGT": 9.3
+    },
+    {
+      "name": "Page Set",
+      "link": "https://eldenring.wiki.fextralife.com/Page+Set",
+      "WGT": 9.0
+    },
+    {
+      "name": "Perfumer Set",
+      "link": "https://eldenring.wiki.fextralife.com/Perfumer+Set",
+      "WGT": 10.7
+    },
+    {
+      "name": "Preceptor's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Preceptor's+Set",
+      "WGT": 15.9
+    },
+    {
+      "name": "Prisoner Set",
+      "link": "https://eldenring.wiki.fextralife.com/Prisoner+Set",
+      "WGT": 13.8
+    },
+    {
+      "name": "Prophet Set",
+      "link": "https://eldenring.wiki.fextralife.com/Prophet+Set",
+      "WGT": 10.4
+    },
+    {
+      "name": "Queen of the Full Moon Set",
+      "link": "https://eldenring.wiki.fextralife.com/Queen+of+the+Full+Moon+Set",
+      "WGT": 11.0
+    },
+    {
+      "name": "Raya Lucarian Sorcerer Set",
+      "link": "https://eldenring.wiki.fextralife.com/Raya+Lucarian+Sorcerer+Set",
+      "WGT": 12.3
+    },
+    {
+      "name": "Ruler's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Ruler's+Set",
+      "WGT": 7.3
+    },
+    {
+      "name": "Sage Set",
+      "link": "https://eldenring.wiki.fextralife.com/Sage+Set",
+      "WGT": 9.8
+    },
+    {
+      "name": "Sanguine Noble Set",
+      "link": "https://eldenring.wiki.fextralife.com/Sanguine+Noble+Set",
+      "WGT": 9.0
+    },
+    {
+      "name": "Shaman Set",
+      "link": "https://eldenring.wiki.fextralife.com/Shaman+Set",
+      "WGT": 11.5
+    },
+    {
+      "name": "Snow Witch Set",
+      "link": "https://eldenring.wiki.fextralife.com/Snow+Witch+Set",
+      "WGT": 10.8
+    },
+    {
+      "name": "Spellblade Set",
+      "link": "https://eldenring.wiki.fextralife.com/Spellblade+Set",
+      "WGT": 8.6
+    },
+    {
+      "name": "Traveler's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Traveler's+Set",
+      "WGT": 8.9
+    },
+    {
+      "name": "Traveling Maiden Set",
+      "link": "https://eldenring.wiki.fextralife.com/Traveling+Maiden+Set",
+      "WGT": 11.0
+    }
+  ],
+  "medium": [
+    {
+      "name": "Ansbach's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Ansbach's+Set",
+      "WGT": 13.9
+    },
+    {
+      "name": "Bandit Set",
+      "link": "https://eldenring.wiki.fextralife.com/Bandit+Set",
+      "WGT": 16.8
+    },
+    {
+      "name": "Blue Cloth Set",
+      "link": "https://eldenring.wiki.fextralife.com/Blue+Cloth+Set",
+      "WGT": 17.8
+    },
+    {
+      "name": "Confessor Set",
+      "link": "https://eldenring.wiki.fextralife.com/Confessor+Set",
+      "WGT": 19.2
+    },
+    {
+      "name": "Divine Beast Set",
+      "link": "https://eldenring.wiki.fextralife.com/Divine+Beast+Set",
+      "WGT": 15.5
+    },
+    {
+      "name": "Duelist Set",
+      "link": "https://eldenring.wiki.fextralife.com/Duelist+Set",
+      "WGT": 19.8
+    },
+    {
+      "name": "Godrick Foot Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Godrick+Foot+Soldier+Set",
+      "WGT": 19.6
+    },
+    {
+      "name": "Gravebird Set",
+      "link": "https://eldenring.wiki.fextralife.com/Gravebird+Set",
+      "WGT": 14.7
+    },
+    {
+      "name": "Haligtree Foot Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Haligtree+Foot+Soldier+Set",
+      "WGT": 19.6
+    },
+    {
+      "name": "Highland Warrior Set",
+      "link": "https://eldenring.wiki.fextralife.com/Highland+Warrior+Set",
+      "WGT": 14.9
+    },
+    {
+      "name": "Highwayman Set",
+      "link": "https://eldenring.wiki.fextralife.com/Highwayman+Set",
+      "WGT": 18.7
+    },
+    {
+      "name": "Igon's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Igon's+Set",
+      "WGT": 18.0
+    },
+    {
+      "name": "Iron Rivet Set",
+      "link": "https://eldenring.wiki.fextralife.com/Iron+Rivet+Set",
+      "WGT": 19.3
+    },
+    {
+      "name": "Land of Reeds Set",
+      "link": "https://eldenring.wiki.fextralife.com/Land+of+Reeds+Set",
+      "WGT": 19.8
+    },
+    {
+      "name": "Leyndell Foot Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Leyndell+Foot+Soldier+Set",
+      "WGT": 19.6
+    },
+    {
+      "name": "Malenia's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Malenia's+Set",
+      "WGT": 20.5
+    },
+    {
+      "name": "Mausoleum Foot Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Mausoleum+Foot+Soldier+Set",
+      "WGT": 16.0
+    },
+    {
+      "name": "Mausoleum Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Mausoleum+Soldier+Set",
+      "WGT": 20.7
+    },
+    {
+      "name": "Messmer's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Messmer's+Set",
+      "WGT": 19.3
+    },
+    {
+      "name": "Night Maiden Set",
+      "link": "https://eldenring.wiki.fextralife.com/Night+Maiden+Set",
+      "WGT": 19.3
+    },
+    {
+      "name": "Night Set",
+      "link": "https://eldenring.wiki.fextralife.com/Night+Set",
+      "WGT": 16.9
+    },
+    {
+      "name": "Nox Monk Set",
+      "link": "https://eldenring.wiki.fextralife.com/Nox+Monk+Set",
+      "WGT": 18.8
+    },
+    {
+      "name": "Nox Swordstress Set",
+      "link": "https://eldenring.wiki.fextralife.com/Nox+Swordstress+Set",
+      "WGT": 19.3
+    },
+    {
+      "name": "Omenkiller Set",
+      "link": "https://eldenring.wiki.fextralife.com/Omenkiller+Set",
+      "WGT": 16.9
+    },
+    {
+      "name": "Radahn Foot Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Radahn+Foot+Soldier+Set",
+      "WGT": 19.6
+    },
+    {
+      "name": "Raptor's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Raptor's+Set",
+      "WGT": 16.8
+    },
+    {
+      "name": "Raya Lucarian Foot Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Raya+Lucarian+Foot+Soldier+Set",
+      "WGT": 19.6
+    },
+    {
+      "name": "Rotten Duelist Set",
+      "link": "https://eldenring.wiki.fextralife.com/Rotten+Duelist+Set",
+      "WGT": 20.0
+    },
+    {
+      "name": "Shadow Militiaman Set",
+      "link": "https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Set",
+      "WGT": 16.9
+    },
+    {
+      "name": "Thiollier's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Thiollier's+Set",
+      "WGT": 17.7
+    },
+    {
+      "name": "White Reed Set",
+      "link": "https://eldenring.wiki.fextralife.com/White+Reed+Set",
+      "WGT": 19.8
+    },
+    {
+      "name": "Zamor Set",
+      "link": "https://eldenring.wiki.fextralife.com/Zamor+Set",
+      "WGT": 20.5
+    }
+  ],
+  "heavy": [
+    {
+      "name": "All-Knowing Set",
+      "link": "https://eldenring.wiki.fextralife.com/All-Knowing+Set",
+      "WGT": 25.4
+    },
+    {
+      "name": "Ansbach's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Ansbach's+Set",
+      "WGT": 13.9
+    },
+    {
+      "name": "Banished Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Banished+Knight+Set",
+      "WGT": 41.6
+    },
+    {
+      "name": "Beast Champion Set",
+      "link": "https://eldenring.wiki.fextralife.com/Beast+Champion+Set",
+      "WGT": 41.6
+    },
+    {
+      "name": "Black Knife Set",
+      "link": "https://eldenring.wiki.fextralife.com/Black+Knife+Set",
+      "WGT": 21.8
+    },
+    {
+      "name": "Black Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Black+Knight+Set",
+      "WGT": 32.7
+    },
+    {
+      "name": "Blackflame Monk Set",
+      "link": "https://eldenring.wiki.fextralife.com/Blackflame+Monk+Set",
+      "WGT": 27.0
+    },
+    {
+      "name": "Blaidd's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Blaidd's+Set",
+      "WGT": 32.7
+    },
+    {
+      "name": "Bloodhound Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Set",
+      "WGT": 25.3
+    },
+    {
+      "name": "Briar Set",
+      "link": "https://eldenring.wiki.fextralife.com/Briar+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Bull-Goat Set",
+      "link": "https://eldenring.wiki.fextralife.com/Bull-Goat+Set",
+      "WGT": 63.0
+    },
+    {
+      "name": "Carian Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Carian+Knight+Set",
+      "WGT": 25.1
+    },
+    {
+      "name": "Chain Set",
+      "link": "https://eldenring.wiki.fextralife.com/Chain+Set",
+      "WGT": 21.0
+    },
+    {
+      "name": "Cleanrot Set",
+      "link": "https://eldenring.wiki.fextralife.com/Cleanrot+Set",
+      "WGT": 35.7
+    },
+    {
+      "name": "Common Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Common+Soldier+Set",
+      "WGT": 21.0
+    },
+    {
+      "name": "Crucible Axe Set",
+      "link": "https://eldenring.wiki.fextralife.com/Crucible+Axe+Set",
+      "WGT": 36.9
+    },
+    {
+      "name": "Crucible Tree Set",
+      "link": "https://eldenring.wiki.fextralife.com/Crucible+Tree+Set",
+      "WGT": 36.9
+    },
+    {
+      "name": "Cuckoo Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Death Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Death+Knight+Set",
+      "WGT": 25.9
+    },
+    {
+      "name": "Divine Bird Set",
+      "link": "https://eldenring.wiki.fextralife.com/Divine+Bird+Set",
+      "WGT": 27.0
+    },
+    {
+      "name": "Drake Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Drake+Knight+Set",
+      "WGT": 22.0
+    },
+    {
+      "name": "Eccentric Set",
+      "link": "https://eldenring.wiki.fextralife.com/Eccentric+Set",
+      "WGT": 22.6
+    },
+    {
+      "name": "Elden Lord Set",
+      "link": "https://eldenring.wiki.fextralife.com/Elden+Lord+Set",
+      "WGT": 21.4
+    },
+    {
+      "name": "Exile Set",
+      "link": "https://eldenring.wiki.fextralife.com/Exile+Set",
+      "WGT": 21.8
+    },
+    {
+      "name": "Fingerprint Set",
+      "link": "https://eldenring.wiki.fextralife.com/Fingerprint+Set",
+      "WGT": 25.3
+    },
+    {
+      "name": "Fire Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Fire+Knight+Set",
+      "WGT": 22.1
+    },
+    {
+      "name": "Fire Monk Set",
+      "link": "https://eldenring.wiki.fextralife.com/Fire+Monk+Set",
+      "WGT": 27.0
+    },
+    {
+      "name": "Fire Prelate Set",
+      "link": "https://eldenring.wiki.fextralife.com/Fire+Prelate+Set",
+      "WGT": 58.8
+    },
+    {
+      "name": "Freyja's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Freyja's+Set",
+      "WGT": 24.3
+    },
+    {
+      "name": "Gaius's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Gaius's+Set",
+      "WGT": 44.3
+    },
+    {
+      "name": "Gelmir Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Gelmir+Knight+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "General Radahn Set",
+      "link": "https://eldenring.wiki.fextralife.com/General+Radahn+Set",
+      "WGT": 41.6
+    },
+    {
+      "name": "Godrick Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Godrick+Knight+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Godrick Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Godrick+Soldier+Set",
+      "WGT": 24.7
+    },
+    {
+      "name": "Guardian Set",
+      "link": "https://eldenring.wiki.fextralife.com/Guardian+Set",
+      "WGT": 19.9
+    },
+    {
+      "name": "Haligtree Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Haligtree+Knight+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Haligtree Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Haligtree+Soldier+Set",
+      "WGT": 24.7
+    },
+    {
+      "name": "Horned Warrior Set",
+      "link": "https://eldenring.wiki.fextralife.com/Horned+Warrior+Set",
+      "WGT": 25.1
+    },
+    {
+      "name": "Hoslow's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Hoslow's+Set",
+      "WGT": 28.5
+    },
+    {
+      "name": "Iron Set",
+      "link": "https://eldenring.wiki.fextralife.com/Iron+Set",
+      "WGT": 21.0
+    },
+    {
+      "name": "Kaiden Set",
+      "link": "https://eldenring.wiki.fextralife.com/Kaiden+Set",
+      "WGT": 20.8
+    },
+    {
+      "name": "Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Knight+Set",
+      "WGT": 25.3
+    },
+    {
+      "name": "Leyndell Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Leyndell+Knight+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Leyndell Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Set",
+      "WGT": 24.7
+    },
+    {
+      "name": "Lionel's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Lionel's+Set",
+      "WGT": 50.5
+    },
+    {
+      "name": "Malformed Dragon Set",
+      "link": "https://eldenring.wiki.fextralife.com/Malformed+Dragon+Set",
+      "WGT": 38.0
+    },
+    {
+      "name": "Maliketh's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Maliketh's+Set",
+      "WGT": 30.5
+    },
+    {
+      "name": "Mausoleum Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Set",
+      "WGT": 23.0
+    },
+    {
+      "name": "Messmer Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Messmer+Soldier+Set",
+      "WGT": 21.6
+    },
+    {
+      "name": "Night's Cavalry Set",
+      "link": "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Set",
+      "WGT": 30.5
+    },
+    {
+      "name": "Oathseeker Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Set",
+      "WGT": 23.7
+    },
+    {
+      "name": "Omen Set",
+      "link": "https://eldenring.wiki.fextralife.com/Omen+Set",
+      "WGT": 55.0
+    },
+    {
+      "name": "Radahn Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Radahn+Soldier+Set",
+      "WGT": 24.7
+    },
+    {
+      "name": "Raging Wolf Set",
+      "link": "https://eldenring.wiki.fextralife.com/Raging+Wolf+Set",
+      "WGT": 24.2
+    },
+    {
+      "name": "Rakshasa Set",
+      "link": "https://eldenring.wiki.fextralife.com/Rakshasa+Set",
+      "WGT": 30.5
+    },
+    {
+      "name": "Raya Lucarian Soldier Set",
+      "link": "https://eldenring.wiki.fextralife.com/Raya+Lucarian+Soldier+Set",
+      "WGT": 24.7
+    },
+    {
+      "name": "Redmane Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Redmane+Knight+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Rellana's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Rellana's+Set",
+      "WGT": 28.1
+    },
+    {
+      "name": "Ronin's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Ronin's+Set",
+      "WGT": 21.1
+    },
+    {
+      "name": "Royal Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Royal+Knight+Set",
+      "WGT": 36.9
+    },
+    {
+      "name": "Royal Remains Set",
+      "link": "https://eldenring.wiki.fextralife.com/Royal+Remains+Set",
+      "WGT": 25.3
+    },
+    {
+      "name": "Scaled Set",
+      "link": "https://eldenring.wiki.fextralife.com/Scaled+Set",
+      "WGT": 38.0
+    },
+    {
+      "name": "Solitude Set",
+      "link": "https://eldenring.wiki.fextralife.com/Solitude+Set",
+      "WGT": 57.1
+    },
+    {
+      "name": "Tree Sentinel Set",
+      "link": "https://eldenring.wiki.fextralife.com/Tree+Sentinel+Set",
+      "WGT": 45.0
+    },
+    {
+      "name": "Twinned Set",
+      "link": "https://eldenring.wiki.fextralife.com/Twinned+Set",
+      "WGT": 30.0
+    },
+    {
+      "name": "Vagabond Knight Set",
+      "link": "https://eldenring.wiki.fextralife.com/Vagabond+Knight+Set",
+      "WGT": 23.8
+    },
+    {
+      "name": "Verdigris Set",
+      "link": "https://eldenring.wiki.fextralife.com/Verdigris+Set",
+      "WGT": 61.6
+    },
+    {
+      "name": "Veteran's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Veteran's+Set",
+      "WGT": 45.0
+    },
+    {
+      "name": "Vulgar Militia Set",
+      "link": "https://eldenring.wiki.fextralife.com/Vulgar+Militia+Set",
+      "WGT": 18.5
+    },
+    {
+      "name": "War Surgeon Set",
+      "link": "https://eldenring.wiki.fextralife.com/War+Surgeon+Set",
+      "WGT": 16.6
+    },
+    {
+      "name": "Young Lion's Set",
+      "link": "https://eldenring.wiki.fextralife.com/Young+Lion's+Set",
+      "WGT": 35.7
+    }
+  ]
+}
