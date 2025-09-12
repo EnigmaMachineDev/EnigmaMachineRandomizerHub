@@ -1,160 +1,124 @@
+body {
+    background-color: #222222; /* Darker grey background */
+    color: #66cc66; /* Softer green text */
+    font-family: monospace;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .container {
-            background-color: #2c2c2c;
-            padding: 30px 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            color: #66bb6a; /* Green */
-            margin-bottom: 30px;
-        }
-        button {
-            background-color: #66bb6a;
-            color: #1a1a1a;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            margin-bottom: 30px;
-        }
-        button:hover {
-            background-color: #5cb85c;
-        }
-        button:active {
-            transform: scale(0.98);
-        }
-        .reroll-button {
-            background-color: #66bb6a;
-            color: #1a1a1a;
-            border: none;
-            padding: 5px 10px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-        .reroll-button:hover {
-            background-color: #5cb85c;
-        }
-        .reroll-button:active {
-            transform: scale(0.98);
-        }
-        #characterDisplay {
-            background-color: #333;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: left;
-            min-height: 150px;
-        }
+.back-button {
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
-        #characterDisplay p {
-            margin: 8px 0;
-            font-size: 1.1em;
-            color: #fff;
-        }
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
-        #characterDisplay p strong {
-            color: #66bb6a;
-        }
+.container {
+    background-color: #333333; /* Lighter grey rectangle */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
 
-        #characterDisplay ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+h1 {
+    margin-bottom: 2rem;
+}
 
-        #spiritAshesList, #spellsList {
-            min-height: 106px; /* Adjust based on max expected content height */
-            overflow-y: auto; /* Add scroll if content exceeds height */
-        }
+#generate-loadout {
+    background-color: #66cc66;
+    color: #222222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    width: auto; /* Allow button to size to content */
+    height: auto; /* Allow button to size to content */
+}
 
-        #spellsList {
-            min-height: 64px; /* Adjust based on max expected content height */
-        }
+#generate-loadout:hover {
+    background-color: #88e888;
+}
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 10px;
-            align-items: center;
-        }
+.section {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1.5rem;
+    text-align: left; /* Ensure section content is left-aligned */
+}
 
-        .section-header {
-            grid-column: span 2;
-            border-top: 1px solid #444;
-            padding-top: 10px;
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
-        .section-header:first-of-type {
-            border-top: none;
-            margin-top: 0;
-            padding-top: 0;
-        }
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
 
-        .item-content, .item-list {
-            grid-column: 1;
-        }
+h2 {
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Ensure header is left-aligned */
+}
 
-        .item-reroll {
-            grid-column: 2;
-        }
+.item-container {
+    display: flex;
+    justify-content: flex-start; /* Align item to the left */
+    min-height: 2em;
+    padding-left: 10px; /* Indent item text slightly */
+}
 
-        .full-width-item {
-            grid-column: span 2;
-        }
+.reroll-btn {
+    background: none;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    display: inline-flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 0; /* Reset padding */
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
 
-        #talismanList li {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%; /* Ensure it takes full width of its container */
-        }
-        .coffee-link {
-            margin-top: 30px;
-            text-align: center;
-        }
-        .coffee-link a {
-            display: inline-block;
-            background-color: #66bb6a;
-            color: #1a1a1a;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            text-decoration: none;
-        }
-        .coffee-link a:hover {
-            background-color: #5cb85c;
-        }
-        .coffee-link a:active {
-            transform: scale(0.98);
-        }
+.reroll-btn:hover {
+    background-color: #444;
+    border-color: #888;
+}
+
+a {
+    color: #66cc66; /* Softer green link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.coffee-link {
+    text-align: center;
+    margin-top: 2rem;
+}

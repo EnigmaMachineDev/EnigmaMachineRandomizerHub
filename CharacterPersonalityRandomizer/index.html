@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Character Generator</title>
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <title>Character Personality Randomizer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
 </head>
 <body>
     <div class="main-wrapper">
+                <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
-            <h1>Random Character Generator</h1>
-            <button id="generateButton">Generate Random Character</button>
-            <div id="characterDisplay">
-                <p>Click the button to generate a character!</p>
-            </div>
+            <h1>Character Personality Randomizer</h1>
+            <button class="reroll-btn" id="generate-loadout">Generate Character</button>
+            <div class="section">
+                    <div class="section-header">
+                        <h2>Identity</h2>
+                        <button class="reroll-btn" id="reroll-identity">↻</button>
+                    </div>
+                    <div class="item-container">
+                        <span id="identity"></span>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-header">
+                        <h2>Personality</h2>
+                        <button class="reroll-btn" id="reroll-personality">↻</button>
+                    </div>
+                    <div class="item-container">
+                        <a id="personality-link" href="#" target="_blank"><span id="personality"></span></a>
+                    </div>
+                </div>
         </div>
-        <div class="footer">
-            <div class="coffee-link">
-                <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
-                    ☕ Buy me a coffee
-                </a>
-            </div>
-        </div>
+    </div>
+    <div class="coffee-link">
+        <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+            ☕ Buy me a coffee
+        </a>
     </div>
     <script src="script.js"></script>
 </body>

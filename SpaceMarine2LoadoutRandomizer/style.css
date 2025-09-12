@@ -10,8 +10,17 @@ body {
     margin: 0;
 }
 
+.back-button {
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .main-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -88,11 +97,11 @@ h2 {
     width: 30px;
     height: 30px;
     font-size: 1.2em;
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 0; 
-    flex-shrink: 0; 
+    display: inline-flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 0; /* Reset padding */
+    flex-shrink: 0; /* Prevent button from shrinking */
 }
 
 .reroll-btn:hover {
@@ -101,7 +110,7 @@ h2 {
 }
 
 a {
-    color: #66cc66; 
+    color: #66cc66; /* Softer green link */
     text-decoration: none;
 }
 

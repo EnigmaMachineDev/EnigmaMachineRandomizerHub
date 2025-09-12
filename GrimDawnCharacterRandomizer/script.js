@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const generateBtn = document.getElementById('generate-btn');
-    const resultContainer = document.getElementById('result-container');
     const classNameEl = document.getElementById('class-name');
     const abilitiesListEl = document.getElementById('abilities-list');
     const weaponTypeEl = document.getElementById('weapon-type');
-    const rerollAbilitiesBtn = document.getElementById('reroll-abilities-btn');
-    const rerollWeaponBtn = document.getElementById('reroll-weapon-btn');
+
+    const generateLoadoutBtn = document.getElementById('generate-loadout');
+    const rerollClassBtn = document.getElementById('reroll-class');
+    const rerollAbilitiesBtn = document.getElementById('reroll-abilities');
+    const rerollWeaponBtn = document.getElementById('reroll-weapon');
 
     let characterData = null;
     let selectedClass = null;
@@ -19,16 +20,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             characterData = await response.json();
-            generateBtn.disabled = false;
+            generateCharacter();
         } catch (error) {
             console.error("Failed to load character data:", error);
-            resultContainer.innerHTML = '<p style="color: red;">Failed to load character data. Please refresh the page.</p>';
-    
         }
     }
 
     function getRandomElement(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function generateClass() {
+        const { classes } = characterData;
+        selectedClass = getRandomElement(classes);
+        classNameEl.textContent = `${selectedClass.className} (${selectedClass.masteries.join(', ')})`;
     }
 
     function generateAbilitiesAndWeapon() {
@@ -61,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         }
 
+        displayAbilities();
         generateWeapon();
     }
 
@@ -68,21 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedWeapon = compatibleWeapons.length > 0
             ? getRandomElement(compatibleWeapons)
             : "Any";
-        displayResult(selectedClass, selectedAbilities, selectedWeapon);
+        weaponTypeEl.textContent = selectedWeapon;
     }
 
     function generateCharacter() {
-        const { classes } = characterData;
-        selectedClass = getRandomElement(classes);
+        generateClass();
         generateAbilitiesAndWeapon();
     }
 
-    function displayResult(sClass, sAbilities, sWeapon) {
-        classNameEl.textContent = `${sClass.className} (${sClass.masteries.join(', ')})`;
-
+    function displayAbilities() {
         abilitiesListEl.innerHTML = '';
-        if (sAbilities.length > 0) {
-            sAbilities.forEach(ability => {
+        if (selectedAbilities.length > 0) {
+            selectedAbilities.forEach(ability => {
                 const li = document.createElement('li');
                 li.textContent = ability.name;
                 abilitiesListEl.appendChild(li);
@@ -92,13 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
             li.textContent = 'None';
             abilitiesListEl.appendChild(li);
         }
-
-        weaponTypeEl.textContent = sWeapon;
-
-
     }
 
-    generateBtn.addEventListener('click', generateCharacter);
+    generateLoadoutBtn.addEventListener('click', generateCharacter);
+    rerollClassBtn.addEventListener('click', () => {
+        generateClass();
+        generateAbilitiesAndWeapon();
+    });
     rerollAbilitiesBtn.addEventListener('click', generateAbilitiesAndWeapon);
     rerollWeaponBtn.addEventListener('click', generateWeapon);
 

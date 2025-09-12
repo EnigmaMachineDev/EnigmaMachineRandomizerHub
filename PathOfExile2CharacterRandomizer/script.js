@@ -1,70 +1,58 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
     let data;
     let currentAscendancy;
+
+    const classResultEl = document.getElementById('class-result');
+    const weaponSkillsResultEl = document.getElementById('weapon-skills-result');
+    const defenseResultEl = document.getElementById('defense-result');
+
+    const generateLoadoutBtn = document.getElementById('generate-loadout');
+    const rerollClassBtn = document.getElementById('reroll-class');
+    const rerollWeaponSkillsBtn = document.getElementById('reroll-weapon-skills');
+    const rerollDefenseBtn = document.getElementById('reroll-defense');
 
     const ascendancySkills = {
         "Pathfinder": ["Bleeding Concoction", "Acidic Concoction", "Shattering Concoction", "Fulminating Concoction", "Explosive Concoction"],
         "Smith of Kitava": ["Manifest Weapon"],
-        "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry"],
-        "Invoker": ["Elemental Expression"]
+        "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry", "Ancestral Spirits"],
+        "Invoker": ["Elemental Expression"],
+        "Infernalist": ["Summon Infernal Hound"],
+        "Amazon": ["Elemental Surge"]
     };
 
     fetch('randomizer.json')
-        .then(response => {
-            console.log('Fetch response received:', response);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
+        .then(response => response.json())
         .then(jsonData => {
-            console.log('JSON data parsed successfully:', jsonData);
             data = jsonData;
-            enableButtons();
+            rollAll();
             setupEventListeners();
         })
-        .catch(error => {
-            console.error('Error fetching or parsing randomizer.json:', error);
-        });
-
-    function enableButtons() {
-        console.log('Enabling buttons');
-        document.getElementById('roll-all-btn').disabled = false;
-        document.getElementById('roll-class-btn').disabled = false;
-        document.getElementById('roll-weapon-skills-btn').disabled = false;
-        document.getElementById('roll-defense-btn').disabled = false;
-    }
+        .catch(error => console.error('Error fetching or parsing randomizer.json:', error));
 
     function setupEventListeners() {
-        console.log('Setting up event listeners');
-        document.getElementById('roll-all-btn').addEventListener('click', rollAll);
-        document.getElementById('roll-class-btn').addEventListener('click', rollClassAndAscendancy);
-        document.getElementById('roll-weapon-skills-btn').addEventListener('click', rollWeaponAndSkills);
-        document.getElementById('roll-defense-btn').addEventListener('click', rollDefense);
+        generateLoadoutBtn.addEventListener('click', rollAll);
+        rerollClassBtn.addEventListener('click', rollClassAndAscendancy);
+        rerollWeaponSkillsBtn.addEventListener('click', rollWeaponAndSkills);
+        rerollDefenseBtn.addEventListener('click', rollDefense);
     }
 
     function getRandomItem(arr) {
         if (!arr || arr.length === 0) {
-            console.error('Cannot get random item from empty or invalid array:', arr);
             return null;
         }
         return arr[Math.floor(Math.random() * arr.length)];
     }
 
     function rollClassAndAscendancy() {
-        console.log('Rolling class and ascendancy');
         const randomClass = getRandomItem(data.classes);
         if (!randomClass) return;
         const randomAscendancy = getRandomItem(randomClass.ascendancies);
         if (!randomAscendancy) return;
         currentAscendancy = randomAscendancy;
-        document.getElementById('class-result').textContent = `Class: ${randomClass.name}`;
-        document.getElementById('ascendancy-result').textContent = `Ascendancy: ${randomAscendancy}`;
+        classResultEl.innerHTML = `<strong>Class:</strong> ${randomClass.name}<br><strong>Ascendancy:</strong> ${randomAscendancy}`;
     }
 
     function rollWeaponAndSkills() {
-        console.log('Rolling weapon and skills');
         const randomWeapon = getRandomItem(data.weapons);
         if (!randomWeapon) return;
 
@@ -81,19 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        document.getElementById('weapon-type-result').textContent = `Weapon Type: ${randomWeapon.name}`;
-        document.getElementById('main-skills-result').textContent = `Main Skill(s): ${selectedSkills.join(', ')}`;
+        weaponSkillsResultEl.innerHTML = `<strong>Weapon Type:</strong> ${randomWeapon.name}<br><strong>Main Skill(s):</strong> ${selectedSkills.join(', ')}`;
     }
 
     function rollDefense() {
-        console.log('Rolling defense');
         const randomDefense = getRandomItem(data.defense);
         if (!randomDefense) return;
-        document.getElementById('defense-strategy-result').textContent = `${randomDefense.name}`;
+        defenseResultEl.textContent = `${randomDefense.name}`;
     }
 
     function rollAll() {
-        console.log('Rolling all');
         rollClassAndAscendancy();
         rollWeaponAndSkills();
         rollDefense();
