@@ -1,0 +1,2115 @@
+
+{
+  "armor": [
+    {
+      "name": "Antiquated Plain Set",
+      "link": "https://darksouls.fandom.com/wiki/Antiquated_Plain_Set"
+    },
+    {
+      "name": "Antiquated Set",
+      "link": "https://darksouls.fandom.com/wiki/Antiquated_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Archdeacon Set",
+      "link": "https://darksouls.fandom.com/wiki/Archdeacon_Set"
+    },
+    {
+      "name": "Assassin Set",
+      "link": "https://darksouls.fandom.com/wiki/Assassin_Set"
+    },
+    {
+      "name": "Black Hand Set",
+      "link": "https://darksouls.fandom.com/wiki/Black_Hand_Set"
+    },
+    {
+      "name": "Black Leather Set",
+      "link": "https://darksouls.fandom.com/wiki/Black_Leather_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Black Witch Set",
+      "link": "https://darksouls.fandom.com/wiki/Black_Witch_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Brigand Set",
+      "link": "https://darksouls.fandom.com/wiki/Brigand_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Cleric Set",
+      "link": "https://darksouls.fandom.com/wiki/Cleric_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Conjurator Set",
+      "link": "https://darksouls.fandom.com/wiki/Conjurator_Set"
+    },
+    {
+      "name": "Cornyx's Set",
+      "link": "https://darksouls.fandom.com/wiki/Cornyx%27s_Set"
+    },
+    {
+      "name": "Court Sorcerer Set",
+      "link": "https://darksouls.fandom.com/wiki/Court_Sorcerer_Set"
+    },
+    {
+      "name": "Dancer's Set",
+      "link": "https://darksouls.fandom.com/wiki/Dancer%27s_Set"
+    },
+    {
+      "name": "Deacon Set",
+      "link": "https://darksouls.fandom.com/wiki/Deacon_Set"
+    },
+    {
+      "name": "Desert Pyromancer Set",
+      "link": "https://darksouls.fandom.com/wiki/Desert_Pyromancer_Set"
+    },
+    {
+      "name": "Deserter Set",
+      "link": "https://darksouls.fandom.com/wiki/Deserter_Set"
+    },
+    {
+      "name": "Drang Set",
+      "link": "https://darksouls.fandom.com/wiki/Drang_Set"
+    },
+    {
+      "name": "Fire Keeper Set",
+      "link": "https://darksouls.fandom.com/wiki/Fire_Keeper_Set"
+    },
+    {
+      "name": "Follower Set",
+      "link": "https://darksouls.fandom.com/wiki/Follower_Set"
+    },
+    {
+      "name": "Grave Warden Set",
+      "link": "https://darksouls.fandom.com/wiki/Grave_Warden_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Jailer Set",
+      "link": "https://darksouls.fandom.com/wiki/Jailer_Set"
+    },
+    {
+      "name": "Karla's Set",
+      "link": "https://darksouls.fandom.com/wiki/Karla%27s_Set"
+    },
+    {
+      "name": "Leather Set",
+      "link": "https://darksouls.fandom.com/wiki/Leather_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Leonhard's Set",
+      "link": "https://darksouls.fandom.com/wiki/Leonhard%27s_Set"
+    },
+    {
+      "name": "Maiden Set",
+      "link": "https://darksouls.fandom.com/wiki/Maiden_Set_(Dark_Souls_III)"
+    },
+    {
+      "name.": "Master's Set",
+      "link": "https://darksouls.fandom.com/wiki/Master%27s_Set"
+    },
+    {
+      "name": "Mirrah Set",
+      "link": "https://darksouls.fandom.com/wiki/Mirrah_Set"
+    },
+    {
+      "name": "Old Sorcerer Set",
+      "link": "https://darksouls.fandom.com/wiki/Old_Sorcerer_Set"
+    },
+    {
+      "name": "Ordained Set",
+      "link": "https://darksouls.fandom.com/wiki/Ordained_Set"
+    },
+    {
+      "name": "Painting Guardian Set",
+      "link": "https://darksouls.fandom.com/wiki/Painting_Guardian_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Pale Shade Set",
+      "link": "https://darksouls.fandom.com/wiki/Pale_Shade_Set"
+    },
+    {
+      "name": "Pontiff Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Pontiff_Knight_Set"
+    },
+    {
+      "name": "Prayer Set",
+      "link": "https://darksouls.fandom.com/wiki/Prayer_Set"
+    },
+    {
+      "name": "Pyromancer Set",
+      "link": "https://darksouls.fandom.com/wiki/Pyromancer_Set"
+    },
+    {
+      "name": "Shadow Set",
+      "link": "https://darksouls.fandom.com/wiki/Shadow_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Shira's Set",
+      "link": "https://darksouls.fandom.com/wiki/Shira%27s_Set"
+    },
+    {
+      "name": "Sorcerer Set",
+      "link": "https://darksouls.fandom.com/wiki/Sorcerer_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Worker Set",
+      "link": "https://darksouls.fandom.com/wiki/Worker_Set"
+    },
+    {
+      "name": "Xanthous Set",
+      "link": "https://darksouls.fandom.com/wiki/Xanthous_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Alva Set",
+      "link": "https://darksouls.fandom.com/wiki/Alva_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Black Set",
+      "link": "https://darksouls.fandom.com/wiki/Black_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Brass Set",
+      "link": "https://darksouls.fandom.com/wiki/Brass_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Chain Set",
+      "link": "https://darksouls.fandom.com/wiki/Chain_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Dark Set",
+      "link": "https://darksouls.fandom.com/wiki/Dark_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Dragonscale Set",
+      "link": "https://darksouls.fandom.com/wiki/Dragonscale_Set"
+    },
+    {
+      "name": "Eastern Set",
+      "link": "https://darksouls.fandom.com/wiki/Eastern_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Elite Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Elite_Knight_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Evangelist Set",
+      "link": "https://darksouls.fandom.com/wiki/Evangelist_Set"
+    },
+    {
+      "name": "Fallen Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Fallen_Knight_Set"
+    },
+    {
+      "name": "Fire Witch Set",
+      "link": "https://darksouls.fandom.com/wiki/Fire_Witch_Set"
+    },
+    {
+      "name": "Firelink Set",
+      "link": "https://darksouls.fandom.com/wiki/Firelink_Set"
+    },
+    {
+      "name": "Hard Leather Set",
+      "link": "https://darksouls.fandom.com/wiki/Hard_Leather_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Herald Set",
+      "link": "https://darksouls.fandom.com/wiki/Herald_Set"
+    },
+    {
+      "name": "Iron Set",
+      "link": "https://darksouls.fandom.com/wiki/Iron_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Knight_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Mirrah Chain Set",
+      "link": "https://darksouls.fandom.com/wiki/Mirrah_Chain_Set"
+    },
+    {
+      "name": "Nameless Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Nameless_Knight_Set"
+    },
+    {
+      "name": "Northern Set",
+      "link": "https://darksouls.fandom.com/wiki/Northern_Set"
+    },
+    {
+      "name": "Outrider Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Outrider_Knight_Set"
+    },
+    {
+      "name": "Ringed Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Ringed_Knight_Set"
+    },
+    {
+      "name": "Sellsword Set",
+      "link": "https://darksouls.fandom.com/wiki/Sellsword_Set"
+    },
+    {
+      "name": "Set of Thorns",
+      "link": "https://darksouls.fandom.com/wiki/Set_of_Thorns_(Dark_Souls_III)"
+    },
+    {
+      "name": "Slave Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Slave_Knight_Set"
+    },
+    {
+      "name": "Sunless Set",
+      "link": "https://darksouls.fandom.com/wiki/Sunless_Set"
+    },
+    {
+      "name": "Undead Legion Set",
+      "link": "https://darksouls.fandom.com/wiki/Undead_Legion_Set"
+    },
+    {
+      "name": "Vilhelm's Set",
+      "link": "https://darksouls.fandom.com/wiki/Vilhelm%27s_Set"
+    },
+    {
+      "name": "Wolf Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Wolf_Knight_Set"
+    },
+    {
+      "name": "Black Iron Set",
+      "link": "https://darksouls.fandom.com/wiki/Black_Iron_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Black Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Black_Knight_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Catarina Set",
+      "link": "https://darksouls.fandom.com/wiki/Catarina_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Cathedral Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Cathedral_Knight_Set"
+    },
+    {
+      "name": "Dragonslayer Set",
+      "link": "https://darksouls.fandom.com/wiki/Dragonslayer_Set"
+    },
+    {
+      "name": "Drakeblood Set",
+      "link": "https://darksouls.fandom.com/wiki/Drakeblood_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Executioner Set",
+      "link": "https://darksouls.fandom.com/wiki/Executioner_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Exile Set",
+      "link": "https://darksouls.fandom.com/wiki/Exile_Set"
+    },
+    {
+      "name": "Faraam Set",
+      "link": "https://darksouls.fandom.com/wiki/Faraam_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Gundyr's Set",
+      "link": "https://darksouls.fandom.com/wiki/Gundyr%27s_Set"
+    },
+    {
+      "name": "Harald Legion Set",
+      "link": "https://darksouls.fandom.com.com/wiki/Harald_Legion_Set"
+    },
+    {
+      "name": "Havel's Set",
+      "link": "https://darksouls.fandom.com/wiki/Havel%27s_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Iron Dragonslayer Set",
+      "link": "https://darksouls.fandom.com/wiki/Iron_Dragonslayer_Set"
+    },
+    {
+      "name": "Lapp's Set",
+      "link": "https://darksouls.fandom.com/wiki/Lapp%27s_Set"
+    },
+    {
+      "name": "Lorian's Set",
+      "link": "https://darksouls.fandom.com/wiki/Lorian%27s_Set"
+    },
+    {
+      "name": "Lothric Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Lothric_Knight_Set"
+    },
+    {
+      "name": "Millwood Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Millwood_Knight_Set"
+    },
+    {
+      "name": "Morne's Set",
+      "link": "https://darksouls.fandom.com/wiki/Morne%27s_Set"
+    },
+    {
+      "name": "Ruin Set",
+      "link": "https://darksouls.fandom.com/wiki/Ruin_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Set of Favor",
+      "link": "https://darksouls.fandom.com/wiki/Set_of_Favor_(Dark_Souls_III)"
+    },
+    {
+      "name": "Silver Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Silver_Knight_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Smough's Set",
+      "link": "https://darksouls.fandom.com/wiki/Smough%27s_Set_(Dark_Souls_III)"
+    },
+    {
+      "name": "Sunset Set",
+      "link": "https://darksouls.fandom.com/wiki/Sunset_Set"
+    },
+    {
+      "name": "Winged Knight Set",
+      "link": "https://darksouls.fandom.com/wiki/Winged_Knight_Set"
+    }
+  ],
+  "casterweapons": [
+    {
+      "name": "Priest's Chime",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Priest's+Chime"
+    },
+    {
+      "name": "Cleric's Sacred Chime",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Cleric's+Sacred+Chime"
+    },
+    {
+      "name": "Caitha's Chime",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Caitha's+Chime"
+    },
+    {
+      "name": "Saint-tree Bellvine",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Saint-tree+Bellvine"
+    },
+    {
+      "name": "Crystal Chime",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Chime"
+    },
+    {
+      "name": "Yorshka's Chime",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Yorshka's+Chime"
+    },
+    {
+      "name": "Sacred Chime of Filianore",
+      "type": "Chime",
+      "link": "https://darksouls3.wiki.fextralife.com/Sacred+Chime+of+Filianore"
+    },
+    {
+      "name": "Talisman",
+      "type": "Talisman",
+      "link": "https://darksouls3.wiki.fextralife.com/Talisman"
+    },
+    {
+      "name": "Saint's Talisman",
+      "type": "Talisman",
+      "link": "https://darksouls3.wiki.fextralife.com/Saint's+Talisman"
+    },
+    {
+      "name": "Sunlight Talisman",
+      "type": "Talisman",
+      "link": "https://darksouls3.wiki.fextralife.com/Sunlight+Talisman"
+    },
+    {
+      "name": "White Hair Talisman",
+      "type": "Talisman",
+      "link": "https://darksouls3.wiki.fextralife.com/White+Hair+Talisman"
+    },
+    {
+      "name": "Sunless Talisman",
+      "type": "Talisman",
+      "link": "https://darksouls3.wiki.fextralife.com/Sunless+Talisman"
+    },
+    {
+      "name": "Canvas Talisman",
+      "type": "Talisman",
+      "link": "https://darksouls3.wiki.fextralife.com/Canvas+Talisman"
+    },
+    {
+      "name": "Pyromancy Flame",
+      "type": "Flame",
+      "link": "https://darksouls3.wiki.fextralife.com/Pyromancy+Flame"
+    },
+    {
+      "name": "Pyromancer's Parting Flame",
+      "type": "Flame",
+      "link": "https://darksouls3.wiki.fextralife.com/Pyromancer's+Parting+Flame"
+    },
+    {
+      "name": "Demon's Scar",
+      "type": "Flame",
+      "link": "https://darksouls3.wiki.fextralife.com/Demon's+Scar"
+    },
+    {
+      "name": "Sorcerer's Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Sorcerer's+Staff"
+    },
+    {
+      "name": "Court Sorcerer's Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Court+Sorcerer's+Staff"
+    },
+    {
+      "name": "Heretic's Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Heretic's+Staff"
+    },
+    {
+      "name": "Witch Tree Branch",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Witch+Tree+Branch"
+    },
+    {
+      "name": "Sage's Crystal Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Sage's+Crystal+Staff"
+    },
+    {
+      "name": "Izalith Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Izalith+Staff"
+    },
+    {
+      "name": "Storyteller's Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Storyteller's+Staff"
+    },
+    {
+      "name": "Archdeacon Great Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Archdeacon's+Great+Staff"
+    },
+    {
+      "name": "Man-Grub's Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Man-Grub's+Staff"
+    },
+    {
+      "name": "Mendicant's Staff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Mendicant's+Staff"
+    },
+    {
+      "name": "Preacher's Right Arm",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Preacher's+Right+Arm"
+    },
+    {
+      "name": "Murky Longstaff",
+      "type": "Staff",
+      "link": "https://darksouls3.wiki.fextralife.com/Murky+Longstaff"
+    }
+  ],
+  "rings": [
+    {
+      "name": "Life Ring",
+      "link": "https://darksouls.fandom.com/wiki/Life_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Sun Princess Ring",
+      "link": "https://darksouls.fandom.com/wiki/Sun_Princess_Ring"
+    },
+    {
+      "name": "Estus Ring",
+      "link": "https://darksouls.fandom.com/wiki/Estus_Ring"
+    },
+    {
+      "name": "Ashen Estus Ring",
+      "link": "https://darksouls.fandom.com/wiki/Ashen_Estus_Ring"
+    },
+    {
+      "name": "Chloranthy Ring",
+      "link": "https://darksouls.fandom.com/wiki/Chloranthy_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Havel's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Havel%27s_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Ring of Favor",
+      "link": "https://darksouls.fandom.com/wiki/Ring_of_Favor"
+    },
+    {
+      "name": "Prisoner's Chain",
+      "link": "https://darksouls.fandom.com/wiki/Prisoner%27s_Chain"
+    },
+    {
+      "name": "Ring of Steel Protection",
+      "link": "https://darksouls.fandom.com/wiki/Ring_of_Steel_Protection_(Dark_Souls_III)"
+    },
+    {
+      "name": "Magic Stoneplate Ring",
+      "link": "https://darksouls.fandom.com/wiki/Magic_Stoneplate_Ring"
+    },
+    {
+      "name": "Flame Stoneplate Ring",
+      "link": "https://darksouls.fandom.com/wiki/Flame_Stoneplate_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Thunder Stoneplate Ring",
+      "link": "https://darksouls.fandom.com/wiki/Thunder_Stoneplate_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Dark Stoneplate Ring",
+      "link": "https://darksouls.fandom.com/wiki/Dark_Stoneplate_Ring"
+    },
+    {
+      "name": "Speckled Stoneplate Ring",
+      "link": "https://darksouls.fandom.com/wiki/Speckled_Stoneplate_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Bloodbite Ring",
+      "link": "https://darksouls.fandom.com/wiki/Bloodbite_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Poisonbite Ring",
+      "link": "https://darksouls.fandom.com/wiki/Poisonbite_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Chillbite Ring",
+      "link": "https://darksouls.fandom.com/wiki/Chillbite_Ring"
+    },
+    {
+      "name": "Cursebite Ring",
+      "link": "https://darksouls.fandom.com/wiki/Cursebite_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Fleshbite Ring",
+      "link": "https://darksouls.fandom.com/wiki/Fleshbite_Ring"
+    },
+    {
+      "name": "Knight's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Knight%27s_Ring"
+    },
+    {
+      "name": "Hunter's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Hunter%27s_Ring"
+    },
+    {
+      "name": "Scholar Ring",
+      "link": "https://darksouls.fandom.com/wiki/Scholar_Ring"
+    },
+    {
+      "name": "Priestess Ring",
+      "link": "https://darksouls.fandom.com/wiki/Priestess_Ring"
+    },
+    {
+      "name": "Covetous Gold Serpent Ring",
+      "link": "https://darksouls.fandom.com/wiki/Covetous_Gold_Serpent_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Covetous Silver Serpent Ring",
+      "link": "https://darksouls.fandom.com/wiki/Covetous_Silver_Serpent_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Saint's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Saint%27s_Ring"
+    },
+    {
+      "name": "Deep Ring",
+      "link": "https://darksouls.fandom.com/wiki/Deep_Ring"
+    },
+    {
+      "name": "Darkmoon Ring",
+      "link": "https://darksouls.fandom.com/wiki/Darkmoon_Ring"
+    },
+    {
+      "name": "Young Dragon Ring",
+      "link": "https://darksouls.fandom.com/wiki/Young_Dragon_Ring"
+    },
+    {
+      "name": "Bellowing Dragoncrest Ring",
+      "link": "https://darksouls.fandom.com/wiki/Bellowing_Dragoncrest_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Great Swamp Ring",
+      "link": "https://darksouls.fandom.com/wiki/Great_Swamp_Ring"
+    },
+    {
+      "name": "Witch's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Witch%27s_Ring"
+    },
+    {
+      "name": "Morne's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Morne%27s_Ring"
+    },
+    {
+      "name": "Ring of the Sun's First Born",
+      "link": "https://darksouls.fandom.com/wiki/Ring_of_the_Sun%27s_First_Born"
+    },
+    {
+      "name": "Lingering Dragoncrest Ring",
+      "link": "https://darksouls.fandom.com/wiki/Lingering_Dragoncrest_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Sage Ring",
+      "link": "https://darksouls.fandom.com/wiki/Sage_Ring"
+    },
+    {
+      "name": "Dusk Crown Ring",
+      "link": "https://darksouls.fandom.com/wiki/Dusk_Crown_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Leo Ring",
+      "link": "https://darksouls.fandom.com/wiki/Leo_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Wolf Ring",
+      "link": "https://darksouls.fandom.com/wiki/Wolf_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Hawk Ring",
+      "link": "https://darksouls.fandom.com/wiki/Hawk_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Hornet Ring",
+      "link": "https://darksouls.fandom.com/wiki/Hornet_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Knight Slayer's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Knight_Slayer%27s_Ring"
+    },
+    {
+      "name": "Ring of the Evil Eye",
+      "link": "https://darksouls.fandom.com/wiki/Ring_of_the_Evil_Eye_(Dark_Souls_III)"
+    },
+    {
+      "name": "Farron Ring",
+      "link": "https://darksouls.fandom.com/wiki/Farron_Ring"
+    },
+    {
+      "name": "Dragonscale Ring",
+      "link": "https://darksouls.fandom.com/wiki/Dragonscale_Ring"
+    },
+    {
+      "name": "Horsehoof Ring",
+      "link": "https://darksouls.fandom.com/wiki/Horsehoof_Ring"
+    },
+    {
+      "name": "Wood Grain Ring",
+      "link": "https://darksouls.fandom.com/wiki/Wood_Grain_Ring"
+    },
+    {
+      "name": "Flynn's Ring",
+      "link": "https://darksouls.fandom.com/wiki/Flynn%27s_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Magic Clutch Ring",
+      "link": "https://darksouls.fandom.com/wiki/Magic_Clutch_Ring"
+    },
+    {
+      "name": "Lightning Clutch Ring",
+      "link": "https://darksouls.fandom.com/wiki/Lightning_Clutch_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Fire Clutch Ring",
+      "link": "https://darksouls.fandom.com/wiki/Fire_Clutch_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Dark Clutch Ring",
+      "link": "https://darksouls.fandom.com/wiki/Dark_Clutch_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Red Tearstone Ring",
+      "link": "https://darksouls.fandom.com/wiki/Red_Tearstone_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Blue Tearstone Ring",
+      "link": "https://darksouls.fandom.com/wiki/Blue_Tearstone_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Lloyd's Sword Ring",
+      "link": "https://darksouls.fandom.com/wiki/Lloyd%27s_Sword_Ring"
+    },
+    {
+      "name": "Lloyd's Shield Ring",
+      "link": "https://darksouls.fandom.com/wiki/Lloyd%27s_Shield_Ring"
+    },
+    {
+      "name": "Carthus Milkring",
+      "link": "https://darksouls.fandom.com/wiki/Carthus_Milkring"
+    },
+    {
+      "name": "Carthus Bloodring",
+      "link": "https://darksouls.fandom.com/wiki/Carthus_Bloodring"
+    },
+    {
+      "name": "Pontiff's Right Eye",
+      "link": "https://darksouls.fandom.com/wiki/Pontiff%27s_Right_Eye"
+    },
+    {
+      "name": "Pontiff's Left Eye",
+      "link": "https://darksouls.fandom.com/wiki/Pontiff%27s_Left_Eye"
+    },
+    {
+      "name": "Aldrich's Ruby",
+      "link": "https://darksouls.fandom.com/wiki/Aldrich%27s_Ruby"
+    },
+    {
+      "name": "Aldrich's Sapphire",
+      "link": "https://darksouls.fandom.com/wiki/Aldrich%27s_Sapphire"
+    },
+    {
+      "name": "Silvercat Ring",
+      "link": "https://darksouls.fandom.com/wiki/Silvercat_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Slumbering Dragoncrest Ring",
+      "link": "https://darksouls.fandom.com/wiki/Slumbering_Dragoncrest_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Obscuring Ring",
+      "link": "https://darksouls.fandom.com/wiki/Obscuring_Ring"
+    },
+    {
+      "name": "Untrue Dark Ring",
+      "link": "https://darksouls.fandom.com/wiki/Untrue_Dark_Ring"
+    },
+    {
+      "name": "Untrue White Ring",
+      "link": "https://darksouls.fandom.com/wiki/Untrue_White_Ring"
+    },
+    {
+      "name": "Reversal Ring",
+      "link": "https://darksouls.fandom.com/wiki/Reversal_Ring"
+    },
+    {
+      "name": "Skull Ring",
+      "link": "https://darksouls.fandom.com/wiki/Skull_Ring"
+    },
+    {
+      "name": "Calamity Ring",
+      "link": "https://darksouls.fandom.com/wiki/Calamity_Ring_(Dark_Souls_III)"
+    },
+    {
+      "name": "Ring of Sacrifice",
+      "link": "https://darksouls.fandom.com/wiki/Ring_of_Sacrifice_(Dark_Souls_III)"
+    }
+  ],
+  "spells": [
+    {
+      "name": "Frozen Weapon",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Frozen+Weapon"
+    },
+    {
+      "name": "Snap Freeze",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Snap+Freeze"
+    },
+    {
+      "name": "Floating Chaos",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Floating+Chaos"
+    },
+    {
+      "name": "Way of White Corona",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Way+of+White+Corona"
+    },
+    {
+      "name": "Great Soul Dregs",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Soul+Dregs"
+    },
+    {
+      "name": "Old Moonlight",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Old+Moonlight"
+    },
+    {
+      "name": "Flame Fan",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Flame+Fan"
+    },
+    {
+      "name": "Seething Chaos",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Seething+Chaos"
+    },
+    {
+      "name": "Lightning Arrow",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Arrow"
+    },
+    {
+      "name": "Projected Heal",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Projected+Heal"
+    },
+    {
+      "name": "Heal Aid",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Heal+Aid"
+    },
+    {
+      "name": "Heal",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Heal"
+    },
+    {
+      "name": "Med Heal",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Med+Heal"
+    },
+    {
+      "name": "Great Heal",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Heal"
+    },
+    {
+      "name": "Soothing Sunlight",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Soothing+Sunlight"
+    },
+    {
+      "name": "Replenishment",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Replenishment"
+    },
+    {
+      "name": "Bountiful Light",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Bountiful+Light"
+    },
+    {
+      "name": "Bountiful Sunlight",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Bountiful+Sunlight"
+    },
+    {
+      "name": "Caressing Tears",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Caressing+Tears"
+    },
+    {
+      "name": "Tears of Denial",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Tears+of+Denial"
+    },
+    {
+      "name": "Homeward",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Homeward"
+    },
+    {
+      "name": "Seek Guidance",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Seek+Guidance"
+    },
+    {
+      "name": "Sacred Oath",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Sacred+Oath"
+    },
+    {
+      "name": "Force",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Force"
+    },
+    {
+      "name": "Emit Force",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Emit+Force"
+    },
+    {
+      "name": "Wrath of the Gods",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Wrath+of+the+Gods"
+    },
+    {
+      "name": "Lightning Spear",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Spear"
+    },
+    {
+      "name": "Great Lightning Spear",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Lightning+Spear"
+    },
+    {
+      "name": "Sunlight Spear",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Sunlight+Spear"
+    },
+    {
+      "name": "Lightning Stake",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Stake"
+    },
+    {
+      "name": "Lightning Storm",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Storm"
+    },
+    {
+      "name": "Divine Pillars of Light",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Divine+Pillars+of+Light"
+    },
+    {
+      "name": "Blessed Weapon",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Blessed+Weapon"
+    },
+    {
+      "name": "Lightning Blade",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Blade"
+    },
+    {
+      "name": "Darkmoon Blade",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Darkmoon+Blade"
+    },
+    {
+      "name": "Magic Barrier",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Magic+Barrier"
+    },
+    {
+      "name": "Great Magic Barrier",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Magic+Barrier"
+    },
+    {
+      "name": "Dark Blade",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Dark+Blade"
+    },
+    {
+      "name": "Vow of Silence",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Vow+of+Silence"
+    },
+    {
+      "name": "Dead Again",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Dead+Again"
+    },
+    {
+      "name": "Atonement",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Atonement"
+    },
+    {
+      "name": "Deep Protection",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Deep+Protection"
+    },
+    {
+      "name": "Gnaw",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Gnaw"
+    },
+    {
+      "name": "Dorhy's Gnawing",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Dorhy's+Gnawing"
+    },
+    {
+      "name": "Lifehunt Scythe",
+      "type": "Miracle",
+      "link": "https://darksouls3.wiki.fextralife.com/Lifehunt+Scythe"
+    },
+    {
+      "name": "Fireball",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Fireball"
+    },
+    {
+      "name": "Fire Orb",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Fire+Orb"
+    },
+    {
+      "name": "Bursting Fireball",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Bursting+Fireball"
+    },
+    {
+      "name": "Great Chaos Fire Orb",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Chaos+Fire+Orb"
+    },
+    {
+      "name": "Chaos Bed Vestiges",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Chaos+Bed+Vestiges"
+    },
+    {
+      "name": "Fire Surge",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Fire+Surge"
+    },
+    {
+      "name": "Fire Whip",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Fire+Whip"
+    },
+    {
+      "name": "Firestorm",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Firestorm"
+    },
+    {
+      "name": "Chaos Storm",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Chaos+Storm"
+    },
+    {
+      "name": "Great Combustion",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Combustion"
+    },
+    {
+      "name": "Sacred Flame",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Sacred+Flame"
+    },
+    {
+      "name": "Profaned Flame",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Profaned+Flame"
+    },
+    {
+      "name": "Poison Mist",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Poison+Mist"
+    },
+    {
+      "name": "Toxic Mist",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Toxic+Mist"
+    },
+    {
+      "name": "Acid Surge",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Acid+Surge"
+    },
+    {
+      "name": "Flash Sweat",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Flash+Sweat"
+    },
+    {
+      "name": "Profuse Sweat",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Profuse+Sweat"
+    },
+    {
+      "name": "Iron Flesh",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Iron+Flesh"
+    },
+    {
+      "name": "Power Within",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Power+Within"
+    },
+    {
+      "name": "Carthus Beacon",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Carthus+Beacon"
+    },
+    {
+      "name": "Carthus Flame Arc",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Carthus+Flame+Arc"
+    },
+    {
+      "name": "Warmth",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Warmth"
+    },
+    {
+      "name": "Rapport",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Rapport"
+    },
+    {
+      "name": "Boulder Heave",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Boulder+Heave"
+    },
+    {
+      "name": "Black Flame",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Black+Flame"
+    },
+    {
+      "name": "Black Fire Orb",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Black+Fire+Orb"
+    },
+    {
+      "name": "Black Serpent",
+      "type": "Pyromancy",
+      "link": "https://darksouls3.wiki.fextralife.com/Black+Serpent"
+    },
+    {
+      "name": "Soul Arrow",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Soul+Arrow"
+    },
+    {
+      "name": "Great Soul Arrow",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Soul+Arrow"
+    },
+    {
+      "name": "Heavy Soul Arrow",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Heavy+Soul+Arrow"
+    },
+    {
+      "name": "Great Heavy Soul Arrow",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Heavy+Soul+Arrow"
+    },
+    {
+      "name": "Farron Dart",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Farron+Dart"
+    },
+    {
+      "name": "Great Farron Dart",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Farron+Dart"
+    },
+    {
+      "name": "Farron Hail",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Farron+Hail"
+    },
+    {
+      "name": "Homing Soulmass",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Homing+Soulmass"
+    },
+    {
+      "name": "Homing Crystal Soulmass",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Homing+Crystal+Soulmass"
+    },
+    {
+      "name": "Crystal Hail",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Hail"
+    },
+    {
+      "name": "Soul Spear",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Soul+Spear"
+    },
+    {
+      "name": "Crystal Soul Spear",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Soul+Spear"
+    },
+    {
+      "name": "White Dragon Breath",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/White+Dragon+Breath"
+    },
+    {
+      "name": "Soul Stream",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Soul+Stream"
+    },
+    {
+      "name": "Soul Greatsword",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Soul+Greatsword"
+    },
+    {
+      "name": "Farron Flashsword",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Farron+Flashsword"
+    },
+    {
+      "name": "Magic Weapon",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Magic+Weapon"
+    },
+    {
+      "name": "Great Magic Weapon",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Magic+Weapon"
+    },
+    {
+      "name": "Crystal Magic Weapon",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Magic+Weapon"
+    },
+    {
+      "name": "Magic Shield",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Magic+Shield"
+    },
+    {
+      "name": "Great Magic Shield",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Magic+Shield"
+    },
+    {
+      "name": "Spook",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Spook"
+    },
+    {
+      "name": "Aural Decoy",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Aural+Decoy"
+    },
+    {
+      "name": "Pestilent Mist",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Pestilent+Mist"
+    },
+    {
+      "name": "Cast Light",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Cast+Light"
+    },
+    {
+      "name": "Repair",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Repair"
+    },
+    {
+      "name": "Hidden Weapon",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Hidden+Weapon"
+    },
+    {
+      "name": "Hidden Body",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Hidden+Body"
+    },
+    {
+      "name": "Chameleon",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Chameleon"
+    },
+    {
+      "name": "Twisted Wall of Light",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Twisted+Wall+of+Light"
+    },
+    {
+      "name": "Deep Soul",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Deep+Soul"
+    },
+    {
+      "name": "Great Deep Soul",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Great+Deep+Soul"
+    },
+    {
+      "name": "Affinity",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Affinity"
+    },
+    {
+      "name": "Dark Edge",
+      "type": "Sorcery",
+      "link": "https://darksouls3.wiki.fextralife.com/Dark+Edge"
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Hand Axe",
+      "url": "https://darksouls.fandom.com/wiki/Hand_Axe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Thrall Axe",
+      "url": "https://darksouls.fandom.com/wiki/Thrall_Axe"
+    },
+    {
+      "name": "Battle Axe",
+      "url": "https://darksouls.fandom.com/wiki/Battle_Axe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Brigand Axe",
+      "url": "https://darksouls.fandom.com/wiki/Brigand_Axe"
+    },
+    {
+      "name": "Dragonslayer's Axe",
+      "url": "https://darksouls.fandom.com/wiki/Dragonslayer%27s_Axe"
+    },
+    {
+      "name": "Millwood Battle Axe",
+      "url": "https://darksouls.fandom.com/wiki/Millwood_Battle_Axe"
+    },
+    {
+      "name": "Man Serpent Hatchet",
+      "url": "https://darksouls.fandom.com/wiki/Man_Serpent_Hatchet"
+    },
+    {
+      "name": "Butcher Knife",
+      "url": "https://darksouls.fandom.com/wiki/Butcher_Knife_(Dark_Souls_III)"
+    },
+    {
+      "name": "Eleonora",
+      "url": "https://darksouls.fandom.com/wiki/Eleonora"
+    },
+    {
+      "name": "Winged Knight Twinaxes",
+      "url": "https://darksouls.fandom.com/wiki/Winged_Knight_Twinaxes"
+    },
+    {
+      "name": "Greataxe",
+      "url": "https://darksouls.fandom.com/wiki/Greataxe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Great Machete",
+      "url": "https://darksouls.fandom.com/wiki/Great_Machete_(Dark_Souls_III)"
+    },
+    {
+      "name": "Black Knight Greataxe",
+      "url": "https://darksouls.fandom.com/wiki/Black_Knight_Greataxe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Demon's Greataxe",
+      "url": "https://darksouls.fandom.com/wiki/Demon%27s_Greataxe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Dragonslayer Greataxe",
+      "url": "https://darksouls.fandom.com/wiki/Dragonslayer_Greataxe"
+    },
+    {
+      "name": "Yhorm's Great Machete",
+      "url": "https://darksouls.fandom.com/wiki/Yhorm%27s_Great_Machete"
+    },
+    {
+      "name": "Earth Seeker",
+      "url": "https://darksouls.fandom.com/wiki/Earth_Seeker"
+    },
+    {
+      "name": "Scimitar",
+      "url": "https://darksouls.fandom.com/wiki/Scimitar_(Dark_Souls_III)"
+    },
+    {
+      "name": "Falchion",
+      "url": "https://darksouls.fandom.com/wiki/Falchion_(Dark_Souls_III)"
+    },
+    {
+      "name": "Shotel",
+      "url": "https://darksouls.fandom.com/wiki/Shotel_(Dark_Souls_III)"
+    },
+    {
+      "name": "Carthus Curved Sword",
+      "url": "https://darksouls.fandom.com/wiki/Carthus_Curved_Sword"
+    },
+    {
+      "name": "Carthus Shotel",
+      "url": "https://darksouls.fandom.com/wiki/Carthus_Shotel"
+    },
+    {
+      "name": "Rotten Ghru Curved Sword",
+      "url": "https://darksouls.fandom.com/wiki/Rotten_Ghru_Curved_Sword"
+    },
+    {
+      "name": "Painting Guardian's Curved Sword",
+      "url": "https://darksouls.fandom.com/wiki/Painting_Guardian%27s_Curved_Sword"
+    },
+    {
+      "name": "Follower Sabre",
+      "url": "https://darksouls.fandom.com/wiki/Follower_Sabre"
+    },
+    {
+      "name": "Pontiff Knight Curved Sword",
+      "url": "https://darksouls.fandom.com/wiki/Pontiff_Knight_Curved_Sword"
+    },
+    {
+      "name": "Crescent Moon Sword",
+      "url": "https://darksouls.fandom.com/wiki/Crescent_Moon_Sword"
+    },
+    {
+      "name": "Storm Curved Sword",
+      "url": "https://darksouls.fandom.com/wiki/Storm_Curved_Sword"
+    },
+    {
+      "name": "Demon's Scar",
+      "url": "https://darksouls.fandom.com/wiki/Demon%27s_Scar"
+    },
+    {
+      "name": "Sellsword Twinblades",
+      "url": "https://darksouls.fandom.com/wiki/Sellsword_Twinblades"
+    },
+    {
+      "name": "Warden Twinblades",
+      "url": "https://darksouls.fandom.com/wiki/Warden_Twinblades"
+    },
+    {
+      "name": "Dancer's Enchanted Swords",
+      "url": "https://darksouls.fandom.com/wiki/Dancer%27s_Enchanted_Swords"
+    },
+    {
+      "name": "Murakumo",
+      "url": "https://darksouls.fandom.com/wiki/Murakumo_(Dark_Souls_III)"
+    },
+    {
+      "name": "Carthus Curved Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Carthus_Curved_Greatsword"
+    },
+    {
+      "name": "Exile Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Exile_Greatsword"
+    },
+    {
+      "name": "Harald Curved Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Harald_Curved_Greatsword"
+    },
+    {
+      "name": "Old Wolf Curved Sword",
+      "url": "https://darksouls.fandom.com/wiki/Old_Wolf_Curved_Sword"
+    },
+    {
+      "name": "Caestus",
+      "url": "https://darksouls.fandom.com/wiki/Caestus_(Dark_Souls_III)"
+    },
+    {
+      "name": "Demon's Fist",
+      "url": "https://darksouls.fandom.com/wiki/Demon%27s_Fist"
+    },
+    {
+      "name": "Dark Hand",
+      "url": "https://darksouls.fandom.com/wiki/Dark_Hand_(Dark_Souls_III)"
+    },
+    {
+      "name": "Claw",
+      "url": "https://darksouls.fandom.com/wiki/Claw_(Dark_Souls_III)"
+    },
+    {
+      "name": "Manikin Claws",
+      "url": "https://darksouls.fandom.com/wiki/Manikin_Claws_(Dark_Souls_III)"
+    },
+    {
+      "name": "Crow Talons",
+      "url": "https://darksouls.fandom.com/wiki/Crow_Talons"
+    },
+    {
+      "name": "Club",
+      "url": "https://darksouls.fandom.com/wiki/Club_(Dark_Souls_III)"
+    },
+    {
+      "name": "Reinforced Club",
+      "url": "https://darksouls.fandom.com/wiki/Reinforced_Club_(Dark_Souls_III)"
+    },
+    {
+      "name": "Mace",
+      "url": "https://darksouls.fandom.com/wiki/Mace_(Dark_Souls_III)"
+    },
+    {
+      "name": "Morning Star",
+      "url": "https://darksouls.fandom.com/wiki/Morning_Star_(Dark_Souls_III)"
+    },
+    {
+      "name": "Warpick",
+      "url": "https://darksouls.fandom.com/wiki/Warpick_(Dark_Souls_III)"
+    },
+    {
+      "name": "Blacksmith Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Blacksmith_Hammer_(Dark_Souls_III)"
+    },
+    {
+      "name": "Heysel Pick",
+      "url": "https://darksouls.fandom.com/wiki/Heysel_Pick"
+    },
+    {
+      "name": "Drang Hammers",
+      "url": "https://darksouls.fandom.com/wiki/Drang_Hammers"
+    },
+    {
+      "name": "Large Club",
+      "url": "https://darksouls.fandom.com/wiki/Large_Club_(Dark_Souls_III)"
+    },
+    {
+      "name": "Great Club",
+      "url": "https://darksouls.fandom.com/wiki/Great_Club_(Dark_Souls_III)"
+    },
+    {
+      "name": "Great Mace",
+      "url": "https://darksouls.fandom.com/wiki/Great_Mace"
+    },
+    {
+      "name": "Spiked Mace",
+      "url": "https://darksouls.fandom.com/wiki/Spiked_Mace"
+    },
+    {
+      "name": "Pickaxe",
+      "url": "https://darksouls.fandom.com/wiki/Pickaxe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Great Wooden Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Great_Wooden_Hammer"
+    },
+    {
+      "name": "Gargoyle Flame Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Gargoyle_Flame_Hammer"
+    },
+    {
+      "name": "Morne's Great Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Morne%27s_Great_Hammer"
+    },
+    {
+      "name": "Smough's Great Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Smough%27s_Great_Hammer"
+    },
+    {
+      "name": "Quakestone Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Quakestone_Hammer"
+    },
+    {
+      "name": "Ledo's Great Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Ledo%27s_Great_Hammer"
+    },
+    {
+      "name": "Vordt's Great Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Vordt%27s_Great_Hammer"
+    },
+    {
+      "name": "Old King's Great Hammer",
+      "url": "https://darksouls.fandom.com/wiki/Old_King%27s_Great_Hammer"
+    },
+    {
+      "name": "Dragon Tooth",
+      "url": "https://darksouls.fandom.com/wiki/Dragon_Tooth_(Dark_Souls_III)"
+    },
+    {
+      "name": "Uchigatana",
+      "url": "https://darksouls.fandom.com/wiki/Uchigatana_(Dark_Souls_III)"
+    },
+    {
+      "name": "Washing Pole",
+      "url": "https://darksouls.fandom.com/wiki/Washing_Pole_(Dark_Souls_III)"
+    },
+    {
+      "name": "Black Blade",
+      "url": "https://darksouls.fandom.com/wiki/Black_Blade"
+    },
+    {
+      "name": "Bloodlust",
+      "url": "https://darksouls.fandom.com/wiki/Bloodlust"
+    },
+    {
+      "name": "Chaos Blade",
+      "url": "https://darksouls.fandom.com/wiki/Chaos_Blade_(Dark_Souls_III)"
+    },
+    {
+      "name": "Darkdrift",
+      "url": "https://darksouls.fandom.com/wiki/Darkdrift_(Dark_Souls_III)"
+    },
+    {
+      "name": "Frayed Blade",
+      "url": "https://darksouls.fandom.com/wiki/Frayed_Blade"
+    },
+    {
+      "name": "Onikiri and Ubadachi",
+      "url": "https://darksouls.fandom.com/wiki/Onikiri_and_Ubadachi"
+    },
+    {
+      "name": "Spear",
+      "url": "https://darksouls.fandom.com/wiki/Spear_(Dark_Souls_III)"
+    },
+    {
+      "name": "Winged Spear",
+      "url": "https://darksouls.fandom.com/wiki/Winged_Spear_(Dark_Souls_III)"
+    },
+    {
+      "name": "Partizan",
+      "url": "https://darksouls.fandom.com/wiki/Partizan_(Dark_Souls_III)"
+    },
+    {
+      "name": "Rotten Ghru Spear",
+      "url": "https://darksouls.fandom.com/wiki/Rotten_Ghru_Spear"
+    },
+    {
+      "name": "Four-Pronged Plow",
+      "url": "https://darksouls.fandom.com/wiki/Four-Pronged_Plow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Saint Bident",
+      "url": "https://darksouls.fandom.com/wiki/Saint_Bident"
+    },
+    {
+      "name": "Follower Javelin",
+      "url": "https://darksouls.fandom.com/wiki/Follower_Javelin"
+    },
+    {
+      "name": "Gargoyle Flame Spear",
+      "url": "https://darksouls.fandom.com/wiki/Gargoyle_Flame_Spear"
+    },
+    {
+      "name": "Soldering Iron",
+      "url": "https://darksouls.fandom.com/wiki/Soldering_Iron"
+    },
+    {
+      "name": "Yorshka's Spear",
+      "url": "https://darksouls.fandom.com/wiki/Yorshka%27s_Spear"
+    },
+    {
+      "name": "Dragonslayer Spear",
+      "url": "https://darksouls.fandom.com/wiki/Dragonslayer_Spear_(Dark_Souls_III)"
+    },
+    {
+      "name": "Golden Ritual Spear",
+      "url": "https://darksouls.fandom.com/wiki/Golden_Ritual_Spear"
+    },
+    {
+      "name": "Tailbone Spear",
+      "url": "https://darksouls.fandom.com/wiki/Tailbone_Spear"
+    },
+    {
+      "name": "Arstor's Spear",
+      "url": "https://darksouls.fandom.com/wiki/Arstor%27s_Spear"
+    },
+    {
+      "name": "Dragonslayer Swordspear",
+      "url": "https://darksouls.fandom.com/wiki/Dragonslayer_Swordspear"
+    },
+    {
+      "name": "Drang Twinspears",
+      "url": "https://darksouls.fandom.com/wiki/Drang_Twinspears"
+    },
+    {
+      "name": "Pike",
+      "url": "https://darksouls.fandom.com/wiki/Pike_(Dark_Souls_III)"
+    },
+    {
+      "name": "Greatlance",
+      "url": "https://darksouls.fandom.com/wiki/Greatlance"
+    },
+    {
+      "name": "Lothric Knight Long Spear",
+      "url": "https://darksouls.fandom.com/wiki/Lothric_Knight_Long_Spear"
+    },
+    {
+      "name": "Lothric War Banner",
+      "url": "https://darksouls.fandom.com/wiki/Lothric_War_Banner"
+    },
+    {
+      "name": "Ringed Knight Spear",
+      "url": "https://darksouls.fandom.com/wiki/Ringed_Knight_Spear"
+    },
+    {
+      "name": "Halberd",
+      "url": "https://darksouls.fandom.com/wiki/Halberd_(Dark_Souls_III)"
+    },
+    {
+      "name": "Red Hilted Halberd",
+      "url": "https://darksouls.fandom.com/wiki/Red_Hilted_Halberd"
+    },
+    {
+      "name": "Lucerne",
+      "url": "https://darksouls.fandom.com/wiki/Lucerne_(Dark_Souls_III)"
+    },
+    {
+      "name": "Glaive",
+      "url": "https://darksouls.fandom.com/wiki/Glaive"
+    },
+    {
+      "name": "Crescent Axe",
+      "url": "https://darksouls.fandom.com/wiki/Crescent_Axe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Winged Knight Halberd",
+      "url": "https://darksouls.fandom.com/wiki/Winged_Knight_Halberd"
+    },
+    {
+      "name": "Splitleaf Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Splitleaf_Greatsword"
+    },
+    {
+      "name": "Black Knight Glaive",
+      "url": "https://darksouls.fandom.com/wiki/Black_Knight_Glaive"
+    },
+    {
+      "name": "Crucifix of the Mad King",
+      "url": "https://darksouls.fandom.com/wiki/Crucifix_of_the_Mad_King"
+    },
+    {
+      "name": "Immolation Tinder",
+      "url": "https://darksouls.fandom.com/wiki/Immolation_Tinder"
+    },
+    {
+      "name": "Gundyr's Halberd",
+      "url": "https://darksouls.fandom.com/wiki/Gundyr%27s_Halberd"
+    },
+    {
+      "name": "Great Scythe",
+      "url": "https://darksouls.fandom.com/wiki/Great_Scythe_(Dark_Souls_III)"
+    },
+    {
+      "name": "Great Corvian Scythe",
+      "url": "https://darksouls.fandom.com/wiki/Great_Corvian_Scythe"
+    },
+    {
+      "name": "Pontiff Knight Great Scythe",
+      "url": "https://darksouls.fandom.com/wiki/Pontiff_Knight_Great_Scythe"
+    },
+    {
+      "name": "Friede's Great Scythe",
+      "url": "https://darksouls.fandom.com/wiki/Friede%27s_Great_Scythe"
+    },
+    {
+      "name": "Short Bow",
+      "url": "https://darksouls.fandom.com/wiki/Short_Bow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Composite Bow",
+      "url": "https://darksouls.fandom.com/wiki/Composite_Bow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Longbow",
+      "url": "https://darksouls.fandom.com/wiki/Longbow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Black Bow of Pharis",
+      "url": "https://darksouls.fandom.com/wiki/Black_Bow_of_Pharis_(Dark_Souls_III)"
+    },
+    {
+      "name": "White Birch Bow",
+      "url": "https://darksouls.fandom.com/wiki/White_Birch_Bow"
+    },
+    {
+      "name": "Dragonrider Bow",
+      "url": "https://darksouls.fandom.com/wiki/Dragonrider_Bow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Darkmoon Longbow",
+      "url": "https://darksouls.fandom.com/wiki/Darkmoon_Longbow"
+    },
+    {
+      "name": "Dragonslayer Greatbow",
+      "url": "https://darksouls.fandom.com/wiki/Dragonslayer_Greatbow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Onislayer Greatbow",
+      "url": "https://darksouls.fandom.com/wiki/Onislayer_Greatbow"
+    },
+    {
+      "name": "Millwood Greatbow",
+      "url": "https://darksouls.fandom.com/wiki/Millwood_Greatbow"
+    },
+    {
+      "name": "Light Crossbow",
+      "url": "https://darksouls.fandom.com/wiki/Light_Crossbow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "url": "https://darksouls.fandom.com/wiki/Heavy_Crossbow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Sniper Crossbow",
+      "url": "https://darksouls.fandom.com/wiki/Sniper_Crossbow_(Dark_Souls_III)"
+    },
+    {
+      "name": "Arbalest",
+      "url": "https://darksouls.fandom.com/wiki/Arbalest"
+    },
+    {
+      "name": "Knight's Crossbow",
+      "url": "https://darksouls.fandom.com/wiki/Knight%27s_Crossbow"
+    },
+    {
+      "name": "Avelyn",
+      "url": "https://darksouls.fandom.com/wiki/Avelyn_(Dark_Souls_III)"
+    },
+    {
+      "name": "Repeating Crossbow",
+      "url": "https://darksouls.fandom.com/wiki/Repeating_Crossbow"
+    },
+    {
+      "name": "Dagger",
+      "url": "https://darksouls.fandom.com/wiki/Dagger_(Dark_Souls_III)"
+    },
+    {
+      "name": "Parrying Dagger",
+      "url": "https://darksouls.fandom.com/wiki/Parrying_Dagger_(Dark_Souls_III)"
+    },
+    {
+      "name": "Mail Breaker",
+      "url": "https://darksouls.fandom.com/wiki/Mail_Breaker_(Dark_Souls_III)"
+    },
+    {
+      "name": "Harpe",
+      "url": "https://darksouls.fandom.com/wiki/Harpe"
+    },
+    {
+      "name": "Bandit's Knife",
+      "url": "https://darksouls.fandom.com/wiki/Bandit%27s_Knife_(Dark_Souls_III)"
+    },
+    {
+      "name": "Rotten Ghru Dagger",
+      "url": "https://darksouls.fandom.com/wiki/Rotten_Ghru_Dagger"
+    },
+    {
+      "name": "Corvian Greatknife",
+      "url": "https://darksouls.fandom.com/wiki/Corvian_Greatknife"
+    },
+    {
+      "name": "Murky Hand Scythe",
+      "url": "https://darksouls.fandom.com/wiki/Murky_Hand_Scythe"
+    },
+    {
+      "name": "Handmaid's Dagger",
+      "url": "https://darksouls.fandom.com/wiki/Handmaid%27s_Dagger"
+    },
+    {
+      "name": "Scholar's Candlestick",
+      "url": "https://darksouls.fandom.com/wiki/Scholar%27s_Candlestick"
+    },
+    {
+      "name": "Aquamarine Dagger",
+      "url": "https://darksouls.fandom.com/wiki/Aquamarine_Dagger"
+    },
+    {
+      "name": "Tailbone Short Sword",
+      "url": "https://darksouls.fandom.com/wiki/Tailbone_Short_Sword"
+    },
+    {
+      "name": "Brigand Twindaggers",
+      "url": "https://darksouls.fandom.com/wiki/Brigand_Twindaggers"
+    },
+    {
+      "name": "Shortsword",
+      "url": "https://darksouls.fandom.com/wiki/Shortsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Long Sword",
+      "url": "https://darksouls.fandom.com/wiki/Long_Sword"
+    },
+    {
+      "name": "Broadsword",
+      "url": "https://darksouls.fandom.com/wiki/Broadsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Broken Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Broken_Straight_Sword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Astora Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Astora_Straight_Sword"
+    },
+    {
+      "name": "Lothric Knight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Lothric_Knight_Sword"
+    },
+    {
+      "name": "Barbed Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Barbed_Straight_Sword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Dark Sword",
+      "url": "https://darksouls.fandom.com/wiki/Dark_Sword"
+    },
+    {
+      "name": "Cleric's Candlestick",
+      "url": "https://darksouls.fandom.com/wiki/Cleric%27s_Candlestick"
+    },
+    {
+      "name": "Irithyll Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Irithyll_Straight_Sword"
+    },
+    {
+      "name": "Anri's Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Anri%27s_Straight_Sword"
+    },
+    {
+      "name": "Sunlight Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Sunlight_Straight_Sword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Morion Blade",
+      "url": "https://darksouls.fandom.com/wiki/Morion_Blade"
+    },
+    {
+      "name": "Ringed Knight Straight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Ringed_Knight_Straight_Sword"
+    },
+    {
+      "name": "Lothric's Holy Sword",
+      "url": "https://darksouls.fandom.com/wiki/Lothric%27s_Holy_Sword"
+    },
+    {
+      "name": "Gotthard Twinswords",
+      "url": "https://darksouls.fandom.com/wiki/Gotthard_Twinswords"
+    },
+    {
+      "name": "Valorheart",
+      "url": "https://darksouls.fandom.com/wiki/Valorheart"
+    },
+    {
+      "name": "Bastard Sword",
+      "url": "https://darksouls.fandom.com/wiki/Bastard_Sword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Claymore",
+      "url": "https://darksouls.fandom.com/wiki/Claymore_(Dark_Souls_III)"
+    },
+    {
+      "name": "Flamberge",
+      "url": "https://darksouls.fandom.com/wiki/Flamberge_(Dark_Souls_III)"
+    },
+    {
+      "name": "Drakeblood Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Drakeblood_Greatsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Executioner's Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Executioner%27s_Greatsword"
+    },
+    {
+      "name": "Black Knight Sword",
+      "url": "https://darksouls.fandom.com/wiki/Black_Knight_Sword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Onyx Blade",
+      "url": "https://darksouls.fandom.com/wiki/Onyx_Blade"
+    },
+    {
+      "name": "Hollowslayer Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Hollowslayer_Greatsword"
+    },
+    {
+      "name": "Wolnir's Holy Sword",
+      "url": "https://darksouls.fandom.com/wiki/Wolnir%27s_Holy_Sword"
+    },
+    {
+      "name": "Greatsword of Judgment",
+      "url": "https://darksouls.fandom.com/wiki/Greatsword_of_Judgment"
+    },
+    {
+      "name": "Storm Ruler",
+      "url": "https://darksouls.fandom.com/wiki/Storm_Ruler"
+    },
+    {
+      "name": "Wolf Knight's Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Wolf_Knight%27s_Greatsword"
+    },
+    {
+      "name": "Moonlight Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Moonlight_Greatsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Firelink Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Firelink_Greatsword"
+    },
+    {
+      "name": "Twin Princes' Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Twin_Princes%27_Greatsword"
+    },
+    {
+      "name": "Gael's Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Gael%27s_Greatsword"
+    },
+    {
+      "name": "Zweihander",
+      "url": "https://darksouls.fandom.com/wiki/Zweihander_(Dark_Souls_III)"
+    },
+    {
+      "name": "Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Greatsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Astora Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Astora_Greatsword"
+    },
+    {
+      "name": "Lothric Knight Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Lothric_Knight_Greatsword"
+    },
+    {
+      "name": "Cathedral Knight Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Cathedral_Knight_Greatsword"
+    },
+    {
+      "name": "Black Knight Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Black_Knight_Greatsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Fume Ultra Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Fume_Ultra_Greatsword_(Dark_Souls_III)"
+    },
+    {
+      "name": "Profaned Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Profaned_Greatsword"
+    },
+    {
+      "name": "Lorian's Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Lorian%27s_Greatsword"
+    },
+    {
+      "name": "Ringed Knight Paired Greatswords",
+      "url": "https://darksouls.fandom.com/wiki/Ringed_Knight_Paired_Greatswords"
+    },
+    {
+      "name": "Farron Greatsword",
+      "url": "https://darksouls.fandom.com/wiki/Farron_Greatsword"
+    },
+    {
+      "name": "Rapier",
+      "url": "https://darksouls.fandom.com/wiki/Rapier_(Dark_Souls_III)"
+    },
+    {
+      "name": "Estoc",
+      "url": "https://darksouls.fandom.com/wiki/Estoc_(Dark_Souls_III)"
+    },
+    {
+      "name": "Ricard's Rapier",
+      "url": "https://darksouls.fandom.com/wiki/Ricard%27s_Rapier_(Dark_Souls_III)"
+    },
+    {
+      "name": "Irithyll Rapier",
+      "url": "https://darksouls.fandom.com/wiki/Irithyll_Rapier"
+    },
+    {
+      "name": "Crystal Sage's Rapier",
+      "url": "https://darksouls.fandom.com/wiki/Crystal_Sage%27s_Rapier"
+    },
+    {
+      "name": "Crow Quills",
+      "url": "https://darksouls.fandom.com/wiki/Crow_Quills"
+    },
+    {
+      "name": "Torch",
+      "url": "https://darksouls.fandom.com/wiki/Torch_(Dark_Souls_III)"
+    },
+    {
+      "name": "Follower Torch",
+      "url": "https://darksouls.fandom.com/wiki/Follower_Torch"
+    },
+    {
+      "name": "Whip",
+      "url": "https://darksouls.fandom.com/wiki/Whip_(Dark_Souls_III)"
+    },
+    {
+      "name": "Notched Whip",
+      "url": "https://darksouls.fandom.com/wiki/Notched_Whip_(Dark_Souls_III)"
+    },
+    {
+      "name": "Spotted Whip",
+      "url": "https://darksouls.fandom.com/wiki/Spotted_Whip_(Dark_Souls_III)"
+    },
+    {
+      "name": "Witch's Locks",
+      "url": "https://darksouls.fandom.com/wiki/Witch%27s_Locks"
+    },
+    {
+      "name": "Rose of Ariandel",
+      "url": "https://darksouls.fandom.com/wiki/Rose_of_Ariandel"
+    }
+  ]
+}

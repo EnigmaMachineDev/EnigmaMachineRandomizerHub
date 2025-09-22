@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls 3 Character Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4167298152172606"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+                <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Dark Souls 3 Character Randomizer</h1>
+            <button class="reroll-btn" id="generate-loadout">Generate Character</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Weapon</h2>
+                    <button class="reroll-btn" id="reroll-weapon">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="weapon-link" href="#" target="_blank"><span id="weapon"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                    <div class="section-header">
+                        <h2>Armor Set</h2>
+                        <button class="reroll-btn" id="reroll-armor">↻</button>
+                    </div>
+                    <div class="item-container">
+                        <a id="armor-link" href="#" target="_blank"><span id="armor"></span></a>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-header">
+                        <h2>Rings</h2>
+                        <button class="reroll-btn" id="reroll-rings">↻</button>
+                    </div>
+                    <div class="item-container">
+                        <ul id="rings-list"></ul>
+                    </div>
+                </div>
+                <div class="section" id="caster-weapon-section" style="display: none;">
+                    <div class="section-header">
+                        <h2>Caster Weapon</h2>
+                        <button class="reroll-btn" id="reroll-caster-weapon">↻</button>
+                    </div>
+                    <div class="item-container">
+                        <a id="caster-weapon-link" href="#" target="_blank"><span id="caster-weapon"></span></a>
+                    </div>
+                </div>
+                <div class="section" id="spells-section">
+                    <div class="section-header">
+                        <h2 id="spell-type-label">Spells: (None)</h2>
+                        <button class="reroll-btn" id="reroll-spells">↻</button>
+                    </div>
+                    <ul id="spells-list"></ul>
+                </div>
+        </div>
+    </div>
+    <div class="coffee-link">
+        <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+            ☕ Buy me a coffee
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

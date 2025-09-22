@@ -1,0 +1,519 @@
+{
+  "victories": [
+    {
+      "name": "Time"
+    },
+    {
+      "name": "Science"
+    },
+    {
+      "name": "Domination"
+    },
+    {
+      "name": "Cultural"
+    },
+    {
+      "name": "Diplomatic"
+    }
+  ],
+  "leaders": [
+    {
+      "name": "Wu Zetian - China",
+      "dlc": true
+    },
+    {
+      "name": "William - The Netherlands",
+      "dlc": true
+    },
+    {
+      "name": "Washington - America",
+      "dlc": false
+    },
+    {
+      "name": "Theodora - Byzantium",
+      "dlc": true
+    },
+    {
+      "name": "Suleiman - The Ottomans",
+      "dlc": false
+    },
+    {
+      "name": "Shaka - The Zulus",
+      "dlc": true
+    },
+    {
+      "name": "Sejong - Korea",
+      "dlc": true
+    },
+    {
+      "name": "Ramkhamhaeng - Siam",
+      "dlc": false
+    },
+    {
+      "name": "Ramesses II - Egypt",
+      "dlc": false
+    },
+    {
+      "name": "Pocatello - The Shoshone",
+      "dlc": true
+    },
+    {
+      "name": "Pedro II - Brazil",
+      "dlc": true
+    },
+    {
+      "name": "Pachacuti - The Inca",
+      "dlc": true
+    },
+    {
+      "name": "Pacal - The Maya",
+      "dlc": true
+    },
+    {
+      "name": "Oda Nobunaga - Japan",
+      "dlc": false
+    },
+    {
+      "name": "Nebuchadnezzar II - Babylon",
+      "dlc": true
+    },
+    {
+      "name": "Napoleon - France",
+      "dlc": false
+    },
+    {
+      "name": "Montezuma - The Aztecs",
+      "dlc": false
+    },
+    {
+      "name": "Maria Theresa - Austria",
+      "dlc": true
+    },
+    {
+      "name": "Maria I - Portugal",
+      "dlc": true
+    },
+    {
+      "name": "Kamehameha - Polynesia",
+      "dlc": true
+    },
+    {
+      "name": "Isabella - Spain",
+      "dlc": true
+    },
+    {
+      "name": "Hiawatha - The Iroquois",
+      "dlc": false
+    },
+    {
+      "name": "Harun al-Rashid - Arabia",
+      "dlc": false
+    },
+    {
+      "name": "Harald Bluetooth - Denmark",
+      "dlc": true
+    },
+    {
+      "name": "Haile Selassie - Ethiopia",
+      "dlc": true
+    },
+    {
+      "name": "Gustavus Adolphus - Sweden",
+      "dlc": true
+    },
+    {
+      "name": "Genghis Khan - Mongolia",
+      "dlc": false
+    },
+    {
+      "name": "Gandhi - India",
+      "dlc": false
+    },
+    {
+      "name": "Gajah Mada - Indonesia",
+      "dlc": true
+    },
+    {
+      "name": "Enrico Dandolo - Venice",
+      "dlc": true
+    },
+    {
+      "name": "Elizabeth - England",
+      "dlc": false
+    },
+    {
+      "name": "Dido - Carthage",
+      "dlc": true
+    },
+    {
+      "name": "Darius I - Persia",
+      "dlc": false
+    },
+    {
+      "name": "Catherine - Russia",
+      "dlc": false
+    },
+    {
+      "name": "Casimir III - Poland",
+      "dlc": true
+    },
+    {
+      "name": "Boudicca - The Celts",
+      "dlc": true
+    },
+    {
+      "name": "Bismark - Germany",
+      "dlc": false
+    },
+    {
+      "name": "Augustus Caesar - Rome",
+      "dlc": false
+    },
+    {
+      "name": "Attila - The Huns",
+      "dlc": true
+    },
+    {
+      "name": "Askia - Songhai",
+      "dlc": false
+    },
+    {
+      "name": "Ashurbanipal - Assyria",
+      "dlc": true
+    },
+    {
+      "name": "Alexander - Greece",
+      "dlc": false
+    },
+    {
+      "name": "Ahmad al-Mansur - Morocco",
+      "dlc": true
+    }
+  ],
+  "difficulty": [
+    {
+      "name": "Settler"
+    },
+    {
+      "name": "Chieftain"
+    },
+    {
+      "name": "Warlord"
+    },
+    {
+      "name": "Prince"
+    },
+    {
+      "name": "King"
+    },
+    {
+      "name": "Emperor"
+    },
+    {
+      "name": "Immortal"
+    },
+    {
+      "name": "Deity"
+    }
+  ],
+  "pace": [
+    {
+      "name": "Quick"
+    },
+    {
+      "name": "Standard"
+    },
+    {
+      "name": "Epic"
+    },
+    {
+      "name": "Marathon"
+    }
+  ],
+  "maps": [
+    {
+      "name": "Continents",
+      "dlc": false
+    },
+    {
+      "name": "Pangaea",
+      "dlc": false
+    },
+    {
+      "name": "Archipelago",
+      "dlc": false
+    },
+    {
+      "name": "Fractal",
+      "dlc": false
+    },
+    {
+      "name": "Earth",
+      "dlc": false
+    },
+    {
+      "name": "Amazon Plus",
+      "dlc": true
+    },
+    {
+      "name": "Americas",
+      "dlc": true
+    },
+    {
+      "name": "Ancient Lakes",
+      "dlc": true
+    },
+    {
+      "name": "Arborea",
+      "dlc": true
+    },
+    {
+      "name": "Archipelago",
+      "dlc": true
+    },
+    {
+      "name": "Asia",
+      "dlc": true
+    },
+    {
+      "name": "Boreal",
+      "dlc": true
+    },
+    {
+      "name": "Continents",
+      "dlc": true
+    },
+    {
+      "name": "Europe",
+      "dlc": true
+    },
+    {
+      "name": "Four Corners",
+      "dlc": true
+    },
+    {
+      "name": "Fractal",
+      "dlc": true
+    },
+    {
+      "name": "Frontier",
+      "dlc": true
+    },
+    {
+      "name": "Great Plains",
+      "dlc": true
+    },
+    {
+      "name": "Great Plains Plus",
+      "dlc": true
+    },
+    {
+      "name": "Hemispheres",
+      "dlc": true
+    },
+    {
+      "name": "Highlands",
+      "dlc": true
+    },
+    {
+      "name": "Ice Age",
+      "dlc": true
+    },
+    {
+      "name": "Inland Sea",
+      "dlc": true
+    },
+    {
+      "name": "Lakes",
+      "dlc": true
+    },
+    {
+      "name": "Large Islands",
+      "dlc": true
+    },
+    {
+      "name": "Mediterranean",
+      "dlc": true
+    },
+    {
+      "name": "Mesopotamia",
+      "dlc": true
+    },
+    {
+      "name": "North vs South",
+      "dlc": true
+    },
+    {
+      "name": "Oval",
+      "dlc": true
+    },
+    {
+      "name": "Pangaea",
+      "dlc": true
+    },
+    {
+      "name": "Rainforest",
+      "dlc": true
+    },
+    {
+      "name": "Ring",
+      "dlc": true
+    },
+    {
+      "name": "SHuffle",
+      "dlc": true
+    },
+    {
+      "name": "Skirmish",
+      "dlc": true
+    },
+    {
+      "name": "Small Continents",
+      "dlc": true
+    },
+    {
+      "name": "Terra",
+      "dlc": true
+    },
+    {
+      "name": "Tilted Axis",
+      "dlc": true
+    },
+    {
+      "name": "Tiny Islands",
+      "dlc": true
+    },
+    {
+      "name": "West vs East",
+      "dlc": true
+    },
+    {
+      "name": "Bering Strait",
+      "dlc": true
+    },
+    {
+      "name": "British Isles",
+      "dlc": true
+    },
+    {
+      "name": "Caribbean",
+      "dlc": true
+    },
+    {
+      "name": "Continents Plus",
+      "dlc": true
+    },
+    {
+      "name": "Donut",
+      "dlc": true
+    },
+    {
+      "name": "Eastern United States",
+      "dlc": true
+    },
+    {
+      "name": "Japanese Mainland",
+      "dlc": true
+    },
+    {
+      "name": "Pangaea Plus",
+      "dlc": true
+    },
+    {
+      "name": "Sandstorm",
+      "dlc": true
+    },
+    {
+      "name": "Africa",
+      "dlc": true
+    },
+    {
+      "name": "Antarctica Thawed",
+      "dlc": true
+    },
+    {
+      "name": "East Asia",
+      "dlc": true
+    },
+    {
+      "name": "Middle East",
+      "dlc": true
+    },
+    {
+      "name": "North America",
+      "dlc": true
+    },
+    {
+      "name": "Oceania",
+      "dlc": true
+    },
+    {
+      "name": "Small Continents Plus",
+      "dlc": true
+    },
+    {
+      "name": "South America",
+      "dlc": true
+    },
+    {
+      "name": "Western Europe",
+      "dlc": true
+    },
+    {
+      "name": "Australia",
+      "dlc": true
+    },
+    {
+      "name": "Canada",
+      "dlc": true
+    },
+    {
+      "name": "China",
+      "dlc": true
+    },
+    {
+      "name": "France",
+      "dlc": true
+    },
+    {
+      "name": "Italy",
+      "dlc": true
+    },
+    {
+      "name": "Russia",
+      "dlc": true
+    },
+    {
+      "name": "Scandinavia",
+      "dlc": true
+    },
+    {
+      "name": "Turkey",
+      "dlc": true
+    },
+    {
+      "name": "United Kingdom",
+      "dlc": true
+    }
+  ],
+  "map_size": [
+    {
+      "name": "Duel"
+    },
+    {
+      "name": "Tiny"
+    },
+    {
+      "name": "Small"
+    },
+    {
+      "name": "Standard"
+    },
+    {
+      "name": "Large"
+    },
+    {
+      "name": "Huge"
+    }
+  ]
+}

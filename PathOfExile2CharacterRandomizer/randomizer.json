@@ -155,7 +155,6 @@
       "name": "Bow",
       "skills": [
         "Bursting Fen Toad (Murkshaft)",
-        "Gemini Surge (Double Vision)",
         "Phantasmal Arrow, (Fairgraves' Curse)",
         "Mirage Archer",
         "Detonating Arrow",
@@ -256,7 +255,7 @@
     {
       "name": "Spear",
       "skills": [
-        "Spire of Ire, (Spire of Ire)",
+        "Chaotic Surge, (Spire of Ire)",
         "Blood Hunt",
         "Elemental Sundering",
         "Explosive Spear",
