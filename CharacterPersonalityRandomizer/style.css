@@ -122,3 +122,19 @@ a:hover {
     text-align: center;
     margin-top: 2rem;
 }
+
+.about-content {
+    text-align: center;
+    padding: 1rem;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0.5rem;
+    }
+}
+
