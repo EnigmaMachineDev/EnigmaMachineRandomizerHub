@@ -1,0 +1,122 @@
+{
+  "spirits": {
+    "whiskey": [
+      "Bourbon",
+      "Scotch Whisky",
+      "Irish Whiskey",
+      "Rye Whiskey",
+      "Tennessee Whiskey",
+      "Canadian Whisky",
+      "Japanese Whisky",
+      "Single Malt",
+      "Blended Whiskey",
+      "Corn Whiskey",
+      "Wheat Whiskey"
+    ],
+    "rum": [
+      "White/Light Rum",
+      "Gold/Amber Rum",
+      "Dark Rum",
+      "Spiced Rum",
+      "Aged Rum",
+      "Overproof Rum",
+      "Rhum Agricole",
+      "Cachaça",
+      "Navy Rum"
+    ],
+    "vodka": [
+      "Grain Vodka",
+      "Potato Vodka",
+      "Rye Vodka",
+      "Wheat Vodka",
+      "Corn Vodka",
+      "Flavored Vodka"
+    ],
+    "gin": [
+      "London Dry Gin",
+      "Plymouth Gin",
+      "Old Tom Gin",
+      "Genever",
+      "Navy Strength Gin",
+      "Contemporary/New Western Gin",
+      "Sloe Gin",
+      "Flavored Gin"
+    ],
+    "tequila_and_mezcal": [
+      "Blanco/Silver Tequila",
+      "Reposado Tequila",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Cristalino Tequila",
+      "Mezcal",
+      "Joven/Gold Tequila"
+    ],
+    "brandy": [
+      "Cognac",
+      "Armagnac",
+      "Brandy de Jerez",
+      "American Brandy",
+      "Pisco",
+      "Grappa",
+      "Calvados",
+      "Fruit Brandy",
+      "Pomace Brandy",
+      "VS Cognac",
+      "VSOP Cognac",
+      "XO Cognac"
+    ],
+    "liqueurs": [
+      "Triple Sec",
+      "Amaretto",
+      "Kahlúa (Coffee Liqueur)",
+      "Baileys (Irish Cream)",
+      "Grand Marnier",
+      "Cointreau",
+      "Chambord",
+      "St-Germain (Elderflower)",
+      "Frangelico (Hazelnut)",
+      "Limoncello",
+      "Sambuca",
+      "Chartreuse",
+      "Bénédictine",
+      "Drambuie",
+      "Campari",
+      "Aperol",
+      "Crème de Menthe",
+      "Crème de Cacao",
+      "Crème de Cassis",
+      "Midori (Melon)",
+      "Schnapps"
+    ],
+    "absinthe": [
+      "Verte (Green Absinthe)",
+      "Blanche (Clear Absinthe)",
+      "Bohemian Absinthe",
+      "Swiss Absinthe"
+    ],
+    "other_spirits": [
+      "Aquavit",
+      "Ouzo",
+      "Rakı",
+      "Arak",
+      "Soju",
+      "Shochu",
+      "Baijiu",
+      "Arrack",
+      "Pastis",
+      "Sambuca",
+      "Aguardiente",
+      "Pálinka",
+      "Poitín/Poteen"
+    ],
+    "bitters": [
+      "Angostura Bitters",
+      "Peychaud's Bitters",
+      "Orange Bitters",
+      "Aromatic Bitters",
+      "Chocolate Bitters",
+      "Celery Bitters",
+      "Grapefruit Bitters"
+    ]
+  }
+}

@@ -102,7 +102,7 @@
       "link": "https://darksouls.fandom.com/wiki/Maiden_Set_(Dark_Souls_III)"
     },
     {
-      "name.": "Master's Set",
+      "name": "Master's Set",
       "link": "https://darksouls.fandom.com/wiki/Master%27s_Set"
     },
     {
@@ -370,142 +370,137 @@
     {
       "name": "Priest's Chime",
       "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Priest's+Chime"
-    },
-    {
-      "name": "Cleric's Sacred Chime",
-      "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Cleric's+Sacred+Chime"
+      "link": "https://darksouls.fandom.com/wiki/Priest's_Chime"
     },
     {
       "name": "Caitha's Chime",
       "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Caitha's+Chime"
+      "link": "https://darksouls.fandom.com/wiki/Caitha's_Chime"
     },
     {
       "name": "Saint-tree Bellvine",
       "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Saint-tree+Bellvine"
+      "link": "https://darksouls.fandom.com/wiki/Saint-tree_Bellvine"
     },
     {
       "name": "Crystal Chime",
       "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Chime"
+      "link": "https://darksouls.fandom.com/wiki/Crystal_Chime"
     },
     {
       "name": "Yorshka's Chime",
       "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Yorshka's+Chime"
+      "link": "https://darksouls.fandom.com/wiki/Yorshka's_Chime"
     },
     {
       "name": "Sacred Chime of Filianore",
       "type": "Chime",
-      "link": "https://darksouls3.wiki.fextralife.com/Sacred+Chime+of+Filianore"
+      "link": "https://darksouls.fandom.com/wiki/Sacred_Chime_of_Filianore"
     },
     {
       "name": "Talisman",
       "type": "Talisman",
-      "link": "https://darksouls3.wiki.fextralife.com/Talisman"
+      "link": "https://darksouls.fandom.com/wiki/Talisman_(Dark_Souls_III)"
     },
     {
       "name": "Saint's Talisman",
       "type": "Talisman",
-      "link": "https://darksouls3.wiki.fextralife.com/Saint's+Talisman"
+      "link": "https://darksouls.fandom.com/wiki/Saint's_Talisman"
     },
     {
       "name": "Sunlight Talisman",
       "type": "Talisman",
-      "link": "https://darksouls3.wiki.fextralife.com/Sunlight+Talisman"
+      "link": "https://darksouls.fandom.com/wiki/Sunlight_Talisman"
     },
     {
       "name": "White Hair Talisman",
       "type": "Talisman",
-      "link": "https://darksouls3.wiki.fextralife.com/White+Hair+Talisman"
+      "link": "https://darksouls.fandom.com/wiki/White_Hair_Talisman"
     },
     {
       "name": "Sunless Talisman",
       "type": "Talisman",
-      "link": "https://darksouls3.wiki.fextralife.com/Sunless+Talisman"
+      "link": "https://darksouls.fandom.com/wiki/Sunless_Talisman"
     },
     {
       "name": "Canvas Talisman",
       "type": "Talisman",
-      "link": "https://darksouls3.wiki.fextralife.com/Canvas+Talisman"
+      "link": "https://darksouls.fandom.com/wiki/Canvas_Talisman"
     },
     {
       "name": "Pyromancy Flame",
       "type": "Flame",
-      "link": "https://darksouls3.wiki.fextralife.com/Pyromancy+Flame"
+      "link": "https://darksouls.fandom.com/wiki/Pyromancy_Flame"
     },
     {
       "name": "Pyromancer's Parting Flame",
       "type": "Flame",
-      "link": "https://darksouls3.wiki.fextralife.com/Pyromancer's+Parting+Flame"
+      "link": "https://darksouls.fandom.com/wiki/Pyromancer's_Parting_Flame"
     },
     {
       "name": "Demon's Scar",
       "type": "Flame",
-      "link": "https://darksouls3.wiki.fextralife.com/Demon's+Scar"
+      "link": "https://darksouls.fandom.com/wiki/Demon's_Scar"
     },
     {
       "name": "Sorcerer's Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Sorcerer's+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Sorcerer's_Staff"
     },
     {
       "name": "Court Sorcerer's Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Court+Sorcerer's+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Court_Sorcerer's_Staff"
     },
     {
       "name": "Heretic's Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Heretic's+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Heretic's_Staff"
     },
     {
       "name": "Witch Tree Branch",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Witch+Tree+Branch"
+      "link": "https://darksouls.fandom.com/wiki/Witch_Tree_Branch"
     },
     {
       "name": "Sage's Crystal Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Sage's+Crystal+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Sage's_Crystal_Staff"
     },
     {
       "name": "Izalith Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Izalith+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Izalith_Staff"
     },
     {
       "name": "Storyteller's Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Storyteller's+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Storyteller's_Staff"
     },
     {
       "name": "Archdeacon Great Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Archdeacon's+Great+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Archdeacon's_Great_Staff"
     },
     {
       "name": "Man-Grub's Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Man-Grub's+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Man-Grub's_Staff"
     },
     {
       "name": "Mendicant's Staff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Mendicant's+Staff"
+      "link": "https://darksouls.fandom.com/wiki/Mendicant's_Staff"
     },
     {
       "name": "Preacher's Right Arm",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Preacher's+Right+Arm"
+      "link": "https://darksouls.fandom.com/wiki/Preacher's_Right_Arm"
     },
     {
       "name": "Murky Longstaff",
       "type": "Staff",
-      "link": "https://darksouls3.wiki.fextralife.com/Murky+Longstaff"
+      "link": "https://darksouls.fandom.com/wiki/Murky_Longstaff"
     }
   ],
   "rings": [
@@ -798,532 +793,532 @@
     {
       "name": "Frozen Weapon",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Frozen+Weapon"
+      "link": "https://darksouls.fandom.com/wiki/Frozen_Weapon"
     },
     {
       "name": "Snap Freeze",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Snap+Freeze"
+      "link": "https://darksouls.fandom.com/wiki/Snap_Freeze"
     },
     {
       "name": "Floating Chaos",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Floating+Chaos"
+      "link": "https://darksouls.fandom.com/wiki/Floating_Chaos"
     },
     {
       "name": "Way of White Corona",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Way+of+White+Corona"
+      "link": "https://darksouls.fandom.com/wiki/Way_of_White_Corona"
     },
     {
       "name": "Great Soul Dregs",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Soul+Dregs"
+      "link": "https://darksouls.fandom.com/wiki/Great_Soul_Dregs"
     },
     {
       "name": "Old Moonlight",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Old+Moonlight"
+      "link": "https://darksouls.fandom.com/wiki/Old_Moonlight"
     },
     {
       "name": "Flame Fan",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Flame+Fan"
+      "link": "https://darksouls.fandom.com/wiki/Flame_Fan"
     },
     {
       "name": "Seething Chaos",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Seething+Chaos"
+      "link": "https://darksouls.fandom.com/wiki/Seething_Chaos"
     },
     {
       "name": "Lightning Arrow",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Arrow"
+      "link": "https://darksouls.fandom.com/wiki/Lightning_Arrow"
     },
     {
       "name": "Projected Heal",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Projected+Heal"
+      "link": "https://darksouls.fandom.com/wiki/Projected_Heal"
     },
     {
       "name": "Heal Aid",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Heal+Aid"
+      "link": "https://darksouls.fandom.com/wiki/Heal_Aid"
     },
     {
       "name": "Heal",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Heal"
+      "link": "https://darksouls.fandom.com/wiki/Heal"
     },
     {
       "name": "Med Heal",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Med+Heal"
+      "link": "https://darksouls.fandom.com/wiki/Med_Heal"
     },
     {
       "name": "Great Heal",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Heal"
+      "link": "https://darksouls.fandom.com/wiki/Great_Heal"
     },
     {
       "name": "Soothing Sunlight",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Soothing+Sunlight"
+      "link": "https://darksouls.fandom.com/wiki/Soothing_Sunlight"
     },
     {
       "name": "Replenishment",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Replenishment"
+      "link": "https://darksouls.fandom.com/wiki/Replenishment"
     },
     {
       "name": "Bountiful Light",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Bountiful+Light"
+      "link": "https://darksouls.fandom.com/wiki/Bountiful_Light"
     },
     {
       "name": "Bountiful Sunlight",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Bountiful+Sunlight"
+      "link": "https://darksouls.fandom.com/wiki/Bountiful_Sunlight"
     },
     {
       "name": "Caressing Tears",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Caressing+Tears"
+      "link": "https://darksouls.fandom.com/wiki/Caressing_Tears"
     },
     {
       "name": "Tears of Denial",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Tears+of+Denial"
+      "link": "https://darksouls.fandom.com/wiki/Tears_of_Denial"
     },
     {
       "name": "Homeward",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Homeward"
+      "link": "https://darksouls.fandom.com/wiki/Homeward"
     },
     {
       "name": "Seek Guidance",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Seek+Guidance"
+      "link": "https://darksouls.fandom.com/wiki/Seek_Guidance"
     },
     {
       "name": "Sacred Oath",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Sacred+Oath"
+      "link": "https://darksouls.fandom.com/wiki/Sacred_Oath"
     },
     {
       "name": "Force",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Force"
+      "link": "https://darksouls.fandom.com/wiki/Force"
     },
     {
       "name": "Emit Force",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Emit+Force"
+      "link": "https://darksouls.fandom.com/wiki/Emit_Force"
     },
     {
       "name": "Wrath of the Gods",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Wrath+of+the+Gods"
+      "link": "https://darksouls.fandom.com/wiki/Wrath_of_the_Gods"
     },
     {
       "name": "Lightning Spear",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Spear"
+      "link": "https://darksouls.fandom.com/wiki/Lightning_Spear"
     },
     {
       "name": "Great Lightning Spear",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Lightning+Spear"
+      "link": "https://darksouls.fandom.com/wiki/Great_Lightning_Spear"
     },
     {
       "name": "Sunlight Spear",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Sunlight+Spear"
+      "link": "https://darksouls.fandom.com/wiki/Sunlight_Spear"
     },
     {
       "name": "Lightning Stake",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Stake"
+      "link": "https://darksouls.fandom.com/wiki/Lightning_Stake"
     },
     {
       "name": "Lightning Storm",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Storm"
+      "link": "https://darksouls.fandom.com/wiki/Lightning_Storm"
     },
     {
       "name": "Divine Pillars of Light",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Divine+Pillars+of+Light"
+      "link": "https://darksouls.fandom.com/wiki/Divine_Pillars_of_Light"
     },
     {
       "name": "Blessed Weapon",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Blessed+Weapon"
+      "link": "https://darksouls.fandom.com/wiki/Blessed_Weapon"
     },
     {
       "name": "Lightning Blade",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Lightning+Blade"
+      "link": "https://darksouls.fandom.com/wiki/Lightning_Blade"
     },
     {
       "name": "Darkmoon Blade",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Darkmoon+Blade"
+      "link": "https://darksouls.fandom.com/wiki/Darkmoon_Blade"
     },
     {
       "name": "Magic Barrier",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Magic+Barrier"
+      "link": "https://darksouls.fandom.com/wiki/Magic_Barrier"
     },
     {
       "name": "Great Magic Barrier",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Magic+Barrier"
+      "link": "https://darksouls.fandom.com/wiki/Great_Magic_Barrier"
     },
     {
       "name": "Dark Blade",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Dark+Blade"
+      "link": "https://darksouls.fandom.com/wiki/Dark_Blade"
     },
     {
       "name": "Vow of Silence",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Vow+of+Silence"
+      "link": "https://darksouls.fandom.com/wiki/Vow_of_Silence"
     },
     {
       "name": "Dead Again",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Dead+Again"
+      "link": "https://darksouls.fandom.com/wiki/Dead_Again"
     },
     {
       "name": "Atonement",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Atonement"
+      "link": "https://darksouls.fandom.com/wiki/Atonement"
     },
     {
       "name": "Deep Protection",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Deep+Protection"
+      "link": "https://darksouls.fandom.com/wiki/Deep_Protection"
     },
     {
       "name": "Gnaw",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Gnaw"
+      "link": "https://darksouls.fandom.com/wiki/Gnaw"
     },
     {
       "name": "Dorhy's Gnawing",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Dorhy's+Gnawing"
+      "link": "https://darksouls.fandom.com/wiki/Dorhy's_Gnawing"
     },
     {
       "name": "Lifehunt Scythe",
       "type": "Miracle",
-      "link": "https://darksouls3.wiki.fextralife.com/Lifehunt+Scythe"
+      "link": "https://darksouls.fandom.com/wiki/Lifehunt_Scythe"
     },
     {
       "name": "Fireball",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Fireball"
+      "link": "https://darksouls.fandom.com/wiki/Fireball"
     },
     {
       "name": "Fire Orb",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Fire+Orb"
+      "link": "https://darksouls.fandom.com/wiki/Fire_Orb"
     },
     {
       "name": "Bursting Fireball",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Bursting+Fireball"
+      "link": "https://darksouls.fandom.com/wiki/Bursting_Fireball"
     },
     {
       "name": "Great Chaos Fire Orb",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Chaos+Fire+Orb"
+      "link": "https://darksouls.fandom.com/wiki/Great_Chaos_Fire_Orb"
     },
     {
       "name": "Chaos Bed Vestiges",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Chaos+Bed+Vestiges"
+      "link": "https://darksouls.fandom.com/wiki/Chaos_Bed_Vestiges"
     },
     {
       "name": "Fire Surge",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Fire+Surge"
+      "link": "https://darksouls.fandom.com/wiki/Fire_Surge"
     },
     {
       "name": "Fire Whip",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Fire+Whip"
+      "link": "https://darksouls.fandom.com/wiki/Fire_Whip"
     },
     {
       "name": "Firestorm",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Firestorm"
+      "link": "https://darksouls.fandom.com/wiki/Firestorm"
     },
     {
       "name": "Chaos Storm",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Chaos+Storm"
+      "link": "https://darksouls.fandom.com/wiki/Chaos_Storm"
     },
     {
       "name": "Great Combustion",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Combustion"
+      "link": "https://darksouls.fandom.com/wiki/Great_Combustion"
     },
     {
       "name": "Sacred Flame",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Sacred+Flame"
+      "link": "https://darksouls.fandom.com/wiki/Sacred_Flame"
     },
     {
       "name": "Profaned Flame",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Profaned+Flame"
+      "link": "https://darksouls.fandom.com/wiki/Profaned_Flame"
     },
     {
       "name": "Poison Mist",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Poison+Mist"
+      "link": "https://darksouls.fandom.com/wiki/Poison_Mist"
     },
     {
       "name": "Toxic Mist",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Toxic+Mist"
+      "link": "https://darksouls.fandom.com/wiki/Toxic_Mist"
     },
     {
       "name": "Acid Surge",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Acid+Surge"
+      "link": "https://darksouls.fandom.com/wiki/Acid_Surge"
     },
     {
       "name": "Flash Sweat",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Flash+Sweat"
+      "link": "https://darksouls.fandom.com/wiki/Flash_Sweat"
     },
     {
       "name": "Profuse Sweat",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Profuse+Sweat"
+      "link": "https://darksouls.fandom.com/wiki/Profuse_Sweat"
     },
     {
       "name": "Iron Flesh",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Iron+Flesh"
+      "link": "https://darksouls.fandom.com/wiki/Iron_Flesh"
     },
     {
       "name": "Power Within",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Power+Within"
+      "link": "https://darksouls.fandom.com/wiki/Power_Within"
     },
     {
       "name": "Carthus Beacon",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Carthus+Beacon"
+      "link": "https://darksouls.fandom.com/wiki/Carthus_Beacon"
     },
     {
       "name": "Carthus Flame Arc",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Carthus+Flame+Arc"
+      "link": "https://darksouls.fandom.com/wiki/Carthus_Flame_Arc"
     },
     {
       "name": "Warmth",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Warmth"
+      "link": "https://darksouls.fandom.com/wiki/Warmth"
     },
     {
       "name": "Rapport",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Rapport"
+      "link": "https://darksouls.fandom.com/wiki/Rapport"
     },
     {
       "name": "Boulder Heave",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Boulder+Heave"
+      "link": "https://darksouls.fandom.com/wiki/Boulder_Heave"
     },
     {
       "name": "Black Flame",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Black+Flame"
+      "link": "https://darksouls.fandom.com/wiki/Black_Flame"
     },
     {
       "name": "Black Fire Orb",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Black+Fire+Orb"
+      "link": "https://darksouls.fandom.com/wiki/Black_Fire_Orb"
     },
     {
       "name": "Black Serpent",
       "type": "Pyromancy",
-      "link": "https://darksouls3.wiki.fextralife.com/Black+Serpent"
+      "link": "https://darksouls.fandom.com/wiki/Black_Serpent"
     },
     {
       "name": "Soul Arrow",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Soul+Arrow"
+      "link": "https://darksouls.fandom.com/wiki/Soul_Arrow"
     },
     {
       "name": "Great Soul Arrow",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Soul+Arrow"
+      "link": "https://darksouls.fandom.com/wiki/Great_Soul_Arrow"
     },
     {
       "name": "Heavy Soul Arrow",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Heavy+Soul+Arrow"
+      "link": "https://darksouls.fandom.com/wiki/Heavy_Soul_Arrow"
     },
     {
       "name": "Great Heavy Soul Arrow",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Heavy+Soul+Arrow"
+      "link": "https://darksouls.fandom.com/wiki/Great_Heavy_Soul_Arrow"
     },
     {
       "name": "Farron Dart",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Farron+Dart"
+      "link": "https://darksouls.fandom.com/wiki/Farron_Dart"
     },
     {
       "name": "Great Farron Dart",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Farron+Dart"
+      "link": "https://darksouls.fandom.com/wiki/Great_Farron_Dart"
     },
     {
       "name": "Farron Hail",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Farron+Hail"
+      "link": "https://darksouls.fandom.com/wiki/Farron_Hail"
     },
     {
       "name": "Homing Soulmass",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Homing+Soulmass"
+      "link": "https://darksouls.fandom.com/wiki/Homing_Soulmass"
     },
     {
       "name": "Homing Crystal Soulmass",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Homing+Crystal+Soulmass"
+      "link": "https://darksouls.fandom.com/wiki/Homing_Crystal_Soulmass"
     },
     {
       "name": "Crystal Hail",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Hail"
+      "link": "https://darksouls.fandom.com/wiki/Crystal_Hail"
     },
     {
       "name": "Soul Spear",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Soul+Spear"
+      "link": "https://darksouls.fandom.com/wiki/Soul_Spear"
     },
     {
       "name": "Crystal Soul Spear",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Soul+Spear"
+      "link": "https://darksouls.fandom.com/wiki/Crystal_Soul_Spear"
     },
     {
       "name": "White Dragon Breath",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/White+Dragon+Breath"
+      "link": "https://darksouls.fandom.com/wiki/White_Dragon_Breath"
     },
     {
       "name": "Soul Stream",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Soul+Stream"
+      "link": "https://darksouls.fandom.com/wiki/Soul_Stream"
     },
     {
       "name": "Soul Greatsword",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Soul+Greatsword"
+      "link": "https://darksouls.fandom.com/wiki/Soul_Greatsword"
     },
     {
       "name": "Farron Flashsword",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Farron+Flashsword"
+      "link": "https://darksouls.fandom.com/wiki/Farron_Flashsword"
     },
     {
       "name": "Magic Weapon",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Magic+Weapon"
+      "link": "https://darksouls.fandom.com/wiki/Magic_Weapon"
     },
     {
       "name": "Great Magic Weapon",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Magic+Weapon"
+      "link": "https://darksouls.fandom.com/wiki/Great_Magic_Weapon"
     },
     {
       "name": "Crystal Magic Weapon",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Crystal+Magic+Weapon"
+      "link": "https://darksouls.fandom.com/wiki/Crystal_Magic_Weapon"
     },
     {
       "name": "Magic Shield",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Magic+Shield"
+      "link": "https://darksouls.fandom.com/wiki/Magic_Shield"
     },
     {
       "name": "Great Magic Shield",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Magic+Shield"
+      "link": "https://darksouls.fandom.com/wiki/Great_Magic_Shield"
     },
     {
       "name": "Spook",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Spook"
+      "link": "https://darksouls.fandom.com/wiki/Spook"
     },
     {
       "name": "Aural Decoy",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Aural+Decoy"
+      "link": "https://darksouls.fandom.com/wiki/Aural_Decoy"
     },
     {
       "name": "Pestilent Mist",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Pestilent+Mist"
+      "link": "https://darksouls.fandom.com/wiki/Pestilent_Mist"
     },
     {
       "name": "Cast Light",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Cast+Light"
+      "link": "https://darksouls.fandom.com/wiki/Cast_Light"
     },
     {
       "name": "Repair",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Repair"
+      "link": "https://darksouls.fandom.com/wiki/Repair"
     },
     {
       "name": "Hidden Weapon",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Hidden+Weapon"
+      "link": "https://darksouls.fandom.com/wiki/Hidden_Weapon"
     },
     {
       "name": "Hidden Body",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Hidden+Body"
+      "link": "https://darksouls.fandom.com/wiki/Hidden_Body"
     },
     {
       "name": "Chameleon",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Chameleon"
+      "link": "https://darksouls.fandom.com/wiki/Chameleon"
     },
     {
       "name": "Twisted Wall of Light",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Twisted+Wall+of+Light"
+      "link": "https://darksouls.fandom.com/wiki/Twisted_Wall_of_Light"
     },
     {
       "name": "Deep Soul",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Deep+Soul"
+      "link": "https://darksouls.fandom.com/wiki/Deep_Soul"
     },
     {
       "name": "Great Deep Soul",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Great+Deep+Soul"
+      "link": "https://darksouls.fandom.com/wiki/Great_Deep_Soul"
     },
     {
       "name": "Affinity",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Affinity"
+      "link": "https://darksouls.fandom.com/wiki/Affinity"
     },
     {
       "name": "Dark Edge",
       "type": "Sorcery",
-      "link": "https://darksouls3.wiki.fextralife.com/Dark+Edge"
+      "link": "https://darksouls.fandom.com/wiki/Dark_Edge"
     }
   ],
   "weapons": [

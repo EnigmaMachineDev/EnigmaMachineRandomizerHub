@@ -100,5 +100,15 @@
     "12-16",
     "16-20",
     "20-25"
+  ],
+  "Vermouth and Fortified": [
+    "Dry Vermouth",
+    "Sweet Vermouth",
+    "Blanc/Bianco Vermouth",
+    "Rosé Vermouth",
+    "Sherry",
+    "Port",
+    "Madeira",
+    "Marsala"
   ]
 }

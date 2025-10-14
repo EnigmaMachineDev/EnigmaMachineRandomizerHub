@@ -1,0 +1,374 @@
+{
+  "beer_styles": {
+    "ales": {
+      "categories": {
+        "pale_ales": [
+          "American Pale Ale (APA)",
+          "English Pale Ale",
+          "India Pale Ale (IPA)",
+          "New England IPA (NEIPA/Hazy IPA)",
+          "West Coast IPA",
+          "Double/Imperial IPA",
+          "Session IPA",
+          "Belgian Pale Ale",
+          "Bière de Garde",
+          "Rye IPA",
+          "Black IPA"
+        ],
+        "brown_ales": [
+          "American Brown Ale",
+          "English Brown Ale",
+          "Nut Brown Ale"
+        ],
+        "amber_and_red_ales": [
+          "American Amber Ale",
+          "Irish Red Ale",
+          "Red IPA"
+        ],
+        "dark_ales": [
+          "English Porter",
+          "American Porter",
+          "Baltic Porter",
+          "Robust Porter",
+          "Coffee Porter",
+          "Chocolate Porter",
+          "Dry Stout",
+          "Irish Stout",
+          "Sweet Stout",
+          "Milk Stout",
+          "Oatmeal Stout",
+          "Imperial Stout",
+          "Foreign Extra Stout",
+          "American Stout",
+          "Chocolate Stout",
+          "Coffee Stout",
+          "Oyster Stout",
+          "Rye Stout"
+        ],
+        "belgian_ales": [
+          "Belgian Blonde Ale",
+          "Belgian Dubbel",
+          "Belgian Tripel",
+          "Belgian Quadrupel",
+          "Belgian Strong Dark Ale",
+          "Belgian Strong Golden Ale",
+          "Saison (Farmhouse Ale)",
+          "Belgian Witbier (White Beer)"
+        ],
+        "wheat_ales": [
+          "American Wheat Ale",
+          "Hefeweizen (German Wheat)",
+          "Dunkelweizen (Dark Wheat)",
+          "Weizenbock",
+          "Berliner Weisse",
+          "Gose"
+        ],
+        "sour_ales": [
+          "Lambic",
+          "Gueuze",
+          "Flanders Red Ale",
+          "Oud Bruin (Old Brown)",
+          "American Wild Ale",
+          "Kriek (Cherry Lambic)",
+          "Framboise (Raspberry Lambic)",
+          "Fruit Lambic"
+        ],
+        "british_ales": [
+          "Ordinary Bitter",
+          "Best Bitter",
+          "Extra Special Bitter (ESB)",
+          "Mild Ale",
+          "Old Ale",
+          "English Barleywine",
+          "American Barleywine",
+          "Scotch Ale/Wee Heavy",
+          "Scottish Light Ale",
+          "Scottish Heavy Ale",
+          "Scottish Export Ale"
+        ],
+        "specialty_ales": [
+          "Cream Ale",
+          "Blonde Ale",
+          "Golden Ale",
+          "Kölsch",
+          "Altbier",
+          "California Common (Steam Beer)",
+          "Rye Ale",
+          "Fruit Beer",
+          "Spiced/Herb Beer",
+          "Pumpkin Ale",
+          "Smoked Ale"
+        ]
+      }
+    },
+    "lagers": {
+      "categories": {
+        "pale_lagers": [
+          "American Lager",
+          "Premium American Lager",
+          "Light Lager",
+          "Czech Pilsner",
+          "German Pilsner",
+          "American Pilsner",
+          "Helles (Munich Helles)",
+          "Dortmunder Export"
+        ],
+        "amber_and_dark_lagers": [
+          "Märzen/Oktoberfest",
+          "Amber Lager",
+          "Dunkel (Munich Dunkel)",
+          "Schwarzbier (Black Lager)",
+          "Tmavé (Czech Dark Lager)",
+          "Vienna Lager"
+        ],
+        "strong_lagers": [
+          "Doppelbock",
+          "Eisbock",
+          "Maibock",
+          "Helles Bock",
+          "Traditional Bock",
+          "Baltic Porter"
+        ],
+        "specialty_lagers": [
+          "Rauchbier (Smoked Lager)",
+          "Kellerbier (Unfiltered Lager)",
+          "Zwickelbier (Unfiltered Lager)",
+          "Italian Pilsner (IPL)",
+          "Cold IPA"
+        ]
+      }
+    }
+  },
+  "Wines": [
+    "Fruit Wine",
+    "Mead",
+    "Sake"
+  ],
+  "Fruit Wine": [
+    "Raspberry",
+    "Pear",
+    "Plum",
+    "Apple",
+    "Pineapple",
+    "Strawberry",
+    "Grape",
+    "Mango",
+    "Blackberry",
+    "Banana",
+    "Blueberry",
+    "Apricot",
+    "Cherry",
+    "Peach",
+    "Honeydew",
+    "Dragonfruit",
+    "Orange",
+    "Lemon",
+    "Watermelon",
+    "Lime",
+    "Agave",
+    "Currant",
+    "Gooseberry",
+    "Elderberry",
+    "Goji Berry",
+    "Nectarine",
+    "Crabapple",
+    "Grapefruit",
+    "Tangerine",
+    "Mandarin",
+    "Blood Orange",
+    "Yuzu",
+    "Papaya",
+    "Passion Fruit",
+    "Kiwi",
+    "Guava",
+    "Star Fruit",
+    "Pomegranate",
+    "Fig",
+    "Date",
+    "Jackfruit",
+    "Acai",
+    "Cacao"
+  ],
+  "Mead": [
+    "Traditional",
+    "Melomel",
+    "Metheglin",
+    "Hydromel",
+    "Capsicumel",
+    "Acerglyn",
+    "Rhodomel",
+    "Sack Mead",
+    "Braggot",
+    "Pyment",
+    "Bochet",
+    "Great Mead",
+    "Short Mead",
+    "Cyser",
+    "Morat",
+    "Hippocras",
+    "Oxymel",
+    "Omphacomel",
+    "T'ej",
+    "Rhyzamel",
+    "Faro",
+    "Lactomel"
+  ],
+  "Sake": [
+    "Honjozo",
+    "Ginjo",
+    "Daiginjo",
+    "Jumai",
+    "Junmai Ginjo",
+    "Junmai Daiginjo"
+  ],
+  "Sweetness": [
+    "Dry",
+    "Off-Dry",
+    "Semi Sweet",
+    "Sweet",
+    "Very Sweet"
+  ],
+  "Carbonation": [
+    "Carbonated",
+    "Sparkling",
+    "Flat"
+  ],
+  "Alcohol Content": [
+    "1-4",
+    "5-8",
+    "8-12",
+    "12-16",
+    "16-20",
+    "20-25"
+  ],
+  "Vermouth and Fortified": [
+    "Dry Vermouth",
+    "Sweet Vermouth",
+    "Blanc/Bianco Vermouth",
+    "Rosé Vermouth",
+    "Sherry",
+    "Port",
+    "Madeira",
+    "Marsala"
+  ],
+  "spirits": {
+    "whiskey": [
+      "Bourbon",
+      "Scotch Whisky",
+      "Irish Whiskey",
+      "Rye Whiskey",
+      "Tennessee Whiskey",
+      "Canadian Whisky",
+      "Japanese Whisky",
+      "Single Malt",
+      "Blended Whiskey",
+      "Corn Whiskey",
+      "Wheat Whiskey"
+    ],
+    "rum": [
+      "White/Light Rum",
+      "Gold/Amber Rum",
+      "Dark Rum",
+      "Spiced Rum",
+      "Aged Rum",
+      "Overproof Rum",
+      "Rhum Agricole",
+      "Cachaça",
+      "Navy Rum"
+    ],
+    "vodka": [
+      "Grain Vodka",
+      "Potato Vodka",
+      "Rye Vodka",
+      "Wheat Vodka",
+      "Corn Vodka",
+      "Flavored Vodka"
+    ],
+    "gin": [
+      "London Dry Gin",
+      "Plymouth Gin",
+      "Old Tom Gin",
+      "Genever",
+      "Navy Strength Gin",
+      "Contemporary/New Western Gin",
+      "Sloe Gin",
+      "Flavored Gin"
+    ],
+    "tequila_and_mezcal": [
+      "Blanco/Silver Tequila",
+      "Reposado Tequila",
+      "Añejo Tequila",
+      "Extra Añejo Tequila",
+      "Cristalino Tequila",
+      "Mezcal",
+      "Joven/Gold Tequila"
+    ],
+    "brandy": [
+      "Cognac",
+      "Armagnac",
+      "Brandy de Jerez",
+      "American Brandy",
+      "Pisco",
+      "Grappa",
+      "Calvados",
+      "Fruit Brandy",
+      "Pomace Brandy",
+      "VS Cognac",
+      "VSOP Cognac",
+      "XO Cognac"
+    ],
+    "liqueurs": [
+      "Triple Sec",
+      "Amaretto",
+      "Kahlúa (Coffee Liqueur)",
+      "Baileys (Irish Cream)",
+      "Grand Marnier",
+      "Cointreau",
+      "Chambord",
+      "St-Germain (Elderflower)",
+      "Frangelico (Hazelnut)",
+      "Limoncello",
+      "Sambuca",
+      "Chartreuse",
+      "Bénédictine",
+      "Drambuie",
+      "Campari",
+      "Aperol",
+      "Crème de Menthe",
+      "Crème de Cacao",
+      "Crème de Cassis",
+      "Midori (Melon)",
+      "Schnapps"
+    ],
+    "absinthe": [
+      "Verte (Green Absinthe)",
+      "Blanche (Clear Absinthe)",
+      "Bohemian Absinthe",
+      "Swiss Absinthe"
+    ],
+    "other_spirits": [
+      "Aquavit",
+      "Ouzo",
+      "Rakı",
+      "Arak",
+      "Soju",
+      "Shochu",
+      "Baijiu",
+      "Arrack",
+      "Pastis",
+      "Sambuca",
+      "Aguardiente",
+      "Pálinka",
+      "Poitín/Poteen"
+    ],
+    "bitters": [
+      "Angostura Bitters",
+      "Peychaud's Bitters",
+      "Orange Bitters",
+      "Aromatic Bitters",
+      "Chocolate Bitters",
+      "Celery Bitters",
+      "Grapefruit Bitters"
+    ]
+  }
+}

@@ -111,10 +111,12 @@ h2 {
 
 a {
     color: #66cc66; /* Softer green link */
-    text-decoration: none;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 a:hover {
+    color: #88e888; /* Brighter green on hover */
     text-decoration: underline;
 }
 
@@ -126,6 +128,10 @@ a:hover {
 .about-content {
     text-align: center;
     padding: 1rem;
+}
+
+.about-section {
+    margin-top: 3rem;
 }
 
 .about-section h2 {
