@@ -2,127 +2,159 @@
   "Primary": [
     {
       "name": "Blitzel",
-      "link": "https://wiki.avakot.org/wiki/Blitzel"
+      "link": "https://wiki.avakot.org/Blitzel"
     },
     {
       "name": "Juniper",
-      "link": "https://wiki.avakot.org/wiki/Juniper"
+      "link": "https://wiki.avakot.org/Juniper"
     },
     {
       "name": "Thistle",
-      "link": "https://wiki.avakot.org/wiki/Thistle"
+      "link": "https://wiki.avakot.org/Thistle"
     },
     {
       "name": "Igne Mora",
-      "link": "https://wiki.avakot.org/wiki/Ignemora"
+      "link": "https://wiki.avakot.org/Igne_Mora"
     },
     {
       "name": "Sollos-I",
-      "link": "https://wiki.avakot.org/wiki/Sollos-i"
+      "link": "https://wiki.avakot.org/Sollos-I"
     },
     {
       "name": "Vetch",
-      "link": "https://wiki.avakot.org/wiki/Vetch"
+      "link": "https://wiki.avakot.org/Vetch"
     },
     {
       "name": "Wulder",
-      "link": "https://wiki.avakot.org/wiki/Wulder"
+      "link": "https://wiki.avakot.org/Wulder"
     },
     {
       "name": "Gwylen",
-      "link": "https://wiki.avakot.org/wiki/Gwylen"
+      "link": "https://wiki.avakot.org/Gwylen"
     },
     {
       "name": "Odiac",
-      "link": "https://wiki.avakot.org/wiki/Odiac"
+      "link": "https://wiki.avakot.org/Odiac"
     },
     {
       "name": "Duhk Halic",
-      "link": "https://wiki.avakot.org/wiki/Duhkhalic"
+      "link": "https://wiki.avakot.org/Duhk_Halic"
     },
     {
       "name": "Gathannan",
-      "link": "https://wiki.avakot.org/wiki/Gathannan"
+      "link": "https://wiki.avakot.org/Gathannan"
     },
     {
       "name": "Rook",
-      "link": "https://wiki.avakot.org/wiki/Rook"
+      "link": "https://wiki.avakot.org/Rook"
     },
     {
       "name": "Vasp-IV",
-      "link": "https://wiki.avakot.org/wiki/Vasp-iv"
+      "link": "https://wiki.avakot.org/Vasp-IV"
     },
     {
       "name": "Bog & Myrtle",
-      "link": "https://wiki.avakot.org/wiki/Bogmyrtle"
+      "link": "https://wiki.avakot.org/Bog_%26_Myrtle"
     },
     {
       "name": "Oryn Umbr",
-      "link": "https://wiki.avakot.org/wiki/Oryn-umbr"
+      "link": "https://wiki.avakot.org/Oryn-Umbr"
     },
     {
       "name": "Rivt-II",
-      "link": "https://wiki.avakot.org/wiki/Rivt-ii"
+      "link": "https://wiki.avakot.org/Rivt-II"
     },
     {
       "name": "The Royal Tines",
-      "link": "https://wiki.avakot.org/wiki/Theroyaltines"
+      "link": "https://wiki.avakot.org/The_Royal_Tines"
     },
     {
       "name": "Unsula",
-      "link": "https://wiki.avakot.org/wiki/Unsula"
+      "link": "https://wiki.avakot.org/Unsula"
+    },
+    {
+      "name": "Dewelion",
+      "link": "https://wiki.avakot.org/Dewelion"
+    },
+    {
+      "name": "Lurash",
+      "link": "https://wiki.avakot.org/Lurash"
+    },
+    {
+      "name": "Marrow's Bane",
+      "link": "https://wiki.avakot.org/Marrow%27s_Bane"
+    },
+    {
+      "name": "Stultin",
+      "link": "https://wiki.avakot.org/Stultin"
+    },
+    {
+      "name": "Tessard",
+      "link": "https://wiki.avakot.org/Tessard"
+    },
+    {
+      "name": "The Erstroot",
+      "link": "https://wiki.avakot.org/The_Erstroot"
     }
   ],
   "Secondary": [
     {
       "name": "Precklies",
-      "link": "https://wiki.avakot.org/wiki/Precklies"
+      "link": "https://wiki.avakot.org/Precklies"
     },
     {
       "name": "Skilter",
-      "link": "https://wiki.avakot.org/wiki/Skilter"
+      "link": "https://wiki.avakot.org/Sk%C3%ADlter"
     },
     {
       "name": "Grinn",
-      "link": "https://wiki.avakot.org/wiki/Grinn"
+      "link": "https://wiki.avakot.org/Grinn"
     },
     {
       "name": "Nettle",
-      "link": "https://wiki.avakot.org/wiki/Nettle"
+      "link": "https://wiki.avakot.org/Nettle"
     },
     {
       "name": "Virdigris",
-      "link": "https://wiki.avakot.org/wiki/Virdigris"
+      "link": "https://wiki.avakot.org/Virdigris"
+    },
+    {
+      "name": "Witan",
+      "link": "https://wiki.avakot.org/Witan"
     }
   ],
   "Pact": [
     {
       "name": "Garren Rood",
-      "link": "https://wiki.avakot.org/wiki/Garren_Rood_(Pact)"
+      "link": "https://wiki.avakot.org/Garren_Rood_(Pact)"
     },
     {
       "name": "Mora's Hand",
-      "link": "https://wiki.avakot.org/wiki/Mora%27s_Hand"
+      "link": "https://wiki.avakot.org/Mora%27s_Hand"
     },
     {
       "name": "Ode Tempest",
-      "link": "https://wiki.avakot.org/wiki/Ode_Tempest"
+      "link": "https://wiki.avakot.org/Ode_Tempest"
     },
     {
       "name": "Orengall",
-      "link": "https://wiki.avakot.org/wiki/Orengall_(Pact)"
+      "link": "https://wiki.avakot.org/Orengall_(Pact)"
     },
     {
       "name": "Sirin",
-      "link": "https://wiki.avakot.org/wiki/Sirin"
+      "link": "https://wiki.avakot.org/Sirin"
     },
     {
       "name": "Tethren",
-      "link": "https://wiki.avakot.org/wiki/Tethren"
+      "link": "https://wiki.avakot.org/Tethren"
     },
     {
       "name": "Oscelda",
-      "link": "https://wiki.avakot.org/wiki/Oscelda"
+      "link": "https://wiki.avakot.org/Oscelda"
+    },
+    {
+      "name": "Bromius",
+      "link": "https://wiki.avakot.org/Bromius"
     }
   ],
   "Armor": [
@@ -131,15 +163,11 @@
       "link": "https://wiki.avakot.org/wiki/Armor"
     },
     {
-      "name": "Deora Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
       "name": "Fire King Set",
       "link": "https://wiki.avakot.org/wiki/Armor"
     },
     {
-      "name": "Garren Rood Set",
+      "name": "Garren Set",
       "link": "https://wiki.avakot.org/wiki/Armor"
     },
     {
@@ -163,7 +191,35 @@
       "link": "https://wiki.avakot.org/wiki/Armor"
     },
     {
-      "name": "Tulvulkane Set",
+      "name": "Ardbearer Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Forgetfire Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Mockery Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Regent Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Sirin Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Steelsinger Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Tethren Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Oscelda Set",
       "link": "https://wiki.avakot.org/wiki/Armor"
     }
   ]
