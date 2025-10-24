@@ -1,3 +1,6 @@
+# Redirect ads.txt to Ezoic Ads.txt Manager
+/ads.txt https://srv.adstxtmanager.com/19390/randomizertools.net 301
+
 # Redirect from old domain to new domain
 https://enigmamachinerandomizerhub.netlify.app/* https://randomizertools.net/:splat 301!
 http://enigmamachinerandomizerhub.netlify.app/* https://randomizertools.net/:splat 301!
