@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Option Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Option Picker</h1>
+            <div class="section">
+                <h2>Add Your Options</h2>
+                <div class="input-group">
+                    <input type="text" id="option-input" placeholder="Enter an option..." />
+                    <button class="add-btn" id="add-option">Add</button>
+                </div>
+                <div class="options-list" id="options-list"></div>
+                <button class="generate-btn" id="pick-option">Pick Random Option</button>
+                <button class="clear-btn" id="clear-all">Clear All</button>
+                <div class="result-container">
+                    <div id="result" class="result-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>The Option Picker helps you make decisions by randomly selecting from a list of choices you provide. Perfect for choosing what to eat, which movie to watch, or any situation where you need help deciding between multiple options.</p>
+            <h3>How to Use</h3>
+            <p>Type an option in the input field and click "Add" or press Enter. Repeat to add multiple options. Once you have at least two options, click "Pick Random Option" to randomly select one. You can remove individual options by clicking the × button next to them, or clear all options at once.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
