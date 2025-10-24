@@ -151,7 +151,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.main-btn {
+#generate-class {
     background-color: #66cc66;
     color: #222222;
     border: none;
@@ -164,7 +164,7 @@ h1 {
     height: auto;
 }
 
-.main-btn:hover {
+#generate-class:hover {
     background-color: #88e888;
 }
 
