@@ -1,0 +1,33 @@
+name: Update ads.txt Weekly
+
+on:
+  schedule:
+    # Runs at midnight UTC every Friday (day 5 of the week)
+    - cron: '0 0 * * 5'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  update-ads-txt:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Download latest ads.txt
+        run: |
+          curl -L https://srv.adstxtmanager.com/19390/randomizertools.net > ads.txt
+          
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --exit-code ads.txt || echo "changed=true" >> $GITHUB_OUTPUT
+          
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ads.txt
+          git commit -m "chore: update ads.txt [skip ci]"
+          git push
