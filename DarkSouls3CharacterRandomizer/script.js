@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const spellsListEl = document.getElementById('spells-list');
     const spellTypeLabelEl = document.getElementById('spell-type-label');
     const casterWeaponSectionEl = document.getElementById('caster-weapon-section');
+    const endingEl = document.getElementById('ending');
+    const endingLink = document.getElementById('ending-link');
 
     const armorLink = document.getElementById('armor-link');
     const weaponLink = document.getElementById('weapon-link');
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollWeaponBtn = document.getElementById('reroll-weapon');
     const rerollCasterWeaponBtn = document.getElementById('reroll-caster-weapon');
     const rerollSpellsBtn = document.getElementById('reroll-spells');
+    const rerollEndingBtn = document.getElementById('reroll-ending');
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
     let armorData;
@@ -24,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let weaponsData;
     let spellsData;
     let casterWeaponsData;
+    let endingsData;
     let currentSpellType = '';
 
     const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -144,11 +148,19 @@ document.addEventListener('DOMContentLoaded', () => {
         casterWeaponEl.textContent = casterWeaponName;
     }
 
+    function generateEnding() {
+        if (!endingsData) return;
+        const randomEnding = getRandomElement(endingsData);
+        endingEl.textContent = randomEnding.name;
+        endingLink.href = randomEnding.link;
+    }
+
     function randomizeAll() {
         generateArmor();
         generateRings();
         generateWeapon();
         generateSpells();
+        generateEnding();
     }
 
     fetch('randomizer.json')
@@ -159,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             weaponsData = data.weapons;
             spellsData = data.spells;
             casterWeaponsData = data.casterweapons;
+            endingsData = data.endings;
 
             randomizeAll();
 
@@ -167,6 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rerollWeaponBtn.addEventListener('click', generateWeapon);
             rerollSpellsBtn.addEventListener('click', generateSpells);
             rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
+            rerollEndingBtn.addEventListener('click', generateEnding);
             generateLoadoutBtn.addEventListener('click', randomizeAll);
         })
         .catch(error => {

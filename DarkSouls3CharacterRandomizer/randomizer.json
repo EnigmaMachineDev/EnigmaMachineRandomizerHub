@@ -1,5 +1,23 @@
 
 {
+  "endings": [
+    {
+      "name": "To Link the First Flame",
+      "link": "https://darksouls.fandom.com/wiki/Ending_(Dark_Souls_III)#To_Link_the_First_Flame"
+    },
+    {
+      "name": "The End of Fire",
+      "link": "https://darksouls.fandom.com/wiki/Ending_(Dark_Souls_III)#The_End_of_Fire"
+    },
+    {
+      "name": "To Take the First Flame",
+      "link": "https://darksouls.fandom.com/wiki/Ending_(Dark_Souls_III)#To_Take_the_First_Flame"
+    },
+    {
+      "name": "The Usurpation of Fire",
+      "link": "https://darksouls.fandom.com/wiki/Ending_(Dark_Souls_III)#The_Usurpation_of_Fire"
+    }
+  ],
   "armor": [
     {
       "name": "Antiquated Plain Set",

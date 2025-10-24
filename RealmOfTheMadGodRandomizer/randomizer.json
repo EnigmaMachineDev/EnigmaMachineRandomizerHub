@@ -1,0 +1,22 @@
+{
+  "classes": [
+    "Wizard",
+    "Priest",
+    "Archer",
+    "Rogue",
+    "Warrior",
+    "Knight",
+    "Paladin",
+    "Assassin",
+    "Necromancer",
+    "Huntress",
+    "Mystic",
+    "Trickster",
+    "Sorcerer",
+    "Ninja",
+    "Samurai",
+    "Bard",
+    "Kensei",
+    "Summoner"
+  ]
+}

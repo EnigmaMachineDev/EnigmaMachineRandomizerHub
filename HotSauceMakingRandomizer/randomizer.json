@@ -1,0 +1,359 @@
+{
+  "peppers": {
+    "mild_to_medium": [
+      {
+        "name": "Bell Pepper",
+        "shu_min": 0,
+        "shu_max": 0,
+        "info_url": "https://en.wikipedia.org/wiki/Bell_pepper"
+      },
+      {
+        "name": "Banana Pepper",
+        "shu_min": 0,
+        "shu_max": 500,
+        "info_url": "https://en.wikipedia.org/wiki/Banana_pepper"
+      },
+      {
+        "name": "Shishito",
+        "shu_min": 50,
+        "shu_max": 200,
+        "info_url": "https://en.wikipedia.org/wiki/Shishito"
+      },
+      {
+        "name": "Pimento",
+        "shu_min": 100,
+        "shu_max": 500,
+        "info_url": "https://en.wikipedia.org/wiki/Pimento"
+      },
+      {
+        "name": "Pepperoncini",
+        "shu_min": 100,
+        "shu_max": 500,
+        "info_url": "https://en.wikipedia.org/wiki/Peperoncino"
+      },
+      {
+        "name": "Cubanelle",
+        "shu_min": 100,
+        "shu_max": 1000,
+        "info_url": "https://en.wikipedia.org/wiki/Cubanelle"
+      },
+      {
+        "name": "Anaheim",
+        "shu_min": 500,
+        "shu_max": 2500,
+        "info_url": "https://en.wikipedia.org/wiki/New_Mexico_chile"
+      },
+      {
+        "name": "Poblano",
+        "shu_min": 1000,
+        "shu_max": 2000,
+        "info_url": "https://en.wikipedia.org/wiki/Poblano"
+      },
+      {
+        "name": "Ancho (Dried Poblano)",
+        "shu_min": 1000,
+        "shu_max": 2000,
+        "info_url": "https://en.wikipedia.org/wiki/Poblano#Ancho"
+      },
+      {
+        "name": "Pasilla",
+        "shu_min": 1000,
+        "shu_max": 2500,
+        "info_url": "https://en.wikipedia.org/wiki/Pasilla"
+      },
+      {
+        "name": "Jalapeño",
+        "shu_min": 2500,
+        "shu_max": 8000,
+        "info_url": "https://en.wikipedia.org/wiki/Jalape%C3%B1o"
+      },
+      {
+        "name": "Chipotle (Smoked Jalapeño)",
+        "shu_min": 2500,
+        "shu_max": 8000,
+        "info_url": "https://en.wikipedia.org/wiki/Chipotle"
+      },
+      {
+        "name": "Guajillo",
+        "shu_min": 2500,
+        "shu_max": 5000,
+        "info_url": "https://en.wikipedia.org/wiki/Guajillo_chili"
+      },
+      {
+        "name": "Fresno",
+        "shu_min": 2500,
+        "shu_max": 10000,
+        "info_url": "https://en.wikipedia.org/wiki/Fresno_pepper"
+      },
+      {
+        "name": "Hungarian Wax",
+        "shu_min": 5000,
+        "shu_max": 15000,
+        "info_url": "https://en.wikipedia.org/wiki/Hungarian_wax_pepper"
+      }
+    ],
+    "medium_to_hot": [
+      {
+        "name": "Serrano",
+        "shu_min": 10000,
+        "shu_max": 23000,
+        "info_url": "https://en.wikipedia.org/wiki/Serrano_pepper"
+      },
+      {
+        "name": "Peter Pepper",
+        "shu_min": 10000,
+        "shu_max": 23000,
+        "info_url": "https://en.wikipedia.org/wiki/Peter_pepper"
+      },
+      {
+        "name": "Chiltepin",
+        "shu_min": 50000,
+        "shu_max": 100000,
+        "info_url": "https://en.wikipedia.org/wiki/Capsicum_annuum_var._glabriusculum"
+      },
+      {
+        "name": "Aji Amarillo",
+        "shu_min": 30000,
+        "shu_max": 50000,
+        "info_url": "https://en.wikipedia.org/wiki/Aj%C3%AD_amarillo"
+      },
+      {
+        "name": "Cayenne",
+        "shu_min": 30000,
+        "shu_max": 50000,
+        "info_url": "https://en.wikipedia.org/wiki/Cayenne_pepper"
+      },
+      {
+        "name": "Tabasco",
+        "shu_min": 30000,
+        "shu_max": 50000,
+        "info_url": "https://en.wikipedia.org/wiki/Tabasco_pepper"
+      },
+      {
+        "name": "Chile de Arbol",
+        "shu_min": 15000,
+        "shu_max": 30000,
+        "info_url": "https://en.wikipedia.org/wiki/Chile_de_%C3%A1rbol"
+      },
+      {
+        "name": "Pequin",
+        "shu_min": 40000,
+        "shu_max": 60000,
+        "info_url": "https://en.wikipedia.org/wiki/Pequin_pepper"
+      },
+      {
+        "name": "Thai Chili (Bird's Eye)",
+        "shu_min": 50000,
+        "shu_max": 100000,
+        "info_url": "https://en.wikipedia.org/wiki/Bird%27s_eye_chili"
+      },
+      {
+        "name": "Malagueta",
+        "shu_min": 60000,
+        "shu_max": 100000,
+        "info_url": "https://en.wikipedia.org/wiki/Malagueta_pepper"
+      },
+      {
+        "name": "Rocoto",
+        "shu_min": 30000,
+        "shu_max": 100000,
+        "info_url": "https://en.wikipedia.org/wiki/Capsicum_pubescens"
+      }
+    ],
+    "hot_to_very_hot": [
+      {
+        "name": "Habanero",
+        "shu_min": 100000,
+        "shu_max": 350000,
+        "info_url": "https://en.wikipedia.org/wiki/Habanero"
+      },
+      {
+        "name": "Scotch Bonnet",
+        "shu_min": 100000,
+        "shu_max": 350000,
+        "info_url": "https://en.wikipedia.org/wiki/Scotch_bonnet"
+      },
+      {
+        "name": "Datil",
+        "shu_min": 100000,
+        "shu_max": 300000,
+        "info_url": "https://en.wikipedia.org/wiki/Datil_pepper"
+      },
+      {
+        "name": "Fatalii",
+        "shu_min": 125000,
+        "shu_max": 400000,
+        "info_url": "https://en.wikipedia.org/wiki/Fatalii"
+      },
+      {
+        "name": "Madame Jeanette",
+        "shu_min": 125000,
+        "shu_max": 325000,
+        "info_url": "https://en.wikipedia.org/wiki/Madame_Jeanette"
+      },
+      {
+        "name": "Aji Charapita",
+        "shu_min": 30000,
+        "shu_max": 100000,
+        "info_url": "https://en.wikipedia.org/wiki/Capsicum_baccatum"
+      },
+      {
+        "name": "Red Savina Habanero",
+        "shu_min": 200000,
+        "shu_max": 577000,
+        "info_url": "https://en.wikipedia.org/wiki/Red_Savina_pepper"
+      },
+      {
+        "name": "Devil's Tongue",
+        "shu_min": 125000,
+        "shu_max": 325000,
+        "info_url": "https://pepperseedbank.com/products/devils-tongue-pepper-seeds"
+      }
+    ],
+    "extremely_hot": [
+      {
+        "name": "Ghost Pepper (Bhut Jolokia)",
+        "shu_min": 855000,
+        "shu_max": 1041427,
+        "info_url": "https://en.wikipedia.org/wiki/Bhut_jolokia"
+      },
+      {
+        "name": "Naga Viper",
+        "shu_min": 900000,
+        "shu_max": 1382118,
+        "info_url": "https://en.wikipedia.org/wiki/Naga_Viper_pepper"
+      },
+      {
+        "name": "7 Pot Douglah",
+        "shu_min": 923000,
+        "shu_max": 1853986,
+        "info_url": "https://en.wikipedia.org/wiki/Trinidad_Douglah"
+      },
+      {
+        "name": "Trinidad Scorpion",
+        "shu_min": 1200000,
+        "shu_max": 2000000,
+        "info_url": "https://en.wikipedia.org/wiki/Trinidad_Scorpion_Butch_T_pepper"
+      },
+      {
+        "name": "7 Pot Primo",
+        "shu_min": 1000000,
+        "shu_max": 1469000,
+        "info_url": "https://pepperseedbank.com/products/7-pot-primo-pepper-seeds"
+      },
+      {
+        "name": "7 Pot Brain Strain",
+        "shu_min": 1000000,
+        "shu_max": 1350000,
+        "info_url": "https://pepperseedbank.com/products/7-pot-brain-strain-pepper-seeds"
+      },
+      {
+        "name": "Carolina Reaper",
+        "shu_min": 1400000,
+        "shu_max": 2200000,
+        "info_url": "https://en.wikipedia.org/wiki/Carolina_Reaper"
+      },
+      {
+        "name": "Dragon's Breath",
+        "shu_min": 2480000,
+        "shu_max": 2480000,
+        "info_url": "https://en.wikipedia.org/wiki/Dragon%27s_Breath_(chili_pepper)"
+      },
+      {
+        "name": "Pepper X",
+        "shu_min": 2693000,
+        "shu_max": 2693000,
+        "info_url": "https://en.wikipedia.org/wiki/Pepper_X"
+      },
+      {
+        "name": "Trinidad Moruga Scorpion",
+        "shu_min": 1200000,
+        "shu_max": 2009231,
+        "info_url": "https://en.wikipedia.org/wiki/Trinidad_Moruga_scorpion"
+      },
+      {
+        "name": "Komodo Dragon",
+        "shu_min": 1400000,
+        "shu_max": 2200000,
+        "info_url": "https://pepperseedbank.com/products/komodo-dragon-pepper-seeds"
+      }
+    ]
+  },
+  "vegetables": [
+    {
+      "name": "Tomato",
+      "description": "Adds body, sweetness, and acidity to hot sauces",
+      "info_url": "https://en.wikipedia.org/wiki/Tomato"
+    },
+    {
+      "name": "Tomatillo",
+      "description": "Provides tartness and body, essential for green salsas",
+      "info_url": "https://en.wikipedia.org/wiki/Tomatillo"
+    },
+    {
+      "name": "Garlic",
+      "description": "Adds savory depth and pungency",
+      "info_url": "https://en.wikipedia.org/wiki/Garlic"
+    },
+    {
+      "name": "Onion",
+      "description": "Provides sweetness and savory base flavor",
+      "info_url": "https://en.wikipedia.org/wiki/Onion"
+    },
+    {
+      "name": "Carrot",
+      "description": "Adds natural sweetness, body, and smooth texture",
+      "info_url": "https://en.wikipedia.org/wiki/Carrot"
+    },
+    {
+      "name": "Red Bell Pepper",
+      "description": "Adds sweetness and body without heat",
+      "info_url": "https://en.wikipedia.org/wiki/Bell_pepper"
+    },
+    {
+      "name": "Shallot",
+      "description": "Provides milder, sweeter onion flavor",
+      "info_url": "https://en.wikipedia.org/wiki/Shallot"
+    },
+    {
+      "name": "Ginger",
+      "description": "Adds spicy, aromatic complexity",
+      "info_url": "https://en.wikipedia.org/wiki/Ginger"
+    },
+    {
+      "name": "Celery",
+      "description": "Adds subtle savory notes and body",
+      "info_url": "https://en.wikipedia.org/wiki/Celery"
+    },
+    {
+      "name": "Scallion/Green Onion",
+      "description": "Provides mild onion flavor and freshness",
+      "info_url": "https://en.wikipedia.org/wiki/Scallion"
+    },
+    {
+      "name": "Cilantro",
+      "description": "Adds fresh, citrusy herb notes",
+      "info_url": "https://en.wikipedia.org/wiki/Coriander"
+    },
+    {
+      "name": "Parsley",
+      "description": "Provides fresh, mild herb flavor",
+      "info_url": "https://en.wikipedia.org/wiki/Parsley"
+    },
+    {
+      "name": "Cucumber",
+      "description": "Adds cooling freshness and body",
+      "info_url": "https://en.wikipedia.org/wiki/Cucumber"
+    },
+    {
+      "name": "Horseradish",
+      "description": "Provides sharp, sinus-clearing heat",
+      "info_url": "https://en.wikipedia.org/wiki/Horseradish"
+    },
+    {
+      "name": "Radish",
+      "description": "Adds peppery bite and crunch",
+      "info_url": "https://en.wikipedia.org/wiki/Radish"
+    }
+  ]
+}

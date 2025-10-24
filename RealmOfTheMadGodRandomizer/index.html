@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Realm of the Mad God Character Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="content-container">
+            <!-- Sidebar with class checkboxes -->
+            <aside class="sidebar">
+                <h3>Filter Classes</h3>
+                <div class="checkbox-container" id="class-checkboxes">
+                    <!-- Checkboxes will be dynamically generated here -->
+                </div>
+                <div class="sidebar-buttons">
+                    <button class="sidebar-btn" id="select-all-btn">Select All</button>
+                    <button class="sidebar-btn" id="deselect-all-btn">Deselect All</button>
+                </div>
+            </aside>
+
+            <!-- Main content area -->
+            <div class="container">
+                <h1>Realm of the Mad God Character Randomizer</h1>
+                <button class="reroll-btn main-btn" id="generate-class">Generate Class</button>
+                <div class="section">
+                    <div class="section-header">
+                        <h2>Selected Class</h2>
+                        <button class="reroll-btn" id="reroll-class">↻</button>
+                    </div>
+                    <div class="item-container">
+                        <span id="selected-class">Click Generate to start</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Realm of the Mad God is a massively multiplayer online bullet hell shooter that features a diverse roster of character classes, each with unique abilities and playstyles. With so many options available, it can be challenging to decide which class to play next.</p>
+            <p>This randomizer helps you break out of your comfort zone by randomly selecting a class for you to play. Use the sidebar to filter which classes you want to include in the randomization—perfect for when you want to try something new but still have some control over your options.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Simply click the "Generate Class" button to randomly select a class from your enabled options. You can use the checkboxes in the sidebar to enable or disable specific classes. Use the "Select All" and "Deselect All" buttons for quick filtering. The re-roll button (↻) lets you generate a new class without starting from scratch.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

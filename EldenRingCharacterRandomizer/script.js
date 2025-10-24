@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const casterWeaponEl = document.getElementById('caster-weapon');
     const casterWeaponLinkEl = document.getElementById('caster-weapon-link');
     const casterWeaponSectionEl = document.getElementById('caster-weapon-section');
+    const endingEl = document.getElementById('ending');
+    const endingLinkEl = document.getElementById('ending-link');
 
     const generateLoadoutBtn = document.getElementById('generate-loadout');
     const rerollWeaponBtn = document.getElementById('reroll-weapon');
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollSpiritAshesBtn = document.getElementById('reroll-spirit-ashes');
     const rerollSpellsBtn = document.getElementById('reroll-spells');
     const rerollCasterWeaponBtn = document.getElementById('reroll-caster-weapon');
+    const rerollEndingBtn = document.getElementById('reroll-ending');
 
     let primaryWeaponData;
     let armorData;
@@ -25,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let spiritAshesData;
     let eldenRingSpellsData;
     let eldenRingCastingWeaponsData;
+    let endingsData;
 
     let selectedTalismans = [];
     let currentSpellType = '';
@@ -163,37 +167,43 @@ document.addEventListener('DOMContentLoaded', () => {
         casterWeaponLinkEl.href = casterWeaponLink;
     }
 
+    function generateEnding() {
+        if (!endingsData) return;
+        const randomEnding = getRandomElement(endingsData);
+        endingEl.textContent = randomEnding.name;
+        endingLinkEl.href = randomEnding.link;
+    }
+
     function generateAll() {
         generateWeapon();
         generateArmor();
         generateTalismans();
         generateSpiritAshes();
         generateSpells();
+        generateEnding();
     }
 
-    Promise.all([
-        fetch('elden_ring_weapons.json').then(res => res.json()),
-        fetch('elden_ring_armor.json').then(res => res.json()),
-        fetch('elden_ring_talismans.json').then(res => res.json()),
-        fetch('elden_ring_spirit_ashes.json').then(res => res.json()),
-        fetch('elden_ring_spells.json').then(res => res.json()),
-        fetch('elden_ring_casting_weapons.json').then(res => res.json())
-    ]).then(([weapons, armor, talismans, spiritAshes, spells, castingWeapons]) => {
-        primaryWeaponData = weapons;
-        armorData = armor;
-        allTalismansData = talismans;
-        spiritAshesData = spiritAshes;
-        eldenRingSpellsData = spells;
-        eldenRingCastingWeaponsData = castingWeapons;
+    fetch('randomizer.json')
+        .then(res => res.json())
+        .then(data => {
+            primaryWeaponData = data.weapons;
+            armorData = data.armor;
+            allTalismansData = data.talismans;
+            spiritAshesData = data.spirit_ashes;
+            eldenRingSpellsData = data.spells;
+            eldenRingCastingWeaponsData = data.casting_weapons;
+            endingsData = data.endings;
 
-        generateAll();
+            generateAll();
 
-        generateLoadoutBtn.addEventListener('click', generateAll);
-        rerollWeaponBtn.addEventListener('click', generateWeapon);
-        rerollArmorBtn.addEventListener('click', generateArmor);
-        rerollTalismansBtn.addEventListener('click', generateTalismans);
-        rerollSpiritAshesBtn.addEventListener('click', generateSpiritAshes);
-        rerollSpellsBtn.addEventListener('click', generateSpells);
-        rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
-    }).catch(error => console.error('Error loading data:', error));
+            generateLoadoutBtn.addEventListener('click', generateAll);
+            rerollWeaponBtn.addEventListener('click', generateWeapon);
+            rerollArmorBtn.addEventListener('click', generateArmor);
+            rerollTalismansBtn.addEventListener('click', generateTalismans);
+            rerollSpiritAshesBtn.addEventListener('click', generateSpiritAshes);
+            rerollSpellsBtn.addEventListener('click', generateSpells);
+            rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
+            rerollEndingBtn.addEventListener('click', generateEnding);
+        })
+        .catch(error => console.error('Error loading data:', error));
 });

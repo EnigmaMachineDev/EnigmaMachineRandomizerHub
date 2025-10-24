@@ -1,0 +1,3191 @@
+{
+  "weapons": {
+    "Albinauric Bow": "https://eldenring.fandom.com/wiki/Albinauric_Bow",
+    "Alabaster Lord's Sword": "https://eldenring.fandom.com/wiki/Alabaster_Lord's_Sword",
+    "Ancient Meteoric Ore Greatsword": "https://eldenring.fandom.com/wiki/Ancient_Meteoric_Ore_Greatsword",
+    "Ansbach's Longbow": "https://eldenring.fandom.com/wiki/Ansbach's_Longbow",
+    "Antspur Rapier": "https://eldenring.fandom.com/wiki/Antspur_Rapier",
+    "Anvil Hammer": "https://eldenring.fandom.com/wiki/Anvil_Hammer",
+    "Arbalest": "https://eldenring.fandom.com/wiki/Arbalest",
+    "Axe of Godfrey": "https://eldenring.fandom.com/wiki/Axe_of_Godfrey",
+    "Axe of Godrick": "https://eldenring.fandom.com/wiki/Axe_of_Godrick",
+    "Backhand Blade": "https://eldenring.fandom.com/wiki/Backhand_Blade",
+    "Bandit's Curved Sword": "https://eldenring.fandom.com/wiki/Bandit's_Curved_Sword",
+    "Banished Knight's Greatsword": "https://eldenring.fandom.com/wiki/Banished_Knight's_Greatsword",
+    "Banished Knight's Halberd": "https://eldenring.fandom.com/wiki/Banished_Knight's_Halberd",
+    "Barbed Staff-Spear": "https://eldenring.fandom.com/wiki/Barbed_Staff-Spear",
+    "Bastard Sword": "https://eldenring.fandom.com/wiki/Bastard_Sword",
+    "Bastard's Stars": "https://eldenring.fandom.com/wiki/Bastard's_Stars",
+    "Battle Axe": "https://eldenring.fandom.com/wiki/Battle_Axe",
+    "Battle Hammer": "https://eldenring.fandom.com/wiki/Battle_Hammer",
+    "Beast Claw": "https://eldenring.fandom.com/wiki/Beast_Claw_(Weapon)",
+    "Beast-Repellent Torch": "https://eldenring.fandom.com/wiki/Beast-Repellent_Torch",
+    "Beastclaw Greathammer": "https://eldenring.fandom.com/wiki/Beastclaw_Greathammer",
+    "Beastman's Cleaver": "https://eldenring.fandom.com/wiki/Beastman's_Cleaver",
+    "Beastman's Curved Sword": "https://eldenring.fandom.com/wiki/Beastman's_Curved_Sword",
+    "Black Bow": "https://eldenring.fandom.com/wiki/Black_Bow",
+    "Black Knife": "https://eldenring.fandom.com/wiki/Black_Knife",
+    "Black Steel Greathammer": "https://eldenring.fandom.com/wiki/Black_Steel_Greathammer",
+    "Black Steel Twinblade": "https://eldenring.fandom.com/wiki/Black_Steel_Twinblade",
+    "Blade of Calling": "https://eldenring.fandom.com/wiki/Blade_of_Calling",
+    "Blasphemous Blade": "https://eldenring.fandom.com/wiki/Blasphemous_Blade",
+    "Bloodfiend's Arm": "https://eldenring.fandom.com/wiki/Bloodfiend's_Arm",
+    "Bloodfiend's Fork": "https://eldenring.fandom.com/wiki/Bloodfiend's_Fork",
+    "Bloodfiend's Sacred Spear": "https://eldenring.fandom.com/wiki/Bloodfiend's_Sacred_Spear",
+    "Bloodhound Claws": "https://eldenring.fandom.com/wiki/Bloodhound_Claws",
+    "Bloodhound's Fang": "https://eldenring.fandom.com/wiki/Bloodhound's_Fang",
+    "Bloodstained Dagger": "https://eldenring.fandom.com/wiki/Bloodstained_Dagger",
+    "Bloody Helice": "https://eldenring.fandom.com/wiki/Bloody_Helice",
+    "Bolt of Gransax": "https://eldenring.fandom.com/wiki/Bolt_of_Gransax",
+    "Bone Bow": "https://eldenring.fandom.com/wiki/Bone_Bow",
+    "Bonny Butchering Knife": "https://eldenring.fandom.com/wiki/Bonny_Butchering_Knife",
+    "Brick Hammer": "https://eldenring.fandom.com/wiki/Brick_Hammer",
+    "Broadsword": "https://eldenring.fandom.com/wiki/Broadsword",
+    "Butchering Knife": "https://eldenring.fandom.com/wiki/Butchering_Knife",
+    "Caestus": "https://eldenring.fandom.com/wiki/Caestus",
+    "Cane Sword": "https://eldenring.fandom.com/wiki/Cane_Sword",
+    "Carian Knight's Sword": "https://eldenring.fandom.com/wiki/Carian_Knight's_Sword",
+    "Carian Sorcery Sword": "https://eldenring.fandom.com/wiki/Carian_Sorcery_Sword",
+    "Carian Thrusting Shield": "https://eldenring.fandom.com/wiki/Carian_Thrusting_Shield",
+    "Celebrant's Cleaver": "https://eldenring.fandom.com/wiki/Celebrant's_Cleaver",
+    "Celebrant's Rib-Rake": "https://eldenring.fandom.com/wiki/Celebrant's_Rib-Rake",
+    "Celebrant's Sickle": "https://eldenring.fandom.com/wiki/Celebrant's_Sickle",
+    "Celebrant's Skull": "https://eldenring.fandom.com/wiki/Celebrant's_Skull",
+    "Chainlink Flail": "https://eldenring.fandom.com/wiki/Chainlink_Flail",
+    "Chilling Perfume Bottle": "https://eldenring.fandom.com/wiki/Chilling_Perfume_Bottle",
+    "Cinquedea": "https://eldenring.fandom.com/wiki/Cinquedea",
+    "Cipher Pata": "https://eldenring.fandom.com/wiki/Cipher_Pata",
+    "Clayman's Harpoon": "https://eldenring.fandom.com/wiki/Clayman's_Harpoon",
+    "Claymore": "https://eldenring.fandom.com/wiki/Claymore",
+    "Cleanrot Knight's Sword": "https://eldenring.fandom.com/wiki/Cleanrot_Knight's_Sword",
+    "Cleanrot Spear": "https://eldenring.fandom.com/wiki/Cleanrot_Spear",
+    "Clinging Bone": "https://eldenring.fandom.com/wiki/Clinging_Bone",
+    "Claws of Night": "https://eldenring.fandom.com/wiki/Claws_of_Night",
+    "Club": "https://eldenring.fandom.com/wiki/Club",
+    "Coded Sword": "https://eldenring.fandom.com/wiki/Coded_Sword",
+    "Commander's Standard": "https://eldenring.fandom.com/wiki/Commander's_Standard",
+    "Composite Bow": "https://eldenring.fandom.com/wiki/Composite_Bow",
+    "Cranial Vessel Candlestand": "https://eldenring.fandom.com/wiki/Cranial_Vessel_Candlestand",
+    "Crepus's Black-Key Crossbow": "https://eldenring.fandom.com/wiki/Crepus's_Black-Key_Crossbow",
+    "Crescent Moon Axe": "https://eldenring.fandom.com/wiki/Crescent_Moon_Axe",
+    "Cross-Naginata": "https://eldenring.fandom.com/wiki/Cross-Naginata",
+    "Crystal Knife": "https://eldenring.fandom.com/wiki/Crystal_Knife",
+    "Crystal Spear": "https://eldenring.fandom.com/wiki/Crystal_Spear",
+    "Crystal Sword": "https://eldenring.fandom.com/wiki/Crystal_Sword",
+    "Curseblade's Cirque": "https://eldenring.fandom.com/wiki/Curseblade's_Cirque",
+    "Curved Club": "https://eldenring.fandom.com/wiki/Curved_Club",
+    "Curved Great Club": "https://eldenring.fandom.com/wiki/Curved_Great_Club",
+    "Dagger": "https://eldenring.fandom.com/wiki/Dagger",
+    "Dancing Blade of Ranah": "https://eldenring.fandom.com/wiki/Dancing_Blade_of_Ranah",
+    "Dane's Footwork": "https://eldenring.fandom.com/wiki/Dane's_Footwork",
+    "Dark Moon Greatsword": "https://eldenring.fandom.com/wiki/Dark_Moon_Greatsword",
+    "Deadly Poison Perfume Bottle": "https://eldenring.fandom.com/wiki/Deadly_Poison_Perfume_Bottle",
+    "Death Knight's Longhaft Axe": "https://eldenring.fandom.com/wiki/Death_Knight's_Longhaft_Axe",
+    "Death Knight's Twin Axes": "https://eldenring.fandom.com/wiki/Death_Knight's_Twin_Axes",
+    "Death Ritual Spear": "https://eldenring.fandom.com/wiki/Death_Ritual_Spear",
+    "Death's Poker": "https://eldenring.fandom.com/wiki/Death's_Poker",
+    "Devonia's Hammer": "https://eldenring.fandom.com/wiki/Devonia's_Hammer",
+    "Devourer's Scepter": "https://eldenring.fandom.com/wiki/Devourer's_Scepter",
+    "Dismounter": "https://eldenring.fandom.com/wiki/Dismounter",
+    "Dragon Greatclaw": "https://eldenring.fandom.com/wiki/Dragon_Greatclaw",
+    "Dragon Halberd": "https://eldenring.fandom.com/wiki/Dragon_Halberd",
+    "Dragon King's Cragblade": "https://eldenring.fandom.com/wiki/Dragon_King's_Cragblade",
+    "Dragon-Hunter's Great Katana": "https://eldenring.fandom.com/wiki/Dragon-Hunter's_Great_Katana",
+    "Dragonscale Blade": "https://eldenring.fandom.com/wiki/Dragonscale_Blade",
+    "Dryleaf Arts": "https://eldenring.fandom.com/wiki/Dryleaf_Arts",
+    "Duelist Greataxe": "https://eldenring.fandom.com/wiki/Duelist_Greataxe",
+    "Dueling Shield": "https://eldenring.fandom.com/wiki/Dueling_Shield",
+    "Eclipse Shotel": "https://eldenring.fandom.com/wiki/Eclipse_Shotel",
+    "Eleonora's Poleblade": "https://eldenring.fandom.com/wiki/Eleonora's_Poleblade",
+    "Envoy's Greathorn": "https://eldenring.fandom.com/wiki/Envoy's_Greathorn",
+    "Envoy's Horn": "https://eldenring.fandom.com/wiki/Envoy's_Horn",
+    "Envoy's Long Horn": "https://eldenring.fandom.com/wiki/Envoy's_Long_Horn",
+    "Erdtree Bow": "https://eldenring.fandom.com/wiki/Erdtree_Bow",
+    "Erdtree Greatbow": "https://eldenring.fandom.com/wiki/Erdtree_Greatbow",
+    "Erdsteel Dagger": "https://eldenring.fandom.com/wiki/Erdsteel_Dagger",
+    "Estoc": "https://eldenring.fandom.com/wiki/Estoc",
+    "Euporia": "https://eldenring.fandom.com/wiki/Euporia",
+    "Executioner's Greataxe": "https://eldenring.fandom.com/wiki/Executioner's_Greataxe",
+    "Falchion": "https://eldenring.fandom.com/wiki/Falchion",
+    "Fallingstar Beast Jaw": "https://eldenring.fandom.com/wiki/Fallingstar_Beast_Jaw",
+    "Falx": "https://eldenring.fandom.com/wiki/Falx",
+    "Family Heads": "https://eldenring.fandom.com/wiki/Family_Heads",
+    "Fire Knight's Greatsword": "https://eldenring.fandom.com/wiki/Fire_Knight's_Greatsword",
+    "Fire Knight's Shortsword": "https://eldenring.fandom.com/wiki/Fire_Knight's_Shortsword",
+    "Firespark Perfume Bottle": "https://eldenring.fandom.com/wiki/Firespark_Perfume_Bottle",
+    "Flail": "https://eldenring.fandom.com/wiki/Flail",
+    "Flamberge": "https://eldenring.fandom.com/wiki/Flamberge",
+    "Flowerstone Gavel": "https://eldenring.fandom.com/wiki/Flowerstone_Gavel",
+    "Flowing Curved Sword": "https://eldenring.fandom.com/wiki/Flowing_Curved_Sword",
+    "Forked Greatsword": "https://eldenring.fandom.com/wiki/Forked_Greatsword",
+    "Forked Hatchet": "https://eldenring.fandom.com/wiki/Forked_Hatchet",
+    "Forked-Tongue Hatchet": "https://eldenring.fandom.com/wiki/Forked-Tongue_Hatchet",
+    "Freyja's Greatsword": "https://eldenring.fandom.com/wiki/Freyja's_Greatsword",
+    "Frozen Needle": "https://eldenring.fandom.com/wiki/Frozen_Needle",
+    "Full Moon Crossbow": "https://eldenring.fandom.com/wiki/Full_Moon_Crossbow",
+    "Gargoyle's Black Axe": "https://eldenring.fandom.com/wiki/Gargoyle's_Black_Axe",
+    "Gargoyle's Black Blades": "https://eldenring.fandom.com/wiki/Gargoyle's_Black_Blades",
+    "Gargoyle's Black Halberd": "https://eldenring.fandom.com/wiki/Gargoyle's_Black_Halberd",
+    "Gargoyle's Blackblade": "https://eldenring.fandom.com/wiki/Gargoyle's_Blackblade",
+    "Gargoyle's Great Axe": "https://eldenring.fandom.com/wiki/Gargoyle's_Great_Axe",
+    "Gargoyle's Greatsword": "https://eldenring.fandom.com/wiki/Gargoyle's_Greatsword",
+    "Gargoyle's Halberd": "https://eldenring.fandom.com/wiki/Gargoyle's_Halberd",
+    "Gargoyle's Twinblade": "https://eldenring.fandom.com/wiki/Gargoyle's_Twinblade",
+    "Gazing Finger": "https://eldenring.fandom.com/wiki/Gazing_Finger",
+    "Ghiza's Wheel": "https://eldenring.fandom.com/wiki/Ghiza's_Wheel",
+    "Ghostflame Torch": "https://eldenring.fandom.com/wiki/Ghostflame_Torch",
+    "Giant-Crusher": "https://eldenring.fandom.com/wiki/Giant-Crusher",
+    "Giant's Red Braid": "https://eldenring.fandom.com/wiki/Giant's_Red_Braid",
+    "Glaive": "https://eldenring.fandom.com/wiki/Glaive",
+    "Glintstone Kris": "https://eldenring.fandom.com/wiki/Glintstone_Kris",
+    "Godskin Peeler": "https://eldenring.fandom.com/wiki/Godskin_Peeler",
+    "Godskin Stitcher": "https://eldenring.fandom.com/wiki/Godskin_Stitcher",
+    "Godslayer's Greatsword": "https://eldenring.fandom.com/wiki/Godslayer's_Greatsword",
+    "Golden Epitaph": "https://eldenring.fandom.com/wiki/Golden_Epitaph",
+    "Golden Halberd": "https://eldenring.fandom.com/wiki/Golden_Halberd",
+    "Golden Order Greatsword": "https://eldenring.fandom.com/wiki/Golden_Order_Greatsword",
+    "Golem Fist": "https://eldenring.fandom.com/wiki/Golem_Fist",
+    "Golem Greatbow": "https://eldenring.fandom.com/wiki/Golem_Greatbow",
+    "Golem's Halberd": "https://eldenring.fandom.com/wiki/Golem's_Halberd",
+    "Grafted Blade Greatsword": "https://eldenring.fandom.com/wiki/Grafted_Blade_Greatsword",
+    "Grafted Dragon": "https://eldenring.fandom.com/wiki/Grafted_Dragon",
+    "Grave Scythe": "https://eldenring.fandom.com/wiki/Grave_Scythe",
+    "Greataxe": "https://eldenring.fandom.com/wiki/Greataxe",
+    "Great Club": "https://eldenring.fandom.com/wiki/Great_Club",
+    "Great Katana": "https://eldenring.fandom.com/wiki/Great_Katana",
+    "Great Knife": "https://eldenring.fandom.com/wiki/Great_Knife",
+    "Great Mace": "https://eldenring.fandom.com/wiki/Great_Mace",
+    "Great Omenkiller Cleaver": "https://eldenring.fandom.com/wiki/Great_Omenkiller_Cleaver",
+    "Great Stars": "https://eldenring.fandom.com/wiki/Great_Stars",
+    "Great epee": "https://eldenring.fandom.com/wiki/Great_epee",
+    "Greatbow": "https://eldenring.fandom.com/wiki/Greatbow",
+    "Greathorn Hammer": "https://eldenring.fandom.com/wiki/Greathorn_Hammer",
+    "Greatsword": "https://eldenring.fandom.com/wiki/Greatsword",
+    "Greatsword of Damnation": "https://eldenring.fandom.com/wiki/Greatsword_of_Damnation",
+    "Greatsword of Radahn (Light)": "https://eldenring.fandom.com/wiki/Greatsword_of_Radahn_(Light)",
+    "Greatsword of Radahn (Lord)": "https://eldenring.fandom.com/wiki/Greatsword_of_Radahn_(Lord)",
+    "Greatsword of Solitude": "https://eldenring.fandom.com/wiki/Greatsword_of_Solitude",
+    "Grossmesser": "https://eldenring.fandom.com/wiki/Grossmesser",
+    "Guardian's Swordspear": "https://eldenring.fandom.com/wiki/Guardian's_Swordspear",
+    "Halberd": "https://eldenring.fandom.com/wiki/Halberd",
+    "Halo Scythe": "https://eldenring.fandom.com/wiki/Halo_Scythe",
+    "Hammer": "https://eldenring.fandom.com/wiki/Hammer",
+    "Hand Axe": "https://eldenring.fandom.com/wiki/Hand_Axe",
+    "Hand Ballista": "https://eldenring.fandom.com/wiki/Hand_Ballista",
+    "Hand of Malenia": "https://eldenring.fandom.com/wiki/Hand_of_Malenia",
+    "Harp Bow": "https://eldenring.fandom.com/wiki/Harp_Bow",
+    "Heavy Crossbow": "https://eldenring.fandom.com/wiki/Heavy_Crossbow",
+    "Helphen's Steeple": "https://eldenring.fandom.com/wiki/Helphen_Steeple",
+    "Highland Axe": "https://eldenring.fandom.com/wiki/Highland_Axe",
+    "Hookclaws": "https://eldenring.fandom.com/wiki/Hookclaws",
+    "Horn Bow": "https://eldenring.fandom.com/wiki/Horn_Bow",
+    "Horned Warrior's Greatsword": "https://eldenring.fandom.com/wiki/Horned_Warrior's_Greatsword",
+    "Horned Warrior's Sword": "https://eldenring.fandom.com/wiki/Horned_Warrior's_Sword",
+    "Hoslow's Petal Whip": "https://eldenring.fandom.com/wiki/Hoslow's_Petal_Whip",
+    "Icerind Hatchet": "https://eldenring.fandom.com/wiki/Icerind_Hatchet",
+    "Igon's Greatbow": "https://eldenring.fandom.com/wiki/Igon's_Greatbow",
+    "Inquisitor's Girandole": "https://eldenring.fandom.com/wiki/Inquisitor's_Girandole",
+    "Inseparable Sword": "https://eldenring.fandom.com/wiki/Inseparable_Sword",
+    "Iron Ball": "https://eldenring.fandom.com/wiki/Iron_Ball",
+    "Iron Cleaver": "https://eldenring.fandom.com/wiki/Iron_Cleaver",
+    "Iron Greatsword": "https://eldenring.fandom.com/wiki/Iron_Greatsword",
+    "Iron Spear": "https://eldenring.fandom.com/wiki/Iron_Spear",
+    "Ivory Sickle": "https://eldenring.fandom.com/wiki/Ivory_Sickle",
+    "Jar Cannon": "https://eldenring.fandom.com/wiki/Jar_Cannon",
+    "Jawbone Axe": "https://eldenring.fandom.com/wiki/Jawbone_Axe",
+    "Katar": "https://eldenring.fandom.com/wiki/Katar",
+    "Knight's Greatsword": "https://eldenring.fandom.com/wiki/Knight's_Greatsword",
+    "Lance": "https://eldenring.fandom.com/wiki/Lance",
+    "Large Club": "https://eldenring.fandom.com/wiki/Large_Club",
+    "Lazuli Glintstone Sword": "https://eldenring.fandom.com/wiki/Lazuli_Glintstone_Sword",
+    "Leda's Sword": "https://eldenring.fandom.com/wiki/Leda's_Sword",
+    "Light Crossbow": "https://eldenring.fandom.com/wiki/Light_Crossbow",
+    "Lightning Perfume Bottle": "https://eldenring.fandom.com/wiki/Lightning_Perfume_Bottle",
+    "Lion Greatbow": "https://eldenring.fandom.com/wiki/Lion_Greatbow",
+    "Lizard Greatsword": "https://eldenring.fandom.com/wiki/Lizard_Greatsword",
+    "Longbow": "https://eldenring.fandom.com/wiki/Longbow",
+    "Longhaft Axe": "https://eldenring.fandom.com/wiki/Longhaft_Axe",
+    "Longsword": "https://eldenring.fandom.com/wiki/Longsword",
+    "Lordsworn's Greatsword": "https://eldenring.fandom.com/wiki/Lordsworn's_Greatsword",
+    "Lordsworn's Straight Sword": "https://eldenring.fandom.com/wiki/Lordsworn's_Straight_Sword",
+    "Loretta's War Sickle": "https://eldenring.fandom.com/wiki/Loretta's_War_Sickle",
+    "Lucerne": "https://eldenring.fandom.com/wiki/Lucerne",
+    "Mace": "https://eldenring.fandom.com/wiki/Mace",
+    "Madding Hand": "https://eldenring.fandom.com/wiki/Madding_Hand",
+    "Magma Blade": "https://eldenring.fandom.com/wiki/Magma_Blade",
+    "Magma Whip Candlestick": "https://eldenring.fandom.com/wiki/Magma_Whip_Candlestick",
+    "Magma Wyrm's Scalesword": "https://eldenring.fandom.com/wiki/Magma_Wyrm's_Scalesword",
+    "Main-gauche": "https://eldenring.fandom.com/wiki/Main-gauche",
+    "Maliketh's Black Blade": "https://eldenring.fandom.com/wiki/Maliketh's_Black_Blade",
+    "Mantis Blade": "https://eldenring.fandom.com/wiki/Mantis_Blade",
+    "Marais Executioner's Sword": "https://eldenring.fandom.com/wiki/Marais_Executioner's_Sword",
+    "Marika's Hammer": "https://eldenring.fandom.com/wiki/Marika's_Hammer",
+    "Messmer Soldier's Axe": "https://eldenring.fandom.com/wiki/Messmer_Soldier's_Axe",
+    "Messmer Soldier's Spear": "https://eldenring.fandom.com/wiki/Messmer_Soldier's_Spear",
+    "Meteoric Ore Blade": "https://eldenring.fandom.com/wiki/Meteoric_Ore_Blade",
+    "Milady": "https://eldenring.fandom.com/wiki/Milady",
+    "Miquellan Knight's Sword": "https://eldenring.fandom.com/wiki/Miquellan_Knight's_Sword",
+    "Misbegotten Shortbow": "https://eldenring.fandom.com/wiki/Misbegotten_Shortbow",
+    "Misericorde": "https://eldenring.fandom.com/wiki/Misericorde",
+    "Mohgwyn's Sacred Spear": "https://eldenring.fandom.com/wiki/Mohgwyn's_Sacred_Spear",
+    "Monk's Flameblade": "https://eldenring.fandom.com/wiki/Monk's_Flameblade",
+    "Monk's Flamemace": "https://eldenring.fandom.com/wiki/Monk's_Flamemace",
+    "Moonrithyll's Knight Sword": "https://eldenring.fandom.com/wiki/Moonrithyll's_Knight_Sword",
+    "Moonveil": "https://eldenring.fandom.com/wiki/Moonveil",
+    "Morgott's Cursed Sword": "https://eldenring.fandom.com/wiki/Morgott's_Cursed_Sword",
+    "Morning Star": "https://eldenring.fandom.com/wiki/Morning_Star",
+    "Nagakiba": "https://eldenring.fandom.com/wiki/Nagakiba",
+    "Nanaya's Torch": "https://eldenring.fandom.com/wiki/Nanaya's_Torch",
+    "Nightrider Flail": "https://eldenring.fandom.com/wiki/Nightrider_Flail",
+    "Nightrider Glaive": "https://eldenring.fandom.com/wiki/Nightrider_Glaive",
+    "Noble's Estoc": "https://eldenring.fandom.com/wiki/Noble's_Estoc",
+    "Noble's Slender Sword": "https://eldenring.fandom.com/wiki/Noble's_Slender_Sword",
+    "Nox Flowing Hammer": "https://eldenring.fandom.com/wiki/Nox_Flowing_Hammer",
+    "Nox Flowing Sword": "https://eldenring.fandom.com/wiki/Nox_Flowing_Sword",
+    "Obsidian Lamina": "https://eldenring.fandom.com/wiki/Obsidian_Lamina",
+    "Omen Cleaver": "https://eldenring.fandom.com/wiki/Omen_Cleaver",
+    "Onyx Lord's Greatsword": "https://eldenring.fandom.com/wiki/Onyx_Lord's_Greatsword",
+    "Ordovis's Greatsword": "https://eldenring.fandom.com/wiki/Ordovis's_Greatsword",
+    "Ornamental Straight Sword": "https://eldenring.fandom.com/wiki/Ornamental_Straight_Sword",
+    "Parrying Dagger": "https://eldenring.fandom.com/wiki/Parrying_Dagger",
+    "Partisan": "https://eldenring.fandom.com/wiki/Partisan",
+    "Pata": "https://eldenring.fandom.com/wiki/Pata",
+    "Pest's Glaive": "https://eldenring.fandom.com/wiki/Pest's_Glaive",
+    "Pickaxe": "https://eldenring.fandom.com/wiki/Pickaxe",
+    "Pike": "https://eldenring.fandom.com/wiki/Pike",
+    "Poisoned Hand": "https://eldenring.fandom.com/wiki/Poisoned_Hand",
+    "Poleblade of the Bud": "https://eldenring.fandom.com/wiki/Poleblade_of_the_Bud",
+    "Prelate's Inferno Crozier": "https://eldenring.fandom.com/wiki/Prelate's_Inferno_Crozier",
+    "Pulley Bow": "https://eldenring.fandom.com/wiki/Pulley_Bow",
+    "Pulley Crossbow": "https://eldenring.fandom.com/wiki/Pulley_Crossbow",
+    "Putrescence Cleaver": "https://eldenring.fandom.com/wiki/Putrescence_Cleaver",
+    "Queelign's Greatsword": "https://eldenring.fandom.com/wiki/Queelign's_Greatsword",
+    "Rabbath's Cannon": "https://eldenring.fandom.com/wiki/Rabbath's_Cannon",
+    "Rakshasa's Great Katana": "https://eldenring.fandom.com/wiki/Rakshasa's_Great_Katana",
+    "Rapier": "https://eldenring.fandom.com/wiki/Rapier",
+    "Raptor Talons": "https://eldenring.fandom.com/wiki/Raptor_Talons",
+    "Red Bear's Claw": "https://eldenring.fandom.com/wiki/Red_Bear's_Claw",
+    "Red Branch Shortbow": "https://eldenring.fandom.com/wiki/Red_Branch_Shortbow",
+    "Reduvia": "https://eldenring.fandom.com/wiki/Reduvia",
+    "Regalia of Eochaid": "https://eldenring.fandom.com/wiki/Regalia_of_Eochaid",
+    "Rellana's Twin Blades": "https://eldenring.fandom.com/wiki/Rellana's_Twin_Blades",
+    "Repeating Crossbow": "https://eldenring.fandom.com/wiki/Repeating_Crossbow",
+    "Ringed Finger": "https://eldenring.fandom.com/wiki/Ringed_Finger",
+    "Ripple Blade": "https://eldenring.fandom.com/wiki/Ripple_Blade",
+    "Ripple Crescent Halberd": "https://eldenring.fandom.com/wiki/Ripple_Crescent_Halberd",
+    "Rivers of Blood": "https://eldenring.fandom.com/wiki/Rivers_of_Blood",
+    "Rogier's Rapier": "https://eldenring.fandom.com/wiki/Rogier's_Rapier",
+    "Rosus' Axe": "https://eldenring.fandom.com/wiki/Rosus'+Axe",
+    "Rotten Battle Hammer": "https://eldenring.fandom.com/wiki/Rotten_Battle_Hammer",
+    "Rotten Crystal Spear": "https://eldenring.fandom.com/wiki/Rotten_Crystal_Spear",
+    "Rotten Crystal Sword": "https://eldenring.fandom.com/wiki/Rotten_Crystal_Sword",
+    "Rotten Greataxe": "https://eldenring.fandom.com/wiki/Rotten_Greataxe",
+    "Royal Greatsword": "https://eldenring.fandom.com/wiki/Royal_Greatsword",
+    "Ruins Greatsword": "https://eldenring.fandom.com/wiki/Ruins_Greatsword",
+    "Rusted Anchor": "https://eldenring.fandom.com/wiki/Rusted_Anchor",
+    "Sacred Relic Sword": "https://eldenring.fandom.com/wiki/Sacred_Relic_Sword",
+    "Sacrificial Axe": "https://eldenring.fandom.com/wiki/Sacrificial_Axe",
+    "Scavenger's Curved Sword": "https://eldenring.fandom.com/wiki/Scavenger's_Curved_Sword",
+    "Scimitar": "https://eldenring.fandom.com/wiki/Scimitar",
+    "Scorpion's Stinger": "https://eldenring.fandom.com/wiki/Scorpion's_Stinger",
+    "Scythe": "https://eldenring.fandom.com/wiki/Scythe",
+    "Scepter of the All-Knowing": "https://eldenring.fandom.com/wiki/Scepter_of_the_All-Knowing",
+    "Sentry's Torch": "https://eldenring.fandom.com/wiki/Sentry_Torch",
+    "Serpent Bow": "https://eldenring.fandom.com/wiki/Serpent_Bow",
+    "Serpent Flail": "https://eldenring.fandom.com/wiki/Serpent_Flail",
+    "Serpent-God's Curved Sword": "https://eldenring.fandom.com/wiki/Serpent-God's_Curved_Sword",
+    "Serpent-Hunter": "https://eldenring.fandom.com/wiki/Serpent-Hunter",
+    "Serpentbone Blade": "https://eldenring.fandom.com/wiki/Serpentbone_Blade",
+    "Shadow Sunflower Blossom": "https://eldenring.fandom.com/wiki/Shadow_Sunflower_Blossom",
+    "Shamshir": "https://eldenring.fandom.com/wiki/Shamshir",
+    "Short Spear": "https://eldenring.fandom.com/wiki/Short_Spear",
+    "Short Sword": "https://eldenring.fandom.com/wiki/Short_Sword",
+    "Shortbow": "https://eldenring.fandom.com/wiki/Shortbow",
+    "Shotel": "https://eldenring.fandom.com/wiki/Shotel",
+    "Siluria's Tree": "https://eldenring.fandom.com/wiki/Siluria's_Tree",
+    "Smithscript Axe": "https://eldenring.fandom.com/wiki/Smithscript_Axe",
+    "Smithscript Cirque": "https://eldenring.fandom.com/wiki/Smithscript_Cirque",
+    "Smithscript Dagger": "https://eldenring.fandom.com/wiki/Smithscript_Dagger",
+    "Smithscript Greathammer": "https://eldenring.fandom.com/wiki/Smithscript_Greathammer",
+    "Smithscript Spear": "https://eldenring.fandom.com/wiki/Smithscript_Spear",
+    "Soldier's Crossbow": "https://eldenring.fandom.com/wiki/Soldier's_Crossbow",
+    "Spear": "https://eldenring.fandom.com/wiki/Spear",
+    "Spear of the Impaler": "https://eldenring.fandom.com/wiki/Spear_of_the_Impaler",
+    "Spiked Caestus": "https://eldenring.fandom.com/wiki/Spiked_Caestus",
+    "Spiked Club": "https://eldenring.fandom.com/wiki/Spiked_Club",
+    "Spiked Spear": "https://eldenring.fandom.com/wiki/Spiked_Spear",
+    "Spirit Glaive": "https://eldenring.fandom.com/wiki/Spirit_Glaive",
+    "Spirit Sword": "https://eldenring.fandom.com/wiki/Spirit_Sword",
+    "St. Trina's Torch": "https://eldenring.fandom.com/wiki/St._Trina's_Torch",
+    "Star Fist": "https://eldenring.fandom.com/wiki/Star_Fist",
+    "Star-Lined Sword": "https://eldenring.fandom.com/wiki/Star-Lined_Sword",
+    "Starscourge Greatsword": "https://eldenring.fandom.com/wiki/Starscourge_Greatsword",
+    "Steel-Wire Torch": "https://eldenring.fandom.com/wiki/Steel-Wire_Torch",
+    "Stone Club": "https://eldenring.fandom.com/wiki/Stone_Club",
+    "Stone-Sheathed Sword": "https://eldenring.fandom.com/wiki/Stone-Sheathed_Sword",
+    "Stormhawk Axe": "https://eldenring.fandom.com/wiki/Stormhawk_Axe",
+    "Swift Spear": "https://eldenring.fandom.com/wiki/Swift_Spear",
+    "Sword Lance": "https://eldenring.fandom.com/wiki/Sword_Lance",
+    "Sword of Darkness": "https://eldenring.fandom.com/wiki/Sword_of_Darkness",
+    "Sword of Light": "https://eldenring.fandom.com/wiki/Sword_of_Light",
+    "Sword of Milos": "https://eldenring.fandom.com/wiki/Sword_of_Milos",
+    "Sword of Night": "https://eldenring.fandom.com/wiki/Sword_of_Night",
+    "Sword of Night and Flame": "https://eldenring.fandom.com/wiki/Sword_of_Night_and_Flame",
+    "Sword of St. Trina": "https://eldenring.fandom.com/wiki/Sword_of_St._Trina",
+    "Thiollier's Hidden Needle": "https://eldenring.fandom.com/wiki/Thiollier's_Hidden_Needle",
+    "Thorned Whip": "https://eldenring.fandom.com/wiki/Thorned_Whip",
+    "Tooth Whip": "https://eldenring.fandom.com/wiki/Tooth_Whip",
+    "Torch": "https://eldenring.fandom.com/wiki/Torch",
+    "Torchpole": "https://eldenring.fandom.com/wiki/Torchpole",
+    "Treespear": "https://eldenring.fandom.com/wiki/Treespear",
+    "Troll Knight's Sword": "https://eldenring.fandom.com/wiki/Troll_Knight's_Sword",
+    "Troll's Golden Sword": "https://eldenring.fandom.com/wiki/Troll's_Golden_Sword",
+    "Troll's Hammer": "https://eldenring.fandom.com/wiki/Troll's_Hammer",
+    "Twinblade": "https://eldenring.fandom.com/wiki/Twinblade",
+    "Twinned Knight Swords": "https://eldenring.fandom.com/wiki/Twinned_Knight_Swords",
+    "Uchigatana": "https://eldenring.fandom.com/wiki/Uchigatana",
+    "Urumi": "https://eldenring.fandom.com/wiki/Urumi",
+    "Varre's Bouquet": "https://eldenring.fandom.com/wiki/Varre's_Bouquet",
+    "Velvet Sword of St. Trina": "https://eldenring.fandom.com/wiki/Velvet_Sword_of_St._Trina",
+    "Venomous Fang": "https://eldenring.fandom.com/wiki/Venomous_Fang",
+    "Veteran's Prosthesis": "https://eldenring.fandom.com/wiki/Veteran's_Prosthesis",
+    "Vulgar Militia Saw": "https://eldenring.fandom.com/wiki/Vulgar_Militia_Saw",
+    "Vulgar Militia Shotel": "https://eldenring.fandom.com/wiki/Vulgar_Militia_Shotel",
+    "Vyke's War Spear": "https://eldenring.fandom.com/wiki/Vyke's_War_Spear",
+    "Wakizashi": "https://eldenring.fandom.com/wiki/Wakizashi",
+    "Warhawk's Talon": "https://eldenring.fandom.com/wiki/Warhawk's_Talon",
+    "Warped Axe": "https://eldenring.fandom.com/wiki/Warped_Axe",
+    "Warpick": "https://eldenring.fandom.com/wiki/Warpick",
+    "Watchdog's Greatsword": "https://eldenring.fandom.com/wiki/Watchdog's_Greatsword",
+    "Watchdog's Staff": "https://eldenring.fandom.com/wiki/Watchdog's_Staff",
+    "Weathered Straight Sword": "https://eldenring.fandom.com/wiki/Weathered_Straight_Sword",
+    "Whip": "https://eldenring.fandom.com/wiki/Whip",
+    "Wing of Astel": "https://eldenring.fandom.com/wiki/Wing_of_Astel",
+    "Winged Greathorn": "https://eldenring.fandom.com/wiki/Winged_Greathorn",
+    "Winged Scythe": "https://eldenring.fandom.com/wiki/Winged_Scythe",
+    "Zamor Curved Sword": "https://eldenring.fandom.com/wiki/Zamor_Curved_Sword",
+    "Zweihander": "https://eldenring.fandom.com/wiki/Zweihander"
+  },
+  "armor": {
+    "light": [
+      {
+        "name": "Alberich's Set",
+        "link": "https://eldenring.fandom.com/wiki/Alberich's_Set",
+        "WGT": 9.7
+      },
+      {
+        "name": "Albinauric Set",
+        "link": "https://eldenring.fandom.com/wiki/Albinauric_Set",
+        "WGT": 12.6
+      },
+      {
+        "name": "Aristocrat Set",
+        "link": "https://eldenring.fandom.com/wiki/Aristocrat_Set",
+        "WGT": 9.0
+      },
+      {
+        "name": "Ascetic's Set",
+        "link": "https://eldenring.fandom.com/wiki/Ascetic's_Set",
+        "WGT": 8.5
+      },
+      {
+        "name": "Astrologer Set",
+        "link": "https://eldenring.fandom.com/wiki/Astrologer_Set",
+        "WGT": 13.3
+      },
+      {
+        "name": "Azur's Glintstone Set",
+        "link": "https://eldenring.fandom.com/wiki/Azur's_Glintstone_Set",
+        "WGT": 14.3
+      },
+      {
+        "name": "Battlemage Set",
+        "link": "https://eldenring.fandom.com/wiki/Battlemage_Set",
+        "WGT": 10.4
+      },
+      {
+        "name": "Bloodsoaked Set",
+        "link": "https://eldenring.fandom.com/wiki/Bloodsoaked_Set",
+        "WGT": 3.6
+      },
+      {
+        "name": "Blue Festive Set",
+        "link": "https://eldenring.fandom.com/wiki/Blue_Festive_Set",
+        "WGT": 5.8
+      },
+      {
+        "name": "Champion Set",
+        "link": "https://eldenring.fandom.com/wiki/Champion_Set",
+        "WGT": 13.8
+      },
+      {
+        "name": "Commoner's Set",
+        "link": "https://eldenring.fandom.com/wiki/Commoner's_Set",
+        "WGT": 8.5
+      },
+      {
+        "name": "Consort's Set",
+        "link": "https://eldenring.fandom.com/wiki/Consort's_Set",
+        "WGT": 10.2
+      },
+      {
+        "name": "Dancer's Set",
+        "link": "https://eldenring.fandom.com/wiki/Dancer's_Set",
+        "WGT": 7.5
+      },
+      {
+        "name": "Dane's Set",
+        "link": "https://eldenring.fandom.com/wiki/Dane's_Set",
+        "WGT": 12.1
+      },
+      {
+        "name": "Depraved Perfumer Set",
+        "link": "https://eldenring.fandom.com/wiki/Depraved_Perfumer_Set",
+        "WGT": 13.4
+      },
+      {
+        "name": "Errant Sorcerer Set",
+        "link": "https://eldenring.fandom.com/wiki/Errant_Sorcerer_Set",
+        "WGT": 11.3
+      },
+      {
+        "name": "Festive Set",
+        "link": "https://eldenring.fandom.com/wiki/Festive_Set",
+        "WGT": 5.8
+      },
+      {
+        "name": "Fia's Set",
+        "link": "https://eldenring.fandom.com/wiki/Fia's_Set",
+        "WGT": 6.8
+      },
+      {
+        "name": "Finger Maiden Set",
+        "link": "https://eldenring.fandom.com/wiki/Finger_Maiden_Set",
+        "WGT": 9.3
+      },
+      {
+        "name": "Fur Set",
+        "link": "https://eldenring.fandom.com/wiki/Fur_Set",
+        "WGT": 11.5
+      },
+      {
+        "name": "Godskin Apostle Set",
+        "link": "https://eldenring.fandom.com/wiki/Godskin_Apostle_Set",
+        "WGT": 10.9
+      },
+      {
+        "name": "Godskin Noble Set",
+        "link": "https://eldenring.fandom.com/wiki/Godskin_Noble_Set",
+        "WGT": 12.2
+      },
+      {
+        "name": "Goldmask's Set",
+        "link": "https://eldenring.fandom.com/wiki/Goldmask's_Set",
+        "WGT": 9.8
+      },
+      {
+        "name": "Guilty Set",
+        "link": "https://eldenring.fandom.com/wiki/Guilty_Set",
+        "WGT": 6.6
+      },
+      {
+        "name": "High Page Set",
+        "link": "https://eldenring.fandom.com/wiki/High_Page_Set",
+        "WGT": 9.2
+      },
+      {
+        "name": "High Priest Set",
+        "link": "https://eldenring.fandom.com/wiki/High_Priest_Set",
+        "WGT": 9.8
+      },
+      {
+        "name": "Hornsent Set",
+        "link": "https://eldenring.fandom.com/wiki/Hornsent_Set",
+        "WGT": 5.6
+      },
+      {
+        "name": "Juvenile Scholar Set",
+        "link": "https://eldenring.fandom.com/wiki/Juvenile_Scholar_Set",
+        "WGT": 5.5
+      },
+      {
+        "name": "Lazuli Sorcerer Set",
+        "link": "https://eldenring.fandom.com/wiki/Lazuli_Sorcerer_Set",
+        "WGT": 12.3
+      },
+      {
+        "name": "Lusat's Set",
+        "link": "https://eldenring.fandom.com/wiki/Lusat's_Set",
+        "WGT": 14.3
+      },
+      {
+        "name": "Marionette Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Marionette_Soldier_Set",
+        "WGT": 12.6
+      },
+      {
+        "name": "Mushroom Set",
+        "link": "https://eldenring.fandom.com/wiki/Mushroom_Set",
+        "WGT": 12.1
+      },
+      {
+        "name": "Noble's Set",
+        "link": "https://eldenring.fandom.com/wiki/Noble's_Set",
+        "WGT": 14.0
+      },
+      {
+        "name": "Nomadic Merchant's Set",
+        "link": "https://eldenring.fandom.com/wiki/Nomadic_Merchant's_Set",
+        "WGT": 14.6
+      },
+      {
+        "name": "Old Aristocrat Set",
+        "link": "https://eldenring.fandom.com/wiki/Old_Aristocrat_Set",
+        "WGT": 9.3
+      },
+      {
+        "name": "Page Set",
+        "link": "https://eldenring.fandom.com/wiki/Page_Set",
+        "WGT": 9.0
+      },
+      {
+        "name": "Perfumer Set",
+        "link": "https://eldenring.fandom.com/wiki/Perfumer_Set",
+        "WGT": 10.7
+      },
+      {
+        "name": "Preceptor's Set",
+        "link": "https://eldenring.fandom.com/wiki/Preceptor's_Set",
+        "WGT": 15.9
+      },
+      {
+        "name": "Prisoner Set",
+        "link": "https://eldenring.fandom.com/wiki/Prisoner_Set",
+        "WGT": 13.8
+      },
+      {
+        "name": "Prophet Set",
+        "link": "https://eldenring.fandom.com/wiki/Prophet_Set",
+        "WGT": 10.4
+      },
+      {
+        "name": "Queen of the Full Moon Set",
+        "link": "https://eldenring.fandom.com/wiki/Queen_of_the_Full_Moon_Set",
+        "WGT": 11.0
+      },
+      {
+        "name": "Raya Lucarian Sorcerer Set",
+        "link": "https://eldenring.fandom.com/wiki/Raya_Lucarian_Sorcerer_Set",
+        "WGT": 12.3
+      },
+      {
+        "name": "Ruler's Set",
+        "link": "https://eldenring.fandom.com/wiki/Ruler's_Set",
+        "WGT": 7.3
+      },
+      {
+        "name": "Sage Set",
+        "link": "https://eldenring.fandom.com/wiki/Sage_Set",
+        "WGT": 9.8
+      },
+      {
+        "name": "Sanguine Noble Set",
+        "link": "https://eldenring.fandom.com/wiki/Sanguine_Noble_Set",
+        "WGT": 9.0
+      },
+      {
+        "name": "Shaman Set",
+        "link": "https://eldenring.fandom.com/wiki/Shaman_Set",
+        "WGT": 11.5
+      },
+      {
+        "name": "Snow Witch Set",
+        "link": "https://eldenring.fandom.com/wiki/Snow_Witch_Set",
+        "WGT": 10.8
+      },
+      {
+        "name": "Spellblade Set",
+        "link": "https://eldenring.fandom.com/wiki/Spellblade_Set",
+        "WGT": 8.6
+      },
+      {
+        "name": "Traveler's Set",
+        "link": "https://eldenring.fandom.com/wiki/Traveler's_Set",
+        "WGT": 8.9
+      },
+      {
+        "name": "Traveling Maiden Set",
+        "link": "https://eldenring.fandom.com/wiki/Traveling_Maiden_Set",
+        "WGT": 11.0
+      }
+    ],
+    "medium": [
+      {
+        "name": "Ansbach's Set",
+        "link": "https://eldenring.fandom.com/wiki/Ansbach's_Set",
+        "WGT": 13.9
+      },
+      {
+        "name": "Bandit Set",
+        "link": "https://eldenring.fandom.com/wiki/Bandit_Set",
+        "WGT": 16.8
+      },
+      {
+        "name": "Blue Cloth Set",
+        "link": "https://eldenring.fandom.com/wiki/Blue_Cloth_Set",
+        "WGT": 17.8
+      },
+      {
+        "name": "Confessor Set",
+        "link": "https://eldenring.fandom.com/wiki/Confessor_Set",
+        "WGT": 19.2
+      },
+      {
+        "name": "Divine Beast Set",
+        "link": "https://eldenring.fandom.com/wiki/Divine_Beast_Set",
+        "WGT": 15.5
+      },
+      {
+        "name": "Duelist Set",
+        "link": "https://eldenring.fandom.com/wiki/Duelist_Set",
+        "WGT": 19.8
+      },
+      {
+        "name": "Godrick Foot Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Godrick_Foot_Soldier_Set",
+        "WGT": 19.6
+      },
+      {
+        "name": "Gravebird Set",
+        "link": "https://eldenring.fandom.com/wiki/Gravebird_Set",
+        "WGT": 14.7
+      },
+      {
+        "name": "Haligtree Foot Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Haligtree_Foot_Soldier_Set",
+        "WGT": 19.6
+      },
+      {
+        "name": "Highland Warrior Set",
+        "link": "https://eldenring.fandom.com/wiki/Highland_Warrior_Set",
+        "WGT": 14.9
+      },
+      {
+        "name": "Highwayman Set",
+        "link": "https://eldenring.fandom.com/wiki/Highwayman_Set",
+        "WGT": 18.7
+      },
+      {
+        "name": "Igon's Set",
+        "link": "https://eldenring.fandom.com/wiki/Igon's_Set",
+        "WGT": 18.0
+      },
+      {
+        "name": "Iron Rivet Set",
+        "link": "https://eldenring.fandom.com/wiki/Iron_Rivet_Set",
+        "WGT": 19.3
+      },
+      {
+        "name": "Land of Reeds Set",
+        "link": "https://eldenring.fandom.com/wiki/Land_of_Reeds_Set",
+        "WGT": 19.8
+      },
+      {
+        "name": "Leyndell Foot Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Leyndell_Foot_Soldier_Set",
+        "WGT": 19.6
+      },
+      {
+        "name": "Malenia's Set",
+        "link": "https://eldenring.fandom.com/wiki/Malenia's_Set",
+        "WGT": 20.5
+      },
+      {
+        "name": "Mausoleum Foot Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Mausoleum_Foot_Soldier_Set",
+        "WGT": 16.0
+      },
+      {
+        "name": "Mausoleum Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Mausoleum_Soldier_Set",
+        "WGT": 20.7
+      },
+      {
+        "name": "Messmer's Set",
+        "link": "https://eldenring.fandom.com/wiki/Messmer's_Set",
+        "WGT": 19.3
+      },
+      {
+        "name": "Night Maiden Set",
+        "link": "https://eldenring.fandom.com/wiki/Night_Maiden_Set",
+        "WGT": 19.3
+      },
+      {
+        "name": "Night Set",
+        "link": "https://eldenring.fandom.com/wiki/Night_Set",
+        "WGT": 16.9
+      },
+      {
+        "name": "Nox Monk Set",
+        "link": "https://eldenring.fandom.com/wiki/Nox_Monk_Set",
+        "WGT": 18.8
+      },
+      {
+        "name": "Nox Swordstress Set",
+        "link": "https://eldenring.fandom.com/wiki/Nox_Swordstress_Set",
+        "WGT": 19.3
+      },
+      {
+        "name": "Omenkiller Set",
+        "link": "https://eldenring.fandom.com/wiki/Omenkiller_Set",
+        "WGT": 16.9
+      },
+      {
+        "name": "Radahn Foot Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Radahn_Foot_Soldier_Set",
+        "WGT": 19.6
+      },
+      {
+        "name": "Raptor's Set",
+        "link": "https://eldenring.fandom.com/wiki/Raptor's_Set",
+        "WGT": 16.8
+      },
+      {
+        "name": "Raya Lucarian Foot Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Raya_Lucarian_Foot_Soldier_Set",
+        "WGT": 19.6
+      },
+      {
+        "name": "Rotten Duelist Set",
+        "link": "https://eldenring.fandom.com/wiki/Rotten_Duelist_Set",
+        "WGT": 20.0
+      },
+      {
+        "name": "Shadow Militiaman Set",
+        "link": "https://eldenring.fandom.com/wiki/Shadow_Militiaman_Set",
+        "WGT": 16.9
+      },
+      {
+        "name": "Thiollier's Set",
+        "link": "https://eldenring.fandom.com/wiki/Thiollier's_Set",
+        "WGT": 17.7
+      },
+      {
+        "name": "White Reed Set",
+        "link": "https://eldenring.fandom.com/wiki/White_Reed_Set",
+        "WGT": 19.8
+      },
+      {
+        "name": "Zamor Set",
+        "link": "https://eldenring.fandom.com/wiki/Zamor_Set",
+        "WGT": 20.5
+      }
+    ],
+    "heavy": [
+      {
+        "name": "All-Knowing Set",
+        "link": "https://eldenring.fandom.com/wiki/All-Knowing_Set",
+        "WGT": 25.4
+      },
+      {
+        "name": "Ansbach's Set",
+        "link": "https://eldenring.fandom.com/wiki/Ansbach's_Set",
+        "WGT": 13.9
+      },
+      {
+        "name": "Banished Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Banished_Knight_Set",
+        "WGT": 41.6
+      },
+      {
+        "name": "Beast Champion Set",
+        "link": "https://eldenring.fandom.com/wiki/Beast_Champion_Set",
+        "WGT": 41.6
+      },
+      {
+        "name": "Black Knife Set",
+        "link": "https://eldenring.fandom.com/wiki/Black_Knife_Set",
+        "WGT": 21.8
+      },
+      {
+        "name": "Black Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Black_Knight_Set",
+        "WGT": 32.7
+      },
+      {
+        "name": "Blackflame Monk Set",
+        "link": "https://eldenring.fandom.com/wiki/Blackflame_Monk_Set",
+        "WGT": 27.0
+      },
+      {
+        "name": "Blaidd's Set",
+        "link": "https://eldenring.fandom.com/wiki/Blaidd's_Set",
+        "WGT": 32.7
+      },
+      {
+        "name": "Bloodhound Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Bloodhound_Knight_Set",
+        "WGT": 25.3
+      },
+      {
+        "name": "Briar Set",
+        "link": "https://eldenring.fandom.com/wiki/Briar_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Bull-Goat Set",
+        "link": "https://eldenring.fandom.com/wiki/Bull-Goat_Set",
+        "WGT": 63.0
+      },
+      {
+        "name": "Carian Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Carian_Knight_Set",
+        "WGT": 25.1
+      },
+      {
+        "name": "Chain Set",
+        "link": "https://eldenring.fandom.com/wiki/Chain_Set",
+        "WGT": 21.0
+      },
+      {
+        "name": "Cleanrot Set",
+        "link": "https://eldenring.fandom.com/wiki/Cleanrot_Set",
+        "WGT": 35.7
+      },
+      {
+        "name": "Common Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Common_Soldier_Set",
+        "WGT": 21.0
+      },
+      {
+        "name": "Crucible Axe Set",
+        "link": "https://eldenring.fandom.com/wiki/Crucible_Axe_Set",
+        "WGT": 36.9
+      },
+      {
+        "name": "Crucible Tree Set",
+        "link": "https://eldenring.fandom.com/wiki/Crucible_Tree_Set",
+        "WGT": 36.9
+      },
+      {
+        "name": "Cuckoo Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Cuckoo_Knight_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Death Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Death_Knight_Set",
+        "WGT": 25.9
+      },
+      {
+        "name": "Divine Bird Set",
+        "link": "https://eldenring.fandom.com/wiki/Divine_Bird_Set",
+        "WGT": 27.0
+      },
+      {
+        "name": "Drake Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Drake_Knight_Set",
+        "WGT": 22.0
+      },
+      {
+        "name": "Eccentric Set",
+        "link": "https://eldenring.fandom.com/wiki/Eccentric_Set",
+        "WGT": 22.6
+      },
+      {
+        "name": "Elden Lord Set",
+        "link": "https://eldenring.fandom.com/wiki/Elden_Lord_Set",
+        "WGT": 21.4
+      },
+      {
+        "name": "Exile Set",
+        "link": "https://eldenring.fandom.com/wiki/Exile_Set",
+        "WGT": 21.8
+      },
+      {
+        "name": "Fingerprint Set",
+        "link": "https://eldenring.fandom.com/wiki/Fingerprint_Set",
+        "WGT": 25.3
+      },
+      {
+        "name": "Fire Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Fire_Knight_Set",
+        "WGT": 22.1
+      },
+      {
+        "name": "Fire Monk Set",
+        "link": "https://eldenring.fandom.com/wiki/Fire_Monk_Set",
+        "WGT": 27.0
+      },
+      {
+        "name": "Fire Prelate Set",
+        "link": "https://eldenring.fandom.com/wiki/Fire_Prelate_Set",
+        "WGT": 58.8
+      },
+      {
+        "name": "Freyja's Set",
+        "link": "https://eldenring.fandom.com/wiki/Freyja's_Set",
+        "WGT": 24.3
+      },
+      {
+        "name": "Gaius's Set",
+        "link": "https://eldenring.fandom.com/wiki/Gaius's_Set",
+        "WGT": 44.3
+      },
+      {
+        "name": "Gelmir Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Gelmir_Knight_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "General Radahn Set",
+        "link": "https://eldenring.fandom.com/wiki/General_Radahn_Set",
+        "WGT": 41.6
+      },
+      {
+        "name": "Godrick Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Godrick_Knight_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Godrick Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Godrick_Soldier_Set",
+        "WGT": 24.7
+      },
+      {
+        "name": "Guardian Set",
+        "link": "https://eldenring.fandom.com/wiki/Guardian_Set",
+        "WGT": 19.9
+      },
+      {
+        "name": "Haligtree Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Haligtree_Knight_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Haligtree Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Haligtree_Soldier_Set",
+        "WGT": 24.7
+      },
+      {
+        "name": "Horned Warrior Set",
+        "link": "https://eldenring.fandom.com/wiki/Horned_Warrior_Set",
+        "WGT": 25.1
+      },
+      {
+        "name": "Hoslow's Set",
+        "link": "https://eldenring.fandom.com/wiki/Hoslow's_Set",
+        "WGT": 28.5
+      },
+      {
+        "name": "Iron Set",
+        "link": "https://eldenring.fandom.com/wiki/Iron_Set",
+        "WGT": 21.0
+      },
+      {
+        "name": "Kaiden Set",
+        "link": "https://eldenring.fandom.com/wiki/Kaiden_Set",
+        "WGT": 20.8
+      },
+      {
+        "name": "Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Knight_Set",
+        "WGT": 25.3
+      },
+      {
+        "name": "Leyndell Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Leyndell_Knight_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Leyndell Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Leyndell_Soldier_Set",
+        "WGT": 24.7
+      },
+      {
+        "name": "Lionel's Set",
+        "link": "https://eldenring.fandom.com/wiki/Lionel's_Set",
+        "WGT": 50.5
+      },
+      {
+        "name": "Malformed Dragon Set",
+        "link": "https://eldenring.fandom.com/wiki/Malformed_Dragon_Set",
+        "WGT": 38.0
+      },
+      {
+        "name": "Maliketh's Set",
+        "link": "https://eldenring.fandom.com/wiki/Maliketh's_Set",
+        "WGT": 30.5
+      },
+      {
+        "name": "Mausoleum Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Mausoleum_Knight_Set",
+        "WGT": 23.0
+      },
+      {
+        "name": "Messmer Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Messmer_Soldier_Set",
+        "WGT": 21.6
+      },
+      {
+        "name": "Night's Cavalry Set",
+        "link": "https://eldenring.fandom.com/wiki/Night's_Cavalry_Set",
+        "WGT": 30.5
+      },
+      {
+        "name": "Oathseeker Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Oathseeker_Knight_Set",
+        "WGT": 23.7
+      },
+      {
+        "name": "Omen Set",
+        "link": "https://eldenring.fandom.com/wiki/Omen_Set",
+        "WGT": 55.0
+      },
+      {
+        "name": "Radahn Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Radahn_Soldier_Set",
+        "WGT": 24.7
+      },
+      {
+        "name": "Raging Wolf Set",
+        "link": "https://eldenring.fandom.com/wiki/Raging_Wolf_Set",
+        "WGT": 24.2
+      },
+      {
+        "name": "Rakshasa Set",
+        "link": "https://eldenring.fandom.com/wiki/Rakshasa_Set",
+        "WGT": 30.5
+      },
+      {
+        "name": "Raya Lucarian Soldier Set",
+        "link": "https://eldenring.fandom.com/wiki/Raya_Lucarian_Soldier_Set",
+        "WGT": 24.7
+      },
+      {
+        "name": "Redmane Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Redmane_Knight_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Rellana's Set",
+        "link": "https://eldenring.fandom.com/wiki/Rellana's_Set",
+        "WGT": 28.1
+      },
+      {
+        "name": "Ronin's Set",
+        "link": "https://eldenring.fandom.com/wiki/Ronin's_Set",
+        "WGT": 21.1
+      },
+      {
+        "name": "Royal Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Royal_Knight_Set",
+        "WGT": 36.9
+      },
+      {
+        "name": "Royal Remains Set",
+        "link": "https://eldenring.fandom.com/wiki/Royal_Remains_Set",
+        "WGT": 25.3
+      },
+      {
+        "name": "Scaled Set",
+        "link": "https://eldenring.fandom.com/wiki/Scaled_Set",
+        "WGT": 38.0
+      },
+      {
+        "name": "Solitude Set",
+        "link": "https://eldenring.fandom.com/wiki/Solitude_Set",
+        "WGT": 57.1
+      },
+      {
+        "name": "Tree Sentinel Set",
+        "link": "https://eldenring.fandom.com/wiki/Tree_Sentinel_Set",
+        "WGT": 45.0
+      },
+      {
+        "name": "Twinned Set",
+        "link": "https://eldenring.fandom.com/wiki/Twinned_Set",
+        "WGT": 30.0
+      },
+      {
+        "name": "Vagabond Knight Set",
+        "link": "https://eldenring.fandom.com/wiki/Vagabond_Knight_Set",
+        "WGT": 23.8
+      },
+      {
+        "name": "Verdigris Set",
+        "link": "https://eldenring.fandom.com/wiki/Verdigris_Set",
+        "WGT": 61.6
+      },
+      {
+        "name": "Veteran's Set",
+        "link": "https://eldenring.fandom.com/wiki/Veteran's_Set",
+        "WGT": 45.0
+      },
+      {
+        "name": "Vulgar Militia Set",
+        "link": "https://eldenring.fandom.com/wiki/Vulgar_Militia_Set",
+        "WGT": 18.5
+      },
+      {
+        "name": "War Surgeon Set",
+        "link": "https://eldenring.fandom.com/wiki/War_Surgeon_Set",
+        "WGT": 16.6
+      },
+      {
+        "name": "Young Lion's Set",
+        "link": "https://eldenring.fandom.com/wiki/Young_Lion's_Set",
+        "WGT": 35.7
+      }
+    ]
+  },
+  "talismans": [
+    {
+      "name": "Aged One's Exultation",
+      "link": "https://eldenring.fandom.com/wiki/Aged_One%27s_Exultation"
+    },
+    {
+      "name": "Ailment Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Ailment_Talisman"
+    },
+    {
+      "name": "Ancestral Spirit's Horn",
+      "link": "https://eldenring.fandom.com/wiki/Ancestral_Spirit%27s_Horn"
+    },
+    {
+      "name": "Arrow's Reach Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Arrow%27s_Reach_Talisman"
+    },
+    {
+      "name": "Arrow's Soaring Sting Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Arrow%27s_Soaring_Sting_Talisman"
+    },
+    {
+      "name": "Arrow's Sting Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Arrow%27s_Sting_Talisman"
+    },
+    {
+      "name": "Arsenal Charm",
+      "link": "https://eldenring.fandom.com/wiki/Arsenal_Charm"
+    },
+    {
+      "name": "Arsenal Charm+1",
+      "link": "https://eldenring.fandom.com/wiki/Arsenal_Charm_1"
+    },
+    {
+      "name": "Assassin's Cerulean Dagger",
+      "link": "https://eldenring.fandom.com/wiki/Assassin%27s_Cerulean_Dagger"
+    },
+    {
+      "name": "Assassin's Crimson Dagger",
+      "link": "https://eldenring.fandom.com/wiki/Assassin%27s_Crimson_Dagger"
+    },
+    {
+      "name": "Axe Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Axe_Talisman"
+    },
+    {
+      "name": "Beloved Stardust",
+      "link": "https://eldenring.fandom.com/wiki/Beloved_Stardust"
+    },
+    {
+      "name": "Blade of Mercy",
+      "link": "https://eldenring.fandom.com/wiki/Blade_of_Mercy"
+    },
+    {
+      "name": "Blessed Blue Dew Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Blessed_Blue_Dew_Talisman"
+    },
+    {
+      "name": "Blessed Dew Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Blessed_Dew_Talisman"
+    },
+    {
+      "name": "Blue Dancer Charm",
+      "link": "https://eldenring.fandom.com/wiki/Blue_Dancer_Charm"
+    },
+    {
+      "name": "Blue-Feathered Branchsword",
+      "link": "https://eldenring.fandom.com/wiki/Blue-Feathered_Branchsword"
+    },
+    {
+      "name": "Boltdrake Talisman +3",
+      "link": "https://eldenring.fandom.com/wiki/Boltdrake_Talisman_3"
+    },
+    {
+      "name": "Bull-Goat's Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Bull-Goat%27s_Talisman"
+    },
+    {
+      "name": "Carian Filigreed Crest",
+      "link": "https://eldenring.fandom.com/wiki/Carian_Filigreed_Crest"
+    },
+    {
+      "name": "Cerulean Amber Medallion +3",
+      "link": "https://eldenring.fandom.com/wiki/Cerulean_Amber_Medallion_3"
+    },
+    {
+      "name": "Cerulean Seed Talisman +1",
+      "link": "https://eldenring.fandom.com/wiki/Cerulean_Seed_Talisman_1"
+    },
+    {
+      "name": "Clarifying Horn Charm +2",
+      "link": "https://eldenring.fandom.com/wiki/Clarifying_Horn_Charm_2"
+    },
+    {
+      "name": "Claw Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Claw_Talisman"
+    },
+    {
+      "name": "Companion Jar",
+      "link": "https://eldenring.fandom.com/wiki/Companion_Jar"
+    },
+    {
+      "name": "Concealing Veil",
+      "link": "https://eldenring.fandom.com/wiki/Concealing_Veil"
+    },
+    {
+      "name": "Crepus's Vial",
+      "link": "https://eldenring.fandom.com/wiki/Crepus%27s_Vial"
+    },
+    {
+      "name": "Crimson Amber Medallion +3",
+      "link": "https://eldenring.fandom.com/wiki/Crimson_Amber_Medallion_3"
+    },
+    {
+      "name": "Crimson Seed Talisman +1",
+      "link": "https://eldenring.fandom.com/wiki/Crimson_Seed_Talisman_1"
+    },
+    {
+      "name": "Crucible Feather Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Crucible_Feather_Talisman"
+    },
+    {
+      "name": "Crucible Knot Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Crucible_Knot_Talisman"
+    },
+    {
+      "name": "Crucible Scale Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Crucible_Scale_Talisman"
+    },
+    {
+      "name": "Crusade Insignia",
+      "link": "https://eldenring.fandom.com/wiki/Crusade_Insignia"
+    },
+    {
+      "name": "Curved Sword Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Curved_Sword_Talisman"
+    },
+    {
+      "name": "Daedicar's Woe",
+      "link": "https://eldenring.fandom.com/wiki/Daedicar%27s_Woe"
+    },
+    {
+      "name": "Dagger Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Dagger_Talisman"
+    },
+    {
+      "name": "Dragoncrest Greatshield Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Dragoncrest_Greatshield_Talisman"
+    },
+    {
+      "name": "Dragoncrest Shield Talisman +2",
+      "link": "https://eldenring.fandom.com/wiki/Dragoncrest_Shield_Talisman_2"
+    },
+    {
+      "name": "Dried Bouquet",
+      "link": "https://eldenring.fandom.com/wiki/Dried_Bouquet"
+    },
+    {
+      "name": "Enraged Divine Beast",
+      "link": "https://eldenring.fandom.com/wiki/Enraged_Divine_Beast"
+    },
+    {
+      "name": "Entwining Umbilical Cord",
+      "link": "https://eldenring.fandom.com/wiki/Entwining_Umbilical_Cord"
+    },
+    {
+      "name": "Erdtree's Favor +2",
+      "link": "https://eldenring.fandom.com/wiki/Erdtree%27s_Favor_2"
+    },
+    {
+      "name": "Faithful's Canvas Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Faithful%27s_Canvas_Talisman"
+    },
+    {
+      "name": "Fine Crucible Feather Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Fine_Crucible_Feather_Talisman"
+    },
+    {
+      "name": "Fire Scorpion Charm",
+      "link": "https://eldenring.fandom.com/wiki/Fire_Scorpion_Charm"
+    },
+    {
+      "name": "Flamedrake Talisman +3",
+      "link": "https://eldenring.fandom.com/wiki/Flamedrake_Talisman_3"
+    },
+    {
+      "name": "Flock's Canvas Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Flock%27s_Canvas_Talisman"
+    },
+    {
+      "name": "Furled Finger's Trick-Mirror",
+      "link": "https://eldenring.fandom.com/wiki/Furled_Finger%27s_Trick-Mirror"
+    },
+    {
+      "name": "Godfrey Icon",
+      "link": "https://eldenring.fandom.com/wiki/Godfrey_Icon"
+    },
+    {
+      "name": "Godskin Swaddling Cloth",
+      "link": "https://eldenring.fandom.com/wiki/Godskin_Swaddling_Cloth"
+    },
+    {
+      "name": "Gold Scarab",
+      "link": "https://eldenring.fandom.com/wiki/Gold_Scarab"
+    },
+    {
+      "name": "Golden Braid",
+      "link": "https://eldenring.fandom.com/wiki/Golden_Braid"
+    },
+    {
+      "name": "Graven-Mass Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Graven-Mass_Talisman"
+    },
+    {
+      "name": "Graven-School Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Graven-School_Talisman"
+    },
+    {
+      "name": "Great-Jar's Arsenal",
+      "link": "https://eldenring.fandom.com/wiki/Great-Jar%27s_Arsenal"
+    },
+    {
+      "name": "Greatshield Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Greatshield_Talisman"
+    },
+    {
+      "name": "Green Turtle Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Green_Turtle_Talisman"
+    },
+    {
+      "name": "Haligdrake Talisman +2",
+      "link": "https://eldenring.fandom.com/wiki/Haligdrake_Talisman_2"
+    },
+    {
+      "name": "Hammer Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Hammer_Talisman"
+    },
+    {
+      "name": "Host's Trick-Mirror",
+      "link": "https://eldenring.fandom.com/wiki/Host%27s_Trick-Mirror"
+    },
+    {
+      "name": "Immunizing Horn Charm +2",
+      "link": "https://eldenring.fandom.com/wiki/Immunizing_Horn_Charm_2"
+    },
+    {
+      "name": "Kindred of Rot's Exultation",
+      "link": "https://eldenring.fandom.com/wiki/Kindred_of_Rot%27s_Exultation"
+    },
+    {
+      "name": "Lacerating Crossed-Tree",
+      "link": "https://eldenring.fandom.com/wiki/Lacerating_Crossed-Tree"
+    },
+    {
+      "name": "Lance Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Lance_Talisman"
+    },
+    {
+      "name": "Lightning Scorpion Charm",
+      "link": "https://eldenring.fandom.com/wiki/Lightning_Scorpion_Charm"
+    },
+    {
+      "name": "Longtail Cat Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Longtail_Cat_Talisman"
+    },
+    {
+      "name": "Lord of Blood's Exultation",
+      "link": "https://eldenring.fandom.com/wiki/Lord_of_Blood%27s_Exultation"
+    },
+    {
+      "name": "Magic Scorpion Charm",
+      "link": "https://eldenring.fandom.com/wiki/Magic_Scorpion_Charm"
+    },
+    {
+      "name": "Marika's Scarseal",
+      "link": "https://eldenring.fandom.com/wiki/Marika%27s_Scarseal"
+    },
+    {
+      "name": "Marika's Soreseal",
+      "link": "https://eldenring.fandom.com/wiki/Marika%27s_Soreseal"
+    },
+    {
+      "name": "Millicent's Prosthesis",
+      "link": "https://eldenring.fandom.com/wiki/Millicent%27s_Prosthesis"
+    },
+    {
+      "name": "Moon of Nokstella",
+      "link": "https://eldenring.fandom.com/wiki/Moon_of_Nokstella"
+    },
+    {
+      "name": "Mottled Necklace +2",
+      "link": "https://eldenring.fandom.com/wiki/Mottled_Necklace_2"
+    },
+    {
+      "name": "Old Lord's Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Old_Lord%27s_Talisman"
+    },
+    {
+      "name": "Outer God Heirloom",
+      "link": "https://eldenring.fandom.com/wiki/Outer_God_Heirloom"
+    },
+    {
+      "name": "Pearl Shield Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Pearl_Shield_Talisman"
+    },
+    {
+      "name": "Pearldrake Talisman +3",
+      "link": "https://eldenring.fandom.com/wiki/Pearldrake_Talisman_3"
+    },
+    {
+      "name": "Perfumer's Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Perfumer%27s_Talisman"
+    },
+    {
+      "name": "Primal Glintstone Blade",
+      "link": "https://eldenring.fandom.com/wiki/Primal_Glintstone_Blade"
+    },
+    {
+      "name": "Prince of Death's Cyst",
+      "link": "https://eldenring.fandom.com/wiki/Prince_of_Death%27s_Cyst"
+    },
+    {
+      "name": "Prince of Death's Pustule",
+      "link": "https://eldenring.fandom.com/wiki/Prince_of_Death%27s_Pustule"
+    },
+    {
+      "name": "Prosthesis-Wearer Heirloom",
+      "link": "https://eldenring.fandom.com/wiki/Prosthesis-Wearer_Heirloom"
+    },
+    {
+      "name": "Radagon Icon",
+      "link": "https://eldenring.fandom.com/wiki/Radagon_Icon"
+    },
+    {
+      "name": "Radagon's Scarseal",
+      "link": "https://eldenring.fandom.com/wiki/Radagon%27s_Scarseal"
+    },
+    {
+      "name": "Radagon's Soreseal",
+      "link": "https://eldenring.fandom.com/wiki/Radagon%27s_Soreseal"
+    },
+    {
+      "name": "Red-Feathered Branchsword",
+      "link": "https://eldenring.fandom.com/wiki/Red-Feathered_Branchsword"
+    },
+    {
+      "name": "Rellana's Cameo",
+      "link": "https://eldenring.fandom.com/wiki/Rellana%27s_Cameo"
+    },
+    {
+      "name": "Retaliatory Crossed-Tree",
+      "link": "https://eldenring.fandom.com/wiki/Retaliatory_Crossed-Tree"
+    },
+    {
+      "name": "Ritual Shield Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Ritual_Shield_Talisman"
+    },
+    {
+      "name": "Ritual Sword Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Ritual_Sword_Talisman"
+    },
+    {
+      "name": "Roar Medallion",
+      "link": "https://eldenring.fandom.com/wiki/Roar_Medallion"
+    },
+    {
+      "name": "Rotten Winged Sword Insignia",
+      "link": "https://eldenring.fandom.com/wiki/Rotten_Winged_Sword_Insignia"
+    },
+    {
+      "name": "Sacred Scorpion Charm",
+      "link": "https://eldenring.fandom.com/wiki/Sacred_Scorpion_Charm"
+    },
+    {
+      "name": "Sacrificial Twig",
+      "link": "https://eldenring.fandom.com/wiki/Sacrificial_Twig"
+    },
+    {
+      "name": "Shabriri's Woe",
+      "link": "https://eldenring.fandom.com/wiki/Shabriri%27s_Woe"
+    },
+    {
+      "name": "Shard of Alexander",
+      "link": "https://eldenring.fandom.com/wiki/Shard_of_Alexander"
+    },
+    {
+      "name": "Sharpshot Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Sharpshot_Talisman"
+    },
+    {
+      "name": "Shattered Stone Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Shattered_Stone_Talisman"
+    },
+    {
+      "name": "Silver Scarab",
+      "link": "https://eldenring.fandom.com/wiki/Silver_Scarab"
+    },
+    {
+      "name": "Smithing Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Smithing_Talisman"
+    },
+    {
+      "name": "Spear Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Spear_Talisman"
+    },
+    {
+      "name": "Spelldrake Talisman +3",
+      "link": "https://eldenring.fandom.com/wiki/Spelldrake_Talisman_3"
+    },
+    {
+      "name": "St. Trina's Smile",
+      "link": "https://eldenring.fandom.com/wiki/St._Trina%27s_Smile"
+    },
+    {
+      "name": "Stalwart Horn Charm +2",
+      "link": "https://eldenring.fandom.com/wiki/Stalwart_Horn_Charm_2"
+    },
+    {
+      "name": "Stargazer Heirloom",
+      "link": "https://eldenring.fandom.com/wiki/Stargazer_Heirloom"
+    },
+    {
+      "name": "Starscourge Heirloom",
+      "link": "https://eldenring.fandom.com/wiki/Starscourge_Heirloom"
+    },
+    {
+      "name": "Taker's Cameo",
+      "link": "https://eldenring.fandom.com/wiki/Taker%27s_Cameo"
+    },
+    {
+      "name": "Talisman of All Crucibles",
+      "link": "https://eldenring.fandom.com/wiki/Talisman_of_All_Crucibles"
+    },
+    {
+      "name": "Talisman of Lord's Bestowal",
+      "link": "https://eldenring.fandom.com/wiki/Talisman_of_Lord%27s_Bestowal"
+    },
+    {
+      "name": "Talisman of the Dread",
+      "link": "https://eldenring.fandom.com/wiki/Talisman_of_the_Dread"
+    },
+    {
+      "name": "Two Fingers Heirloom",
+      "link": "https://eldenring.fandom.com/wiki/Two_Fingers_Heirloom"
+    },
+    {
+      "name": "Two-Headed Turtle Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Two-Headed_Turtle_Talisman"
+    },
+    {
+      "name": "Two-Handed Sword Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Two-Handed_Sword_Talisman"
+    },
+    {
+      "name": "Twinblade Talisman",
+      "link": "https://eldenring.fandom.com/wiki/Twinblade_Talisman"
+    },
+    {
+      "name": "Verdigris Discus",
+      "link": "https://eldenring.fandom.com/wiki/Verdigris_Discus"
+    },
+    {
+      "name": "Viridian Amber Medallion +3",
+      "link": "https://eldenring.fandom.com/wiki/Viridian_Amber_Medallion_3"
+    },
+    {
+      "name": "Warrior Jar Shard",
+      "link": "https://eldenring.fandom.com/wiki/Warrior_Jar_Shard"
+    },
+    {
+      "name": "Winged Sword Insignia",
+      "link": "https://eldenring.fandom.com/wiki/Winged_Sword_Insignia"
+    }
+  ],
+  "spirit_ashes": [
+    {
+      "name": "Albinauric",
+      "link": "https://eldenring.fandom.com/wiki/Albinauric_Ashes"
+    },
+    {
+      "name": "Ancient Dragon Florissax",
+      "link": "https://eldenring.fandom.com/wiki/Ancient_Dragon_Florissax"
+    },
+    {
+      "name": "Ancient Dragon Knight Kristoff",
+      "link": "https://eldenring.fandom.com/wiki/Ancient_Dragon_Knight_Kristoff_Ashes"
+    },
+    {
+      "name": "Ancestral Follower",
+      "link": "https://eldenring.fandom.com/wiki/Ancestral_Follower_Ashes"
+    },
+    {
+      "name": "Archer",
+      "link": "https://eldenring.fandom.com/wiki/Archer_Ashes"
+    },
+    {
+      "name": "Avionette Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Avionette_Soldier_Ashes"
+    },
+    {
+      "name": "Azula Beastman",
+      "link": "https://eldenring.fandom.com/wiki/Azula_Beastman_Ashes"
+    },
+    {
+      "name": "Banished Knight Engvall",
+      "link": "https://eldenring.fandom.com/wiki/Banished_Knight_Engvall_Ashes"
+    },
+    {
+      "name": "Banished Knight Oleg",
+      "link": "https://eldenring.fandom.com/wiki/Banished_Knight_Oleg_Ashes"
+    },
+    {
+      "name": "Battlemage Hugues",
+      "link": "https://eldenring.fandom.com/wiki/Battlemage_Hugues_Ashes"
+    },
+    {
+      "name": "Bigmouth Imp",
+      "link": "https://eldenring.fandom.com/wiki/Bigmouth_Imp_Ashes"
+    },
+    {
+      "name": "Black Knife Tiche",
+      "link": "https://eldenring.fandom.com/wiki/Black_Knife_Tiche_Ashes"
+    },
+    {
+      "name": "Black Knight Captain Huw",
+      "link": "https://eldenring.fandom.com/wiki/Black_Knight_Captain_Huw"
+    },
+    {
+      "name": "Black Knight Commander Andreas",
+      "link": "https://eldenring.fandom.com/wiki/Black_Knight_Commander_Andreas"
+    },
+    {
+      "name": "Blackflame Monk Amon",
+      "link": "https://eldenring.fandom.com/wiki/Blackflame_Monk_Amon_Ashes"
+    },
+    {
+      "name": "Black Flame",
+      "link": "https://eldenring.fandom.com/wiki/Black_Flame"
+    },
+    {
+      "name": "Bloodfiend Hexer",
+      "link": "https://eldenring.fandom.com/wiki/Bloodfiend_Hexer's_Ashes"
+    },
+    {
+      "name": "Bloodfiend Hexer's Ashes",
+      "link": "https://eldenring.fandom.com/wiki/Bloodfiend_Hexer's_Ashes"
+    },
+    {
+      "name": "Bloodhound Knight Floh",
+      "link": "https://eldenring.fandom.com/wiki/Bloodhound_Knight_Floh"
+    },
+    {
+      "name": "Cleanrot Knight Finlay",
+      "link": "https://eldenring.fandom.com/wiki/Cleanrot_Knight_Finlay_Ashes"
+    },
+    {
+      "name": "Clayman",
+      "link": "https://eldenring.fandom.com/wiki/Clayman_Ashes"
+    },
+    {
+      "name": "Crystalian",
+      "link": "https://eldenring.fandom.com/wiki/Crystalian_Ashes"
+    },
+    {
+      "name": "Curseblade Meera",
+      "link": "https://eldenring.fandom.com/wiki/Curseblade_Meera"
+    },
+    {
+      "name": "Demi-Human",
+      "link": "https://eldenring.fandom.com/wiki/Demi-Human_Ashes"
+    },
+    {
+      "name": "Demi-Human Swordsman Yosh",
+      "link": "https://eldenring.fandom.com/wiki/Demi-Human_Swordsman_Yosh"
+    },
+    {
+      "name": "Depraved Perfumer Carmaan",
+      "link": "https://eldenring.fandom.com/wiki/Depraved_Perfumer_Carmaan_Ashes"
+    },
+    {
+      "name": "Dolores the Sleeping Arrow Puppet",
+      "link": "https://eldenring.fandom.com/wiki/Dolores_the_Sleeping_Arrow_Puppet"
+    },
+    {
+      "name": "Dung Eater Puppet",
+      "link": "https://eldenring.fandom.com/wiki/Dung_Eater_Puppet"
+    },
+    {
+      "name": "Fanged Imp",
+      "link": "https://eldenring.fandom.com/wiki/Fanged_Imp_Ashes"
+    },
+    {
+      "name": "Fingercreeper",
+      "link": "https://eldenring.fandom.com/wiki/Fingercreeper_Ashes"
+    },
+    {
+      "name": "Finger Maiden Therolina Puppet",
+      "link": "https://eldenring.fandom.com/wiki/Finger_Maiden_Therolina_Puppet"
+    },
+    {
+      "name": "Fire Knight Hilde",
+      "link": "https://eldenring.fandom.com/wiki/Fire_Knight_Hilde"
+    },
+    {
+      "name": "Fire Knight Queelign",
+      "link": "https://eldenring.fandom.com/wiki/Fire_Knight_Queelign"
+    },
+    {
+      "name": "Fire Monk",
+      "link": "https://eldenring.fandom.com/wiki/Fire_Monk_Ashes"
+    },
+    {
+      "name": "Giant Rat",
+      "link": "https://eldenring.fandom.com/wiki/Giant_Rat_Ashes"
+    },
+    {
+      "name": "Glintstone Sorcerer",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Sorcerer_Ashes"
+    },
+    {
+      "name": "Godrick Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Godrick_Soldier_Ashes"
+    },
+    {
+      "name": "Gravebird",
+      "link": "https://eldenring.fandom.com/wiki/Gravebird_Ashes"
+    },
+    {
+      "name": "Gravebird Ashes",
+      "link": "https://eldenring.fandom.com/wiki/Gravebird_Ashes"
+    },
+    {
+      "name": "Greatshield Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Greatshield_Soldier_Ashes"
+    },
+    {
+      "name": "Haligtree Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Haligtree_Soldier_Ashes"
+    },
+    {
+      "name": "Horned Warrior",
+      "link": "https://eldenring.fandom.com/wiki/Horned_Warrior_Ashes"
+    },
+    {
+      "name": "Horned Warrior Ashes",
+      "link": "https://eldenring.fandom.com/wiki/Horned_Warrior_Ashes"
+    },
+    {
+      "name": "Inquisitor",
+      "link": "https://eldenring.fandom.com/wiki/Inquisitor_Ashes"
+    },
+    {
+      "name": "Inquisitor Ashes",
+      "link": "https://eldenring.fandom.com/wiki/Inquisitor_Ashes"
+    },
+    {
+      "name": "Jarwight Puppet",
+      "link": "https://eldenring.fandom.com/wiki/Jarwight_Puppet"
+    },
+    {
+      "name": "Jolan and Anna",
+      "link": "https://eldenring.fandom.com/wiki/Jolan_and_Anna"
+    },
+    {
+      "name": "Kaiden Sellsword",
+      "link": "https://eldenring.fandom.com/wiki/Kaiden_Sellsword_Ashes"
+    },
+    {
+      "name": "Kindred of Rot",
+      "link": "https://eldenring.fandom.com/wiki/Kindred_of_Rot_Ashes"
+    },
+    {
+      "name": "Land Squirt",
+      "link": "https://eldenring.fandom.com/wiki/Land_Squirt_Ashes"
+    },
+    {
+      "name": "Latenna The Albinauric",
+      "link": "https://eldenring.fandom.com/wiki/Latenna_The_Albinauric"
+    },
+    {
+      "name": "Leyndell Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Leyndell_Soldier_Ashes"
+    },
+    {
+      "name": "Lhutel the Headless",
+      "link": "https://eldenring.fandom.com/wiki/Lhutel_the_Headless"
+    },
+    {
+      "name": "Lone Wolf",
+      "link": "https://eldenring.fandom.com/wiki/Lone_Wolf_Ashes"
+    },
+    {
+      "name": "Mad Pumpkin Head",
+      "link": "https://eldenring.fandom.com/wiki/Mad_Pumpkin_Head_Ashes"
+    },
+    {
+      "name": "Man-Fly",
+      "link": "https://eldenring.fandom.com/wiki/Man-Fly_Ashes"
+    },
+    {
+      "name": "Man-Fly Ashes",
+      "link": "https://eldenring.fandom.com/wiki/Man-Fly_Ashes"
+    },
+    {
+      "name": "Man-Serpent",
+      "link": "https://eldenring.fandom.com/wiki/Man-Serpent_Ashes"
+    },
+    {
+      "name": "Marionette Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Marionette_Soldier_Ashes"
+    },
+    {
+      "name": "Mausoleum Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Mausoleum_Soldier_Ashes"
+    },
+    {
+      "name": "Messmer Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Messmer_Soldier_Ashes"
+    },
+    {
+      "name": "Mimic Tear",
+      "link": "https://eldenring.fandom.com/wiki/Mimic_Tear_Ashes"
+    },
+    {
+      "name": "Miranda Sprout",
+      "link": "https://eldenring.fandom.com/wiki/Miranda_Sprout_Ashes"
+    },
+    {
+      "name": "Nepheli Loux Puppet",
+      "link": "https://eldenring.fandom.com/wiki/Nepheli_Loux_Puppet"
+    },
+    {
+      "name": "Nightmaiden & Swordstress Puppets",
+      "link": "https://eldenring.fandom.com/wiki/Nightmaiden_&_Swordstress_Puppets"
+    },
+    {
+      "name": "Noble Sorcerer",
+      "link": "https://eldenring.fandom.com/wiki/Noble_Sorcerer_Ashes"
+    },
+    {
+      "name": "Nomad",
+      "link": "https://eldenring.fandom.com/wiki/Nomad_Ashes"
+    },
+    {
+      "name": "Omenkiller Rollo",
+      "link": "https://eldenring.fandom.com/wiki/Omenkiller_Rollo"
+    },
+    {
+      "name": "Oracle Envoy",
+      "link": "https://eldenring.fandom.com/wiki/Oracle_Envoy_Ashes"
+    },
+    {
+      "name": "Page",
+      "link": "https://eldenring.fandom.com/wiki/Page_Ashes"
+    },
+    {
+      "name": "Perfumer Tricia",
+      "link": "https://eldenring.fandom.com/wiki/Perfumer_Tricia_Ashes"
+    },
+    {
+      "name": "Putrid Corpse",
+      "link": "https://eldenring.fandom.com/wiki/Putrid_Corpse_Ashes"
+    },
+    {
+      "name": "Radahn Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Radahn_Soldier_Ashes"
+    },
+    {
+      "name": "Raya Lucaria Soldier",
+      "link": "https://eldenring.fandom.com/wiki/Raya_Lucaria_Soldier_Ashes"
+    },
+    {
+      "name": "Redmane Knight Ogha",
+      "link": "https://eldenring.fandom.com/wiki/Redmane_Knight_Ogha_Ashes"
+    },
+    {
+      "name": "Rotten Stray",
+      "link": "https://eldenring.fandom.com/wiki/Rotten_Stray_Ashes"
+    },
+    {
+      "name": "Skeletal Bandit",
+      "link": "https://eldenring.fandom.com/wiki/Skeletal_Bandit_Ashes"
+    },
+    {
+      "name": "Skeletal Militiaman",
+      "link": "https://eldenring.fandom.com/wiki/Skeletal_Militiaman_Ashes"
+    },
+    {
+      "name": "Soldjars of Fortune",
+      "link": "https://eldenring.fandom.com/wiki/Soldjars_of_Fortune_Ashes"
+    },
+    {
+      "name": "Spider Scorpion",
+      "link": "https://eldenring.fandom.com/wiki/Spider_Scorpion_Ashes"
+    },
+    {
+      "name": "Spider Scorpion Ashes",
+      "link": "https://eldenring.fandom.com/wiki/Spider_Scorpion_Ashes"
+    },
+    {
+      "name": "Spirit Jellyfish",
+      "link": "https://eldenring.fandom.com/wiki/Spirit_Jellyfish_Ashes"
+    },
+    {
+      "name": "Stormhawk Deenh",
+      "link": "https://eldenring.fandom.com/wiki/Stormhawk_Deenh"
+    },
+    {
+      "name": "Swordhand of Night Jol\u00c3\u00a1n",
+      "link": "https://eldenring.fandom.com/wiki/Swordhand_of_Night_Jol\u00c3\u00a1n"
+    },
+    {
+      "name": "Taylew the Golem Smith",
+      "link": "https://eldenring.fandom.com/wiki/Taylew_the_Golem_Smith"
+    },
+    {
+      "name": "Twinsage Sorcerer",
+      "link": "https://eldenring.fandom.com/wiki/Twinsage_Sorcerer_Ashes"
+    },
+    {
+      "name": "Wandering Noble",
+      "link": "https://eldenring.fandom.com/wiki/Wandering_Noble_Ashes"
+    },
+    {
+      "name": "Warhawk",
+      "link": "https://eldenring.fandom.com/wiki/Warhawk_Ashes"
+    },
+    {
+      "name": "Winged Misbegotten",
+      "link": "https://eldenring.fandom.com/wiki/Winged_Misbegotten_Ashes"
+    }
+  ],
+  "spells": [
+    {
+      "name": "Adula's Moonblade",
+      "link": "https://eldenring.fandom.com/wiki/Adula's_Moonblade",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Agheel's Flame",
+      "link": "https://eldenring.fandom.com/wiki/Agheel's_Flame",
+      "type": "Incantation"
+    },
+    {
+      "name": "Ambush Shard",
+      "link": "https://eldenring.fandom.com/wiki/Ambush_Shard",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Ancient Death Rancor",
+      "link": "https://eldenring.fandom.com/wiki/Ancient_Death_of_Rancor",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Ancient Dragons' Lightning Spear",
+      "link": "https://eldenring.fandom.com/wiki/Ancient_Dragons'_Lightning_Spear",
+      "type": "Incantation"
+    },
+    {
+      "name": "Ancient Dragons' Lightning Strike",
+      "link": "https://eldenring.fandom.com/wiki/Ancient_Dragons'_Lightning_Strike",
+      "type": "Incantation"
+    },
+    {
+      "name": "Aspect of the Crucible: Breath",
+      "link": "https://eldenring.fandom.com/wiki/Aspect_of_the_Crucible:_Breath",
+      "type": "Incantation"
+    },
+    {
+      "name": "Aspect of the Crucible: Horns",
+      "link": "https://eldenring.fandom.com/wiki/Aspect_of_the_Crucible:_Horns",
+      "type": "Incantation"
+    },
+    {
+      "name": "Aspects of the Crucible: Bloom",
+      "link": "https://eldenring.fandom.com/wiki/Aspects_of_the_Crucible:_Bloom",
+      "type": "Incantation"
+    },
+    {
+      "name": "Aspects of the Crucible: Tail",
+      "link": "https://eldenring.fandom.com/wiki/Aspects_of_the_Crucible:_Tail",
+      "type": "Incantation"
+    },
+    {
+      "name": "Aspects of the Crucible: Thorns",
+      "link": "https://eldenring.fandom.com/wiki/Aspects_of_the_Crucible:_Thorns",
+      "type": "Incantation"
+    },
+    {
+      "name": "Assassin's Approach",
+      "link": "https://eldenring.fandom.com/wiki/Assassin's_Approach",
+      "type": "Incantation"
+    },
+    {
+      "name": "Barrier of Gold",
+      "link": "https://eldenring.fandom.com/wiki/Barrier_of_Gold",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bayle's Flame Lightning",
+      "link": "https://eldenring.fandom.com/wiki/Bayle's_Flame_Lightning",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bayle's Tyranny",
+      "link": "https://eldenring.fandom.com/wiki/Bayle's_Tyranny",
+      "type": "Incantation"
+    },
+    {
+      "name": "Beast Claw",
+      "link": "https://eldenring.fandom.com/wiki/Beast_Claw",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bestial Constitution",
+      "link": "https://eldenring.fandom.com/wiki/Bestial_Constitution",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bestial Sling",
+      "link": "https://eldenring.fandom.com/wiki/Bestial_Sling",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bestial Vitality",
+      "link": "https://eldenring.fandom.com/wiki/Bestial_Vitality",
+      "type": "Incantation"
+    },
+    {
+      "name": "Black Blade",
+      "link": "https://eldenring.fandom.com/wiki/Black_Blade",
+      "type": "Incantation"
+    },
+    {
+      "name": "Black Flame",
+      "link": "https://eldenring.fandom.com/wiki/Black_Flame",
+      "type": "Incantation"
+    },
+    {
+      "name": "Black Flame Blade",
+      "link": "https://eldenring.fandom.com/wiki/Black_Flame_Blade",
+      "type": "Incantation"
+    },
+    {
+      "name": "Black Flame's Protection",
+      "link": "https://eldenring.fandom.com/wiki/Black_Flame's_Protection",
+      "type": "Incantation"
+    },
+    {
+      "name": "Blades of Stone",
+      "link": "https://eldenring.fandom.com/wiki/Blades_of_Stone",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Blessing of the Erdtree",
+      "link": "https://eldenring.fandom.com/wiki/Blessing_of_the_Erdtree",
+      "type": "Incantation"
+    },
+    {
+      "name": "Blessing's Boon",
+      "link": "https://eldenring.fandom.com/wiki/Blessing's_Boon",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bloodboon",
+      "link": "https://eldenring.fandom.com/wiki/Bloodboon",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bloodflame Blade",
+      "link": "https://eldenring.fandom.com/wiki/Bloodflame_Blade",
+      "type": "Incantation"
+    },
+    {
+      "name": "Bloodflame Talons",
+      "link": "https://eldenring.fandom.com/wiki/Bloodflame_Talons",
+      "type": "Incantation"
+    },
+    {
+      "name": "Borealis's Mist",
+      "link": "https://eldenring.fandom.com/wiki/Borealis's_Mist",
+      "type": "Incantation"
+    },
+    {
+      "name": "Briars of Punishment",
+      "link": "https://eldenring.fandom.com/wiki/Briars_of_Punishment",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Briars of Sin",
+      "link": "https://eldenring.fandom.com/wiki/Briars_of_Sin",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Burn, O Flame!",
+      "link": "https://eldenring.fandom.com/wiki/Burn,_O_Flame!",
+      "type": "Incantation"
+    },
+    {
+      "name": "Cannon of Haima",
+      "link": "https://eldenring.fandom.com/wiki/Cannon_of_Haima",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Carian Greatsword",
+      "link": "https://eldenring.fandom.com/wiki/Carian_Greatsword",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Carian Phalanx",
+      "link": "https://eldenring.fandom.com/wiki/Carian_Phalanx",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Carian Piercer",
+      "link": "https://eldenring.fandom.com/wiki/Carian_Piercer",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Carian Retaliation",
+      "link": "https://eldenring.fandom.com/wiki/Carian_Retaliation",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Carian Slicer",
+      "link": "https://eldenring.fandom.com/wiki/Carian_Slicer",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Catch Flame",
+      "link": "https://eldenring.fandom.com/wiki/Catch_Flame",
+      "type": "Incantation"
+    },
+    {
+      "name": "Cherishing Fingers",
+      "link": "https://eldenring.fandom.com/wiki/Cherishing_Fingers",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Collapsing Stars",
+      "link": "https://eldenring.fandom.com/wiki/Collapsing_Stars",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Comet",
+      "link": "https://eldenring.fandom.com/wiki/Comet",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Comet Azur",
+      "link": "https://eldenring.fandom.com/wiki/Comet_Azur",
+      "type": "Incantation"
+    },
+    {
+      "name": "Crystal Barrage",
+      "link": "https://eldenring.fandom.com/wiki/Crystal_Barrage",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Crystal Burst",
+      "link": "https://eldenring.fandom.com/wiki/Crystal_Burst",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Crystal Release",
+      "link": "https://eldenring.fandom.com/wiki/Crystal_Release",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Crystal Torrent",
+      "link": "https://eldenring.fandom.com/wiki/Crystal_Torrent",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Cure Poison",
+      "link": "https://eldenring.fandom.com/wiki/Cure_Poison",
+      "type": "Incantation"
+    },
+    {
+      "name": "Darkness",
+      "link": "https://eldenring.fandom.com/wiki/Darkness",
+      "type": "Incantation"
+    },
+    {
+      "name": "Death Lightning",
+      "link": "https://eldenring.fandom.com/wiki/Death_Lightning",
+      "type": "Incantation"
+    },
+    {
+      "name": "Divine Beast Tornado",
+      "link": "https://eldenring.fandom.com/wiki/Divine_Beast_Tornado",
+      "type": "Incantation"
+    },
+    {
+      "name": "Divine Bird Feathers",
+      "link": "https://eldenring.fandom.com/wiki/Divine_Bird_Feathers",
+      "type": "Incantation"
+    },
+    {
+      "name": "Divine Fortification",
+      "link": "https://eldenring.fandom.com/wiki/Divine_Fortification",
+      "type": "Incantation"
+    },
+    {
+      "name": "Discus of Light",
+      "link": "https://eldenring.fandom.com/wiki/Discus_of_Light",
+      "type": "Incantation"
+    },
+    {
+      "name": "Dragonbolt Blessing",
+      "link": "https://eldenring.fandom.com/wiki/Dragonbolt_Blessing",
+      "type": "Incantation"
+    },
+    {
+      "name": "Dragonbolt of Florissax",
+      "link": "https://eldenring.fandom.com/wiki/Dragonbolt_of_Florissax",
+      "type": "Incantation"
+    },
+    {
+      "name": "Dragonclaw",
+      "link": "https://eldenring.fandom.com/wiki/Dragonclaw",
+      "type": "Incantation"
+    },
+    {
+      "name": "Dragonfire",
+      "link": "https://eldenring.fandom.com/wiki/Dragonfire",
+      "type": "Incantation"
+    },
+    {
+      "name": "Dragonice",
+      "link": "https://eldenring.fandom.com/wiki/Dragonice",
+      "type": "Incantation"
+    },
+    {
+      "name": "Dragonmaw",
+      "link": "https://eldenring.fandom.com/wiki/Dragonmaw",
+      "type": "Incantation"
+    },
+    {
+      "name": "Ekzykes's Decay",
+      "link": "https://eldenring.fandom.com/wiki/Ekzykes's_Decay",
+      "type": "Incantation"
+    },
+    {
+      "name": "Elden Stars",
+      "link": "https://eldenring.fandom.com/wiki/Elden_Stars",
+      "type": "Incantation"
+    },
+    {
+      "name": "Electrocharge",
+      "link": "https://eldenring.fandom.com/wiki/Electrocharge",
+      "type": "Incantation"
+    },
+    {
+      "name": "Electrify Armament",
+      "link": "https://eldenring.fandom.com/wiki/Electrify_Armament",
+      "type": "Incantation"
+    },
+    {
+      "name": "Erdtree Heal",
+      "link": "https://eldenring.fandom.com/wiki/Erdtree_Heal",
+      "type": "Incantation"
+    },
+    {
+      "name": "Eternal Darkness",
+      "link": "https://eldenring.fandom.com/wiki/Eternal_Darkness",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Explosive Ghostflame",
+      "link": "https://eldenring.fandom.com/wiki/Explosive_Ghostflame",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Fia's Mist",
+      "link": "https://eldenring.fandom.com/wiki/Fia's_Mist",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Fire Serpent",
+      "link": "https://eldenring.fandom.com/wiki/Fire_Serpent",
+      "type": "Incantation"
+    },
+    {
+      "name": "Fire's Deadly Sin",
+      "link": "https://eldenring.fandom.com/wiki/Fire's_Deadly_Sin",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame Fortification",
+      "link": "https://eldenring.fandom.com/wiki/Flame_Fortification",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame Sling",
+      "link": "https://eldenring.fandom.com/wiki/Flame_Sling",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame of the Fell God",
+      "link": "https://eldenring.fandom.com/wiki/Flame_of_the_Fell_God",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame, Cleanse Me",
+      "link": "https://eldenring.fandom.com/wiki/Flame,_Cleanse_Me",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame, Fall Upon Them",
+      "link": "https://eldenring.fandom.com/wiki/Flame,_Fall_Upon_Them",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame, Grant me Strength",
+      "link": "https://eldenring.fandom.com/wiki/Flame,_Grant_me_Strength",
+      "type": "Incantation"
+    },
+    {
+      "name": "Flame, Protect Me",
+      "link": "https://eldenring.fandom.com/wiki/Flame,_Protect_Me",
+      "type": "Incantation"
+    },
+    {
+      "name": "Fleeting Microcosm",
+      "link": "https://eldenring.fandom.com/wiki/Fleeting_Microcosm",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Fortissax's Lightning Spear",
+      "link": "https://eldenring.fandom.com/wiki/Fortissax's_Lightning_Spear",
+      "type": "Incantation"
+    },
+    {
+      "name": "Founding Rain of Stars",
+      "link": "https://eldenring.fandom.com/wiki/Founding_Rain_of_Stars",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Freezing Mist",
+      "link": "https://eldenring.fandom.com/wiki/Freezing_Mist",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Frenzied Burst",
+      "link": "https://eldenring.fandom.com/wiki/Frenzied_Burst",
+      "type": "Incantation"
+    },
+    {
+      "name": "Frozen Armament",
+      "link": "https://eldenring.fandom.com/wiki/Frozen_Armament",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Frozen Lightning Spear",
+      "link": "https://eldenring.fandom.com/wiki/Frozen_Lightning_Spear",
+      "type": "Incantation"
+    },
+    {
+      "name": "Furious Blade of Ansbach",
+      "link": "https://eldenring.fandom.com/wiki/Furious_Blade_of_Ansbach",
+      "type": "Incantation"
+    },
+    {
+      "name": "Gavel of Haima",
+      "link": "https://eldenring.fandom.com/wiki/Gavel_of_Haima",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Gelmir's Fury",
+      "link": "https://eldenring.fandom.com/wiki/Gelmir's_Fury",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Ghostflame Breath",
+      "link": "https://eldenring.fandom.com/wiki/Ghostflame_Breath",
+      "type": "Incantation"
+    },
+    {
+      "name": "Giant Golden Arc",
+      "link": "https://eldenring.fandom.com/wiki/Giant_Golden_Arc",
+      "type": "Incantation"
+    },
+    {
+      "name": "Glintblade Phalanx",
+      "link": "https://eldenring.fandom.com/wiki/Glintblade_Phalanx",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintblade Trio",
+      "link": "https://eldenring.fandom.com/wiki/Glintblade_Trio",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Arc",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Arc",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Breath",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Breath",
+      "type": "Incantation"
+    },
+    {
+      "name": "Glintstone Cometshard",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Cometshard",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Icecrag",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Icecrag",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Nail",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Nail",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Nails",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Nails",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Pebble",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Pebble",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Glintstone Stars",
+      "link": "https://eldenring.fandom.com/wiki/Glintstone_Stars",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Golden Arcs",
+      "link": "https://eldenring.fandom.com/wiki/Golden_Arcs",
+      "type": "Incantation"
+    },
+    {
+      "name": "Golden Lightning Fortification",
+      "link": "https://eldenring.fandom.com/wiki/Golden_Lightning_Fortification",
+      "type": "Incantation"
+    },
+    {
+      "name": "Golden Vow",
+      "link": "https://eldenring.fandom.com/wiki/Golden_Vow_(Spell)",
+      "type": "Incantation"
+    },
+    {
+      "name": "Gravitational Missile",
+      "link": "https://eldenring.fandom.com/wiki/Gravitational_Missile",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Gravity Well",
+      "link": "https://eldenring.fandom.com/wiki/Gravity_Well",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Great Glintstone Shard",
+      "link": "https://eldenring.fandom.com/wiki/Great_Glintstone_Shard",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Great Heal",
+      "link": "https://eldenring.fandom.com/wiki/Great_Heal",
+      "type": "Incantation"
+    },
+    {
+      "name": "Great Oracular Bubble",
+      "link": "https://eldenring.fandom.com/wiki/Great_Oracular_Bubble",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Greatblade Phalanx",
+      "link": "https://eldenring.fandom.com/wiki/Greatblade_Phalanx",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Greyoll's Roar",
+      "link": "https://eldenring.fandom.com/wiki/Greyoll's_Roar",
+      "type": "Incantation"
+    },
+    {
+      "name": "Gurrang's Beast Claw",
+      "link": "https://eldenring.fandom.com/wiki/Gurrang's_Beast_Claw",
+      "type": "Incantation"
+    },
+    {
+      "name": "Heal",
+      "link": "https://eldenring.fandom.com/wiki/Heal",
+      "type": "Incantation"
+    },
+    {
+      "name": "Heal from Afar",
+      "link": "https://eldenring.fandom.com/wiki/Heal_from_Afar",
+      "type": "Incantation"
+    },
+    {
+      "name": "Honed Bolt",
+      "link": "https://eldenring.fandom.com/wiki/Honed_Bolt",
+      "type": "Incantation"
+    },
+    {
+      "name": "Howl of Shabriri",
+      "link": "https://eldenring.fandom.com/wiki/Howl_of_Shabriri",
+      "type": "Incantation"
+    },
+    {
+      "name": "Immutable Shield",
+      "link": "https://eldenring.fandom.com/wiki/Immutable_Shield",
+      "type": "Incantation"
+    },
+    {
+      "name": "Impenetrable Thorns",
+      "link": "https://eldenring.fandom.com/wiki/Impenetrable_Thorns",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Inescapable Frenzy",
+      "link": "https://eldenring.fandom.com/wiki/Inescapable_Frenzy",
+      "type": "Incantation"
+    },
+    {
+      "name": "Knight's Lightning Spear",
+      "link": "https://eldenring.fandom.com/wiki/Knight's_Lightning_Spear",
+      "type": "Incantation"
+    },
+    {
+      "name": "Land of Shadow",
+      "link": "https://eldenring.fandom.com/wiki/Land_of_Shadow_(Incantation)",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lansseax's Glaive",
+      "link": "https://eldenring.fandom.com/wiki/Lansseax's_Glaive",
+      "type": "Incantation"
+    },
+    {
+      "name": "Law of Causality",
+      "link": "https://eldenring.fandom.com/wiki/Law_of_Causality",
+      "type": "Incantation"
+    },
+    {
+      "name": "Law of Regression",
+      "link": "https://eldenring.fandom.com/wiki/Law_of_Regression",
+      "type": "Incantation"
+    },
+    {
+      "name": "Light of Miquella",
+      "link": "https://eldenring.fandom.com/wiki/Light_of_Miquella",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lightning Fortification",
+      "link": "https://eldenring.fandom.com/wiki/Lightning_Fortification",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lightning Spear",
+      "link": "https://eldenring.fandom.com/wiki/Lightning_Spear",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lightning Strike",
+      "link": "https://eldenring.fandom.com/wiki/Lightning_Strike",
+      "type": "Incantation"
+    },
+    {
+      "name": "Litany of Proper Death",
+      "link": "https://eldenring.fandom.com/wiki/Litany_of_Proper_Death",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lord's Aid",
+      "link": "https://eldenring.fandom.com/wiki/Lord's_Aid",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lord's Divine Fortification",
+      "link": "https://eldenring.fandom.com/wiki/Lord's_Divine_Fortification",
+      "type": "Incantation"
+    },
+    {
+      "name": "Lord's Heal",
+      "link": "https://eldenring.fandom.com/wiki/Lord's_Heal",
+      "type": "Incantation"
+    },
+    {
+      "name": "Loretta's Greatbow",
+      "link": "https://eldenring.fandom.com/wiki/Loretta's_Greatbow",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Loretta's Mastery",
+      "link": "https://eldenring.fandom.com/wiki/Loretta's_Mastery",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Lucidity",
+      "link": "https://eldenring.fandom.com/wiki/Lucidity",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Magic Downpour",
+      "link": "https://eldenring.fandom.com/wiki/Magic_Downpour",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Magic Fortification",
+      "link": "https://eldenring.fandom.com/wiki/Magic_Fortification",
+      "type": "Incantation"
+    },
+    {
+      "name": "Magic Glintblade",
+      "link": "https://eldenring.fandom.com/wiki/Magic_Glintblade",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Magma Breath",
+      "link": "https://eldenring.fandom.com/wiki/Magma_Breath",
+      "type": "Incantation"
+    },
+    {
+      "name": "Magma Shot",
+      "link": "https://eldenring.fandom.com/wiki/Magma_Shot",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Mantle of Thorns",
+      "link": "https://eldenring.fandom.com/wiki/Mantle_of_Thorns",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Mass of Putrescence",
+      "link": "https://eldenring.fandom.com/wiki/Mass_of_Putrescence",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Messmer's Orb",
+      "link": "https://eldenring.fandom.com/wiki/Messmer's_Orb",
+      "type": "Incantation"
+    },
+    {
+      "name": "Meteorite",
+      "link": "https://eldenring.fandom.com/wiki/Meteorite",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Meteorite of Astel",
+      "link": "https://eldenring.fandom.com/wiki/Meteorite_of_Astel",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Midra's Flame of Frenzy",
+      "link": "https://eldenring.fandom.com/wiki/Midra's_Flame_of_Frenzy",
+      "type": "Incantation"
+    },
+    {
+      "name": "Minor Erdtree",
+      "link": "https://eldenring.fandom.com/wiki/Minor_Erdtree",
+      "type": "Incantation"
+    },
+    {
+      "name": "Miriam's Vanishing",
+      "link": "https://eldenring.fandom.com/wiki/Miriam's_Vanishing",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Multilayered Ring of Light",
+      "link": "https://eldenring.fandom.com/wiki/Multilayered_Ring_of_Light",
+      "type": "Incantation"
+    },
+    {
+      "name": "Night Comet",
+      "link": "https://eldenring.fandom.com/wiki/Night_Comet",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Night Maiden's Mist",
+      "link": "https://eldenring.fandom.com/wiki/Night_Maiden's_Mist",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Night Shard",
+      "link": "https://eldenring.fandom.com/wiki/Night_Shard",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Noble Presence",
+      "link": "https://eldenring.fandom.com/wiki/Noble_Presence",
+      "type": "Incantation"
+    },
+    {
+      "name": "O, Flame!",
+      "link": "https://eldenring.fandom.com/wiki/O,_Flame!",
+      "type": "Incantation"
+    },
+    {
+      "name": "Oracle Bubbles",
+      "link": "https://eldenring.fandom.com/wiki/Oracle_Bubbles",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Order Healing",
+      "link": "https://eldenring.fandom.com/wiki/Order_Healing",
+      "type": "Incantation"
+    },
+    {
+      "name": "Order's Blade",
+      "link": "https://eldenring.fandom.com/wiki/Order's_Blade",
+      "type": "Incantation"
+    },
+    {
+      "name": "Pest Threads",
+      "link": "https://eldenring.fandom.com/wiki/Pest_Threads",
+      "type": "Incantation"
+    },
+    {
+      "name": "Pest-Thread Spears",
+      "link": "https://eldenring.fandom.com/wiki/Pest-Thread_Spears",
+      "type": "Incantation"
+    },
+    {
+      "name": "Placidusax's Ruin",
+      "link": "https://eldenring.fandom.com/wiki/Placidusax's_Ruin",
+      "type": "Incantation"
+    },
+    {
+      "name": "Poison Armament",
+      "link": "https://eldenring.fandom.com/wiki/Poison_Armament",
+      "type": "Incantation"
+    },
+    {
+      "name": "Poison Mist",
+      "link": "https://eldenring.fandom.com/wiki/Poison_Mist",
+      "type": "Incantation"
+    },
+    {
+      "name": "Protection of the Erdtree",
+      "link": "https://eldenring.fandom.com/wiki/Protection_of_the_Erdtree",
+      "type": "Incantation"
+    },
+    {
+      "name": "Radagon's Rings of Light",
+      "link": "https://eldenring.fandom.com/wiki/Radagon's_Rings_of_Light",
+      "type": "Incantation"
+    },
+    {
+      "name": "Rain of Fire",
+      "link": "https://eldenring.fandom.com/wiki/Rain_of_Fire",
+      "type": "Incantation"
+    },
+    {
+      "name": "Rancorcall",
+      "link": "https://eldenring.fandom.com/wiki/Rancorcall",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Ranni's Dark Moon",
+      "link": "https://eldenring.fandom.com/wiki/Ranni's_Dark_Moon",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Rejection",
+      "link": "https://eldenring.fandom.com/wiki/Rejection",
+      "type": "Incantation"
+    },
+    {
+      "name": "Rellana's Twin Moons",
+      "link": "https://eldenring.fandom.com/wiki/Rellana's_Twin_Moons",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Rennala's Full Moon",
+      "link": "https://eldenring.fandom.com/wiki/Rennala's_Full_Moon",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Rings of Spectral Light",
+      "link": "https://eldenring.fandom.com/wiki/Rings_of_Spectral_Light",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Roar of Rugalea",
+      "link": "https://eldenring.fandom.com/wiki/Roar_of_Rugalea",
+      "type": "Incantation"
+    },
+    {
+      "name": "Rock Blaster",
+      "link": "https://eldenring.fandom.com/wiki/Rock_Blaster",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Rock Sling",
+      "link": "https://eldenring.fandom.com/wiki/Rock_Sling",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Roiling Magma",
+      "link": "https://eldenring.fandom.com/wiki/Roiling_Magma",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Rotten Butterflies",
+      "link": "https://eldenring.fandom.com/wiki/Rotten_Butterflies",
+      "type": "Incantation"
+    },
+    {
+      "name": "Rotten Breath",
+      "link": "https://eldenring.fandom.com/wiki/Rotten_Breath",
+      "type": "Incantation"
+    },
+    {
+      "name": "Rykard's Rancor",
+      "link": "https://eldenring.fandom.com/wiki/Rykard's_Rancor",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Scarlet Aeonia",
+      "link": "https://eldenring.fandom.com/wiki/Scarlet_Aeonia",
+      "type": "Incantation"
+    },
+    {
+      "name": "Scholar's Armament",
+      "link": "https://eldenring.fandom.com/wiki/Scholar's_Armament",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Scholar's Shield",
+      "link": "https://eldenring.fandom.com/wiki/Scholar's_Shield",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Scouring Black Flame",
+      "link": "https://eldenring.fandom.com/wiki/Scouring_Black_Flame",
+      "type": "Incantation"
+    },
+    {
+      "name": "Shadow Bait",
+      "link": "https://eldenring.fandom.com/wiki/Shadow_Bait",
+      "type": "Incantation"
+    },
+    {
+      "name": "Shard Spiral",
+      "link": "https://eldenring.fandom.com/wiki/Shard_Spiral",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Shatter Earth",
+      "link": "https://eldenring.fandom.com/wiki/Shatter_Earth",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Shattering Crystal",
+      "link": "https://eldenring.fandom.com/wiki/Shattering_Crystal",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Smarag's Glintstone Breath",
+      "link": "https://eldenring.fandom.com/wiki/Smarag's_Glintstone_Breath",
+      "type": "Incantation"
+    },
+    {
+      "name": "Spira",
+      "link": "https://eldenring.fandom.com/wiki/Spira",
+      "type": "Incantation"
+    },
+    {
+      "name": "Star Shower",
+      "link": "https://eldenring.fandom.com/wiki/Star_Shower",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Starlight",
+      "link": "https://eldenring.fandom.com/wiki/Starlight",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Stars of Ruin",
+      "link": "https://eldenring.fandom.com/wiki/Stars_of_Ruin",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Stone of Gurranq",
+      "link": "https://eldenring.fandom.com/wiki/Stone_of_Gurranq",
+      "type": "Incantation"
+    },
+    {
+      "name": "Surge, O Flame!",
+      "link": "https://eldenring.fandom.com/wiki/Surge,_O_Flame!",
+      "type": "Incantation"
+    },
+    {
+      "name": "Swarm of Flies",
+      "link": "https://eldenring.fandom.com/wiki/Swarm_of_Flies",
+      "type": "Incantation"
+    },
+    {
+      "name": "Swift Glintstone Shard",
+      "link": "https://eldenring.fandom.com/wiki/Swift_Glintstone_Shard",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Terra Magica",
+      "link": "https://eldenring.fandom.com/wiki/Terra_Magica",
+      "type": "Sorcery"
+    },
+    {
+      "name": "The Flame of Frenzy",
+      "link": "https://eldenring.fandom.com/wiki/The_Flame_of_Frenzy",
+      "type": "Incantation"
+    },
+    {
+      "name": "Theodorix's Magma",
+      "link": "https://eldenring.fandom.com/wiki/Theodorix's_Magma",
+      "type": "Incantation"
+    },
+    {
+      "name": "Thops's Barrier",
+      "link": "https://eldenring.fandom.com/wiki/Thops's_Barrier_(Spell)",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Tibia's Summons",
+      "link": "https://eldenring.fandom.com/wiki/Tibia's_Summons",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Triple Rings of Light",
+      "link": "https://eldenring.fandom.com/wiki/Triple_Rings_of_Light",
+      "type": "Incantation"
+    },
+    {
+      "name": "Unendurable Frenzy",
+      "link": "https://eldenring.fandom.com/wiki/Unendurable_Frenzy",
+      "type": "Incantation"
+    },
+    {
+      "name": "Unseen Blade",
+      "link": "https://eldenring.fandom.com/wiki/Unseen_Blade",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Unseen Form",
+      "link": "https://eldenring.fandom.com/wiki/Unseen_Form",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Urgent Heal",
+      "link": "https://eldenring.fandom.com/wiki/Urgent_Heal",
+      "type": "Incantation"
+    },
+    {
+      "name": "Vortex of Putrescence",
+      "link": "https://eldenring.fandom.com/wiki/Vortex_of_Putrescence",
+      "type": "Sorcery"
+    },
+    {
+      "name": "Vyke's Dragonbolt",
+      "link": "https://eldenring.fandom.com/wiki/Vyke's_Dragonbolt",
+      "type": "Incantation"
+    },
+    {
+      "name": "Watchful Spirit",
+      "link": "https://eldenring.fandom.com/wiki/Watchful_Spirit",
+      "type": "Incantation"
+    },
+    {
+      "name": "Whirl, O Flame!",
+      "link": "https://eldenring.fandom.com/wiki/Whirl,_O_Flame!",
+      "type": "Incantation"
+    },
+    {
+      "name": "Wrath from Afar",
+      "link": "https://eldenring.fandom.com/wiki/Wrath_from_Afar",
+      "type": "Incantation"
+    },
+    {
+      "name": "Wrath of Gold",
+      "link": "https://eldenring.fandom.com/wiki/Wrath_of_Gold",
+      "type": "Incantation"
+    },
+    {
+      "name": "Zamor Ice Storm",
+      "link": "https://eldenring.fandom.com/wiki/Zamor_Ice_Storm_(Spell)",
+      "type": "Sorcery"
+    }
+  ],
+  "casting_weapons": {
+    "seals": [
+      {
+        "name": "Clawmark Seal",
+        "url": "https://eldenring.fandom.com/wiki/Clawmark_Seal"
+      },
+      {
+        "name": "Dragon Communion Seal",
+        "url": "https://eldenring.fandom.com/wiki/Dragon_Communion_Seal"
+      },
+      {
+        "name": "Dryleaf Seal",
+        "url": "https://eldenring.fandom.com/wiki/Dryleaf_Seal"
+      },
+      {
+        "name": "Erdtree Seal",
+        "url": "https://eldenring.fandom.com/wiki/Erdtree_Seal"
+      },
+      {
+        "name": "Finger Seal",
+        "url": "https://eldenring.fandom.com/wiki/Finger_Seal"
+      },
+      {
+        "name": "Fire Knight's Seal",
+        "url": "https://eldenring.fandom.com/wiki/Fire_Knight's_Seal"
+      },
+      {
+        "name": "Frenzied Flame Seal",
+        "url": "https://eldenring.fandom.com/wiki/Frenzied_Flame_Seal"
+      },
+      {
+        "name": "Giant's Seal",
+        "url": "https://eldenring.fandom.com/wiki/Giant's_Seal"
+      },
+      {
+        "name": "Godslayer's Seal",
+        "url": "https://eldenring.fandom.com/wiki/Godslayer's_Seal"
+      },
+      {
+        "name": "Golden Order Seal",
+        "url": "https://eldenring.fandom.com/wiki/Golden_Order_Seal"
+      },
+      {
+        "name": "Gravel Stone Seal",
+        "url": "https://eldenring.fandom.com/wiki/Gravel_Stone_Seal"
+      },
+      {
+        "name": "Spiraltree Seal",
+        "url": "https://eldenring.fandom.com/wiki/Spiraltree_Seal"
+      }
+    ],
+    "staffs": [
+      {
+        "name": "Academy Glintstone Staff",
+        "url": "https://eldenring.fandom.com/wiki/Academy_Glintstone_Staff"
+      },
+      {
+        "name": "Albinauric Staff",
+        "url": "https://eldenring.fandom.com/wiki/Albinauric_Staff"
+      },
+      {
+        "name": "Astrologer's Staff",
+        "url": "https://eldenring.fandom.com/wiki/Astrologer's_Staff"
+      },
+      {
+        "name": "Carian Glintblade Staff",
+        "url": "https://eldenring.fandom.com/wiki/Carian_Glintblade_Staff"
+      },
+      {
+        "name": "Carian Glintstone Staff",
+        "url": "https://eldenring.fandom.com/wiki/Carian_Glintstone_Staff"
+      },
+      {
+        "name": "Carian Regal Scepter",
+        "url": "https://eldenring.fandom.com/wiki/Carian_Regal_Scepter"
+      },
+      {
+        "name": "Crystal Staff",
+        "url": "https://eldenring.fandom.com/wiki/Crystal_Staff"
+      },
+      {
+        "name": "Demi-Human Queen's Staff",
+        "url": "https://eldenring.fandom.com/wiki/Demi-Human_Queen's_Staff"
+      },
+      {
+        "name": "Digger's Staff",
+        "url": "https://eldenring.fandom.com/wiki/Digger's_Staff"
+      },
+      {
+        "name": "Gelmir Glintstone Staff",
+        "url": "https://eldenring.fandom.com/wiki/Gelmir_Glintstone_Staff"
+      },
+      {
+        "name": "Glintstone Staff",
+        "url": "https://eldenring.fandom.com/wiki/Glintstone_Staff"
+      },
+      {
+        "name": "Lusat's Glintstone Staff",
+        "url": "https://eldenring.fandom.com/wiki/Lusat's_Glintstone_Staff"
+      },
+      {
+        "name": "Maternal Staff",
+        "url": "https://eldenring.fandom.com/wiki/Maternal_Staff"
+      },
+      {
+        "name": "Meteorite Staff",
+        "url": "https://eldenring.fandom.com/wiki/Meteorite_Staff"
+      },
+      {
+        "name": "Prince of Death's Staff",
+        "url": "https://eldenring.fandom.com/wiki/Prince_of_Death's_Staff"
+      },
+      {
+        "name": "Rotten Crystal Staff",
+        "url": "https://eldenring.fandom.com/wiki/Rotten_Crystal_Staff"
+      },
+      {
+        "name": "Rotten Staff",
+        "url": "https://eldenring.fandom.com/wiki/Rotten_Staff"
+      },
+      {
+        "name": "Staff of Loss",
+        "url": "https://eldenring.fandom.com/wiki/Staff_of_Loss"
+      },
+      {
+        "name": "Staff of the Great Beyond",
+        "url": "https://eldenring.fandom.com/wiki/Staff_of_the_Great_Beyond"
+      },
+      {
+        "name": "Staff of the Guilty",
+        "url": "https://eldenring.fandom.com/wiki/Staff_of_the_Guilty"
+      }
+    ]
+  },
+  "endings": [
+    {
+      "name": "Age of Fracture",
+      "link": "https://eldenring.fandom.com/wiki/Endings#Age_of_Fracture"
+    },
+    {
+      "name": "Age of Order",
+      "link": "https://eldenring.fandom.com/wiki/Endings#Age_of_Order"
+    },
+    {
+      "name": "Age of the Duskborn",
+      "link": "https://eldenring.fandom.com/wiki/Endings#Age_of_the_Duskborn"
+    },
+    {
+      "name": "Blessing of Despair",
+      "link": "https://eldenring.fandom.com/wiki/Endings#Blessing_of_Despair"
+    },
+    {
+      "name": "Age of the Stars",
+      "link": "https://eldenring.fandom.com/wiki/Endings#Age_of_the_Stars"
+    },
+    {
+      "name": "Lord of Frenzied Flame",
+      "link": "https://eldenring.fandom.com/wiki/Endings#Lord_of_Frenzied_Flame"
+    }
+  ]
+}
