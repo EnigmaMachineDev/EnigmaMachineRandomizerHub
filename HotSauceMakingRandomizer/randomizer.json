@@ -2,12 +2,6 @@
   "peppers": {
     "mild_to_medium": [
       {
-        "name": "Bell Pepper",
-        "shu_min": 0,
-        "shu_max": 0,
-        "info_url": "https://en.wikipedia.org/wiki/Bell_pepper"
-      },
-      {
         "name": "Banana Pepper",
         "shu_min": 0,
         "shu_max": 500,
@@ -308,6 +302,16 @@
     {
       "name": "Red Bell Pepper",
       "description": "Adds sweetness and body without heat",
+      "info_url": "https://en.wikipedia.org/wiki/Bell_pepper"
+    },
+    {
+      "name": "Green Bell Pepper",
+      "description": "Adds mild, slightly bitter flavor and body without heat",
+      "info_url": "https://en.wikipedia.org/wiki/Bell_pepper"
+    },
+    {
+      "name": "Yellow Bell Pepper",
+      "description": "Adds mild sweetness and body without heat",
       "info_url": "https://en.wikipedia.org/wiki/Bell_pepper"
     },
     {

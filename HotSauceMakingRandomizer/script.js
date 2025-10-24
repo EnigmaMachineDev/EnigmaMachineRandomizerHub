@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function generatePeppers() {
         if (!peppersData || peppersData.length === 0) return;
 
-        // Choose between 1 and 2 peppers
-        const numberOfPeppers = Math.floor(Math.random() * 2) + 1;
+        // Choose between 1 and 3 peppers
+        const numberOfPeppers = Math.floor(Math.random() * 3) + 1;
         const selectedPeppers = [];
         const peppersCopy = [...peppersData];
 
