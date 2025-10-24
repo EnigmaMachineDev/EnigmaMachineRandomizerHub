@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setWine() {
         const wineType = getRandomItem('Wines');
-        const specificWine = getRandomItem(wineType);
-        wineRollEl.textContent = `${wineType}: ${specificWine}`;
+        const specificWineObj = getRandomItem(wineType);
+        wineRollEl.innerHTML = `${wineType}: <a href="${specificWineObj.info_url}" target="_blank" rel="noopener noreferrer">${specificWineObj.name}</a>`;
     }
 
     function randomizeAll() {

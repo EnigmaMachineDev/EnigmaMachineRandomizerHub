@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const spiritTypeKey = getRandomKey(spirits);
         const spiritType = spirits[spiritTypeKey];
         
-        const spirit = spiritType[Math.floor(Math.random() * spiritType.length)];
+        const spiritObj = spiritType[Math.floor(Math.random() * spiritType.length)];
 
         const spiritTypeName = spiritTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-        spiritRollEl.textContent = `${spiritTypeName} -> ${spirit}`;
+        spiritRollEl.innerHTML = `${spiritTypeName} -> <a href="${spiritObj.info_url}" target="_blank" rel="noopener noreferrer">${spiritObj.name}</a>`;
     }
 
     function randomizeAll() {

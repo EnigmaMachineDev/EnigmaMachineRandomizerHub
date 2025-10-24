@@ -25,13 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const categoryKey = getRandomKey(mainStyle.categories);
         const category = mainStyle.categories[categoryKey];
         
-        const beer = category[Math.floor(Math.random() * category.length)];
+        const beerObj = category[Math.floor(Math.random() * category.length)];
 
         const mainStyleName = mainStyleKey.charAt(0).toUpperCase() + mainStyleKey.slice(1);
         const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-
-        beerStyleRollEl.textContent = `${mainStyleName} -> ${categoryName} -> ${beer}`;
+        beerStyleRollEl.innerHTML = `${mainStyleName} -> ${categoryName} -> <a href="${beerObj.info_url}" target="_blank" rel="noopener noreferrer">${beerObj.name}</a>`;
     }
 
     function randomizeAll() {
