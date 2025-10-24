@@ -1,0 +1,130 @@
+{
+  "profitable_activities_and_jobs": [
+    {
+      "name": "Planetary Scanner",
+      "description": "Upload flora, fauna, and mineral discoveries for units"
+    },
+    {
+      "name": "Cartographer",
+      "description": "Sell planetary charts and exploration data"
+    },
+    {
+      "name": "Artifact Hunter",
+      "description": "Search ruins and ancient sites for valuable relics"
+    },
+    {
+      "name": "Treasure Hunter",
+      "description": "Use treasure maps to find buried caches"
+    },
+    {
+      "name": "Derelict Freighter Explorer",
+      "description": "Salvage technology and cargo from abandoned ships"
+    },
+    {
+      "name": "Miner",
+      "description": "Extract minerals, metals, and elements from deposits; set up automated mining operations"
+    },
+    {
+      "name": "Gas Harvester",
+      "description": "Collect atmospheric gases from gas giants"
+    },
+    {
+      "name": "Ship Salvager",
+      "description": "Find crashed ships, claim and scrap them for parts and profit"
+    },
+    {
+      "name": "Storm Crystal Harvester",
+      "description": "Collect valuable crystals during extreme weather"
+    },
+    {
+      "name": "Commodity Trader",
+      "description": "Buy low, sell high across systems"
+    },
+    {
+      "name": "High-Value Crafter",
+      "description": "Create fusion ignitors, stasis devices, etc."
+    },
+    {
+      "name": "Black Market Dealer",
+      "description": "Deal in suspicious goods at pirate stations"
+    },
+    {
+      "name": "Bounty Hunter",
+      "description": "Take contracts to eliminate pirates"
+    },
+    {
+      "name": "Pirate",
+      "description": "Attack freighters and steal cargo"
+    },
+    {
+      "name": "Sentinel Hunter",
+      "description": "Destroy sentinels for rare technology"
+    },
+    {
+      "name": "Exterminator",
+      "description": "Clear infestations from planetary sites"
+    },
+    {
+      "name": "Agricultural Farmer",
+      "description": "Grow crops for crafting materials"
+    },
+    {
+      "name": "Chef",
+      "description": "Create valuable food items and consumables"
+    },
+    {
+      "name": "Oxygen Farmer",
+      "description": "Harvest and refine oxygen for profit"
+    },
+    {
+      "name": "Living Ship Breeder",
+      "description": "Cultivate and trade organic vessels"
+    },
+    {
+      "name": "Industrial Crafter",
+      "description": "Mass-produce trade goods"
+    },
+    {
+      "name": "Construction Contractor",
+      "description": "Build bases for other players"
+    },
+    {
+      "name": "Supply Depot Operator",
+      "description": "Extract resources passively via depots"
+    },
+    {
+      "name": "Manufacturing Plant Manager",
+      "description": "Automate production chains"
+    },
+    {
+      "name": "Fleet Captain",
+      "description": "Send fleets on missions for rewards; buy, upgrade, and maintain frigates; protect and escort trading vessels"
+    },
+    {
+      "name": "Nexus Agent",
+      "description": "Complete community objectives for rewards"
+    },
+    {
+      "name": "Settlement Overseer",
+      "description": "Govern and develop NPC settlements"
+    },
+    {
+      "name": "Living Pearl Farmer",
+      "description": "Harvest pearls from whispering eggs (dangerous)"
+    },
+    {
+      "name": "Salvaged Data Collector",
+      "description": "Find buried technology modules"
+    },
+    {
+      "name": "Nanite Farmer",
+      "description": "Refine materials or complete missions for nanites"
+    }
+  ],
+  "playable_races": [
+    "Gek",
+    "Korvax",
+    "Vy'keen",
+    "Traveler"
+  ]
+}

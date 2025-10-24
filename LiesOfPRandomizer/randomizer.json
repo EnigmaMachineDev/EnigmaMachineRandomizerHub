@@ -1,0 +1,304 @@
+{
+  "base_game": {
+    "normal_weapons": [
+      {
+        "name": "Puppet's Saber",
+        "url": "https://lies-of-p.fandom.com/wiki/Puppet%27s_Saber"
+      },
+      {
+        "name": "Wintry Rapier",
+        "url": "https://lies-of-p.fandom.com/wiki/Wintry_Rapier"
+      },
+      {
+        "name": "Greatsword of Fate",
+        "url": "https://lies-of-p.fandom.com/wiki/Greatsword_of_Fate"
+      },
+      {
+        "name": "Booster Glaive",
+        "url": "https://lies-of-p.fandom.com/wiki/Booster_Glaive"
+      },
+      {
+        "name": "Acidic Crystal Spear",
+        "url": "https://lies-of-p.fandom.com/wiki/Acidic_Crystal_Spear"
+      },
+      {
+        "name": "Acidic Great Curved Sword",
+        "url": "https://lies-of-p.fandom.com/wiki/Acidic_Great_Curved_Sword"
+      },
+      {
+        "name": "Big Pipe Wrench",
+        "url": "https://lies-of-p.fandom.com/wiki/Big_Pipe_Wrench"
+      },
+      {
+        "name": "Black Steel Cutter",
+        "url": "https://lies-of-p.fandom.com/wiki/Black_Steel_Cutter"
+      },
+      {
+        "name": "Blind Man's Double-Sided Spear",
+        "url": "https://lies-of-p.fandom.com/wiki/Blind_Man%27s_Double-Sided_Spear"
+      },
+      {
+        "name": "Bone-Cutting Saw",
+        "url": "https://lies-of-p.fandom.com/wiki/Bone-Cutting_Saw"
+      },
+      {
+        "name": "Bramble Curved Sword",
+        "url": "https://lies-of-p.fandom.com/wiki/Bramble_Curved_Sword"
+      },
+      {
+        "name": "Carcass Crystal Axe",
+        "url": "https://lies-of-p.fandom.com/wiki/Carcass_Crystal_Axe"
+      },
+      {
+        "name": "Circular Electric Chainsaw",
+        "url": "https://lies-of-p.fandom.com/wiki/Circular_Electric_Chainsaw"
+      },
+      {
+        "name": "City Longspear",
+        "url": "https://lies-of-p.fandom.com/wiki/City_Longspear"
+      },
+      {
+        "name": "Clock Sword",
+        "url": "https://lies-of-p.fandom.com/wiki/Clock_Sword"
+      },
+      {
+        "name": "Coil Mjolnir",
+        "url": "https://lies-of-p.fandom.com/wiki/Coil_Mjolnir"
+      },
+      {
+        "name": "Cursed Knight's Halberd",
+        "url": "https://lies-of-p.fandom.com/wiki/Cursed_Knight%27s_Halberd"
+      },
+      {
+        "name": "Dancer's Curved Sword",
+        "url": "https://lies-of-p.fandom.com/wiki/Dancer%27s_Curved_Sword"
+      },
+      {
+        "name": "Electric Coil Stick",
+        "url": "https://lies-of-p.fandom.com/wiki/Electric_Coil_Stick"
+      },
+      {
+        "name": "Exploding Pickaxe",
+        "url": "https://lies-of-p.fandom.com/wiki/Exploding_Pickaxe"
+      },
+      {
+        "name": "Fire Axe",
+        "url": "https://lies-of-p.fandom.com/wiki/Fire_Axe"
+      },
+      {
+        "name": "Krat Police Baton",
+        "url": "https://lies-of-p.fandom.com/wiki/Krat_Police_Baton"
+      },
+      {
+        "name": "Live Puppet's Axe",
+        "url": "https://lies-of-p.fandom.com/wiki/Live_Puppet%27s_Axe"
+      },
+      {
+        "name": "Master Chef's Knife",
+        "url": "https://lies-of-p.fandom.com/wiki/Master_Chef%27s_Knife"
+      },
+      {
+        "name": "Military Shovel",
+        "url": "https://lies-of-p.fandom.com/wiki/Military_Shovel"
+      },
+      {
+        "name": "Pistol Rock Drill",
+        "url": "https://lies-of-p.fandom.com/wiki/Pistol_Rock_Drill"
+      },
+      {
+        "name": "Salamander Dagger",
+        "url": "https://lies-of-p.fandom.com/wiki/Salamander_Dagger"
+      },
+      {
+        "name": "Spear of Honor",
+        "url": "https://lies-of-p.fandom.com/wiki/Spear_of_Honor"
+      },
+      {
+        "name": "Tyrant Murderer's Dagger",
+        "url": "https://lies-of-p.fandom.com/wiki/Tyrant_Murderer%27s_Dagger"
+      }
+    ],
+    "special_weapons": [
+      {
+        "name": "Seven-Coil Spring Sword",
+        "url": "https://lies-of-p.fandom.com/wiki/Seven-Coil_Spring_Sword",
+        "required_ergo": "Parade Leader's Ergo"
+      },
+      {
+        "name": "Etiquette",
+        "url": "https://lies-of-p.fandom.com/wiki/Etiquette",
+        "required_ergo": "Broken Hero's Ergo"
+      },
+      {
+        "name": "Holy Sword of the Ark",
+        "url": "https://lies-of-p.fandom.com/wiki/Holy_Sword_of_the_Ark",
+        "required_ergo": "King's Flame Ergo"
+      },
+      {
+        "name": "Trident of the Covenant",
+        "url": "https://lies-of-p.fandom.com/wiki/Trident_of_the_Covenant",
+        "required_ergo": "Twisted Angel's Ergo"
+      },
+      {
+        "name": "Puppet Ripper",
+        "url": "https://lies-of-p.fandom.com/wiki/Puppet_Ripper",
+        "required_ergo": "Burnt-White King's Ergo"
+      },
+      {
+        "name": "Frozen Feast",
+        "url": "https://lies-of-p.fandom.com/wiki/Frozen_Feast",
+        "required_ergo": "Reborn Champion's Ergo"
+      },
+      {
+        "name": "Two Dragons Sword",
+        "url": "https://lies-of-p.fandom.com/wiki/Two_Dragons_Sword",
+        "required_ergo": "Puppet-Devouring Green Hunter's Ergo"
+      },
+      {
+        "name": "Uroboro's Eye",
+        "url": "https://lies-of-p.fandom.com/wiki/Uroboro%27s_Eye",
+        "required_ergo": "Sad Zealot's Ergo"
+      },
+      {
+        "name": "Noblesse Oblige",
+        "url": "https://lies-of-p.fandom.com/wiki/Noblesse_Oblige",
+        "required_ergo": "Fallen One's Ergo"
+      },
+      {
+        "name": "Proof of Humanity",
+        "url": "https://lies-of-p.fandom.com/wiki/Proof_of_Humanity",
+        "required_ergo": "Nameless Puppet's Ergo"
+      },
+      {
+        "name": "Golden Lie",
+        "url": "https://lies-of-p.fandom.com/wiki/Golden_Lie",
+        "required_ergo": "Special pickup from Portrait of a Boy"
+      }
+    ],
+    "legion_arms": [
+      {
+        "name": "Puppet String",
+        "url": "https://lies-of-p.fandom.com/wiki/Puppet_String",
+        "description": "A Legion Arm that can release a wire. It can be strung around an enemy to drag it toward you or to move you toward it."
+      },
+      {
+        "name": "Electric Blitz",
+        "url": "https://lies-of-p.fandom.com/wiki/Electric_Blitz",
+        "description": "A Legion Arm that holds powerful electricity. It accumulates Electric Blitz and discharges an electric shock."
+      },
+      {
+        "name": "Flamberge",
+        "url": "https://lies-of-p.fandom.com/wiki/Flamberge",
+        "description": "A Legion Arm full of burning flames. When its muzzle is opened, it burns the enemies before you."
+      },
+      {
+        "name": "Falcon Eyes",
+        "url": "https://lies-of-p.fandom.com/wiki/Falcon_Eyes",
+        "description": "A Legion Arm that can install a motion-sensing landmine. When the landmine is buried in the ground, it explodes upon enemy detection."
+      },
+      {
+        "name": "Fulminis",
+        "url": "https://lies-of-p.fandom.com/wiki/Fulminis",
+        "description": "A Legion Arm that fires a sticky acidic substance. It corrodes enemies that step into the wide pool of acid it creates."
+      },
+      {
+        "name": "Aegis",
+        "url": "https://lies-of-p.fandom.com/wiki/Aegis",
+        "description": "A Legion Arm that can block enemy attacks with your left arm. When it receives a blow, the embedded device explodes and deals damage to the enemy."
+      },
+      {
+        "name": "Cannon",
+        "url": "https://lies-of-p.fandom.com/wiki/Cannon",
+        "description": "A Legion Arm that fires armor-piercing shells from a distance. The launched shells explode soon after they land."
+      }
+    ]
+  },
+  "overture_dlc": {
+    "normal_weapons": [
+      {
+        "name": "Royal Horn Bow",
+        "url": "https://lies-of-p.fandom.com/wiki/Royal_Horn_Bow",
+        "note": "First bow weapon type in Lies of P"
+      },
+      {
+        "name": "Lorenzini Bolt",
+        "url": "https://lies-of-p.fandom.com/wiki/Lorenzini_Bolt"
+      },
+      {
+        "name": "Maniac's Pinwheel",
+        "url": "https://lies-of-p.fandom.com/wiki/Maniac%27s_Pinwheel"
+      },
+      {
+        "name": "Puppet of the Future's Welder",
+        "url": "https://lies-of-p.fandom.com/wiki/Puppet_of_the_Future%27s_Welder"
+      },
+      {
+        "name": "La Vendetta",
+        "url": "https://lies-of-p.fandom.com/wiki/La_Vendetta"
+      },
+      {
+        "name": "Arche's Guardian",
+        "url": "https://lies-of-p.fandom.com/wiki/Arche%27s_Guardian"
+      },
+      {
+        "name": "Silent Evangelists' Mace",
+        "url": "https://lies-of-p.fandom.com/wiki/Silent_Evangelists%27_Mace"
+      },
+      {
+        "name": "Flame Lance",
+        "url": "https://lies-of-p.fandom.com/wiki/Flame_Lance"
+      }
+    ],
+    "special_weapons": [
+      {
+        "name": "Death's Talon",
+        "url": "https://lies-of-p.fandom.com/wiki/Death%27s_Talon",
+        "required_ergo": "Markiona, Puppeteer of Death's Ergo",
+        "note": "First claw weapon type in Lies of P"
+      },
+      {
+        "name": "Pale Knight",
+        "url": "https://lies-of-p.fandom.com/wiki/Pale_Knight",
+        "required_ergo": "Tortured Guardian's Ergo",
+        "note": "Gun blade greatsword"
+      },
+      {
+        "name": "Monad Rose",
+        "url": "https://lies-of-p.fandom.com/wiki/Monad_Rose",
+        "required_ergo": "Given by Lea after completing DLC"
+      }
+    ],
+    "legion_arms": [
+      {
+        "name": "Cataclysm",
+        "url": "https://lies-of-p.fandom.com/wiki/Cataclysm",
+        "description": "A Legion Arm that stores energy to fire shotgun shells. Charging will increase its power."
+      },
+      {
+        "name": "Icarus",
+        "url": "https://lies-of-p.fandom.com/wiki/Icarus",
+        "description": "A Legion Arm that launches blades using powerful rotational power. Launched blades return after they slice the enemy."
+      }
+    ]
+  },
+  "endings": [
+    {
+      "name": "Real Boy",
+      "url": "https://lies-of-p.fandom.com/wiki/Endings#Real_Boy",
+      "requirement": "Give Geppetto the P-Organ",
+      "description": "Geppetto takes P's heart and revives his son Carlo, turning all Hotel Krat survivors into puppet servants."
+    },
+    {
+      "name": "Free From the Puppet String",
+      "url": "https://lies-of-p.fandom.com/wiki/Endings#Free_From_the_Puppet_String",
+      "requirement": "Refuse to give Geppetto the P-Organ with low Humanity, or let Sophia live",
+      "description": "P defeats the Nameless Puppet but Geppetto dies cursing P as a 'useless puppet'."
+    },
+    {
+      "name": "Rise of P",
+      "url": "https://lies-of-p.fandom.com/wiki/Endings#Rise_of_P",
+      "requirement": "Refuse to give Geppetto the P-Organ with high Humanity and give Sophia peace",
+      "description": "P defeats the Nameless Puppet, Geppetto recognizes P as his son before dying, and P successfully revives Sophia."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Lies of P Character Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Lies of P Character Randomizer</h1>
+            <button class="reroll-btn" id="generate-loadout">Generate Build</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Normal Weapon</h2>
+                    <button class="reroll-btn" id="reroll-normal-weapon">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="normal-weapon-link" href="#" target="_blank"><span id="normal-weapon"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Special Weapon</h2>
+                    <button class="reroll-btn" id="reroll-special-weapon">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="special-weapon-link" href="#" target="_blank">
+                        <span id="special-weapon"></span>
+                    </a>
+                    <div id="special-weapon-ergo" class="weapon-ergo"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Legion Arm</h2>
+                    <button class="reroll-btn" id="reroll-legion-arm">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="legion-arm-link" href="#" target="_blank">
+                        <span id="legion-arm"></span>
+                    </a>
+                    <div id="legion-arm-description" class="legion-description"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Ending</h2>
+                    <button class="reroll-btn" id="reroll-ending">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="ending-link" href="#" target="_blank">
+                        <span id="ending"></span>
+                    </a>
+                    <div id="ending-description" class="ending-description"></div>
+                </div>
+            </div>
+            <div class="section dlc-toggle-section">
+                <label class="dlc-toggle">
+                    <input type="checkbox" id="include-dlc" checked>
+                    <span>Include Overture DLC Content</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Lies of P is a dark fantasy soulslike game inspired by the classic tale of Pinocchio. Set in the fallen city of Krat, you play as P, a puppet who must navigate through a world of twisted puppets and monstrous creatures. The game features a unique weapon assembly system where you can combine different blades and handles, along with powerful Legion Arms that provide special abilities.</p>
+            <p>This character randomizer helps you discover new playstyles by generating random weapon combinations and build paths. Whether you're a veteran looking for a fresh challenge or a new player wanting to explore different options, this tool will push you to experiment with weapons and abilities you might not have considered. Each randomized build offers a unique way to experience the dark streets of Krat.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Build" button for a complete randomized character build. You can use the individual re-roll buttons (↻) for any category you'd like to change. Each item links to its Fandom wiki page for detailed information about stats and locations. Toggle the DLC checkbox to include or exclude content from the Overture expansion.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

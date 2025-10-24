@@ -61,9 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateFermentation() {
-        // 50/50 chance of fermentation
-        const isFermented = Math.random() < 0.5;
-        fermentationEl.textContent = isFermented ? 'Fermented' : 'Fresh (Not Fermented)';
+        const fermentationOptions = [
+            'Fresh Fermented',
+            'Roasted Fermented',
+            'Fresh Non-Fermented',
+            'Roasted Non-Fermented'
+        ];
+        const selectedOption = getRandomElement(fermentationOptions);
+        fermentationEl.textContent = selectedOption;
     }
 
     function randomizeAll() {
