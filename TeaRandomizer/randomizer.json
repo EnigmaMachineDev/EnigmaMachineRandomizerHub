@@ -1,0 +1,738 @@
+{
+  "green_teas": [
+    {
+      "name": "Sencha",
+      "origin": "Japan",
+      "description": "Most popular Japanese green tea with grassy, sweet flavor",
+      "brew_temp": "160-170°F (70-75°C)",
+      "brew_time": "1-2 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "2-3g (1 tsp) sencha leaves",
+        "240ml (1 cup) water at 160-170°F"
+      ],
+      "instructions": "Heat water to 160-170°F, add tea leaves to teapot or cup, pour water over leaves, steep for 1-2 minutes, strain and serve immediately"
+    },
+    {
+      "name": "Gyokuro",
+      "origin": "Japan",
+      "description": "Premium shade-grown Japanese tea with sweet, umami-rich flavor",
+      "brew_temp": "140-150°F (60-65°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "High",
+      "ingredients": [
+        "3-4g (1.5 tsp) gyokuro leaves",
+        "120ml (0.5 cups) water at 140-150°F"
+      ],
+      "instructions": "Use cooler water to preserve delicate flavors, add leaves to small teapot, pour water over leaves, steep for 2-3 minutes, can re-steep 2-3 times"
+    },
+    {
+      "name": "Matcha",
+      "origin": "Japan",
+      "description": "Finely ground powder of shade-grown tea leaves, whisked into water",
+      "brew_temp": "160-175°F (70-80°C)",
+      "brew_time": "Instant",
+      "caffeine": "High",
+      "ingredients": [
+        "1-2g (0.5-1 tsp) matcha powder",
+        "60-120ml (0.25-0.5 cups) hot water"
+      ],
+      "instructions": "Sift matcha powder into bowl to remove clumps, add small amount of hot water, whisk vigorously in M or W pattern until frothy, add remaining water if making usucha (thin tea)"
+    },
+    {
+      "name": "Longjing (Dragon Well)",
+      "origin": "China (Hangzhou)",
+      "description": "Famous Chinese green tea with flat leaves and sweet, nutty flavor",
+      "brew_temp": "160-175°F (70-80°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "3g (1 tsp) longjing leaves",
+        "240ml (1 cup) water at 160-175°F"
+      ],
+      "instructions": "Rinse leaves briefly with hot water, discard rinse water, add fresh hot water, steep for 2-3 minutes, can re-steep multiple times"
+    },
+    {
+      "name": "Gunpowder",
+      "origin": "China",
+      "description": "Rolled into small pellets, strong and slightly smoky flavor",
+      "brew_temp": "170-180°F (75-80°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) gunpowder tea",
+        "240ml (1 cup) water at 170-180°F"
+      ],
+      "instructions": "Add pellets to teapot, pour hot water over leaves, steep for 2-3 minutes, traditionally used in Moroccan mint tea"
+    },
+    {
+      "name": "Genmaicha",
+      "origin": "Japan",
+      "description": "Green tea mixed with roasted brown rice, nutty and toasty",
+      "brew_temp": "170-180°F (75-80°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Low-Medium",
+      "ingredients": [
+        "3g (1 tsp) genmaicha",
+        "240ml (1 cup) water at 170-180°F"
+      ],
+      "instructions": "Add tea and rice mixture to teapot, pour hot water over, steep for 2-3 minutes, strain and enjoy the nutty aroma"
+    },
+    {
+      "name": "Hojicha",
+      "origin": "Japan",
+      "description": "Roasted green tea with reddish-brown color and smoky flavor",
+      "brew_temp": "175-185°F (80-85°C)",
+      "brew_time": "30-60 seconds",
+      "caffeine": "Low",
+      "ingredients": [
+        "3g (1 tsp) hojicha leaves",
+        "240ml (1 cup) water at 175-185°F"
+      ],
+      "instructions": "Add roasted leaves to teapot, pour hot water over leaves, steep for 30-60 seconds only, low in caffeine making it good for evening"
+    },
+    {
+      "name": "Kukicha (Twig Tea)",
+      "origin": "Japan",
+      "description": "Made from stems and twigs, mild and slightly sweet",
+      "brew_temp": "170-180°F (75-80°C)",
+      "brew_time": "1-2 minutes",
+      "caffeine": "Low",
+      "ingredients": [
+        "3g (1 tsp) kukicha twigs",
+        "240ml (1 cup) water at 170-180°F"
+      ],
+      "instructions": "Add twigs to teapot, pour hot water over, steep for 1-2 minutes, very low in caffeine and gentle on stomach"
+    },
+    {
+      "name": "Bi Luo Chun",
+      "origin": "China (Jiangsu)",
+      "description": "Delicate spiral-shaped leaves with fruity, floral notes",
+      "brew_temp": "160-170°F (70-75°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "3g (1 tsp) bi luo chun leaves",
+        "240ml (1 cup) water at 160-170°F"
+      ],
+      "instructions": "Use glass teapot to appreciate the dancing leaves, add leaves first, pour water gently, steep for 2-3 minutes"
+    },
+    {
+      "name": "Mao Feng",
+      "origin": "China (Anhui)",
+      "description": "Delicate leaves with sweet, floral aroma",
+      "brew_temp": "160-175°F (70-80°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "3g (1 tsp) mao feng leaves",
+        "240ml (1 cup) water at 160-175°F"
+      ],
+      "instructions": "Add leaves to teapot, pour water over, steep for 2-3 minutes, produces clear, bright liquor"
+    }
+  ],
+  "black_teas": [
+    {
+      "name": "English Breakfast",
+      "origin": "Blend (typically Ceylon, Assam, Kenyan)",
+      "description": "Full-bodied blend perfect for morning, often with milk",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "High",
+      "ingredients": [
+        "2-3g (1 tsp) English Breakfast tea",
+        "240ml (1 cup) boiling water",
+        "milk and sugar (optional)"
+      ],
+      "instructions": "Boil water, add tea to teapot or infuser, pour boiling water over leaves, steep for 3-5 minutes, add milk and sugar to taste"
+    },
+    {
+      "name": "Earl Grey",
+      "origin": "Blend (typically Chinese or Ceylon base)",
+      "description": "Black tea flavored with bergamot oil, citrusy and aromatic",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "High",
+      "ingredients": [
+        "2-3g (1 tsp) Earl Grey tea",
+        "240ml (1 cup) boiling water",
+        "lemon slice (optional)"
+      ],
+      "instructions": "Add tea to teapot, pour boiling water over leaves, steep for 3-5 minutes, serve plain or with lemon, traditionally without milk"
+    },
+    {
+      "name": "Assam",
+      "origin": "India (Assam region)",
+      "description": "Malty, robust tea with deep color, excellent with milk",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "High",
+      "ingredients": [
+        "2-3g (1 tsp) Assam tea",
+        "240ml (1 cup) boiling water",
+        "milk and sugar (optional)"
+      ],
+      "instructions": "Use boiling water for full extraction, steep for 3-5 minutes, strong enough to stand up to milk and sugar"
+    },
+    {
+      "name": "Darjeeling",
+      "origin": "India (Darjeeling region)",
+      "description": "Champagne of teas, light and floral with muscatel notes",
+      "brew_temp": "185-195°F (85-90°C)",
+      "brew_time": "3-4 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) Darjeeling tea",
+        "240ml (1 cup) water at 185-195°F"
+      ],
+      "instructions": "Use slightly cooler water than other black teas, steep for 3-4 minutes, best enjoyed without milk to appreciate delicate flavor"
+    },
+    {
+      "name": "Ceylon",
+      "origin": "Sri Lanka",
+      "description": "Bright, brisk tea with citrus notes",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) Ceylon tea",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add tea to teapot, pour boiling water over leaves, steep for 3-5 minutes, versatile tea good hot or iced"
+    },
+    {
+      "name": "Lapsang Souchong",
+      "origin": "China (Fujian)",
+      "description": "Smoked over pine fires, distinctive smoky flavor",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "2-3g (1 tsp) Lapsang Souchong",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add leaves to teapot, pour boiling water over, steep for 3-5 minutes, strong smoky flavor pairs well with savory foods"
+    },
+    {
+      "name": "Keemun",
+      "origin": "China (Anhui)",
+      "description": "Smooth, wine-like flavor with subtle smokiness",
+      "brew_temp": "195-205°F (90-95°C)",
+      "brew_time": "3-4 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "2-3g (1 tsp) Keemun tea",
+        "240ml (1 cup) water at 195-205°F"
+      ],
+      "instructions": "Add leaves to teapot, pour hot water over, steep for 3-4 minutes, often used in English Breakfast blends"
+    },
+    {
+      "name": "Yunnan Gold (Dian Hong)",
+      "origin": "China (Yunnan)",
+      "description": "Golden tips, sweet and malty with chocolate notes",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) Yunnan Gold tea",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add golden-tipped leaves to teapot, pour boiling water over, steep for 3-5 minutes, naturally sweet with no bitterness"
+    },
+    {
+      "name": "Irish Breakfast",
+      "origin": "Blend (typically Assam-heavy)",
+      "description": "Stronger than English Breakfast, very robust",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "4-5 minutes",
+      "caffeine": "Very High",
+      "ingredients": [
+        "2-3g (1 tsp) Irish Breakfast tea",
+        "240ml (1 cup) boiling water",
+        "milk and sugar"
+      ],
+      "instructions": "Use boiling water, steep for 4-5 minutes for strong brew, traditionally served with generous milk and sugar"
+    },
+    {
+      "name": "Nilgiri",
+      "origin": "India (Nilgiri region)",
+      "description": "Smooth, fragrant tea with bright flavor",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) Nilgiri tea",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add tea to teapot, pour boiling water over, steep for 3-5 minutes, excellent for iced tea"
+    }
+  ],
+  "oolong_teas": [
+    {
+      "name": "Tie Guan Yin (Iron Goddess)",
+      "origin": "China (Fujian) / Taiwan",
+      "description": "Floral and creamy with orchid notes",
+      "brew_temp": "185-205°F (85-95°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "10-40%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Tie Guan Yin",
+        "240ml (1 cup) water at 185-205°F"
+      ],
+      "instructions": "Rinse leaves with hot water briefly, discard rinse, add fresh hot water, steep for 2-3 minutes, can re-steep 5-7 times"
+    },
+    {
+      "name": "Da Hong Pao (Big Red Robe)",
+      "origin": "China (Wuyi Mountains)",
+      "description": "Roasted oolong with mineral and chocolate notes",
+      "brew_temp": "195-205°F (90-95°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "60-70%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Da Hong Pao",
+        "240ml (1 cup) water at 195-205°F"
+      ],
+      "instructions": "Use gongfu brewing method for best results, rinse leaves, steep for short intervals, can re-steep many times"
+    },
+    {
+      "name": "Dong Ding",
+      "origin": "Taiwan",
+      "description": "Lightly roasted with fruity and floral notes",
+      "brew_temp": "185-195°F (85-90°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "30-40%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Dong Ding",
+        "240ml (1 cup) water at 185-195°F"
+      ],
+      "instructions": "Rinse leaves briefly, steep for 2-3 minutes, increases in complexity with each steeping"
+    },
+    {
+      "name": "Oriental Beauty (Bai Hao)",
+      "origin": "Taiwan",
+      "description": "Heavily oxidized with honey and fruit notes, naturally sweet",
+      "brew_temp": "185-195°F (85-90°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "60-75%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Oriental Beauty",
+        "240ml (1 cup) water at 185-195°F"
+      ],
+      "instructions": "Use lower temperature to preserve delicate flavors, steep for 2-3 minutes, naturally sweet from insect bites on leaves"
+    },
+    {
+      "name": "Milk Oolong (Jin Xuan)",
+      "origin": "Taiwan",
+      "description": "Creamy, buttery flavor with natural milky notes",
+      "brew_temp": "185-195°F (85-90°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "20-30%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Milk Oolong",
+        "240ml (1 cup) water at 185-195°F"
+      ],
+      "instructions": "Rinse leaves briefly, steep for 2-3 minutes, naturally creamy without added milk or flavoring"
+    },
+    {
+      "name": "Phoenix Dan Cong",
+      "origin": "China (Guangdong)",
+      "description": "Complex flavors ranging from floral to fruity to honey",
+      "brew_temp": "195-205°F (90-95°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium-High",
+      "oxidation": "60-80%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Dan Cong",
+        "240ml (1 cup) water at 195-205°F"
+      ],
+      "instructions": "Use gongfu method, rinse leaves, steep for short intervals, each variety has unique flavor profile"
+    },
+    {
+      "name": "Alishan",
+      "origin": "Taiwan (Alishan Mountains)",
+      "description": "High mountain oolong, floral and buttery",
+      "brew_temp": "185-195°F (85-90°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "20-30%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Alishan",
+        "240ml (1 cup) water at 185-195°F"
+      ],
+      "instructions": "Rinse leaves briefly, steep for 2-3 minutes, high altitude gives it unique floral character"
+    },
+    {
+      "name": "Shui Xian (Water Sprite)",
+      "origin": "China (Wuyi Mountains)",
+      "description": "Roasted oolong with orchid and stone fruit notes",
+      "brew_temp": "195-205°F (90-95°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "oxidation": "60-70%",
+      "ingredients": [
+        "3-5g (1.5-2 tsp) Shui Xian",
+        "240ml (1 cup) water at 195-205°F"
+      ],
+      "instructions": "Rinse leaves with hot water, steep for 2-3 minutes, can re-steep multiple times"
+    }
+  ],
+  "white_teas": [
+    {
+      "name": "Silver Needle (Bai Hao Yin Zhen)",
+      "origin": "China (Fujian)",
+      "description": "Most delicate white tea, made from unopened buds only",
+      "brew_temp": "160-175°F (70-80°C)",
+      "brew_time": "4-5 minutes",
+      "caffeine": "Low",
+      "ingredients": [
+        "3-4g (1.5 tsp) Silver Needle buds",
+        "240ml (1 cup) water at 160-175°F"
+      ],
+      "instructions": "Use cooler water to preserve delicate flavors, steep for 4-5 minutes, sweet and subtle with no bitterness"
+    },
+    {
+      "name": "White Peony (Bai Mu Dan)",
+      "origin": "China (Fujian)",
+      "description": "Buds and leaves, fuller flavor than Silver Needle",
+      "brew_temp": "170-185°F (75-85°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Low-Medium",
+      "ingredients": [
+        "3-4g (1.5 tsp) White Peony",
+        "240ml (1 cup) water at 170-185°F"
+      ],
+      "instructions": "Add leaves to teapot, pour hot water over, steep for 3-5 minutes, slightly stronger than Silver Needle"
+    },
+    {
+      "name": "Shou Mei (Long Life Eyebrow)",
+      "origin": "China (Fujian)",
+      "description": "Stronger white tea with more robust flavor",
+      "brew_temp": "175-185°F (80-85°C)",
+      "brew_time": "3-4 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "3-4g (1.5 tsp) Shou Mei",
+        "240ml (1 cup) water at 175-185°F"
+      ],
+      "instructions": "Add leaves to teapot, pour hot water over, steep for 3-4 minutes, fuller body than other white teas"
+    },
+    {
+      "name": "Gong Mei (Tribute Eyebrow)",
+      "origin": "China (Fujian)",
+      "description": "Similar to Shou Mei but higher grade",
+      "brew_temp": "175-185°F (80-85°C)",
+      "brew_time": "3-4 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "3-4g (1.5 tsp) Gong Mei",
+        "240ml (1 cup) water at 175-185°F"
+      ],
+      "instructions": "Add leaves to teapot, pour hot water over, steep for 3-4 minutes, slightly more refined than Shou Mei"
+    },
+    {
+      "name": "Moonlight White (Yue Guang Bai)",
+      "origin": "China (Yunnan)",
+      "description": "Yunnan white tea with sweet, fruity notes",
+      "brew_temp": "170-185°F (75-85°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Low-Medium",
+      "ingredients": [
+        "3-4g (1.5 tsp) Moonlight White",
+        "240ml (1 cup) water at 170-185°F"
+      ],
+      "instructions": "Add leaves to teapot, pour hot water over, steep for 3-5 minutes, unique flavor profile from Yunnan terroir"
+    }
+  ],
+  "pu_erh_teas": [
+    {
+      "name": "Sheng (Raw) Pu-erh",
+      "origin": "China (Yunnan)",
+      "description": "Unfermented, ages over time, earthy and complex",
+      "brew_temp": "195-212°F (90-100°C)",
+      "brew_time": "30 seconds - 2 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "5g (2 tsp) sheng pu-erh",
+        "240ml (1 cup) water at 195-212°F"
+      ],
+      "instructions": "Break off piece from cake, rinse leaves twice with hot water, steep for short intervals using gongfu method, can re-steep 10+ times"
+    },
+    {
+      "name": "Shou (Ripe) Pu-erh",
+      "origin": "China (Yunnan)",
+      "description": "Fermented, smooth and earthy with no astringency",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "30 seconds - 2 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "5g (2 tsp) shou pu-erh",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Break off piece from cake, rinse leaves twice with boiling water, steep for short intervals, smooth and mellow flavor"
+    },
+    {
+      "name": "Aged Pu-erh",
+      "origin": "China (Yunnan)",
+      "description": "Vintage pu-erh aged 10+ years, complex and smooth",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "30 seconds - 2 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "5g (2 tsp) aged pu-erh",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Break off piece carefully, rinse leaves, steep for short intervals, flavor improves with age like fine wine"
+    },
+    {
+      "name": "Mini Tuo Cha",
+      "origin": "China (Yunnan)",
+      "description": "Small compressed pu-erh nests, convenient single serving",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "2-3 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "1 mini tuo cha (5-8g)",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Place entire tuo cha in teapot, rinse with hot water, steep for 2-3 minutes, can re-steep multiple times"
+    }
+  ],
+  "herbal_teas": [
+    {
+      "name": "Chamomile",
+      "origin": "Europe/Egypt",
+      "description": "Calming floral tea, naturally caffeine-free",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "1-2 tablespoons dried chamomile flowers",
+        "240ml (1 cup) boiling water",
+        "honey (optional)"
+      ],
+      "instructions": "Add chamomile flowers to teapot, pour boiling water over, steep for 5-7 minutes, strain and add honey if desired"
+    },
+    {
+      "name": "Peppermint",
+      "origin": "Mediterranean",
+      "description": "Refreshing and cooling, aids digestion",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "1-2 tablespoons dried peppermint leaves",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add peppermint leaves to teapot, pour boiling water over, steep for 5-7 minutes, naturally sweet and refreshing"
+    },
+    {
+      "name": "Rooibos (Red Bush)",
+      "origin": "South Africa",
+      "description": "Naturally sweet and nutty, caffeine-free",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "2-3g (1 tsp) rooibos",
+        "240ml (1 cup) boiling water",
+        "milk and honey (optional)"
+      ],
+      "instructions": "Add rooibos to teapot, pour boiling water over, steep for 5-7 minutes, can be enjoyed with milk like black tea"
+    },
+    {
+      "name": "Hibiscus",
+      "origin": "Tropical regions",
+      "description": "Tart and fruity, deep red color, high in vitamin C",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "2-3g (1 tsp) dried hibiscus flowers",
+        "240ml (1 cup) boiling water",
+        "honey or sugar (optional)"
+      ],
+      "instructions": "Add hibiscus flowers to teapot, pour boiling water over, steep for 5-7 minutes, naturally tart so sweeten to taste"
+    },
+    {
+      "name": "Ginger",
+      "origin": "Asia",
+      "description": "Spicy and warming, aids digestion and nausea",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "10-15 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "2-3 slices fresh ginger root",
+        "240ml (1 cup) water",
+        "honey and lemon (optional)"
+      ],
+      "instructions": "Slice fresh ginger thinly, add to pot with water, bring to boil and simmer for 10-15 minutes, strain and add honey and lemon"
+    },
+    {
+      "name": "Lavender",
+      "origin": "Mediterranean",
+      "description": "Floral and calming, promotes relaxation",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "1-2 teaspoons dried culinary lavender buds",
+        "240ml (1 cup) boiling water",
+        "honey (optional)"
+      ],
+      "instructions": "Add lavender buds to teapot, pour boiling water over, steep for 5-7 minutes, strain well and sweeten if desired"
+    },
+    {
+      "name": "Lemon Balm",
+      "origin": "Mediterranean",
+      "description": "Lemony and calming, reduces stress",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "1-2 tablespoons dried lemon balm leaves",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add lemon balm to teapot, pour boiling water over, steep for 5-7 minutes, naturally lemony without added citrus"
+    },
+    {
+      "name": "Nettle",
+      "origin": "Europe/Asia",
+      "description": "Earthy and mineral-rich, nutritious",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-10 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "2-3g (1 tsp) dried nettle leaves",
+        "240ml (1 cup) boiling water"
+      ],
+      "instructions": "Add nettle leaves to teapot, pour boiling water over, steep for 5-10 minutes, high in vitamins and minerals"
+    },
+    {
+      "name": "Tulsi (Holy Basil)",
+      "origin": "India",
+      "description": "Adaptogenic herb, spicy and slightly sweet",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-7 minutes",
+      "caffeine": "None",
+      "ingredients": [
+        "2-3g (1 tsp) dried tulsi leaves",
+        "240ml (1 cup) boiling water",
+        "honey (optional)"
+      ],
+      "instructions": "Add tulsi to teapot, pour boiling water over, steep for 5-7 minutes, revered in Ayurvedic medicine"
+    },
+    {
+      "name": "Yerba Mate",
+      "origin": "South America",
+      "description": "Earthy and energizing, contains caffeine",
+      "brew_temp": "150-170°F (65-75°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) yerba mate",
+        "240ml (1 cup) water at 150-170°F"
+      ],
+      "instructions": "Use cooler water to avoid bitterness, add mate to gourd or teapot, pour water over, steep for 3-5 minutes, can re-steep"
+    }
+  ],
+  "specialty_blends": [
+    {
+      "name": "Masala Chai",
+      "origin": "India",
+      "description": "Spiced black tea with milk and sweetener",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "5-10 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) black tea",
+        "240ml (1 cup) water",
+        "240ml (1 cup) milk",
+        "2 tablespoons sugar",
+        "spices: cardamom, cinnamon, ginger, cloves, black pepper"
+      ],
+      "instructions": "Crush spices and add to pot with water, bring to boil, add tea and simmer 3-5 minutes, add milk and sugar, bring to boil again, strain and serve hot"
+    },
+    {
+      "name": "Moroccan Mint Tea",
+      "origin": "Morocco",
+      "description": "Sweet green tea with fresh mint",
+      "brew_temp": "170-180°F (75-80°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium",
+      "ingredients": [
+        "2-3g (1 tsp) gunpowder green tea",
+        "large handful fresh mint leaves",
+        "2-3 tablespoons sugar",
+        "240ml (1 cup) water"
+      ],
+      "instructions": "Rinse tea leaves with hot water, add fresh hot water, mint, and sugar, steep for 3-5 minutes, pour from height to create foam"
+    },
+    {
+      "name": "London Fog",
+      "origin": "Canada",
+      "description": "Earl Grey latte with vanilla",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "High",
+      "ingredients": [
+        "2-3g (1 tsp) Earl Grey tea",
+        "180ml (0.75 cups) boiling water",
+        "120ml (0.5 cups) steamed milk",
+        "1 tablespoon vanilla syrup"
+      ],
+      "instructions": "Steep Earl Grey in hot water for 3-5 minutes, strain, add vanilla syrup, steam milk and pour over tea"
+    },
+    {
+      "name": "Thai Iced Tea",
+      "origin": "Thailand",
+      "description": "Sweet and creamy orange-colored tea",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "High",
+      "ingredients": [
+        "2-3g (1 tsp) Thai tea mix",
+        "240ml (1 cup) boiling water",
+        "2 tablespoons sugar",
+        "2 tablespoons sweetened condensed milk",
+        "ice"
+      ],
+      "instructions": "Steep Thai tea in boiling water for 3-5 minutes, strain, add sugar while hot, let cool, pour over ice, top with condensed milk"
+    },
+    {
+      "name": "Russian Caravan",
+      "origin": "Russia/China blend",
+      "description": "Smoky blend of oolong, keemun, and lapsang souchong",
+      "brew_temp": "195-205°F (90-95°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) Russian Caravan blend",
+        "240ml (1 cup) water",
+        "lemon slice (optional)"
+      ],
+      "instructions": "Add tea to teapot, pour hot water over, steep for 3-5 minutes, traditionally served with lemon and sugar"
+    },
+    {
+      "name": "Bubble Tea (Boba)",
+      "origin": "Taiwan",
+      "description": "Tea with chewy tapioca pearls",
+      "brew_temp": "200-212°F (95-100°C)",
+      "brew_time": "3-5 minutes",
+      "caffeine": "Medium-High",
+      "ingredients": [
+        "2-3g (1 tsp) black tea",
+        "240ml (1 cup) boiling water",
+        "60ml (0.25 cups) milk",
+        "2 tablespoons sugar",
+        "60ml (0.25 cups) cooked tapioca pearls",
+        "ice"
+      ],
+      "instructions": "Brew strong black tea, add sugar while hot, let cool, cook tapioca pearls, add pearls to glass, add ice, pour tea and milk over"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Travel Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn4+W77iPPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Travel Randomizer</h1>
+            <button class="reroll-btn" id="generate-loadout">Generate Destination</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Country</h2>
+                    <button class="reroll-btn" id="reroll-country">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="country-roll"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Travel Advisory Level</h2>
+                </div>
+                <div class="item-container">
+                    <span id="advisory-level"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Travel Status</h2>
+                </div>
+                <div class="item-container">
+                    <span id="travel-status"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Travel Randomizer! Let fate decide your next adventure destination. This tool randomly selects a country from around the world and provides current US State Department travel advisory information.</p>
+            
+            <h3>Travel Advisory Levels Explained</h3>
+            <p>Travel advisory levels are based on official US State Department data and indicate safety considerations for travelers. The Department reviews these advisories regularly to ensure accuracy.</p>
+            
+            <div class="advisory-info">
+                <h4>Level 1: Exercise Normal Precautions</h4>
+                <p>This is the lowest advisory level for safety and security risks. There is some risk in any international travel, and conditions in other countries may differ from those in the United States. Standard travel safety measures apply.</p>
+                
+                <h4>Level 2: Exercise Increased Caution</h4>
+                <p>Be aware of increased risks to safety and security. Specific risks are described in the Travel Advisory. Travelers should stay informed about local conditions and take appropriate precautions.</p>
+                
+                <h4>Level 3: Reconsider Travel</h4>
+                <p>Reconsider your travel to the destination due to serious risks to safety and security. Specific risks are described in the Travel Advisory. The U.S. government may have limited ability to provide emergency services to U.S. citizens in these locations.</p>
+                
+                <h4>Level 4: Do Not Travel</h4>
+                <p>This is the highest advisory level due to life-threatening risks. Specific risks are described in the Travel Advisory. The U.S. government may have very limited or no ability to help, including during an emergency. We advise that U.S. citizens do not travel to the country, or to leave as soon as it is safe to do so.</p>
+            </div>
+            
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Destination" button to get a random country with its travel advisory information. Use the individual re-roll button (↻) to select a different country. <strong>Always verify current travel advisories at <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories.html" target="_blank" rel="noopener noreferrer">travel.state.gov</a> before making travel plans!</strong></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

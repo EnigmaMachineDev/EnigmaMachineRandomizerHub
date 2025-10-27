@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Bible Verse Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5OWPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Bible Verse Randomizer</h1>
+            <button class="reroll-btn" id="generate-all">Generate Random Verse</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Translation</h2>
+                    <button class="reroll-btn" id="reroll-translation">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="translation-roll"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Book</h2>
+                    <button class="reroll-btn" id="reroll-book">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="book-roll"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Verse</h2>
+                    <button class="reroll-btn" id="reroll-verse">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="verse-roll"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Bible Verse Randomizer! This tool uses the Free Use Bible API to provide random verses from multiple Bible translations. Whether you're looking for daily inspiration, studying Scripture, or seeking guidance, this randomizer can help you discover meaningful passages from God's Word.</p>
+            <p>The randomizer selects from various translations including BSB (Berean Study Bible), KJV (King James Version), WEB (World English Bible), and more. Each verse is presented with its full reference and translation information for easy lookup and further study.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Random Verse" button to receive a random Bible verse with a random translation, book, and verse. Use the individual re-roll buttons (↻) next to each section to randomize just that element while keeping the others the same.</p>
+            <h3>About the Translations</h3>
+            <p>This tool provides access to multiple Bible translations, each with different translation philosophies. Some are word-for-word translations (like KJV), while others are thought-for-thought (like BSB). Comparing different translations can provide deeper insight into the meaning of Scripture.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
