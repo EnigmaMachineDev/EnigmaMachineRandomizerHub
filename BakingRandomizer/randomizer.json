@@ -10,6 +10,8 @@
     {"name": "Pumpernickel", "description": "Dark German rye bread with distinctive flavor", "category": "Whole Grain Bread", "info_url": "https://en.wikipedia.org/wiki/Pumpernickel"},
     {"name": "Whole Wheat Bread", "description": "Nutritious bread made with whole wheat flour", "category": "Whole Grain Bread", "info_url": "https://en.wikipedia.org/wiki/Whole_wheat_bread"},
     {"name": "Multigrain Bread", "description": "Bread containing multiple types of grains and seeds", "category": "Whole Grain Bread", "info_url": "https://en.wikipedia.org/wiki/Multigrain_bread"},
+    {"name": "Rice Bread", "description": "Gluten-free bread made with rice flour, light and slightly sweet", "category": "Gluten-Free Bread", "info_url": "https://en.wikipedia.org/wiki/Rice_bread"},
+    {"name": "Brown Rice Bread", "description": "Nutritious gluten-free bread made with brown rice flour", "category": "Gluten-Free Bread", "info_url": "https://en.wikipedia.org/wiki/Rice_bread"},
     {"name": "Pita Bread", "description": "Middle Eastern flatbread that forms a pocket when baked", "category": "Flatbread", "info_url": "https://en.wikipedia.org/wiki/Pita"},
     {"name": "Naan", "description": "Leavened Indian flatbread traditionally baked in tandoor", "category": "Flatbread", "info_url": "https://en.wikipedia.org/wiki/Naan"},
     {"name": "Bagel", "description": "Ring-shaped bread boiled then baked, with chewy texture", "category": "Specialty Bread", "info_url": "https://en.wikipedia.org/wiki/Bagel"},
@@ -34,7 +36,10 @@
     {"name": "Lavash", "description": "Thin Armenian flatbread", "category": "Flatbread", "info_url": "https://en.wikipedia.org/wiki/Lavash"},
     {"name": "Matzo", "description": "Unleavened Jewish flatbread eaten during Passover", "category": "Flatbread", "info_url": "https://en.wikipedia.org/wiki/Matzo"},
     {"name": "Scone", "description": "British quick bread, often served with tea", "category": "Quick Bread", "info_url": "https://en.wikipedia.org/wiki/Scone"},
-    {"name": "Biscuit", "description": "American quick bread, flaky and buttery", "category": "Quick Bread", "info_url": "https://en.wikipedia.org/wiki/Biscuit_(bread)"}
+    {"name": "Biscuit", "description": "American quick bread, flaky and buttery", "category": "Quick Bread", "info_url": "https://en.wikipedia.org/wiki/Biscuit_(bread)"},
+    {"name": "Rosemary Bread", "description": "Aromatic bread infused with fresh rosemary herbs", "category": "Herb Bread", "info_url": "https://en.wikipedia.org/wiki/Herb_bread"},
+    {"name": "Orange Bread", "description": "Sweet quick bread with fresh orange zest and juice", "category": "Quick Bread", "info_url": "https://en.wikipedia.org/wiki/Quick_bread"},
+    {"name": "Banana Nut Bread", "description": "Sweet quick bread made with mashed bananas and walnuts or pecans", "category": "Quick Bread", "info_url": "https://en.wikipedia.org/wiki/Banana_bread"}
   ],
   "pastries": [
     {"name": "Croissant", "description": "Buttery, flaky French pastry with many layers", "category": "Laminated Pastry", "info_url": "https://en.wikipedia.org/wiki/Croissant"},
@@ -126,7 +131,9 @@
     {"name": "Pfeffernüsse", "description": "German spiced cookie, small and round", "category": "Specialty Cookie", "info_url": "https://en.wikipedia.org/wiki/Pfeffern%C3%BCsse"},
     {"name": "Lebkuchen", "description": "German gingerbread cookie, often glazed", "category": "Specialty Cookie", "info_url": "https://en.wikipedia.org/wiki/Lebkuchen"},
     {"name": "Alfajores", "description": "South American sandwich cookie with dulce de leche", "category": "Sandwich Cookie", "info_url": "https://en.wikipedia.org/wiki/Alfajor"},
-    {"name": "Oreo", "description": "Chocolate sandwich cookie with cream filling", "category": "Sandwich Cookie", "info_url": "https://en.wikipedia.org/wiki/Oreo"}
+    {"name": "Oreo", "description": "Chocolate sandwich cookie with cream filling", "category": "Sandwich Cookie", "info_url": "https://en.wikipedia.org/wiki/Oreo"},
+    {"name": "Mint Chocolate Cookie", "description": "Chocolate cookie with refreshing mint flavor, often with chocolate chips", "category": "Drop Cookie", "info_url": "https://en.wikipedia.org/wiki/Chocolate_chip_cookie"},
+    {"name": "Samoa Cookie", "description": "Caramel and coconut cookie with chocolate drizzle, inspired by Girl Scout cookies", "category": "Specialty Cookie", "info_url": "https://en.wikipedia.org/wiki/Girl_Scout_Cookies"}
   ],
   "pies_and_tarts": [
     {"name": "Apple Pie", "description": "Classic American pie with spiced apple filling", "category": "Fruit Pie", "info_url": "https://en.wikipedia.org/wiki/Apple_pie"},
@@ -161,7 +168,8 @@
     {"name": "Seven Layer Bar", "description": "Bar with graham cracker, coconut, chocolate, and condensed milk", "category": "Bar", "info_url": "https://en.wikipedia.org/wiki/Seven-layer_bar"},
     {"name": "Nanaimo Bar", "description": "Canadian no-bake bar with three layers", "category": "Bar", "info_url": "https://en.wikipedia.org/wiki/Nanaimo_bar"},
     {"name": "Pecan Bar", "description": "Shortbread base with pecan pie-like topping", "category": "Bar", "info_url": "https://en.wikipedia.org/wiki/Pecan_pie"},
-    {"name": "Raspberry Bar", "description": "Crumb bar with raspberry jam filling", "category": "Bar", "info_url": "https://en.wikipedia.org/wiki/Jam_bar"}
+    {"name": "Raspberry Bar", "description": "Crumb bar with raspberry jam filling", "category": "Bar", "info_url": "https://en.wikipedia.org/wiki/Jam_bar"},
+    {"name": "Newton Bar", "description": "Soft cookie bar with fruit filling, inspired by Fig Newtons", "category": "Bar", "info_url": "https://en.wikipedia.org/wiki/Fig_Newton"}
   ],
   "other_desserts": [
     {"name": "Pavlova", "description": "Meringue dessert with crisp crust and soft interior, topped with fruit", "category": "Meringue Dessert", "info_url": "https://en.wikipedia.org/wiki/Pavlova_(dessert)"},
@@ -176,6 +184,8 @@
     {"name": "Flan", "description": "Caramel custard dessert popular in Latin America", "category": "Custard Dessert", "info_url": "https://en.wikipedia.org/wiki/Cr%C3%A8me_caramel"},
     {"name": "Panna Cotta", "description": "Italian cooked cream dessert", "category": "Custard Dessert", "info_url": "https://en.wikipedia.org/wiki/Panna_cotta"},
     {"name": "Soufflé", "description": "Light baked dessert made with egg yolks and beaten egg whites", "category": "Egg Dessert", "info_url": "https://en.wikipedia.org/wiki/Souffl%C3%A9"},
-    {"name": "Meringue", "description": "Baked dessert made from whipped egg whites and sugar", "category": "Meringue Dessert", "info_url": "https://en.wikipedia.org/wiki/Meringue"}
+    {"name": "Meringue", "description": "Baked dessert made from whipped egg whites and sugar", "category": "Meringue Dessert", "info_url": "https://en.wikipedia.org/wiki/Meringue"},
+    {"name": "Ambrosia", "description": "Southern fruit salad dessert with marshmallows, coconut, and whipped cream", "category": "Fruit Dessert", "info_url": "https://en.wikipedia.org/wiki/Ambrosia_(fruit_salad)"},
+    {"name": "Twinkie", "description": "Golden sponge cake filled with sweet cream filling", "category": "Snack Cake", "info_url": "https://en.wikipedia.org/wiki/Twinkie"}
   ]
 }

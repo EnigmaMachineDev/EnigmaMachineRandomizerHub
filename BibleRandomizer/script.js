@@ -41,11 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     async function setTranslation() {
         try {
             currentTranslation = getRandomItem(availableTranslations);
-            translationEl.textContent = `${currentTranslation.full_name} (${currentTranslation.abbreviation})`;
+            const displayName = currentTranslation.full_name || currentTranslation.name || currentTranslation.abbreviation;
+            const abbr = currentTranslation.abbreviation || currentTranslation.abbr || currentTranslation.id;
+            translationEl.textContent = `${displayName} (${abbr})`;
             
             // Load books for this translation
             bookEl.innerHTML = '<span class="loading">Loading books...</span>';
-            const response = await fetch(`${API_BASE}/${currentTranslation.abbreviation}/books.json`);
+            const response = await fetch(`${API_BASE}/${abbr}/books.json`);
             currentBooks = await response.json();
             
             return true;
@@ -64,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             currentBook = getRandomItem(currentBooks);
-            bookEl.textContent = currentBook.name;
+            const bookName = currentBook.name || currentBook.full_name || currentBook.abbreviation;
+            bookEl.textContent = bookName;
             return true;
         } catch (error) {
             console.error('Error setting book:', error);
@@ -83,10 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
             verseEl.innerHTML = '<span class="loading">Loading verse...</span>';
             
             // Get a random chapter from the book
-            const randomChapter = Math.floor(Math.random() * currentBook.chapters) + 1;
+            const numChapters = currentBook.chapters || currentBook.chapter_count || 1;
+            const randomChapter = Math.floor(Math.random() * numChapters) + 1;
             
             // Fetch the chapter data
-            const response = await fetch(`${API_BASE}/${currentTranslation.abbreviation}/${currentBook.abbreviation}/${randomChapter}.json`);
+            const abbr = currentTranslation.abbreviation || currentTranslation.abbr || currentTranslation.id;
+            const bookAbbr = currentBook.abbreviation || currentBook.abbr || currentBook.id;
+            const response = await fetch(`${API_BASE}/${abbr}/${bookAbbr}/${randomChapter}.json`);
             currentChapter = await response.json();
             
             if (!currentChapter.verses || currentChapter.verses.length === 0) {
@@ -98,9 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const randomVerse = getRandomItem(currentChapter.verses);
             
             // Display the verse
+            const bookName = currentBook.name || currentBook.full_name || currentBook.abbreviation;
+            const verseNum = randomVerse.verse || randomVerse.number || randomVerse.id;
+            const verseText = randomVerse.text || randomVerse.content || '';
+            
             let result = '<div class="verse-display">';
-            result += `<span class="verse-reference">${currentBook.name} ${randomChapter}:${randomVerse.verse}</span>`;
-            result += `<p class="verse-text">${randomVerse.text}</p>`;
+            result += `<span class="verse-reference">${bookName} ${randomChapter}:${verseNum}</span>`;
+            result += `<p class="verse-text">${verseText}</p>`;
             result += '</div>';
             
             verseEl.innerHTML = result;

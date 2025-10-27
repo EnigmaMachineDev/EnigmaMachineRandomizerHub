@@ -62,6 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
             result += `<p><strong>Instructions:</strong> ${teaObj.instructions}</p>`;
         }
         
+        if (teaObj.info_url) {
+            result += `<p class="info-link"><strong>Learn More:</strong> <a href="${teaObj.info_url}" target="_blank" rel="noopener noreferrer">Read about ${teaObj.name}</a></p>`;
+        }
+        
         result += `</div>`;
         
         teaRollEl.innerHTML = result;
