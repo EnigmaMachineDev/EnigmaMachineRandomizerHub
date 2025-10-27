@@ -21,7 +21,22 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             translationEl.innerHTML = '<span class="loading">Loading translations...</span>';
             const response = await fetch(`${API_BASE}/available_translations.json`);
-            availableTranslations = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Handle if data is an object with a translations property
+            if (Array.isArray(data)) {
+                availableTranslations = data;
+            } else if (data.translations && Array.isArray(data.translations)) {
+                availableTranslations = data.translations;
+            } else {
+                console.error('Unexpected data format:', data);
+                throw new Error('Invalid data format');
+            }
             
             if (availableTranslations.length > 0) {
                 await randomizeAll();
@@ -48,7 +63,22 @@ document.addEventListener('DOMContentLoaded', () => {
             // Load books for this translation
             bookEl.innerHTML = '<span class="loading">Loading books...</span>';
             const response = await fetch(`${API_BASE}/${abbr}/books.json`);
-            currentBooks = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Handle different response formats
+            if (Array.isArray(data)) {
+                currentBooks = data;
+            } else if (data.books && Array.isArray(data.books)) {
+                currentBooks = data.books;
+            } else {
+                console.error('Unexpected books data format:', data);
+                throw new Error('Invalid books data format');
+            }
             
             return true;
         } catch (error) {
@@ -93,20 +123,38 @@ document.addEventListener('DOMContentLoaded', () => {
             const abbr = currentTranslation.abbreviation || currentTranslation.abbr || currentTranslation.id;
             const bookAbbr = currentBook.abbreviation || currentBook.abbr || currentBook.id;
             const response = await fetch(`${API_BASE}/${abbr}/${bookAbbr}/${randomChapter}.json`);
-            currentChapter = await response.json();
             
-            if (!currentChapter.verses || currentChapter.verses.length === 0) {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Handle different response formats
+            let verses = [];
+            if (Array.isArray(data)) {
+                verses = data;
+            } else if (data.verses && Array.isArray(data.verses)) {
+                verses = data.verses;
+            } else if (data.chapter && data.chapter.verses) {
+                verses = data.chapter.verses;
+            } else {
+                console.error('Unexpected verse data format:', data);
+                throw new Error('Invalid verse data format');
+            }
+            
+            if (!verses || verses.length === 0) {
                 verseEl.innerHTML = '<span class="error">No verses found in this chapter</span>';
                 return;
             }
 
             // Get a random verse from the chapter
-            const randomVerse = getRandomItem(currentChapter.verses);
+            const randomVerse = getRandomItem(verses);
             
             // Display the verse
             const bookName = currentBook.name || currentBook.full_name || currentBook.abbreviation;
-            const verseNum = randomVerse.verse || randomVerse.number || randomVerse.id;
-            const verseText = randomVerse.text || randomVerse.content || '';
+            const verseNum = randomVerse.verse || randomVerse.number || randomVerse.id || randomVerse.verse_number;
+            const verseText = randomVerse.text || randomVerse.content || randomVerse.verse_text || '';
             
             let result = '<div class="verse-display">';
             result += `<span class="verse-reference">${bookName} ${randomChapter}:${verseNum}</span>`;

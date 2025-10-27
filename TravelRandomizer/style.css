@@ -120,6 +120,20 @@ a:hover {
     text-decoration: underline;
 }
 
+.country-link {
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-bottom: 2px solid #66cc66;
+    transition: all 0.3s ease;
+}
+
+.country-link:hover {
+    color: #88e888;
+    border-bottom-color: #88e888;
+}
+
 .advisory-badge {
     padding: 5px 10px;
     border-radius: 5px;

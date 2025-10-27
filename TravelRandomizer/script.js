@@ -51,7 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function setCountry() {
         const country = getRandomValue(data.countries);
         
-        countryRollEl.textContent = country.name;
+        // Create Wikipedia URL for the country
+        const wikiUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(country.name.replace(/ /g, '_'))}`;
+        
+        // Display country name with link
+        countryRollEl.innerHTML = `<a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="country-link">${country.name}</a>`;
         
         const advisoryText = getAdvisoryText(country.level);
         advisoryLevelEl.textContent = advisoryText;
