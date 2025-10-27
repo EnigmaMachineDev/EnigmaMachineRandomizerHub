@@ -1,0 +1,478 @@
+{
+  "brewing_methods": [
+    {
+      "name": "Drip Coffee Maker",
+      "description": "Automatic machine that drips hot water through ground coffee",
+      "brew_time": "5-10 minutes",
+      "difficulty": "Easy",
+      "grind_size": "Medium",
+      "ingredients": ["60g (2.1 oz) medium ground coffee", "1 liter (4.2 cups) water"],
+      "instructions": "Add coffee to filter, pour water into reservoir, turn on machine, wait for brewing to complete"
+    },
+    {
+      "name": "French Press",
+      "description": "Immersion brewing method using a plunger to separate grounds",
+      "brew_time": "4-5 minutes",
+      "difficulty": "Easy",
+      "grind_size": "Coarse",
+      "ingredients": ["60g (2.1 oz) coarsely ground coffee", "1 liter (4.2 cups) hot water (200°F/93°C)"],
+      "instructions": "Add coffee to press, pour hot water over grounds, stir gently, place lid on top, steep 4 minutes, slowly press plunger down, pour immediately"
+    },
+    {
+      "name": "Pour Over",
+      "description": "Manual method pouring hot water over grounds in a filter cone",
+      "brew_time": "3-4 minutes",
+      "difficulty": "Medium",
+      "popular_devices": ["V60", "Chemex", "Kalita Wave"],
+      "grind_size": "Medium",
+      "ingredients": ["20g (0.7 oz) medium ground coffee", "300ml (1.25 cups) hot water (200°F/93°C)"],
+      "instructions": "Place filter in dripper and rinse with hot water, add coffee and shake to level, pour 40ml (2.5 tbsp) water to bloom for 30 seconds, slowly pour remaining water in circular motion over 2-3 minutes"
+    },
+    {
+      "name": "Espresso Machine",
+      "description": "High-pressure extraction producing concentrated coffee",
+      "brew_time": "25-30 seconds per shot",
+      "difficulty": "Hard",
+      "grind_size": "Fine",
+      "ingredients": ["18-20g (0.6-0.7 oz) finely ground coffee", "30ml (1 fl oz) water at 9 bars pressure"],
+      "instructions": "Preheat machine, grind coffee fresh, distribute evenly in portafilter, tamp with 30lbs pressure, lock portafilter into group head, extract for 25-30 seconds"
+    },
+    {
+      "name": "Moka Pot",
+      "description": "Stovetop brewer that creates strong coffee using steam pressure",
+      "brew_time": "5-10 minutes",
+      "difficulty": "Medium",
+      "grind_size": "Medium-Fine",
+      "ingredients": ["20g (0.7 oz) medium-fine ground coffee", "water to fill lower chamber"],
+      "instructions": "Fill lower chamber with water to valve level, fill filter basket with coffee (don't tamp), assemble pot, place on medium heat, remove when upper chamber is full and you hear gurgling"
+    },
+    {
+      "name": "AeroPress",
+      "description": "Manual brewing device using air pressure",
+      "brew_time": "1-2 minutes",
+      "difficulty": "Easy",
+      "grind_size": "Medium to Medium-Fine",
+      "ingredients": ["15-17g (0.5-0.6 oz) medium-fine ground coffee", "200ml (0.85 cups) hot water (175-185°F/79-85°C)"],
+      "instructions": "Place filter in cap and rinse, attach cap to chamber, add coffee, pour water and stir for 10 seconds, insert plunger and press gently for 20-30 seconds"
+    },
+    {
+      "name": "Cold Brew",
+      "description": "Steeping grounds in cold water for extended time",
+      "brew_time": "12-24 hours",
+      "difficulty": "Easy",
+      "grind_size": "Extra Coarse",
+      "ingredients": ["100g (3.5 oz) extra coarsely ground coffee", "1 liter (4.2 cups) cold water"],
+      "instructions": "Combine coffee and cold water in container, stir to saturate grounds, cover and steep at room temperature or refrigerated for 12-24 hours, strain through fine filter or cheesecloth, dilute concentrate to taste"
+    },
+    {
+      "name": "Turkish Coffee",
+      "description": "Finely ground coffee boiled with water in a cezve/ibrik",
+      "brew_time": "3-4 minutes",
+      "difficulty": "Medium",
+      "grind_size": "Extra Fine (powder)",
+      "ingredients": ["1-2 teaspoons extra fine ground coffee per cup", "1 cup cold water", "sugar to taste", "cardamom (optional)"],
+      "instructions": "Mix coffee, water, and sugar in cezve, heat slowly without stirring, remove from heat when foam rises, return to heat and repeat 2-3 times, pour foam into cups first then coffee, let grounds settle before drinking"
+    },
+    {
+      "name": "Siphon/Vacuum Pot",
+      "description": "Theatrical brewing using vapor pressure and vacuum",
+      "brew_time": "5-8 minutes",
+      "difficulty": "Hard",
+      "grind_size": "Medium",
+      "ingredients": ["25g (0.9 oz) medium ground coffee", "350ml (1.5 cups) water"],
+      "instructions": "Fill lower chamber with water and heat, attach upper chamber with filter, when water rises add coffee and stir, brew for 1-2 minutes, remove from heat, coffee will filter down into lower chamber"
+    },
+    {
+      "name": "Percolator",
+      "description": "Cycles boiling water through grounds repeatedly",
+      "brew_time": "7-10 minutes",
+      "difficulty": "Easy",
+      "grind_size": "Coarse",
+      "ingredients": ["60g (2.1 oz) coarsely ground coffee", "1 liter (4.2 cups) water"],
+      "instructions": "Fill percolator with water, add coffee to basket, place on heat, water will cycle through grounds, percolate for 7-10 minutes, remove from heat when desired strength reached"
+    },
+    {
+      "name": "Vietnamese Phin",
+      "description": "Single-serve drip filter placed over cup",
+      "brew_time": "4-5 minutes",
+      "difficulty": "Easy",
+      "grind_size": "Medium-Fine",
+      "ingredients": ["3 tablespoons medium-fine ground coffee", "180ml (0.75 cups) hot water (195-205°F/90-96°C)", "sweetened condensed milk (optional)"],
+      "instructions": "Add condensed milk to cup if using, place phin on top of cup, add coffee to chamber, press filter insert gently onto coffee, pour small amount of water to bloom for 20 seconds, fill with remaining water, cover and let drip, stir and enjoy"
+    },
+    {
+      "name": "Cowboy Coffee",
+      "description": "Boiling grounds directly in water without filter",
+      "brew_time": "5-10 minutes",
+      "difficulty": "Easy",
+      "grind_size": "Coarse",
+      "ingredients": ["60g (2.1 oz) coarsely ground coffee", "1 liter (4.2 cups) water"],
+      "instructions": "Bring water to boil in pot, remove from heat, add coffee grounds, stir, let steep 4 minutes, add splash of cold water to settle grounds, pour carefully to avoid grounds"
+    }
+  ],
+  "espresso_based_drinks": [
+    {
+      "name": "Espresso",
+      "grind_size": "Fine",
+      "ingredients": ["18-20g (0.6-0.7 oz) finely ground coffee", "30ml (1 fl oz) water"],
+      "instructions": "Grind coffee fresh, distribute evenly in portafilter, tamp with 30lbs pressure, extract for 25-30 seconds",
+      "description": "Pure concentrated coffee shot"
+    },
+    {
+      "name": "Doppio",
+      "grind_size": "Fine",
+      "ingredients": ["36-40g (1.3-1.4 oz) finely ground coffee", "60ml (2 fl oz) water"],
+      "instructions": "Grind coffee fresh, distribute evenly in double portafilter, tamp with 30lbs pressure, extract for 25-30 seconds",
+      "description": "Double espresso"
+    },
+    {
+      "name": "Americano",
+      "grind_size": "Fine",
+      "ingredients": ["1-2 shots espresso (18-36g/0.6-1.3 oz coffee)", "120-180ml (0.5-0.75 cups) hot water"],
+      "instructions": "Pull espresso shot(s) into cup, add hot water to desired strength",
+      "description": "Espresso diluted with hot water"
+    },
+    {
+      "name": "Long Black",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36g/1.3 oz coffee)", "120ml (0.5 cups) hot water"],
+      "instructions": "Pour hot water into cup first, gently pull espresso shots directly into the water to preserve crema",
+      "description": "Hot water with espresso poured over (preserves crema)"
+    },
+    {
+      "name": "Cappuccino",
+      "ratio": "1:1:1",
+      "grind_size": "Fine",
+      "ingredients": ["1 shot espresso (18-20g/0.6-0.7 oz coffee)", "60ml (0.25 cups) steamed milk", "60ml (0.25 cups) milk foam"],
+      "instructions": "Pull espresso shot into cup, steam milk to 150-155°F creating equal parts steamed milk and foam, pour steamed milk into espresso, spoon foam on top",
+      "description": "Equal parts espresso, steamed milk, and foam"
+    },
+    {
+      "name": "Latte",
+      "grind_size": "Fine",
+      "ingredients": ["1-2 shots espresso (18-36g/0.6-1.3 oz coffee)", "180-240ml (0.75-1 cup) steamed milk", "thin layer milk foam"],
+      "instructions": "Pull espresso shot(s) into cup, steam milk to 150-155°F with microfoam, pour steamed milk over espresso in circular motion for latte art, top with light foam layer",
+      "description": "Espresso with mostly steamed milk and light foam"
+    },
+    {
+      "name": "Flat White",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz coffee)", "120ml (0.5 cups) microfoam milk"],
+      "instructions": "Pull double espresso into cup, steam milk to 140-150°F creating velvety microfoam texture, pour milk into espresso with latte art technique",
+      "description": "Similar to latte but with less milk and velvety microfoam"
+    },
+    {
+      "name": "Macchiato",
+      "grind_size": "Fine",
+      "ingredients": ["1 shot espresso (18-20g/0.6-0.7 oz coffee)", "1 tablespoon milk foam"],
+      "instructions": "Pull espresso shot into demitasse cup, steam small amount of milk, spoon a dollop of foam on top of espresso",
+      "description": "Espresso marked with small amount of foam"
+    },
+    {
+      "name": "Cortado",
+      "ratio": "1:1",
+      "grind_size": "Fine",
+      "ingredients": ["1 shot espresso (18-20g/0.6-0.7 oz coffee, 30ml/1 fl oz)", "30ml (1 fl oz) steamed milk"],
+      "instructions": "Pull espresso shot into small glass, steam equal amount of milk with minimal foam, pour steamed milk over espresso",
+      "description": "Espresso cut with equal amount of steamed milk"
+    },
+    {
+      "name": "Mocha",
+      "grind_size": "Fine",
+      "ingredients": ["1-2 shots espresso (18-36g/0.6-1.3 oz coffee)", "2 tablespoons chocolate syrup", "180-240ml (0.75-1 cup) steamed milk", "whipped cream"],
+      "instructions": "Add chocolate syrup to cup, pull espresso shot(s) and stir to mix chocolate, steam milk to 150-155°F, pour steamed milk over espresso-chocolate mixture, top with whipped cream",
+      "description": "Chocolate-flavored latte"
+    },
+    {
+      "name": "Affogato",
+      "grind_size": "Fine",
+      "ingredients": ["1 shot espresso (18-20g/0.6-0.7 oz coffee)", "1 scoop vanilla gelato or ice cream"],
+      "instructions": "Place scoop of gelato/ice cream in cup or bowl, pull fresh hot espresso shot, pour espresso directly over ice cream, serve immediately",
+      "description": "Espresso poured over ice cream"
+    },
+    {
+      "name": "Red Eye",
+      "grind_size": "Medium for drip, Fine for espresso",
+      "ingredients": ["240ml (1 cup) brewed drip coffee (15g/0.5 oz medium ground)", "1 shot espresso (18-20g/0.6-0.7 oz fine ground)"],
+      "instructions": "Brew regular drip coffee, pull espresso shot, add espresso shot to brewed coffee",
+      "description": "Regular coffee with added espresso shot"
+    },
+    {
+      "name": "Black Eye",
+      "grind_size": "Medium for drip, Fine for espresso",
+      "ingredients": ["240ml (1 cup) brewed drip coffee (15g/0.5 oz medium ground)", "2 shots espresso (36-40g/1.3-1.4 oz fine ground)"],
+      "instructions": "Brew regular drip coffee, pull two espresso shots, add espresso shots to brewed coffee",
+      "description": "Regular coffee with two espresso shots"
+    },
+    {
+      "name": "Dead Eye",
+      "grind_size": "Medium for drip, Fine for espresso",
+      "ingredients": ["240ml (1 cup) brewed drip coffee (15g/0.5 oz medium ground)", "3 shots espresso (54-60g/1.9-2.1 oz fine ground)"],
+      "instructions": "Brew regular drip coffee, pull three espresso shots, add espresso shots to brewed coffee",
+      "description": "Regular coffee with three espresso shots"
+    },
+    {
+      "name": "Ristretto",
+      "grind_size": "Fine",
+      "ingredients": ["18-20g (0.6-0.7 oz) finely ground coffee", "15-20ml (0.5-0.7 fl oz) water"],
+      "instructions": "Grind coffee fresh, distribute evenly in portafilter, tamp with 30lbs pressure, extract for 15-20 seconds (stop extraction early for half the water)",
+      "description": "Shorter, sweeter espresso shot with less water"
+    },
+    {
+      "name": "Lungo",
+      "grind_size": "Fine",
+      "ingredients": ["18-20g (0.6-0.7 oz) finely ground coffee", "50-60ml (1.7-2 fl oz) water"],
+      "instructions": "Grind coffee fresh, distribute evenly in portafilter, tamp with 30lbs pressure, extract for 45-60 seconds (let extraction run longer for double the water)",
+      "description": "Longer espresso shot with more water"
+    },
+    {
+      "name": "Breve",
+      "grind_size": "Fine",
+      "ingredients": ["1-2 shots espresso (18-36g/0.6-1.3 oz coffee)", "180-240ml (0.75-1 cup) steamed half-and-half"],
+      "instructions": "Pull espresso shot(s) into cup, steam half-and-half to 150-155°F (steams richer and thicker than milk), pour steamed half-and-half over espresso",
+      "description": "Latte made with half-and-half instead of milk"
+    }
+  ],
+  "cold_coffee_drinks": [
+    {
+      "name": "Iced Coffee",
+      "grind_size": "Medium",
+      "ingredients": ["30g (1 oz) medium ground coffee", "240ml (1 cup) hot water (200°F/93°C)", "ice"],
+      "instructions": "Brew coffee at double strength (use half the water), let cool slightly for 5 minutes, fill glass with ice, pour hot coffee over ice",
+      "description": "Chilled brewed coffee over ice"
+    },
+    {
+      "name": "Cold Brew",
+      "grind_size": "Extra Coarse",
+      "ingredients": ["100g (3.5 oz) extra coarsely ground coffee", "1 liter (4.2 cups) cold water"],
+      "instructions": "Combine coffee and cold water in container, stir to saturate all grounds, cover and steep at room temperature or in refrigerator for 12-24 hours, strain through fine mesh filter or cheesecloth, dilute concentrate with equal parts water or milk, serve over ice",
+      "description": "Coffee steeped in cold water for 12-24 hours"
+    },
+    {
+      "name": "Nitro Cold Brew",
+      "grind_size": "Extra Coarse",
+      "ingredients": ["cold brew coffee concentrate", "nitrogen gas (requires nitro tap system or cream whipper)"],
+      "instructions": "Prepare cold brew concentrate using standard method, pour cold brew into nitro tap keg or cream whipper, charge with nitrogen, dispense into glass (no ice needed - nitrogen creates creamy texture)",
+      "description": "Cold brew infused with nitrogen for creamy texture"
+    },
+    {
+      "name": "Iced Latte",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground coffee)", "180ml (0.75 cups) cold milk", "ice"],
+      "instructions": "Fill tall glass with ice, pour cold milk over ice, pull espresso shots directly over the milk and ice, stir gently",
+      "description": "Espresso with cold milk over ice"
+    },
+    {
+      "name": "Iced Americano",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground coffee)", "120ml (0.5 cups) cold water", "ice"],
+      "instructions": "Fill glass with ice, add cold water, pull espresso shots directly over ice and water, stir",
+      "description": "Espresso diluted with cold water over ice"
+    },
+    {
+      "name": "Frappé",
+      "grind_size": "N/A (uses instant coffee)",
+      "ingredients": ["2 teaspoons instant coffee", "60ml (0.25 cups) cold water", "2 teaspoons sugar", "120ml (0.5 cups) cold milk", "ice cubes"],
+      "instructions": "Add instant coffee, water, and sugar to cocktail shaker or jar, shake vigorously for 30 seconds until frothy, fill glass with ice, pour frothy coffee over ice, add cold milk, stir",
+      "description": "Blended iced coffee drink (Greek origin)"
+    },
+    {
+      "name": "Frappuccino",
+      "grind_size": "Medium to Fine",
+      "ingredients": ["120ml (0.5 cups) strong brewed coffee (cooled)", "120ml (0.5 cups) milk", "2 cups ice", "2 tablespoons sugar", "flavored syrup (optional)", "whipped cream"],
+      "instructions": "Brew strong coffee and let cool completely, add coffee, milk, ice, and sugar to blender, blend on high until smooth and slushy, pour into glass, top with whipped cream and drizzle",
+      "description": "Blended frozen coffee beverage"
+    },
+    {
+      "name": "Vietnamese Iced Coffee",
+      "grind_size": "Medium-Fine",
+      "ingredients": ["3 tablespoons medium-fine ground Vietnamese coffee", "2-3 tablespoons sweetened condensed milk", "180ml (0.75 cups) hot water (195-205°F/90-96°C)", "ice"],
+      "instructions": "Add sweetened condensed milk to glass, place phin filter on top, add coffee and press insert gently, pour small amount of hot water to bloom 20 seconds, fill with remaining water and cover, let drip 4-5 minutes, stir coffee and condensed milk together, pour over glass of ice",
+      "description": "Strong coffee with sweetened condensed milk over ice"
+    },
+    {
+      "name": "Mazagran",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz coffee)", "15ml (1 tbsp) fresh lemon juice", "1 tablespoon sugar", "ice"],
+      "instructions": "Pull espresso shots, mix with lemon juice and sugar while hot, stir until sugar dissolves, let cool to room temperature, pour over glass filled with ice",
+      "description": "Portuguese iced coffee with lemon"
+    },
+    {
+      "name": "Cold Foam Cold Brew",
+      "grind_size": "Extra Coarse for cold brew",
+      "ingredients": ["240ml (1 cup) cold brew coffee", "60ml (0.25 cups) cold milk (whole or 2%)", "1 tablespoon sugar or vanilla syrup", "ice"],
+      "instructions": "Prepare cold brew and pour over ice in glass, add sugar to cold milk, froth milk using handheld frother or shake vigorously in jar for 30-60 seconds until thick foam forms, spoon cold foam over cold brew",
+      "description": "Cold brew topped with sweet cold foam"
+    }
+  ],
+  "specialty_coffee_drinks": [
+    {
+      "name": "Irish Coffee",
+      "grind_size": "Medium",
+      "ingredients": ["180ml (0.75 cups) hot strong brewed coffee", "45ml (1.5 fl oz) Irish whiskey", "2 teaspoons brown sugar", "30ml (2 tbsp) lightly whipped heavy cream"],
+      "instructions": "Brew strong coffee, warm glass with hot water then empty, add whiskey and brown sugar to glass, pour in hot coffee and stir until sugar dissolves, gently pour cream over back of spoon to float on top, do not stir",
+      "description": "Coffee cocktail with whiskey and cream"
+    },
+    {
+      "name": "Café au Lait",
+      "ratio": "1:1",
+      "grind_size": "Medium",
+      "ingredients": ["120ml (0.5 cups) hot brewed coffee", "120ml (0.5 cups) steamed milk"],
+      "instructions": "Brew coffee using drip or French press method, steam milk to 150-155°F, pour coffee and steamed milk simultaneously from both sides into cup, or pour coffee first then add steamed milk",
+      "description": "French coffee with equal parts coffee and steamed milk"
+    },
+    {
+      "name": "Café Cubano",
+      "grind_size": "Fine",
+      "ingredients": ["30g (1 oz) finely ground coffee", "2-3 tablespoons demerara sugar", "60ml (0.25 cups) water"],
+      "instructions": "Add coffee to moka pot filter basket, brew on stovetop, catch first few drops of espresso in cup with sugar, whip sugar and coffee drops vigorously until creamy espumita forms, pour remaining coffee over espumita, stir and serve",
+      "description": "Sweet Cuban espresso with whipped sugar"
+    },
+    {
+      "name": "Café Bombon",
+      "grind_size": "Fine",
+      "ingredients": ["1 shot espresso (18-20g/0.6-0.7 oz coffee)", "30-45ml (2-3 tbsp) sweetened condensed milk"],
+      "instructions": "Pour sweetened condensed milk into clear glass, pull espresso shot, slowly pour hot espresso over the back of a spoon into glass to create distinct layers, serve without stirring to show layers, stir before drinking",
+      "description": "Spanish coffee with condensed milk layers"
+    },
+    {
+      "name": "Turkish Coffee",
+      "grind_size": "Extra Fine (powder consistency)",
+      "ingredients": ["1-2 teaspoons extra fine ground coffee per small cup", "1 small cup cold water (60-90ml/0.25-0.4 cups)", "sugar to taste (optional)", "ground cardamom (optional pinch)"],
+      "instructions": "Add coffee, water, sugar, and cardamom to cezve/ibrik, stir to combine, place on low heat without stirring, watch carefully as foam rises, remove from heat just before boiling over, return to heat and repeat foam rise 2-3 times, pour foam into cups first, then gently pour coffee, let grounds settle 1-2 minutes before drinking",
+      "description": "Unfiltered coffee boiled in cezve"
+    },
+    {
+      "name": "Café de Olla",
+      "grind_size": "Coarse to Medium",
+      "ingredients": ["60g (2.1 oz) coarsely ground coffee", "1 liter (4.2 cups) water", "1 cinnamon stick", "100g (0.5 cups) piloncillo or dark brown sugar", "2-3 whole cloves (optional)", "star anise (optional)"],
+      "instructions": "Add water, cinnamon, piloncillo, and spices to pot, bring to boil stirring until sugar dissolves, remove from heat, add coffee grounds and stir, cover and steep 5 minutes, strain through fine mesh or cheesecloth into cups",
+      "description": "Mexican spiced coffee traditionally made in clay pot"
+    },
+    {
+      "name": "Bulletproof Coffee",
+      "grind_size": "Medium",
+      "ingredients": ["240ml (1 cup) hot brewed coffee", "1-2 tablespoons grass-fed unsalted butter", "1-2 tablespoons MCT oil or coconut oil"],
+      "instructions": "Brew coffee using preferred method, add hot coffee, butter, and MCT oil to blender, blend on high for 20-30 seconds until frothy and creamy (like a latte), serve immediately",
+      "description": "Blended coffee with fats for energy"
+    },
+    {
+      "name": "Dalgona Coffee",
+      "grind_size": "N/A (uses instant coffee)",
+      "ingredients": ["2 tablespoons instant coffee", "2 tablespoons granulated sugar", "2 tablespoons hot water", "240ml (1 cup) milk (hot or cold)", "ice (optional for iced version)"],
+      "instructions": "Add instant coffee, sugar, and hot water to bowl, whisk vigorously by hand (400+ strokes) or use electric mixer for 2-3 minutes until thick, fluffy, and light caramel colored, fill glass with milk and ice if making iced version, spoon whipped coffee on top, stir before drinking",
+      "description": "Whipped coffee foam over milk (Korean trend)"
+    },
+    {
+      "name": "Espresso Tonic",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz coffee)", "120-180ml (0.5-0.75 cups) tonic water (chilled)", "ice", "citrus wedge or peel (optional)"],
+      "instructions": "Fill tall glass with ice, pour chilled tonic water over ice, pull espresso shots, slowly pour hot espresso over the tonic (watch it layer), optionally garnish with lime or lemon, let settle briefly before drinking",
+      "description": "Refreshing combination of espresso and tonic"
+    },
+    {
+      "name": "Coffee Milkshake",
+      "grind_size": "Medium",
+      "ingredients": ["120ml (0.5 cups) cold strong brewed coffee", "2-3 scoops vanilla ice cream", "60ml (0.25 cups) milk", "whipped cream for topping", "chocolate syrup (optional)"],
+      "instructions": "Brew strong coffee and chill completely in refrigerator, add cold coffee, ice cream, and milk to blender, blend until smooth and thick, pour into glass, top with whipped cream and chocolate drizzle",
+      "description": "Blended coffee and ice cream drink"
+    },
+    {
+      "name": "Café Liégeois",
+      "grind_size": "Medium",
+      "ingredients": ["120ml (0.5 cups) cold strong brewed coffee", "2 scoops vanilla ice cream", "60ml (0.25 cups) whipped heavy cream", "chocolate shavings or cocoa powder"],
+      "instructions": "Brew strong coffee and chill thoroughly in refrigerator, place ice cream in tall glass, pour cold coffee over ice cream, top generously with whipped cream, garnish with chocolate shavings",
+      "description": "Belgian iced coffee dessert"
+    },
+    {
+      "name": "Shakerato",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots hot espresso (36-40g/1.3-1.4 oz coffee)", "1-2 teaspoons sugar", "ice cubes"],
+      "instructions": "Pull espresso shots into heat-safe container, add sugar and stir until dissolved, fill cocktail shaker with ice, pour hot espresso over ice, seal and shake vigorously for 10-15 seconds until very frothy, strain into chilled coupe or martini glass",
+      "description": "Italian shaken espresso drink"
+    }
+  ],
+  "flavored_variations": [
+    {
+      "name": "Vanilla Latte",
+      "base": "Latte",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground)", "2 tablespoons vanilla syrup", "240ml (1 cup) steamed milk", "light foam"],
+      "instructions": "Add vanilla syrup to cup, pull espresso shots into cup, steam milk to 150-155°F, pour steamed milk over espresso creating latte art if desired",
+      "flavoring": "Vanilla syrup"
+    },
+    {
+      "name": "Caramel Macchiato",
+      "base": "Macchiato",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground)", "2 tablespoons vanilla syrup", "240ml (1 cup) steamed milk", "caramel sauce for drizzle"],
+      "instructions": "Add vanilla syrup to cup, steam milk to 150-155°F and pour into cup, pull espresso shots and pour over steamed milk (marking it), drizzle caramel sauce in crosshatch pattern on top",
+      "flavoring": "Vanilla syrup and caramel drizzle"
+    },
+    {
+      "name": "Hazelnut Coffee",
+      "base": "Drip Coffee",
+      "grind_size": "Medium",
+      "ingredients": ["15g (0.5 oz) medium ground coffee per 240ml (1 cup)", "water", "2 tablespoons hazelnut syrup"],
+      "instructions": "Brew coffee using your preferred method, add hazelnut syrup to cup, pour hot coffee over syrup and stir to combine",
+      "flavoring": "Hazelnut syrup"
+    },
+    {
+      "name": "Pumpkin Spice Latte",
+      "base": "Latte",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground)", "2-3 tablespoons pumpkin spice syrup", "240ml (1 cup) steamed milk", "whipped cream", "pumpkin pie spice for topping"],
+      "instructions": "Add pumpkin spice syrup to cup, pull espresso shots, steam milk to 150-155°F, pour steamed milk over espresso, top with whipped cream and sprinkle of pumpkin spice",
+      "flavoring": "Pumpkin spice syrup"
+    },
+    {
+      "name": "Peppermint Mocha",
+      "base": "Mocha",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground)", "2 tablespoons chocolate syrup", "1 tablespoon peppermint syrup", "240ml (1 cup) steamed milk", "whipped cream", "chocolate shavings or crushed peppermint"],
+      "instructions": "Mix chocolate and peppermint syrups in cup, pull espresso shots and stir to combine, steam milk to 150-155°F, pour steamed milk over chocolate-espresso mixture, top with whipped cream and garnish",
+      "flavoring": "Peppermint syrup and chocolate"
+    },
+    {
+      "name": "Cinnamon Coffee",
+      "base": "Drip Coffee",
+      "grind_size": "Medium",
+      "ingredients": ["15g (0.5 oz) medium ground coffee per 240ml (1 cup)", "1/4-1/2 teaspoon ground cinnamon", "water", "sugar to taste (optional)"],
+      "instructions": "Mix ground cinnamon with coffee grounds before brewing, or add cinnamon stick to grounds, brew using preferred method, alternatively sprinkle cinnamon into brewed coffee and stir",
+      "flavoring": "Ground cinnamon"
+    },
+    {
+      "name": "Honey Latte",
+      "base": "Latte",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground)", "1-2 tablespoons honey", "240ml (1 cup) steamed milk"],
+      "instructions": "Add honey to cup, pull espresso shots over honey, stir vigorously until honey completely dissolves in hot espresso, steam milk to 150-155°F, pour steamed milk over honey-espresso mixture",
+      "flavoring": "Honey"
+    },
+    {
+      "name": "Lavender Latte",
+      "base": "Latte",
+      "grind_size": "Fine",
+      "ingredients": ["2 shots espresso (36-40g/1.3-1.4 oz fine ground)", "2 tablespoons lavender syrup", "240ml (1 cup) steamed milk", "dried culinary lavender buds (optional garnish)"],
+      "instructions": "Add lavender syrup to cup, pull espresso shots, steam milk to 150-155°F, pour steamed milk over espresso creating latte art if desired, optionally garnish with few lavender buds",
+      "flavoring": "Lavender syrup"
+    }
+  ],
+  "coffee_tips": {
+    "grind_sizes": {
+      "extra_coarse": ["Cold brew", "Cowboy coffee"],
+      "coarse": ["French press", "Percolator", "Café de Olla"],
+      "medium_coarse": ["Chemex", "Clever dripper"],
+      "medium": ["Drip coffee", "Pour over", "Siphon", "AeroPress"],
+      "medium_fine": ["Moka pot", "AeroPress (short brew)", "Vietnamese Phin"],
+      "fine": ["Espresso", "All espresso-based drinks"],
+      "extra_fine": ["Turkish coffee"]
+    },
+    "coffee_to_water_ratio": {
+      "standard": "1:15 to 1:17 (1g coffee to 15-17g water)",
+      "strong": "1:12 to 1:14",
+      "weak": "1:18 to 1:20",
+      "espresso": "1:2 (18-20g/0.6-0.7 oz coffee to 36-40ml/1.3-1.4 fl oz water)"
+    }
+  }
+}
