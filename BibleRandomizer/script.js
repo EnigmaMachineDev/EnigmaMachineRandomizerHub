@@ -130,17 +130,38 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const data = await response.json();
             
+            // Log the full response to understand the structure
+            console.log('Full API response:', data);
+            
             // Handle different response formats
             let verses = [];
             if (Array.isArray(data)) {
                 verses = data;
             } else if (data.verses && Array.isArray(data.verses)) {
                 verses = data.verses;
+            } else if (data.chapter && Array.isArray(data.chapter)) {
+                // Chapter is an array of verses
+                verses = data.chapter;
             } else if (data.chapter && data.chapter.verses) {
                 verses = data.chapter.verses;
             } else {
-                console.error('Unexpected verse data format:', data);
-                throw new Error('Invalid verse data format');
+                // Try to find verses in any property that's an array
+                for (const key in data) {
+                    if (Array.isArray(data[key]) && data[key].length > 0) {
+                        // Check if first item looks like a verse (has text/content property)
+                        const firstItem = data[key][0];
+                        if (firstItem && (firstItem.text || firstItem.content || firstItem.verse_text)) {
+                            verses = data[key];
+                            console.log(`Found verses in property: ${key}`);
+                            break;
+                        }
+                    }
+                }
+                
+                if (verses.length === 0) {
+                    console.error('Unexpected verse data format:', data);
+                    throw new Error('Invalid verse data format');
+                }
             }
             
             if (!verses || verses.length === 0) {
