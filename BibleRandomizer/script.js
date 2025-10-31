@@ -130,41 +130,24 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const data = await response.json();
             
-            // Log the full response to understand the structure
-            console.log('Full API response:', data);
-            
-            // Handle different response formats
+            // Handle the specific API format where chapter.content contains verse objects
             let verses = [];
-            if (Array.isArray(data)) {
+            
+            if (data.chapter && data.chapter.content && Array.isArray(data.chapter.content)) {
+                // Filter to only get verse items (not headings)
+                verses = data.chapter.content.filter(item => item.type === 'verse');
+            } else if (Array.isArray(data)) {
                 verses = data;
             } else if (data.verses && Array.isArray(data.verses)) {
                 verses = data.verses;
             } else if (data.chapter && Array.isArray(data.chapter)) {
-                // Chapter is an array of verses
                 verses = data.chapter;
             } else if (data.chapter && data.chapter.verses) {
                 verses = data.chapter.verses;
-            } else {
-                // Try to find verses in any property that's an array
-                for (const key in data) {
-                    if (Array.isArray(data[key]) && data[key].length > 0) {
-                        // Check if first item looks like a verse (has text/content property)
-                        const firstItem = data[key][0];
-                        if (firstItem && (firstItem.text || firstItem.content || firstItem.verse_text)) {
-                            verses = data[key];
-                            console.log(`Found verses in property: ${key}`);
-                            break;
-                        }
-                    }
-                }
-                
-                if (verses.length === 0) {
-                    console.error('Unexpected verse data format:', data);
-                    throw new Error('Invalid verse data format');
-                }
             }
             
             if (!verses || verses.length === 0) {
+                console.error('No verses found in response:', data);
                 verseEl.innerHTML = '<span class="error">No verses found in this chapter</span>';
                 return;
             }
@@ -174,8 +157,16 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Display the verse
             const bookName = currentBook.name || currentBook.full_name || currentBook.abbreviation;
-            const verseNum = randomVerse.verse || randomVerse.number || randomVerse.id || randomVerse.verse_number;
-            const verseText = randomVerse.text || randomVerse.content || randomVerse.verse_text || '';
+            const verseNum = randomVerse.number || randomVerse.verse || randomVerse.id || randomVerse.verse_number;
+            
+            // Extract text from the nested content array
+            let verseText = '';
+            if (randomVerse.content && Array.isArray(randomVerse.content)) {
+                // Content is an array of text fragments, join them
+                verseText = randomVerse.content.join(' ');
+            } else {
+                verseText = randomVerse.text || randomVerse.verse_text || '';
+            }
             
             let result = '<div class="verse-display">';
             result += `<span class="verse-reference">${bookName} ${randomChapter}:${verseNum}</span>`;
