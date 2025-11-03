@@ -50,79 +50,102 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
+    const STORAGE_KEY = 'warframeOptions';
+    let options = {};
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {}
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function generateWarframe() {
         if (!warframesData) return;
-        const randomWarframe = getRandomElement(warframesData);
+        const randomWarframe = getRandomElement(getEnabledItems('Warframes'));
         warframeEl.textContent = randomWarframe.name;
         warframeLink.href = randomWarframe.link;
     }
 
     function generatePrimary() {
         if (!primaryWeaponsData) return;
-        const randomPrimary = getRandomElement(primaryWeaponsData);
+        const randomPrimary = getRandomElement(getEnabledItems('Primary Weapons'));
         primaryEl.textContent = randomPrimary.name;
         primaryLink.href = randomPrimary.link;
     }
 
     function generateSecondary() {
         if (!secondaryWeaponsData) return;
-        const randomSecondary = getRandomElement(secondaryWeaponsData);
+        const randomSecondary = getRandomElement(getEnabledItems('Secondary Weapons'));
         secondaryEl.textContent = randomSecondary.name;
         secondaryLink.href = randomSecondary.link;
     }
 
     function generateMelee() {
         if (!meleeWeaponsData) return;
-        const randomMelee = getRandomElement(meleeWeaponsData);
+        const randomMelee = getRandomElement(getEnabledItems('Melee Weapons'));
         meleeEl.textContent = randomMelee.name;
         meleeLink.href = randomMelee.link;
     }
 
     function generatePet() {
         if (!petsData) return;
-        const randomPet = getRandomElement(petsData);
+        const randomPet = getRandomElement(getEnabledItems('Pets'));
         petEl.textContent = randomPet.name;
         petLink.href = randomPet.link;
     }
 
     function generateFocus() {
         if (!focusData) return;
-        const randomFocus = getRandomElement(focusData);
+        const randomFocus = getRandomElement(getEnabledItems('Focus'));
         focusEl.textContent = randomFocus.name;
         focusLink.href = randomFocus.link;
     }
 
     function generateAmp() {
         if (!ampsData) return;
-        const randomAmp = getRandomElement(ampsData);
+        const randomAmp = getRandomElement(getEnabledItems('Amps'));
         ampEl.textContent = randomAmp.name;
         ampLink.href = randomAmp.link;
     }
 
     function generateArchwing() {
         if (!archwingsData) return;
-        const randomArchwing = getRandomElement(archwingsData);
+        const randomArchwing = getRandomElement(getEnabledItems('Archwings'));
         archwingEl.textContent = randomArchwing.name;
         archwingLink.href = randomArchwing.link;
     }
 
     function generateArchgun() {
         if (!archgunsData) return;
-        const randomArchgun = getRandomElement(archgunsData);
+        const randomArchgun = getRandomElement(getEnabledItems('Archgun'));
         archgunEl.textContent = randomArchgun.name;
         archgunLink.href = randomArchgun.link;
     }
 
     function generateArchmelee() {
         if (!archMeleesData) return;
-        const randomArchmelee = getRandomElement(archMeleesData);
+        const randomArchmelee = getRandomElement(getEnabledItems('Arch Melees'));
         archmeleeEl.textContent = randomArchmelee.name;
         archmeleeLink.href = randomArchmelee.link;
     }
 
     function generateNecramech() {
         if (!necramechsData) return;
-        const randomNecramech = getRandomElement(necramechsData);
+        const randomNecramech = getRandomElement(getEnabledItems('Necramech'));
         necramechEl.textContent = randomNecramech.name;
         necramechLink.href = randomNecramech.link;
     }
@@ -141,6 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
         generateNecramech();
     }
 
+    let data = {};
+    loadOptions();
+
     fetch('randomizer.json')
         .then(res => res.json())
         .then(data => {
@@ -156,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
             archMeleesData = data['Arch Melees'];
             necramechsData = data.Necramech;
 
-            randomizeAll();
+            loadOptions();randomizeAll();
 
             rerollWarframeBtn.addEventListener('click', generateWarframe);
             rerollPrimaryBtn.addEventListener('click', generatePrimary);

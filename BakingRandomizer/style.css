@@ -140,6 +140,25 @@ a:hover {
     text-align: center;
 }
 
+.options-link {
+    display: inline-block;
+    background-color: #444;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.options-link:hover {
+    background-color: #555;
+    color: #88e888;
+    text-decoration: none;
+}
+
 .bake-item {
     text-align: left;
     line-height: 1.6;

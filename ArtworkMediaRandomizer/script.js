@@ -6,24 +6,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollMediumBtn = document.getElementById('reroll-medium');
     const rerollCanvasBtn = document.getElementById('reroll-canvas');
 
-    let mediums = [];
+    let mediums = {};
+    const STORAGE_KEY = 'artworkMediaOptions';
+    let options = {};
 
     fetch('mediums.json')
         .then(response => response.json())
         .then(data => {
             mediums = data;
+            loadOptions();
             generateMedium();
             generateCanvasSize();
         })
         .catch(error => console.error('Error fetching mediums:', error));
 
     function generateMedium() {
-        if (mediums.length === 0) return;
+        if (Object.keys(mediums).length === 0) return;
 
         const rollMedium = (excludeMixedMedia = false) => {
-            let availableMediums = mediums;
+            let availableMediums = getEnabledItems('mediums');
             if (excludeMixedMedia) {
-                availableMediums = mediums.filter(m => m.name !== "Mixed Media");
+                availableMediums = availableMediums.filter(m => m.name !== "Mixed Media");
             }
             const randomIndex = Math.floor(Math.random() * availableMediums.length);
             const medium = availableMediums[randomIndex];
@@ -36,7 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         let displayText = "";
-        const selectedMedium = mediums[Math.floor(Math.random() * mediums.length)];
+        function getRandomValue(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+        function loadOptions() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { try { options = JSON.parse(saved); } catch (e) { } } }
+        function isEnabled(category, name) { if (!options[category]) return true; if (!options[category].hasOwnProperty(name)) return true; return options[category][name]; }
+        function getEnabledItems(category) { if (!mediums[category]) return []; return mediums[category].filter(item => isEnabled(category, item)); }
+
+        const selectedMedium = getRandomValue(getEnabledItems('mediums'));
 
         if (selectedMedium.name === "Mixed Media") {
             const randomOptionIndex = Math.floor(Math.random() * selectedMedium.options.length);

@@ -15,18 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollSecondaryBtn = document.getElementById('reroll-secondary');
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
-    let data = {};
+    let data={};const STORAGE_KEY='soulframeOptions';let options={};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
-            randomizeAll();
+            loadOptions();randomizeAll();
         });
 
     function getRandomItem(category) {
-        const items = data[category];
-        return items[Math.floor(Math.random() * items.length)];
+        function getRandomValue(arr){return arr[Math.floor(Math.random()*arr.length)];}
+        function loadOptions(){const saved=localStorage.getItem(STORAGE_KEY);if(saved){try{options=JSON.parse(saved);}catch(e){}}}
+        function isEnabled(category,name){if(!options[category])return true;if(!options[category].hasOwnProperty(name))return true;return options[category][name];}
+        function getEnabledItems(category){if(!data[category])return[];return data[category].filter(item=>isEnabled(category,item.name));}
+
+        const items = getEnabledItems(category);
+        return getRandomValue(items);
     }
 
     function setItem(element, linkElement, category) {

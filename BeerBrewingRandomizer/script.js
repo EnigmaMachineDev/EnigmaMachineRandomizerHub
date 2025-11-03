@@ -4,17 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
     let data = {};
+    const STORAGE_KEY = 'beerBrewingOptions';
+    let options = {};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             randomizeAll();
         });
 
     function getRandomKey(obj) {
         const keys = Object.keys(obj);
         return keys[Math.floor(Math.random() * keys.length)];
+    }
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try { options = JSON.parse(saved); }
+            catch (e) { options = {}; }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
     }
 
     function setBeerStyle() {

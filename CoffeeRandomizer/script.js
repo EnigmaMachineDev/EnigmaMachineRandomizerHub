@@ -4,11 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateCoffeeBtn = document.getElementById('generate-coffee');
 
     let data = {};
+    const STORAGE_KEY = 'coffeeOptions';
+    let options = {};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             randomizeAll();
         });
 
@@ -16,12 +19,43 @@ document.addEventListener('DOMContentLoaded', () => {
         return arr[Math.floor(Math.random() * arr.length)];
     }
 
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {
+                console.error('Error loading options:', e);
+                options = {};
+            }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function setCoffee() {
         // Define main coffee categories
         const categories = ['brewing_methods', 'espresso_based_drinks', 'cold_coffee_drinks', 'specialty_coffee_drinks', 'flavored_variations'];
-        const category = categories[Math.floor(Math.random() * categories.length)];
         
-        const coffeeObj = getRandomValue(data[category]);
+        // Filter to categories that have enabled items
+        const availableCategories = categories.filter(cat => getEnabledItems(cat).length > 0);
+        if (availableCategories.length === 0) {
+            coffeeRollEl.innerHTML = '<p>No coffee recipes enabled. Please enable some options.</p>';
+            return;
+        }
+        
+        const category = availableCategories[Math.floor(Math.random() * availableCategories.length)];
+        const enabledItems = getEnabledItems(category);
+        const coffeeObj = getRandomValue(enabledItems);
         
         let result = `<div class="coffee-recipe">`;
         result += `<h3>${coffeeObj.name}</h3>`;

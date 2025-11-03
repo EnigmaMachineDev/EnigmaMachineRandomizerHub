@@ -8,8 +8,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let allClasses = [];
     let checkboxes = {};
+    let data = {};
+    const STORAGE_KEY = 'realmOfTheMadGodOptions';
+    let options = {};
 
-    const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+    function getRandomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {}
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
 
     // Get enabled classes based on checkbox states
     function getEnabledClasses() {
@@ -19,14 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Generate a random class from enabled classes
     function generateClass() {
         const enabledClasses = getEnabledClasses();
-        
+
         if (enabledClasses.length === 0) {
             selectedClassEl.textContent = 'Please enable at least one class';
             selectedClassEl.style.color = '#ff6666';
             return;
         }
 
-        const randomClass = getRandomElement(enabledClasses);
+        const randomClass = getRandomValue(enabledClasses);
         selectedClassEl.textContent = randomClass;
         selectedClassEl.style.color = '#66cc66';
     }
@@ -34,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create checkboxes for all classes
     function createCheckboxes() {
         checkboxContainer.innerHTML = '';
-        
+
         allClasses.forEach(className => {
             const checkboxItem = document.createElement('div');
             checkboxItem.className = 'checkbox-item';
@@ -42,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
             checkbox.id = `class-${className}`;
-            checkbox.checked = true; // All checked by default
+            checkbox.checked = isEnabled('classes', className); // Load checked state from localStorage
             checkboxes[className] = checkbox;
 
             const label = document.createElement('label');
@@ -58,6 +83,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (e.target !== checkbox) {
                     checkbox.checked = !checkbox.checked;
                 }
+            });
+
+            // Save checkbox state to localStorage
+            checkbox.addEventListener('change', () => {
+                options.classes = options.classes || {};
+                options.classes[className] = checkbox.checked;
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(options));
             });
         });
     }
@@ -79,9 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load data from JSON
     fetch('randomizer.json')
         .then(res => res.json())
-        .then(data => {
+        .then(jsonData => {
+            data = jsonData;
             allClasses = data.classes;
+            loadOptions();
             createCheckboxes();
+            generateClass();
 
             // Add event listeners
             generateClassBtn.addEventListener('click', generateClass);

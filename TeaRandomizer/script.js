@@ -4,11 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateTeaBtn = document.getElementById('generate-tea');
 
     let data = {};
+    const STORAGE_KEY = 'teaOptions';
+    let options = {};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             randomizeAll();
         });
 
@@ -16,12 +19,35 @@ document.addEventListener('DOMContentLoaded', () => {
         return arr[Math.floor(Math.random() * arr.length)];
     }
 
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try { options = JSON.parse(saved); }
+            catch (e) { options = {}; }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function setTea() {
-        // Define main tea categories
         const categories = ['green_teas', 'black_teas', 'oolong_teas', 'white_teas', 'pu_erh_teas', 'herbal_teas', 'specialty_blends'];
-        const category = categories[Math.floor(Math.random() * categories.length)];
-        
-        const teaObj = getRandomValue(data[category]);
+        const availableCategories = categories.filter(cat => getEnabledItems(cat).length > 0);
+        if (availableCategories.length === 0) {
+            teaRollEl.innerHTML = '<p>No teas enabled. Please enable some options.</p>';
+            return;
+        }
+        const category = availableCategories[Math.floor(Math.random() * availableCategories.length)];
+        const enabledItems = getEnabledItems(category);
+        const teaObj = getRandomValue(enabledItems);
         
         let result = `<div class="tea-recipe">`;
         result += `<h3>${teaObj.name}</h3>`;

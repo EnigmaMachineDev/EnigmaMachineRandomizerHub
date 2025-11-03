@@ -7,19 +7,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollIdentityBtn = document.getElementById('reroll-identity');
     const rerollPersonalityBtn = document.getElementById('reroll-personality');
 
+    let data = {};
+    const STORAGE_KEY = 'characterPersonalityOptions';
+    let options = {};
     let namesData = null;
     let personalityData = null;
 
-    const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+    function getRandomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) { }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item));
+    }
 
     function generateIdentity() {
         if (!namesData) return;
 
-        const sex = getRandomElement(['Male', 'Female']);
+        const sex = getRandomValue(['Male', 'Female']);
         const firstName = sex === 'Male'
-            ? getRandomElement(namesData.firstName.male)
-            : getRandomElement(namesData.firstName.female);
-        const lastName = getRandomElement(namesData.lastNames);
+            ? getRandomValue(namesData.firstName.male)
+            : getRandomValue(namesData.firstName.female);
+        const lastName = getRandomValue(namesData.lastNames);
 
         identityEl.innerHTML = `<strong>Name:</strong> ${firstName} ${lastName}<br><strong>Sex:</strong> ${sex}`;
     }
@@ -27,12 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function generatePersonality() {
         if (!personalityData) return;
 
-        const alignment = getRandomElement(personalityData.alignment);
-        const personalityType = getRandomElement(personalityData.personalityType);
+        const alignment = getRandomValue(personalityData.alignment);
+        const personalityType = getRandomValue(personalityData.personalityType);
 
         personalityEl.textContent = `${alignment} - ${personalityType.name}`;
         personalityLinkEl.href = personalityType.link;
     }
+
+    loadOptions();
 
     Promise.all([
         fetch('names.json').then(res => res.json()),

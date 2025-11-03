@@ -1,0 +1,364 @@
+body {
+    background-color: #222222;
+    color: #66cc66;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.back-button {
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.container {
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.mode-selection {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mode-btn {
+    background-color: #444;
+    color: #66cc66;
+    border: 2px solid #66cc66;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: monospace;
+    transition: all 0.3s ease;
+}
+
+.mode-btn:hover {
+    background-color: #555;
+}
+
+.mode-btn.active {
+    background-color: #66cc66;
+    color: #222222;
+}
+
+.section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #444;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.help-text {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.category-item {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.category-name-input {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.remove-category-btn {
+    background-color: #cc6666;
+    color: #222;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.remove-category-btn:hover {
+    background-color: #ee8888;
+}
+
+.items-list {
+    margin-bottom: 1rem;
+}
+
+.item-entry {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.item-entry input {
+    flex: 1;
+}
+
+.remove-item-btn {
+    background-color: #cc6666;
+    color: #222;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.remove-item-btn:hover {
+    background-color: #ee8888;
+}
+
+.add-item-btn {
+    background-color: #66cc66;
+    color: #222;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.add-item-btn:hover {
+    background-color: #88e888;
+}
+
+.action-btn {
+    background-color: #66cc66;
+    color: #222222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: monospace;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.action-btn:hover {
+    background-color: #88e888;
+}
+
+.action-btn.secondary {
+    background-color: #666;
+    color: #fff;
+}
+
+.action-btn.secondary:hover {
+    background-color: #888;
+}
+
+.generate-btn {
+    background-color: #66cc66;
+    color: #222222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: monospace;
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.generate-btn:hover {
+    background-color: #88e888;
+}
+
+.export-import-controls {
+    margin-bottom: 1rem;
+}
+
+.json-display,
+.json-import {
+    margin-top: 1rem;
+}
+
+.json-display textarea,
+.json-import textarea {
+    min-height: 200px;
+    font-size: 0.85em;
+}
+
+#results-container {
+    margin-top: 0;
+}
+
+#results-container .section {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1.5rem;
+    text-align: left;
+}
+
+#results-container .section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.item-container {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 2em;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
+
+.reroll-btn {
+    background: none;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.reroll-btn:hover {
+    background-color: #444;
+    border-color: #888;
+}
+
+.coffee-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.coffee-link a {
+    color: #66cc66;
+    text-decoration: underline;
+}
+
+.coffee-link a:hover {
+    color: #88e888;
+}
+
+.error-message {
+    background-color: #cc6666;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.success-message {
+    background-color: #66cc66;
+    color: #222;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .mode-selection {
+        flex-direction: column;
+    }
+    
+    .mode-btn {
+        width: 100%;
+    }
+    
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .category-name-input {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}

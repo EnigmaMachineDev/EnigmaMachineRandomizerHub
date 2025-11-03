@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollAbilitiesBtn = document.getElementById('reroll-abilities');
     const rerollWeaponBtn = document.getElementById('reroll-weapon');
 
+    let data = {};
+    const STORAGE_KEY = 'grimDawnOptions';
+    let options = {};
     let characterData = null;
     let selectedClass = null;
     let selectedAbilities = [];
@@ -20,10 +23,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             characterData = await response.json();
+            data = characterData;
+            loadOptions();
             generateCharacter();
         } catch (error) {
+            loadOptions();
+            randomizeAll();
             console.error("Failed to load character data:", error);
         }
+    }
+
+    function getRandomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) { }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
     }
 
     function getRandomElement(arr) {
@@ -32,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateClass() {
         const { classes } = characterData;
-        selectedClass = getRandomElement(classes);
+        selectedClass = getRandomElement(getEnabledItems('classes'));
         classNameEl.textContent = `${selectedClass.className} (${selectedClass.masteries.join(', ')})`;
     }
 

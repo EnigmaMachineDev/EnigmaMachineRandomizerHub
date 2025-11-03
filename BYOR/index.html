@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Randomizer - RandomizerTools.net</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-button">← Back to Home</a>
+    
+    <div class="main-wrapper">
+        <div class="container">
+            <h1>Build Your Own Randomizer</h1>
+            
+            <!-- Mode Selection -->
+            <div class="mode-selection">
+                <button id="builder-mode-btn" class="mode-btn active">Builder Mode</button>
+                <button id="player-mode-btn" class="mode-btn">Player Mode</button>
+            </div>
+
+            <!-- Builder Mode -->
+            <div id="builder-mode" class="mode-content">
+                <div class="section">
+                    <h2>Randomizer Settings</h2>
+                    <div class="form-group">
+                        <label for="randomizer-name">Randomizer Name:</label>
+                        <input type="text" id="randomizer-name" placeholder="My Custom Randomizer" maxlength="100">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Categories</h2>
+                    <p class="help-text">Add categories and their items. Each category will be randomly selected from during generation.</p>
+                    
+                    <div id="categories-container"></div>
+                    
+                    <button id="add-category-btn" class="action-btn">+ Add Category</button>
+                </div>
+
+                <div class="section">
+                    <h2>Export / Import</h2>
+                    <div class="export-import-controls">
+                        <button id="export-btn" class="action-btn">Export to JSON</button>
+                        <button id="import-btn" class="action-btn">Import from JSON</button>
+                    </div>
+                    
+                    <div id="json-display" class="json-display" style="display: none;">
+                        <h3>Your Randomizer JSON:</h3>
+                        <textarea id="json-output" readonly></textarea>
+                        <button id="copy-json-btn" class="action-btn">Copy to Clipboard</button>
+                    </div>
+
+                    <div id="json-import" class="json-import" style="display: none;">
+                        <h3>Paste Your JSON:</h3>
+                        <textarea id="json-input" placeholder="Paste your randomizer JSON here..."></textarea>
+                        <button id="load-json-btn" class="action-btn">Load JSON</button>
+                        <button id="cancel-import-btn" class="action-btn secondary">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player Mode -->
+            <div id="player-mode" class="mode-content" style="display: none;">
+                <div class="section">
+                    <h2>Load Your Randomizer</h2>
+                    <p class="help-text">Paste your exported JSON to use your custom randomizer.</p>
+                    <textarea id="player-json-input" placeholder="Paste your randomizer JSON here..."></textarea>
+                    <button id="player-load-btn" class="action-btn">Load Randomizer</button>
+                </div>
+
+                <div id="player-randomizer" style="display: none;">
+                    <h2 id="player-randomizer-name"></h2>
+                    <button id="generate-btn" class="generate-btn">Generate</button>
+                    
+                    <div id="results-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

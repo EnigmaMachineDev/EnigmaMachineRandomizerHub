@@ -6,16 +6,41 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
     let data = {};
+    const STORAGE_KEY = 'travelOptions';
+    let options = {};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             randomizeAll();
         });
 
     function getRandomValue(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try { options = JSON.parse(saved); }
+            catch (e) { options = {}; }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => {
+            const name = item.name || item.destination || item;
+            return isEnabled(category, name);
+        });
     }
 
     function getAdvisoryText(level) {
@@ -49,7 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setCountry() {
-        const country = getRandomValue(data.countries);
+        const enabledCountries = getEnabledItems('countries');
+        if (enabledCountries.length === 0) {
+            countryRollEl.innerHTML = '<p>No countries enabled. Please enable some options.</p>';
+            advisoryLevelEl.textContent = '';
+            travelStatusEl.textContent = '';
+            return;
+        }
+        const country = getRandomValue(enabledCountries);
         
         // Create Wikipedia URL for the country
         const wikiUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(country.name.replace(/ /g, '_'))}`;

@@ -15,19 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollMissionBtn = document.getElementById('reroll-mission');
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
-    let data = {};
+    let data={};const STORAGE_KEY='spaceMarine2Options';let options={};
     let currentClass = '';
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
-            randomizeAll();
+            loadOptions();randomizeAll();
         });
 
     function getRandomItem(items) {
         return items[Math.floor(Math.random() * items.length)];
     }
+
+    function getRandomValue(arr){return arr[Math.floor(Math.random()*arr.length)];}
+    function loadOptions(){const saved=localStorage.getItem(STORAGE_KEY);if(saved){try{options=JSON.parse(saved);}catch(e){}}}
+    function isEnabled(category,name){if(!options[category])return true;if(!options[category].hasOwnProperty(name))return true;return options[category][name];}
+    function getEnabledItems(category){if(!data[category])return[];return data[category].filter(item=>isEnabled(category,item.name));}
 
     function setItem(element, item) {
         element.textContent = item;

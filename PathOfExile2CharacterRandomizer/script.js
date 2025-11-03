@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let data;
+    let data = {};
+    const STORAGE_KEY = 'pathOfExile2Options';
+    let options = {};
     let currentAscendancy;
 
     const classResultEl = document.getElementById('class-result');
@@ -24,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
-            rollAll();
+            loadOptions();
+            randomizeAll();
             setupEventListeners();
         })
         .catch(error => console.error('Error fetching or parsing randomizer.json:', error));
@@ -43,8 +46,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return arr[Math.floor(Math.random() * arr.length)];
     }
 
+    function getRandomValue(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) { }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function rollClassAndAscendancy() {
-        const randomClass = getRandomItem(data.classes);
+        const randomClass = getRandomItem(getEnabledItems('classes'));
         if (!randomClass) return;
         const randomAscendancy = getRandomItem(randomClass.ascendancies);
         if (!randomAscendancy) return;

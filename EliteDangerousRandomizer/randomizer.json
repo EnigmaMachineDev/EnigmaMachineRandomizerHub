@@ -1,0 +1,406 @@
+{
+  "suits": [
+    {
+      "name": "Flight Suit",
+      "link": "https://elite-dangerous.fandom.com/wiki/Flight_Suit"
+    },
+    {
+      "name": "Maverick Suit",
+      "link": "https://elite-dangerous.fandom.com/wiki/Maverick_Suit"
+    },
+    {
+      "name": "Artemis Suit",
+      "link": "https://elite-dangerous.fandom.com/wiki/Artemis_Suit"
+    },
+    {
+      "name": "Dominator Suit",
+      "link": "https://elite-dangerous.fandom.com/wiki/Dominator_Suit"
+    }
+  ],
+  "primary_weapons": [
+    {
+      "name": "Kinetic AR-50",
+      "link": "https://elite-dangerous.fandom.com/wiki/AR-50"
+    },
+    {
+      "name": "TK Aphelion",
+      "link": "https://elite-dangerous.fandom.com/wiki/TK_Aphelion"
+    },
+    {
+      "name": "Kinetic SMG",
+      "link": "https://elite-dangerous.fandom.com/wiki/Submachine_Gun"
+    },
+    {
+      "name": "Kinetic Carbine",
+      "link": "https://elite-dangerous.fandom.com/wiki/Carbine"
+    },
+    {
+      "name": "Manticore Executioner",
+      "link": "https://elite-dangerous.fandom.com/wiki/Manticore_Executioner"
+    },
+    {
+      "name": "TK Eclipse",
+      "link": "https://elite-dangerous.fandom.com/wiki/TK_Eclipse"
+    },
+    {
+      "name": "Plasma Rifle",
+      "link": "https://elite-dangerous.fandom.com/wiki/Plasma_Rifle"
+    },
+    {
+      "name": "Rocket Launcher",
+      "link": "https://elite-dangerous.fandom.com/wiki/Rocket_Launcher"
+    },
+    {
+      "name": "Tormentor",
+      "link": "https://elite-dangerous.fandom.com/wiki/Tormentor"
+    }
+  ],
+  "secondary_weapons": [
+    {
+      "name": "Kinetic Pistol",
+      "link": "https://elite-dangerous.fandom.com/wiki/Pistol"
+    },
+    {
+      "name": "Laser Pistol",
+      "link": "https://elite-dangerous.fandom.com/wiki/Laser_Pistol"
+    },
+    {
+      "name": "Plasma Pistol",
+      "link": "https://elite-dangerous.fandom.com/wiki/Plasma_Pistol"
+    },
+    {
+      "name": "Frag Grenade",
+      "link": "https://elite-dangerous.fandom.com/wiki/Grenade"
+    },
+    {
+      "name": "EMP Grenade",
+      "link": "https://elite-dangerous.fandom.com/wiki/Grenade"
+    },
+    {
+      "name": "Shield Grenade",
+      "link": "https://elite-dangerous.fandom.com/wiki/Grenade"
+    }
+  ],
+  "ships": [
+    {
+      "name": "Sidewinder Mk I",
+      "link": "https://elite-dangerous.fandom.com/wiki/Sidewinder"
+    },
+    {
+      "name": "Eagle Mk II",
+      "link": "https://elite-dangerous.fandom.com/wiki/Eagle"
+    },
+    {
+      "name": "Hauler",
+      "link": "https://elite-dangerous.fandom.com/wiki/Hauler"
+    },
+    {
+      "name": "Adder",
+      "link": "https://elite-dangerous.fandom.com/wiki/Adder"
+    },
+    {
+      "name": "Imperial Eagle",
+      "link": "https://elite-dangerous.fandom.com/wiki/Imperial_Eagle"
+    },
+    {
+      "name": "Viper Mk III",
+      "link": "https://elite-dangerous.fandom.com/wiki/Viper_MkIII"
+    },
+    {
+      "name": "Cobra Mk III",
+      "link": "https://elite-dangerous.fandom.com/wiki/Cobra_MkIII"
+    },
+    {
+      "name": "Viper Mk IV",
+      "link": "https://elite-dangerous.fandom.com/wiki/Viper_MkIV"
+    },
+    {
+      "name": "Diamondback Scout",
+      "link": "https://elite-dangerous.fandom.com/wiki/Diamondback_Scout"
+    },
+    {
+      "name": "Cobra Mk IV",
+      "link": "https://elite-dangerous.fandom.com/wiki/Cobra_MkIV"
+    },
+    {
+      "name": "Cobra Mk V",
+      "link": "https://elite-dangerous.fandom.com/wiki/Cobra_MkV"
+    },
+    {
+      "name": "Imperial Courier",
+      "link": "https://elite-dangerous.fandom.com/wiki/Imperial_Courier"
+    },
+    {
+      "name": "Type-6 Transporter",
+      "link": "https://elite-dangerous.fandom.com/wiki/Type-6_Transporter"
+    },
+    {
+      "name": "Dolphin",
+      "link": "https://elite-dangerous.fandom.com/wiki/Dolphin"
+    },
+    {
+      "name": "Diamondback Explorer",
+      "link": "https://elite-dangerous.fandom.com/wiki/Diamondback_Explorer"
+    },
+    {
+      "name": "Keelback",
+      "link": "https://elite-dangerous.fandom.com/wiki/Keelback"
+    },
+    {
+      "name": "Asp Scout",
+      "link": "https://elite-dangerous.fandom.com/wiki/Asp_Scout"
+    },
+    {
+      "name": "Vulture",
+      "link": "https://elite-dangerous.fandom.com/wiki/Vulture"
+    },
+    {
+      "name": "Asp Explorer",
+      "link": "https://elite-dangerous.fandom.com/wiki/Asp_Explorer"
+    },
+    {
+      "name": "Federal Dropship",
+      "link": "https://elite-dangerous.fandom.com/wiki/Federal_Dropship"
+    },
+    {
+      "name": "Type-7 Transporter",
+      "link": "https://elite-dangerous.fandom.com/wiki/Type-7_Transporter"
+    },
+    {
+      "name": "Mandalay",
+      "link": "https://elite-dangerous.fandom.com/wiki/Mandalay"
+    },
+    {
+      "name": "Alliance Chieftain",
+      "link": "https://elite-dangerous.fandom.com/wiki/Alliance_Chieftain"
+    },
+    {
+      "name": "Federal Assault Ship",
+      "link": "https://elite-dangerous.fandom.com/wiki/Federal_Assault_Ship"
+    },
+    {
+      "name": "Imperial Clipper",
+      "link": "https://elite-dangerous.fandom.com/wiki/Imperial_Clipper"
+    },
+    {
+      "name": "Alliance Crusader",
+      "link": "https://elite-dangerous.fandom.com/wiki/Alliance_Crusader"
+    },
+    {
+      "name": "Alliance Challenger",
+      "link": "https://elite-dangerous.fandom.com/wiki/Alliance_Challenger"
+    },
+    {
+      "name": "Federal Gunship",
+      "link": "https://elite-dangerous.fandom.com/wiki/Federal_Gunship"
+    },
+    {
+      "name": "Krait Phantom",
+      "link": "https://elite-dangerous.fandom.com/wiki/Krait_Phantom"
+    },
+    {
+      "name": "Type-8 Transporter",
+      "link": "https://elite-dangerous.fandom.com/wiki/Type-8_Transporter"
+    },
+    {
+      "name": "Krait Mk II",
+      "link": "https://elite-dangerous.fandom.com/wiki/Krait_MkII"
+    },
+    {
+      "name": "Orca",
+      "link": "https://elite-dangerous.fandom.com/wiki/Orca"
+    },
+    {
+      "name": "Fer-de-Lance",
+      "link": "https://elite-dangerous.fandom.com/wiki/Fer-de-Lance"
+    },
+    {
+      "name": "Mamba",
+      "link": "https://elite-dangerous.fandom.com/wiki/Mamba"
+    },
+    {
+      "name": "Python",
+      "link": "https://elite-dangerous.fandom.com/wiki/Python"
+    },
+    {
+      "name": "Python Mk II",
+      "link": "https://elite-dangerous.fandom.com/wiki/Python_Mk_II"
+    },
+    {
+      "name": "Corsair",
+      "link": "https://elite-dangerous.fandom.com/wiki/Corsair"
+    },
+    {
+      "name": "Type-9 Heavy",
+      "link": "https://elite-dangerous.fandom.com/wiki/Type-9_Heavy"
+    },
+    {
+      "name": "Beluga Liner",
+      "link": "https://elite-dangerous.fandom.com/wiki/Beluga_Liner"
+    },
+    {
+      "name": "Type-10 Defender",
+      "link": "https://elite-dangerous.fandom.com/wiki/Type-10_Defender"
+    },
+    {
+      "name": "Type-11 Prospector",
+      "link": "https://elite-dangerous.fandom.com/wiki/Type-11_Prospector"
+    },
+    {
+      "name": "Anaconda",
+      "link": "https://elite-dangerous.fandom.com/wiki/Anaconda"
+    },
+    {
+      "name": "Federal Corvette",
+      "link": "https://elite-dangerous.fandom.com/wiki/Federal_Corvette"
+    },
+    {
+      "name": "Imperial Cutter",
+      "link": "https://elite-dangerous.fandom.com/wiki/Imperial_Cutter"
+    }
+  ],
+  "allegiances": [
+    {
+      "name": "Federation",
+      "link": "https://elite-dangerous.fandom.com/wiki/Federation"
+    },
+    {
+      "name": "Empire",
+      "link": "https://elite-dangerous.fandom.com/wiki/Empire"
+    },
+    {
+      "name": "Alliance",
+      "link": "https://elite-dangerous.fandom.com/wiki/Alliance"
+    },
+    {
+      "name": "Independent",
+      "link": "https://elite-dangerous.fandom.com/wiki/Independent"
+    }
+  ],
+  "activities": [
+    {
+      "name": "Bounty Hunting",
+      "link": "https://elite-dangerous.fandom.com/wiki/Bounty_Hunting"
+    },
+    {
+      "name": "Piracy",
+      "link": "https://elite-dangerous.fandom.com/wiki/Piracy"
+    },
+    {
+      "name": "Anti-Xeno Combat",
+      "link": "https://elite-dangerous.fandom.com/wiki/Anti-Xeno_Combat"
+    },
+    {
+      "name": "Conflict Zones",
+      "link": "https://elite-dangerous.fandom.com/wiki/Conflict_Zone"
+    },
+    {
+      "name": "Ground Combat Zones",
+      "link": "https://elite-dangerous.fandom.com/wiki/Ground_Combat_Zone"
+    },
+    {
+      "name": "PvP Combat",
+      "link": "https://elite-dangerous.fandom.com/wiki/Player_versus_Player"
+    },
+    {
+      "name": "Assassination Missions",
+      "link": "https://elite-dangerous.fandom.com/wiki/Missions"
+    },
+    {
+      "name": "Commodity Trading",
+      "link": "https://elite-dangerous.fandom.com/wiki/Trade"
+    },
+    {
+      "name": "Rare Goods Trading",
+      "link": "https://elite-dangerous.fandom.com/wiki/Rare_Commodities"
+    },
+    {
+      "name": "Smuggling",
+      "link": "https://elite-dangerous.fandom.com/wiki/Smuggling"
+    },
+    {
+      "name": "Passenger Transportation",
+      "link": "https://elite-dangerous.fandom.com/wiki/Passenger"
+    },
+    {
+      "name": "Courier Missions",
+      "link": "https://elite-dangerous.fandom.com/wiki/Missions"
+    },
+    {
+      "name": "System Scanning",
+      "link": "https://elite-dangerous.fandom.com/wiki/Explorer"
+    },
+    {
+      "name": "Planet Mapping",
+      "link": "https://elite-dangerous.fandom.com/wiki/Detailed_Surface_Scanner"
+    },
+    {
+      "name": "Exobiology",
+      "link": "https://elite-dangerous.fandom.com/wiki/Exobiology"
+    },
+    {
+      "name": "Guardian Site Discovery",
+      "link": "https://elite-dangerous.fandom.com/wiki/Guardian"
+    },
+    {
+      "name": "Thargoid Site Discovery",
+      "link": "https://elite-dangerous.fandom.com/wiki/Thargoid"
+    },
+    {
+      "name": "Tourist Missions",
+      "link": "https://elite-dangerous.fandom.com/wiki/Passenger"
+    },
+    {
+      "name": "Road to Riches",
+      "link": "https://elite-dangerous.fandom.com/wiki/Road_to_Riches"
+    },
+    {
+      "name": "Laser Mining",
+      "link": "https://elite-dangerous.fandom.com/wiki/Mining"
+    },
+    {
+      "name": "Core Mining",
+      "link": "https://elite-dangerous.fandom.com/wiki/Mining"
+    },
+    {
+      "name": "Subsurface Mining",
+      "link": "https://elite-dangerous.fandom.com/wiki/Mining"
+    },
+    {
+      "name": "Surface Mining",
+      "link": "https://elite-dangerous.fandom.com/wiki/Mining"
+    },
+    {
+      "name": "Settlement Raids",
+      "link": "https://elite-dangerous.fandom.com/wiki/Settlement"
+    },
+    {
+      "name": "Reactivation Missions",
+      "link": "https://elite-dangerous.fandom.com/wiki/Missions"
+    },
+    {
+      "name": "Infiltration Missions",
+      "link": "https://elite-dangerous.fandom.com/wiki/Missions"
+    },
+    {
+      "name": "Powerplay",
+      "link": "https://elite-dangerous.fandom.com/wiki/Powerplay"
+    },
+    {
+      "name": "Colonization",
+      "link": "https://elite-dangerous.fandom.com/wiki/Colonisation"
+    },
+    {
+      "name": "Engineering",
+      "link": "https://elite-dangerous.fandom.com/wiki/Engineers"
+    },
+    {
+      "name": "CQC Championship",
+      "link": "https://elite-dangerous.fandom.com/wiki/CQC"
+    },
+    {
+      "name": "Community Goals",
+      "link": "https://elite-dangerous.fandom.com/wiki/Community_Goals"
+    }
+  ]
+}

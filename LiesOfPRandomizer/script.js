@@ -13,15 +13,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
     let gameData;
+    let data = {};
+    const STORAGE_KEY = 'liesOfPOptions';
+    let options = {};
 
     const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {}
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
 
     function getAvailablePrimaryWeapons() {
         if (!gameData) return [];
         const baseNormal = gameData.base_game.normal_weapons || [];
         const baseSpecial = gameData.base_game.special_weapons || [];
         let allWeapons = [...baseNormal, ...baseSpecial];
-        
+
         if (includeDLCCheckbox.checked && gameData.overture_dlc) {
             const dlcNormal = gameData.overture_dlc.normal_weapons || [];
             const dlcSpecial = gameData.overture_dlc.special_weapons || [];
@@ -75,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             gameData = data;
-            randomizeAll();
+            loadOptions();randomizeAll();
 
             rerollPrimaryWeaponBtn.addEventListener('click', generatePrimaryWeapon);
             rerollLegionArmBtn.addEventListener('click', generateLegionArm);

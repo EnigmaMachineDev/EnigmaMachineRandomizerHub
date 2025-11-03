@@ -12,9 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const weaponLink = document.getElementById('weapon-link');
     const casterWeaponLink = document.getElementById('caster-weapon-link');
 
-    const ringsListEl = document.getElementById('rings-list');
-    const rerollRingsBtn = document.getElementById('reroll-rings');
-
     const rerollArmorBtn = document.getElementById('reroll-armor');
     const rerollWeaponBtn = document.getElementById('reroll-weapon');
     const rerollCasterWeaponBtn = document.getElementById('reroll-caster-weapon');
@@ -23,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const generateLoadoutBtn = document.getElementById('generate-loadout');
 
     let armorData;
-    let ringsData;
     let weaponsData;
     let spellsData;
     let casterWeaponsData;
@@ -32,31 +28,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
+    const STORAGE_KEY = 'darkSouls3Options';
+    let options = {};
+    let data = {};
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {}
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function generateArmor() {
         if (!armorData) return;
         const randomArmor = getRandomElement(armorData);
         armorEl.textContent = randomArmor.name;
         armorLink.href = randomArmor.link;
-    }
-
-    function generateRings() {
-        if (!ringsData) return;
-        const numberOfRings = 4;
-        const selectedRings = [];
-        const ringsCopy = [...ringsData];
-
-        for (let i = 0; i < numberOfRings; i++) {
-            if (ringsCopy.length === 0) break;
-            const randomIndex = Math.floor(Math.random() * ringsCopy.length);
-            selectedRings.push(ringsCopy.splice(randomIndex, 1)[0]);
-        }
-
-        ringsListEl.innerHTML = '';
-        selectedRings.forEach(ring => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="${ring.link}" target="_blank">${ring.name}</a>`;
-            ringsListEl.appendChild(li);
-        });
     }
 
     function generateWeapon() {
@@ -157,26 +157,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function randomizeAll() {
         generateArmor();
-        generateRings();
         generateWeapon();
         generateSpells();
         generateEnding();
     }
 
+    loadOptions();
+
     fetch('randomizer.json')
         .then(res => res.json())
-        .then(data => {
+        .then(dataRes => {
+            data = dataRes;
             armorData = data.armor;
-            ringsData = data.rings;
             weaponsData = data.weapons;
             spellsData = data.spells;
             casterWeaponsData = data.casterweapons;
             endingsData = data.endings;
 
-            randomizeAll();
+            loadOptions();randomizeAll();
 
             rerollArmorBtn.addEventListener('click', generateArmor);
-            rerollRingsBtn.addEventListener('click', generateRings);
             rerollWeaponBtn.addEventListener('click', generateWeapon);
             rerollSpellsBtn.addEventListener('click', generateSpells);
             rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);

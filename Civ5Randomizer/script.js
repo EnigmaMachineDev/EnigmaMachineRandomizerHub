@@ -16,40 +16,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const mapEl = document.getElementById('map');
     const mapSizeEl = document.getElementById('map-size');
 
-    let data = {};
+    let data={};const STORAGE_KEY='civ5Options';let options={};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             generateAll();
         });
 
-    function getRandomElement(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
-    }
+    function getRandomValue(arr){return arr[Math.floor(Math.random()*arr.length)];}
+    function loadOptions(){const saved=localStorage.getItem(STORAGE_KEY);if(saved){try{options=JSON.parse(saved);}catch(e){}}}
+    function isEnabled(category,name){if(!options[category])return true;if(!options[category].hasOwnProperty(name))return true;return options[category][name];}
+    function getEnabledItems(category){if(!data[category])return[];return data[category].filter(item=>isEnabled(category,item.name));}
 
     function generateLeader() {
-        let availableLeaders = data.leaders;
+        let availableLeaders = getEnabledItems('leaders');
         if (!dlcLeaderCheckbox.checked) {
             availableLeaders = availableLeaders.filter(leader => !leader.dlc);
         }
-        const selectedLeader = getRandomElement(availableLeaders);
+        const selectedLeader = getRandomValue(availableLeaders);
         leaderEl.textContent = selectedLeader.name;
     }
 
     function generateVictory() {
-        const selectedVictory = getRandomElement(data.victories);
+        const selectedVictory = getRandomValue(data.victories);
         victoryEl.textContent = selectedVictory.name;
     }
 
     function generateDifficulty() {
-        const selectedDifficulty = getRandomElement(data.difficulty);
+        const selectedDifficulty = getRandomValue(data.difficulty);
         difficultyEl.textContent = selectedDifficulty.name;
     }
 
     function generatePace() {
-        const selectedPace = getRandomElement(data.pace);
+        const selectedPace = getRandomValue(data.pace);
         paceEl.textContent = selectedPace.name;
     }
 
@@ -58,12 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!dlcMapCheckbox.checked) {
             availableMaps = availableMaps.filter(map => !map.dlc);
         }
-        const selectedMap = getRandomElement(availableMaps);
+        const selectedMap = getRandomValue(availableMaps);
         mapEl.textContent = selectedMap.name;
     }
 
     function generateMapSize() {
-        const selectedMapSize = getRandomElement(data.map_size);
+        const selectedMapSize = getRandomValue(data.map_size);
         mapSizeEl.textContent = selectedMapSize.name;
     }
 

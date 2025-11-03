@@ -11,13 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const allegiancesListEl = document.getElementById('allegiances-list');
     const startEl = document.getElementById('start');
 
-    let data = {};
+    let data={};const STORAGE_KEY='skyrimOptions';let options={};
     let selectedRace = '';
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             generateCharacter();
         });
 
@@ -25,8 +26,28 @@ document.addEventListener('DOMContentLoaded', () => {
         return arr[Math.floor(Math.random() * arr.length)];
     }
 
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {}
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function generateRace() {
-        selectedRace = getRandomElement(data.races);
+        selectedRace = getRandomElement(getEnabledItems('races'));
         raceEl.textContent = selectedRace;
     }
 
@@ -34,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsListEl.innerHTML = '';
         const selectedSkills = new Set();
         while (selectedSkills.size < 5) {
-            selectedSkills.add(getRandomElement(data.skills));
+            selectedSkills.add(getRandomElement(getEnabledItems('skills')));
         }
 
         selectedSkills.forEach(skill => {

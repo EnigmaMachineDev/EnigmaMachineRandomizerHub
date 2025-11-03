@@ -13,6 +13,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
+    const STORAGE_KEY = 'hotSauceOptions';
+    let options = {};
+    let data = {};
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {}
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function generatePeppers() {
         if (!peppersData || peppersData.length === 0) return;
 
@@ -80,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('randomizer.json')
         .then(res => res.json())
         .then(data => {
+            loadOptions();
             // Flatten all pepper categories into a single array
             if (data.peppers) {
                 peppersData = [
@@ -92,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             vegetablesData = data.vegetables || [];
 
-            randomizeAll();
+            loadOptions();randomizeAll();
 
             rerollPeppersBtn.addEventListener('click', generatePeppers);
             rerollVegetablesBtn.addEventListener('click', generateVegetables);

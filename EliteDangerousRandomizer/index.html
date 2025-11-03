@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Elite Dangerous Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Elite Dangerous Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-loadout">Generate Loadout</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Suit</h2>
+                    <button class="reroll-btn" id="reroll-suit">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="suit-link" href="#" target="_blank"><span id="suit"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Primary Weapon</h2>
+                    <button class="reroll-btn" id="reroll-primary-weapon">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="primary-weapon-link" href="#" target="_blank"><span id="primary-weapon"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Secondary Weapon</h2>
+                    <button class="reroll-btn" id="reroll-secondary-weapon">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="secondary-weapon-link" href="#" target="_blank"><span id="secondary-weapon"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Ship</h2>
+                    <button class="reroll-btn" id="reroll-ship">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="ship-link" href="#" target="_blank"><span id="ship"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Allegiance</h2>
+                    <button class="reroll-btn" id="reroll-allegiance">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="allegiance-link" href="#" target="_blank"><span id="allegiance"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Activities</h2>
+                    <button class="reroll-btn" id="reroll-activities">↻</button>
+                </div>
+                <div class="item-container">
+                    <ul id="activities-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Elite Dangerous is a massive space simulation game with countless ships, weapons, and activities to pursue across the galaxy. With so many options available, it can be overwhelming to decide what to do next or how to approach your next adventure.</p>
+            <p>This Elite Dangerous Randomizer helps inject fresh excitement into your gameplay by generating random loadouts and activity suggestions. Whether you're looking to try a new ship you've never flown, experiment with different ground combat equipment, or discover activities you haven't explored, this tool provides the perfect starting point for your next session in the galaxy.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Loadout" button to receive a complete randomized setup including your suit, weapons, ship, allegiance, and suggested activities. Each category can be individually re-rolled using the (↻) buttons if you want to keep some aspects while changing others. All items link to the Elite Dangerous Fandom wiki for detailed information.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
