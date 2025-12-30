@@ -43,29 +43,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getEnabledItems(category) {
         if (!data[category]) return [];
+        // Handle arrays of strings
+        if (typeof data[category][0] === 'string') {
+            return data[category].filter(item => isEnabled(category, item));
+        }
+        // Handle arrays of objects
         return data[category].filter(item => isEnabled(category, item.name));
     }
 
     function generateRace() {
-        selectedRace = getRandomElement(getEnabledItems('races'));
+        const enabledRaces = getEnabledItems('races');
+        if (enabledRaces.length === 0) {
+            raceEl.textContent = 'No races selected';
+            selectedRace = '';
+            return;
+        }
+        selectedRace = getRandomElement(enabledRaces);
         raceEl.textContent = selectedRace;
     }
 
     function generateSkills() {
         skillsListEl.innerHTML = '';
+        const enabledSkills = getEnabledItems('skills');
+        if (enabledSkills.length === 0) {
+            const li = document.createElement('li');
+            li.textContent = 'No skills selected';
+            skillsListEl.appendChild(li);
+            return;
+        }
+        
+        const numSkills = Math.min(5, enabledSkills.length);
         const selectedSkills = new Set();
-        while (selectedSkills.size < 5) {
-            selectedSkills.add(getRandomElement(getEnabledItems('skills')));
+        while (selectedSkills.size < numSkills) {
+            selectedSkills.add(getRandomElement(enabledSkills));
         }
 
         selectedSkills.forEach(skill => {
             let skillText = skill;
             if (skill === 'One Handed') {
-                skillText += `: ${getRandomElement(data.oneHandedTypes)}`;
+                const enabledTypes = getEnabledItems('oneHandedTypes');
+                if (enabledTypes.length > 0) {
+                    skillText += `: ${getRandomElement(enabledTypes)}`;
+                }
             } else if (skill === 'Two Handed') {
-                skillText += `: ${getRandomElement(data.twoHandedTypes)}`;
+                const enabledTypes = getEnabledItems('twoHandedTypes');
+                if (enabledTypes.length > 0) {
+                    skillText += `: ${getRandomElement(enabledTypes)}`;
+                }
             } else if (skill === 'Archery') {
-                skillText += `: ${getRandomElement(data.archeryTypes)}`;
+                const enabledTypes = getEnabledItems('archeryTypes');
+                if (enabledTypes.length > 0) {
+                    skillText += `: ${getRandomElement(enabledTypes)}`;
+                }
             }
             const li = document.createElement('li');
             li.textContent = skillText;
@@ -75,12 +104,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateAllegiances() {
         allegiancesListEl.innerHTML = '';
-        const numAllegiances = Math.floor(Math.random() * 5) + 1;
+        const enabledAllegiances = getEnabledItems('allegiances');
+        if (enabledAllegiances.length === 0) {
+            const li = document.createElement('li');
+            li.textContent = 'No allegiances selected';
+            allegiancesListEl.appendChild(li);
+            return;
+        }
+        
+        const numAllegiances = Math.min(Math.floor(Math.random() * 5) + 1, enabledAllegiances.length);
         const selectedAllegiances = [];
-        const enemyMap = new Map(data.allegiances.map(a => [a.name, a.enemy]));
+        const enemyMap = new Map(enabledAllegiances.map(a => [a.name, a.enemy]));
 
-        while (selectedAllegiances.length < numAllegiances) {
-            const potentialAllegiance = getRandomElement(data.allegiances).name;
+        let attempts = 0;
+        while (selectedAllegiances.length < numAllegiances && attempts < 100) {
+            attempts++;
+            const potentialAllegiance = getRandomElement(enabledAllegiances).name;
             const enemy = enemyMap.get(potentialAllegiance);
 
             if (!selectedAllegiances.includes(potentialAllegiance) && !selectedAllegiances.includes(enemy)) {
@@ -96,10 +135,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateStart() {
-        let availableStarts = data.starts.filter(start => start.race === 'all' || start.race === selectedRace);
+        if (!selectedRace) {
+            startEl.textContent = 'No race selected';
+            return;
+        }
+        
+        // Filter by enabled starts first
+        let enabledStarts = getEnabledItems('starts');
+        if (enabledStarts.length === 0) {
+            startEl.textContent = 'No alternate starts selected';
+            return;
+        }
+        
+        // Then filter by race compatibility
+        let availableStarts = enabledStarts.filter(start => start.race === 'all' || start.race === selectedRace);
         if (!additionalStartsCheckbox.checked) {
             availableStarts = availableStarts.filter(start => !start.addOn);
         }
+        
+        if (availableStarts.length === 0) {
+            startEl.textContent = 'No compatible starts available';
+            return;
+        }
+        
         let selectedStart = getRandomElement(availableStarts);
 
         let startText = selectedStart.name;

@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const legionArmLink = document.getElementById('legion-arm-link');
     const endingEl = document.getElementById('ending');
     const endingLink = document.getElementById('ending-link');
-    const includeDLCCheckbox = document.getElementById('include-dlc');
 
     const rerollPrimaryWeaponBtn = document.getElementById('reroll-primary-weapon');
     const rerollLegionArmBtn = document.getElementById('reroll-legion-arm');
@@ -41,25 +40,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getAvailablePrimaryWeapons() {
         if (!gameData) return [];
-        const baseNormal = gameData.base_game.normal_weapons || [];
-        const baseSpecial = gameData.base_game.special_weapons || [];
-        let allWeapons = [...baseNormal, ...baseSpecial];
-
-        if (includeDLCCheckbox.checked && gameData.overture_dlc) {
-            const dlcNormal = gameData.overture_dlc.normal_weapons || [];
-            const dlcSpecial = gameData.overture_dlc.special_weapons || [];
-            allWeapons = [...allWeapons, ...dlcNormal, ...dlcSpecial];
+        const allWeapons = [];
+        
+        if (gameData.base_game) {
+            if (gameData.base_game.normal_weapons) {
+                gameData.base_game.normal_weapons.forEach(w => {
+                    if (isEnabled('weapons', w.name)) allWeapons.push(w);
+                });
+            }
+            if (gameData.base_game.special_weapons) {
+                gameData.base_game.special_weapons.forEach(w => {
+                    if (isEnabled('weapons', w.name)) allWeapons.push(w);
+                });
+            }
         }
+        
+        if (gameData.overture_dlc) {
+            if (gameData.overture_dlc.normal_weapons) {
+                gameData.overture_dlc.normal_weapons.forEach(w => {
+                    if (isEnabled('weapons', w.name)) allWeapons.push(w);
+                });
+            }
+            if (gameData.overture_dlc.special_weapons) {
+                gameData.overture_dlc.special_weapons.forEach(w => {
+                    if (isEnabled('weapons', w.name)) allWeapons.push(w);
+                });
+            }
+        }
+        
         return allWeapons;
     }
 
     function getAvailableLegionArms() {
         if (!gameData) return [];
-        const baseArms = gameData.base_game.legion_arms || [];
-        if (includeDLCCheckbox.checked && gameData.overture_dlc) {
-            return [...baseArms, ...(gameData.overture_dlc.legion_arms || [])];
+        const allArms = [];
+        
+        if (gameData.base_game && gameData.base_game.legion_arms) {
+            gameData.base_game.legion_arms.forEach(a => {
+                if (isEnabled('legion_arms', a.name)) allArms.push(a);
+            });
         }
-        return baseArms;
+        
+        if (gameData.overture_dlc && gameData.overture_dlc.legion_arms) {
+            gameData.overture_dlc.legion_arms.forEach(a => {
+                if (isEnabled('legion_arms', a.name)) allArms.push(a);
+            });
+        }
+        
+        return allArms;
     }
 
     function generatePrimaryWeapon() {
@@ -83,7 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateEnding() {
         if (!gameData || !gameData.endings) return;
         
-        const randomEnding = getRandomElement(gameData.endings);
+        const enabledEndings = gameData.endings.filter(e => isEnabled('endings', e.name));
+        if (enabledEndings.length === 0) return;
+        
+        const randomEnding = getRandomElement(enabledEndings);
         endingEl.textContent = randomEnding.name;
         endingLink.href = randomEnding.url;
     }
@@ -98,13 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             gameData = data;
-            loadOptions();randomizeAll();
+            loadOptions();
+            randomizeAll();
 
             rerollPrimaryWeaponBtn.addEventListener('click', generatePrimaryWeapon);
             rerollLegionArmBtn.addEventListener('click', generateLegionArm);
             rerollEndingBtn.addEventListener('click', generateEnding);
             generateLoadoutBtn.addEventListener('click', randomizeAll);
-            includeDLCCheckbox.addEventListener('change', randomizeAll);
         })
         .catch(error => {
             console.error('Error loading data:', error);

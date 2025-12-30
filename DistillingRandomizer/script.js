@@ -23,14 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setSpirit() {
         const spirits = data.spirits;
-        const spiritTypeKey = getRandomKey(spirits);
-        const spiritType = spirits[spiritTypeKey];
+        if (!spirits) {
+            spiritRollEl.textContent = 'No spirits available';
+            return;
+        }
         
-        const spiritObj = spiritType[Math.floor(Math.random() * spiritType.length)];
+        // Collect all enabled spirits from all categories
+        const allEnabledSpirits = [];
+        Object.keys(spirits).forEach(spiritTypeKey => {
+            const spiritType = spirits[spiritTypeKey];
+            const enabledSpirits = spiritType.filter(spirit => isEnabled(spiritTypeKey, spirit.name));
+            enabledSpirits.forEach(spirit => {
+                allEnabledSpirits.push({
+                    spirit: spirit,
+                    spiritTypeKey: spiritTypeKey
+                });
+            });
+        });
+        
+        if (allEnabledSpirits.length === 0) {
+            spiritRollEl.textContent = 'No spirits selected';
+            return;
+        }
+        
+        // Pick a random enabled spirit
+        const selected = allEnabledSpirits[Math.floor(Math.random() * allEnabledSpirits.length)];
+        const spiritTypeName = selected.spiritTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-        const spiritTypeName = spiritTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-
-        spiritRollEl.innerHTML = `${spiritTypeName} -> <a href="${spiritObj.info_url}" target="_blank" rel="noopener noreferrer">${spiritObj.name}</a>`;
+        spiritRollEl.innerHTML = `${spiritTypeName} -> <a href="${selected.spirit.info_url}" target="_blank" rel="noopener noreferrer">${selected.spirit.name}</a>`;
     }
 
     function randomizeAll() {

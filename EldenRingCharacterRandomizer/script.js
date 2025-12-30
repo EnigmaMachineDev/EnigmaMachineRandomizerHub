@@ -23,44 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
     let primaryWeaponData;
     let armorData;
     let spiritAshesData;
-    let eldenRingSpellsData;
-    let eldenRingCastingWeaponsData;
+    let magicData;
+    let casterWeaponsData;
     let endingsData;
-
     let currentSpellType = '';
-    const STORAGE_KEY = 'eldenRingOptions';
-    let options = {};
 
     const getRandomElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+    const STORAGE_KEY = 'eldenRingOptions';
+    let options = {};
 
     function loadOptions() {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
             try {
                 options = JSON.parse(saved);
-            } catch (e) {
-                console.error('Error loading options:', e);
-                options = {};
-            }
+            } catch (e) {}
         }
     }
 
-    function isEnabled(category, id) {
+    function isEnabled(category, name) {
         if (!options[category]) return true;
-        if (!options[category].hasOwnProperty(id)) return true;
-        return options[category][id];
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
     }
 
-    function getEnabledItems(category, allItems) {
-        if (Array.isArray(allItems)) {
-            return allItems.filter(item => {
-                const id = item.name || item;
-                return isEnabled(category, id);
-            });
-        } else {
-            // For objects like weapons
-            return Object.keys(allItems).filter(key => isEnabled(category, key));
-        }
+    function getEnabledItems(category, items) {
+        if (!items) return [];
+        return items.filter(item => isEnabled(category, item.name));
     }
 
     function generateWeapon() {
@@ -75,10 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateArmor() {
         if (!armorData) return;
-        // Combine all armor types into one pool
-        const allArmor = [...armorData.light, ...armorData.medium, ...armorData.heavy];
-        const enabledArmor = allArmor.filter(armor => isEnabled('armor', armor.name));
-        if (enabledArmor.length === 0) return;
+        // Combine all armor types into one pool, checking each subcategory
+        const lightArmor = armorData.light_sets ? armorData.light_sets.filter(armor => isEnabled('light_sets', armor.name)) : [];
+        const mediumArmor = armorData.medium_sets ? armorData.medium_sets.filter(armor => isEnabled('medium_sets', armor.name)) : [];
+        const heavyArmor = armorData.heavy_sets ? armorData.heavy_sets.filter(armor => isEnabled('heavy_sets', armor.name)) : [];
+        
+        const enabledArmor = [...lightArmor, ...mediumArmor, ...heavyArmor];
+        if (enabledArmor.length === 0) {
+            armorEl.textContent = 'No armor available';
+            armorLinkEl.href = '#';
+            return;
+        }
         
         const randomArmorSet = getRandomElement(enabledArmor);
         armorEl.textContent = randomArmorSet.name;
@@ -109,15 +106,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateSpells() {
-        if (!eldenRingSpellsData) return;
+        if (!magicData || !casterWeaponsData) return;
 
-        const spellRoll = Math.floor(Math.random() * 3) + 1;
+        // Determine which caster weapon types are available
+        const enabledCasterWeapons = getEnabledItems('caster_weapons', casterWeaponsData);
+        const availableMagicTypes = new Set();
+        enabledCasterWeapons.forEach(weapon => {
+            availableMagicTypes.add(weapon.magic_type);
+        });
+
+        // Determine which spell types have enabled spells AND matching caster weapons
+        const availableSpellTypes = [];
+        const enabledSorceries = getEnabledItems('sorceries', magicData.sorceries);
+        const enabledIncantations = getEnabledItems('incantations', magicData.incantations);
+
+        if (enabledSorceries.length > 0 && availableMagicTypes.has('Sorcery')) {
+            availableSpellTypes.push('Sorceries');
+        }
+        if (enabledIncantations.length > 0 && availableMagicTypes.has('Incantation')) {
+            availableSpellTypes.push('Incantations');
+        }
+
+        availableSpellTypes.push('None');
+
+        const spellRoll = getRandomElement(availableSpellTypes);
         let selectedSpells = [];
 
-        if (spellRoll === 2) { // Sorceries
+        if (spellRoll === 'Sorceries') {
             currentSpellType = '(Sorceries)';
-            const sorceries = eldenRingSpellsData.filter(spell => spell.type === 'Sorcery');
-            const enabledSorceries = getEnabledItems('spells', sorceries);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledSorceries.length);
             const spellsCopy = [...enabledSorceries];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -125,10 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomIndex = Math.floor(Math.random() * spellsCopy.length);
                 selectedSpells.push(spellsCopy.splice(randomIndex, 1)[0]);
             }
-        } else if (spellRoll === 3) { // Incantations
+        } else if (spellRoll === 'Incantations') {
             currentSpellType = '(Incantations)';
-            const incantations = eldenRingSpellsData.filter(spell => spell.type === 'Incantation');
-            const enabledIncantations = getEnabledItems('spells', incantations);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledIncantations.length);
             const spellsCopy = [...enabledIncantations];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -144,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedSpells.length > 0) {
             selectedSpells.forEach(spell => {
                 const li = document.createElement('li');
-                li.innerHTML = `<a href="${spell.link}" target="_blank">${spell.name}</a>`;
+                li.innerHTML = `<a href="${spell.url}" target="_blank">${spell.name}</a>`;
                 spellsListEl.appendChild(li);
             });
         }
@@ -154,33 +168,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateCasterWeapon() {
-        if (!eldenRingCastingWeaponsData || currentSpellType === '(None)') {
+        if (!casterWeaponsData || currentSpellType === '(None)') {
             casterWeaponSectionEl.style.display = 'none';
             return;
         }
         casterWeaponSectionEl.style.display = 'block';
 
         let casterWeaponName = 'None';
-        let casterWeaponLink = '#';
+        let casterWeaponUrl = '#';
 
         if (currentSpellType === '(Sorceries)') {
-            const enabledStaffs = getEnabledItems('staffs', eldenRingCastingWeaponsData.staffs);
-            if (enabledStaffs.length > 0) {
-                const randomStaff = getRandomElement(enabledStaffs);
+            const staffs = getEnabledItems('caster_weapons', casterWeaponsData).filter(w => w.magic_type === 'Sorcery');
+            if (staffs.length > 0) {
+                const randomStaff = getRandomElement(staffs);
                 casterWeaponName = randomStaff.name;
-                casterWeaponLink = randomStaff.url;
+                casterWeaponUrl = randomStaff.url;
             }
         } else if (currentSpellType === '(Incantations)') {
-            const enabledSeals = getEnabledItems('seals', eldenRingCastingWeaponsData.seals);
-            if (enabledSeals.length > 0) {
-                const randomSeal = getRandomElement(enabledSeals);
+            const seals = getEnabledItems('caster_weapons', casterWeaponsData).filter(w => w.magic_type === 'Incantation');
+            if (seals.length > 0) {
+                const randomSeal = getRandomElement(seals);
                 casterWeaponName = randomSeal.name;
-                casterWeaponLink = randomSeal.url;
+                casterWeaponUrl = randomSeal.url;
             }
         }
 
         casterWeaponEl.textContent = casterWeaponName;
-        casterWeaponLinkEl.href = casterWeaponLink;
+        casterWeaponLinkEl.href = casterWeaponUrl;
     }
 
     function generateEnding() {
@@ -206,8 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
             primaryWeaponData = data.weapons;
             armorData = data.armor;
             spiritAshesData = data.spirit_ashes;
-            eldenRingSpellsData = data.spells;
-            eldenRingCastingWeaponsData = data.casting_weapons;
+            magicData = data.magic;
+            casterWeaponsData = data.caster_weapons;
             endingsData = data.endings;
 
             loadOptions();

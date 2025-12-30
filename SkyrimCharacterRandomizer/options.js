@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'skyrimOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');
@@ -68,6 +68,38 @@ document.addEventListener('DOMContentLoaded', () => {
         
         controls.appendChild(selectCategoryBtn);
         controls.appendChild(deselectCategoryBtn);
+
+        // Add special buttons for starts category to handle Additional Starts addon
+        if (categoryKey === 'starts') {
+            const selectAddonBtn = document.createElement('button');
+            selectAddonBtn.className = 'category-btn';
+            selectAddonBtn.textContent = 'Select Additional Starts';
+            selectAddonBtn.onclick = (e) => {
+                e.stopPropagation();
+                section.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    const item = items.find(i => (i.name || i) === cb.dataset.id);
+                    if (item && item.addOn) {
+                        cb.checked = true;
+                    }
+                });
+            };
+            
+            const deselectAddonBtn = document.createElement('button');
+            deselectAddonBtn.className = 'category-btn';
+            deselectAddonBtn.textContent = 'Deselect Additional Starts';
+            deselectAddonBtn.onclick = (e) => {
+                e.stopPropagation();
+                section.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    const item = items.find(i => (i.name || i) === cb.dataset.id);
+                    if (item && item.addOn) {
+                        cb.checked = false;
+                    }
+                });
+            };
+            
+            controls.appendChild(selectAddonBtn);
+            controls.appendChild(deselectAddonBtn);
+        }
 
         const grid = document.createElement('div');
         grid.className = 'options-grid';

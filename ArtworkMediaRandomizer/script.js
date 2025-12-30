@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollMediumBtn = document.getElementById('reroll-medium');
     const rerollCanvasBtn = document.getElementById('reroll-canvas');
 
-    let mediums = {};
+    let mediums = [];
     const STORAGE_KEY = 'artworkMediaOptions';
     let options = {};
+    const canvasSizes = ['Small', 'Medium', 'Large'];
+
+    function getRandomValue(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+    function loadOptions() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { try { options = JSON.parse(saved); } catch (e) { } } }
+    function isEnabled(category, name) { if (!options[category]) return true; if (!options[category].hasOwnProperty(name)) return true; return options[category][name]; }
+    function getEnabledItems(category) { if (category === 'mediums' && Array.isArray(mediums)) { return mediums.filter(item => isEnabled(category, item.name)); } if (category === 'canvasSizes') { return canvasSizes.filter(size => isEnabled(category, size)); } return []; }
 
     fetch('mediums.json')
         .then(response => response.json())
@@ -21,13 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error fetching mediums:', error));
 
     function generateMedium() {
-        if (Object.keys(mediums).length === 0) return;
+        if (!mediums || !Array.isArray(mediums) || mediums.length === 0) return;
+
+        const enabledMediums = getEnabledItems('mediums');
+        if (!enabledMediums || enabledMediums.length === 0) {
+            mediumEl.textContent = 'No mediums selected';
+            return;
+        }
 
         const rollMedium = (excludeMixedMedia = false) => {
             let availableMediums = getEnabledItems('mediums');
             if (excludeMixedMedia) {
                 availableMediums = availableMediums.filter(m => m.name !== "Mixed Media");
             }
+            if (availableMediums.length === 0) return "No mediums available";
             const randomIndex = Math.floor(Math.random() * availableMediums.length);
             const medium = availableMediums[randomIndex];
             let text = medium.name;
@@ -39,12 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         let displayText = "";
-        function getRandomValue(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
-        function loadOptions() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { try { options = JSON.parse(saved); } catch (e) { } } }
-        function isEnabled(category, name) { if (!options[category]) return true; if (!options[category].hasOwnProperty(name)) return true; return options[category][name]; }
-        function getEnabledItems(category) { if (!mediums[category]) return []; return mediums[category].filter(item => isEnabled(category, item)); }
 
-        const selectedMedium = getRandomValue(getEnabledItems('mediums'));
+        const selectedMedium = getRandomValue(enabledMediums);
 
         if (selectedMedium.name === "Mixed Media") {
             const randomOptionIndex = Math.floor(Math.random() * selectedMedium.options.length);
@@ -76,16 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateCanvasSize() {
-        const surfaceSizeRoll = Math.floor(Math.random() * 3) + 1; // 1, 2, or 3
-        let surfaceSizeText = "";
-        if (surfaceSizeRoll === 1) {
-            surfaceSizeText = "Small";
-        } else if (surfaceSizeRoll === 2) {
-            surfaceSizeText = "Medium";
-        } else {
-            surfaceSizeText = "Large";
+        const enabledSizes = getEnabledItems('canvasSizes');
+        if (enabledSizes.length === 0) {
+            canvasEl.textContent = 'No canvas sizes selected';
+            return;
         }
-        canvasEl.textContent = surfaceSizeText;
+        const size = getRandomValue(enabledSizes);
+        canvasEl.textContent = size;
     }
 
     generateLoadoutBtn.addEventListener('click', () => {

@@ -34,16 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getEnabledItems(category) {
         if (!data[category]) return [];
-        return data[category].filter(item => isEnabled(category, item.name));
+        return data[category].filter(item => {
+            // Handle both string arrays and object arrays
+            const itemName = typeof item === 'string' ? item : item.name;
+            return isEnabled(category, itemName);
+        });
     }
 
     function generatePeppers() {
         if (!peppersData || peppersData.length === 0) return;
 
+        const enabledPeppers = getEnabledItems('peppers');
+        if (enabledPeppers.length === 0) {
+            peppersListEl.innerHTML = '<li>No peppers selected</li>';
+            return;
+        }
+
         // Choose between 1 and 3 peppers
-        const numberOfPeppers = Math.floor(Math.random() * 3) + 1;
+        const numberOfPeppers = Math.min(Math.floor(Math.random() * 3) + 1, enabledPeppers.length);
         const selectedPeppers = [];
-        const peppersCopy = [...peppersData];
+        const peppersCopy = [...enabledPeppers];
 
         for (let i = 0; i < numberOfPeppers; i++) {
             if (peppersCopy.length === 0) break;
@@ -65,10 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function generateVegetables() {
         if (!vegetablesData || vegetablesData.length === 0) return;
 
+        const enabledVegetables = getEnabledItems('vegetables');
+        if (enabledVegetables.length === 0) {
+            vegetablesListEl.innerHTML = '<li>No vegetables selected</li>';
+            return;
+        }
+
         // Choose between 2 and 5 vegetables
-        const numberOfVegetables = Math.floor(Math.random() * 4) + 2;
+        const numberOfVegetables = Math.min(Math.floor(Math.random() * 4) + 2, enabledVegetables.length);
         const selectedVegetables = [];
-        const vegetablesCopy = [...vegetablesData];
+        const vegetablesCopy = [...enabledVegetables];
 
         for (let i = 0; i < numberOfVegetables; i++) {
             if (vegetablesCopy.length === 0) break;
@@ -85,13 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateFermentation() {
-        const fermentationOptions = [
-            'Fresh Fermented',
-            'Roasted Fermented',
-            'Fresh Non-Fermented',
-            'Roasted Non-Fermented'
-        ];
-        const selectedOption = getRandomElement(fermentationOptions);
+        const enabledFermentation = getEnabledItems('fermentation');
+        if (enabledFermentation.length === 0) {
+            fermentationEl.textContent = 'No fermentation options selected';
+            return;
+        }
+        const selectedOption = getRandomElement(enabledFermentation);
         fermentationEl.textContent = selectedOption;
     }
 
@@ -103,21 +118,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetch('randomizer.json')
         .then(res => res.json())
-        .then(data => {
+        .then(jsonData => {
             loadOptions();
             // Flatten all pepper categories into a single array
-            if (data.peppers) {
+            if (jsonData.peppers) {
                 peppersData = [
-                    ...(data.peppers.mild_to_medium || []),
-                    ...(data.peppers.medium_to_hot || []),
-                    ...(data.peppers.hot_to_very_hot || []),
-                    ...(data.peppers.extremely_hot || [])
+                    ...(jsonData.peppers.mild_to_medium || []),
+                    ...(jsonData.peppers.medium_to_hot || []),
+                    ...(jsonData.peppers.hot_to_very_hot || []),
+                    ...(jsonData.peppers.extremely_hot || [])
                 ];
             }
             
-            vegetablesData = data.vegetables || [];
+            vegetablesData = jsonData.vegetables || [];
+            
+            // Set up data object for filtering
+            data = {
+                peppers: peppersData,
+                vegetables: vegetablesData,
+                fermentation: jsonData.fermentation || []
+            };
 
-            loadOptions();randomizeAll();
+            randomizeAll();
 
             rerollPeppersBtn.addEventListener('click', generatePeppers);
             rerollVegetablesBtn.addEventListener('click', generateVegetables);

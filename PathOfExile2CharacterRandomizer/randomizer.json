@@ -1,7 +1,8 @@
 {
   "classes": [
     { "name": "Witch", "ascendancies": ["Infernalist", "Blood Mage", "Lich", "Abyssal Lich"] },
-    { "name": "Sorceress", "ascendancies": ["Stormweaver", "Chronomancer"] },
+    { "name": "Sorceress", "ascendancies": ["Stormweaver", "Chronomancer", "Disciple of Varashta"] },
+    { "name": "Druid", "ascendancies": ["Oracle", "Shaman"] },
     { "name": "Monk", "ascendancies": ["Invoker", "Acolyte of Chayula"] },
     { "name": "Ranger", "ascendancies": ["Deadeye", "Pathfinder"] },
     { "name": "Mercenary", "ascendancies": ["Witchhunter", "Gemling Legionnaire", "Tactician"] },
@@ -68,7 +69,12 @@
         "Spark",
         "Spellslinger (Dueling Wand)",
         "Unearth",
-        "Volatile Dead (Volatile Want)"
+        "Volatile Dead (Volatile Want)",
+        "Volcano",
+        "Entangle",
+        "Thunderstorm",
+        "Thrashing Vines",
+        "Tornado"
       ]
     },
     {
@@ -127,7 +133,12 @@
         "Solar Orb (Pyrophyte Staff)",
         "Soul Offering",
         "Spark",
-        "Unearth"
+        "Unearth",
+        "Volcano",
+        "Entangle",
+        "Thunderstorm",
+        "Thrashing Vines",
+        "Tornado"
       ]
     },
     {
@@ -148,7 +159,8 @@
         "Skeletal Warrior",
         "Skeletal Warrior (Rattling Sceptre)",
         "Soul Offering",
-        "Fulmination (Wrath Sceptre)"
+        "Fulmination (Wrath Sceptre)",
+        "Wolf Pack"
       ]
     },
     {
@@ -299,6 +311,33 @@
         "Wave of Frost",
         "Whirling Assault",
         "Wind Blast"
+      ]
+    },
+    {
+      "name": "Talisman",
+      "skills": [
+        "Molten Crash",
+        "Furious Slam",
+        "Lunar Assault",
+        "Rolling Magma",
+        "Pounce",
+        "Wing Blast",
+        "Fury of the Mountain",
+        "Devour",
+        "Arctic Howl",
+        "Ferocious Roar",
+        "Cross Slash",
+        "Oil Barrage",
+        "Flame Breath",
+        "Lunar Blessing",
+        "Walking Calamity",
+        "Maul",
+        "Rend",
+        "Volcano",
+        "Entangle",
+        "Thunderstorm",
+        "Thrashing Vines",
+        "Tornado"
       ]
     }
   ],

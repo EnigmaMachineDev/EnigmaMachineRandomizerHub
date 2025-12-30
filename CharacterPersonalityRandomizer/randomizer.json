@@ -1,5 +1,6 @@
 
 {
+  "sex": ["Male", "Female"],
   "personalityType": [
     {
       "name": "INTJ - The Architect",

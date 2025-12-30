@@ -33,14 +33,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getEnabledItems(category) {
-        if (!data[category]) return [];
-        return data[category].filter(item => isEnabled(category, item));
+        if (!personalityData || !personalityData[category]) return [];
+        // Handle arrays of objects with name property
+        if (personalityData[category][0] && typeof personalityData[category][0] === 'object' && personalityData[category][0].name) {
+            return personalityData[category].filter(item => isEnabled(category, item.name));
+        }
+        // Handle arrays of strings
+        return personalityData[category].filter(item => isEnabled(category, item));
     }
 
     function generateIdentity() {
         if (!namesData) return;
 
-        const sex = getRandomValue(['Male', 'Female']);
+        // Check which sexes are enabled
+        const enabledSexes = [];
+        if (isEnabled('sex', 'Male')) enabledSexes.push('Male');
+        if (isEnabled('sex', 'Female')) enabledSexes.push('Female');
+        
+        if (enabledSexes.length === 0) {
+            identityEl.innerHTML = '<strong>Name:</strong> No sex selected';
+            return;
+        }
+
+        const sex = getRandomValue(enabledSexes);
         const firstName = sex === 'Male'
             ? getRandomValue(namesData.firstName.male)
             : getRandomValue(namesData.firstName.female);
@@ -52,8 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function generatePersonality() {
         if (!personalityData) return;
 
-        const alignment = getRandomValue(personalityData.alignment);
-        const personalityType = getRandomValue(personalityData.personalityType);
+        const enabledAlignments = getEnabledItems('alignment');
+        const enabledPersonalities = getEnabledItems('personalityType');
+        
+        if (enabledAlignments.length === 0 || enabledPersonalities.length === 0) {
+            personalityEl.textContent = 'No personality options selected';
+            personalityLinkEl.href = '#';
+            return;
+        }
+
+        const alignment = getRandomValue(enabledAlignments);
+        const personalityType = getRandomValue(enabledPersonalities);
 
         personalityEl.textContent = `${alignment} - ${personalityType.name}`;
         personalityLinkEl.href = personalityType.link;
@@ -67,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]).then(([names, personality]) => {
         namesData = names;
         personalityData = personality;
+        data = personality; // Keep data reference for compatibility
 
         generateIdentity();
         generatePersonality();

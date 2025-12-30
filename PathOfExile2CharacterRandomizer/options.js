@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'pathOfExile2Options';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -21,16 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initializeOptions(data) {
         Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
+            const categoryData = data[categoryKey];
+            if (Array.isArray(categoryData) && categoryData.length > 0) {
                 const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
+                addCategory(categoryKey, categoryName, categoryData);
+            } else if (typeof categoryData === 'object' && categoryData !== null && !Array.isArray(categoryData)) {
+                Object.keys(categoryData).forEach(subKey => {
+                    if (Array.isArray(categoryData[subKey]) && categoryData[subKey].length > 0) {
+                        const subCategoryName = subKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        addCategory(subKey, subCategoryName, categoryData[subKey]);
+                    }
+                });
             }
         });
     }
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');
@@ -74,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         items.forEach(item => {
             const itemName = item.name || item;
-            addOption(grid, categoryKey, itemName, itemName);
+            const url = item.url || item.link || null;
+            addOption(grid, categoryKey, itemName, itemName, url);
         });
 
         header.onclick = () => {
@@ -87,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         categoriesContainer.appendChild(section);
     }
 
-    function addOption(container, category, id, label) {
+    function addOption(container, category, id, label, url = null) {
         const div = document.createElement('div');
         div.className = 'option-item';
 
@@ -100,7 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const labelEl = document.createElement('label');
         labelEl.htmlFor = checkbox.id;
-        labelEl.textContent = label;
+        
+        if (url) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            link.textContent = label;
+            link.onclick = (e) => e.stopPropagation();
+            labelEl.appendChild(link);
+        } else {
+            labelEl.textContent = label;
+        }
 
         div.appendChild(checkbox);
         div.appendChild(labelEl);

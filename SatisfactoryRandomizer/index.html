@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Satisfactory Recipe Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../images/SatisfactoryLogo.webp" type="image/webp">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Satisfactory Recipe Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-recipes">Randomize All Recipes</button>
+            <div id="recipe-sections"></div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Satisfactory Recipe Randomizer! This tool helps you discover new ways to build your factory by randomizing alternate recipes for production items.</p>
+            <p>Satisfactory features numerous alternate recipes that can be unlocked through Hard Drives. This randomizer selects one recipe variant for each item that has alternates, helping you plan unique factory layouts and optimize your production chains.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click "Randomize All Recipes" to generate a complete set of recipe choices for your factory. Each item will show the selected recipe with its inputs and outputs. Use the individual re-roll buttons (↻) to change specific recipes, or use the Configure Options page to enable/disable specific items.</p>
+            <p>The recipes shown include both standard and alternate variants. Alternate recipes often trade different resources or change production ratios, allowing for creative factory designs!</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'homebrewingWineOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');

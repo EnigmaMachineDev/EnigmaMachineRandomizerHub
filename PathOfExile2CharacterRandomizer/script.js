@@ -80,7 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function rollWeaponAndSkills() {
-        const randomWeapon = getRandomItem(data.weapons);
+        const enabledWeapons = getEnabledItems('weapons');
+        if (enabledWeapons.length === 0) {
+            weaponSkillsResultEl.innerHTML = `<strong>Weapon Type:</strong> No weapons selected<br><strong>Main Skill(s):</strong> None`;
+            return;
+        }
+        
+        const randomWeapon = getRandomItem(enabledWeapons);
         if (!randomWeapon) return;
 
         let skillPool = [...randomWeapon.skills];
@@ -100,7 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function rollDefense() {
-        const randomDefense = getRandomItem(data.defense);
+        const enabledDefense = getEnabledItems('defense');
+        if (enabledDefense.length === 0) {
+            defenseResultEl.textContent = 'No defense types selected';
+            return;
+        }
+        const randomDefense = getRandomItem(enabledDefense);
         if (!randomDefense) return;
         defenseResultEl.textContent = `${randomDefense.name}`;
     }
@@ -109,5 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
         rollClassAndAscendancy();
         rollWeaponAndSkills();
         rollDefense();
+    }
+
+    function randomizeAll() {
+        rollAll();
     }
 });

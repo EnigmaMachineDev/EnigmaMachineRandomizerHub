@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'spaceMarine2Options';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -16,21 +16,45 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             initializeOptions(data);
             loadSavedOptions();
+            updateWeaponAvailability();
         })
         .catch(error => console.error('Error loading options:', error));
 
     function initializeOptions(data) {
+        // Store data globally for dynamic updates
+        window.randomizerData = data;
+        
         Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
+            const categoryData = data[categoryKey];
+            
+            // Skip the nested classes object
+            if (categoryKey === 'classes') return;
+            
+            // Handle flat arrays (e.g., weapons, caster_weapons)
+            if (Array.isArray(categoryData) && categoryData.length > 0) {
                 const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
+                addCategory(categoryKey, categoryName, categoryData);
             }
+            // Handle nested objects (e.g., armor: {light_sets, medium_sets, heavy_sets})
+            else if (typeof categoryData === 'object' && categoryData !== null && !Array.isArray(categoryData)) {
+                Object.keys(categoryData).forEach(subKey => {
+                    if (Array.isArray(categoryData[subKey]) && categoryData[subKey].length > 0) {
+                        const subCategoryName = subKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        addCategory(subKey, subCategoryName, categoryData[subKey]);
+                    }
+                });
+            }
+        });
+        
+        // Add event listeners for class checkboxes to update weapon availability
+        document.querySelectorAll('[data-category="classList"]').forEach(cb => {
+            cb.addEventListener('change', updateWeaponAvailability);
         });
     }
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');
@@ -69,6 +93,39 @@ document.addEventListener('DOMContentLoaded', () => {
         controls.appendChild(selectCategoryBtn);
         controls.appendChild(deselectCategoryBtn);
 
+        // Add DLC toggle buttons for chapters category
+        if (categoryKey === 'chapters') {
+            const hasDLC = items.some(item => item.dlc);
+            if (hasDLC) {
+                const selectDLCBtn = document.createElement('button');
+                selectDLCBtn.className = 'category-btn';
+                selectDLCBtn.textContent = 'Select DLC';
+                selectDLCBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    section.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                        const itemName = cb.dataset.id;
+                        const item = items.find(i => (i.name || i) === itemName);
+                        if (item && item.dlc) cb.checked = true;
+                    });
+                };
+                
+                const deselectDLCBtn = document.createElement('button');
+                deselectDLCBtn.className = 'category-btn';
+                deselectDLCBtn.textContent = 'Deselect DLC';
+                deselectDLCBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    section.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                        const itemName = cb.dataset.id;
+                        const item = items.find(i => (i.name || i) === itemName);
+                        if (item && item.dlc) cb.checked = false;
+                    });
+                };
+                
+                controls.appendChild(selectDLCBtn);
+                controls.appendChild(deselectDLCBtn);
+            }
+        }
+
         const grid = document.createElement('div');
         grid.className = 'options-grid';
 
@@ -105,6 +162,82 @@ document.addEventListener('DOMContentLoaded', () => {
         div.appendChild(checkbox);
         div.appendChild(labelEl);
         container.appendChild(div);
+    }
+    
+    function updateWeaponAvailability() {
+        if (!window.randomizerData) return;
+        
+        const data = window.randomizerData;
+        const selectedClasses = [];
+        
+        // Get all selected classes
+        document.querySelectorAll('[data-category="classList"]:checked').forEach(cb => {
+            selectedClasses.push(cb.dataset.id);
+        });
+        
+        // If no classes selected, enable all weapons (don't restrict)
+        if (selectedClasses.length === 0) {
+            ['allPrimaries', 'allSecondaries', 'allMelee'].forEach(weaponCategory => {
+                document.querySelectorAll(`[data-category="${weaponCategory}"]`).forEach(cb => {
+                    cb.disabled = false;
+                    cb.parentElement.style.opacity = '1';
+                });
+            });
+            return;
+        }
+        
+        // Build available weapons from selected classes
+        const availablePrimaries = new Set();
+        const availableSecondaries = new Set();
+        const availableMelee = new Set();
+        
+        selectedClasses.forEach(className => {
+            const classData = data.classes[className];
+            if (classData) {
+                classData.primaries.forEach(w => availablePrimaries.add(w));
+                classData.secondaries.forEach(w => availableSecondaries.add(w));
+                classData.melee.forEach(w => availableMelee.add(w));
+            }
+        });
+        
+        // Update primary weapons
+        document.querySelectorAll('[data-category="allPrimaries"]').forEach(cb => {
+            const weaponName = cb.dataset.id;
+            if (availablePrimaries.has(weaponName)) {
+                cb.disabled = false;
+                cb.parentElement.style.opacity = '1';
+            } else {
+                cb.disabled = true;
+                cb.checked = false;
+                cb.parentElement.style.opacity = '0.5';
+            }
+        });
+        
+        // Update secondary weapons
+        document.querySelectorAll('[data-category="allSecondaries"]').forEach(cb => {
+            const weaponName = cb.dataset.id;
+            if (availableSecondaries.has(weaponName)) {
+                cb.disabled = false;
+                cb.parentElement.style.opacity = '1';
+            } else {
+                cb.disabled = true;
+                cb.checked = false;
+                cb.parentElement.style.opacity = '0.5';
+            }
+        });
+        
+        // Update melee weapons
+        document.querySelectorAll('[data-category="allMelee"]').forEach(cb => {
+            const weaponName = cb.dataset.id;
+            if (availableMelee.has(weaponName)) {
+                cb.disabled = false;
+                cb.parentElement.style.opacity = '1';
+            } else {
+                cb.disabled = true;
+                cb.checked = false;
+                cb.parentElement.style.opacity = '0.5';
+            }
+        });
     }
 
     function loadSavedOptions() {

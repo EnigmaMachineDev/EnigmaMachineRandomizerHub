@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'beerBrewingOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -20,17 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading options:', error));
 
     function initializeOptions(data) {
-        Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
-                const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
-            }
-        });
+        // Recursively flatten the nested structure
+        function flattenCategories(obj, prefix = '') {
+            Object.keys(obj).forEach(key => {
+                const value = obj[key];
+                if (Array.isArray(value) && value.length > 0) {
+                    const categoryKey = prefix ? `${prefix}_${key}` : key;
+                    const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                    addCategory(categoryKey, categoryName, value);
+                } else if (typeof value === 'object' && value !== null) {
+                    const newPrefix = prefix ? `${prefix}_${key}` : key;
+                    flattenCategories(value, newPrefix);
+                }
+            });
+        }
+        flattenCategories(data);
     }
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');

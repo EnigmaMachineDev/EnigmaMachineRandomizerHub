@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'grimDawnOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -23,14 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
         Object.keys(data).forEach(categoryKey => {
             if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
                 const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
+                // Extract names from objects for display
+                const items = data[categoryKey].map(item => {
+                    if (typeof item === 'object' && item !== null) {
+                        return { name: item.className || item.name || item.masteryName || JSON.stringify(item) };
+                    }
+                    return { name: item };
+                });
+                addCategory(categoryKey, categoryName, items);
             }
         });
     }
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');
@@ -87,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         categoriesContainer.appendChild(section);
     }
 
-    function addOption(container, category, id, label) {
+    function addOption(container, category, id, label, url = null) {
         const div = document.createElement('div');
         div.className = 'option-item';
 
@@ -100,7 +107,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const labelEl = document.createElement('label');
         labelEl.htmlFor = checkbox.id;
-        labelEl.textContent = label;
+        
+        if (url) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            link.textContent = label;
+            link.onclick = (e) => e.stopPropagation();
+            labelEl.appendChild(link);
+        } else {
+            labelEl.textContent = label;
+        }
 
         div.appendChild(checkbox);
         div.appendChild(labelEl);

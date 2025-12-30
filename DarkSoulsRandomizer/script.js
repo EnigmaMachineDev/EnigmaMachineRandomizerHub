@@ -71,14 +71,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateSpells() {
-        if (!magicData) return;
+        if (!magicData || !casterWeaponsData) return;
 
-        const spellRoll = Math.floor(Math.random() * 4) + 1;
+        // Determine which caster weapon types are available
+        const enabledCasterWeapons = getEnabledItems('caster_weapons', casterWeaponsData);
+        const availableMagicTypes = new Set();
+        enabledCasterWeapons.forEach(weapon => {
+            availableMagicTypes.add(weapon.magic_type);
+        });
+
+        // Determine which spell types have enabled spells AND matching caster weapons
+        const availableSpellTypes = [];
+        const enabledSorceries = getEnabledItems('sorceries', magicData.sorceries);
+        const enabledMiracles = getEnabledItems('miracles', magicData.miracles);
+        const enabledPyromancies = getEnabledItems('pyromancies', magicData.pyromancies);
+
+        if (enabledSorceries.length > 0 && availableMagicTypes.has('Sorcery')) {
+            availableSpellTypes.push('Sorceries');
+        }
+        if (enabledMiracles.length > 0 && availableMagicTypes.has('Miracle')) {
+            availableSpellTypes.push('Miracles');
+        }
+        if (enabledPyromancies.length > 0 && availableMagicTypes.has('Pyromancy')) {
+            availableSpellTypes.push('Pyromancies');
+        }
+
+        // Always include "None" as an option
+        availableSpellTypes.push('None');
+
+        const spellRoll = getRandomElement(availableSpellTypes);
         let selectedSpells = [];
 
-        if (spellRoll === 2) { // Sorceries
+        if (spellRoll === 'Sorceries') {
             currentSpellType = '(Sorceries)';
-            const enabledSorceries = getEnabledItems('sorceries', magicData.sorceries);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledSorceries.length);
             const spellsCopy = [...enabledSorceries];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -86,9 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomIndex = Math.floor(Math.random() * spellsCopy.length);
                 selectedSpells.push(spellsCopy.splice(randomIndex, 1)[0]);
             }
-        } else if (spellRoll === 3) { // Miracles
+        } else if (spellRoll === 'Miracles') {
             currentSpellType = '(Miracles)';
-            const enabledMiracles = getEnabledItems('miracles', magicData.miracles);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledMiracles.length);
             const spellsCopy = [...enabledMiracles];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -96,9 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomIndex = Math.floor(Math.random() * spellsCopy.length);
                 selectedSpells.push(spellsCopy.splice(randomIndex, 1)[0]);
             }
-        } else if (spellRoll === 4) { // Pyromancies
+        } else if (spellRoll === 'Pyromancies') {
             currentSpellType = '(Pyromancies)';
-            const enabledPyromancies = getEnabledItems('pyromancies', magicData.pyromancies);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledPyromancies.length);
             const spellsCopy = [...enabledPyromancies];
             for (let i = 0; i < numberOfSpells; i++) {

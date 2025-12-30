@@ -39,6 +39,22 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.options-link {
+    display: inline-block;
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #66cc66;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.options-link:hover {
+    background-color: rgba(102, 204, 102, 0.1);
+}
+
 #generate-loadout {
     background-color: #66cc66;
     color: #222222;

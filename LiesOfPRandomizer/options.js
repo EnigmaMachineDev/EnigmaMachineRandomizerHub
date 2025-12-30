@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'liesOfPOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -20,17 +20,49 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading options:', error));
 
     function initializeOptions(data) {
-        Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
-                const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
+        // Combine all weapons into one category
+        const allWeapons = [];
+        if (data.base_game) {
+            if (data.base_game.normal_weapons) {
+                data.base_game.normal_weapons.forEach(w => allWeapons.push({...w, dlc: false}));
             }
-        });
+            if (data.base_game.special_weapons) {
+                data.base_game.special_weapons.forEach(w => allWeapons.push({...w, dlc: false}));
+            }
+        }
+        if (data.overture_dlc) {
+            if (data.overture_dlc.normal_weapons) {
+                data.overture_dlc.normal_weapons.forEach(w => allWeapons.push({...w, dlc: true}));
+            }
+            if (data.overture_dlc.special_weapons) {
+                data.overture_dlc.special_weapons.forEach(w => allWeapons.push({...w, dlc: true}));
+            }
+        }
+        if (allWeapons.length > 0) {
+            addCategory('weapons', 'Weapons', allWeapons, true);
+        }
+
+        // Combine all legion arms into one category
+        const allLegionArms = [];
+        if (data.base_game && data.base_game.legion_arms) {
+            data.base_game.legion_arms.forEach(a => allLegionArms.push({...a, dlc: false}));
+        }
+        if (data.overture_dlc && data.overture_dlc.legion_arms) {
+            data.overture_dlc.legion_arms.forEach(a => allLegionArms.push({...a, dlc: true}));
+        }
+        if (allLegionArms.length > 0) {
+            addCategory('legion_arms', 'Legion Arms', allLegionArms, true);
+        }
+
+        // Add endings
+        if (data.endings && data.endings.length > 0) {
+            addCategory('endings', 'Endings', data.endings, false);
+        }
     }
 
-    function addCategory(categoryKey, categoryName, items) {
+    function addCategory(categoryKey, categoryName, items, hasDLC = false) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');
@@ -69,12 +101,40 @@ document.addEventListener('DOMContentLoaded', () => {
         controls.appendChild(selectCategoryBtn);
         controls.appendChild(deselectCategoryBtn);
 
+        // Add DLC control buttons if category has DLC items
+        if (hasDLC) {
+            const selectDLCBtn = document.createElement('button');
+            selectDLCBtn.className = 'category-btn';
+            selectDLCBtn.textContent = 'Select DLC Only';
+            selectDLCBtn.onclick = (e) => {
+                e.stopPropagation();
+                section.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.checked = cb.dataset.dlc === 'true';
+                });
+            };
+            
+            const deselectDLCBtn = document.createElement('button');
+            deselectDLCBtn.className = 'category-btn';
+            deselectDLCBtn.textContent = 'Deselect DLC';
+            deselectDLCBtn.onclick = (e) => {
+                e.stopPropagation();
+                section.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    if (cb.dataset.dlc === 'true') cb.checked = false;
+                });
+            };
+            
+            controls.appendChild(selectDLCBtn);
+            controls.appendChild(deselectDLCBtn);
+        }
+
         const grid = document.createElement('div');
         grid.className = 'options-grid';
 
         items.forEach(item => {
             const itemName = item.name || item;
-            addOption(grid, categoryKey, itemName, itemName);
+            const url = item.url || null;
+            const isDLC = item.dlc || false;
+            addOption(grid, categoryKey, itemName, itemName, url, isDLC);
         });
 
         header.onclick = () => {
@@ -87,9 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
         categoriesContainer.appendChild(section);
     }
 
-    function addOption(container, category, id, label) {
+    function addOption(container, category, id, label, url = null, isDLC = false) {
         const div = document.createElement('div');
         div.className = 'option-item';
+        if (isDLC) div.classList.add('dlc-item');
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
@@ -97,10 +158,21 @@ document.addEventListener('DOMContentLoaded', () => {
         checkbox.checked = true;
         checkbox.dataset.category = category;
         checkbox.dataset.id = id;
+        checkbox.dataset.dlc = isDLC.toString();
 
         const labelEl = document.createElement('label');
         labelEl.htmlFor = checkbox.id;
-        labelEl.textContent = label;
+        
+        if (url) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.target = '_blank';
+            link.textContent = label + (isDLC ? ' (DLC)' : '');
+            link.onclick = (e) => e.stopPropagation();
+            labelEl.appendChild(link);
+        } else {
+            labelEl.textContent = label + (isDLC ? ' (DLC)' : '');
+        }
 
         div.appendChild(checkbox);
         div.appendChild(labelEl);

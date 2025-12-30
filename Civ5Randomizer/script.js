@@ -36,36 +36,64 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!dlcLeaderCheckbox.checked) {
             availableLeaders = availableLeaders.filter(leader => !leader.dlc);
         }
+        if (availableLeaders.length === 0) {
+            leaderEl.textContent = 'No leaders available';
+            return;
+        }
         const selectedLeader = getRandomValue(availableLeaders);
         leaderEl.textContent = selectedLeader.name;
     }
 
     function generateVictory() {
-        const selectedVictory = getRandomValue(data.victories);
+        const enabled = getEnabledItems('victories');
+        if (enabled.length === 0) {
+            victoryEl.textContent = 'No victories selected';
+            return;
+        }
+        const selectedVictory = getRandomValue(enabled);
         victoryEl.textContent = selectedVictory.name;
     }
 
     function generateDifficulty() {
-        const selectedDifficulty = getRandomValue(data.difficulty);
+        const enabled = getEnabledItems('difficulty');
+        if (enabled.length === 0) {
+            difficultyEl.textContent = 'No difficulty selected';
+            return;
+        }
+        const selectedDifficulty = getRandomValue(enabled);
         difficultyEl.textContent = selectedDifficulty.name;
     }
 
     function generatePace() {
-        const selectedPace = getRandomValue(data.pace);
+        const enabled = getEnabledItems('pace');
+        if (enabled.length === 0) {
+            paceEl.textContent = 'No pace selected';
+            return;
+        }
+        const selectedPace = getRandomValue(enabled);
         paceEl.textContent = selectedPace.name;
     }
 
     function generateMap() {
-        let availableMaps = data.maps;
+        let availableMaps = getEnabledItems('maps');
         if (!dlcMapCheckbox.checked) {
             availableMaps = availableMaps.filter(map => !map.dlc);
+        }
+        if (availableMaps.length === 0) {
+            mapEl.textContent = 'No maps selected';
+            return;
         }
         const selectedMap = getRandomValue(availableMaps);
         mapEl.textContent = selectedMap.name;
     }
 
     function generateMapSize() {
-        const selectedMapSize = getRandomValue(data.map_size);
+        const enabled = getEnabledItems('map_size');
+        if (enabled.length === 0) {
+            mapSizeEl.textContent = 'No map size selected';
+            return;
+        }
+        const selectedMapSize = getRandomValue(enabled);
         mapSizeEl.textContent = selectedMapSize.name;
     }
 

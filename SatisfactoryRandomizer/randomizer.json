@@ -1,0 +1,184 @@
+{
+      "Iron Ingot": [
+        { "name": "Standard", "inputs": "1x Iron Ore", "outputs": "1x Iron Ingot" },
+        { "name": "Pure Iron Ingot", "inputs": "7x Iron Ore + 4x Water", "outputs": "13x Iron Ingot" },
+        { "name": "Iron Alloy Ingot", "inputs": "2x Iron Ore + 2x Copper Ore", "outputs": "5x Iron Ingot" },
+        { "name": "Leached Iron Ingot", "inputs": "10x Iron Ore + 5x Sulfuric Acid", "outputs": "20x Iron Ingot" }
+      ],
+      "Copper Ingot": [
+        { "name": "Standard", "inputs": "1x Copper Ore", "outputs": "1x Copper Ingot" },
+        { "name": "Pure Copper Ingot", "inputs": "6x Copper Ore + 4x Water", "outputs": "15x Copper Ingot" },
+        { "name": "Copper Alloy Ingot", "inputs": "10x Copper Ore + 5x Iron Ore", "outputs": "20x Copper Ingot" },
+        { "name": "Leached Copper Ingot", "inputs": "9x Copper Ore + 5x Sulfuric Acid", "outputs": "22x Copper Ingot" }
+      ],
+      "Caterium Ingot": [
+        { "name": "Standard", "inputs": "3x Caterium Ore", "outputs": "1x Caterium Ingot" },
+        { "name": "Pure Caterium Ingot", "inputs": "2x Caterium Ore + 2x Water", "outputs": "1x Caterium Ingot" },
+        { "name": "Leached Caterium Ingot", "inputs": "9x Caterium Ore + 5x Sulfuric Acid", "outputs": "6x Caterium Ingot" }
+      ],
+      "Steel Ingot": [
+        { "name": "Standard", "inputs": "3x Iron Ore + 3x Coal", "outputs": "3x Steel Ingot" },
+        { "name": "Coke Steel Ingot", "inputs": "15x Iron Ore + 15x Petroleum Coke", "outputs": "20x Steel Ingot" },
+        { "name": "Compacted Steel Ingot", "inputs": "10x Iron Ore + 5x Compacted Coal", "outputs": "10x Steel Ingot" },
+        { "name": "Solid Steel Ingot", "inputs": "2x Iron Ingot + 2x Coal", "outputs": "3x Steel Ingot" }
+      ],
+      "Aluminum Ingot": [
+        { "name": "Standard", "inputs": "4x Aluminum Scrap", "outputs": "1x Aluminum Ingot" },
+        { "name": "Pure Aluminum Ingot", "inputs": "2x Aluminum Scrap", "outputs": "1x Aluminum Ingot" },
+        { "name": "Sloppy Alumina", "inputs": "10x Bauxite + 5x Water", "outputs": "12x Alumina Solution" }
+      ],
+      "Wire": [
+        { "name": "Standard", "inputs": "1x Copper Ingot", "outputs": "2x Wire" },
+        { "name": "Iron Wire", "inputs": "5x Iron Ingot", "outputs": "9x Wire" },
+        { "name": "Caterium Wire", "inputs": "1x Caterium Ingot", "outputs": "4x Wire" },
+        { "name": "Fused Wire", "inputs": "4x Copper Ingot + 1x Caterium Ingot", "outputs": "12x Wire" }
+      ],
+      "Cable": [
+        { "name": "Standard", "inputs": "2x Wire", "outputs": "1x Cable" },
+        { "name": "Insulated Cable", "inputs": "9x Wire + 6x Rubber", "outputs": "20x Cable" },
+        { "name": "Quickwire Cable", "inputs": "3x Quickwire + 2x Rubber", "outputs": "11x Cable" },
+        { "name": "Coated Cable", "inputs": "5x Wire + 2x Heavy Oil Residue", "outputs": "9x Cable" }
+      ],
+      "Concrete": [
+        { "name": "Standard", "inputs": "3x Limestone", "outputs": "1x Concrete" },
+        { "name": "Wet Concrete", "inputs": "6x Limestone + 5x Water", "outputs": "4x Concrete" },
+        { "name": "Fine Concrete", "inputs": "3x Silica + 12x Limestone", "outputs": "10x Concrete" },
+        { "name": "Rubber Concrete", "inputs": "10x Limestone + 2x Rubber", "outputs": "9x Concrete" }
+      ],
+      "Screw": [
+        { "name": "Standard", "inputs": "1x Iron Rod", "outputs": "4x Screw" },
+        { "name": "Cast Screw", "inputs": "5x Iron Ingot", "outputs": "20x Screw" },
+        { "name": "Steel Screw", "inputs": "1x Steel Beam", "outputs": "52x Screw" },
+        { "name": "Bolted Iron Plate", "inputs": "18x Iron Plate + 50x Screw", "outputs": "3x Reinforced Iron Plate" }
+      ],
+      "Iron Plate": [
+        { "name": "Standard", "inputs": "3x Iron Ingot", "outputs": "2x Iron Plate" },
+        { "name": "Coated Iron Plate", "inputs": "10x Iron Ingot + 2x Plastic", "outputs": "15x Iron Plate" },
+        { "name": "Steel Coated Plate", "inputs": "3x Steel Ingot + 2x Plastic", "outputs": "18x Iron Plate" }
+      ],
+      "Iron Rod": [
+        { "name": "Standard", "inputs": "1x Iron Ingot", "outputs": "1x Iron Rod" },
+        { "name": "Steel Rod", "inputs": "1x Steel Ingot", "outputs": "4x Iron Rod" },
+        { "name": "Aluminum Rod", "inputs": "1x Aluminum Ingot", "outputs": "7x Iron Rod" }
+      ],
+      "Reinforced Iron Plate": [
+        { "name": "Standard", "inputs": "6x Iron Plate + 12x Screw", "outputs": "1x Reinforced Iron Plate" },
+        { "name": "Stitched Iron Plate", "inputs": "10x Iron Plate + 20x Wire", "outputs": "3x Reinforced Iron Plate" },
+        { "name": "Adhered Iron Plate", "inputs": "3x Iron Plate + 1x Rubber", "outputs": "1x Reinforced Iron Plate" },
+        { "name": "Bolted Iron Plate", "inputs": "18x Iron Plate + 50x Screw", "outputs": "3x Reinforced Iron Plate" }
+      ],
+      "Modular Frame": [
+        { "name": "Standard", "inputs": "3x Reinforced Iron Plate + 12x Iron Rod", "outputs": "2x Modular Frame" },
+        { "name": "Bolted Frame", "inputs": "3x Reinforced Iron Plate + 56x Screw", "outputs": "2x Modular Frame" },
+        { "name": "Steeled Frame", "inputs": "2x Reinforced Iron Plate + 10x Steel Pipe", "outputs": "3x Modular Frame" }
+      ],
+      "Heavy Modular Frame": [
+        { "name": "Standard", "inputs": "5x Modular Frame + 15x Steel Pipe + 5x Encased Industrial Beam + 100x Screw", "outputs": "1x Heavy Modular Frame" },
+        { "name": "Heavy Encased Frame", "inputs": "8x Modular Frame + 10x Encased Industrial Beam + 36x Steel Pipe + 22x Concrete", "outputs": "3x Heavy Modular Frame" },
+        { "name": "Heavy Flexible Frame", "inputs": "5x Modular Frame + 3x Encased Industrial Beam + 20x Rubber + 104x Screw", "outputs": "1x Heavy Modular Frame" }
+      ],
+      "Rotor": [
+        { "name": "Standard", "inputs": "5x Iron Rod + 25x Screw", "outputs": "1x Rotor" },
+        { "name": "Copper Rotor", "inputs": "6x Copper Sheet + 52x Screw", "outputs": "3x Rotor" },
+        { "name": "Steel Rotor", "inputs": "2x Steel Pipe + 6x Wire", "outputs": "1x Rotor" }
+      ],
+      "Stator": [
+        { "name": "Standard", "inputs": "3x Steel Pipe + 8x Wire", "outputs": "1x Stator" },
+        { "name": "Quickwire Stator", "inputs": "4x Steel Pipe + 15x Quickwire", "outputs": "2x Stator" }
+      ],
+      "Motor": [
+        { "name": "Standard", "inputs": "2x Rotor + 2x Stator", "outputs": "1x Motor" },
+        { "name": "Rigour Motor", "inputs": "3x Rotor + 3x Stator + 1x Crystal Oscillator", "outputs": "6x Motor" },
+        { "name": "Electric Motor", "inputs": "1x Electromagnetic Control Rod + 2x Rotor", "outputs": "2x Motor" }
+      ],
+      "Encased Industrial Beam": [
+        { "name": "Standard", "inputs": "3x Steel Beam + 6x Concrete", "outputs": "1x Encased Industrial Beam" },
+        { "name": "Encased Industrial Pipe", "inputs": "7x Steel Pipe + 5x Concrete", "outputs": "1x Encased Industrial Beam" }
+      ],
+      "Steel Beam": [
+        { "name": "Standard", "inputs": "4x Steel Ingot", "outputs": "1x Steel Beam" },
+        { "name": "Molded Beam", "inputs": "11x Steel Ingot + 5x Concrete", "outputs": "9x Steel Beam" }
+      ],
+      "Steel Pipe": [
+        { "name": "Standard", "inputs": "3x Steel Ingot", "outputs": "2x Steel Pipe" },
+        { "name": "Iron Pipe", "inputs": "2x Iron Ingot", "outputs": "5x Steel Pipe" }
+      ],
+      "Quickwire": [
+        { "name": "Standard", "inputs": "1x Caterium Ingot", "outputs": "5x Quickwire" },
+        { "name": "Fused Quickwire", "inputs": "1x Caterium Ingot + 5x Copper Ingot", "outputs": "12x Quickwire" }
+      ],
+      "Circuit Board": [
+        { "name": "Standard", "inputs": "2x Copper Sheet + 4x Plastic", "outputs": "1x Circuit Board" },
+        { "name": "Silicon Circuit Board", "inputs": "11x Copper Sheet + 11x Silica", "outputs": "5x Circuit Board" },
+        { "name": "Caterium Circuit Board", "inputs": "10x Plastic + 30x Quickwire", "outputs": "7x Circuit Board" }
+      ],
+      "A.I. Limiter": [
+        { "name": "Standard", "inputs": "5x Copper Sheet + 20x Quickwire", "outputs": "1x A.I. Limiter" },
+        { "name": "Caterium A.I. Limiter", "inputs": "12x Circuit Board + 30x Quickwire", "outputs": "2x A.I. Limiter" }
+      ],
+      "High-Speed Connector": [
+        { "name": "Standard", "inputs": "56x Quickwire + 10x Cable + 1x Circuit Board", "outputs": "1x High-Speed Connector" },
+        { "name": "Silicon High-Speed Connector", "inputs": "60x Quickwire + 25x Silica + 2x Circuit Board", "outputs": "2x High-Speed Connector" }
+      ],
+      "Computer": [
+        { "name": "Standard", "inputs": "10x Circuit Board + 9x Cable + 18x Plastic + 52x Screw", "outputs": "1x Computer" },
+        { "name": "Caterium Computer", "inputs": "7x Circuit Board + 28x Quickwire + 12x Rubber", "outputs": "1x Computer" },
+        { "name": "Crystal Computer", "inputs": "3x Circuit Board + 2x Crystal Oscillator", "outputs": "2x Computer" }
+      ],
+      "Supercomputer": [
+        { "name": "Standard", "inputs": "2x Computer + 2x A.I. Limiter + 3x High-Speed Connector + 28x Plastic", "outputs": "1x Supercomputer" },
+        { "name": "Super-State Computer", "inputs": "3x Computer + 2x Electromagnetic Control Rod + 20x Battery + 45x Wire", "outputs": "2x Supercomputer" },
+        { "name": "OC Supercomputer", "inputs": "3x Radio Control Unit + 3x Cooling System", "outputs": "1x Supercomputer" }
+      ],
+      "Black Powder": [
+        { "name": "Standard", "inputs": "1x Coal + 1x Sulfur", "outputs": "2x Black Powder" },
+        { "name": "Fine Black Powder", "inputs": "2x Sulfur + 1x Compacted Coal", "outputs": "4x Black Powder" }
+      ],
+      "Compacted Coal": [
+        { "name": "Standard", "inputs": "5x Coal + 3x Sulfur", "outputs": "5x Compacted Coal" }
+      ],
+      "Rubber": [
+        { "name": "Standard", "inputs": "3x Crude Oil", "outputs": "2x Rubber" },
+        { "name": "Residual Rubber", "inputs": "4x Polymer Resin + 4x Water", "outputs": "2x Rubber" },
+        { "name": "Recycled Rubber", "inputs": "6x Fuel + 6x Plastic", "outputs": "12x Rubber" }
+      ],
+      "Plastic": [
+        { "name": "Standard", "inputs": "3x Crude Oil", "outputs": "2x Plastic" },
+        { "name": "Residual Plastic", "inputs": "6x Polymer Resin + 2x Water", "outputs": "2x Plastic" },
+        { "name": "Recycled Plastic", "inputs": "6x Fuel + 6x Rubber", "outputs": "12x Plastic" },
+        { "name": "Diluted Packaged Fuel", "inputs": "1x Heavy Oil Residue + 2x Packaged Water", "outputs": "2x Packaged Fuel" }
+      ],
+      "Fuel": [
+        { "name": "Standard", "inputs": "6x Crude Oil", "outputs": "4x Fuel + 3x Polymer Resin" },
+        { "name": "Residual Fuel", "inputs": "6x Heavy Oil Residue", "outputs": "4x Fuel" },
+        { "name": "Diluted Fuel", "inputs": "5x Heavy Oil Residue + 10x Water", "outputs": "10x Fuel" },
+        { "name": "Unpackage Fuel", "inputs": "2x Packaged Fuel", "outputs": "2x Fuel + 2x Empty Canister" }
+      ],
+      "Turbo Fuel": [
+        { "name": "Standard", "inputs": "6x Fuel + 4x Compacted Coal", "outputs": "5x Turbofuel" },
+        { "name": "Turbo Heavy Fuel", "inputs": "5x Heavy Oil Residue + 4x Compacted Coal", "outputs": "4x Turbofuel" },
+        { "name": "Turbo Blend Fuel", "inputs": "2x Fuel + 4x Heavy Oil Residue + 3x Sulfur + 3x Petroleum Coke", "outputs": "6x Turbofuel" }
+      ],
+      "Silica": [
+        { "name": "Standard", "inputs": "3x Raw Quartz", "outputs": "5x Silica" },
+        { "name": "Cheap Silica", "inputs": "3x Raw Quartz + 5x Limestone", "outputs": "7x Silica" },
+        { "name": "Alumina Solution", "inputs": "7x Bauxite + 12x Water", "outputs": "8x Alumina Solution + 5x Silica" }
+      ],
+      "Quartz Crystal": [
+        { "name": "Standard", "inputs": "5x Raw Quartz", "outputs": "3x Quartz Crystal" },
+        { "name": "Pure Quartz Crystal", "inputs": "9x Raw Quartz + 5x Water", "outputs": "7x Quartz Crystal" },
+        { "name": "Fused Quartz Crystal", "inputs": "25x Raw Quartz + 3x Coal", "outputs": "18x Quartz Crystal + 22x Silica" }
+      ],
+      "Crystal Oscillator": [
+        { "name": "Standard", "inputs": "36x Quartz Crystal + 28x Cable + 5x Reinforced Iron Plate", "outputs": "2x Crystal Oscillator" },
+        { "name": "Insulated Crystal Oscillator", "inputs": "10x Quartz Crystal + 7x Rubber + 1x A.I. Limiter", "outputs": "1x Crystal Oscillator" }
+      ],
+      "Battery": [
+        { "name": "Standard", "inputs": "2.5x Sulfuric Acid + 2x Alumina Solution + 1x Aluminum Casing", "outputs": "1x Battery + 1.5x Water" },
+        { "name": "Classic Battery", "inputs": "6x Sulfur + 7x Alclad Aluminum Sheet + 8x Plastic + 12x Wire", "outputs": "4x Battery" }
+      ],
+      "Nobelisk": [
+        { "name": "Standard", "inputs": "2x Black Powder + 2x Steel Pipe", "outputs": "1x Nobelisk" },
+        { "name": "Seismic Nobelisk", "inputs": "4x Black Powder + 3x Steel Pipe + 1x Crystal Oscillator", "outputs": "2x Nobelisk" }
+      ]
+}

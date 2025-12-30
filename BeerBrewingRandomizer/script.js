@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             data = jsonData;
             loadOptions();
             randomizeAll();
+        })
+        .catch(error => {
+            console.error('Error loading data:', error);
+            beerStyleRollEl.textContent = 'Error loading beer data';
         });
 
     function getRandomKey(obj) {
@@ -34,20 +38,46 @@ document.addEventListener('DOMContentLoaded', () => {
         return options[category][name];
     }
 
+    function getEnabledItems(category) {
+        if (!data[category]) return [];
+        return data[category].filter(item => isEnabled(category, item.name));
+    }
+
     function setBeerStyle() {
         const beerStyles = data.beer_styles;
-        const mainStyleKey = getRandomKey(beerStyles);
-        const mainStyle = beerStyles[mainStyleKey];
+        if (!beerStyles) {
+            beerStyleRollEl.textContent = 'No beer styles available';
+            return;
+        }
         
-        const categoryKey = getRandomKey(mainStyle.categories);
-        const category = mainStyle.categories[categoryKey];
+        // Collect all enabled beers from all categories
+        const allEnabledBeers = [];
+        Object.keys(beerStyles).forEach(mainStyleKey => {
+            const mainStyle = beerStyles[mainStyleKey];
+            Object.keys(mainStyle.categories).forEach(categoryKey => {
+                const categoryData = mainStyle.categories[categoryKey];
+                const enabledBeers = categoryData.filter(beer => isEnabled(categoryKey, beer.name));
+                enabledBeers.forEach(beer => {
+                    allEnabledBeers.push({
+                        beer: beer,
+                        mainStyleKey: mainStyleKey,
+                        categoryKey: categoryKey
+                    });
+                });
+            });
+        });
         
-        const beerObj = category[Math.floor(Math.random() * category.length)];
+        if (allEnabledBeers.length === 0) {
+            beerStyleRollEl.textContent = 'No beers selected';
+            return;
+        }
+        
+        // Pick a random enabled beer
+        const selected = allEnabledBeers[Math.floor(Math.random() * allEnabledBeers.length)];
+        const mainStyleName = selected.mainStyleKey.charAt(0).toUpperCase() + selected.mainStyleKey.slice(1);
+        const categoryName = selected.categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-        const mainStyleName = mainStyleKey.charAt(0).toUpperCase() + mainStyleKey.slice(1);
-        const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-
-        beerStyleRollEl.innerHTML = `${mainStyleName} -> ${categoryName} -> <a href="${beerObj.info_url}" target="_blank" rel="noopener noreferrer">${beerObj.name}</a>`;
+        beerStyleRollEl.innerHTML = `${mainStyleName} -> ${categoryName} -> <a href="${selected.beer.info_url}" target="_blank" rel="noopener noreferrer">${selected.beer.name}</a>`;
     }
 
     function randomizeAll() {

@@ -54,7 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getEnabledItems(category) {
         if (!data[category]) return [];
-        return data[category].filter(item => isEnabled(category, item.name));
+        return data[category].filter(item => {
+            const itemName = item.className || item.name || item.masteryName;
+            return isEnabled(category, itemName);
+        });
     }
 
     function getRandomElement(arr) {
@@ -63,15 +66,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function generateClass() {
         const { classes } = characterData;
-        selectedClass = getRandomElement(getEnabledItems('classes'));
+        const enabledClasses = getEnabledItems('classes');
+        if (enabledClasses.length === 0) {
+            classNameEl.textContent = 'No classes selected';
+            abilitiesListEl.innerHTML = '<li>None</li>';
+            weaponTypeEl.textContent = 'None';
+            return;
+        }
+        selectedClass = getRandomElement(enabledClasses);
         classNameEl.textContent = `${selectedClass.className} (${selectedClass.masteries.join(', ')})`;
     }
 
     function generateAbilitiesAndWeapon() {
         const { abilities: masteryAbilities } = characterData;
-        let potentialAbilities = masteryAbilities
+        
+        // Get all abilities for the selected masteries
+        let allAbilities = masteryAbilities
             .filter(m => selectedClass.masteries.includes(m.masteryName))
             .flatMap(m => m.abilityList);
+        
+        // Filter by enabled abilities
+        let potentialAbilities = allAbilities.filter(ability => {
+            // Find which mastery this ability belongs to
+            const mastery = masteryAbilities.find(m => 
+                m.abilityList.some(a => a.name === ability.name)
+            );
+            if (!mastery) return true;
+            return isEnabled(mastery.masteryName, ability.name);
+        });
+
+        if (potentialAbilities.length === 0) {
+            selectedAbilities = [];
+            compatibleWeapons = [];
+            displayAbilities();
+            generateWeapon();
+            return;
+        }
 
         const focusAbilityCount = Math.floor(Math.random() * 3) + 1;
         selectedAbilities = [];

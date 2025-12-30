@@ -35,20 +35,46 @@ document.addEventListener('DOMContentLoaded', () => {
             const styleType = beerStyles[styleTypeKey];
             const categories = styleType.categories;
             const categoryKey = getRandomKey(categories);
-            const beerObj = getRandomValue(categories[categoryKey]);
-            result = `Beer -> ${styleTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} -> ${categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} -> <a href="${beerObj.info_url}" target="_blank" rel="noopener noreferrer">${beerObj.name}</a>`;
+            const categoryData = categories[categoryKey];
+            
+            // Filter by enabled items
+            const enabledBeers = categoryData.filter(beer => isEnabled(categoryKey, beer.name));
+            if (enabledBeers.length === 0) {
+                result = 'No beers selected in this category';
+            } else {
+                const beerObj = getRandomValue(enabledBeers);
+                result = `Beer -> ${styleTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} -> ${categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} -> <a href="${beerObj.info_url}" target="_blank" rel="noopener noreferrer">${beerObj.name}</a>`;
+            }
         } else if (category === 'wine') {
             // Handle wine types (Wines array, Fruit Wine, Mead, Sake)
-            const wineCategories = data.Wines;
-            const wineType = getRandomValue(wineCategories);
-            const wineObj = getRandomValue(data[wineType]);
-            result = `Wine -> ${wineType} -> <a href="${wineObj.info_url}" target="_blank" rel="noopener noreferrer">${wineObj.name}</a>`;
+            const wineCategories = getEnabledItems('Wines');
+            if (wineCategories.length === 0) {
+                result = 'No wine types selected';
+            } else {
+                const wineTypeObj = getRandomValue(wineCategories);
+                const wineType = wineTypeObj.name;
+                const wineData = getEnabledItems(wineType);
+                if (wineData.length === 0) {
+                    result = `No ${wineType} wines selected`;
+                } else {
+                    const wineObj = getRandomValue(wineData);
+                    result = `Wine -> ${wineType} -> <a href="${wineObj.info_url}" target="_blank" rel="noopener noreferrer">${wineObj.name}</a>`;
+                }
+            }
         } else if (category === 'spirits') {
             // Handle spirits structure
             const spirits = data.spirits;
             const spiritTypeKey = getRandomKey(spirits);
-            const spiritObj = getRandomValue(spirits[spiritTypeKey]);
-            result = `Spirits -> ${spiritTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} -> <a href="${spiritObj.info_url}" target="_blank" rel="noopener noreferrer">${spiritObj.name}</a>`;
+            const spiritData = spirits[spiritTypeKey];
+            
+            // Filter by enabled items
+            const enabledSpirits = spiritData.filter(spirit => isEnabled(spiritTypeKey, spirit.name));
+            if (enabledSpirits.length === 0) {
+                result = 'No spirits selected in this category';
+            } else {
+                const spiritObj = getRandomValue(enabledSpirits);
+                result = `Spirits -> ${spiritTypeKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())} -> <a href="${spiritObj.info_url}" target="_blank" rel="noopener noreferrer">${spiritObj.name}</a>`;
+            }
         }
 
         beverageRollEl.innerHTML = result;

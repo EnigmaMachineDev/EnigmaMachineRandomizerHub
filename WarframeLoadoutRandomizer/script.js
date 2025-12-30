@@ -68,84 +68,150 @@ document.addEventListener('DOMContentLoaded', () => {
         return options[category][name];
     }
 
-    function getEnabledItems(category) {
-        if (!data[category]) return [];
-        return data[category].filter(item => isEnabled(category, item.name));
+    function getEnabledItems(category, dataSource) {
+        if (!dataSource) return [];
+        return dataSource.filter(item => isEnabled(category, item.name));
     }
 
     function generateWarframe() {
         if (!warframesData) return;
-        const randomWarframe = getRandomElement(getEnabledItems('Warframes'));
+        const enabledWarframes = getEnabledItems('Warframes', warframesData);
+        if (enabledWarframes.length === 0) {
+            warframeEl.textContent = 'No warframes available';
+            warframeLink.href = '#';
+            return;
+        }
+        const randomWarframe = getRandomElement(enabledWarframes);
         warframeEl.textContent = randomWarframe.name;
         warframeLink.href = randomWarframe.link;
     }
 
     function generatePrimary() {
         if (!primaryWeaponsData) return;
-        const randomPrimary = getRandomElement(getEnabledItems('Primary Weapons'));
+        const enabledPrimary = getEnabledItems('Primary Weapons', primaryWeaponsData);
+        if (enabledPrimary.length === 0) {
+            primaryEl.textContent = 'No primary weapons available';
+            primaryLink.href = '#';
+            return;
+        }
+        const randomPrimary = getRandomElement(enabledPrimary);
         primaryEl.textContent = randomPrimary.name;
         primaryLink.href = randomPrimary.link;
     }
 
     function generateSecondary() {
         if (!secondaryWeaponsData) return;
-        const randomSecondary = getRandomElement(getEnabledItems('Secondary Weapons'));
+        const enabledSecondary = getEnabledItems('Secondary Weapons', secondaryWeaponsData);
+        if (enabledSecondary.length === 0) {
+            secondaryEl.textContent = 'No secondary weapons available';
+            secondaryLink.href = '#';
+            return;
+        }
+        const randomSecondary = getRandomElement(enabledSecondary);
         secondaryEl.textContent = randomSecondary.name;
         secondaryLink.href = randomSecondary.link;
     }
 
     function generateMelee() {
         if (!meleeWeaponsData) return;
-        const randomMelee = getRandomElement(getEnabledItems('Melee Weapons'));
+        const enabledMelee = getEnabledItems('Melee Weapons', meleeWeaponsData);
+        if (enabledMelee.length === 0) {
+            meleeEl.textContent = 'No melee weapons available';
+            meleeLink.href = '#';
+            return;
+        }
+        const randomMelee = getRandomElement(enabledMelee);
         meleeEl.textContent = randomMelee.name;
         meleeLink.href = randomMelee.link;
     }
 
     function generatePet() {
         if (!petsData) return;
-        const randomPet = getRandomElement(getEnabledItems('Pets'));
+        const enabledPets = getEnabledItems('Pets', petsData);
+        if (enabledPets.length === 0) {
+            petEl.textContent = 'No pets available';
+            petLink.href = '#';
+            return;
+        }
+        const randomPet = getRandomElement(enabledPets);
         petEl.textContent = randomPet.name;
         petLink.href = randomPet.link;
     }
 
     function generateFocus() {
         if (!focusData) return;
-        const randomFocus = getRandomElement(getEnabledItems('Focus'));
+        const enabledFocus = getEnabledItems('Focus', focusData);
+        if (enabledFocus.length === 0) {
+            focusEl.textContent = 'No focus schools available';
+            focusLink.href = '#';
+            return;
+        }
+        const randomFocus = getRandomElement(enabledFocus);
         focusEl.textContent = randomFocus.name;
         focusLink.href = randomFocus.link;
     }
 
     function generateAmp() {
         if (!ampsData) return;
-        const randomAmp = getRandomElement(getEnabledItems('Amps'));
+        const enabledAmps = getEnabledItems('Amps', ampsData);
+        if (enabledAmps.length === 0) {
+            ampEl.textContent = 'No amps available';
+            ampLink.href = '#';
+            return;
+        }
+        const randomAmp = getRandomElement(enabledAmps);
         ampEl.textContent = randomAmp.name;
         ampLink.href = randomAmp.link;
     }
 
     function generateArchwing() {
         if (!archwingsData) return;
-        const randomArchwing = getRandomElement(getEnabledItems('Archwings'));
+        const enabledArchwings = getEnabledItems('Archwings', archwingsData);
+        if (enabledArchwings.length === 0) {
+            archwingEl.textContent = 'No archwings available';
+            archwingLink.href = '#';
+            return;
+        }
+        const randomArchwing = getRandomElement(enabledArchwings);
         archwingEl.textContent = randomArchwing.name;
         archwingLink.href = randomArchwing.link;
     }
 
     function generateArchgun() {
         if (!archgunsData) return;
-        const randomArchgun = getRandomElement(getEnabledItems('Archgun'));
+        const enabledArchguns = getEnabledItems('Archgun', archgunsData);
+        if (enabledArchguns.length === 0) {
+            archgunEl.textContent = 'No archguns available';
+            archgunLink.href = '#';
+            return;
+        }
+        const randomArchgun = getRandomElement(enabledArchguns);
         archgunEl.textContent = randomArchgun.name;
         archgunLink.href = randomArchgun.link;
     }
 
     function generateArchmelee() {
         if (!archMeleesData) return;
-        const randomArchmelee = getRandomElement(getEnabledItems('Arch Melees'));
+        const enabledArchmelees = getEnabledItems('Arch Melees', archMeleesData);
+        if (enabledArchmelees.length === 0) {
+            archmeleeEl.textContent = 'No arch melees available';
+            archmeleeLink.href = '#';
+            return;
+        }
+        const randomArchmelee = getRandomElement(enabledArchmelees);
         archmeleeEl.textContent = randomArchmelee.name;
         archmeleeLink.href = randomArchmelee.link;
     }
 
     function generateNecramech() {
         if (!necramechsData) return;
-        const randomNecramech = getRandomElement(getEnabledItems('Necramech'));
+        const enabledNecramechs = getEnabledItems('Necramech', necramechsData);
+        if (enabledNecramechs.length === 0) {
+            necramechEl.textContent = 'No necramechs available';
+            necramechLink.href = '#';
+            return;
+        }
+        const randomNecramech = getRandomElement(enabledNecramechs);
         necramechEl.textContent = randomNecramech.name;
         necramechLink.href = randomNecramech.link;
     }
@@ -182,7 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
             archMeleesData = data['Arch Melees'];
             necramechsData = data.Necramech;
 
-            loadOptions();randomizeAll();
+            loadOptions();
+            randomizeAll();
 
             rerollWarframeBtn.addEventListener('click', generateWarframe);
             rerollPrimaryBtn.addEventListener('click', generatePrimary);

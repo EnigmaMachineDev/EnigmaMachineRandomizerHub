@@ -33,10 +33,6 @@
       "link": "https://wiki.avakot.org/Gwylen"
     },
     {
-      "name": "Odiac",
-      "link": "https://wiki.avakot.org/Odiac"
-    },
-    {
       "name": "Duhk Halic",
       "link": "https://wiki.avakot.org/Duhk_Halic"
     },
@@ -95,6 +91,42 @@
     {
       "name": "The Erstroot",
       "link": "https://wiki.avakot.org/The_Erstroot"
+    },
+    {
+      "name": "Nurash",
+      "link": "https://wiki.avakot.org/Nurash"
+    },
+    {
+      "name": "The Paragon",
+      "link": "https://wiki.avakot.org/The_Paragon"
+    },
+    {
+      "name": "Needleseye",
+      "link": "https://wiki.avakot.org/Needleseye"
+    },
+    {
+      "name": "Purity",
+      "link": "https://wiki.avakot.org/Purity"
+    },
+    {
+      "name": "Maestro",
+      "link": "https://wiki.avakot.org/Maestro"
+    },
+    {
+      "name": "Rostrum",
+      "link": "https://wiki.avakot.org/Rostrum"
+    },
+    {
+      "name": "The Starling",
+      "link": "https://wiki.avakot.org/The_Starling"
+    },
+    {
+      "name": "The Ivor",
+      "link": "https://wiki.avakot.org/The_Ivor"
+    },
+    {
+      "name": "The Alder",
+      "link": "https://wiki.avakot.org/The_Alder"
     }
   ],
   "Secondary": [
@@ -121,6 +153,22 @@
     {
       "name": "Witan",
       "link": "https://wiki.avakot.org/Witan"
+    },
+    {
+      "name": "Odiac",
+      "link": "https://wiki.avakot.org/Odiac"
+    },
+    {
+      "name": "Thrice Spurns",
+      "link": "https://wiki.avakot.org/Thrice_Spurns"
+    },
+    {
+      "name": "Esthelle",
+      "link": "https://wiki.avakot.org/Esthelle"
+    },
+    {
+      "name": "Cobladh",
+      "link": "https://wiki.avakot.org/Cobladh"
     }
   ],
   "Pact": [
@@ -191,7 +239,7 @@
       "link": "https://wiki.avakot.org/wiki/Armor"
     },
     {
-      "name": "Ardbearer Set",
+      "name": "Arbearer Set",
       "link": "https://wiki.avakot.org/wiki/Armor"
     },
     {
@@ -220,6 +268,22 @@
     },
     {
       "name": "Oscelda Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Thawtide Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Wyld Oscelda Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Wyld Tethren Set",
+      "link": "https://wiki.avakot.org/wiki/Armor"
+    },
+    {
+      "name": "Wyld Sirin Set",
       "link": "https://wiki.avakot.org/wiki/Armor"
     }
   ]

@@ -70,14 +70,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateSpells() {
-        if (!magicData) return;
+        if (!magicData || !casterWeaponsData) return;
 
-        const spellRoll = Math.floor(Math.random() * 5) + 1;
+        // Determine which caster weapon types are available
+        const enabledCasterWeapons = getEnabledItems('caster_weapons', casterWeaponsData);
+        const availableMagicTypes = new Set();
+        enabledCasterWeapons.forEach(weapon => {
+            if (weapon.magic_type.includes('/')) {
+                weapon.magic_type.split('/').forEach(type => availableMagicTypes.add(type.trim()));
+            } else {
+                availableMagicTypes.add(weapon.magic_type);
+            }
+        });
+
+        // Determine which spell types have enabled spells AND matching caster weapons
+        const availableSpellTypes = [];
+        const enabledSorceries = getEnabledItems('sorceries', magicData.sorceries);
+        const enabledMiracles = getEnabledItems('miracles', magicData.miracles);
+        const enabledPyromancies = getEnabledItems('pyromancies', magicData.pyromancies);
+        const enabledHexes = getEnabledItems('hexes', magicData.hexes);
+
+        if (enabledSorceries.length > 0 && availableMagicTypes.has('Sorcery')) {
+            availableSpellTypes.push('Sorceries');
+        }
+        if (enabledMiracles.length > 0 && availableMagicTypes.has('Miracle')) {
+            availableSpellTypes.push('Miracles');
+        }
+        if (enabledPyromancies.length > 0 && availableMagicTypes.has('Pyromancy')) {
+            availableSpellTypes.push('Pyromancies');
+        }
+        if (enabledHexes.length > 0 && availableMagicTypes.has('Hex')) {
+            availableSpellTypes.push('Hexes');
+        }
+
+        // Always include "None" as an option
+        availableSpellTypes.push('None');
+
+        const spellRoll = getRandomElement(availableSpellTypes);
         let selectedSpells = [];
 
-        if (spellRoll === 2) { // Sorceries
+        if (spellRoll === 'Sorceries') {
             currentSpellType = '(Sorceries)';
-            const enabledSorceries = getEnabledItems('sorceries', magicData.sorceries);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledSorceries.length);
             const spellsCopy = [...enabledSorceries];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -85,9 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomIndex = Math.floor(Math.random() * spellsCopy.length);
                 selectedSpells.push(spellsCopy.splice(randomIndex, 1)[0]);
             }
-        } else if (spellRoll === 3) { // Miracles
+        } else if (spellRoll === 'Miracles') {
             currentSpellType = '(Miracles)';
-            const enabledMiracles = getEnabledItems('miracles', magicData.miracles);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledMiracles.length);
             const spellsCopy = [...enabledMiracles];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -95,9 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomIndex = Math.floor(Math.random() * spellsCopy.length);
                 selectedSpells.push(spellsCopy.splice(randomIndex, 1)[0]);
             }
-        } else if (spellRoll === 4) { // Pyromancies
+        } else if (spellRoll === 'Pyromancies') {
             currentSpellType = '(Pyromancies)';
-            const enabledPyromancies = getEnabledItems('pyromancies', magicData.pyromancies);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledPyromancies.length);
             const spellsCopy = [...enabledPyromancies];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -105,9 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const randomIndex = Math.floor(Math.random() * spellsCopy.length);
                 selectedSpells.push(spellsCopy.splice(randomIndex, 1)[0]);
             }
-        } else if (spellRoll === 5) { // Hexes
+        } else if (spellRoll === 'Hexes') {
             currentSpellType = '(Hexes)';
-            const enabledHexes = getEnabledItems('hexes', magicData.hexes);
             const numberOfSpells = Math.min(Math.floor(Math.random() * 3) + 1, enabledHexes.length);
             const spellsCopy = [...enabledHexes];
             for (let i = 0; i < numberOfSpells; i++) {
@@ -142,8 +172,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let casterWeaponName = 'None';
         let casterWeaponLink = '#';
 
+        // Get enabled caster weapons first
+        const enabledCasterWeapons = getEnabledItems('caster_weapons', casterWeaponsData);
+
         if (currentSpellType === '(Sorceries)') {
-            const staffs = casterWeaponsData.filter(w => 
+            const staffs = enabledCasterWeapons.filter(w => 
                 w.magic_type === 'Sorcery' || w.magic_type.includes('Sorcery')
             );
             if (staffs.length > 0) {
@@ -152,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 casterWeaponLink = randomStaff.url;
             }
         } else if (currentSpellType === '(Miracles)') {
-            const chimes = casterWeaponsData.filter(w => 
+            const chimes = enabledCasterWeapons.filter(w => 
                 w.magic_type === 'Miracle' || w.magic_type.includes('Miracle')
             );
             if (chimes.length > 0) {
@@ -161,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 casterWeaponLink = randomChime.url;
             }
         } else if (currentSpellType === '(Pyromancies)') {
-            const flames = casterWeaponsData.filter(w => w.magic_type === 'Pyromancy');
+            const flames = enabledCasterWeapons.filter(w => w.magic_type === 'Pyromancy');
             if (flames.length > 0) {
                 const randomFlame = getRandomElement(flames);
                 casterWeaponName = randomFlame.name;
@@ -169,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } else if (currentSpellType === '(Hexes)') {
             // Hexes can use staffs or chimes that support hexes
-            const hexWeapons = casterWeaponsData.filter(w => 
+            const hexWeapons = enabledCasterWeapons.filter(w => 
                 w.magic_type.includes('Hex') || w.magic_type === 'Sorcery/Miracle/Hex'
             );
             if (hexWeapons.length > 0) {

@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
-    const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
+    const STORAGE_KEY = 'artworkMediaOptions';
+    const JSON_FILE = 'mediums.json';
 
     fetch(JSON_FILE)
         .then(res => res.json())
@@ -20,17 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading options:', error));
 
     function initializeOptions(data) {
-        Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
-                const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
-            }
-        });
+        // Data is an array of mediums
+        if (Array.isArray(data) && data.length > 0) {
+            addCategory('mediums', 'Mediums', data);
+        }
+        // Add canvas sizes category
+        const canvasSizes = ['Small', 'Medium', 'Large'];
+        addCategory('canvasSizes', 'Canvas Sizes', canvasSizes.map(size => ({name: size})));
     }
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');

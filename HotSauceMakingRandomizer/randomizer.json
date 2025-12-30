@@ -359,5 +359,11 @@
       "description": "Adds peppery bite and crunch",
       "info_url": "https://en.wikipedia.org/wiki/Radish"
     }
+  ],
+  "fermentation": [
+    "Fresh Fermented",
+    "Roasted Fermented",
+    "Fresh Non-Fermented",
+    "Roasted Non-Fermented"
   ]
 }

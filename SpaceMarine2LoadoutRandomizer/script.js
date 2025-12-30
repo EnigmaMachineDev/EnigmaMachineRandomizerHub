@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const secondaryEl = document.getElementById('secondary');
     const meleeEl = document.getElementById('melee');
     const missionEl = document.getElementById('mission');
-    const enableDlcEl = document.getElementById('enable-dlc');
 
     const rerollChapterBtn = document.getElementById('reroll-chapter');
     const rerollClassBtn = document.getElementById('reroll-class');
@@ -22,43 +21,72 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
-            loadOptions();randomizeAll();
+            loadOptions();
+            randomizeAll();
         });
 
     function getRandomItem(items) {
+        if (!items || items.length === 0) return 'N/A';
         return items[Math.floor(Math.random() * items.length)];
     }
 
     function getRandomValue(arr){return arr[Math.floor(Math.random()*arr.length)];}
     function loadOptions(){const saved=localStorage.getItem(STORAGE_KEY);if(saved){try{options=JSON.parse(saved);}catch(e){}}}
     function isEnabled(category,name){if(!options[category])return true;if(!options[category].hasOwnProperty(name))return true;return options[category][name];}
-    function getEnabledItems(category){if(!data[category])return[];return data[category].filter(item=>isEnabled(category,item.name));}
+    function getEnabledItems(category){if(!data[category])return[];return data[category].filter(item=>isEnabled(category,item.name||item));}
+    function getEnabledWeapons(weaponCategory){if(!data[weaponCategory])return[];return data[weaponCategory].filter(weapon=>isEnabled(weaponCategory,weapon));}
 
     function setItem(element, item) {
         element.textContent = item;
     }
 
     function rollChapter() {
-        let chapters = data.chapters.vanilla;
-        if (enableDlcEl.checked) {
-            chapters = [...data.chapters.vanilla, ...data.chapters.DLC];
+        const enabledChapters = getEnabledItems('chapters');
+        if (enabledChapters.length === 0) {
+            setItem(chapterEl, 'No chapters selected');
+            return;
         }
-        const chapter = getRandomItem(chapters);
-        setItem(chapterEl, chapter);
+        const chapter = getRandomItem(enabledChapters);
+        setItem(chapterEl, chapter.name);
     }
 
     function rollClass() {
-        const classes = Object.keys(data.classes);
-        currentClass = getRandomItem(classes);
+        const enabledClasses = getEnabledItems('classList');
+        if (enabledClasses.length === 0) {
+            currentClass = '';
+            setItem(classEl, 'No classes selected');
+            setItem(primaryEl, 'N/A');
+            setItem(secondaryEl, 'N/A');
+            setItem(meleeEl, 'N/A');
+            return;
+        }
+        currentClass = getRandomItem(enabledClasses);
         setItem(classEl, currentClass);
         rollWeapons();
     }
 
     function rollWeapons() {
+        if (!currentClass || !data.classes[currentClass]) {
+            setItem(primaryEl, 'N/A');
+            setItem(secondaryEl, 'N/A');
+            setItem(meleeEl, 'N/A');
+            return;
+        }
+        
         const classData = data.classes[currentClass];
-        const primary = getRandomItem(classData.primaries) || 'N/A';
-        const secondary = getRandomItem(classData.secondaries) || 'N/A';
-        const melee = getRandomItem(classData.melee) || 'N/A';
+        
+        // Filter weapons by both class compatibility AND user options
+        const enabledPrimaries = getEnabledWeapons('allPrimaries');
+        const enabledSecondaries = getEnabledWeapons('allSecondaries');
+        const enabledMelee = getEnabledWeapons('allMelee');
+        
+        const availablePrimaries = classData.primaries.filter(w => enabledPrimaries.includes(w));
+        const availableSecondaries = classData.secondaries.filter(w => enabledSecondaries.includes(w));
+        const availableMelee = classData.melee.filter(w => enabledMelee.includes(w));
+        
+        const primary = getRandomItem(availablePrimaries) || 'N/A';
+        const secondary = getRandomItem(availableSecondaries) || 'N/A';
+        const melee = getRandomItem(availableMelee) || 'N/A';
 
         setItem(primaryEl, primary);
         setItem(secondaryEl, secondary);
@@ -79,15 +107,24 @@ document.addEventListener('DOMContentLoaded', () => {
     rerollChapterBtn.addEventListener('click', rollChapter);
     rerollClassBtn.addEventListener('click', rollClass);
     rerollPrimaryBtn.addEventListener('click', () => {
-        const primary = getRandomItem(data.classes[currentClass].primaries) || 'N/A';
+        if (!currentClass || !data.classes[currentClass]) return;
+        const enabledPrimaries = getEnabledWeapons('allPrimaries');
+        const availablePrimaries = data.classes[currentClass].primaries.filter(w => enabledPrimaries.includes(w));
+        const primary = getRandomItem(availablePrimaries) || 'N/A';
         setItem(primaryEl, primary);
     });
     rerollSecondaryBtn.addEventListener('click', () => {
-        const secondary = getRandomItem(data.classes[currentClass].secondaries) || 'N/A';
+        if (!currentClass || !data.classes[currentClass]) return;
+        const enabledSecondaries = getEnabledWeapons('allSecondaries');
+        const availableSecondaries = data.classes[currentClass].secondaries.filter(w => enabledSecondaries.includes(w));
+        const secondary = getRandomItem(availableSecondaries) || 'N/A';
         setItem(secondaryEl, secondary);
     });
     rerollMeleeBtn.addEventListener('click', () => {
-        const melee = getRandomItem(data.classes[currentClass].melee) || 'N/A';
+        if (!currentClass || !data.classes[currentClass]) return;
+        const enabledMelee = getEnabledWeapons('allMelee');
+        const availableMelee = data.classes[currentClass].melee.filter(w => enabledMelee.includes(w));
+        const melee = getRandomItem(availableMelee) || 'N/A';
         setItem(meleeEl, melee);
     });
     rerollMissionBtn.addEventListener('click', rollMission);

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = window.RANDOMIZER_STORAGE_KEY || 'randomizerOptions';
+    const STORAGE_KEY = 'brewingOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -21,16 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initializeOptions(data) {
         Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
+            const categoryData = data[categoryKey];
+            
+            // Handle flat arrays (e.g., weapons, caster_weapons)
+            if (Array.isArray(categoryData) && categoryData.length > 0) {
                 const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
+                addCategory(categoryKey, categoryName, categoryData);
+            }
+            // Handle nested objects (e.g., armor: {light_sets, medium_sets, heavy_sets})
+            else if (typeof categoryData === 'object' && categoryData !== null && !Array.isArray(categoryData)) {
+                Object.keys(categoryData).forEach(subKey => {
+                    if (Array.isArray(categoryData[subKey]) && categoryData[subKey].length > 0) {
+                        const subCategoryName = subKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        addCategory(subKey, subCategoryName, categoryData[subKey]);
+                    }
+                });
             }
         });
     }
 
     function addCategory(categoryKey, categoryName, items) {
         const section = document.createElement('div');
-        section.className = 'category-section';
+        section.className = 'category-section collapsed';
         section.dataset.category = categoryKey;
 
         const header = document.createElement('div');

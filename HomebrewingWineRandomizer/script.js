@@ -20,8 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     function getRandomItem(category) {
-        function getRandomValue(arr){return arr[Math.floor(Math.random()*arr.length)];}
+        // For Wines category, items are strings not objects
+        if (category === 'Wines') {
+            if (!data[category]) return null;
+            const enabledWineTypes = data[category].filter(wineType => isEnabled(category, wineType));
+            if (enabledWineTypes.length === 0) return null;
+            return getRandomValue(enabledWineTypes);
+        }
         const enabledItems = getEnabledItems(category);
+        if (enabledItems.length === 0) return null;
         return getRandomValue(enabledItems);
     }
 
@@ -30,13 +37,46 @@ document.addEventListener('DOMContentLoaded', () => {
     function getEnabledItems(category){if(!data[category])return[];return data[category].filter(item=>isEnabled(category,item.name));}
 
     function setItem(element, category) {
-        const item = getRandomItem(category);
-        element.textContent = item;
+        // Check if data exists for this category
+        if (!data[category]) {
+            element.textContent = 'No options selected';
+            return;
+        }
+        
+        // For simple string arrays
+        if (typeof data[category][0] === 'string') {
+            const enabledItems = data[category].filter(item => isEnabled(category, item));
+            if (enabledItems.length === 0) {
+                element.textContent = 'No options selected';
+                return;
+            }
+            element.textContent = getRandomValue(enabledItems);
+        } else {
+            // For object arrays
+            const enabledItems = getEnabledItems(category);
+            if (enabledItems.length === 0) {
+                element.textContent = 'No options selected';
+                return;
+            }
+            const item = getRandomValue(enabledItems);
+            element.textContent = item.name || item;
+        }
     }
+    
+    function getRandomValue(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
     function setWine() {
         const wineType = getRandomItem('Wines');
-        const specificWineObj = getRandomItem(wineType);
+        if (!wineType) {
+            wineRollEl.textContent = 'No wine types selected';
+            return;
+        }
+        const specificWines = getEnabledItems(wineType);
+        if (specificWines.length === 0) {
+            wineRollEl.textContent = `No ${wineType} wines selected`;
+            return;
+        }
+        const specificWineObj = getRandomValue(specificWines);
         wineRollEl.innerHTML = `${wineType}: <a href="${specificWineObj.info_url}" target="_blank" rel="noopener noreferrer">${specificWineObj.name}</a>`;
     }
 
