@@ -1,0 +1,19 @@
+{
+  "title": "StarCraft II Randomizer",
+  "categories": {
+    "Race": {
+      "items": [
+        "Terran",
+        "Protoss",
+        "Zerg"
+      ]
+    },
+    "Unit Focus": {
+      "items": [
+        "Ground Units",
+        "Air Units",
+        "Vehicles"
+      ]
+    }
+  }
+}
