@@ -10,16 +10,24 @@
     overflow-y: auto;
     transition: transform 0.3s ease;
     z-index: 1000;
-    transform: translateX(-250px);
+    transform: translateX(0);
 }
 
 .sidebar.open {
     transform: translateX(0);
 }
 
+.sidebar.closed {
+    transform: translateX(-250px);
+}
+
+body.sidebar-closed .sidebar-toggle {
+    left: 10px;
+}
+
 .sidebar-toggle {
     position: fixed;
-    left: 10px;
+    left: 260px;
     top: 10px;
     background: #00ff00;
     color: #0f0f0f;
@@ -117,11 +125,19 @@ body.sidebar-open .sidebar-toggle {
         transform: translateX(0);
     }
 
+    .sidebar.closed {
+        transform: translateX(-250px);
+    }
+
     .sidebar-toggle {
         left: 10px;
     }
 
     body.sidebar-open .sidebar-toggle {
         left: 260px;
+    }
+
+    body.sidebar-closed .sidebar-toggle {
+        left: 10px;
     }
 }

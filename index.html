@@ -82,6 +82,7 @@
                 <button class="nav-category-btn">Life ▼</button>
                 <div class="nav-links">
                     <a href="TravelRandomizer/">Travel</a>
+                    <a href="DateIdeaRandomizer/">Date Ideas</a>
                 </div>
             </div>
             
@@ -405,6 +406,13 @@
                         <p class="tool-description">Discover random travel destinations and activities</p>
                     </div>
                 </a>
+                <a href="DateIdeaRandomizer/" class="tool-card">
+                    <div class="tool-icon">💕</div>
+                    <div class="tool-content">
+                        <h3 class="tool-title">Date Idea Randomizer</h3>
+                        <p class="tool-description">Generate creative date ideas across 10 different categories</p>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -459,32 +467,6 @@
     </footer>
     </div>
 
-    <script>
-        // Sidebar toggle functionality
-        const sidebar = document.getElementById('sidebar');
-        const sidebarToggle = document.getElementById('sidebar-toggle');
-        const navCategoryBtns = document.querySelectorAll('.nav-category-btn');
-
-        sidebarToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-            document.body.classList.toggle('sidebar-open');
-        });
-
-        // Close sidebar when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
-                sidebar.classList.remove('open');
-                document.body.classList.remove('sidebar-open');
-            }
-        });
-
-        // Category dropdown functionality
-        navCategoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const category = btn.parentElement;
-                category.classList.toggle('expanded');
-            });
-        });
-    </script>
+    <script src="templates/nav-script.js"></script>
 </body>
 </html>

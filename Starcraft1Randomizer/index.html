@@ -139,32 +139,6 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-        // Sidebar toggle functionality
-        const sidebar = document.getElementById('sidebar');
-        const sidebarToggle = document.getElementById('sidebar-toggle');
-        const navCategoryBtns = document.querySelectorAll('.nav-category-btn');
-
-        sidebarToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-            document.body.classList.toggle('sidebar-open');
-        });
-
-        // Close sidebar when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!sidebar.contains(e.target) && !sidebarToggle.contains(e.target)) {
-                sidebar.classList.remove('open');
-                document.body.classList.remove('sidebar-open');
-            }
-        });
-
-        // Category dropdown functionality
-        navCategoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const category = btn.parentElement;
-                category.classList.toggle('expanded');
-            });
-        });
-    </script>
+    <script src="../templates/nav-script.js"></script>
 </body>
 </html>

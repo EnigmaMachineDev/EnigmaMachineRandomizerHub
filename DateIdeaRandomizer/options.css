@@ -1,0 +1,9 @@
+/* Import base options styles */
+@import url('../templates/options.css');
+
+/* Additional custom styles for Date Idea Randomizer options page */
+body {
+    background-color: #222222;
+    color: #66cc66;
+    font-family: monospace;
+}

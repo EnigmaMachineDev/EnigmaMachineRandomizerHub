@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Idea Randomizer - Options</title>
+    <link rel="stylesheet" href="../templates/options.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="index.html" class="back-button">← Back to Randomizer</a>
+        <div class="container options-container">
+            <h1>Configure Date Ideas</h1>
+            <div class="options-header">
+                <div class="button-group">
+                    <button class="btn" id="save-options">Save & Return</button>
+                    <button class="btn btn-secondary" id="reset-options">Reset to Defaults</button>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-secondary" id="select-all">Select All</button>
+                    <button class="btn btn-secondary" id="deselect-all">Deselect All</button>
+                </div>
+            </div>
+            
+            <div class="expand-collapse-all">
+                <button class="btn btn-secondary" id="expand-all">Expand All Categories</button>
+                <button class="btn btn-secondary" id="collapse-all">Collapse All Categories</button>
+            </div>
+
+            <div id="categories-container"></div>
+        </div>
+    </div>
+    
+    <div id="save-message" class="save-message">Options saved!</div>
+    
+    <script>
+        window.RANDOMIZER_STORAGE_KEY = 'dateIdeaOptions';
+        window.RANDOMIZER_JSON_FILE = 'randomizer.json';
+    </script>
+    <script src="options.js"></script>
+</body>
+</html>

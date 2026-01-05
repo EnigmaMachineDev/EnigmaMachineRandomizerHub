@@ -10,7 +10,7 @@
         window.ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
     </script>
-    <title>Option Picker</title>
+    <title>Date Idea Randomizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../templates/nav-styles.css">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
@@ -81,6 +81,7 @@
                 <button class="nav-category-btn">Life ▼</button>
                 <div class="nav-links">
                     <a href="../TravelRandomizer/">Travel</a>
+                    <a href="../DateIdeaRandomizer/">Date Ideas</a>
                 </div>
             </div>
             
@@ -100,18 +101,24 @@
     <div class="main-wrapper">
         <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
-            <h1>Option Picker</h1>
+            <h1>Date Idea Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-date">Generate Date Idea</button>
             <div class="section">
-                <h2>Add Your Options</h2>
-                <div class="input-group">
-                    <input type="text" id="option-input" placeholder="Enter an option..." />
-                    <button class="add-btn" id="add-option">Add</button>
+                <div class="section-header">
+                    <h2>Date Idea</h2>
+                    <button class="reroll-btn" id="reroll-date">↻</button>
                 </div>
-                <div class="options-list" id="options-list"></div>
-                <button class="generate-btn" id="pick-option">Pick Random Option</button>
-                <button class="clear-btn" id="clear-all">Clear All</button>
-                <div class="result-container">
-                    <div id="result" class="result-text"></div>
+                <div class="item-container">
+                    <div id="date-idea"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Category</h2>
+                </div>
+                <div class="item-container">
+                    <span id="date-category"></span>
                 </div>
             </div>
         </div>
@@ -119,9 +126,24 @@
     <div class="main-container about-section">
         <h2 class="category-title">About This Tool</h2>
         <div class="about-content">
-            <p>The Option Picker helps you make decisions by randomly selecting from a list of choices you provide. Perfect for choosing what to eat, which movie to watch, or any situation where you need help deciding between multiple options.</p>
-            <h3>How to Use</h3>
-            <p>Type an option in the input field and click "Add" or press Enter. Repeat to add multiple options. Once you have at least two options, click "Pick Random Option" to randomly select one. You can remove individual options by clicking the × button next to them, or clear all options at once.</p>
+            <p>Welcome to the Date Idea Randomizer! Whether you're planning your first date, celebrating an anniversary, or just looking to break out of your routine, this tool offers over 200 creative date ideas across 10 different categories.</p>
+            
+            <h3>Categories Include</h3>
+            <ul>
+                <li><strong>Creative & Artistic</strong> - Pottery classes, painting, crafts, and DIY projects</li>
+                <li><strong>Outdoor & Adventure</strong> - Hiking, kayaking, stargazing, and camping</li>
+                <li><strong>Food & Cooking</strong> - Cooking classes, restaurant hopping, and themed dinners</li>
+                <li><strong>At-Home & Cozy</strong> - Game nights, movie marathons, and spa nights</li>
+                <li><strong>Entertainment & Shows</strong> - Comedy shows, concerts, and live performances</li>
+                <li><strong>Active & Competitive</strong> - Mini golf, bowling, escape rooms, and sports</li>
+                <li><strong>Romantic & Intimate</strong> - Couples massages, sunset cruises, and special memories</li>
+                <li><strong>Cultural & Educational</strong> - Museums, galleries, and exploring new neighborhoods</li>
+                <li><strong>Unique & Quirky</strong> - Fortune telling, scavenger hunts, and volunteering</li>
+                <li><strong>Seasonal Activities</strong> - Pumpkin carving, campfires, and seasonal fun</li>
+            </ul>
+            
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Date Idea" button to get a random date suggestion from any category. Use the individual re-roll button (↻) to get a new idea. Visit the options page to customize which categories and specific date ideas you want to include in your randomization!</p>
         </div>
     </div>
     <footer class="footer">
