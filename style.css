@@ -401,3 +401,129 @@
             0% { background-position: -1000px 0; }
             100% { background-position: 1000px 0; }
         }
+
+        /* Fix for Consent Management Platform (CMP) Popup */
+        /* Ensure CMP elements appear above everything and centered */
+        #gk-cmp-container,
+        [id*="gatekeeper"],
+        [class*="gatekeeper"],
+        [id*="consent"],
+        [class*="consent-modal"],
+        .cmp-modal,
+        .cmp-overlay {
+            position: fixed !important;
+            z-index: 999999 !important;
+            left: 50% !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            max-width: 600px !important;
+            max-height: 80vh !important;
+            width: 90vw !important;
+        }
+
+        /* CMP Overlay Background */
+        [id*="gatekeeper-overlay"],
+        [class*="cmp-overlay"],
+        .consent-overlay {
+            position: fixed !important;
+            z-index: 999998 !important;
+            left: 0 !important;
+            top: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            transform: none !important;
+            background: rgba(0, 0, 0, 0.8) !important;
+        }
+
+        /* Style CMP popup to match app theme */
+        #gk-cmp-container *,
+        [id*="gatekeeper"] *,
+        [class*="gatekeeper"] *,
+        [id*="consent"] *,
+        [class*="consent"] * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+        }
+
+        /* CMP Modal Background */
+        #gk-cmp-container,
+        [id*="gatekeeper"][class*="modal"],
+        [class*="consent-modal"] {
+            background: var(--card-bg) !important;
+            border: 1px solid rgba(0, 255, 0, 0.3) !important;
+            border-radius: 12px !important;
+            box-shadow: 0 10px 40px rgba(0, 255, 0, 0.2) !important;
+            padding: 20px !important;
+        }
+
+        /* CMP Text Colors */
+        #gk-cmp-container h1,
+        #gk-cmp-container h2,
+        #gk-cmp-container h3,
+        #gk-cmp-container h4,
+        #gk-cmp-container h5,
+        #gk-cmp-container h6,
+        [id*="gatekeeper"] h1,
+        [id*="gatekeeper"] h2,
+        [id*="gatekeeper"] h3,
+        [class*="consent"] h1,
+        [class*="consent"] h2,
+        [class*="consent"] h3 {
+            color: var(--primary-green) !important;
+        }
+
+        #gk-cmp-container p,
+        #gk-cmp-container span,
+        #gk-cmp-container div,
+        #gk-cmp-container label,
+        [id*="gatekeeper"] p,
+        [id*="gatekeeper"] span,
+        [id*="gatekeeper"] div,
+        [id*="gatekeeper"] label,
+        [class*="consent"] p,
+        [class*="consent"] span,
+        [class*="consent"] div,
+        [class*="consent"] label {
+            color: var(--text-light) !important;
+        }
+
+        /* CMP Buttons */
+        #gk-cmp-container button,
+        [id*="gatekeeper"] button,
+        [class*="consent"] button {
+            background: var(--primary-green) !important;
+            color: var(--bg-darker) !important;
+            border: none !important;
+            padding: 10px 20px !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            transition: all 0.3s !important;
+        }
+
+        #gk-cmp-container button:hover,
+        [id*="gatekeeper"] button:hover,
+        [class*="consent"] button:hover {
+            background: var(--dark-green) !important;
+            box-shadow: 0 4px 12px var(--shadow-glow) !important;
+        }
+
+        /* CMP Links */
+        #gk-cmp-container a,
+        [id*="gatekeeper"] a,
+        [class*="consent"] a {
+            color: var(--primary-green) !important;
+            text-decoration: underline !important;
+        }
+
+        #gk-cmp-container a:hover,
+        [id*="gatekeeper"] a:hover,
+        [class*="consent"] a:hover {
+            color: var(--dark-green) !important;
+        }
+
+        /* CMP Input Fields */
+        #gk-cmp-container input[type="checkbox"],
+        [id*="gatekeeper"] input[type="checkbox"],
+        [class*="consent"] input[type="checkbox"] {
+            accent-color: var(--primary-green) !important;
+        }
