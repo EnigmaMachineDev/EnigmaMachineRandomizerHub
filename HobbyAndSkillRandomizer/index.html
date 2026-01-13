@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Souls Character Randomizer</title>
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Hobby and Skill Randomizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../templates/nav-styles.css">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
@@ -25,43 +32,24 @@
     <div class="main-wrapper">
         <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
-            <h1>Dark Souls Character Randomizer</h1>
-            <a href="options.html" class="options-link">⚙️ Configure Options</a>
-            <button class="reroll-btn" id="generate-loadout">Generate Character</button>
+            <h1>Hobby and Skill Randomizer</h1>
+            <button class="generate-btn" id="generate-btn">Generate Random Hobby/Skill</button>
             <div class="section">
                 <div class="section-header">
-                    <h2>Primary Weapon</h2>
-                    <button class="reroll-btn" id="reroll-weapon">↻</button>
+                    <h2>Category</h2>
+                    <button class="reroll-btn" id="reroll-category">↻</button>
                 </div>
                 <div class="item-container">
-                    <a id="weapon-link" href="#" target="_blank"><span id="weapon"></span></a>
+                    <span id="category"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Armor Set</h2>
-                    <button class="reroll-btn" id="reroll-armor">↻</button>
+                    <h2>Hobby/Skill</h2>
+                    <button class="reroll-btn" id="reroll-item">↻</button>
                 </div>
                 <div class="item-container">
-                    <a id="armor-link" href="#" target="_blank"><span id="armor"></span></a>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-header">
-                    <h2 id="spell-type-label">Spells</h2>
-                    <button class="reroll-btn" id="reroll-spells">↻</button>
-                </div>
-                <div class="item-container">
-                    <ul id="spells-list"></ul>
-                </div>
-            </div>
-            <div class="section" id="caster-weapon-section">
-                <div class="section-header">
-                    <h2>Catalyst/Talisman/Flame</h2>
-                    <button class="reroll-btn" id="reroll-caster-weapon">↻</button>
-                </div>
-                <div class="item-container">
-                    <a id="caster-weapon-link" href="#" target="_blank"><span id="caster-weapon"></span></a>
+                    <span id="item"></span>
                 </div>
             </div>
         </div>
@@ -69,10 +57,12 @@
     <div class="main-container about-section">
         <h2 class="category-title">About This Tool</h2>
         <div class="about-content">
-            <p>Dark Souls, the legendary action RPG from FromSoftware, offers incredible build diversity through its weapons, armor, and magic systems. This randomizer helps you break out of your comfort zone and discover new playstyles.</p>
-            <p>This tool generates random character builds including weapons, armor sets, and spells. It's perfect for challenge runs, discovering new synergies, or simply adding variety to your playthroughs through Lordran.</p>
+            <p>Looking to learn something new but can't decide what? This Hobby and Skill Randomizer helps you discover your next passion by randomly selecting from over 800 different hobbies and skills across 20 diverse categories.</p>
+            <p>Whether you're seeking a physical activity, creative outlet, mental challenge, or practical skill, this tool will introduce you to possibilities you might never have considered. From traditional crafts to modern technology, outdoor adventures to culinary arts, there's something here for everyone.</p>
             <h3>How to Use the Randomizer</h3>
-            <p>Click "Generate Character" to get a complete build. Use the individual re-roll buttons (↻) to fine-tune specific parts of your loadout. Each item links to its wiki page for stats and location details.</p>
+            <p>Click the "Generate Random Hobby/Skill" button to get a random category and a specific hobby or skill within that category. If you like the category but want a different option, use the individual re-roll buttons (↻) to change just the category or just the hobby/skill.</p>
+            <h3>Categories Include</h3>
+            <p>Physical & Sports, Creative & Artistic, Mental & Educational, Musical, Collecting, Food & Drink, Games & Puzzles, Woodworking & Building, Technology & Digital, Gardening & Nature, Self-Improvement & Wellness, Automotive & Mechanical, Business & Entrepreneurship, Performing Arts, Languages & Communication, Outdoor & Adventure, Fashion & Style, Science & Research, Home & Lifestyle, and Pet & Animal Care.</p>
         </div>
     </div>
     <footer class="footer">

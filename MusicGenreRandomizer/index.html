@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Souls Character Randomizer</title>
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Music Genre Randomizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../templates/nav-styles.css">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
@@ -25,43 +32,24 @@
     <div class="main-wrapper">
         <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
-            <h1>Dark Souls Character Randomizer</h1>
-            <a href="options.html" class="options-link">⚙️ Configure Options</a>
-            <button class="reroll-btn" id="generate-loadout">Generate Character</button>
+            <h1>Music Genre Randomizer</h1>
+            <button class="reroll-btn" id="generate-music">Generate Music Genre</button>
             <div class="section">
                 <div class="section-header">
-                    <h2>Primary Weapon</h2>
-                    <button class="reroll-btn" id="reroll-weapon">↻</button>
+                    <h2>Genre</h2>
+                    <button class="reroll-btn" id="reroll-genre">↻</button>
                 </div>
                 <div class="item-container">
-                    <a id="weapon-link" href="#" target="_blank"><span id="weapon"></span></a>
+                    <div id="genre"></div>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Armor Set</h2>
-                    <button class="reroll-btn" id="reroll-armor">↻</button>
+                    <h2>Subgenre</h2>
+                    <button class="reroll-btn" id="reroll-subgenre">↻</button>
                 </div>
                 <div class="item-container">
-                    <a id="armor-link" href="#" target="_blank"><span id="armor"></span></a>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-header">
-                    <h2 id="spell-type-label">Spells</h2>
-                    <button class="reroll-btn" id="reroll-spells">↻</button>
-                </div>
-                <div class="item-container">
-                    <ul id="spells-list"></ul>
-                </div>
-            </div>
-            <div class="section" id="caster-weapon-section">
-                <div class="section-header">
-                    <h2>Catalyst/Talisman/Flame</h2>
-                    <button class="reroll-btn" id="reroll-caster-weapon">↻</button>
-                </div>
-                <div class="item-container">
-                    <a id="caster-weapon-link" href="#" target="_blank"><span id="caster-weapon"></span></a>
+                    <span id="subgenre"></span>
                 </div>
             </div>
         </div>
@@ -69,10 +57,10 @@
     <div class="main-container about-section">
         <h2 class="category-title">About This Tool</h2>
         <div class="about-content">
-            <p>Dark Souls, the legendary action RPG from FromSoftware, offers incredible build diversity through its weapons, armor, and magic systems. This randomizer helps you break out of your comfort zone and discover new playstyles.</p>
-            <p>This tool generates random character builds including weapons, armor sets, and spells. It's perfect for challenge runs, discovering new synergies, or simply adding variety to your playthroughs through Lordran.</p>
+            <p>Welcome to the Music Genre Randomizer! Whether you're looking to discover new music, challenge yourself as a musician, or just explore the vast world of musical styles, this tool offers 25+ major genres and over 500 subgenres to explore.</p>
+            <p>This randomizer is perfect for breaking out of your musical comfort zone, finding inspiration for creative projects, or simply discovering styles you've never heard before. From classic rock to experimental electronic, from traditional folk to modern hip-hop, there's a whole world of sound waiting to be explored.</p>
             <h3>How to Use the Randomizer</h3>
-            <p>Click "Generate Character" to get a complete build. Use the individual re-roll buttons (↻) to fine-tune specific parts of your loadout. Each item links to its wiki page for stats and location details.</p>
+            <p>Click the "Generate Music Genre" button to get a random genre and subgenre combination. Use the individual re-roll buttons (↻) to randomize just the genre or just the subgenre. Perfect for music discovery, creative challenges, or expanding your musical horizons!</p>
         </div>
     </div>
     <footer class="footer">

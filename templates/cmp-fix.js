@@ -74,6 +74,34 @@
                         child.style.setProperty('border-radius', '8px', 'important');
                         child.style.setProperty('font-weight', '600', 'important');
                         child.style.setProperty('cursor', 'pointer', 'important');
+                        
+                        // Add click handler to close popup after any button click
+                        if (!child.hasAttribute('data-cmp-handler-added')) {
+                            child.setAttribute('data-cmp-handler-added', 'true');
+                            child.addEventListener('click', function() {
+                                setTimeout(() => {
+                                    // Find and hide all CMP containers
+                                    const cmpSelectors = [
+                                        '[id*="gatekeeper"]',
+                                        '[class*="gatekeeper"]',
+                                        '[id*="consent"]',
+                                        '[class*="consent"]',
+                                        'div[style*="z-index: 2147483647"]',
+                                        'div[style*="z-index: 2147483646"]'
+                                    ];
+                                    
+                                    cmpSelectors.forEach(selector => {
+                                        const elements = document.querySelectorAll(selector);
+                                        elements.forEach(el => {
+                                            if (el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE') {
+                                                el.style.display = 'none';
+                                                el.remove();
+                                            }
+                                        });
+                                    });
+                                }, 500);
+                            });
+                        }
                     }
 
                     // Checkboxes

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Cooking Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+</head>
+<body>
+    <!-- Hamburger Menu Button -->
+    <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+    
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <h3 class="sidebar-title">Quick Links</h3>
+            
+            <div class="nav-category">
+                <button class="nav-category-btn">Generic Tools ▼</button>
+                <div class="nav-links">
+                    <a href="../NumberRandomizer/">Number Randomizer</a>
+                    <a href="../OptionPicker/">Option Picker</a>
+                    <a href="../DiceRoller/">Dice Roller</a>
+                    <a href="../BYOR/">Build Your Own</a>
+                </div>
+            </div>
+            
+            <div class="nav-category">
+                <button class="nav-category-btn">Gaming ▼</button>
+                <div class="nav-links">
+                    <a href="../DarkSoulsRandomizer/">Dark Souls</a>
+                    <a href="../DarkSouls2Randomizer/">Dark Souls 2</a>
+                    <a href="../DarkSouls3CharacterRandomizer/">Dark Souls 3</a>
+                    <a href="../Civ5Randomizer/">Civilization 5</a>
+                    <a href="../EldenRingCharacterRandomizer/">Elden Ring</a>
+                    <a href="../EliteDangerousRandomizer/">Elite Dangerous</a>
+                    <a href="../GrimDawnCharacterRandomizer/">Grim Dawn</a>
+                    <a href="../LiesOfPRandomizer/">Lies of P</a>
+                    <a href="../PathOfExile2CharacterRandomizer/">Path of Exile 2</a>
+                    <a href="../SoulframeLoadoutRandomizer/">Soulframe</a>
+                    <a href="../SpaceMarine2LoadoutRandomizer/">Space Marine 2</a>
+                    <a href="../SatisfactoryRandomizer/">Satisfactory</a>
+                    <a href="../SkyrimCharacterRandomizer/">Skyrim</a>
+                    <a href="../WarframeLoadoutRandomizer/">Warframe</a>
+                    <a href="../RealmOfTheMadGodRandomizer/">Realm of the Mad God</a>
+                    <a href="../MtgRandomizer/">Magic: The Gathering</a>
+                    <a href="../Starcraft2Randomizer/">StarCraft II</a>
+                    <a href="../Starcraft1Randomizer/">StarCraft 1</a>
+                    <a href="../NoMansSkyRandomizer/">No Man's Sky</a>
+                </div>
+            </div>
+            
+            <div class="nav-category">
+                <button class="nav-category-btn">Creative ▼</button>
+                <div class="nav-links">
+                    <a href="../ArtworkMediaRandomizer/">Artwork Medium</a>
+                    <a href="../CharacterPersonalityRandomizer/">Character Creator</a>
+                </div>
+            </div>
+            
+            <div class="nav-category">
+                <button class="nav-category-btn">Cooking ▼</button>
+                <div class="nav-links">
+                    <a href="../CookingRandomizer/">Cooking</a>
+                    <a href="../CoffeeRandomizer/">Coffee</a>
+                    <a href="../HotSauceMakingRandomizer/">Hot Sauce</a>
+                    <a href="../TeaRandomizer/">Tea</a>
+                    <a href="../BakingRandomizer/">Baking</a>
+                </div>
+            </div>
+            
+            <div class="nav-category">
+                <button class="nav-category-btn">Life ▼</button>
+                <div class="nav-links">
+                    <a href="../TravelRandomizer/">Travel</a>
+                    <a href="../DateIdeaRandomizer/">Date Ideas</a>
+                    <a href="../MusicGenreRandomizer/">Music Genres</a>
+                </div>
+            </div>
+            
+            <div class="nav-category">
+                <button class="nav-category-btn">Home Brewing ▼</button>
+                <div class="nav-links">
+                    <a href="../HomebrewingWineRandomizer/">Wine</a>
+                    <a href="../BeerBrewingRandomizer/">Beer</a>
+                    <a href="../DistillingRandomizer/">Distilling</a>
+                    <a href="../BrewingRandomizer/">Brewing (All)</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Cooking Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-meal">Generate Meal</button>
+            
+            <div class="section">
+                <div class="section-header">
+                    <h2>Cooking Method</h2>
+                    <button class="reroll-btn" id="reroll-method">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="method-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Protein</h2>
+                    <button class="reroll-btn" id="reroll-protein">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="protein-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Vegetable</h2>
+                    <button class="reroll-btn" id="reroll-vegetable">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="vegetable-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Side 1</h2>
+                    <button class="reroll-btn" id="reroll-side1">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="side1-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Side 2</h2>
+                    <button class="reroll-btn" id="reroll-side2">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="side2-roll"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Cooking Randomizer, your culinary inspiration generator! This tool helps you discover new meal combinations by randomly selecting a cooking method, protein, vegetable, and two additional sides from various categories including dairy, fruits, grains, and nuts.</p>
+            <p>Perfect for breaking out of cooking ruts, meal planning, or challenging yourself with new ingredient combinations. The randomizer features dietary mode options including vegan, vegetarian, and carnivore modes to match your dietary preferences.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click "Generate Meal" to create a complete meal combination. The randomizer will always give you a protein and vegetable, plus two random sides from other categories. Use the individual re-roll buttons (↻) to change specific components while keeping the rest of your meal intact.</p>
+            <p>Visit the options page to configure dietary modes and customize which ingredients are available for randomization.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="../templates/nav-script.js"></script>
+</body>
+</html>

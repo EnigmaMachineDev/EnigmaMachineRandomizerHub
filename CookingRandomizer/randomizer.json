@@ -1,1 +1,354 @@
-{}
+{
+  "sections": [
+    {
+      "name": "Cooking Method",
+      "options": [
+        "Baking",
+        "Roasting",
+        "Grilling",
+        "Broiling",
+        "Sautéing",
+        "Pan-Frying",
+        "Deep-Frying",
+        "Stir-Frying",
+        "Steaming",
+        "Poaching",
+        "Braising",
+        "Stewing",
+        "Slow Cooking",
+        "Pressure Cooking",
+        "Smoking",
+        "Air Frying",
+        "Sous Vide"
+      ]
+    },
+    {
+      "name": "Protein",
+      "subsections": [
+        {
+          "name": "Chicken",
+          "options": [
+            "Breast",
+            "Thighs",
+            "Wings",
+            "Whole",
+            "Ground"
+          ]
+        },
+        {
+          "name": "Turkey",
+          "options": [
+            "Breast",
+            "Ground",
+            "Whole"
+          ]
+        },
+        {
+          "name": "Beef",
+          "options": [
+            "Steak",
+            "Ground",
+            "Roast",
+            "Short Ribs",
+            "Brisket"
+          ]
+        },
+        {
+          "name": "Pork",
+          "options": [
+            "Chops",
+            "Tenderloin",
+            "Shoulder",
+            "Ground",
+            "Belly",
+            "Ribs",
+            "Sausage"
+          ]
+        },
+        {
+          "name": "Lamb",
+          "options": [
+            "Chops",
+            "Leg",
+            "Ground",
+            "Rack"
+          ]
+        },
+        {
+          "name": "Fish",
+          "options": [
+            "Salmon",
+            "Tuna",
+            "Cod",
+            "Halibut",
+            "Tilapia",
+            "Trout",
+            "Mahi Mahi",
+            "Sea Bass",
+            "Swordfish",
+            "Snapper",
+            "Catfish"
+          ]
+        },
+        {
+          "name": "Shellfish",
+          "options": [
+            "Shrimp",
+            "Scallops",
+            "Lobster",
+            "Crab",
+            "Mussels",
+            "Clams",
+            "Oysters",
+            "Squid/Calamari",
+            "Octopus"
+          ]
+        },
+        {
+          "name": "Eggs",
+          "options": [
+            "Chicken",
+            "Duck",
+            "Quail"
+          ]
+        },
+        {
+          "name": "Tofu",
+          "options": [
+            "Firm",
+            "Extra Firm",
+            "Silken",
+            "Smoked"
+          ]
+        },
+        {
+          "name": "Plant-Based Protein",
+          "options": [
+            "Tempeh",
+            "Seitan",
+            "Edamame",
+            "TVP (Textured Vegetable Protein)",
+            "Nutritional Yeast",
+            "Spirulina",
+            "Veggie Burgers",
+            "Plant-Based Ground Meat",
+            "Jackfruit (young/green)"
+          ]
+        },
+        {
+          "name": "Beans",
+          "options": [
+            "Black",
+            "Chickpeas/Garbanzo",
+            "Kidney",
+            "Pinto",
+            "White/Cannellini",
+            "Great Northern",
+            "Navy",
+            "Lima",
+            "Fava"
+          ]
+        },
+        {
+          "name": "Lentils",
+          "options": [
+            "Green",
+            "Red",
+            "Brown",
+            "Black"
+          ]
+        },
+        {
+          "name": "Seeds",
+          "options": [
+            "Hemp Seeds",
+            "Chia Seeds",
+            "Pumpkin Seeds",
+            "Sunflower Seeds",
+            "Split Peas"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vegetable",
+      "options": [
+        "Asparagus",
+        "Artichoke",
+        "Arugula",
+        "Bell Peppers (Red)",
+        "Bell Peppers (Green)",
+        "Bell Peppers (Yellow)",
+        "Broccoli",
+        "Brussels Sprouts",
+        "Cabbage (Green)",
+        "Cabbage (Red)",
+        "Carrots",
+        "Cauliflower",
+        "Celery",
+        "Corn",
+        "Cucumber",
+        "Eggplant",
+        "Green Beans",
+        "Kale",
+        "Lettuce (Romaine)",
+        "Lettuce (Iceberg)",
+        "Mushrooms (Button)",
+        "Mushrooms (Portobello)",
+        "Mushrooms (Shiitake)",
+        "Onions (Yellow)",
+        "Onions (Red)",
+        "Onions (White)",
+        "Peas",
+        "Potatoes (Russet)",
+        "Potatoes (Red)",
+        "Potatoes (Sweet)",
+        "Radishes",
+        "Spinach",
+        "Squash (Butternut)",
+        "Squash (Zucchini)",
+        "Squash (Acorn)",
+        "Tomatoes",
+        "Cherry Tomatoes",
+        "Turnips",
+        "Beets",
+        "Bok Choy",
+        "Collard Greens",
+        "Swiss Chard",
+        "Leeks",
+        "Parsnips",
+        "Rutabaga",
+        "Fennel",
+        "Okra",
+        "Jalapeños",
+        "Serrano Peppers",
+        "Poblano Peppers",
+        "Habanero Peppers",
+        "Ginger",
+        "Garlic",
+        "Shallots",
+        "Scallions/Green Onions",
+        "Chives"
+      ]
+    },
+    {
+      "name": "Dairy",
+      "options": [
+        "Milk",
+        "Buttermilk",
+        "Cheddar Cheese",
+        "Mozzarella Cheese",
+        "Parmesan Cheese",
+        "Swiss Cheese",
+        "Gouda Cheese",
+        "Brie Cheese",
+        "Feta Cheese",
+        "Goat Cheese",
+        "Blue Cheese",
+        "Provolone Cheese",
+        "Monterey Jack Cheese",
+        "Pepper Jack Cheese",
+        "Cream Cheese",
+        "Ricotta Cheese",
+        "Cottage Cheese",
+        "Mascarpone Cheese",
+        "Gruyere Cheese",
+        "Havarti Cheese",
+        "Colby Cheese",
+        "Muenster Cheese",
+        "Yogurt",
+        "Kefir"
+      ]
+    },
+    {
+      "name": "Fruit",
+      "options": [
+        "Apples",
+        "Bananas",
+        "Oranges",
+        "Lemons",
+        "Limes",
+        "Grapefruits",
+        "Strawberries",
+        "Blueberries",
+        "Raspberries",
+        "Blackberries",
+        "Cranberries",
+        "Cherries",
+        "Grapes (Red)",
+        "Grapes (Green)",
+        "Watermelon",
+        "Cantaloupe",
+        "Honeydew Melon",
+        "Pineapple",
+        "Mango",
+        "Papaya",
+        "Peaches",
+        "Nectarines",
+        "Plums",
+        "Pears",
+        "Apricots",
+        "Kiwi",
+        "Pomegranate",
+        "Figs",
+        "Dates",
+        "Coconut",
+        "Avocado",
+        "Passion Fruit",
+        "Dragon Fruit",
+        "Lychee",
+        "Guava",
+        "Persimmon",
+        "Tangerines",
+        "Clementines",
+        "Blood Oranges",
+        "Kumquats",
+        "Star Fruit",
+        "Rhubarb"
+      ]
+    },
+    {
+      "name": "Grain",
+      "options": [
+        "White Rice",
+        "Brown Rice",
+        "Quinoa",
+        "Couscous",
+        "Bulgur",
+        "Farro",
+        "Barley",
+        "Oats",
+        "Wheat Berries",
+        "Spelt",
+        "Rye",
+        "Millet",
+        "Amaranth",
+        "Buckwheat",
+        "Cornmeal",
+        "Polenta",
+        "Grits",
+        "Pasta",
+        "Bread",
+        "Tortillas"
+      ]
+    },
+    {
+      "name": "Nut",
+      "options": [
+        "Almonds",
+        "Cashews",
+        "Peanuts",
+        "Walnuts",
+        "Pecans",
+        "Pistachios",
+        "Hazelnuts",
+        "Macadamia Nuts",
+        "Brazil Nuts",
+        "Pine Nuts",
+        "Chestnuts",
+        "Peanut Butter",
+        "Almond Butter"
+      ]
+    }
+  ]
+}
