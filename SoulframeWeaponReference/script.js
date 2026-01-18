@@ -19,7 +19,8 @@ function loadWeaponData() {
         maxAttack: data.Stats?.Lvl30?.Attack || 0,
         baseStagger: data.Stats?.Lvl0?.Stagger || 0,
         maxStagger: data.Stats?.Lvl30?.Stagger || 0,
-        smiteChance: data.Stats?.SmitePercent || '0%'
+        smiteChance: data.Stats?.SmitePercent || '0%',
+        virtueAttuneCap: data.Stats?.VirtueAttuneCap || 0
     }));
     
     // Populate filter dropdowns with unique values
@@ -147,6 +148,7 @@ function sortTable(column) {
         'rarity': 'Rarity',
         'attuneVirtue': 'AttuneVirtue',
         'attuneTier': 'AttuneTier',
+        'virtueAttuneCap': 'virtueAttuneCap',
         'reqVirtue': 'ReqVirtue',
         'baseAttack': 'baseAttack',
         'maxAttack': 'maxAttack',
@@ -163,7 +165,7 @@ function sortTable(column) {
         let bVal = b[propertyName];
         
         // Handle numeric columns
-        if (['baseAttack', 'maxAttack', 'baseStagger', 'maxStagger'].includes(column)) {
+        if (['baseAttack', 'maxAttack', 'baseStagger', 'maxStagger', 'virtueAttuneCap'].includes(column)) {
             aVal = Number(aVal) || 0;
             bVal = Number(bVal) || 0;
         } else if (column === 'reqVirtue' || column === 'attuneTier') {
@@ -213,6 +215,7 @@ function updateDisplay() {
             <td class="rarity-${(weapon.Rarity || '').toLowerCase()}">${weapon.Rarity || '-'}</td>
             <td>${weapon.AttuneVirtue || '-'}</td>
             <td>${weapon.AttuneTier || '-'}</td>
+            <td>${weapon.virtueAttuneCap || '-'}</td>
             <td>${weapon.ReqVirtue || '0'}</td>
             <td>${weapon.baseAttack}</td>
             <td>${weapon.maxAttack}</td>

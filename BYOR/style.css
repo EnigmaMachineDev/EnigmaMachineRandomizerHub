@@ -10,6 +10,15 @@ body {
     margin: 0;
     padding: 1rem;
 }
+/* Adjust body layout for sidebar */
+body.sidebar-open {
+    margin-left: 250px;
+}
+
+body.sidebar-closed {
+    margin-left: 0;
+}
+
 
 .back-button {
     color: #66cc66;
@@ -340,6 +349,13 @@ textarea {
 }
 
 @media (max-width: 768px) {
+
+    body.sidebar-open,
+    body.sidebar-closed {
+        margin-left: 0;
+    }
+    
+
     .container {
         padding: 1rem;
     }

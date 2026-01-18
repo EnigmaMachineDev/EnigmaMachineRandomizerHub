@@ -9,6 +9,15 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+/* Adjust body layout for sidebar */
+body.sidebar-open {
+    margin-left: 250px;
+}
+
+body.sidebar-closed {
+    margin-left: 0;
+}
+
 
 .back-button {
     color: #66cc66;
@@ -281,6 +290,13 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    body.sidebar-open,
+    body.sidebar-closed {
+        margin-left: 0;
+    }
+    
+
     .content-container {
         flex-direction: column;
     }

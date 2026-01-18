@@ -24,9 +24,24 @@ body {
     min-height: 100vh;
 }
 
+/* Adjust body layout for sidebar */
+body.sidebar-open {
+    margin-left: 250px;
+}
+
+body.sidebar-closed {
+    margin-left: 0;
+}
+
 .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 20px;
     min-height: calc(100vh - 60px);
+    transition: margin-left 0.3s ease;
 }
 
 .container {
@@ -48,21 +63,17 @@ h1 {
 
 /* Back button */
 .back-button {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background: var(--card-bg);
     color: var(--primary-green);
     text-decoration: none;
-    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
     transition: all 0.3s;
-    border: 1px solid rgba(0, 255, 0, 0.3);
 }
 
 .back-button:hover {
-    background: rgba(0, 255, 0, 0.1);
+    text-shadow: 0 0 10px var(--shadow-glow);
     transform: translateX(-5px);
-    box-shadow: 0 0 15px var(--shadow-glow);
 }
 
 /* Controls Section */
@@ -416,6 +427,11 @@ td {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body.sidebar-open,
+    body.sidebar-closed {
+        margin-left: 0;
+    }
+    
     .container {
         padding: 15px;
     }
@@ -444,5 +460,11 @@ td {
     
     .stats-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) {
+    body.sidebar-open .main-wrapper {
+        margin-left: 0;
     }
 }
