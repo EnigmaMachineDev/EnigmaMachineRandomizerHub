@@ -1,0 +1,17 @@
+{
+  "name": "Soulframe Weapon Reference",
+  "description": "A comprehensive searchable and sortable database of all weapons in Soulframe",
+  "category": "Gaming",
+  "subcategory": "Reference",
+  "version": "1.0.0",
+  "author": "EnigmaMachineDev",
+  "tags": ["soulframe", "weapons", "reference", "database", "gaming"],
+  "features": [
+    "Searchable weapon database",
+    "Sortable columns",
+    "Multiple filter options",
+    "Detailed weapon stats",
+    "Weapon descriptions and lore"
+  ],
+  "lastUpdated": "2024-01-17"
+}
