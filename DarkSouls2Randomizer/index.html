@@ -9,21 +9,7 @@
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
     <script src="../templates/nav-loader.js"></script>
 </head>
-<body>
-    <!-- Hamburger Menu Button -->
-    <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
-    
-    <!-- Navigation Sidebar -->
-    <div id="nav-placeholder"></div>
-    <script>
-        fetch('../templates/navigation.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-    </script>
-
-    <div class="main-wrapper">
+<body><div class="main-wrapper">
         <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
             <h1>Dark Souls 2 Character Randomizer</h1>

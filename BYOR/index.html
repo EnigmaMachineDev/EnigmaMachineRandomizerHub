@@ -9,21 +9,7 @@
     <link rel="stylesheet" href="../templates/nav-styles.css">
     <script src="../templates/nav-loader.js"></script>
 </head>
-<body>
-    <!-- Hamburger Menu Button -->
-    <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
-    
-    <!-- Navigation Sidebar -->
-    <div id="nav-placeholder"></div>
-    <script>
-        fetch('../templates/navigation.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-    </script>
-
-    <a href="../index.html" class="back-button">← Back to Home</a>
+<body><a href="../index.html" class="back-button">← Back to Home</a>
     
     <div class="main-wrapper">
         <div class="container">
