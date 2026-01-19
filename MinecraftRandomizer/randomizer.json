@@ -1,0 +1,26 @@
+{
+  "categories": {
+    "Game Mode": {
+      "items": [
+        "Survival",
+        "Creative",
+        "Hardcore"
+      ]
+    },
+    "Difficulty": {
+      "items": [
+        "Peaceful",
+        "Easy",
+        "Normal",
+        "Hard"
+      ]
+    },
+    "World Type": {
+      "items": [
+        "Normal",
+        "Large Biomes",
+        "Amplified"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+Now in this folder, create a randomizer application in the same style as the other randomizers in the application.
+
+Make sure it is added to the index page in the proper section.
+
+Make sure it is added to the nav bars accross the application. 
+
+The image to use on the index page is in the images folder. 
+
+Additionally:
+
