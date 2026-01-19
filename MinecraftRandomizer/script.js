@@ -9,11 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const worldTypeEl = document.getElementById('world-type');
 
     let data = {};
+    const STORAGE_KEY = 'minecraftOptions';
+    let options = {};
 
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
             data = jsonData;
+            loadOptions();
             generateAll();
         });
 
@@ -21,8 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return arr[Math.floor(Math.random() * arr.length)];
     }
 
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try {
+                options = JSON.parse(saved);
+            } catch (e) {
+                console.error('Error loading options:', e);
+            }
+        }
+    }
+
+    function isEnabled(category, name) {
+        if (!options[category]) return true;
+        if (!options[category].hasOwnProperty(name)) return true;
+        return options[category][name];
+    }
+
+    function getEnabledItems(category) {
+        if (!data.categories || !data.categories[category]) return [];
+        return data.categories[category].items.filter(item => isEnabled(category, item));
+    }
+
     function generateGameMode() {
-        const items = data.categories['Game Mode'].items;
+        const items = getEnabledItems('Game Mode');
         if (items.length === 0) {
             gameModeEl.textContent = 'No game modes available';
             return;
@@ -31,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateDifficulty() {
-        const items = data.categories['Difficulty'].items;
+        const items = getEnabledItems('Difficulty');
         if (items.length === 0) {
             difficultyEl.textContent = 'No difficulty available';
             return;
@@ -40,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateWorldType() {
-        const items = data.categories['World Type'].items;
+        const items = getEnabledItems('World Type');
         if (items.length === 0) {
             worldTypeEl.textContent = 'No world types available';
             return;
