@@ -1,1 +1,183 @@
-{}
+{
+  "title": "The Witcher 3 Build Randomizer",
+  "categories": [
+    {
+      "name": "Build Focus",
+      "options": [
+        "Combat",
+        "Signs",
+        "Alchemy",
+        "Hybrid (Combat/Signs)",
+        "Hybrid (Combat/Alchemy)",
+        "Hybrid (Signs/Alchemy)",
+        "Jack of All Trades"
+      ]
+    },
+    {
+      "name": "Attack Focus",
+      "options": [
+        "Light Attack (Fast Attack)",
+        "Heavy Attack (Strong Attack)",
+        "Balanced"
+      ]
+    },
+    {
+      "name": "Armor Set",
+      "options": [
+        "Griffin School Gear (Signs)",
+        "Feline School Gear (Fast Attack)",
+        "Ursine School Gear (Heavy/Tank)",
+        "Wolven School Gear (Balanced)",
+        "Manticore School Gear (Alchemy)",
+        "Viper School Gear (Hybrid)",
+        "Kaer Morhen Armor",
+        "Temerian Armor",
+        "Nilfgaardian Armor",
+        "Skellige Armor",
+        "Undvik Armor",
+        "Toussaint Knight's Tourney Armor",
+        "Grandmaster Griffin",
+        "Grandmaster Feline",
+        "Grandmaster Ursine",
+        "Grandmaster Wolven",
+        "Grandmaster Manticore",
+        "Mixed Set (No Bonuses)"
+      ]
+    },
+    {
+      "name": "Primary Sign",
+      "options": [
+        "Igni (Fire)",
+        "Quen (Shield)",
+        "Aard (Telekinetic Blast)",
+        "Yrden (Magic Trap)",
+        "Axii (Mind Control)"
+      ]
+    },
+    {
+      "name": "Secondary Sign",
+      "options": [
+        "Igni (Fire)",
+        "Quen (Shield)",
+        "Aard (Telekinetic Blast)",
+        "Yrden (Magic Trap)",
+        "Axii (Mind Control)",
+        "None (Focus on Primary)"
+      ]
+    },
+    {
+      "name": "Tertiary Sign",
+      "options": [
+        "Igni (Fire)",
+        "Quen (Shield)",
+        "Aard (Telekinetic Blast)",
+        "Yrden (Magic Trap)",
+        "Axii (Mind Control)",
+        "None"
+      ]
+    },
+    {
+      "name": "Region Order",
+      "options": [
+        "White Orchard → Velen → Novigrad → Skellige → Kaer Morhen → Toussaint",
+        "White Orchard → Skellige → Velen → Novigrad → Kaer Morhen → Toussaint",
+        "White Orchard → Novigrad → Velen → Skellige → Kaer Morhen → Toussaint",
+        "White Orchard → Velen → Skellige → Novigrad → Kaer Morhen → Toussaint"
+      ]
+    },
+    {
+      "name": "Romance Choice",
+      "options": [
+        "Yennefer",
+        "Triss",
+        "Both (Face the Consequences)",
+        "Neither"
+      ]
+    },
+    {
+      "name": "Ciri's Fate",
+      "options": [
+        "Witcher (Supportive Choices)",
+        "Empress (Bring to Emhyr)",
+        "Bad Ending (Negative Choices)"
+      ]
+    },
+    {
+      "name": "Radovid's Fate",
+      "options": [
+        "Assassinate Radovid",
+        "Let Radovid Live"
+      ]
+    },
+    {
+      "name": "Nilfgaard vs Temeria",
+      "options": [
+        "Support Roche (Temeria)",
+        "Support Dijkstra (Redania)",
+        "Kill Dijkstra, Save Roche"
+      ]
+    },
+    {
+      "name": "Keira Metz's Fate",
+      "options": [
+        "Send to Kaer Morhen",
+        "Let Her Go to Radovid",
+        "Kill Her"
+      ]
+    },
+    {
+      "name": "Bloody Baron Questline",
+      "options": [
+        "Save Anna and the Baron",
+        "Free the Spirit (Children Live, Anna Dies)",
+        "Kill the Spirit (Children Die, Anna Lives)"
+      ]
+    },
+    {
+      "name": "Moral Alignment",
+      "options": [
+        "Lawful Good",
+        "Neutral Good",
+        "Chaotic Good",
+        "Lawful Neutral",
+        "True Neutral",
+        "Chaotic Neutral",
+        "Lawful Evil",
+        "Neutral Evil",
+        "Chaotic Evil"
+      ]
+    },
+    {
+      "name": "Hair Style",
+      "options": [
+        "Default",
+        "Ponytail",
+        "Long and Loose",
+        "Short and Loose",
+        "Elven Rebel",
+        "Loose Not Too Long",
+        "Short and Tied Back"
+      ]
+    },
+    {
+      "name": "Beard Style",
+      "options": [
+        "Clean Shaven",
+        "Trimmed",
+        "Full Beard",
+        "Full Beard Styled",
+        "Bushy Beard",
+        "Goatee"
+      ]
+    },
+    {
+      "name": "Difficulty",
+      "options": [
+        "Just the Story",
+        "Story and Sword (Normal)",
+        "Blood and Broken Bones (Hard)",
+        "Death March (Very Hard)"
+      ]
+    }
+  ]
+}

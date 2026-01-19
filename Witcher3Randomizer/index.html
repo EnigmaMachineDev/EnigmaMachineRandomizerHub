@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>The Witcher 3 Build Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+</head>
+<body><div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>The Witcher 3 Build Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-build">Generate Build</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Build Focus</h2>
+                    <button class="reroll-btn" id="reroll-build-focus">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="build-focus"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Attack Focus</h2>
+                    <button class="reroll-btn" id="reroll-attack-focus">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="attack-focus"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Armor Set</h2>
+                    <button class="reroll-btn" id="reroll-armor">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="armor"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Primary Sign</h2>
+                    <button class="reroll-btn" id="reroll-primary-sign">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="primary-sign"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Secondary Sign</h2>
+                    <button class="reroll-btn" id="reroll-secondary-sign">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="secondary-sign"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Tertiary Sign</h2>
+                    <button class="reroll-btn" id="reroll-tertiary-sign">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="tertiary-sign"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Region Order</h2>
+                    <button class="reroll-btn" id="reroll-region">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="region"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Moral Alignment</h2>
+                    <button class="reroll-btn" id="reroll-alignment">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="alignment"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Hair Style</h2>
+                    <button class="reroll-btn" id="reroll-hair">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="hair"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Beard Style</h2>
+                    <button class="reroll-btn" id="reroll-beard">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="beard"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Difficulty</h2>
+                    <button class="reroll-btn" id="reroll-difficulty">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="difficulty"></span>
+                </div>
+            </div>
+            <div style="margin: 2rem 0; padding: 1rem 0; border-top: 2px solid #66cc66; border-bottom: 2px solid #66cc66; text-align: center;">
+                <h2 style="margin: 0; color: #88e888;">Story Choices</h2>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Romance Choice</h2>
+                    <button class="reroll-btn" id="reroll-romance">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="romance"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Ciri's Fate</h2>
+                    <button class="reroll-btn" id="reroll-ciri">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="ciri"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Radovid's Fate</h2>
+                    <button class="reroll-btn" id="reroll-radovid">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="radovid"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Nilfgaard vs Temeria</h2>
+                    <button class="reroll-btn" id="reroll-politics">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="politics"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Keira Metz's Fate</h2>
+                    <button class="reroll-btn" id="reroll-keira">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="keira"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Bloody Baron Questline</h2>
+                    <button class="reroll-btn" id="reroll-baron">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="baron"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>The Witcher 3: Wild Hunt offers an incredibly deep RPG experience with countless ways to build Geralt. Between combat skills, signs, alchemy, mutations, and armor sets, it's easy to fall into the same playstyle every time. This randomizer is designed to shake things up and push you out of your comfort zone.</p>
+            <p>Generate a completely random build including your skill focus, mutation, armor set, sign priorities, and even major narrative choices. Whether you're a veteran witcher or starting a new playthrough, this tool will help you discover new strategies and experience the game in fresh ways. It also randomizes key story decisions to create unique narrative experiences.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click "Generate Build" to get a complete random setup for your playthrough. Use the individual re-roll buttons (↻) to change specific aspects while keeping the rest. Configure which options are available in the Options page. Toss a coin to your randomizer!</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -16,7 +16,8 @@ randomizer_folders = [
     "NumberRandomizer", "OptionPicker", "PathOfExile2CharacterRandomizer",
     "RealmOfTheMadGodRandomizer", "SatisfactoryRandomizer", "SkyrimCharacterRandomizer",
     "SoulframeLoadoutRandomizer", "SpaceMarine2LoadoutRandomizer", "Starcraft1Randomizer",
-    "Starcraft2Randomizer", "TeaRandomizer", "TravelRandomizer", "WarframeLoadoutRandomizer"
+    "Starcraft2Randomizer", "TeaRandomizer", "TravelRandomizer", "WarframeLoadoutRandomizer",
+    "Witcher3Randomizer"
 ]
 
 # Navigation template loader script
