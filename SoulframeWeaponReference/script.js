@@ -3,6 +3,13 @@ let weapons = [];
 let filteredWeapons = [];
 let currentSort = { column: 'name', direction: 'asc' };
 
+function escapeHtml(str) {
+    if (str === null || str === undefined) return '-';
+    const div = document.createElement('div');
+    div.textContent = String(str);
+    return div.innerHTML;
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
     loadWeaponData();
@@ -207,22 +214,67 @@ function updateDisplay() {
     
     filteredWeapons.forEach(weapon => {
         const row = document.createElement('tr');
-        row.innerHTML = `
-            <td class="weapon-name" onclick="showWeaponDetails('${weapon.name.replace(/'/g, "\\'")}')">${weapon.name}</td>
-            <td>${weapon.Slot || '-'}</td>
-            <td>${weapon.Art || '-'}</td>
-            <td>${weapon.DamageType || '-'}</td>
-            <td class="rarity-${(weapon.Rarity || '').toLowerCase()}">${weapon.Rarity || '-'}</td>
-            <td>${weapon.AttuneVirtue || '-'}</td>
-            <td>${weapon.AttuneTier || '-'}</td>
-            <td>${weapon.virtueAttuneCap || '-'}</td>
-            <td>${weapon.ReqVirtue || '0'}</td>
-            <td>${weapon.baseAttack}</td>
-            <td>${weapon.maxAttack}</td>
-            <td>${weapon.baseStagger}</td>
-            <td>${weapon.maxStagger}</td>
-            <td>${weapon.smiteChance}</td>
-        `;
+        
+        const nameCell = document.createElement('td');
+        nameCell.className = 'weapon-name';
+        nameCell.textContent = weapon.name;
+        nameCell.style.cursor = 'pointer';
+        nameCell.addEventListener('click', () => showWeaponDetails(weapon.name));
+        row.appendChild(nameCell);
+        
+        const slotCell = document.createElement('td');
+        slotCell.textContent = weapon.Slot || '-';
+        row.appendChild(slotCell);
+        
+        const artCell = document.createElement('td');
+        artCell.textContent = weapon.Art || '-';
+        row.appendChild(artCell);
+        
+        const damageCell = document.createElement('td');
+        damageCell.textContent = weapon.DamageType || '-';
+        row.appendChild(damageCell);
+        
+        const rarityCell = document.createElement('td');
+        rarityCell.className = `rarity-${(weapon.Rarity || '').toLowerCase()}`;
+        rarityCell.textContent = weapon.Rarity || '-';
+        row.appendChild(rarityCell);
+        
+        const attuneVirtueCell = document.createElement('td');
+        attuneVirtueCell.textContent = weapon.AttuneVirtue || '-';
+        row.appendChild(attuneVirtueCell);
+        
+        const attuneTierCell = document.createElement('td');
+        attuneTierCell.textContent = weapon.AttuneTier || '-';
+        row.appendChild(attuneTierCell);
+        
+        const virtueCapCell = document.createElement('td');
+        virtueCapCell.textContent = weapon.virtueAttuneCap || '-';
+        row.appendChild(virtueCapCell);
+        
+        const reqVirtueCell = document.createElement('td');
+        reqVirtueCell.textContent = weapon.ReqVirtue || '0';
+        row.appendChild(reqVirtueCell);
+        
+        const baseAttackCell = document.createElement('td');
+        baseAttackCell.textContent = weapon.baseAttack;
+        row.appendChild(baseAttackCell);
+        
+        const maxAttackCell = document.createElement('td');
+        maxAttackCell.textContent = weapon.maxAttack;
+        row.appendChild(maxAttackCell);
+        
+        const baseStaggerCell = document.createElement('td');
+        baseStaggerCell.textContent = weapon.baseStagger;
+        row.appendChild(baseStaggerCell);
+        
+        const maxStaggerCell = document.createElement('td');
+        maxStaggerCell.textContent = weapon.maxStagger;
+        row.appendChild(maxStaggerCell);
+        
+        const smiteCell = document.createElement('td');
+        smiteCell.textContent = weapon.smiteChance;
+        row.appendChild(smiteCell);
+        
         tbody.appendChild(row);
     });
     
@@ -236,86 +288,129 @@ function showWeaponDetails(weaponName) {
     if (!weapon) return;
     
     const modalBody = document.getElementById('modal-body');
+    modalBody.innerHTML = '';
     
-    // Build detailed stats HTML
-    let statsHTML = '';
-    if (weapon.Stats) {
-        statsHTML = `
-            <h3>Combat Statistics</h3>
-            <div class="stats-grid">
-                <div class="stat-section">
-                    <h4>Level 0 Stats</h4>
-                    ${Object.entries(weapon.Stats.Lvl0 || {}).map(([key, value]) => 
-                        `<p><strong>${key}:</strong> ${value}</p>`
-                    ).join('')}
-                </div>
-                <div class="stat-section">
-                    <h4>Level 30 Stats</h4>
-                    ${Object.entries(weapon.Stats.Lvl30 || {}).map(([key, value]) => 
-                        `<p><strong>${key}:</strong> ${value}</p>`
-                    ).join('')}
-                </div>
-            </div>
-            
-            ${weapon.Stats.AttuneCaps ? `
-            <h4>Attunement Caps</h4>
-            <div class="attune-caps">
-                ${Object.entries(weapon.Stats.AttuneCaps).filter(([key, value]) => value !== null && value !== undefined).map(([key, value]) => 
-                    `<p><strong>${key}:</strong> ${value}</p>`
-                ).join('')}
-            </div>
-            ` : ''}
-        `;
+    const title = document.createElement('h2');
+    title.textContent = weapon.name;
+    modalBody.appendChild(title);
+    
+    const detailsDiv = document.createElement('div');
+    detailsDiv.className = 'weapon-details';
+    
+    const details = [
+        { label: 'Slot', value: weapon.Slot || '-' },
+        { label: 'Art', value: weapon.Art || '-' },
+        { label: 'Damage Type', value: weapon.DamageType || '-' },
+        { label: 'Rarity', value: weapon.Rarity || '-', rarityClass: true },
+        { label: 'Attune Virtue', value: weapon.AttuneVirtue || '-' },
+        { label: 'Attune Tier', value: weapon.AttuneTier || '-' },
+        { label: 'Required Virtue', value: weapon.ReqVirtue || '0' },
+        { label: 'Smite Chance', value: `${weapon.Stats?.Smite || '-'} (${weapon.smiteChance})` }
+    ];
+    
+    if (weapon.Stats?.VirtueAttuneCap) {
+        details.push({ label: 'Virtue Attune Cap', value: weapon.Stats.VirtueAttuneCap });
     }
     
-    modalBody.innerHTML = `
-        <h2>${weapon.name}</h2>
-        <div class="weapon-details">
-            <div class="detail-row">
-                <span class="detail-label">Slot:</span>
-                <span class="detail-value">${weapon.Slot || '-'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Art:</span>
-                <span class="detail-value">${weapon.Art || '-'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Damage Type:</span>
-                <span class="detail-value">${weapon.DamageType || '-'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Rarity:</span>
-                <span class="detail-value rarity-${(weapon.Rarity || '').toLowerCase()}">${weapon.Rarity || '-'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Attune Virtue:</span>
-                <span class="detail-value">${weapon.AttuneVirtue || '-'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Attune Tier:</span>
-                <span class="detail-value">${weapon.AttuneTier || '-'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Required Virtue:</span>
-                <span class="detail-value">${weapon.ReqVirtue || '0'}</span>
-            </div>
-            <div class="detail-row">
-                <span class="detail-label">Smite Chance:</span>
-                <span class="detail-value">${weapon.Stats?.Smite || '-'} (${weapon.smiteChance})</span>
-            </div>
-            ${weapon.Stats?.VirtueAttuneCap ? `
-            <div class="detail-row">
-                <span class="detail-label">Virtue Attune Cap:</span>
-                <span class="detail-value">${weapon.Stats.VirtueAttuneCap}</span>
-            </div>
-            ` : ''}
-        </div>
+    details.forEach(detail => {
+        const row = document.createElement('div');
+        row.className = 'detail-row';
         
-        <h3>Description</h3>
-        <p class="weapon-description">${weapon.Description || 'No description available.'}</p>
+        const label = document.createElement('span');
+        label.className = 'detail-label';
+        label.textContent = detail.label + ':';
+        row.appendChild(label);
         
-        ${statsHTML}
-    `;
+        const value = document.createElement('span');
+        value.className = 'detail-value';
+        if (detail.rarityClass) {
+            value.className += ` rarity-${(weapon.Rarity || '').toLowerCase()}`;
+        }
+        value.textContent = detail.value;
+        row.appendChild(value);
+        
+        detailsDiv.appendChild(row);
+    });
+    
+    modalBody.appendChild(detailsDiv);
+    
+    const descTitle = document.createElement('h3');
+    descTitle.textContent = 'Description';
+    modalBody.appendChild(descTitle);
+    
+    const descPara = document.createElement('p');
+    descPara.className = 'weapon-description';
+    descPara.textContent = weapon.Description || 'No description available.';
+    modalBody.appendChild(descPara);
+    
+    if (weapon.Stats) {
+        const statsTitle = document.createElement('h3');
+        statsTitle.textContent = 'Combat Statistics';
+        modalBody.appendChild(statsTitle);
+        
+        const statsGrid = document.createElement('div');
+        statsGrid.className = 'stats-grid';
+        
+        if (weapon.Stats.Lvl0) {
+            const lvl0Section = document.createElement('div');
+            lvl0Section.className = 'stat-section';
+            const lvl0Title = document.createElement('h4');
+            lvl0Title.textContent = 'Level 0 Stats';
+            lvl0Section.appendChild(lvl0Title);
+            
+            Object.entries(weapon.Stats.Lvl0).forEach(([key, value]) => {
+                const p = document.createElement('p');
+                const strong = document.createElement('strong');
+                strong.textContent = key + ':';
+                p.appendChild(strong);
+                p.appendChild(document.createTextNode(' ' + value));
+                lvl0Section.appendChild(p);
+            });
+            statsGrid.appendChild(lvl0Section);
+        }
+        
+        if (weapon.Stats.Lvl30) {
+            const lvl30Section = document.createElement('div');
+            lvl30Section.className = 'stat-section';
+            const lvl30Title = document.createElement('h4');
+            lvl30Title.textContent = 'Level 30 Stats';
+            lvl30Section.appendChild(lvl30Title);
+            
+            Object.entries(weapon.Stats.Lvl30).forEach(([key, value]) => {
+                const p = document.createElement('p');
+                const strong = document.createElement('strong');
+                strong.textContent = key + ':';
+                p.appendChild(strong);
+                p.appendChild(document.createTextNode(' ' + value));
+                lvl30Section.appendChild(p);
+            });
+            statsGrid.appendChild(lvl30Section);
+        }
+        
+        modalBody.appendChild(statsGrid);
+        
+        if (weapon.Stats.AttuneCaps) {
+            const capsTitle = document.createElement('h4');
+            capsTitle.textContent = 'Attunement Caps';
+            modalBody.appendChild(capsTitle);
+            
+            const capsDiv = document.createElement('div');
+            capsDiv.className = 'attune-caps';
+            
+            Object.entries(weapon.Stats.AttuneCaps)
+                .filter(([key, value]) => value !== null && value !== undefined)
+                .forEach(([key, value]) => {
+                    const p = document.createElement('p');
+                    const strong = document.createElement('strong');
+                    strong.textContent = key + ':';
+                    p.appendChild(strong);
+                    p.appendChild(document.createTextNode(' ' + value));
+                    capsDiv.appendChild(p);
+                });
+            
+            modalBody.appendChild(capsDiv);
+        }
+    }
     
     // Show modal
     document.getElementById('weapon-modal').style.display = 'block';

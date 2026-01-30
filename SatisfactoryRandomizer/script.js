@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const STORAGE_KEY = 'satisfactoryOptions';
     let options = {};
 
+    function escapeHtml(str) {
+        if (str === null || str === undefined) return '';
+        const div = document.createElement('div');
+        div.textContent = String(str);
+        return div.innerHTML;
+    }
+
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
@@ -53,56 +60,91 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function setRecipe(itemName) {
+    function setRecipe(itemName, container) {
         const enabledRecipes = getEnabledRecipes(itemName);
-        if (enabledRecipes.length === 0) return '<p>No recipes enabled for this item.</p>';
+        container.innerHTML = '';
+        
+        if (enabledRecipes.length === 0) {
+            const p = document.createElement('p');
+            p.textContent = 'No recipes enabled for this item.';
+            container.appendChild(p);
+            return;
+        }
         
         const recipe = getRandomValue(enabledRecipes);
         
-        let result = `<div class="recipe-item">`;
-        result += `<h3>${itemName}</h3>`;
-        result += `<p><strong>Recipe:</strong> ${recipe.name}</p>`;
-        result += `<p><strong>Inputs:</strong> ${recipe.inputs}</p>`;
-        result += `<p><strong>Outputs:</strong> ${recipe.outputs}</p>`;
-        result += `</div>`;
+        const recipeDiv = document.createElement('div');
+        recipeDiv.className = 'recipe-item';
         
-        return result;
+        const title = document.createElement('h3');
+        title.textContent = itemName;
+        recipeDiv.appendChild(title);
+        
+        const recipeName = document.createElement('p');
+        const recipeStrong = document.createElement('strong');
+        recipeStrong.textContent = 'Recipe:';
+        recipeName.appendChild(recipeStrong);
+        recipeName.appendChild(document.createTextNode(' ' + recipe.name));
+        recipeDiv.appendChild(recipeName);
+        
+        const inputs = document.createElement('p');
+        const inputsStrong = document.createElement('strong');
+        inputsStrong.textContent = 'Inputs:';
+        inputs.appendChild(inputsStrong);
+        inputs.appendChild(document.createTextNode(' ' + recipe.inputs));
+        recipeDiv.appendChild(inputs);
+        
+        const outputs = document.createElement('p');
+        const outputsStrong = document.createElement('strong');
+        outputsStrong.textContent = 'Outputs:';
+        outputs.appendChild(outputsStrong);
+        outputs.appendChild(document.createTextNode(' ' + recipe.outputs));
+        recipeDiv.appendChild(outputs);
+        
+        container.appendChild(recipeDiv);
     }
 
     function randomizeAll() {
         const enabledItems = getEnabledItems();
         
+        recipeSectionsEl.innerHTML = '';
+        
         if (enabledItems.length === 0) {
-            recipeSectionsEl.innerHTML = '<p>No items enabled. Please enable some options.</p>';
+            const p = document.createElement('p');
+            p.textContent = 'No items enabled. Please enable some options.';
+            recipeSectionsEl.appendChild(p);
             return;
         }
-
-        let html = '';
         
         enabledItems.forEach(itemName => {
-            html += `<div class="section">`;
-            html += `<div class="section-header">`;
-            html += `<h2>${itemName}</h2>`;
-            html += `<button class="reroll-btn" data-item="${itemName}">↻</button>`;
-            html += `</div>`;
-            html += `<div class="item-container" id="recipe-${itemName.replace(/\s+/g, '-')}">`;
-            html += setRecipe(itemName);
-            html += `</div>`;
-            html += `</div>`;
-        });
-        
-        recipeSectionsEl.innerHTML = html;
-        
-        // Add event listeners to individual reroll buttons
-        document.querySelectorAll('.reroll-btn[data-item]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const itemName = e.target.getAttribute('data-item');
-                const containerId = `recipe-${itemName.replace(/\s+/g, '-')}`;
-                const container = document.getElementById(containerId);
-                if (container) {
-                    container.innerHTML = setRecipe(itemName);
-                }
+            const section = document.createElement('div');
+            section.className = 'section';
+            
+            const header = document.createElement('div');
+            header.className = 'section-header';
+            
+            const title = document.createElement('h2');
+            title.textContent = itemName;
+            header.appendChild(title);
+            
+            const rerollBtn = document.createElement('button');
+            rerollBtn.className = 'reroll-btn';
+            rerollBtn.textContent = '↻';
+            rerollBtn.addEventListener('click', () => {
+                setRecipe(itemName, itemContainer);
             });
+            header.appendChild(rerollBtn);
+            
+            section.appendChild(header);
+            
+            const itemContainer = document.createElement('div');
+            itemContainer.className = 'item-container';
+            itemContainer.id = `recipe-${itemName.replace(/\s+/g, '-')}`;
+            
+            setRecipe(itemName, itemContainer);
+            
+            section.appendChild(itemContainer);
+            recipeSectionsEl.appendChild(section);
         });
     }
 

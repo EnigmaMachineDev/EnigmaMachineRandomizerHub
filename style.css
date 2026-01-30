@@ -202,19 +202,62 @@
 
         /* Category Sections */
         .category-section {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+        }
+
+        .category-toggle {
+            width: 100%;
+            background: var(--card-bg);
+            border: 2px solid rgba(0, 255, 0, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
+            margin-bottom: 0;
+        }
+
+        .category-toggle:hover {
+            background: rgba(0, 255, 0, 0.05);
+            border-color: var(--primary-green);
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.1);
+        }
+
+        .toggle-icon {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .category-section.expanded .toggle-icon {
+            transform: rotate(90deg);
         }
 
         .category-title {
             color: var(--primary-green);
             font-size: 1.5rem;
             font-weight: 600;
-            margin-bottom: 25px;
-            padding-left: 15px;
-            border-left: 4px solid var(--primary-green);
+            margin: 0;
+            padding: 0;
+            border: none;
             text-transform: uppercase;
             letter-spacing: 1px;
-            text-align: center;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            margin-top: 0;
+        }
+
+        .category-section.expanded .collapsible-content {
+            margin-top: 25px;
         }
 
         /* Tool Grid */

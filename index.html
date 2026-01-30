@@ -27,10 +27,13 @@
         </header>
 
         <main class="main-container">
-        <!-- Generic Randomizer Tools Section -->
+        <!-- Generic Randomizers Section -->
         <section class="category-section">
-            <h2 class="category-title">Generic Randomizer Tools</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Generic Randomizers</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="NumberRandomizer/" class="tool-card">
                     <div class="tool-icon">🔢</div>
                     <div class="tool-content">
@@ -64,8 +67,11 @@
 
         <!-- Gaming Tools Section -->
         <section class="category-section">
-            <h2 class="category-title">Gaming Randomizers</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Gaming Randomizers</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="DarkSoulsRandomizer/" class="tool-card">
                     <div class="tool-icon">
                         <img src="Images/DarkSoulsLogo.png" alt="Dark Souls Logo" style="width: 140px; height: 140px; object-fit: contain;">
@@ -280,8 +286,11 @@
 
         <!-- Creative Tools Section -->
         <section class="category-section">
-            <h2 class="category-title">Creative Randomizers</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Creative Randomizers</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="ArtworkMediaRandomizer/" class="tool-card">
                     <div class="tool-icon">🎨</div>
                     <div class="tool-content">
@@ -302,8 +311,11 @@
 
         <!-- Cooking Randomizers Section -->
         <section class="category-section">
-            <h2 class="category-title">Cooking Randomizers</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Cooking Randomizers</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="CookingRandomizer/" class="tool-card">
                     <div class="tool-icon">🍳</div>
                     <div class="tool-content">
@@ -344,8 +356,11 @@
 
         <!-- Life Randomizers Section -->
         <section class="category-section">
-            <h2 class="category-title">Life Randomizers</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Life Randomizers</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="TravelRandomizer/" class="tool-card">
                     <div class="tool-icon">✈️</div>
                     <div class="tool-content">
@@ -377,10 +392,37 @@
             </div>
         </section>
 
+        <!-- Life Tools Section -->
+        <section class="category-section">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Life Tools</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
+                <a href="SleepScheduleGenerator/" class="tool-card">
+                    <div class="tool-icon">💤</div>
+                    <div class="tool-content">
+                        <h3 class="tool-title">Sleep Schedule Generator</h3>
+                        <p class="tool-description">Create optimized sleep schedules with monophasic, biphasic, or polyphasic patterns</p>
+                    </div>
+                </a>
+                <a href="MultiTimerApp/" class="tool-card">
+                    <div class="tool-icon">⏱️</div>
+                    <div class="tool-content">
+                        <h3 class="tool-title">Multi-Timer App</h3>
+                        <p class="tool-description">Run multiple timers simultaneously with notifications and audio alerts</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <!-- Homebrew Randomizer Section -->
         <section class="category-section">
-            <h2 class="category-title">Home Brewing Randomizers</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Home Brewing Randomizers</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="HomebrewingWineRandomizer/" class="tool-card">
                     <div class="tool-icon">🍷</div>
                     <div class="tool-content">
@@ -414,8 +456,11 @@
 
         <!-- Game References Section -->
         <section class="category-section">
-            <h2 class="category-title">Game References</h2>
-            <div class="tool-grid">
+            <button class="category-toggle" aria-expanded="false">
+                <span class="toggle-icon">▶</span>
+                <h2 class="category-title">Game References</h2>
+            </button>
+            <div class="tool-grid collapsible-content">
                 <a href="SoulframeWeaponReference/" class="tool-card">
                     <div class="tool-icon">
                         <img src="Images/SoulframeLogo.webp" alt="Soulframe Logo" style="width: 140px; height: 140px; object-fit: contain;">
@@ -445,5 +490,30 @@
     </div>
 
     <script src="templates/cmp-fix.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.category-toggle');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const section = this.parentElement;
+                    const content = section.querySelector('.collapsible-content');
+                    const icon = this.querySelector('.toggle-icon');
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    section.classList.toggle('expanded');
+                    
+                    if (isExpanded) {
+                        icon.textContent = '▶';
+                        content.style.maxHeight = '0';
+                    } else {
+                        icon.textContent = '▼';
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

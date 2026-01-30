@@ -1,0 +1,382 @@
+body {
+    background-color: #222222;
+    color: #66cc66;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body.sidebar-open {
+    margin-left: 250px;
+}
+
+body.sidebar-closed {
+    margin-left: 0;
+}
+
+.back-button {
+    color: #66cc66;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    max-width: 900px;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.input-section {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input-group input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #222222;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+.time-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.time-input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.time-input-group input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #222222;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #88e888;
+}
+
+.add-timer-btn {
+    background-color: #66cc66;
+    color: #222222;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 100%;
+    font-family: monospace;
+}
+
+.add-timer-btn:hover {
+    background-color: #88e888;
+}
+
+.notification-prompt {
+    background-color: #443322;
+    border-left: 4px solid #cc8844;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    color: #ffcc88;
+}
+
+.notification-prompt p {
+    margin: 0 0 1rem 0;
+}
+
+.generate-btn {
+    background-color: #66cc66;
+    color: #222222;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-family: monospace;
+}
+
+.generate-btn:hover {
+    background-color: #88e888;
+}
+
+.dismiss-btn {
+    background-color: #555555;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: monospace;
+}
+
+.dismiss-btn:hover {
+    background-color: #666666;
+}
+
+.timers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.timer-card {
+    background-color: #2a2a2a;
+    border-left: 4px solid #66cc66;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.timer-card.expired {
+    border-left-color: #cc4444;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { background-color: #2a2a2a; }
+    50% { background-color: #442222; }
+}
+
+.timer-card.paused {
+    border-left-color: #cc8844;
+}
+
+.timer-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #88e888;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+
+.timer-display {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #66cc66;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.timer-card.expired .timer-display {
+    color: #ff8888;
+}
+
+.timer-card.paused .timer-display {
+    color: #ffcc88;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.timer-btn {
+    background-color: #444444;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: monospace;
+    flex: 1;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.timer-btn:hover {
+    background-color: #555555;
+}
+
+.timer-btn.delete {
+    background-color: #cc4444;
+    color: #ffffff;
+    border-color: #cc4444;
+}
+
+.timer-btn.delete:hover {
+    background-color: #ee6666;
+}
+
+.timer-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.no-timers-message {
+    text-align: center;
+    color: #888888;
+    padding: 2rem;
+    font-size: 1.1em;
+}
+
+.no-timers-message p {
+    margin: 0;
+}
+
+a {
+    color: #66cc66;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #88e888;
+    text-decoration: underline;
+}
+
+.coffee-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-content {
+    text-align: left;
+    padding: 1rem;
+}
+
+.about-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #88e888;
+}
+
+.about-content ul {
+    margin-left: 1.5rem;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+}
+
+.about-section {
+    margin-top: 3rem;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+.footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.main-container {
+    max-width: 900px;
+    width: 90%;
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    body.sidebar-open,
+    body.sidebar-closed {
+        margin-left: 0;
+    }
+    
+    .about-content {
+        padding: 0.5rem;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .main-container {
+        width: 95%;
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .time-inputs {
+        grid-template-columns: 1fr;
+    }
+    
+    .timers-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .timer-display {
+        font-size: 2em;
+    }
+}

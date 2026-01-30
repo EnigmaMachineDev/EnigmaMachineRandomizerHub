@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Sleep Schedule Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Sleep Schedule Generator</h1>
+            
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="sleep-duration">Total Sleep Duration (hours):</label>
+                    <input type="number" id="sleep-duration" min="1" max="12" step="0.5" value="8">
+                </div>
+                
+                <div class="input-group">
+                    <label for="wind-down">Wind Down Time (minutes):</label>
+                    <input type="number" id="wind-down" min="0" max="120" step="5" value="30">
+                </div>
+                
+                <div class="input-group">
+                    <label for="wake-up">Wake Up Time (minutes):</label>
+                    <input type="number" id="wake-up" min="0" max="120" step="5" value="30">
+                </div>
+                
+                <div class="input-group">
+                    <label for="sleep-type">Sleep Pattern:</label>
+                    <select id="sleep-type">
+                        <option value="monophasic">Monophasic (Single sleep period)</option>
+                        <option value="biphasic">Biphasic (Two sleep periods)</option>
+                        <option value="polyphasic">Polyphasic (Multiple sleep periods)</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label>Required Awake Time Ranges:</label>
+                    <div id="awake-times-container">
+                        <div class="awake-time-entry">
+                            <div class="time-range-inputs">
+                                <input type="time" class="awake-time-start" value="09:00">
+                                <span class="time-separator">to</span>
+                                <input type="time" class="awake-time-end" value="17:00">
+                            </div>
+                            <button class="remove-time-btn" disabled>×</button>
+                        </div>
+                    </div>
+                    <button class="add-time-btn" id="add-awake-time">+ Add Awake Time Range</button>
+                </div>
+            </div>
+            
+            <button class="generate-btn" id="generate-schedule">Generate Sleep Schedule</button>
+            
+            <div id="schedule-output" class="schedule-output"></div>
+        </div>
+    </div>
+    
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Sleep Schedule Generator! This tool helps you create optimized sleep schedules based on your sleep needs, lifestyle constraints, and preferred sleep patterns.</p>
+            
+            <h3>Sleep Pattern Types</h3>
+            <p><strong>Monophasic Sleep:</strong> The most common sleep pattern with a single continuous sleep period, typically 7-9 hours at night. This is the standard sleep pattern for most adults in modern society.</p>
+            
+            <p><strong>Biphasic Sleep:</strong> Divides sleep into two periods - typically a longer core sleep at night (5-6 hours) and a shorter nap during the day (1-2 hours). This pattern is common in cultures with siesta traditions and can help with alertness throughout the day.</p>
+            
+            <p><strong>Polyphasic Sleep:</strong> Distributes sleep across multiple short periods throughout the day. Common polyphasic schedules include the Everyman (one core sleep plus 2-3 naps) and Uberman (6 evenly-spaced 20-minute naps). These patterns can be challenging to maintain but may increase total waking hours.</p>
+            
+            <h3>How to Use</h3>
+            <p>Enter your total desired sleep duration, wind-down time needed before falling asleep, wake-up time needed to become fully functional, select your preferred sleep pattern, and add any times you must be awake (like work hours or appointments). The generator will create an optimized schedule that fits your constraints.</p>
+            
+            <p><strong>Wind-down time</strong> is the period before sleep where you should avoid screens and stimulating activities to prepare your body for rest. <strong>Wake-up time</strong> is how long you need after waking to become fully alert and functional. The schedule ensures you're fully awake before your required awake periods begin.</p>
+            
+            <h3>Sleep Cycles</h3>
+            <p>Each schedule displays estimated sleep cycles based on an average sleep cycle duration of <strong>1.5 hours (90 minutes)</strong>. A complete sleep cycle includes light sleep, deep sleep, and REM sleep. While individual sleep cycles can vary from 70-120 minutes, 90 minutes is the commonly accepted average. Aligning your sleep duration with complete cycles (e.g., 6, 7.5, or 9 hours) may help you wake up feeling more refreshed.</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const STORAGE_KEY = 'travelOptions';
     let options = {};
 
+    function escapeHtml(str) {
+        if (str === null || str === undefined) return '';
+        const div = document.createElement('div');
+        div.textContent = String(str);
+        return div.innerHTML;
+    }
+
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
@@ -76,7 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function setCountry() {
         const enabledCountries = getEnabledItems('countries');
         if (enabledCountries.length === 0) {
-            countryRollEl.innerHTML = '<p>No countries enabled. Please enable some options.</p>';
+            countryRollEl.innerHTML = '';
+            const p = document.createElement('p');
+            p.textContent = 'No countries enabled. Please enable some options.';
+            countryRollEl.appendChild(p);
             advisoryLevelEl.textContent = '';
             travelStatusEl.textContent = '';
             return;
@@ -86,8 +96,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create Wikipedia URL for the country
         const wikiUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(country.name.replace(/ /g, '_'))}`;
         
-        // Display country name with link
-        countryRollEl.innerHTML = `<a href="${wikiUrl}" target="_blank" rel="noopener noreferrer" class="country-link">${country.name}</a>`;
+        // Display country name with link using DOM methods
+        countryRollEl.innerHTML = '';
+        const link = document.createElement('a');
+        link.href = wikiUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.className = 'country-link';
+        link.textContent = country.name;
+        countryRollEl.appendChild(link);
         
         const advisoryText = getAdvisoryText(country.level);
         advisoryLevelEl.textContent = advisoryText;

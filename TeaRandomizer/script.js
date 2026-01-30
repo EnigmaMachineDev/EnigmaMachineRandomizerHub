@@ -7,6 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const STORAGE_KEY = 'teaOptions';
     let options = {};
 
+    function escapeHtml(str) {
+        if (str === null || str === undefined) return '';
+        const div = document.createElement('div');
+        div.textContent = String(str);
+        return div.innerHTML;
+    }
+
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
@@ -42,59 +49,122 @@ document.addEventListener('DOMContentLoaded', () => {
         const categories = ['green_teas', 'black_teas', 'oolong_teas', 'white_teas', 'pu_erh_teas', 'herbal_teas', 'specialty_blends'];
         const availableCategories = categories.filter(cat => getEnabledItems(cat).length > 0);
         if (availableCategories.length === 0) {
-            teaRollEl.innerHTML = '<p>No teas enabled. Please enable some options.</p>';
+            teaRollEl.innerHTML = '';
+            const p = document.createElement('p');
+            p.textContent = 'No teas enabled. Please enable some options.';
+            teaRollEl.appendChild(p);
             return;
         }
         const category = availableCategories[Math.floor(Math.random() * availableCategories.length)];
         const enabledItems = getEnabledItems(category);
         const teaObj = getRandomValue(enabledItems);
         
-        let result = `<div class="tea-recipe">`;
-        result += `<h3>${teaObj.name}</h3>`;
+        teaRollEl.innerHTML = '';
+        const recipeDiv = document.createElement('div');
+        recipeDiv.className = 'tea-recipe';
+        
+        const title = document.createElement('h3');
+        title.textContent = teaObj.name;
+        recipeDiv.appendChild(title);
         
         if (teaObj.origin) {
-            result += `<p><strong>Origin:</strong> ${teaObj.origin}</p>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Origin:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.origin));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.description) {
-            result += `<p class="description"><strong>Description:</strong> ${teaObj.description}</p>`;
+            const p = document.createElement('p');
+            p.className = 'description';
+            const strong = document.createElement('strong');
+            strong.textContent = 'Description:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.description));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.brew_temp) {
-            result += `<p><strong>Brew Temperature:</strong> ${teaObj.brew_temp}</p>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Brew Temperature:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.brew_temp));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.brew_time) {
-            result += `<p><strong>Brew Time:</strong> ${teaObj.brew_time}</p>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Brew Time:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.brew_time));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.caffeine) {
-            result += `<p><strong>Caffeine:</strong> ${teaObj.caffeine}</p>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Caffeine:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.caffeine));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.oxidation) {
-            result += `<p><strong>Oxidation Level:</strong> ${teaObj.oxidation}</p>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Oxidation Level:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.oxidation));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.ingredients) {
-            result += `<p><strong>Ingredients:</strong></p><ul>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Ingredients:';
+            p.appendChild(strong);
+            recipeDiv.appendChild(p);
+            
+            const ul = document.createElement('ul');
             teaObj.ingredients.forEach(ingredient => {
-                result += `<li>${ingredient}</li>`;
+                const li = document.createElement('li');
+                li.textContent = ingredient;
+                ul.appendChild(li);
             });
-            result += `</ul>`;
+            recipeDiv.appendChild(ul);
         }
         
         if (teaObj.instructions) {
-            result += `<p><strong>Instructions:</strong> ${teaObj.instructions}</p>`;
+            const p = document.createElement('p');
+            const strong = document.createElement('strong');
+            strong.textContent = 'Instructions:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' ' + teaObj.instructions));
+            recipeDiv.appendChild(p);
         }
         
         if (teaObj.info_url) {
-            result += `<p class="info-link"><strong>Learn More:</strong> <a href="${teaObj.info_url}" target="_blank" rel="noopener noreferrer">Read about ${teaObj.name}</a></p>`;
+            const p = document.createElement('p');
+            p.className = 'info-link';
+            const strong = document.createElement('strong');
+            strong.textContent = 'Learn More:';
+            p.appendChild(strong);
+            p.appendChild(document.createTextNode(' '));
+            
+            const link = document.createElement('a');
+            link.href = teaObj.info_url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = 'Read about ' + teaObj.name;
+            p.appendChild(link);
+            recipeDiv.appendChild(p);
         }
         
-        result += `</div>`;
-        
-        teaRollEl.innerHTML = result;
+        teaRollEl.appendChild(recipeDiv);
     }
 
     function randomizeAll() {

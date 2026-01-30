@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Multi-Timer App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Multi-Timer App</h1>
+            
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="timer-name">Timer Name:</label>
+                    <input type="text" id="timer-name" placeholder="e.g., Laundry, Cooking, etc." maxlength="50">
+                </div>
+                
+                <div class="time-inputs">
+                    <div class="time-input-group">
+                        <label for="hours">Hours:</label>
+                        <input type="number" id="hours" min="0" max="23" value="0">
+                    </div>
+                    <div class="time-input-group">
+                        <label for="minutes">Minutes:</label>
+                        <input type="number" id="minutes" min="0" max="59" value="5">
+                    </div>
+                    <div class="time-input-group">
+                        <label for="seconds">Seconds:</label>
+                        <input type="number" id="seconds" min="0" max="59" value="0">
+                    </div>
+                </div>
+                
+                <button class="add-timer-btn" id="add-timer">+ Add Timer</button>
+            </div>
+            
+            <div id="notification-prompt" class="notification-prompt" style="display: none;">
+                <p>Enable notifications to get alerts when timers expire (even when tab is in background)</p>
+                <button class="generate-btn" id="enable-notifications">Enable Notifications</button>
+                <button class="dismiss-btn" id="dismiss-notifications">Dismiss</button>
+            </div>
+            
+            <div id="timers-container" class="timers-container"></div>
+            
+            <div id="no-timers-message" class="no-timers-message">
+                <p>No active timers. Add a timer to get started!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Multi-Timer App! This tool allows you to run multiple timers simultaneously, perfect for cooking, workouts, productivity sessions, or any activity that requires tracking multiple time-based tasks.</p>
+            
+            <h3>Features</h3>
+            <ul>
+                <li><strong>Multiple Simultaneous Timers</strong> - Run as many timers as you need at once</li>
+                <li><strong>Browser Notifications</strong> - Get notified when timers expire, even in background tabs</li>
+                <li><strong>Audio Alerts</strong> - Hear an alarm sound when each timer completes</li>
+                <li><strong>Visual Countdown</strong> - Watch your timers count down in real-time</li>
+                <li><strong>Persistent Storage</strong> - Timers are saved and restored if you refresh the page</li>
+                <li><strong>Individual Controls</strong> - Pause, resume, or delete each timer independently</li>
+            </ul>
+            
+            <h3>How to Use</h3>
+            <p>Enter a name for your timer, set the duration using hours, minutes, and seconds, then click "Add Timer". Each timer will start counting down immediately. You can pause, resume, or delete timers using the controls on each timer card.</p>
+            
+            <p><strong>Tip:</strong> Enable browser notifications for the best experience. You'll be alerted even if the tab is in the background!</p>
+            
+            <h3>Important Notes</h3>
+            <p><strong>Keep Tab Open:</strong> For timers to work reliably, keep this browser tab open. Closing the tab will stop all timers.</p>
+            <p><strong>Desktop vs Mobile:</strong> This app works best on desktop browsers. Mobile browsers may throttle timers when the app is in the background.</p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
