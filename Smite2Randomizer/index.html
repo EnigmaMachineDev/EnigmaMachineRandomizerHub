@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Smite 2 Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+</head>
+<body><div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Smite 2 Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-loadout">Roll All</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>God</h2>
+                    <button class="reroll-btn" id="reroll-god">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="god-result"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Role</h2>
+                    <button class="reroll-btn" id="reroll-role">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="role-result"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Game Mode</h2>
+                    <button class="reroll-btn" id="reroll-gamemode">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="gamemode-result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Smite 2 is the highly anticipated sequel to the popular third-person MOBA, bringing enhanced graphics, refined gameplay mechanics, and a fresh roster of gods from mythology. As the game continues to grow in its open beta phase, players have access to a diverse selection of deities and game modes to master.</p>
+            <p>This randomizer is designed to help you explore the full breadth of Smite 2's offerings by randomly selecting a god, role, and game mode for your next match. Whether you're testing new strategies, learning different gods, or simply looking to add variety to your gameplay, this tool will keep your Smite 2 experience dynamic and engaging.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Roll All" button to generate a complete random selection including god, role, and game mode. Use the individual re-roll buttons (↻) to change any specific aspect while keeping the others. Configure your preferences in the options page to exclude gods, roles, or game modes you don't want to play.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
