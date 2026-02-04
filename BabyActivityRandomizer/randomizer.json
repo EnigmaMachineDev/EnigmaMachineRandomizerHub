@@ -1,0 +1,206 @@
+{
+  "title": "Baby Activity Randomizer",
+  "description": "Random activity suggestions for spending quality time with your infant",
+  "categories": [
+    {
+      "name": "Sensory Play",
+      "items": [
+        "Tummy time with colorful toys",
+        "Mirror play - let baby see their reflection",
+        "Texture exploration with different fabrics",
+        "Water play in the bath",
+        "Crinkle paper or tissue exploration",
+        "Bubble watching",
+        "Sensory bottles with rice or beads",
+        "Touch and feel books",
+        "Soft brush sensory experience",
+        "Ice cube exploration (supervised)",
+        "Finger painting with edible paint",
+        "Play with different temperature objects (warm/cool)",
+        "Explore natural items (leaves, flowers, grass)",
+        "Sound shakers with different materials",
+        "Light and shadow play"
+      ]
+    },
+    {
+      "name": "Music & Movement",
+      "items": [
+        "Sing nursery rhymes",
+        "Dance together to music",
+        "Play with musical instruments (rattles, drums)",
+        "Listen to classical music",
+        "Sing lullabies",
+        "Clapping games",
+        "Bouncing on lap to rhythm",
+        "Music box listening",
+        "Nature sounds exploration",
+        "Make up silly songs about baby",
+        "Gentle rocking to music",
+        "Play peek-a-boo with music",
+        "Instrument exploration (xylophone, bells)",
+        "Movement songs (Head, Shoulders, Knees and Toes)",
+        "White noise or rain sounds"
+      ]
+    },
+    {
+      "name": "Reading & Language",
+      "items": [
+        "Read board books together",
+        "Describe everything you're doing",
+        "Name body parts while touching them",
+        "Look at family photo albums",
+        "Read rhyming books",
+        "Tell stories about your day",
+        "Practice animal sounds",
+        "Sing the alphabet song",
+        "Read high-contrast books",
+        "Describe colors and shapes",
+        "Talk about emotions and feelings",
+        "Read touch-and-feel books",
+        "Make funny faces and sounds",
+        "Practice counting with toys",
+        "Narrate diaper changes and routines"
+      ]
+    },
+    {
+      "name": "Physical Development",
+      "items": [
+        "Tummy time exercises",
+        "Assisted sitting practice",
+        "Reaching for toys overhead",
+        "Rolling practice",
+        "Leg bicycle exercises",
+        "Gentle baby massage",
+        "Crawling encouragement",
+        "Standing support practice",
+        "Grasping practice with toys",
+        "Kicking at hanging toys",
+        "Baby yoga poses",
+        "Pull-to-sit exercises",
+        "Hand-to-hand transfer practice",
+        "Cruising along furniture (older infants)",
+        "Ball rolling back and forth"
+      ]
+    },
+    {
+      "name": "Outdoor Activities",
+      "items": [
+        "Go for a walk in the stroller",
+        "Visit the park",
+        "Sit outside and watch clouds",
+        "Feel grass on bare feet",
+        "Listen to birds chirping",
+        "Watch trees move in the wind",
+        "Explore the garden",
+        "Picnic blanket time outside",
+        "Watch other children play",
+        "Feel sunshine on skin (with sun protection)",
+        "Explore sand at the beach",
+        "Watch animals at the zoo",
+        "Swing gently at the playground",
+        "Collect leaves and flowers",
+        "Splash in puddles (older infants)"
+      ]
+    },
+    {
+      "name": "Social & Bonding",
+      "items": [
+        "Skin-to-skin cuddle time",
+        "Play peek-a-boo",
+        "Make silly faces",
+        "Have a conversation (respond to coos)",
+        "Eskimo kisses",
+        "Butterfly kisses with eyelashes",
+        "Gentle tickle time",
+        "Staring contest",
+        "Video call with grandparents",
+        "Baby playdate",
+        "Practice waving bye-bye",
+        "Blow raspberries together",
+        "Copy baby's sounds and expressions",
+        "Give lots of kisses",
+        "Rock in rocking chair together"
+      ]
+    },
+    {
+      "name": "Creative & Messy Play",
+      "items": [
+        "Finger painting with edible paint",
+        "Play with cooked spaghetti",
+        "Explore yogurt or pudding",
+        "Squish mashed banana",
+        "Play with whipped cream",
+        "Jello sensory play",
+        "Oatmeal exploration",
+        "Paint with water on sidewalk",
+        "Play with shaving cream (supervised)",
+        "Explore applesauce textures",
+        "Mashed potato play",
+        "Cornstarch and water goop",
+        "Play with ice cubes in high chair",
+        "Explore different food textures",
+        "Handprint and footprint art"
+      ]
+    },
+    {
+      "name": "Quiet Time Activities",
+      "items": [
+        "Gentle rocking",
+        "Soft lullaby singing",
+        "Quiet book reading",
+        "Gentle massage",
+        "Calm cuddle time",
+        "Watch fish in aquarium",
+        "Listen to soft music",
+        "Dim light mobile watching",
+        "Gentle swaying",
+        "Peaceful nursing/bottle time",
+        "Watch rain through window",
+        "Soft toy exploration",
+        "Calm breathing together",
+        "Gentle hair stroking",
+        "Quiet observation time"
+      ]
+    },
+    {
+      "name": "Learning & Discovery",
+      "items": [
+        "Explore cause and effect toys",
+        "Stack and knock down blocks",
+        "Sort toys by color",
+        "Practice object permanence games",
+        "Explore containers (in and out)",
+        "Play with nesting cups",
+        "Simple puzzle exploration",
+        "Shape sorter practice",
+        "Explore different sized objects",
+        "Practice opening and closing",
+        "Explore magnets on fridge",
+        "Play with safe household items",
+        "Explore how things work",
+        "Practice problem-solving with toys",
+        "Discover new textures and materials"
+      ]
+    },
+    {
+      "name": "Bath & Water Play",
+      "items": [
+        "Bath time with toys",
+        "Pour water from cups",
+        "Splash and kick in water",
+        "Floating and sinking toys",
+        "Bubble bath play",
+        "Washcloth peek-a-boo",
+        "Water table exploration (older infants)",
+        "Bath crayons on tub walls",
+        "Squeeze toys in water",
+        "Foam letters and numbers",
+        "Water wheel toys",
+        "Fishing for bath toys",
+        "Gentle shower spray play",
+        "Sink water play (supervised)",
+        "Ice cube melting in bath"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+/* CMP Overlay Fix - Styling handled by cmp-fix.js */
+/* This CSS file is kept minimal to avoid conflicts */
+
+/* Ensure hidden popups stay hidden */
+div[data-ezoic-role="privacy-policy"][style*="display: none"],
+div[data-ezoic-role="privacy-policy"][style*="display:none"] {
+    display: none !important;
+}

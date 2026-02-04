@@ -11,43 +11,34 @@
         window.ezstandalone = window.ezstandalone || {};
         ezstandalone.cmd = ezstandalone.cmd || [];
     </script>
-    <title>Path of Exile 2 Character Randomizer</title>
+    <title>Baby Activity Randomizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../templates/nav-styles.css">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
     <script src="../templates/nav-loader.js"></script>
 </head>
 <body><div class="main-wrapper">
-        <a href="../index.html" class="back-button">← Back to Hub</a>
+                <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
-            <h1>Path of Exile 2 Random Build Idea Generator</h1>
+            <h1>Baby Activity Randomizer</h1>
             <a href="options.html" class="options-link">⚙️ Configure Options</a>
-            <button class="reroll-btn" id="generate-loadout">Roll All</button>
+            <button class="reroll-btn" id="generate-loadout">Generate Activity</button>
             <div class="section">
                 <div class="section-header">
-                    <h2>Class & Ascendancy</h2>
-                    <button class="reroll-btn" id="reroll-class">↻</button>
+                    <h2>Activity Category</h2>
+                    <button class="reroll-btn" id="reroll-category">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="class-result"></span>
+                    <span id="category"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Weapon & Skills</h2>
-                    <button class="reroll-btn" id="reroll-weapon-skills">↻</button>
+                    <h2>Suggested Activity</h2>
+                    <button class="reroll-btn" id="reroll-activity">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="weapon-skills-result"></span>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-header">
-                    <h2>Defense</h2>
-                    <button class="reroll-btn" id="reroll-defense">↻</button>
-                </div>
-                <div class="item-container">
-                    <span id="defense-result"></span>
+                    <span id="activity"></span>
                 </div>
             </div>
         </div>
@@ -55,10 +46,10 @@
     <div class="main-container about-section">
         <h2 class="category-title">About This Tool</h2>
         <div class="about-content">
-            <p>Path of Exile 2 is poised to redefine the action RPG genre with its deep skill system and extensive character customization. As the successor to the famously complex Path of Exile, the sequel promises even more ways to build a unique character. The sheer number of options can be overwhelming for new players and veterans alike.</p>
-            <p>This build idea generator is designed to provide a spark of inspiration for your next journey into Wraeclast. By randomly selecting a class, ascendancy, weapon type, and primary skills, it presents you with a core concept to build around. This is a fantastic way to discover powerful new combinations and challenge yourself to master playstyles you might never have considered, ensuring no two playthroughs are the same.</p>
+            <p>Spending quality time with your infant is crucial for their development and bonding. With so many activities to choose from, it can be overwhelming to decide what to do each day. This Baby Activity Randomizer helps parents and caregivers discover engaging activities across multiple developmental areas.</p>
+            <p>From sensory play and music to outdoor adventures and quiet time, this tool offers 150 carefully curated activities organized into 10 categories. Each activity is designed to support your baby's physical, cognitive, social, and emotional development while creating precious memories together.</p>
             <h3>How to Use the Randomizer</h3>
-            <p>Click the "Roll All" button to generate a complete build concept, including your class, ascendancy, weapon, and associated skills. Use the individual re-roll buttons (↻) to change any part of the concept you'd like to tweak. Let this tool be the starting point for your next great Path of Exile 2 theorycraft.</p>
+            <p>Click the "Generate Activity" button to receive a random activity suggestion from any category. You can use the individual re-roll buttons (↻) to change specific selections. Use the options page to customize which categories and activities are included in the randomization, allowing you to focus on age-appropriate activities or your baby's current interests.</p>
         </div>
     </div>
     <footer class="footer">
