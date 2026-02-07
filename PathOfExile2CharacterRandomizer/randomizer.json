@@ -28,7 +28,6 @@
         "Comet",
         "Contagion",
         "Dark Effigy",
-        "Decompose",
         "Detonate Dead",
         "Ember Fusillade",
         "Enfeeble",
@@ -62,6 +61,7 @@
         "Skeletal Cleric",
         "Skeletal Frost Mage",
         "Skeletal Reaver",
+        "Skeletal Sniper",
         "Skeletal Storm Mage",
         "Skeletal Warrior",
         "Solar Orb",
@@ -69,7 +69,7 @@
         "Spark",
         "Spellslinger (Dueling Wand)",
         "Unearth",
-        "Volatile Dead (Volatile Want)",
+        "Volatile Dead (Volatile Wand)",
         "Volcano",
         "Entangle",
         "Thunderstorm",
@@ -84,7 +84,7 @@
         "His Winnowing Flame (The Unborn Lich)",
         "Icestorm (The Whispering Ice)",
         "His Scattering Calamity (The Unborn Lich)",
-        "His Vile Intrusion, (The Unborn Lich)",
+        "His Vile Intrusion (The Unborn Lich)",
         "Reap (Reaping Staff)",
         "Frost Darts",
         "Arc",
@@ -127,6 +127,7 @@
         "Skeletal Cleric",
         "Skeletal Frost Mage",
         "Skeletal Reaver",
+        "Skeletal Sniper",
         "Skeletal Storm Mage",
         "Skeletal Warrior",
         "Solar Orb",
@@ -155,6 +156,7 @@
         "Skeletal Cleric",
         "Skeletal Frost Mage",
         "Skeletal Reaver",
+        "Skeletal Sniper",
         "Skeletal Storm Mage",
         "Skeletal Warrior",
         "Skeletal Warrior (Rattling Sceptre)",
@@ -167,7 +169,7 @@
       "name": "Bow",
       "skills": [
         "Bursting Fen Toad (Murkshaft)",
-        "Phantasmal Arrow, (Fairgraves' Curse)",
+        "Phantasmal Arrow (Fairgraves' Curse)",
         "Mirage Archer",
         "Detonating Arrow",
         "Escape Shot",
@@ -188,15 +190,17 @@
         "Tornado Shot",
         "Toxic Growth",
         "Toxic Domain",
-        "Ice-Tipped Arrows"
+        "Ice-Tipped Arrows",
+        "Electrocuting Arrow",
+        "Vine Arrow"
       ]
     },
     {
       "name": "Crossbow",
       "skills": [
         "Requiem (The Last Lament)",
-        "Black Powder Blitz, (Sharkgonne)",
-        "Mortar Canon ",
+        "Black Powder Blitz (Sharkgonne)",
+        "Mortar Cannon",
         "Armour Piercing Rounds",
         "Artillery Ballista",
         "Cluster Grenade",
@@ -214,7 +218,7 @@
         "Plasma Blast",
         "Rapid Fire",
         "Ripwire Ballista",
-        "Seige Cascade",
+        "Siege Cascade",
         "Shockburst Rounds",
         "Stormblast Bolts",
         "Voltaic Grenade"
@@ -237,7 +241,8 @@
         "Tempest Flurry",
         "Wave of Frost",
         "Whirling Assault",
-        "Wind Blast"
+        "Wind Blast",
+        "Killing Palm"
       ]
     },
     {
@@ -261,13 +266,15 @@
         "Sunder",
         "Supercharged Slam",
         "Volcanic Fissure",
-        "Forge Hammer"
+        "Forge Hammer",
+        "Armour Breaker",
+        "Leap Slam"
       ]
     },
     {
       "name": "Spear",
       "skills": [
-        "Chaotic Surge, (Spire of Ire)",
+        "Chaotic Surge (Spire of Ire)",
         "Blood Hunt",
         "Elemental Sundering",
         "Explosive Spear",
@@ -289,7 +296,9 @@
         "Twister",
         "Whirling Slash",
         "Whirlwind Lance",
-        "Wind Serpents Fury"
+        "Wind Serpent's Fury",
+        "Spearfield",
+        "Disengage"
       ]
     },
     {
@@ -310,7 +319,8 @@
         "Tempest Flurry",
         "Wave of Frost",
         "Whirling Assault",
-        "Wind Blast"
+        "Wind Blast",
+        "Killing Palm"
       ]
     },
     {
@@ -337,7 +347,8 @@
         "Entangle",
         "Thunderstorm",
         "Thrashing Vines",
-        "Tornado"
+        "Tornado",
+        "Rampage"
       ]
     }
   ],

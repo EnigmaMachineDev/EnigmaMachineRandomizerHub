@@ -27,10 +27,6 @@
       "link": "https://elite-dangerous.fandom.com/wiki/TK_Aphelion"
     },
     {
-      "name": "Kinetic SMG",
-      "link": "https://elite-dangerous.fandom.com/wiki/Submachine_Gun"
-    },
-    {
       "name": "Kinetic Carbine",
       "link": "https://elite-dangerous.fandom.com/wiki/Carbine"
     },
@@ -43,16 +39,16 @@
       "link": "https://elite-dangerous.fandom.com/wiki/TK_Eclipse"
     },
     {
-      "name": "Plasma Rifle",
-      "link": "https://elite-dangerous.fandom.com/wiki/Plasma_Rifle"
+      "name": "Manticore Intimidator",
+      "link": "https://elite-dangerous.fandom.com/wiki/Manticore_Intimidator"
+    },
+    {
+      "name": "Manticore Oppressor",
+      "link": "https://elite-dangerous.fandom.com/wiki/Manticore_Oppressor"
     },
     {
       "name": "Rocket Launcher",
       "link": "https://elite-dangerous.fandom.com/wiki/Rocket_Launcher"
-    },
-    {
-      "name": "Tormentor",
-      "link": "https://elite-dangerous.fandom.com/wiki/Tormentor"
     }
   ],
   "secondary_weapons": [
@@ -209,6 +205,10 @@
     {
       "name": "Orca",
       "link": "https://elite-dangerous.fandom.com/wiki/Orca"
+    },
+    {
+      "name": "Panther Clipper Mk II",
+      "link": "https://elite-dangerous.fandom.com/wiki/Panther_Clipper_Mk_II"
     },
     {
       "name": "Fer-de-Lance",

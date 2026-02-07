@@ -5,7 +5,8 @@
     "Vanguard",
     "Bulwark",
     "Sniper",
-    "Heavy"
+    "Heavy",
+    "Techmarine"
   ],
   "classes": {
     "Tactical": {
@@ -25,7 +26,7 @@
         "Plasma Pistol"
       ],
       "melee": [
-        "Chain Sword",
+        "Chainsword",
         "Combat Knife"
       ]
     },
@@ -36,10 +37,10 @@
         "Heavy Bolt Pistol",
         "Plasma Pistol",
         "Inferno Pistol",
-        "Neo-Vulkite Pistol"
+        "Neo-Volkite Pistol"
       ],
       "melee": [
-        "Chain Sword",
+        "Chainsword",
         "Thunder Hammer",
         "Power Fist",
         "Power Sword",
@@ -57,10 +58,10 @@
         "Bolt Pistol",
         "Heavy Bolt Pistol",
         "Inferno Pistol",
-        "Neo-Vulkite Pistol"
+        "Neo-Volkite Pistol"
       ],
       "melee": [
-        "Chain Sword",
+        "Chainsword",
         "Combat Knife",
         "Power Axe"
       ]
@@ -71,10 +72,10 @@
         "Bolt Pistol",
         "Heavy Bolt Pistol",
         "Plasma Pistol",
-        "Neo-Vulkite Pistol"
+        "Neo-Volkite Pistol"
       ],
       "melee": [
-        "Chain Sword",
+        "Chainsword",
         "Thunder Hammer",
         "Power Fist",
         "Power Sword",
@@ -103,7 +104,7 @@
         "Heavy Bolt Rifle",
         "Heavy Bolter",
         "Heavy Plasma Incinerator",
-        "Multi Melta",
+        "Multi-Melta",
         "Pyrecannon"
       ],
       "secondaries": [
@@ -113,6 +114,28 @@
         "Inferno Pistol"
       ],
       "melee": []
+    },
+    "Techmarine": {
+      "primaries": [
+        "Auto Bolt Rifle",
+        "Bolt Rifle",
+        "Heavy Bolt Rifle",
+        "Plasma Incinerator",
+        "Occulus Bolt Carbine"
+      ],
+      "secondaries": [
+        "Bolt Pistol",
+        "Heavy Bolt Pistol",
+        "Plasma Pistol",
+        "Inferno Pistol",
+        "Neo-Volkite Pistol"
+      ],
+      "melee": [
+        "Combat Knife",
+        "Power Sword",
+        "Power Axe",
+        "Omnissiah Axe"
+      ]
     }
   },
   "allPrimaries": [
@@ -130,7 +153,7 @@
     "Las Fusil",
     "Heavy Bolter",
     "Heavy Plasma Incinerator",
-    "Multi Melta",
+    "Multi-Melta",
     "Pyrecannon"
   ],
   "allSecondaries": [
@@ -138,15 +161,16 @@
     "Heavy Bolt Pistol",
     "Plasma Pistol",
     "Inferno Pistol",
-    "Neo-Vulkite Pistol"
+    "Neo-Volkite Pistol"
   ],
   "allMelee": [
-    "Chain Sword",
+    "Chainsword",
     "Combat Knife",
     "Thunder Hammer",
     "Power Fist",
     "Power Sword",
-    "Power Axe"
+    "Power Axe",
+    "Omnissiah Axe"
   ],
   "chapters": [
     {"name": "Ultramarines", "dlc": false},
@@ -222,7 +246,11 @@
     {"name": "Mantis Warriors", "dlc": true},
     {"name": "Storm Reapers", "dlc": true},
     {"name": "Solar Hawks", "dlc": true},
-    {"name": "Dark Hunters", "dlc": true}
+    {"name": "Dark Hunters", "dlc": true},
+    {"name": "Black Vipers", "dlc": true},
+    {"name": "Covenant of Fire", "dlc": true},
+    {"name": "Dragonspears", "dlc": true},
+    {"name": "Dark Krakens", "dlc": true}
   ],
   "missions": [
     "Inferno",
@@ -234,7 +262,9 @@
     "Termination",
     "Obelisk",
     "Exfiltration",
-    "Seige",
-    "Vortex"
+    "Siege",
+    "Vortex",
+    "Reclamation",
+    "Disruption"
   ]
 }

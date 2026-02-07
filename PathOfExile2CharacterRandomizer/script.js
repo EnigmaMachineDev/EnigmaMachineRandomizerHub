@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry", "Ancestral Spirits"],
         "Invoker": ["Elemental Expression"],
         "Infernalist": ["Summon Infernal Hound"],
-        "Amazon": ["Elemental Surge"]
+        "Amazon": ["Elemental Surge"],
+        "Shaman": ["Apocalypse"],
+        "Oracle": ["Align Fate"]
     };
 
     fetch('randomizer.json')

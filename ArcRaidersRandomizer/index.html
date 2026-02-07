@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/cmp-overlay-fix.css">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>ARC Raiders Loadout Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+</head>
+<body><div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>ARC Raiders Loadout Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-loadout">Generate Loadout</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Map</h2>
+                    <button class="reroll-btn" id="reroll-map">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="map-link" href="#" target="_blank"><span id="map"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Weapon Class</h2>
+                    <button class="reroll-btn" id="reroll-weapon-class">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="weapon-class-link" href="#" target="_blank"><span id="weapon-class"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Augment Type</h2>
+                    <button class="reroll-btn" id="reroll-augment-type">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="augment-type-link" href="#" target="_blank"><span id="augment-type"></span></a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Shield</h2>
+                    <button class="reroll-btn" id="reroll-shield">↻</button>
+                </div>
+                <div class="item-container">
+                    <a id="shield-link" href="#" target="_blank"><span id="shield"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>ARC Raiders is an intense co-op PvPvE third-person shooter from Embark Studios, set in a world invaded by deadly ARC machines. Players gear up as Raiders, choosing from a wide range of weapons, augments, and shields before venturing Topside to loot, fight, and extract.</p>
+            <p>This loadout randomizer is designed to shake up your runs by assigning you a random map, weapon class, augment type, and shield. Whether you're a seasoned Raider looking for a new challenge or just want to try something different, this tool will push you out of your comfort zone and into exciting new playstyles.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Loadout" button to get a completely random setup for your next run. Use the individual re-roll buttons (↻) to change any specific part of the loadout. Each item is linked to its respective wiki page for more details. Use the Configure Options page to customize which items can appear in your results.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+<script src="../templates/cmp-fix.js"></script>
+</body>
+</html>

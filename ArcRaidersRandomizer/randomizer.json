@@ -1,1 +1,31 @@
-{}
+{
+  "Maps": [
+    {"name": "Dam Battlegrounds", "link": "https://arcraiders.wiki/wiki/Dam_Battlegrounds"},
+    {"name": "Buried City", "link": "https://arcraiders.wiki/wiki/Buried_City"},
+    {"name": "Spaceport", "link": "https://arcraiders.wiki/wiki/Spaceport"},
+    {"name": "The Blue Gate", "link": "https://arcraiders.wiki/wiki/The_Blue_Gate"},
+    {"name": "Stella Montis", "link": "https://arcraiders.wiki/wiki/Stella_Montis"}
+  ],
+  "Weapon Class": [
+    {"name": "Assault Rifle", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Battle Rifle", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Submachine Gun", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Shotgun", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Pistol", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Hand Cannon", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Light Machine Gun", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Sniper Rifle", "link": "https://arcraiders.wiki/wiki/Weapons"},
+    {"name": "Special", "link": "https://arcraiders.wiki/wiki/Weapons"}
+  ],
+  "Augment Type": [
+    {"name": "Combat", "link": "https://arcraiders.wiki/wiki/Augments"},
+    {"name": "Looting", "link": "https://arcraiders.wiki/wiki/Augments"},
+    {"name": "Tactical", "link": "https://arcraiders.wiki/wiki/Augments"}
+  ],
+  "Shields": [
+    {"name": "Light Shield", "link": "https://arcraiders.wiki/wiki/Light_Shield"},
+    {"name": "Medium Shield", "link": "https://arcraiders.wiki/wiki/Medium_Shield"},
+    {"name": "Heavy Shield", "link": "https://arcraiders.wiki/wiki/Heavy_Shield"},
+    {"name": "No Shield", "link": ""}
+  ]
+}
