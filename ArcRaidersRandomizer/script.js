@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const augmentTypeLinkEl = document.getElementById('augment-type-link');
     const shieldEl = document.getElementById('shield');
     const shieldLinkEl = document.getElementById('shield-link');
+    const grenadesListEl = document.getElementById('grenades-list');
 
     const generateLoadoutBtn = document.getElementById('generate-loadout');
     const rerollMapBtn = document.getElementById('reroll-map');
     const rerollWeaponClassBtn = document.getElementById('reroll-weapon-class');
     const rerollAugmentTypeBtn = document.getElementById('reroll-augment-type');
     const rerollShieldBtn = document.getElementById('reroll-shield');
+    const rerollGrenadesBtn = document.getElementById('reroll-grenades');
 
     let data = {};
     const STORAGE_KEY = 'arcRaidersOptions';
@@ -77,11 +79,37 @@ document.addEventListener('DOMContentLoaded', () => {
         setItem(shieldEl, shieldLinkEl, getRandomItem(items));
     }
 
+    function rollGrenades() {
+        const items = getEnabledItems('Grenades');
+        if (!items || items.length === 0) {
+            grenadesListEl.innerHTML = '<li>N/A</li>';
+            return;
+        }
+        const count = Math.min(Math.floor(Math.random() * 3) + 1, items.length);
+        const selected = [];
+        const pool = [...items];
+        for (let i = 0; i < count; i++) {
+            const idx = Math.floor(Math.random() * pool.length);
+            selected.push(pool.splice(idx, 1)[0]);
+        }
+        grenadesListEl.innerHTML = '';
+        selected.forEach(grenade => {
+            const li = document.createElement('li');
+            if (grenade.link) {
+                li.innerHTML = `<a href="${grenade.link}" target="_blank">${grenade.name}</a>`;
+            } else {
+                li.textContent = grenade.name;
+            }
+            grenadesListEl.appendChild(li);
+        });
+    }
+
     function randomizeAll() {
         rollMap();
         rollWeaponClass();
         rollAugmentType();
         rollShield();
+        rollGrenades();
     }
 
     fetch('randomizer.json')
@@ -96,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rerollWeaponClassBtn.addEventListener('click', rollWeaponClass);
             rerollAugmentTypeBtn.addEventListener('click', rollAugmentType);
             rerollShieldBtn.addEventListener('click', rollShield);
+            rerollGrenadesBtn.addEventListener('click', rollGrenades);
         })
         .catch(error => console.error('Error loading data:', error));
 });

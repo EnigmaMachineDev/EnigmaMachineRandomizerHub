@@ -27,5 +27,23 @@
     {"name": "Medium Shield", "link": "https://arcraiders.wiki/wiki/Medium_Shield"},
     {"name": "Heavy Shield", "link": "https://arcraiders.wiki/wiki/Heavy_Shield"},
     {"name": "No Shield", "link": ""}
+  ],
+  "Grenades": [
+    {"name": "Light Impact Grenade", "link": "https://arcraiders.wiki/wiki/Light_Impact_Grenade"},
+    {"name": "Heavy Fuze Grenade", "link": "https://arcraiders.wiki/wiki/Heavy_Fuze_Grenade"},
+    {"name": "Blaze Grenade", "link": "https://arcraiders.wiki/wiki/Blaze_Grenade"},
+    {"name": "Gas Grenade", "link": "https://arcraiders.wiki/wiki/Gas_Grenade"},
+    {"name": "Showstopper", "link": "https://arcraiders.wiki/wiki/Showstopper"},
+    {"name": "Snap Blast Grenade", "link": "https://arcraiders.wiki/wiki/Snap_Blast_Grenade"},
+    {"name": "Seeker Grenade", "link": "https://arcraiders.wiki/wiki/Seeker_Grenade"},
+    {"name": "Shrapnel Grenade", "link": "https://arcraiders.wiki/wiki/Shrapnel_Grenade"},
+    {"name": "Trigger 'Nade", "link": "https://arcraiders.wiki/wiki/Trigger_%27Nade"},
+    {"name": "Trailblazer", "link": "https://arcraiders.wiki/wiki/Trailblazer"},
+    {"name": "Wolfpack", "link": "https://arcraiders.wiki/wiki/Wolfpack"},
+    {"name": "Firecracker", "link": "https://arcraiders.wiki/wiki/Firecracker"},
+    {"name": "Lure Grenade", "link": "https://arcraiders.wiki/wiki/Lure_Grenade"},
+    {"name": "Li'l Smoke Grenade", "link": "https://arcraiders.wiki/wiki/Li%27l_Smoke_Grenade"},
+    {"name": "Smoke Grenade", "link": "https://arcraiders.wiki/wiki/Smoke_Grenade"},
+    {"name": "Tagging Grenade", "link": "https://arcraiders.wiki/wiki/Tagging_Grenade"}
   ]
 }
