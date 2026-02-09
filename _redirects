@@ -3,4 +3,4 @@ https://enigmamachinerandomizerhub.netlify.app/* https://randomizertools.net/:sp
 http://enigmamachinerandomizerhub.netlify.app/* https://randomizertools.net/:splat 301!
 
 # Ezoic ads.txt redirect
-/ads.txt https://srv.adstxtmanager.com/19390/randomizertools.net 200!
+/ads.txt https://srv.adstxtmanager.com/19390/randomizertools.net 301!
