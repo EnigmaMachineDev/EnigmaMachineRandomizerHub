@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isEnabled(category, item.name)) return false;
             if (virtueFilter && item.virtues) {
                 if (item.virtues.includes('PLACEHOLDER')) return true;
-                return item.virtues.every(v => virtueFilter.includes(v));
+                return virtueFilter.every(v => item.virtues.includes(v));
             }
             return true;
         });
