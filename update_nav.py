@@ -6,7 +6,7 @@ base_dir = r"c:\Users\William\EnigmaMachineDev\Repository\EnigmaMachineRandomize
 
 # List of randomizer folders to update
 randomizer_folders = [
-    "ArtworkMediaRandomizer", "BYOR", "BakingRandomizer", "BeerBrewingRandomizer",
+    "ArtworkRandomizer", "BYOR", "BakingRandomizer", "BeerBrewingRandomizer",
     "BrewingRandomizer", "CharacterPersonalityRandomizer", "Civ5Randomizer",
     "CoffeeRandomizer", "DarkSouls2Randomizer", "DarkSouls3CharacterRandomizer",
     "DarkSoulsRandomizer", "DateIdeaRandomizer", "DiceRoller", "DistillingRandomizer",

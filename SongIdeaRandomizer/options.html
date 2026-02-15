@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Artwork Media Randomizer - Options</title>
+    <title>Song Idea Randomizer - Options</title>
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="options.css">
@@ -28,6 +28,22 @@
                 <button class="btn btn-secondary" id="expand-all">Expand All</button>
                 <button class="btn btn-secondary" id="collapse-all">Collapse All</button>
             </div>
+            <!-- BPM Range Section -->
+            <div class="bpm-range-section">
+                <h2>BPM Range</h2>
+                <div class="bpm-sliders">
+                    <div class="bpm-slider-group">
+                        <label for="bpm-min">Minimum: <span id="bpm-min-value">20</span></label>
+                        <input type="range" id="bpm-min" min="20" max="320" value="20">
+                    </div>
+                    <div class="bpm-slider-group">
+                        <label for="bpm-max">Maximum: <span id="bpm-max-value">320</span></label>
+                        <input type="range" id="bpm-max" min="20" max="320" value="320">
+                    </div>
+                </div>
+                <button class="btn btn-secondary" id="reset-bpm">Reset BPM to Defaults</button>
+            </div>
+
             <div id="categories-container">
                 <!-- Categories will be populated by JavaScript -->
             </div>

@@ -1,0 +1,146 @@
+{
+    "mediums": [
+        {
+            "name": "Oil Paint"
+        },
+        {
+            "name": "Acrylic Paint"
+        },
+        {
+            "name": "Paint Markers"
+        },
+        {
+            "name": "India Ink",
+            "options": [
+                "Dip Pen",
+                "Brush"
+            ]
+        },
+        {
+            "name": "Wood Burning"
+        },
+        {
+            "name": "Gel Pens"
+        },
+        {
+            "name": "Gouache"
+        },
+        {
+            "name": "Alcohol Markers"
+        },
+        {
+            "name": "Encaustic Wax",
+            "options": [
+                "Beeswax",
+                "Crayon Wax"
+            ]
+        },
+        {
+            "name": "Ink Pens",
+            "options": [
+                "Fountain Pen",
+                "Gel Pens",
+                "Brush Pens",
+                "Fineliner Pens",
+                "Ballpoint Pens",
+                "Rollerball Pens",
+                "Technical Pens"
+            ]
+        },
+        {
+            "name": "Graphite"
+        },
+        {
+            "name": "Colored Pencils"
+        },
+        {
+            "name": "Watercolor"
+        },
+        {
+            "name": "Mixed Media",
+            "options": [
+                "All",
+                "4",
+                "3",
+                "2"
+            ]
+        },
+        {
+            "name": "Airbrush"
+        },
+        {
+            "name": "Spray Paint"
+        },
+        {
+            "name": "Pastels"
+        },
+        {
+            "name": "Charcoal"
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Space"
+        },
+        {
+            "name": "Landscape"
+        },
+        {
+            "name": "Character"
+        },
+        {
+            "name": "Abstract"
+        },
+        {
+            "name": "Zentangle"
+        },
+        {
+            "name": "Portrait"
+        },
+        {
+            "name": "Still Life"
+        },
+        {
+            "name": "Animals"
+        },
+        {
+            "name": "Architecture"
+        },
+        {
+            "name": "Botanical"
+        },
+        {
+            "name": "Seascape"
+        },
+        {
+            "name": "Mythology"
+        },
+        {
+            "name": "Urban Scene"
+        },
+        {
+            "name": "Fantasy"
+        },
+        {
+            "name": "Surrealism"
+        },
+        {
+            "name": "Geometric"
+        },
+        {
+            "name": "Food & Drink"
+        },
+        {
+            "name": "Vehicle"
+        },
+        {
+            "name": "Weather & Atmosphere"
+        },
+        {
+            "name": "Automatic"
+        },
+        {
+            "name": "Freeform"
+        }
+    ]
+}

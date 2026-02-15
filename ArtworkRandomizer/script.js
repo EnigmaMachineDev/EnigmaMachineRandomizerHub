@@ -1,30 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mediumEl = document.getElementById('medium');
+    const subjectEl = document.getElementById('subject');
     const canvasEl = document.getElementById('canvas');
 
     const generateLoadoutBtn = document.getElementById('generate-loadout');
     const rerollMediumBtn = document.getElementById('reroll-medium');
+    const rerollSubjectBtn = document.getElementById('reroll-subject');
     const rerollCanvasBtn = document.getElementById('reroll-canvas');
 
     let mediums = [];
-    const STORAGE_KEY = 'artworkMediaOptions';
+    let subjects = [];
+    const STORAGE_KEY = 'artworkRandomizerOptions';
     let options = {};
     const canvasSizes = ['Small', 'Medium', 'Large'];
 
     function getRandomValue(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
     function loadOptions() { const saved = localStorage.getItem(STORAGE_KEY); if (saved) { try { options = JSON.parse(saved); } catch (e) { } } }
     function isEnabled(category, name) { if (!options[category]) return true; if (!options[category].hasOwnProperty(name)) return true; return options[category][name]; }
-    function getEnabledItems(category) { if (category === 'mediums' && Array.isArray(mediums)) { return mediums.filter(item => isEnabled(category, item.name)); } if (category === 'canvasSizes') { return canvasSizes.filter(size => isEnabled(category, size)); } return []; }
+    function getEnabledItems(category) { if (category === 'mediums' && Array.isArray(mediums)) { return mediums.filter(item => isEnabled(category, item.name)); } if (category === 'subjects' && Array.isArray(subjects)) { return subjects.filter(item => isEnabled(category, item.name)); } if (category === 'canvasSizes') { return canvasSizes.filter(size => isEnabled(category, size)); } return []; }
 
-    fetch('mediums.json')
+    fetch('randomizer.json')
         .then(response => response.json())
         .then(data => {
-            mediums = data;
+            mediums = data.mediums;
+            subjects = data.subjects;
             loadOptions();
             generateMedium();
+            generateSubject();
             generateCanvasSize();
         })
-        .catch(error => console.error('Error fetching mediums:', error));
+        .catch(error => console.error('Error fetching randomizer data:', error));
 
     function generateMedium() {
         if (!mediums || !Array.isArray(mediums) || mediums.length === 0) return;
@@ -94,11 +99,23 @@ document.addEventListener('DOMContentLoaded', () => {
         canvasEl.textContent = size;
     }
 
+    function generateSubject() {
+        const enabledSubjects = getEnabledItems('subjects');
+        if (enabledSubjects.length === 0) {
+            subjectEl.textContent = 'No subjects selected';
+            return;
+        }
+        const subject = getRandomValue(enabledSubjects);
+        subjectEl.textContent = subject.name;
+    }
+
     generateLoadoutBtn.addEventListener('click', () => {
         generateMedium();
+        generateSubject();
         generateCanvasSize();
     });
 
     rerollMediumBtn.addEventListener('click', generateMedium);
+    rerollSubjectBtn.addEventListener('click', generateSubject);
     rerollCanvasBtn.addEventListener('click', generateCanvasSize);
 });

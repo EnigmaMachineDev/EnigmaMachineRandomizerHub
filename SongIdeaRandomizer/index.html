@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PM3ZXMM8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3PM3ZXMM8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Idea Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZToyZjkwZTY3Ni00MjRmLTQyNzEtOGViOS01NGIzYjY3YzFjYTM=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Song Idea Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-song">Generate Song Idea</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>BPM</h2>
+                    <button class="reroll-btn" id="reroll-bpm">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="bpm"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Time Signature</h2>
+                    <button class="reroll-btn" id="reroll-time-signature">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="time-signature"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Key</h2>
+                    <button class="reroll-btn" id="reroll-key">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="key"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Genre</h2>
+                    <button class="reroll-btn" id="reroll-genre">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="genre"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Mood</h2>
+                    <button class="reroll-btn" id="reroll-mood">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="mood"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Focus Instrument</h2>
+                    <button class="reroll-btn" id="reroll-focus-instrument">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="focus-instrument"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Chord Progression</h2>
+                    <button class="reroll-btn" id="reroll-chord-progression">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="chord-progression"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Song Structure</h2>
+                    <button class="reroll-btn" id="reroll-song-structure">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="song-structure"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Stuck in a creative rut? The Song Idea Randomizer generates random musical parameters to inspire your next composition. Whether you're a seasoned producer or just picking up an instrument, random constraints can spark unexpected creativity and push you into uncharted musical territory.</p>
+            <p>From BPM and time signature to key, genre, mood, chord progression, and song structure, every roll gives you a unique starting point. Use it as a strict challenge or just a loose guide — the choice is yours.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click "Generate Song Idea" for a complete random song concept. Use individual re-roll buttons to change any specific parameter. Visit the Configure Options page to customize which genres, instruments, moods, and more can appear in your results.</p>
+            <h3>Song Structure Legend</h3>
+            <p><strong>I</strong> = Intro | <strong>O</strong> = Outro | <strong>A/B/C/D/E/F</strong> = Main sections (you decide: verse, chorus, theme, drop, etc.) | <strong>P</strong> = Pre-section (pre-chorus, build-up) | <strong>T</strong> = Transition/Drop (post-chorus, drop, release) | <strong>S</strong> = Solo/Instrumental | <strong>X</strong> = Breakdown</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

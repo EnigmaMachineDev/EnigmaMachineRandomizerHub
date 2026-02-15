@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = 'artworkMediaOptions';
-    const JSON_FILE = 'mediums.json';
+    const STORAGE_KEY = 'artworkRandomizerOptions';
+    const JSON_FILE = 'randomizer.json';
 
     fetch(JSON_FILE)
         .then(res => res.json())
@@ -20,9 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading options:', error));
 
     function initializeOptions(data) {
-        // Data is an array of mediums
-        if (Array.isArray(data) && data.length > 0) {
-            addCategory('mediums', 'Mediums', data);
+        // Mediums category
+        if (data.mediums && Array.isArray(data.mediums) && data.mediums.length > 0) {
+            addCategory('mediums', 'Mediums', data.mediums);
+        }
+        // Subjects category
+        if (data.subjects && Array.isArray(data.subjects) && data.subjects.length > 0) {
+            addCategory('subjects', 'Subjects', data.subjects);
         }
         // Add canvas sizes category
         const canvasSizes = ['Small', 'Medium', 'Large'];
