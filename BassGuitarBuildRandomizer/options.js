@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const collapseAllBtn = document.getElementById('collapse-all');
     const saveMessage = document.getElementById('save-message');
     
-    const STORAGE_KEY = 'soulframeOptions';
+    const STORAGE_KEY = 'bassGuitarBuildOptions';
     const JSON_FILE = window.RANDOMIZER_JSON_FILE || 'randomizer.json';
 
     fetch(JSON_FILE)
@@ -21,9 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initializeOptions(data) {
         Object.keys(data).forEach(categoryKey => {
-            if (Array.isArray(data[categoryKey]) && data[categoryKey].length > 0) {
-                const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, data[categoryKey]);
+            const categoryData = data[categoryKey];
+            
+            if (Array.isArray(categoryData) && categoryData.length > 0) {
+                const categoryName = categoryKey;
+                addCategory(categoryKey, categoryName, categoryData);
             }
         });
     }
@@ -74,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         items.forEach(item => {
             const itemName = item.name || item;
-            const virtueLabel = item.virtues ? ` [${item.virtues.join(', ')}]` : '';
-            addOption(grid, categoryKey, itemName, itemName + virtueLabel);
+            const forLabel = item.for ? ` [${item.for.join(', ')}]` : '';
+            addOption(grid, categoryKey, itemName, itemName + forLabel);
         });
 
         header.onclick = () => {

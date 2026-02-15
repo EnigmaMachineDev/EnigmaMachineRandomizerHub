@@ -1,286 +1,153 @@
 {
+  "Prism": [
+    {"name": "Iridis' Shaman", "virtues": ["Spirit"]},
+    {"name": "Warrior of Mora", "virtues": ["Courage"]},
+    {"name": "Rogue to Saphene", "virtues": ["Grace"]},
+    {"name": "Oro's Ranger", "virtues": ["Spirit", "Grace"]},
+    {"name": "Knight O'Paladine", "virtues": ["Courage", "Spirit"]},
+    {"name": "Verus' Assassin", "virtues": ["Grace", "Courage"]},
+    {"name": "Druid of Iridis", "virtues": ["Spirit"]},
+    {"name": "Mora's Beast", "virtues": ["Courage"]},
+    {"name": "Saphene's Shadow", "virtues": ["Grace"]},
+    {"name": "Wyld Oscelda's Witch", "virtues": ["Spirit"]},
+    {"name": "Wyld Tethren's Braveling", "virtues": ["Courage"]},
+    {"name": "Wyld Sirin's Trickster", "virtues": ["Grace"]}
+  ],
   "Primary": [
-    {
-      "name": "Blitzel",
-      "link": "https://wiki.avakot.org/Blitzel"
-    },
-    {
-      "name": "Juniper",
-      "link": "https://wiki.avakot.org/Juniper"
-    },
-    {
-      "name": "Thistle",
-      "link": "https://wiki.avakot.org/Thistle"
-    },
-    {
-      "name": "Igne Mora",
-      "link": "https://wiki.avakot.org/Igne_Mora"
-    },
-    {
-      "name": "Sollos-I",
-      "link": "https://wiki.avakot.org/Sollos-I"
-    },
-    {
-      "name": "Vetch",
-      "link": "https://wiki.avakot.org/Vetch"
-    },
-    {
-      "name": "Wulder",
-      "link": "https://wiki.avakot.org/Wulder"
-    },
-    {
-      "name": "Gwylen",
-      "link": "https://wiki.avakot.org/Gwylen"
-    },
-    {
-      "name": "Duhk Halic",
-      "link": "https://wiki.avakot.org/Duhk_Halic"
-    },
-    {
-      "name": "Gathannan",
-      "link": "https://wiki.avakot.org/Gathannan"
-    },
-    {
-      "name": "Rook",
-      "link": "https://wiki.avakot.org/Rook"
-    },
-    {
-      "name": "Vasp-IV",
-      "link": "https://wiki.avakot.org/Vasp-IV"
-    },
-    {
-      "name": "Bog & Myrtle",
-      "link": "https://wiki.avakot.org/Bog_%26_Myrtle"
-    },
-    {
-      "name": "Oryn Umbr",
-      "link": "https://wiki.avakot.org/Oryn-Umbr"
-    },
-    {
-      "name": "Rivt-II",
-      "link": "https://wiki.avakot.org/Rivt-II"
-    },
-    {
-      "name": "The Royal Tines",
-      "link": "https://wiki.avakot.org/The_Royal_Tines"
-    },
-    {
-      "name": "Unsula",
-      "link": "https://wiki.avakot.org/Unsula"
-    },
-    {
-      "name": "Dewelion",
-      "link": "https://wiki.avakot.org/Dewelion"
-    },
-    {
-      "name": "Lurash",
-      "link": "https://wiki.avakot.org/Lurash"
-    },
-    {
-      "name": "Marrow's Bane",
-      "link": "https://wiki.avakot.org/Marrow%27s_Bane"
-    },
-    {
-      "name": "Stultin",
-      "link": "https://wiki.avakot.org/Stultin"
-    },
-    {
-      "name": "Tessard",
-      "link": "https://wiki.avakot.org/Tessard"
-    },
-    {
-      "name": "The Erstroot",
-      "link": "https://wiki.avakot.org/The_Erstroot"
-    },
-    {
-      "name": "Nurash",
-      "link": "https://wiki.avakot.org/Nurash"
-    },
-    {
-      "name": "The Paragon",
-      "link": "https://wiki.avakot.org/The_Paragon"
-    },
-    {
-      "name": "Needleseye",
-      "link": "https://wiki.avakot.org/Needleseye"
-    },
-    {
-      "name": "Purity",
-      "link": "https://wiki.avakot.org/Purity"
-    },
-    {
-      "name": "Maestro",
-      "link": "https://wiki.avakot.org/Maestro"
-    },
-    {
-      "name": "Rostrum",
-      "link": "https://wiki.avakot.org/Rostrum"
-    },
-    {
-      "name": "The Starling",
-      "link": "https://wiki.avakot.org/The_Starling"
-    },
-    {
-      "name": "The Ivor",
-      "link": "https://wiki.avakot.org/The_Ivor"
-    },
-    {
-      "name": "The Alder",
-      "link": "https://wiki.avakot.org/The_Alder"
-    }
+    {"name": "Thistle", "link": "https://wiki.avakot.org/Thistle", "virtues": ["Grace"]},
+    {"name": "Blitzel", "link": "https://wiki.avakot.org/Blitzel", "virtues": ["Grace", "Courage"]},
+    {"name": "The Starling", "link": "https://wiki.avakot.org/The_Starling", "virtues": ["Grace"]},
+    {"name": "Juniper", "link": "https://wiki.avakot.org/Juniper", "virtues": ["Grace", "Spirit"]},
+    {"name": "Maestro", "link": "https://wiki.avakot.org/Maestro", "virtues": ["Grace", "Spirit"]},
+    {"name": "The Erstroot", "link": "https://wiki.avakot.org/The_Erstroot", "virtues": ["Spirit"]},
+    {"name": "The Alder", "link": "https://wiki.avakot.org/The_Alder", "virtues": ["Spirit"]},
+    {"name": "Purity", "link": "https://wiki.avakot.org/Purity", "virtues": ["Courage", "Spirit"]},
+    {"name": "Gathannan", "link": "https://wiki.avakot.org/Gathannan", "virtues": ["Courage", "Spirit"]},
+    {"name": "The Paragon", "link": "https://wiki.avakot.org/The_Paragon", "virtues": ["Courage", "Spirit", "Grace"]},
+    {"name": "Rook", "link": "https://wiki.avakot.org/Rook", "virtues": ["Courage", "Spirit"]},
+    {"name": "Needleseye", "link": "https://wiki.avakot.org/Needleseye", "virtues": ["Courage"]},
+    {"name": "Duhk Halic", "link": "https://wiki.avakot.org/Duhk_Halic", "virtues": ["Courage", "Spirit"]},
+    {"name": "Oryn-Umbr", "link": "https://wiki.avakot.org/Oryn-Umbr", "virtues": ["Courage"]},
+    {"name": "Bog & Myrtle", "link": "https://wiki.avakot.org/Bog_%26_Myrtle", "virtues": ["Courage", "Grace"]},
+    {"name": "Rivt-II", "link": "https://wiki.avakot.org/Rivt-II", "virtues": ["Grace"]},
+    {"name": "Unsula", "link": "https://wiki.avakot.org/Unsula", "virtues": ["Grace", "Courage"]},
+    {"name": "The Royal Tines", "link": "https://wiki.avakot.org/The_Royal_Tines", "virtues": ["Grace", "Spirit"]},
+    {"name": "Sollos-I", "link": "https://wiki.avakot.org/Sollos-I", "virtues": ["Courage"]},
+    {"name": "Rostrum", "link": "https://wiki.avakot.org/Rostrum", "virtues": ["Grace", "Spirit"]},
+    {"name": "The Ivor", "link": "https://wiki.avakot.org/The_Ivor", "virtues": ["Courage"]},
+    {"name": "Nurash", "link": "https://wiki.avakot.org/Nurash", "virtues": ["Courage", "Grace"]},
+    {"name": "Tessard", "link": "https://wiki.avakot.org/Tessard", "virtues": ["Courage", "Spirit"]},
+    {"name": "Igne Mora", "link": "https://wiki.avakot.org/Igne_Mora", "virtues": ["Courage", "Grace"]},
+    {"name": "Vetch", "link": "https://wiki.avakot.org/Vetch", "virtues": ["Courage", "Grace"]},
+    {"name": "Marrow's Bane", "link": "https://wiki.avakot.org/Marrow%27s_Bane", "virtues": ["Courage"]},
+    {"name": "Wulder", "link": "https://wiki.avakot.org/Wulder", "virtues": ["Courage"]},
+    {"name": "Gwylen", "link": "https://wiki.avakot.org/Gwylen", "virtues": ["Spirit"]},
+    {"name": "Vasp-IV", "link": "https://wiki.avakot.org/Vasp-IV", "virtues": ["Courage"]},
+    {"name": "Dewelion", "link": "https://wiki.avakot.org/Dewelion", "virtues": ["Spirit", "Grace"]},
+    {"name": "Stultin", "link": "https://wiki.avakot.org/Stultin", "virtues": ["Courage"]},
+    {"name": "Seathorn", "link": "https://wiki.avakot.org/Seathorn", "virtues": ["Spirit", "Grace"]}
   ],
   "Secondary": [
-    {
-      "name": "Precklies",
-      "link": "https://wiki.avakot.org/Precklies"
-    },
-    {
-      "name": "Skilter",
-      "link": "https://wiki.avakot.org/Sk%C3%ADlter"
-    },
-    {
-      "name": "Grinn",
-      "link": "https://wiki.avakot.org/Grinn"
-    },
-    {
-      "name": "Nettle",
-      "link": "https://wiki.avakot.org/Nettle"
-    },
-    {
-      "name": "Virdigris",
-      "link": "https://wiki.avakot.org/Virdigris"
-    },
-    {
-      "name": "Witan",
-      "link": "https://wiki.avakot.org/Witan"
-    },
-    {
-      "name": "Odiac",
-      "link": "https://wiki.avakot.org/Odiac"
-    },
-    {
-      "name": "Thrice Spurns",
-      "link": "https://wiki.avakot.org/Thrice_Spurns"
-    },
-    {
-      "name": "Esthelle",
-      "link": "https://wiki.avakot.org/Esthelle"
-    },
-    {
-      "name": "Cobladh",
-      "link": "https://wiki.avakot.org/Cobladh"
-    }
+    {"name": "Thrice Spurns", "link": "https://wiki.avakot.org/Thrice_Spurns", "virtues": ["Courage"]},
+    {"name": "Precklies", "link": "https://wiki.avakot.org/Precklies", "virtues": ["Grace"]},
+    {"name": "Skílter", "link": "https://wiki.avakot.org/Sk%C3%ADlter", "virtues": ["Grace", "Courage"]},
+    {"name": "Esthelle", "link": "https://wiki.avakot.org/Esthelle", "virtues": ["Spirit"]},
+    {"name": "Odiac", "link": "https://wiki.avakot.org/Odiac", "virtues": ["Spirit", "Courage"]},
+    {"name": "Nettle", "link": "https://wiki.avakot.org/Nettle", "virtues": ["Grace"]},
+    {"name": "Virdigris", "link": "https://wiki.avakot.org/Virdigris", "virtues": ["Grace", "Spirit"]},
+    {"name": "Witan", "link": "https://wiki.avakot.org/Witan", "virtues": ["Grace", "Spirit"]},
+    {"name": "Cobladh", "link": "https://wiki.avakot.org/Cobladh", "virtues": ["Grace"]},
+    {"name": "Grinn", "link": "https://wiki.avakot.org/Grinn", "virtues": ["Grace", "Courage"]},
+    {"name": "Clivers", "link": "https://wiki.avakot.org/Clivers", "virtues": ["Grace", "Courage"]},
+    {"name": "Basker's Wrest", "link": "https://wiki.avakot.org/Basker%27s_Wrest", "virtues": ["Spirit", "Courage"]}
   ],
   "Pact": [
-    {
-      "name": "Garren Rood",
-      "link": "https://wiki.avakot.org/Garren_Rood_(Pact)"
-    },
-    {
-      "name": "Mora's Hand",
-      "link": "https://wiki.avakot.org/Mora%27s_Hand"
-    },
-    {
-      "name": "Ode Tempest",
-      "link": "https://wiki.avakot.org/Ode_Tempest"
-    },
-    {
-      "name": "Orengall",
-      "link": "https://wiki.avakot.org/Orengall_(Pact)"
-    },
-    {
-      "name": "Sirin",
-      "link": "https://wiki.avakot.org/Sirin"
-    },
-    {
-      "name": "Tethren",
-      "link": "https://wiki.avakot.org/Tethren"
-    },
-    {
-      "name": "Oscelda",
-      "link": "https://wiki.avakot.org/Oscelda"
-    },
-    {
-      "name": "Bromius",
-      "link": "https://wiki.avakot.org/Bromius"
-    }
+    {"name": "Garren Rood", "link": "https://wiki.avakot.org/Garren_Rood_(Pact)"},
+    {"name": "Mora's Hand", "link": "https://wiki.avakot.org/Mora%27s_Hand"},
+    {"name": "Ode Tempest", "link": "https://wiki.avakot.org/Ode_Tempest"},
+    {"name": "Orengall", "link": "https://wiki.avakot.org/Orengall_(Pact)"},
+    {"name": "Sirin", "link": "https://wiki.avakot.org/Sirin"},
+    {"name": "Tethren", "link": "https://wiki.avakot.org/Tethren"},
+    {"name": "Oscelda", "link": "https://wiki.avakot.org/Oscelda"},
+    {"name": "Bromius", "link": "https://wiki.avakot.org/Bromius"}
   ],
-  "Armor": [
-    {
-      "name": "Circade Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Fire King Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Garren Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Mendicant King Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Ornegall Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Sproutfolk Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Tempest Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Arbearer Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Forgetfire Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Mockery Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Regent Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Sirin Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Steelsinger Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Tethren Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Oscelda Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Thawtide Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Wyld Oscelda Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Wyld Tethren Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    },
-    {
-      "name": "Wyld Sirin Set",
-      "link": "https://wiki.avakot.org/wiki/Armor"
-    }
+  "Helm": [
+    {"name": "Mockery Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Arbearer Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Regent Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Thawtide Grimguise", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Thawtide Meltcap", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Grace"]},
+    {"name": "Tempest Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Forgetfire Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Brazen Lung", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Wyld Oscelda Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Garren Rood Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Wyld Sirin Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Wyld Tethren Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Mendicant King Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Orengall Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Courage"]},
+    {"name": "Steelsinger Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Circade Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Fire King Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Grace"]},
+    {"name": "Crone Cucurbita Mask", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Lil' Zook Mask", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Poppa Pepo Mask", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Sirin Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Tethren Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Oscelda Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Wazzard's Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]}
+  ],
+  "Cuirass": [
+    {"name": "Mockery Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Arbearer Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Regent Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Thawtide Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Grace"]},
+    {"name": "Tempest Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Forgetfire Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Wyld Oscelda Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Garren Rood Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Wyld Sirin Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Wyld Tethren Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Mendicant King Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Orengall Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Courage"]},
+    {"name": "Steelsinger Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Circade Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Fire King Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Grace"]},
+    {"name": "Sirin Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Tethren Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Oscelda Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Wazzard's Cuirass", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]}
+  ],
+  "Leggings": [
+    {"name": "Mockery Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Arbearer Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Regent Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Thawtide Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Grace"]},
+    {"name": "Tempest Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Forgetfire Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Wyld Oscelda Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Garren Rood Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
+    {"name": "Wyld Sirin Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Wyld Tethren Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Mendicant King Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Spirit"]},
+    {"name": "Orengall Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Courage"]},
+    {"name": "Steelsinger Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Circade Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Fire King Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage", "Grace"]},
+    {"name": "Sirin Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace"]},
+    {"name": "Tethren Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Courage"]},
+    {"name": "Oscelda Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]},
+    {"name": "Wazzard's Leggings", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Spirit"]}
+  ],
+  "Color": [
+    {"name": "Verminia's Brines", "link": "https://wiki.avakot.org/Verminia%27s_Brines"},
+    {"name": "Verminia's Memoir", "link": "https://wiki.avakot.org/Verminia%27s_Memoir"},
+    {"name": "Epona's Forests", "link": "https://wiki.avakot.org/Epona%27s_Forests"},
+    {"name": "Rhiannon's Flame", "link": "https://wiki.avakot.org/Rhiannon%27s_Flame"},
+    {"name": "Sigil's Roses", "link": "https://wiki.avakot.org/Sigil%27s_Roses"},
+    {"name": "Alora's Royal Dyes", "link": "https://wiki.avakot.org/Alora%27s_Royal_Dyes"},
+    {"name": "Oscelda's Hope", "link": "https://wiki.avakot.org/Oscelda%27s_Hope"},
+    {"name": "Sirin's Shroud", "link": "https://wiki.avakot.org/Sirin%27s_Shroud_(Palette)"},
+    {"name": "Tethren's Blaze", "link": "https://wiki.avakot.org/Tethren%27s_Blaze"}
   ]
 }

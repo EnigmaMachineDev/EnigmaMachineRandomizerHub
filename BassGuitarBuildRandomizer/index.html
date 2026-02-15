@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/cmp-overlay-fix.css">
+    <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+    <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+    <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+    <script>
+        window.ezstandalone = window.ezstandalone || {};
+        ezstandalone.cmd = ezstandalone.cmd || [];
+    </script>
+    <title>Bass Guitar Build Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+</head>
+<body><div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Bass Guitar Build Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-build">Generate Build</button>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Body Wood</h2>
+                    <button class="reroll-btn" id="reroll-body-wood">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="body-wood"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Neck Wood</h2>
+                    <button class="reroll-btn" id="reroll-neck-wood">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="neck-wood"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Fretboard Wood</h2>
+                    <button class="reroll-btn" id="reroll-fretboard-wood">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="fretboard-wood"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Fret Type</h2>
+                    <button class="reroll-btn" id="reroll-fret-type">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="fret-type"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>String Count</h2>
+                    <button class="reroll-btn" id="reroll-string-count">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="string-count"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Scale Length</h2>
+                    <button class="reroll-btn" id="reroll-scale-length">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="scale-length"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Pickup Configuration</h2>
+                    <button class="reroll-btn" id="reroll-pickup-config">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="pickup-config"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Pickup Type</h2>
+                    <button class="reroll-btn" id="reroll-pickup-type">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="pickup-type"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Bridge</h2>
+                    <button class="reroll-btn" id="reroll-bridge">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="bridge"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>String Spacing</h2>
+                    <button class="reroll-btn" id="reroll-string-spacing">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="string-spacing"></span>
+                </div>
+                <p class="disclaimer">⚠️ Note: Not all string spacing, bridge, pickup, and nut width combinations are compatible. Verify compatibility before building.</p>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Hardware Finish</h2>
+                    <button class="reroll-btn" id="reroll-hardware-finish">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="hardware-finish"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Strings</h2>
+                    <button class="reroll-btn" id="reroll-strings">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="strings"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Nut Width</h2>
+                    <button class="reroll-btn" id="reroll-nut-width">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="nut-width"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Finish</h2>
+                    <button class="reroll-btn" id="reroll-finish">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="finish"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Paint</h2>
+                    <button class="reroll-btn" id="reroll-paint">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="paint"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Neck Profile</h2>
+                    <button class="reroll-btn" id="reroll-neck-profile">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="neck-profile"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Headstock</h2>
+                    <button class="reroll-btn" id="reroll-headstock">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="headstock"></span>
+                </div>
+            </div>
+            <div id="build-summary" class="build-summary" style="display:none;">
+                <h2>Build Summary</h2>
+                <p id="summary-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Building a custom bass guitar involves choosing from dozens of tonewoods, pickup configurations, hardware options, and neck profiles. Whether you're planning a Warmoth build, a parts bass, or just daydreaming about your dream instrument, this randomizer generates unique bass guitar specifications to inspire your next project.</p>
+            <p>From classic Precision and Jazz style basses to modern multi-scale designs, every combination of body wood, pickup layout, and hardware creates a unique tonal character. Use this tool to explore combinations you might never have considered.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click the "Generate Build" button to get a completely random bass guitar specification. Use the individual re-roll buttons to change any specific component. Use the Configure Options page to customize which items can appear in your results.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+<script src="../templates/cmp-fix.js"></script>
+</body>
+</html>
