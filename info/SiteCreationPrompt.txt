@@ -9,4 +9,3 @@ The image to use on the index page is in the images folder.
 Make sure it has an options page just like the other randomizers.
 
 Additionally:
-

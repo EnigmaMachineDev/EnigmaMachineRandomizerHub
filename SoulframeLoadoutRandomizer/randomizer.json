@@ -69,7 +69,10 @@
     {"name": "Sirin", "link": "https://wiki.avakot.org/Sirin"},
     {"name": "Tethren", "link": "https://wiki.avakot.org/Tethren"},
     {"name": "Oscelda", "link": "https://wiki.avakot.org/Oscelda"},
-    {"name": "Bromius", "link": "https://wiki.avakot.org/Bromius"}
+    {"name": "Bromius", "link": "https://wiki.avakot.org/Bromius"},
+    {"name": "Wyld Tethren", "link": "https://wiki.avakot.org/Wyld_Tethren"},
+    {"name": "Wyld Sirin", "link": "https://wiki.avakot.org/Wyld_Sirin"},
+    {"name": "Wyld Oscelda", "link": "https://wiki.avakot.org/Wyld_Oscelda"}
   ],
   "Helm": [
     {"name": "Mockery Helm", "link": "https://wiki.avakot.org/wiki/Armor", "virtues": ["Grace", "Spirit"]},
