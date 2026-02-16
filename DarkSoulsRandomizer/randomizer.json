@@ -285,5 +285,9 @@
       {"name": "Undead Rapport", "url": "https://darksouls.fandom.com/wiki/Undead_Rapport", "dlc": false},
       {"name": "Black Flame", "url": "https://darksouls.fandom.com/wiki/Black_Flame_(Dark_Souls)", "dlc": true}
     ]
-  }
+  },
+  "endings": [
+    {"name": "Link the Fire", "url": "https://darksouls.fandom.com/wiki/Endings#Link_the_Fire", "dlc": false},
+    {"name": "The Dark Lord", "url": "https://darksouls.fandom.com/wiki/Endings#The_Dark_Lord", "dlc": false}
+  ]
 }

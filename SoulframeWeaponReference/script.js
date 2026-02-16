@@ -27,7 +27,8 @@ function loadWeaponData() {
         baseStagger: data.Stats?.Lvl0?.Stagger || 0,
         maxStagger: data.Stats?.Lvl30?.Stagger || 0,
         smiteChance: data.Stats?.SmitePercent || '0%',
-        virtueAttuneCap: data.Stats?.VirtueAttuneCap || 0
+        virtueAttuneCap: data.Stats?.VirtueAttuneCap || 0,
+        virtuesDisplay: (data.Virtues || []).join(', ') || '-'
     }));
     
     // Populate filter dropdowns with unique values
@@ -113,8 +114,8 @@ function filterWeapons() {
         // Damage type filter
         if (damageFilter && weapon.DamageType !== damageFilter) return false;
         
-        // Virtue filter
-        if (virtueFilter && weapon.AttuneVirtue !== virtueFilter) return false;
+        // Virtue filter (checks Virtues array)
+        if (virtueFilter && !(weapon.Virtues || []).includes(virtueFilter)) return false;
         
         // Rarity filter
         if (rarityFilter && weapon.Rarity !== rarityFilter) return false;
@@ -152,9 +153,9 @@ function sortTable(column) {
         'slot': 'Slot',
         'art': 'Art',
         'damageType': 'DamageType',
+        'virtues': 'virtuesDisplay',
         'rarity': 'Rarity',
-        'attuneVirtue': 'AttuneVirtue',
-        'attuneTier': 'AttuneTier',
+        'attunement': 'Attunement',
         'virtueAttuneCap': 'virtueAttuneCap',
         'reqVirtue': 'ReqVirtue',
         'baseAttack': 'baseAttack',
@@ -175,7 +176,7 @@ function sortTable(column) {
         if (['baseAttack', 'maxAttack', 'baseStagger', 'maxStagger', 'virtueAttuneCap'].includes(column)) {
             aVal = Number(aVal) || 0;
             bVal = Number(bVal) || 0;
-        } else if (column === 'reqVirtue' || column === 'attuneTier') {
+        } else if (column === 'reqVirtue') {
             // Handle empty strings as 0 for virtue requirements
             aVal = aVal === '' ? 0 : Number(aVal) || 0;
             bVal = bVal === '' ? 0 : Number(bVal) || 0;
@@ -234,18 +235,18 @@ function updateDisplay() {
         damageCell.textContent = weapon.DamageType || '-';
         row.appendChild(damageCell);
         
+        const virtuesCell = document.createElement('td');
+        virtuesCell.textContent = weapon.virtuesDisplay;
+        row.appendChild(virtuesCell);
+        
         const rarityCell = document.createElement('td');
         rarityCell.className = `rarity-${(weapon.Rarity || '').toLowerCase()}`;
         rarityCell.textContent = weapon.Rarity || '-';
         row.appendChild(rarityCell);
         
-        const attuneVirtueCell = document.createElement('td');
-        attuneVirtueCell.textContent = weapon.AttuneVirtue || '-';
-        row.appendChild(attuneVirtueCell);
-        
-        const attuneTierCell = document.createElement('td');
-        attuneTierCell.textContent = weapon.AttuneTier || '-';
-        row.appendChild(attuneTierCell);
+        const attunementCell = document.createElement('td');
+        attunementCell.textContent = weapon.Attunement || '-';
+        row.appendChild(attunementCell);
         
         const virtueCapCell = document.createElement('td');
         virtueCapCell.textContent = weapon.virtueAttuneCap || '-';
@@ -301,9 +302,9 @@ function showWeaponDetails(weaponName) {
         { label: 'Slot', value: weapon.Slot || '-' },
         { label: 'Art', value: weapon.Art || '-' },
         { label: 'Damage Type', value: weapon.DamageType || '-' },
+        { label: 'Virtues', value: weapon.virtuesDisplay },
         { label: 'Rarity', value: weapon.Rarity || '-', rarityClass: true },
-        { label: 'Attune Virtue', value: weapon.AttuneVirtue || '-' },
-        { label: 'Attune Tier', value: weapon.AttuneTier || '-' },
+        { label: 'Attunement', value: weapon.Attunement || '-' },
         { label: 'Required Virtue', value: weapon.ReqVirtue || '0' },
         { label: 'Smite Chance', value: `${weapon.Stats?.Smite || '-'} (${weapon.smiteChance})` }
     ];

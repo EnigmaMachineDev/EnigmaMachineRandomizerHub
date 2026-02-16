@@ -215,5 +215,9 @@
       {"name": "Climax", "url": "https://darksouls.fandom.com/wiki/Climax", "dlc": false},
       {"name": "Recollection", "url": "https://darksouls.fandom.com/wiki/Recollection", "dlc": false}
     ]
-  }
+  },
+  "endings": [
+    {"name": "Take the Throne", "url": "https://darksouls.fandom.com/wiki/Endings_(Dark_Souls_II)#Take_the_Throne", "dlc": false},
+    {"name": "Leave the Throne", "url": "https://darksouls.fandom.com/wiki/Endings_(Dark_Souls_II)#Leave_the_Throne", "dlc": false}
+  ]
 }

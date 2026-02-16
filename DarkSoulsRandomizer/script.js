@@ -14,11 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollArmorBtn = document.getElementById('reroll-armor');
     const rerollSpellsBtn = document.getElementById('reroll-spells');
     const rerollCasterWeaponBtn = document.getElementById('reroll-caster-weapon');
+    const endingEl = document.getElementById('ending');
+    const endingLinkEl = document.getElementById('ending-link');
+    const rerollEndingBtn = document.getElementById('reroll-ending');
 
     let weaponsData;
     let casterWeaponsData;
     let armorData;
     let magicData;
+    let endingsData;
 
     let currentSpellType = '';
     const STORAGE_KEY = 'darkSoulsOptions';
@@ -183,10 +187,20 @@ document.addEventListener('DOMContentLoaded', () => {
         casterWeaponLinkEl.href = casterWeaponLink;
     }
 
+    function generateEnding() {
+        if (!endingsData) return;
+        const enabledEndings = getEnabledItems('endings', endingsData);
+        if (enabledEndings.length === 0) return;
+        const randomEnding = getRandomElement(enabledEndings);
+        endingEl.textContent = randomEnding.name;
+        endingLinkEl.href = randomEnding.url;
+    }
+
     function generateAll() {
         generateWeapon();
         generateArmor();
         generateSpells();
+        generateEnding();
     }
 
     fetch('randomizer.json')
@@ -196,6 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             casterWeaponsData = data.caster_weapons;
             armorData = data.armor;
             magicData = data.magic;
+            endingsData = data.endings;
 
             loadOptions();
             generateAll();
@@ -205,6 +220,41 @@ document.addEventListener('DOMContentLoaded', () => {
             rerollArmorBtn.addEventListener('click', generateArmor);
             rerollSpellsBtn.addEventListener('click', generateSpells);
             rerollCasterWeaponBtn.addEventListener('click', generateCasterWeapon);
+            rerollEndingBtn.addEventListener('click', generateEnding);
         })
         .catch(error => console.error('Error loading data:', error));
+
+    function copyResults() {
+        const sections = document.querySelectorAll('.container > .section');
+        const lines = [];
+        sections.forEach(section => {
+            if (section.style.display === 'none') return;
+            const header = section.querySelector('.section-header h2');
+            if (!header) return;
+            const label = header.textContent.trim();
+            const itemContainer = section.querySelector('.item-container');
+            if (!itemContainer) return;
+            // Check for list items
+            const listItems = itemContainer.querySelectorAll('li');
+            let value = '';
+            if (listItems.length > 0) {
+                const items = Array.from(listItems).map(li => li.textContent.trim());
+                value = items.join(', ');
+            } else {
+                value = itemContainer.textContent.trim();
+            }
+            if (value) {
+                lines.push(label + ': ' + value);
+            }
+        });
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('copy-results');
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = originalText; }, 2000);
+        });
+    }
+
+    document.getElementById('copy-results').addEventListener('click', copyResults);
 });

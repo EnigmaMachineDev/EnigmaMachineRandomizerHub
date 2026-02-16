@@ -196,6 +196,25 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+
+.copy-btn {
+    background-color: #444;
+    color: #66cc66;
+    border: 1px solid #66cc66;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #555;
+    color: #88e888;
+    border-color: #88e888;
+}
+
 @media (max-width: 768px) {
 
     body.sidebar-open,

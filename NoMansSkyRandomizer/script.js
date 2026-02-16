@@ -76,4 +76,38 @@ document.addEventListener('DOMContentLoaded', () => {
     generateBtn.addEventListener('click', generateAll);
     rerollActivityBtn.addEventListener('click', generateActivity);
     rerollRaceBtn.addEventListener('click', generateRace);
+
+    function copyResults() {
+        const sections = document.querySelectorAll('.container > .section');
+        const lines = [];
+        sections.forEach(section => {
+            if (section.style.display === 'none') return;
+            const header = section.querySelector('.section-header h2');
+            if (!header) return;
+            const label = header.textContent.trim();
+            const itemContainer = section.querySelector('.item-container');
+            if (!itemContainer) return;
+            // Check for list items
+            const listItems = itemContainer.querySelectorAll('li');
+            let value = '';
+            if (listItems.length > 0) {
+                const items = Array.from(listItems).map(li => li.textContent.trim());
+                value = items.join(', ');
+            } else {
+                value = itemContainer.textContent.trim();
+            }
+            if (value) {
+                lines.push(label + ': ' + value);
+            }
+        });
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('copy-results');
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = originalText; }, 2000);
+        });
+    }
+
+    document.getElementById('copy-results').addEventListener('click', copyResults);
 });

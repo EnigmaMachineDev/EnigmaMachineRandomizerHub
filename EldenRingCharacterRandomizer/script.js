@@ -57,18 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!primaryWeaponData) return;
         const enabledWeapons = getEnabledItems('weapons', primaryWeaponData);
         if (enabledWeapons.length === 0) return;
-        const randomWeaponName = getRandomElement(enabledWeapons);
-        const randomWeaponLink = primaryWeaponData[randomWeaponName];
-        weaponEl.textContent = randomWeaponName;
-        weaponLinkEl.href = randomWeaponLink;
+        const randomWeapon = getRandomElement(enabledWeapons);
+        weaponEl.textContent = randomWeapon.name;
+        weaponLinkEl.href = randomWeapon.url;
     }
 
     function generateArmor() {
         if (!armorData) return;
         // Combine all armor types into one pool, checking each subcategory
-        const lightArmor = armorData.light_sets ? armorData.light_sets.filter(armor => isEnabled('light_sets', armor.name)) : [];
-        const mediumArmor = armorData.medium_sets ? armorData.medium_sets.filter(armor => isEnabled('medium_sets', armor.name)) : [];
-        const heavyArmor = armorData.heavy_sets ? armorData.heavy_sets.filter(armor => isEnabled('heavy_sets', armor.name)) : [];
+        const lightKey = armorData.light_sets ? 'light_sets' : 'light';
+        const mediumKey = armorData.medium_sets ? 'medium_sets' : 'medium';
+        const heavyKey = armorData.heavy_sets ? 'heavy_sets' : 'heavy';
+        const lightArmor = armorData[lightKey] ? armorData[lightKey].filter(armor => isEnabled(lightKey, armor.name)) : [];
+        const mediumArmor = armorData[mediumKey] ? armorData[mediumKey].filter(armor => isEnabled(mediumKey, armor.name)) : [];
+        const heavyArmor = armorData[heavyKey] ? armorData[heavyKey].filter(armor => isEnabled(heavyKey, armor.name)) : [];
         
         const enabledArmor = [...lightArmor, ...mediumArmor, ...heavyArmor];
         if (enabledArmor.length === 0) {
@@ -217,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('randomizer.json')
         .then(res => res.json())
         .then(data => {
-            primaryWeaponData = data.weapons;
+            primaryWeaponData = Array.isArray(data.weapons) ? data.weapons : Object.entries(data.weapons).map(([name, url]) => ({ name, url }));
             armorData = data.armor;
             spiritAshesData = data.spirit_ashes;
             magicData = data.magic;
@@ -236,4 +238,38 @@ document.addEventListener('DOMContentLoaded', () => {
             rerollEndingBtn.addEventListener('click', generateEnding);
         })
         .catch(error => console.error('Error loading data:', error));
+
+    function copyResults() {
+        const sections = document.querySelectorAll('.container > .section');
+        const lines = [];
+        sections.forEach(section => {
+            if (section.style.display === 'none') return;
+            const header = section.querySelector('.section-header h2');
+            if (!header) return;
+            const label = header.textContent.trim();
+            const itemContainer = section.querySelector('.item-container');
+            if (!itemContainer) return;
+            // Check for list items
+            const listItems = itemContainer.querySelectorAll('li');
+            let value = '';
+            if (listItems.length > 0) {
+                const items = Array.from(listItems).map(li => li.textContent.trim());
+                value = items.join(', ');
+            } else {
+                value = itemContainer.textContent.trim();
+            }
+            if (value) {
+                lines.push(label + ': ' + value);
+            }
+        });
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('copy-results');
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = originalText; }, 2000);
+        });
+    }
+
+    document.getElementById('copy-results').addEventListener('click', copyResults);
 });

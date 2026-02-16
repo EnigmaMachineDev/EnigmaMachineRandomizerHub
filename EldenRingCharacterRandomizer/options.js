@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('Error loading options:', error));
 
     function initializeOptions(data) {
+        // Convert weapons object format {name: url} to array format [{name, url}] if needed
+        if (data.weapons && !Array.isArray(data.weapons)) {
+            data.weapons = Object.entries(data.weapons).map(([name, url]) => ({ name, url }));
+        }
+
         Object.keys(data).forEach(categoryKey => {
             const categoryData = data[categoryKey];
             

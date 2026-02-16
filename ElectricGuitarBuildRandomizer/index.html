@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Witcher 3 Build Randomizer</title>
+    <title>Electric Guitar Build Randomizer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../templates/nav-styles.css">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
@@ -22,175 +22,203 @@
 <body><div class="main-wrapper">
         <a href="../index.html" class="back-button">← Back to Hub</a>
         <div class="container">
-            <h1>The Witcher 3 Build Randomizer</h1>
+            <h1>Electric Guitar Build Randomizer</h1>
             <a href="options.html" class="options-link">⚙️ Configure Options</a>
             <button class="reroll-btn" id="generate-build">Generate Build</button>
             <button class="copy-btn" id="copy-results">Copy Results</button>
             <div class="section">
                 <div class="section-header">
-                    <h2>Build Focus</h2>
-                    <button class="reroll-btn" id="reroll-build-focus">↻</button>
+                    <h2>Body Wood</h2>
+                    <button class="reroll-btn" id="reroll-body-wood">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="build-focus"></span>
+                    <span id="body-wood"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Attack Focus</h2>
-                    <button class="reroll-btn" id="reroll-attack-focus">↻</button>
+                    <h2>Body Top Wood</h2>
+                    <button class="reroll-btn" id="reroll-body-top-wood">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="attack-focus"></span>
+                    <span id="body-top-wood"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Armor Set</h2>
-                    <button class="reroll-btn" id="reroll-armor">↻</button>
+                    <h2>Neck Wood</h2>
+                    <button class="reroll-btn" id="reroll-neck-wood">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="armor"></span>
+                    <span id="neck-wood"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Primary Sign</h2>
-                    <button class="reroll-btn" id="reroll-primary-sign">↻</button>
+                    <h2>Fretboard Wood</h2>
+                    <button class="reroll-btn" id="reroll-fretboard-wood">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="primary-sign"></span>
+                    <span id="fretboard-wood"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Secondary Sign</h2>
-                    <button class="reroll-btn" id="reroll-secondary-sign">↻</button>
+                    <h2>Fret Type</h2>
+                    <button class="reroll-btn" id="reroll-fret-type">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="secondary-sign"></span>
+                    <span id="fret-type"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Tertiary Sign</h2>
-                    <button class="reroll-btn" id="reroll-tertiary-sign">↻</button>
+                    <h2>Fret Count</h2>
+                    <button class="reroll-btn" id="reroll-fret-count">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="tertiary-sign"></span>
+                    <span id="fret-count"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Region Order</h2>
-                    <button class="reroll-btn" id="reroll-region">↻</button>
+                    <h2>String Count</h2>
+                    <button class="reroll-btn" id="reroll-string-count">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="region"></span>
+                    <span id="string-count"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Moral Alignment</h2>
-                    <button class="reroll-btn" id="reroll-alignment">↻</button>
+                    <h2>Scale Length</h2>
+                    <button class="reroll-btn" id="reroll-scale-length">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="alignment"></span>
+                    <span id="scale-length"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Hair Style</h2>
-                    <button class="reroll-btn" id="reroll-hair">↻</button>
+                    <h2>Pickup Configuration</h2>
+                    <button class="reroll-btn" id="reroll-pickup-config">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="hair"></span>
+                    <span id="pickup-config"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Beard Style</h2>
-                    <button class="reroll-btn" id="reroll-beard">↻</button>
+                    <h2>Bridge</h2>
+                    <button class="reroll-btn" id="reroll-bridge">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="beard"></span>
+                    <span id="bridge"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Difficulty</h2>
-                    <button class="reroll-btn" id="reroll-difficulty">↻</button>
+                    <h2>Hardware Finish</h2>
+                    <button class="reroll-btn" id="reroll-hardware-finish">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="difficulty"></span>
-                </div>
-            </div>
-            <div style="margin: 2rem 0; padding: 1rem 0; border-top: 2px solid #66cc66; border-bottom: 2px solid #66cc66; text-align: center;">
-                <h2 style="margin: 0; color: #88e888;">Story Choices</h2>
-            </div>
-            <div class="section">
-                <div class="section-header">
-                    <h2>Romance Choice</h2>
-                    <button class="reroll-btn" id="reroll-romance">↻</button>
-                </div>
-                <div class="item-container">
-                    <span id="romance"></span>
+                    <span id="hardware-finish"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Ciri's Fate</h2>
-                    <button class="reroll-btn" id="reroll-ciri">↻</button>
+                    <h2>Strings</h2>
+                    <button class="reroll-btn" id="reroll-strings">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="ciri"></span>
+                    <span id="strings"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Radovid's Fate</h2>
-                    <button class="reroll-btn" id="reroll-radovid">↻</button>
+                    <h2>String Gauge</h2>
+                    <button class="reroll-btn" id="reroll-string-gauge">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="radovid"></span>
+                    <span id="string-gauge"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Nilfgaard vs Temeria</h2>
-                    <button class="reroll-btn" id="reroll-politics">↻</button>
+                    <h2>Nut Width</h2>
+                    <button class="reroll-btn" id="reroll-nut-width">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="politics"></span>
+                    <span id="nut-width"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Keira Metz's Fate</h2>
-                    <button class="reroll-btn" id="reroll-keira">↻</button>
+                    <h2>Nut Material</h2>
+                    <button class="reroll-btn" id="reroll-nut-material">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="keira"></span>
+                    <span id="nut-material"></span>
                 </div>
             </div>
             <div class="section">
                 <div class="section-header">
-                    <h2>Bloody Baron Questline</h2>
-                    <button class="reroll-btn" id="reroll-baron">↻</button>
+                    <h2>Finish</h2>
+                    <button class="reroll-btn" id="reroll-finish">↻</button>
                 </div>
                 <div class="item-container">
-                    <span id="baron"></span>
+                    <span id="finish"></span>
                 </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Paint</h2>
+                    <button class="reroll-btn" id="reroll-paint">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="paint"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Neck Profile</h2>
+                    <button class="reroll-btn" id="reroll-neck-profile">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="neck-profile"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Headstock</h2>
+                    <button class="reroll-btn" id="reroll-headstock">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="headstock"></span>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-header">
+                    <h2>Tuners</h2>
+                    <button class="reroll-btn" id="reroll-tuners">↻</button>
+                </div>
+                <div class="item-container">
+                    <span id="tuners"></span>
+                </div>
+            </div>
+            <div id="build-summary" class="build-summary" style="display:none;">
+                <h2>Build Summary</h2>
+                <p id="summary-text"></p>
             </div>
         </div>
     </div>
     <div class="main-container about-section">
         <h2 class="category-title">About This Tool</h2>
         <div class="about-content">
-            <p>The Witcher 3: Wild Hunt offers an incredibly deep RPG experience with countless ways to build Geralt. Between combat skills, signs, alchemy, mutations, and armor sets, it's easy to fall into the same playstyle every time. This randomizer is designed to shake things up and push you out of your comfort zone.</p>
-            <p>Generate a completely random build including your skill focus, mutation, armor set, sign priorities, and even major narrative choices. Whether you're a veteran witcher or starting a new playthrough, this tool will help you discover new strategies and experience the game in fresh ways. It also randomizes key story decisions to create unique narrative experiences.</p>
+            <p>Building a custom electric guitar involves choosing from dozens of tonewoods, pickup configurations, bridge types, hardware options, and neck profiles. Whether you're planning a Warmoth build, a parts guitar, or just dreaming up your ideal instrument, this randomizer generates unique electric guitar specifications to inspire your next project.</p>
+            <p>From classic Stratocaster and Les Paul style builds to modern extended-range designs, every combination of body wood, pickup layout, and hardware creates a unique tonal character. Use this tool to explore combinations you might never have considered.</p>
             <h3>How to Use the Randomizer</h3>
-            <p>Click "Generate Build" to get a complete random setup for your playthrough. Use the individual re-roll buttons (↻) to change specific aspects while keeping the rest. Configure which options are available in the Options page. Toss a coin to your randomizer!</p>
+            <p>Click the "Generate Build" button to get a completely random electric guitar specification. Use the individual re-roll buttons to change any specific component. Use the Configure Options page to customize which items can appear in your results.</p>
         </div>
     </div>
     <footer class="footer">

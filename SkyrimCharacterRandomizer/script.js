@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Then filter by race compatibility
         let availableStarts = enabledStarts.filter(start => start.race === 'all' || start.race === selectedRace);
-        if (!additionalStartsCheckbox.checked) {
+        if (!additionalStartsCheckbox || !additionalStartsCheckbox.checked) {
             availableStarts = availableStarts.filter(start => !start.addOn);
         }
         
@@ -182,5 +182,39 @@ document.addEventListener('DOMContentLoaded', () => {
     rerollSkillsBtn.addEventListener('click', generateSkills);
     rerollAllegiancesBtn.addEventListener('click', generateAllegiances);
     rerollStartBtn.addEventListener('click', generateStart);
-    additionalStartsCheckbox.addEventListener('change', generateStart);
+    if (additionalStartsCheckbox) additionalStartsCheckbox.addEventListener('change', generateStart);
+
+    function copyResults() {
+        const sections = document.querySelectorAll('.container > .section');
+        const lines = [];
+        sections.forEach(section => {
+            if (section.style.display === 'none') return;
+            const header = section.querySelector('.section-header h2');
+            if (!header) return;
+            const label = header.textContent.trim();
+            const itemContainer = section.querySelector('.item-container');
+            if (!itemContainer) return;
+            // Check for list items
+            const listItems = itemContainer.querySelectorAll('li');
+            let value = '';
+            if (listItems.length > 0) {
+                const items = Array.from(listItems).map(li => li.textContent.trim());
+                value = items.join(', ');
+            } else {
+                value = itemContainer.textContent.trim();
+            }
+            if (value) {
+                lines.push(label + ': ' + value);
+            }
+        });
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('copy-results');
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = originalText; }, 2000);
+        });
+    }
+
+    document.getElementById('copy-results').addEventListener('click', copyResults);
 });

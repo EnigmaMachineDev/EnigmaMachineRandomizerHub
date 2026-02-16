@@ -201,7 +201,6 @@
     {"name": "2-Tone Sunburst"},
     {"name": "3-Tone Sunburst"},
     {"name": "Custom Burst"},
-    {"name": "Candy"},
     {"name": "Sparkle/Metal Flake"},
     {"name": "Pearl/Pearlescent"},
     {"name": "Chameleon/Colorshift"},
@@ -219,7 +218,8 @@
     {"name": "Deep C"},
     {"name": "U-Shape"},
     {"name": "V-Shape"},
-    {"name": "D-Shape"}
+    {"name": "D-Shape"},
+    {"name": "Asymmetrical"}
   ],
   "Headstock": [
     {"name": "4 Inline", "for": ["4-String"]},

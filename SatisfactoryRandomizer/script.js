@@ -149,4 +149,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     generateRecipesBtn.addEventListener('click', randomizeAll);
+
+    function copyResults() {
+        const sections = document.querySelectorAll('#recipe-sections > .section');
+        const lines = [];
+        sections.forEach(section => {
+            if (section.style.display === 'none') return;
+            const header = section.querySelector('.section-header h2');
+            if (!header) return;
+            const label = header.textContent.trim();
+            const itemContainer = section.querySelector('.item-container');
+            if (!itemContainer) return;
+            // Extract recipe name from the recipe-item structure
+            const recipeItem = itemContainer.querySelector('.recipe-item');
+            if (recipeItem) {
+                const recipeName = recipeItem.querySelector('p');
+                if (recipeName) {
+                    lines.push(label + ': ' + recipeName.textContent.trim().replace('Recipe: ', ''));
+                }
+            } else {
+                const value = itemContainer.textContent.trim();
+                if (value) {
+                    lines.push(label + ': ' + value);
+                }
+            }
+        });
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('copy-results');
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = originalText; }, 2000);
+        });
+    }
+
+    document.getElementById('copy-results').addEventListener('click', copyResults);
 });

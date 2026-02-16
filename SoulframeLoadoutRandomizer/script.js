@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const color1El = document.getElementById('color1');
     const color2El = document.getElementById('color2');
     const color3El = document.getElementById('color3');
+    const primaryRuneEl = document.getElementById('primary-rune');
+    const secondaryRuneEl = document.getElementById('secondary-rune');
 
     const pactLink = document.getElementById('pact-link');
     const helmLink = document.getElementById('helm-link');
@@ -65,30 +67,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return currentPrism ? currentPrism.virtues : null;
     }
 
-    fetch('randomizer.json')
-        .then(response => response.json())
-        .then(jsonData => {
-            data = jsonData;
-            loadOptions();
-            randomizeAll();
-        });
-
-    function rollPrism() {
-        const items = getEnabledItems('Prism');
-        currentPrism = getRandomValue(items);
-        if (currentPrism) {
-            prismEl.textContent = currentPrism.name;
-            prismVirtuesEl.textContent = '(' + currentPrism.virtues.join(' / ') + ')';
-        }
+    function getRune(weaponType) {
+        if (!weaponType || !data.Runes || !data.Runes[weaponType]) return null;
+        return getRandomValue(data.Runes[weaponType]);
     }
 
-    function setItem(element, linkElement, category) {
+    function setItem(element, linkElement, category, runeElement) {
         const virtueFilter = getCurrentVirtues();
         const items = getEnabledItems(category, virtueFilter);
         const item = getRandomValue(items);
         if (item) {
             element.textContent = item.name;
             if (linkElement && item.link) linkElement.href = item.link;
+            if (runeElement) {
+                const rune = getRune(item.type);
+                runeElement.textContent = rune ? '(Rune: ' + rune + ')' : '';
+            }
         }
     }
 
@@ -106,8 +100,17 @@ document.addEventListener('DOMContentLoaded', () => {
         setItem(helmEl, helmLink, 'Helm');
         setItem(cuirassEl, cuirassLink, 'Cuirass');
         setItem(leggingsEl, leggingsLink, 'Leggings');
-        setItem(primaryEl, primaryLink, 'Primary');
-        setItem(secondaryEl, secondaryLink, 'Secondary');
+        setItem(primaryEl, primaryLink, 'Primary', primaryRuneEl);
+        setItem(secondaryEl, secondaryLink, 'Secondary', secondaryRuneEl);
+    }
+
+    function rollPrism() {
+        const items = getEnabledItems('Prism');
+        currentPrism = getRandomValue(items);
+        if (currentPrism) {
+            prismEl.textContent = currentPrism.name;
+            prismVirtuesEl.textContent = '(' + currentPrism.virtues.join(' / ') + ')';
+        }
     }
 
     function randomizeAll() {
@@ -119,6 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
         setColorItem(color3El, color3Link);
     }
 
+    fetch('randomizer.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            data = jsonData;
+            loadOptions();
+            randomizeAll();
+        });
+
     rerollPrismBtn.addEventListener('click', () => {
         rollPrism();
         rollVirtueDependentCategories();
@@ -129,12 +140,61 @@ document.addEventListener('DOMContentLoaded', () => {
         setItem(cuirassEl, cuirassLink, 'Cuirass');
         setItem(leggingsEl, leggingsLink, 'Leggings');
     });
-    rerollPrimaryBtn.addEventListener('click', () => setItem(primaryEl, primaryLink, 'Primary'));
-    rerollSecondaryBtn.addEventListener('click', () => setItem(secondaryEl, secondaryLink, 'Secondary'));
+    rerollPrimaryBtn.addEventListener('click', () => setItem(primaryEl, primaryLink, 'Primary', primaryRuneEl));
+    rerollSecondaryBtn.addEventListener('click', () => setItem(secondaryEl, secondaryLink, 'Secondary', secondaryRuneEl));
     rerollColorsBtn.addEventListener('click', () => {
         setColorItem(color1El, color1Link);
         setColorItem(color2El, color2Link);
         setColorItem(color3El, color3Link);
     });
     generateLoadoutBtn.addEventListener('click', randomizeAll);
+
+    function copyResults() {
+        const sections = document.querySelectorAll('.container > .section');
+        const lines = [];
+        sections.forEach(section => {
+            if (section.style.display === 'none') return;
+            const header = section.querySelector('.section-header h2');
+            if (!header) return;
+            const label = header.textContent.trim();
+            // Check for sub-items (e.g. Armor: Helm/Cuirass/Leggings, Colors: Primary/Secondary/Tertiary)
+            const subItems = section.querySelectorAll('.sub-item');
+            if (subItems.length > 0) {
+                const subValues = [];
+                subItems.forEach(sub => {
+                    const subLabel = sub.querySelector('.sub-item-label');
+                    const subContainer = sub.querySelector('.item-container');
+                    if (subLabel && subContainer) {
+                        subValues.push(subLabel.textContent.trim() + ': ' + subContainer.textContent.trim());
+                    }
+                });
+                if (subValues.length > 0) {
+                    lines.push(label + ': ' + subValues.join(', '));
+                }
+                return;
+            }
+            const itemContainer = section.querySelector('.item-container');
+            if (!itemContainer) return;
+            const listItems = itemContainer.querySelectorAll('li');
+            let value = '';
+            if (listItems.length > 0) {
+                const items = Array.from(listItems).map(li => li.textContent.trim());
+                value = items.join(', ');
+            } else {
+                value = itemContainer.textContent.trim();
+            }
+            if (value) {
+                lines.push(label + ': ' + value);
+            }
+        });
+        const text = lines.join('\n');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('copy-results');
+            const originalText = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => { btn.textContent = originalText; }, 2000);
+        });
+    }
+
+    document.getElementById('copy-results').addEventListener('click', copyResults);
 });
