@@ -531,7 +531,7 @@ const armorData = {
       "PhysicalDefence": 3,
       "MagickDefence": 5,
       "StabilityIncrease": 0,
-      "VirtueReq": "",
+      "VirtueReq": "0 S",
       "Attunements": {
         "PhysicalAttunement": "1 S",
         "MagickAttunement": "1 S",
@@ -549,7 +549,7 @@ const armorData = {
       "PhysicalDefence": 1,
       "MagickDefence": 3,
       "StabilityIncrease": 0,
-      "VirtueReq": "",
+      "VirtueReq": "0 S",
       "Attunements": {
         "PhysicalAttunement": "",
         "MagickAttunement": "1 S",
@@ -567,7 +567,7 @@ const armorData = {
       "PhysicalDefence": 2,
       "MagickDefence": 4,
       "StabilityIncrease": 0,
-      "VirtueReq": "",
+      "VirtueReq": "0 S",
       "Attunements": {
         "PhysicalAttunement": "1 S",
         "MagickAttunement": "1 S",
@@ -675,7 +675,7 @@ const armorData = {
       "PhysicalDefence": 4,
       "MagickDefence": 0,
       "StabilityIncrease": 4,
-      "VirtueReq": "",
+      "VirtueReq": "0 G",
       "Attunements": {
         "PhysicalAttunement": "1 G",
         "MagickAttunement": "",
@@ -693,7 +693,7 @@ const armorData = {
       "PhysicalDefence": 2,
       "MagickDefence": 0,
       "StabilityIncrease": 3,
-      "VirtueReq": "",
+      "VirtueReq": "0 G",
       "Attunements": {
         "PhysicalAttunement": "",
         "MagickAttunement": "",
@@ -711,7 +711,7 @@ const armorData = {
       "PhysicalDefence": 3,
       "MagickDefence": 0,
       "StabilityIncrease": 2,
-      "VirtueReq": "",
+      "VirtueReq": "0 G",
       "Attunements": {
         "PhysicalAttunement": "1 G",
         "MagickAttunement": "",
@@ -837,7 +837,7 @@ const armorData = {
       "PhysicalDefence": 3,
       "MagickDefence": 0,
       "StabilityIncrease": 2,
-      "VirtueReq": "",
+      "VirtueReq": "0 C",
       "Attunements": {
         "PhysicalAttunement": "1 C",
         "MagickAttunement": "",
@@ -855,7 +855,7 @@ const armorData = {
       "PhysicalDefence": 4,
       "MagickDefence": 0,
       "StabilityIncrease": 2,
-      "VirtueReq": "",
+      "VirtueReq": "0 C",
       "Attunements": {
         "PhysicalAttunement": "1 C",
         "MagickAttunement": "",
@@ -873,7 +873,7 @@ const armorData = {
       "PhysicalDefence": 5,
       "MagickDefence": 0,
       "StabilityIncrease": 3,
-      "VirtueReq": "",
+      "VirtueReq": "0 C",
       "Attunements": {
         "PhysicalAttunement": "1 C",
         "MagickAttunement": "",
@@ -1017,7 +1017,7 @@ const armorData = {
       "PhysicalDefence": 2,
       "MagickDefence": 4,
       "StabilityIncrease": 0,
-      "VirtueReq": "",
+      "VirtueReq": "0 S",
       "Attunements": {
         "PhysicalAttunement": "2 S",
         "MagickAttunement": "1 S",
@@ -1035,7 +1035,7 @@ const armorData = {
       "PhysicalDefence": 3,
       "MagickDefence": 5,
       "StabilityIncrease": 0,
-      "VirtueReq": "",
+      "VirtueReq": "0 S",
       "Attunements": {
         "PhysicalAttunement": "2 S",
         "MagickAttunement": "1 S",
@@ -1053,7 +1053,7 @@ const armorData = {
       "PhysicalDefence": 1,
       "MagickDefence": 3,
       "StabilityIncrease": 0,
-      "VirtueReq": "",
+      "VirtueReq": "0 S",
       "Attunements": {
         "PhysicalAttunement": "2 S",
         "MagickAttunement": "1 S",
@@ -1071,7 +1071,7 @@ const armorData = {
       "PhysicalDefence": 4,
       "MagickDefence": 0,
       "StabilityIncrease": 4,
-      "VirtueReq": "",
+      "VirtueReq": "0 G",
       "Attunements": {
         "PhysicalAttunement": "2 G",
         "MagickAttunement": "",
@@ -1089,7 +1089,7 @@ const armorData = {
       "PhysicalDefence": 3,
       "MagickDefence": 0,
       "StabilityIncrease": 2,
-      "VirtueReq": "",
+      "VirtueReq": "0 G",
       "Attunements": {
         "PhysicalAttunement": "2 G",
         "MagickAttunement": "",
@@ -1107,7 +1107,7 @@ const armorData = {
       "PhysicalDefence": 2,
       "MagickDefence": 0,
       "StabilityIncrease": 3,
-      "VirtueReq": "",
+      "VirtueReq": "0 G",
       "Attunements": {
         "PhysicalAttunement": "2 G",
         "MagickAttunement": "",
@@ -1125,7 +1125,7 @@ const armorData = {
       "PhysicalDefence": 4,
       "MagickDefence": 0,
       "StabilityIncrease": 1,
-      "VirtueReq": "",
+      "VirtueReq": "0 C",
       "Attunements": {
         "PhysicalAttunement": "2 C",
         "MagickAttunement": "",
@@ -1143,7 +1143,7 @@ const armorData = {
       "PhysicalDefence": 5,
       "MagickDefence": 0,
       "StabilityIncrease": 3,
-      "VirtueReq": "",
+      "VirtueReq": "0 C",
       "Attunements": {
         "PhysicalAttunement": "2 C",
         "MagickAttunement": "",
@@ -1161,7 +1161,7 @@ const armorData = {
       "PhysicalDefence": 5,
       "MagickDefence": 0,
       "StabilityIncrease": 1,
-      "VirtueReq": "",
+      "VirtueReq": "0 C",
       "Attunements": {
         "PhysicalAttunement": "2 C",
         "MagickAttunement": "",

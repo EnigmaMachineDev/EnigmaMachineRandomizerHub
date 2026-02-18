@@ -88,6 +88,17 @@ function getVirtueFromReq(reqStr) {
     return map[match[1]] || '';
 }
 
+function formatVirtueReq(reqStr) {
+    if (!reqStr) return 'None';
+    const match = reqStr.match(/(\d+)\s*([GCS])/);
+    if (!match) return reqStr || 'None';
+    const num = parseInt(match[1]);
+    const map = { 'G': 'Grace', 'C': 'Courage', 'S': 'Spirit' };
+    const virtueName = map[match[2]] || match[2];
+    if (num === 0) return virtueName;
+    return reqStr;
+}
+
 function filterArmor() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     const slotFilter = document.getElementById('slot-filter').value;
@@ -254,7 +265,7 @@ function updateDisplay() {
         row.appendChild(stabilityCell);
         
         const reqVirtueCell = document.createElement('td');
-        reqVirtueCell.textContent = armor.reqVirtue || 'None';
+        reqVirtueCell.textContent = formatVirtueReq(armor.reqVirtue);
         row.appendChild(reqVirtueCell);
         
         const physAttuneCell = document.createElement('td');
@@ -295,7 +306,7 @@ function showArmorDetails(armorName) {
         { label: 'Slot', value: armor.Slot || '-' },
         { label: 'Armor Set', value: armor.ArmorSet || '-' },
         { label: 'Rarity', value: armor.Rarity || '-', rarityClass: true },
-        { label: 'Required Virtue', value: armor.reqVirtue || 'None' }
+        { label: 'Required Virtue', value: formatVirtueReq(armor.reqVirtue) }
     ];
     
     details.forEach(detail => {

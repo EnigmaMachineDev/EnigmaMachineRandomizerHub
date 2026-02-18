@@ -28,7 +28,7 @@ const weaponData = {
         "Attack": 66,
         "ChargedShot": 129
       },
-      "VirtueAttuneCap": 28,
+      "VirtueAttuneCap": 63,
       "AttuneCaps": {
         "DamageLight": 108,
         "DamageHeavy": 216,
@@ -73,7 +73,7 @@ const weaponData = {
         "ChargedAttack": 126,
         "Throw": 82
       },
-      "VirtueAttuneCap": 26,
+      "VirtueAttuneCap": 59,
       "AttuneCaps": {
         "DamageLight": 102,
         "DamageHeavy": 204,
@@ -119,7 +119,7 @@ const weaponData = {
         "ChargedAttack": 124,
         "Throw": 81
       },
-      "VirtueAttuneCap": 26,
+      "VirtueAttuneCap": 57,
       "AttuneCaps": {
         "DamageLight": 100,
         "DamageHeavy": 200,
@@ -164,7 +164,7 @@ const weaponData = {
         "ChargedAttack": 134,
         "Throw": 88
       },
-      "VirtueAttuneCap": 22,
+      "VirtueAttuneCap": 72,
       "AttuneCaps": {
         "DamageLight": 110,
         "DamageHeavy": 220,
@@ -209,7 +209,7 @@ const weaponData = {
         "ChargedAttack": 166,
         "Throw": 112
       },
-      "VirtueAttuneCap": 39,
+      "VirtueAttuneCap": 89,
       "AttuneCaps": {
         "DamageLight": 142,
         "DamageHeavy": 284,
@@ -255,7 +255,7 @@ const weaponData = {
         "ChargedCast": 62,
         "FullChargedCast": 116
       },
-      "VirtueAttuneCap": 22,
+      "VirtueAttuneCap": 50,
       "AttuneCaps": {
         "DamageLight": 90,
         "DamageHeavy": 180,
@@ -300,7 +300,7 @@ const weaponData = {
         "ChargedAttack": 186,
         "Throw": 127
       },
-      "VirtueAttuneCap": 35,
+      "VirtueAttuneCap": 104,
       "AttuneCaps": {
         "DamageLight": 162,
         "DamageHeavy": 324,
@@ -345,7 +345,7 @@ const weaponData = {
         "ChargedAttack": 118,
         "Throw": 76
       },
-      "VirtueAttuneCap": 23,
+      "VirtueAttuneCap": 54,
       "AttuneCaps": {
         "DamageLight": 94,
         "DamageHeavy": 188,
@@ -390,7 +390,7 @@ const weaponData = {
         "ChargedCast": 62,
         "FullChargedCast": 116
       },
-      "VirtueAttuneCap": 32,
+      "VirtueAttuneCap": 50,
       "AttuneCaps": {
         "DamageLight": 88,
         "DamageHeavy": 176,
@@ -435,7 +435,7 @@ const weaponData = {
         "ChargedAttack": 134,
         "Throw": 88
       },
-      "VirtueAttuneCap": 29,
+      "VirtueAttuneCap": 71,
       "AttuneCaps": {
         "DamageLight": 110,
         "DamageHeavy": 220,
@@ -479,7 +479,7 @@ const weaponData = {
         "Attack": 67,
         "ChargedShot": 132
       },
-      "VirtueAttuneCap": 29,
+      "VirtueAttuneCap": 65,
       "AttuneCaps": {
         "DamageLight": 110,
         "DamageHeavy": 220,
@@ -523,7 +523,7 @@ const weaponData = {
         "Attack": 65,
         "ChargedShot": 127
       },
-      "VirtueAttuneCap": 28,
+      "VirtueAttuneCap": 62,
       "AttuneCaps": {
         "DamageLight": 106,
         "DamageHeavy": null,
@@ -568,7 +568,7 @@ const weaponData = {
         "ChargedAttack": 156,
         "Throw": 105
       },
-      "VirtueAttuneCap": 27,
+      "VirtueAttuneCap": 81,
       "AttuneCaps": {
         "DamageLight": 132,
         "DamageHeavy": 264,
@@ -613,7 +613,7 @@ const weaponData = {
         "ChargedAttack": 188,
         "Throw": 121
       },
-      "VirtueAttuneCap": 43,
+      "VirtueAttuneCap": 95,
       "AttuneCaps": {
         "DamageLight": 154,
         "DamageHeavy": 308,
@@ -658,7 +658,7 @@ const weaponData = {
         "ChargedAttack": 112,
         "Throw": 72
       },
-      "VirtueAttuneCap": 32,
+      "VirtueAttuneCap": 50,
       "AttuneCaps": {
         "DamageLight": 88,
         "DamageHeavy": 176,
@@ -703,7 +703,7 @@ const weaponData = {
         "ChargedAttack": 126,
         "Throw": 72
       },
-      "VirtueAttuneCap": 26,
+      "VirtueAttuneCap": 59,
       "AttuneCaps": {
         "DamageLight": 102,
         "DamageHeavy": 204,
@@ -748,7 +748,7 @@ const weaponData = {
         "ChargedCast": 62,
         "FullChargedCast": 116
       },
-      "VirtueAttuneCap": 21,
+      "VirtueAttuneCap": 48,
       "AttuneCaps": {
         "DamageLight": 88,
         "DamageHeavy": 176,
@@ -793,7 +793,7 @@ const weaponData = {
         "ChargedAttack": 122,
         "Throw": 79
       },
-      "VirtueAttuneCap": 25,
+      "VirtueAttuneCap": 56,
       "AttuneCaps": {
         "DamageLight": 98,
         "DamageHeavy": 196,
@@ -836,7 +836,7 @@ const weaponData = {
         "Attack": 49,
         "Orbit": 28
       },
-      "VirtueAttuneCap": 25,
+      "VirtueAttuneCap": 38,
       "AttuneCaps": {
         "DamageLight": 74,
         "DamageHeavy": "X",
@@ -881,7 +881,7 @@ const weaponData = {
         "ChargedAttack": 192,
         "Throw": 132
       },
-      "VirtueAttuneCap": 36,
+      "VirtueAttuneCap": 102,
       "AttuneCaps": {
         "DamageLight": 168,
         "DamageHeavy": 336,
@@ -926,7 +926,7 @@ const weaponData = {
         "ChargedAttack": 100,
         "Throw": 84
       },
-      "VirtueAttuneCap": 26,
+      "VirtueAttuneCap": 39,
       "AttuneCaps": {
         "DamageLight": 64,
         "DamageHeavy": 128,
@@ -971,7 +971,7 @@ const weaponData = {
         "ChargedAttack": 168,
         "Throw": 114
       },
-      "VirtueAttuneCap": 40,
+      "VirtueAttuneCap": 98,
       "AttuneCaps": {
         "DamageLight": 144,
         "DamageHeavy": 288,
@@ -1016,7 +1016,7 @@ const weaponData = {
         "ChargedAttack": 122,
         "Throw": 80
       },
-      "VirtueAttuneCap": 25,
+      "VirtueAttuneCap": 56,
       "AttuneCaps": {
         "DamageLight": null,
         "DamageHeavy": null,
@@ -1059,7 +1059,7 @@ const weaponData = {
         "Attack": 53,
         "Orbit": 29
       },
-      "VirtueAttuneCap": 19,
+      "VirtueAttuneCap": 44,
       "AttuneCaps": {
         "DamageLight": 82,
         "DamageHeavy": "X",
@@ -1104,7 +1104,7 @@ const weaponData = {
         "ChargedAttack": 128,
         "Throw": 84
       },
-      "VirtueAttuneCap": 27,
+      "VirtueAttuneCap": 63,
       "AttuneCaps": {
         "DamageLight": 104,
         "DamageHeavy": 208,
@@ -1149,7 +1149,7 @@ const weaponData = {
         "ChargedAttack": 142,
         "Throw": 98
       },
-      "VirtueAttuneCap": 33,
+      "VirtueAttuneCap": 74,
       "AttuneCaps": {
         "DamageLight": 122,
         "DamageHeavy": 244,
@@ -1194,7 +1194,7 @@ const weaponData = {
         "ChargedAttack": 124,
         "Throw": 81
       },
-      "VirtueAttuneCap": 25,
+      "VirtueAttuneCap": 68,
       "AttuneCaps": {
         "DamageLight": 100,
         "DamageHeavy": 200,
@@ -1240,7 +1240,7 @@ const weaponData = {
         "ChargedCast": 72,
         "FullChargedCast": 140
       },
-      "VirtueAttuneCap": 27,
+      "VirtueAttuneCap": 60,
       "AttuneCaps": {
         "DamageLight": 104,
         "DamageHeavy": 208,
@@ -1285,7 +1285,7 @@ const weaponData = {
         "ChargedCast": 72,
         "FullChargedCast": 140
       },
-      "VirtueAttuneCap": 27,
+      "VirtueAttuneCap": 60,
       "AttuneCaps": {
         "DamageLight": 104,
         "DamageHeavy": 208,
@@ -1331,7 +1331,7 @@ const weaponData = {
         "ChargedAttack": 136,
         "Throw": 90
       },
-      "VirtueAttuneCap": 29,
+      "VirtueAttuneCap": 66,
       "AttuneCaps": {
         "DamageLight": 112,
         "DamageHeavy": 224,
@@ -1377,7 +1377,7 @@ const weaponData = {
         "ChargedAttack": 182,
         "Throw": 124
       },
-      "VirtueAttuneCap": "134",
+      "VirtueAttuneCap": 101,
       "AttuneCaps": {
         "DamageLight": null,
         "DamageHeavy": null,
@@ -1422,7 +1422,7 @@ const weaponData = {
         "ChargedAttack": 100,
         "Throw": 86
       },
-      "VirtueAttuneCap": 17,
+      "VirtueAttuneCap": 39,
       "AttuneCaps": {
         "DamageLight": 64,
         "DamageHeavy": 128,
@@ -1469,7 +1469,7 @@ const weaponData = {
         "ChargedAttack": 138,
         "ChargedShot": 137
       },
-      "VirtueAttuneCap": 30,
+      "VirtueAttuneCap": 68,
       "AttuneCaps": {
         "DamageLight": 114,
         "DamageHeavy": 228,
@@ -1513,7 +1513,7 @@ const weaponData = {
         "Attack": 60,
         "ChargedShot": 114
       },
-      "VirtueAttuneCap": 36,
+      "VirtueAttuneCap": 54,
       "AttuneCaps": {
         "DamageLight": 96,
         "DamageHeavy": 188,
@@ -1557,7 +1557,7 @@ const weaponData = {
         "Attack": 55,
         "Orbit": 30
       },
-      "VirtueAttuneCap": 21,
+      "VirtueAttuneCap": 47,
       "AttuneCaps": {
         "DamageLight": 86,
         "DamageHeavy": "X",
@@ -1602,7 +1602,7 @@ const weaponData = {
         "ChargedAttack": 100,
         "Throw": 86
       },
-      "VirtueAttuneCap": 17,
+      "VirtueAttuneCap": 39,
       "AttuneCaps": {
         "DamageLight": 64,
         "DamageHeavy": 128,
@@ -1647,7 +1647,7 @@ const weaponData = {
         "ChargedAttack": 144,
         "Throw": 111
       },
-      "VirtueAttuneCap": 58,
+      "VirtueAttuneCap": 89,
       "AttuneCaps": {
         "DamageLight": 140,
         "DamageHeavy": 276,
@@ -1692,7 +1692,7 @@ const weaponData = {
         "ChargedAttack": 132,
         "Throw": 87
       },
-      "VirtueAttuneCap": 28,
+      "VirtueAttuneCap": 66,
       "AttuneCaps": {
         "DamageLight": 108,
         "DamageHeavy": 216,
@@ -1737,7 +1737,7 @@ const weaponData = {
         "ChargedAttack": 120,
         "Throw": 76
       },
-      "VirtueAttuneCap": 24,
+      "VirtueAttuneCap": 57,
       "AttuneCaps": {
         "DamageLight": 96,
         "DamageHeavy": 192,
@@ -1782,7 +1782,7 @@ const weaponData = {
         "ChargedAttack": 118,
         "Throw": 76
       },
-      "VirtueAttuneCap": 23,
+      "VirtueAttuneCap": 56,
       "AttuneCaps": {
         "DamageLight": 94,
         "DamageHeavy": 188,
@@ -1827,7 +1827,7 @@ const weaponData = {
         "ChargedAttack": 124,
         "Throw": 78
       },
-      "VirtueAttuneCap": 36,
+      "VirtueAttuneCap": 57,
       "AttuneCaps": {
         "DamageLight": 96,
         "DamageHeavy": 192,
@@ -1870,7 +1870,7 @@ const weaponData = {
         "Attack": null,
         "ChargedAttack": null
       },
-      "VirtueAttuneCap": null,
+      "VirtueAttuneCap": 38,
       "AttuneCaps": {
         "DamageLight": null,
         "DamageHeavy": null,
@@ -1913,7 +1913,7 @@ const weaponData = {
         "Attack": null,
         "ChargedAttack": null
       },
-      "VirtueAttuneCap": null,
+      "VirtueAttuneCap": 48,
       "AttuneCaps": {
         "DamageLight": null,
         "DamageHeavy": null,
@@ -1956,7 +1956,7 @@ const weaponData = {
         "Attack": null,
         "ChargedAttack": null
       },
-      "VirtueAttuneCap": null,
+      "VirtueAttuneCap": 66,
       "AttuneCaps": {
         "DamageLight": null,
         "DamageHeavy": null,

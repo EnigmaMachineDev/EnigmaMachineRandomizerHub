@@ -310,7 +310,7 @@ function showWeaponDetails(weaponName) {
     ];
     
     if (weapon.Stats?.VirtueAttuneCap) {
-        details.push({ label: 'Virtue Attune Cap', value: weapon.Stats.VirtueAttuneCap });
+        details.push({ label: 'Virtue Attunement Damage Cap', value: weapon.Stats.VirtueAttuneCap });
     }
     
     details.forEach(detail => {

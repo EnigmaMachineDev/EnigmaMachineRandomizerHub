@@ -64,11 +64,11 @@ body.sidebar-open .sidebar-toggle {
     border-bottom: 2px solid rgba(0, 255, 0, 0.3);
 }
 
-.nav-category {
+.sidebar .nav-category {
     margin-bottom: 10px;
 }
 
-.nav-category-btn {
+.sidebar .nav-category-btn {
     width: 100%;
     background: rgba(0, 255, 0, 0.1);
     color: #00ff00;
@@ -82,24 +82,29 @@ body.sidebar-open .sidebar-toggle {
     transition: all 0.3s;
 }
 
-.nav-category-btn:hover {
+.sidebar .nav-category-btn:hover {
     background: rgba(0, 255, 0, 0.2);
 }
 
-.nav-category .nav-links {
+.sidebar .nav-category .nav-links {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
     display: flex;
     flex-direction: column;
+    gap: 0;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    text-align: left;
+    flex-wrap: nowrap;
 }
 
-.nav-category.expanded .nav-links {
+.sidebar .nav-category.expanded .nav-links {
     max-height: 1000px;
     margin-top: 5px;
 }
 
-.nav-category .nav-links a {
+.sidebar .nav-category .nav-links a {
     padding: 8px 15px;
     color: #e0e0e0;
     text-decoration: none;
@@ -107,9 +112,10 @@ body.sidebar-open .sidebar-toggle {
     border-left: 2px solid transparent;
     transition: all 0.2s;
     display: block;
+    margin: 0;
 }
 
-.nav-category .nav-links a:hover {
+.sidebar .nav-category .nav-links a:hover {
     color: #00ff00;
     border-left-color: #00ff00;
     background: rgba(0, 255, 0, 0.05);
