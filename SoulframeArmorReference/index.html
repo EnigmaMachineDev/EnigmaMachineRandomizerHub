@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PM3ZXMM8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3PM3ZXMM8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulframe Armor Reference</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZToyZjkwZTY3Ni00MjRmLTQyNzEtOGViOS01NGIzYjY3YzFjYTM=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Soulframe Armor Reference</h1>
+            
+            <!-- Search and Filter Controls -->
+            <div class="controls-section">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search armor...">
+                </div>
+                
+                <div class="filter-container">
+                    <select id="slot-filter">
+                        <option value="">All Slots</option>
+                        <option value="Helm">Helm</option>
+                        <option value="Cuirass">Cuirass</option>
+                        <option value="Leggings">Leggings</option>
+                    </select>
+                    
+                    <select id="set-filter">
+                        <option value="">All Sets</option>
+                    </select>
+                    
+                    <select id="virtue-filter">
+                        <option value="">All Virtue Requirements</option>
+                        <option value="Courage">Courage</option>
+                        <option value="Grace">Grace</option>
+                        <option value="Spirit">Spirit</option>
+                        <option value="None">None</option>
+                    </select>
+                    
+                    <select id="rarity-filter">
+                        <option value="">All Rarities</option>
+                        <option value="Common">Common</option>
+                        <option value="Uncommon">Uncommon</option>
+                        <option value="Rare">Rare</option>
+                    </select>
+                    
+                    <button id="clear-filters" class="clear-btn">Clear Filters</button>
+                </div>
+            </div>
+
+            <!-- Stats Display -->
+            <div class="stats-display">
+                Showing <span id="filtered-count">0</span> of <span id="total-count">0</span> armor pieces
+            </div>
+
+            <!-- Armor Table -->
+            <div class="table-container">
+                <table id="armor-table">
+                    <thead>
+                        <tr>
+                            <th class="sortable" data-column="name">Armor Name <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="slot">Slot <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="armorSet">Set <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="rarity">Rarity <span class="sort-indicator"></span></th>
+                            <th class="sortable numeric" data-column="physDef">Physical Def <span class="sort-indicator"></span></th>
+                            <th class="sortable numeric" data-column="magDef">Magick Def <span class="sort-indicator"></span></th>
+                            <th class="sortable numeric" data-column="totalDef">Total Armour <span class="sort-indicator"></span></th>
+                            <th class="sortable numeric" data-column="stability">Stability <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="reqVirtue">Required Virtue <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="physAttune">Phys Attunement <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="magAttune">Mag Attunement <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-column="stabAttune">Stab Attunement <span class="sort-indicator"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="armor-tbody">
+                        <!-- Armor will be loaded here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Armor Detail Modal -->
+            <div id="armor-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-body">
+                        <!-- Armor details will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Soulframe Armor Reference, your comprehensive database for all armor in Soulframe! This tool provides a sortable and searchable table of all available armor pieces with their complete statistics and attributes.</p>
+            <p>Use the search bar to find specific armor by name, or utilize the filter dropdowns to narrow down armor by slot, set, virtue requirement, or rarity. Click on any column header to sort the table by that attribute.</p>
+            <h3>How to Use the Reference</h3>
+            <p>Click on any armor name to view its full description and detailed statistics including defence values, attunements, and virtue requirements. The table displays key statistics for quick comparison between armor pieces.</p>
+            <p>The filters can be combined to find exactly the armor type you're looking for - for example, all Rare helms that require Courage, or all armor pieces in the Mockery set.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="armorData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

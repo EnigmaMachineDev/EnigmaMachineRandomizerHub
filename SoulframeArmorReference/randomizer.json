@@ -1,0 +1,17 @@
+{
+  "name": "Soulframe Armor Reference",
+  "description": "A comprehensive searchable and sortable database of all armor in Soulframe",
+  "category": "Gaming",
+  "subcategory": "Reference",
+  "version": "1.0.0",
+  "author": "EnigmaMachineDev",
+  "tags": ["soulframe", "armor", "reference", "database", "gaming"],
+  "features": [
+    "Searchable armor database",
+    "Sortable columns",
+    "Multiple filter options",
+    "Detailed armor stats",
+    "Armor descriptions and lore"
+  ],
+  "lastUpdated": "2025-02-17"
+}

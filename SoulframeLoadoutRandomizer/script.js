@@ -55,9 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!data[category]) return [];
         return data[category].filter(item => {
             if (!isEnabled(category, item.name)) return false;
-            if (virtueFilter && item.virtues) {
-                if (item.virtues.includes('PLACEHOLDER')) return true;
-                return virtueFilter.every(v => item.virtues.includes(v));
+            if (virtueFilter) {
+                // Use requirements for weapons (Primary/Secondary), virtues for armor
+                if (item.requirements && item.requirements.length > 0) {
+                    return item.requirements.some(v => virtueFilter.includes(v));
+                }
+                if (item.virtues) {
+                    return item.virtues.some(v => virtueFilter.includes(v));
+                }
             }
             return true;
         });
