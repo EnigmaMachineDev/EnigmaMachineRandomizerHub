@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PM3ZXMM8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3PM3ZXMM8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Cycle Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZToyZjkwZTY3Ni00MjRmLTQyNzEtOGViOS01NGIzYjY3YzFjYTM=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Sleep Cycle Calculator</h1>
+
+            <div class="toggle-row">
+                <button class="mode-btn active" id="btn-bedtime">I know my bed time</button>
+                <button class="mode-btn" id="btn-waketime">I know my wake time</button>
+            </div>
+
+            <div class="input-section">
+                <div class="input-group" id="bedtime-group">
+                    <label for="bedtime-input">Bed Time:</label>
+                    <input type="time" id="bedtime-input" value="22:00">
+                </div>
+                <div class="input-group" id="waketime-group" style="display:none;">
+                    <label for="waketime-input">Wake Time:</label>
+                    <input type="time" id="waketime-input" value="06:30">
+                </div>
+                <div class="input-group">
+                    <label for="fallasleep-input">Time to Fall Asleep (minutes):</label>
+                    <input type="number" id="fallasleep-input" min="0" max="120" step="5" value="14">
+                </div>
+            </div>
+
+            <button class="generate-btn" id="calculate-btn">Calculate Sleep Cycles</button>
+
+            <div id="results-output" class="schedule-output"></div>
+        </div>
+    </div>
+
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>The Sleep Cycle Calculator helps you find the best times to wake up or go to bed so you complete full 90-minute sleep cycles, waking up naturally between cycles when you feel most refreshed.</p>
+
+            <h3>How It Works</h3>
+            <p>A typical sleep cycle lasts approximately <strong>90 minutes</strong> and includes light sleep, deep sleep, and REM sleep. Waking up at the end of a cycle — rather than in the middle of deep sleep — leaves you feeling more alert and rested.</p>
+            <p>Enter either your planned bed time or your required wake time, along with how long it typically takes you to fall asleep. The calculator will show you the ideal times for the opposite, covering 1 through 6 complete sleep cycles.</p>
+
+            <h3>Time to Fall Asleep</h3>
+            <p>The average person takes about 10–20 minutes to fall asleep. Adjust this value to match your own experience. This offset is added to your bed time before cycles are counted, so your results reflect actual sleep time rather than time in bed.</p>
+
+            <h3>Recommended Sleep</h3>
+            <p>Most adults need <strong>5–6 complete cycles (7.5–9 hours)</strong> of sleep per night. Fewer than 4 cycles (6 hours) is generally considered insufficient for long-term health. The calculator highlights the recommended range to help you choose the best option.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

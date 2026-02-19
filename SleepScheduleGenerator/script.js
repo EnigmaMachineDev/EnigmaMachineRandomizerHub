@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ? (gap.start + gap.duration - totalMinutes) % 1440
                     : gap.end - totalMinutes;
                 
-                for (let offset = 0; offset <= Math.min(gap.duration - totalMinutes, 180); offset += 60) {
+                for (let offset = 0; offset <= Math.min(gap.duration - totalMinutes + wakeUp, 180); offset += 30) {
                     const sleepStart = (gap.start + offset) % 1440;
                     const bedtime = (sleepStart - windDown + 1440) % 1440;
                     const wakeTime = (sleepStart + sleepMinutes) % 1440;
