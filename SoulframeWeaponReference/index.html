@@ -133,5 +133,19 @@
     </footer>
     <script src="weaponData.js"></script>
     <script src="script.js"></script>
+
+    <!-- Redirect popup to soulframetools.com -->
+    <div id="sf-redirect-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;">
+      <div style="background:#0f1a0f;border:1px solid #1e3a1e;border-radius:12px;padding:28px;max-width:420px;width:90%;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.5);">
+        <h2 style="color:#6abf6a;font-size:20px;margin:0 0 12px;">This tool has moved!</h2>
+        <p style="color:#c8e6c8;font-size:14px;margin:0 0 20px;line-height:1.5;">The Soulframe Weapon Reference is now part of <strong style="color:#6abf6a;">Soulframe Tools</strong>, along with a loadout randomizer, armour reference, progress tracker, and build planner.</p>
+        <a href="https://soulframetools.com/weapons" style="display:inline-block;background:#2d5a2d;color:#0a0f0a;font-weight:bold;padding:10px 24px;border-radius:8px;text-decoration:none;font-size:14px;margin-bottom:10px;transition:background 0.2s;" onmouseover="this.style.background='#4a8c4a'" onmouseout="this.style.background='#2d5a2d'">Go to Soulframe Tools</a>
+        <br>
+        <button onclick="document.getElementById('sf-redirect-overlay').style.display='none';" style="background:none;border:1px solid #1e3a1e;color:#7a9f7a;padding:6px 16px;border-radius:6px;cursor:pointer;font-size:12px;margin-top:6px;">Stay on this page</button>
+      </div>
+    </div>
+    <script>
+      document.getElementById('sf-redirect-overlay').style.display = 'flex';
+    </script>
 </body>
 </html>
