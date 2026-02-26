@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PM3ZXMM8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3PM3ZXMM8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Style Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZToyZjkwZTY3Ni00MjRmLTQyNzEtOGViOS01NGIzYjY3YzFjYTM=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+</head>
+<body>
+<div class="main-wrapper">
+    <a href="../index.html" class="back-button">← Back to Hub</a>
+    <div class="container">
+        <h1>✂️ Hair Style Randomizer</h1>
+
+        <div class="filters-panel">
+            <div class="filter-group">
+                <label class="filter-label">Sex</label>
+                <div class="radio-group" id="sex-group">
+                    <label class="radio-option">
+                        <input type="radio" name="sex" value="men" checked>
+                        <span>Men</span>
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="sex" value="women">
+                        <span>Women</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label class="filter-label">Hair Length</label>
+                <div class="checkbox-group" id="length-group">
+                    <label class="check-option"><input type="checkbox" class="length-cb" value="Buzz/Very Short" checked><span>Buzz / Very Short</span></label>
+                    <label class="check-option"><input type="checkbox" class="length-cb" value="Short" checked><span>Short</span></label>
+                    <label class="check-option"><input type="checkbox" class="length-cb" value="Medium" checked><span>Medium</span></label>
+                    <label class="check-option"><input type="checkbox" class="length-cb" value="Long" checked><span>Long</span></label>
+                    <label class="check-option"><input type="checkbox" class="length-cb" value="Very Long" checked><span>Very Long</span></label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label class="filter-label">Hair Type</label>
+                <div class="hair-type-grid" id="type-group">
+                    <div class="type-category">
+                        <div class="type-category-label">Type 1 — Straight</div>
+                        <div class="type-options">
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="1A" checked><span>1A <span class="type-sub">Fine / Flat</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="1B" checked><span>1B <span class="type-sub">Medium</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="1C" checked><span>1C <span class="type-sub">Coarse</span></span></label>
+                        </div>
+                    </div>
+                    <div class="type-category">
+                        <div class="type-category-label">Type 2 — Wavy</div>
+                        <div class="type-options">
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="2A" checked><span>2A <span class="type-sub">Fine / Loose</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="2B" checked><span>2B <span class="type-sub">Medium</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="2C" checked><span>2C <span class="type-sub">Coarse / Frizzy</span></span></label>
+                        </div>
+                    </div>
+                    <div class="type-category">
+                        <div class="type-category-label">Type 3 — Curly</div>
+                        <div class="type-options">
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="3A" checked><span>3A <span class="type-sub">Loose Curls</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="3B" checked><span>3B <span class="type-sub">Springy Curls</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="3C" checked><span>3C <span class="type-sub">Tight Corkscrews</span></span></label>
+                        </div>
+                    </div>
+                    <div class="type-category">
+                        <div class="type-category-label">Type 4 — Coily</div>
+                        <div class="type-options">
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="4A" checked><span>4A <span class="type-sub">Soft S-Coils</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="4B" checked><span>4B <span class="type-sub">Z-Pattern</span></span></label>
+                            <label class="check-option"><input type="checkbox" class="type-cb" value="4C" checked><span>4C <span class="type-sub">Tight Z / No Pattern</span></span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-select-all">
+                    <button class="small-btn" id="select-all-types">Select All</button>
+                    <button class="small-btn secondary" id="deselect-all-types">Deselect All</button>
+                </div>
+            </div>
+
+            <div class="filter-group" id="beard-filter-group">
+                <label class="filter-label">Beard / Facial Hair Length</label>
+                <div class="checkbox-group" id="beard-length-group">
+                    <label class="check-option"><input type="checkbox" class="beard-length-cb" value="Buzz/Very Short" checked><span>Stubble / Very Short</span></label>
+                    <label class="check-option"><input type="checkbox" class="beard-length-cb" value="Short" checked><span>Short</span></label>
+                    <label class="check-option"><input type="checkbox" class="beard-length-cb" value="Medium" checked><span>Medium</span></label>
+                    <label class="check-option"><input type="checkbox" class="beard-length-cb" value="Long" checked><span>Long</span></label>
+                    <label class="check-option"><input type="checkbox" class="beard-length-cb" value="Very Long" checked><span>Very Long</span></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="generate-btn" id="generate-btn">🎲 Randomize Style</button>
+            <button class="copy-btn" id="copy-btn">Copy Results</button>
+        </div>
+
+        <div id="results-container" class="results-container hidden">
+            <div class="section">
+                <div class="section-header">
+                    <h2>Hairstyle</h2>
+                    <button class="reroll-btn" id="reroll-hair" title="Reroll">↻</button>
+                </div>
+                <div class="item-container">
+                    <div class="result-name" id="hair-name"></div>
+                    <div class="result-desc" id="hair-desc"></div>
+                </div>
+            </div>
+
+            <div class="section" id="beard-section">
+                <div class="section-header">
+                    <h2>Beard / Facial Hair</h2>
+                    <button class="reroll-btn" id="reroll-beard" title="Reroll">↻</button>
+                </div>
+                <div class="item-container">
+                    <div class="result-name" id="beard-name"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="no-results" class="no-results hidden">
+            No styles match your selected filters. Try enabling more hair types or lengths.
+        </div>
+    </div>
+</div>
+
+<div class="main-container about-section">
+    <h2 class="category-title">About This Tool</h2>
+    <div class="about-content">
+        <p>The Hair Style Randomizer helps you discover new hairstyles suited to your hair's unique characteristics. Whether you're looking for a fresh cut, a protective style, or something adventurous, this tool draws from a comprehensive database of men's and women's hairstyles spanning all hair lengths and types — from pin-straight (1A) to tightly coiled (4C).</p>
+        <p>Use the filters to select your sex, current or desired hair length, and your natural hair type. The randomizer will surface styles that genuinely work for your hair. Men also get a matching beard/facial hair suggestion to complete the look.</p>
+        <h3>Hair Type Guide</h3>
+        <p><strong>Type 1 (Straight):</strong> 1A — very fine and flat; 1B — medium texture with some body; 1C — coarse and thick.</p>
+        <p><strong>Type 2 (Wavy):</strong> 2A — fine with a loose S-wave; 2B — medium waves with some frizz; 2C — coarse, defined waves prone to frizz.</p>
+        <p><strong>Type 3 (Curly):</strong> 3A — loose, shiny S-shaped curls; 3B — springy, bouncy ringlets; 3C — tight corkscrew curls.</p>
+        <p><strong>Type 4 (Coily):</strong> 4A — soft, defined S-coils; 4B — Z-pattern with less definition; 4C — very tight coils or zigzag with the most shrinkage.</p>
+        <h3>How to Use</h3>
+        <p>Select your sex, check the hair lengths you're open to, and pick your hair type(s). If you're male, also choose which beard lengths to include. Then click <strong>Randomize Style</strong>. Use the ↻ buttons to reroll individual results.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+    <div class="coffee-link">
+        <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+            ☕ Buy me a coffee
+        </a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

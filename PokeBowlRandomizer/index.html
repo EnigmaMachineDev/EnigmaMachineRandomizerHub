@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PM3ZXMM8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3PM3ZXMM8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Bowl Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <script src="../templates/nav-loader.js"></script>
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZToyZjkwZTY3Ni00MjRmLTQyNzEtOGViOS01NGIzYjY3YzFjYTM=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Poke Bowl Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-bowl">Generate Bowl</button>
+            <button class="copy-btn" id="copy-results">Copy Results</button>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Base</h2>
+                    <button class="reroll-btn" id="reroll-base">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="base-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Protein</h2>
+                    <button class="reroll-btn" id="reroll-protein">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="protein-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Sauce</h2>
+                    <button class="reroll-btn" id="reroll-sauce">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="sauce-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Toppings</h2>
+                    <button class="reroll-btn" id="reroll-toppings">↻</button>
+                </div>
+                <div class="item-container">
+                    <ul id="toppings-roll"></ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Crunch</h2>
+                    <button class="reroll-btn" id="reroll-crunch">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="crunch-roll"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Extra</h2>
+                    <button class="reroll-btn" id="reroll-extra">↻</button>
+                </div>
+                <div class="item-container">
+                    <div id="extra-roll"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Poke Bowl Randomizer! Poke (pronounced poh-KAY) is a Hawaiian dish of seasoned raw fish served over rice, now popular worldwide as customizable "build-your-own" bowls. This tool helps you discover creative poke bowl combinations by randomly selecting a base, protein, sauce, toppings, crunch element, and an optional extra.</p>
+            <p>Whether you're a poke enthusiast looking to try something new, or a restaurant owner seeking inspiration, this randomizer draws from authentic Hawaiian ingredients and modern poke fusion options. Supports dietary preferences with vegan and vegetarian modes for plant-based bowls.</p>
+            <h3>How to Use the Randomizer</h3>
+            <p>Click "Generate Bowl" to create a complete poke bowl combination. You'll get a base, protein, sauce, three toppings, a crunch element, and an extra. Use the individual re-roll buttons (↻) to swap out specific components while keeping the rest of your bowl intact.</p>
+            <p>Visit the options page to configure dietary modes and customize which ingredients are available for randomization.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

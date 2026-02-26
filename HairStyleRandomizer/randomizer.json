@@ -1,0 +1,674 @@
+{
+  "hairTypes": ["1A", "1B", "1C", "2A", "2B", "2C", "3A", "3B", "3C", "4A", "4B", "4C"],
+  "hairLengths": ["Buzz/Very Short", "Short", "Medium", "Long", "Very Long"],
+  "men": {
+    "hairstyles": [
+      {
+        "name": "Buzz Cut",
+        "lengths": ["Buzz/Very Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Uniformly short all over with clippers"
+      },
+      {
+        "name": "Crew Cut",
+        "lengths": ["Buzz/Very Short", "Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Short on sides, slightly longer on top, tapered"
+      },
+      {
+        "name": "Induction Cut",
+        "lengths": ["Buzz/Very Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Very close-cropped uniform cut"
+      },
+      {
+        "name": "Caesar Cut",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Short, horizontally straight fringe across the forehead"
+      },
+      {
+        "name": "French Crop",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Short sides with a fringe and textured top"
+      },
+      {
+        "name": "Undercut",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Closely shaved sides with longer hair left on top"
+      },
+      {
+        "name": "Side Part",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C"],
+        "description": "Classic clean side part with combed-over top"
+      },
+      {
+        "name": "Slick Back",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C"],
+        "description": "Hair combed straight back with product for a polished look"
+      },
+      {
+        "name": "Pompadour",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C"],
+        "description": "Hair swept upward and back from the forehead in a voluminous style"
+      },
+      {
+        "name": "Quiff",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Hair swept up and back from the forehead with volume"
+      },
+      {
+        "name": "Fade with Texture",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Faded sides with textured styling on top"
+      },
+      {
+        "name": "High and Tight",
+        "lengths": ["Buzz/Very Short", "Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Shaved sides very high with short hair on top"
+      },
+      {
+        "name": "Ivy League",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Classic short preppy cut with a slight side part"
+      },
+      {
+        "name": "Textured Crop",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Short crop with choppy, textured ends"
+      },
+      {
+        "name": "Faux Hawk",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Central strip of longer hair styled upward, shorter on sides"
+      },
+      {
+        "name": "Mohawk",
+        "lengths": ["Short", "Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Shaved sides with a strip of hair down the center"
+      },
+      {
+        "name": "Short Waves",
+        "lengths": ["Short", "Medium"],
+        "types": ["2A","2B","2C"],
+        "description": "Natural waves worn short and brushed smooth"
+      },
+      {
+        "name": "360 Waves",
+        "lengths": ["Buzz/Very Short", "Short"],
+        "types": ["4A","4B","4C"],
+        "description": "Tightly brushed wave pattern close to the scalp"
+      },
+      {
+        "name": "Tapered Afro",
+        "lengths": ["Short", "Medium"],
+        "types": ["4A","4B","4C"],
+        "description": "Natural afro with tapered sides"
+      },
+      {
+        "name": "Short Afro",
+        "lengths": ["Short"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Natural coily or kinky hair worn short and rounded"
+      },
+      {
+        "name": "Medium Afro",
+        "lengths": ["Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Natural afro at medium length, full and rounded"
+      },
+      {
+        "name": "Twist Out",
+        "lengths": ["Short", "Medium"],
+        "types": ["3B","3C","4A","4B","4C"],
+        "description": "Two-strand twists unraveled to create a defined curl/coil pattern"
+      },
+      {
+        "name": "Braid Out",
+        "lengths": ["Short", "Medium"],
+        "types": ["3B","3C","4A","4B","4C"],
+        "description": "Braids unraveled to create a wavy/crimped pattern"
+      },
+      {
+        "name": "Short Box Braids",
+        "lengths": ["Short", "Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Small to medium square-sectioned braids at short-medium length"
+      },
+      {
+        "name": "Cornrows",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Hair braided close to the scalp in rows or patterns"
+      },
+      {
+        "name": "Dreads/Locs",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Sections of hair matted or interlocked into rope-like strands"
+      },
+      {
+        "name": "Short Dreads",
+        "lengths": ["Short", "Medium"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Locs worn at a shorter length"
+      },
+      {
+        "name": "Curly Crop",
+        "lengths": ["Short"],
+        "types": ["2C","3A","3B"],
+        "description": "Natural curls worn short and cropped"
+      },
+      {
+        "name": "Curl Sponge / Coil Out",
+        "lengths": ["Short"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Short coils created using a curl sponge tool"
+      },
+      {
+        "name": "Medium Length Curls",
+        "lengths": ["Medium"],
+        "types": ["2C","3A","3B","3C"],
+        "description": "Natural curls at medium length, worn loose"
+      },
+      {
+        "name": "Shoulder Length Waves",
+        "lengths": ["Medium"],
+        "types": ["2A","2B","2C"],
+        "description": "Wavy hair reaching the shoulders"
+      },
+      {
+        "name": "Man Bun",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C"],
+        "description": "Hair pulled back and tied into a bun at the crown or nape"
+      },
+      {
+        "name": "Half-Up Bun",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C"],
+        "description": "Top portion tied into a bun while the rest falls freely"
+      },
+      {
+        "name": "Long Slick Back",
+        "lengths": ["Long"],
+        "types": ["1A","1B","1C","2A","2B","2C"],
+        "description": "Long hair slicked straight back away from the face"
+      },
+      {
+        "name": "Long Waves",
+        "lengths": ["Long", "Very Long"],
+        "types": ["2A","2B","2C"],
+        "description": "Long flowing wavy hair worn loose"
+      },
+      {
+        "name": "Long Curls",
+        "lengths": ["Long", "Very Long"],
+        "types": ["2C","3A","3B","3C"],
+        "description": "Long natural curls worn loose"
+      },
+      {
+        "name": "Ponytail",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Hair gathered and tied back"
+      },
+      {
+        "name": "Low Ponytail",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C"],
+        "description": "Hair pulled back into a low ponytail at the nape"
+      },
+      {
+        "name": "Viking Style / Long with Braids",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Long hair worn loose with small braids or plaits at the sides"
+      },
+      {
+        "name": "Long Dreadlocks",
+        "lengths": ["Long", "Very Long"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Long, mature loc'd strands"
+      },
+      {
+        "name": "Long Box Braids",
+        "lengths": ["Long", "Very Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Box braids worn at a long length"
+      },
+      {
+        "name": "Curtain Hair",
+        "lengths": ["Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C"],
+        "description": "Center-parted medium hair that falls down on both sides like curtains"
+      },
+      {
+        "name": "Shag Cut",
+        "lengths": ["Medium"],
+        "types": ["1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Layered cut with lots of texture and movement"
+      },
+      {
+        "name": "Straight Long Hair",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C"],
+        "description": "Long pin-straight hair worn loose"
+      },
+      {
+        "name": "Top Knot",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Hair tied in a knot at the very top of the head"
+      }
+    ],
+    "beardStyles": [
+      { "name": "Clean Shaven", "lengths": ["Buzz/Very Short", "Short", "Medium", "Long", "Very Long"] },
+      { "name": "5 O'Clock Shadow", "lengths": ["Buzz/Very Short"] },
+      { "name": "Stubble", "lengths": ["Short"] },
+      { "name": "Short Boxed Beard", "lengths": ["Short"] },
+      { "name": "Circle Beard (Goatee + Mustache)", "lengths": ["Short", "Medium"] },
+      { "name": "Goatee", "lengths": ["Short", "Medium"] },
+      { "name": "Van Dyke", "lengths": ["Short", "Medium"] },
+      { "name": "Chinstrap", "lengths": ["Short", "Medium"] },
+      { "name": "Balbo", "lengths": ["Short", "Medium"] },
+      { "name": "Anchor Beard", "lengths": ["Short", "Medium"] },
+      { "name": "Corporate Beard", "lengths": ["Medium"] },
+      { "name": "Garibaldi", "lengths": ["Medium", "Long"] },
+      { "name": "Bandholz", "lengths": ["Long"] },
+      { "name": "Full Beard", "lengths": ["Medium", "Long"] },
+      { "name": "Ducktail Beard", "lengths": ["Medium", "Long"] },
+      { "name": "Viking / Braided Beard", "lengths": ["Long", "Very Long"] },
+      { "name": "Yeard (Year-Long Beard)", "lengths": ["Long", "Very Long"] },
+      { "name": "Handlebar Mustache", "lengths": ["Short", "Medium"] },
+      { "name": "Chevron Mustache", "lengths": ["Short", "Medium"] },
+      { "name": "Horseshoe Mustache", "lengths": ["Short", "Medium"] },
+      { "name": "Soul Patch", "lengths": ["Buzz/Very Short", "Short"] },
+      { "name": "Mutton Chops", "lengths": ["Medium", "Long"] },
+      { "name": "Extended Goatee", "lengths": ["Medium", "Long"] }
+    ]
+  },
+  "women": {
+    "hairstyles": [
+      {
+        "name": "Pixie Cut",
+        "lengths": ["Buzz/Very Short", "Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Very short, cropped cut with texture and layers"
+      },
+      {
+        "name": "Textured Pixie",
+        "lengths": ["Short"],
+        "types": ["1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Pixie cut with extra texture, tousled layers"
+      },
+      {
+        "name": "Undercut Pixie",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Pixie with shaved or very short sides underneath"
+      },
+      {
+        "name": "Bob",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Classic chin-length even cut all around"
+      },
+      {
+        "name": "Wavy Bob",
+        "lengths": ["Short"],
+        "types": ["2A","2B","2C","3A"],
+        "description": "Bob haircut styled with soft waves"
+      },
+      {
+        "name": "Curly Bob",
+        "lengths": ["Short"],
+        "types": ["2C","3A","3B","3C"],
+        "description": "Bob with natural curls, often shorter when dry"
+        
+      },
+      {
+        "name": "Stacked Bob",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C"],
+        "description": "Bob with stacked layers in the back for volume"
+      },
+      {
+        "name": "Angled Bob / A-Line Bob",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Bob shorter in the back and longer toward the front"
+      },
+      {
+        "name": "Lob (Long Bob)",
+        "lengths": ["Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Bob extended to collarbone or shoulder length"
+      },
+      {
+        "name": "Wavy Lob",
+        "lengths": ["Medium"],
+        "types": ["2A","2B","2C","3A","3B"],
+        "description": "Long bob with natural or styled waves"
+      },
+      {
+        "name": "Curly Lob",
+        "lengths": ["Medium"],
+        "types": ["2C","3A","3B","3C"],
+        "description": "Long bob with natural curls"
+      },
+      {
+        "name": "Blunt Bob",
+        "lengths": ["Short"],
+        "types": ["1A","1B","1C","2A","2B"],
+        "description": "Perfectly even, blunt-cut bob with no layers"
+      },
+      {
+        "name": "Layered Lob",
+        "lengths": ["Medium"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Long bob with soft layers for movement"
+      },
+      {
+        "name": "Shag",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Layered cut with curtain bangs and lots of texture"
+      },
+      {
+        "name": "Wolf Cut",
+        "lengths": ["Medium", "Long"],
+        "types": ["1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Blend of shag and mullet with heavy layers and voluminous crown"
+      },
+      {
+        "name": "Butterfly Cut",
+        "lengths": ["Medium", "Long"],
+        "types": ["1B","1C","2A","2B","2C","3A"],
+        "description": "Heavy layers that flip out, resembling butterfly wings"
+      },
+      {
+        "name": "Curtain Bangs with Long Hair",
+        "lengths": ["Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Long layers with center-parted fringe that falls on both sides"
+      },
+      {
+        "name": "Straight Long Hair",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B"],
+        "description": "Long, flat-straight hair worn loose"
+      },
+      {
+        "name": "Sleek Straight Hair",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C"],
+        "description": "Smooth, straight hair with a polished finish"
+      },
+      {
+        "name": "Long Layers",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Long hair with face-framing layers throughout"
+      },
+      {
+        "name": "Blowout",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C"],
+        "description": "Smooth, voluminous, blown-out style with inward or outward curl at ends"
+      },
+      {
+        "name": "Beachy Waves",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1B","1C","2A","2B","2C"],
+        "description": "Effortless, loose tousled waves"
+      },
+      {
+        "name": "Loose Waves",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["2A","2B","2C","3A"],
+        "description": "Soft, natural-looking loose waves"
+      },
+      {
+        "name": "Natural Waves",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["2A","2B","2C"],
+        "description": "Waves worn naturally without much styling"
+      },
+      {
+        "name": "Natural Curls",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["2C","3A","3B","3C"],
+        "description": "Defined curls worn naturally with minimal manipulation"
+      },
+      {
+        "name": "Wash and Go",
+        "lengths": ["Short", "Medium"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Natural curls or coils with gel or cream for definition, no further styling"
+      },
+      {
+        "name": "Short Natural Afro",
+        "lengths": ["Short"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Natural short coily/kinky hair worn freely"
+      },
+      {
+        "name": "Medium Afro",
+        "lengths": ["Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Natural afro at medium length"
+      },
+      {
+        "name": "Big Afro",
+        "lengths": ["Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Large, dramatic natural afro"
+      },
+      {
+        "name": "Puff / Pom Puff",
+        "lengths": ["Short", "Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Natural hair gathered into a fluffy puff on top or at nape"
+      },
+      {
+        "name": "High Puff",
+        "lengths": ["Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Hair gathered high on the crown into a voluminous puff"
+      },
+      {
+        "name": "Twist Out",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Two-strand twists unraveled to create a defined texture"
+      },
+      {
+        "name": "Braid Out",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Braids undone to reveal a stretched wavy pattern"
+      },
+      {
+        "name": "Flat Twist Out",
+        "lengths": ["Short", "Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Flat twists unraveled for a defined pattern close to the scalp"
+      },
+      {
+        "name": "Bantu Knot Out",
+        "lengths": ["Short", "Medium"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Bantu knots undone to reveal springy curls/waves"
+      },
+      {
+        "name": "Box Braids",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Square-sectioned individual braids"
+      },
+      {
+        "name": "Cornrows",
+        "lengths": ["Short", "Medium", "Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Braids woven close to the scalp in lines or patterns"
+      },
+      {
+        "name": "Goddess Braids",
+        "lengths": ["Medium", "Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Thick, chunky cornrow-style braids"
+      },
+      {
+        "name": "Feed-In Braids",
+        "lengths": ["Short", "Medium"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Cornrows that start small and gradually thicken"
+      },
+      {
+        "name": "Faux Locs",
+        "lengths": ["Medium", "Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Synthetic locs wrapped around braided hair for a loc look"
+      },
+      {
+        "name": "Dreadlocks / Locs",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["3A","3B","3C","4A","4B","4C"],
+        "description": "Loc'd hair strands of varying length"
+      },
+      {
+        "name": "High Bun",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Hair pulled up and twisted into a bun at the crown"
+      },
+      {
+        "name": "Messy Bun",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Casual, loosely gathered bun with intentional messiness"
+      },
+      {
+        "name": "Low Bun",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C"],
+        "description": "Elegant bun worn at the nape of the neck"
+      },
+      {
+        "name": "French Twist",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Hair twisted and folded into an elegant vertical roll at the back"
+      },
+      {
+        "name": "Braided Updo",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Hair braided and pinned up into an updo"
+      },
+      {
+        "name": "Ponytail",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Hair gathered and tied back"
+      },
+      {
+        "name": "High Ponytail",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Ponytail positioned high on the crown of the head"
+      },
+      {
+        "name": "Curly Ponytail",
+        "lengths": ["Medium", "Long"],
+        "types": ["2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Natural curly or coily hair pulled into a ponytail"
+      },
+      {
+        "name": "Half-Up Half-Down",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C"],
+        "description": "Top half of hair pulled up while the rest flows down"
+      },
+      {
+        "name": "Half-Up Twisted",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Top section twisted and pinned while remaining hair is down"
+      },
+      {
+        "name": "Dutch Braid Pigtails",
+        "lengths": ["Medium", "Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Two Dutch/inside-out braids on each side of the head"
+      },
+      {
+        "name": "Side Braid",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B"],
+        "description": "Long hair braided and swept to one side"
+      },
+      {
+        "name": "Fishtail Braid",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Two-section braid with an intricate woven pattern"
+      },
+      {
+        "name": "Crown Braid / Halo Braid",
+        "lengths": ["Long", "Very Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A"],
+        "description": "Braid wrapped around the head like a crown"
+      },
+      {
+        "name": "Space Buns",
+        "lengths": ["Medium", "Long"],
+        "types": ["1A","1B","1C","2A","2B","2C","3A","3B","3C","4A","4B","4C"],
+        "description": "Two buns placed on either side of the top of the head"
+      },
+      {
+        "name": "Very Long Straight Hair",
+        "lengths": ["Very Long"],
+        "types": ["1A","1B","1C"],
+        "description": "Hair grown past the waist, worn straight and loose"
+      },
+      {
+        "name": "Very Long Wavy Hair",
+        "lengths": ["Very Long"],
+        "types": ["2A","2B","2C"],
+        "description": "Waist-length or longer wavy hair worn loose"
+      },
+      {
+        "name": "Very Long Curly Hair",
+        "lengths": ["Very Long"],
+        "types": ["2C","3A","3B"],
+        "description": "Long spiral curls reaching waist or beyond"
+      },
+      {
+        "name": "Two Strand Twists",
+        "lengths": ["Short", "Medium"],
+        "types": ["3B","3C","4A","4B","4C"],
+        "description": "Hair divided into sections and twisted in two-strand twists"
+      },
+      {
+        "name": "Protective Knotless Braids",
+        "lengths": ["Medium", "Long"],
+        "types": ["3C","4A","4B","4C"],
+        "description": "Box braids starting without a knot for a more natural scalp appearance"
+      }
+    ]
+  }
+}

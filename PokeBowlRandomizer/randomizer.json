@@ -1,0 +1,145 @@
+{
+  "sections": [
+    {
+      "name": "Base",
+      "options": [
+        "White Rice",
+        "Brown Rice",
+        "Sushi Rice",
+        "Black Rice",
+        "Cauliflower Rice",
+        "Mixed Greens",
+        "Spinach",
+        "Arugula",
+        "Zucchini Noodles",
+        "Quinoa",
+        "Farro",
+        "Noodles (Soba)"
+      ]
+    },
+    {
+      "name": "Protein",
+      "subsections": [
+        {
+          "name": "Fish",
+          "options": [
+            "Ahi Tuna (Raw)",
+            "Salmon (Raw)",
+            "Yellowtail (Raw)",
+            "Octopus (Tako)",
+            "Salmon (Cooked)",
+            "Tuna (Cooked)",
+            "Mahi Mahi (Cooked)",
+            "Shrimp (Cooked)",
+            "Crab (Imitation)",
+            "Crab (Real)",
+            "Scallops",
+            "Smoked Salmon"
+          ]
+        },
+        {
+          "name": "Meat",
+          "options": [
+            "Chicken (Teriyaki)",
+            "Chicken (Grilled)",
+            "Beef (Teriyaki)",
+            "Beef (Kalbi)",
+            "Pulled Pork",
+            "Spam (Hawaiian)"
+          ]
+        },
+        {
+          "name": "Plant-Based",
+          "options": [
+            "Tofu (Crispy)",
+            "Tofu (Marinated)",
+            "Edamame",
+            "Tempeh",
+            "Chickpeas (Roasted)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sauce",
+      "options": [
+        "Shoyu (Soy Sauce)",
+        "Spicy Mayo",
+        "Sriracha Aioli",
+        "Ponzu",
+        "Sesame Ginger",
+        "Miso Ginger",
+        "Wasabi Aioli",
+        "Yuzu Kosho",
+        "Teriyaki",
+        "Sweet Chili",
+        "Eel Sauce (Unagi)",
+        "Coconut Aminos",
+        "Gochujang Mayo",
+        "Creamy Tahini"
+      ]
+    },
+    {
+      "name": "Toppings",
+      "options": [
+        "Avocado",
+        "Cucumber",
+        "Edamame",
+        "Mango",
+        "Pineapple",
+        "Radish",
+        "Pickled Ginger",
+        "Shredded Carrots",
+        "Red Cabbage",
+        "Corn",
+        "Jalapeños",
+        "Green Onions",
+        "Seaweed Salad",
+        "Wakame",
+        "Hijiki",
+        "Beet",
+        "Snap Peas",
+        "Cherry Tomatoes",
+        "Fried Shallots",
+        "Crispy Wonton Strips",
+        "Nori (Seaweed)",
+        "Shiso Leaf",
+        "Microgreens",
+        "Bean Sprouts",
+        "Kimchi"
+      ]
+    },
+    {
+      "name": "Crunch",
+      "options": [
+        "Sesame Seeds (White)",
+        "Sesame Seeds (Black)",
+        "Furikake",
+        "Crispy Onions",
+        "Panko Breadcrumbs",
+        "Crushed Macadamia Nuts",
+        "Cashews",
+        "Crispy Wonton Strips",
+        "Toasted Coconut Flakes",
+        "Tobiko (Flying Fish Roe)",
+        "Masago (Smelt Roe)",
+        "Hemp Seeds"
+      ]
+    },
+    {
+      "name": "Extra",
+      "options": [
+        "Wasabi",
+        "Pickled Ginger",
+        "Sriracha",
+        "Extra Sauce",
+        "Lime Wedge",
+        "Lemon Wedge",
+        "Sesame Oil Drizzle",
+        "Chili Flakes",
+        "Nori Strips",
+        "Soy Sauce (Side)"
+      ]
+    }
+  ]
+}
