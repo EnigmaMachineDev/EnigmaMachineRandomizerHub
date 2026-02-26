@@ -1,0 +1,33 @@
+{
+  "restaurant": "Ilios Crafted Greek",
+  "location": "Charlotte, NC",
+  "emoji": "🫒",
+  "storageKey": "iliosGreekOptions",
+  "sections": [
+    {
+      "name": "Order Type",
+      "pickCount": 1,
+      "items": ["Greek Plate", "Pita Sandwich", "Salad"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Chicken Souvlaki", "Lamb Souvlaki", "Gyro Meat", "Grilled Chicken", "Falafel", "Grilled Shrimp", "Grilled Lamb Chops"]
+    },
+    {
+      "name": "Pita Style (if pita)",
+      "pickCount": 1,
+      "items": ["Classic (lettuce, tomato, onion, tzatziki)", "Greek Style (feta, olives, peppers)", "Spicy (harissa, pickled onions)"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Greek Fries", "Rice Pilaf", "Hummus", "Greek Salad", "Roasted Vegetables", "Spanakopita", "Lemon Potatoes"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Greek Fries", "Rice Pilaf", "Hummus", "Greek Salad", "Roasted Vegetables", "Spanakopita", "Lemon Potatoes"]
+    }
+  ]
+}

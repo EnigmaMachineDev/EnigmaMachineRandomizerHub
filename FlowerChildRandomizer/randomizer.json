@@ -1,0 +1,13 @@
+{
+  "restaurant": "Flower Child",
+  "location": "Charlotte, NC",
+  "emoji": "🌻",
+  "storageKey": "flowerChildOptions",
+  "sections": [
+    {
+      "name": "Meal",
+      "pickCount": 1,
+      "items": ["Steakhouse Wedge Salad", "Turkey & Avocado Cobb Salad", "Avocado Caesar Salad", "Brussels Sprouts & Organic Kale Salad", "Chopped Vegetable Salad", "Ginger Miso Crunch Salad", "Glow Bowl", "Chicken Yakisoba Noodles Bowl", "Mediterranean Chicken Kabob Bowl", "Peruvian Braised Beef Bowl", "Mother Earth Bowl", "Chicken Enchiladas Bowl", "Forbidden Rice Bowl", "Carolina BBQ Chicken Wrap", "Flying Avocado Wrap", "Black Bean Falafel Wrap", "The Rebel French Dip Wrap", "Chicken Entree", "Shrimp Entree", "Steak Entree", "Tofu Entree", "Salmon Entree", "3 Vegetarian Sides Entree"]
+    }
+  ]
+}

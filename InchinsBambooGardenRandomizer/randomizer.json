@@ -1,0 +1,13 @@
+{
+  "restaurant": "Inchin's Bamboo Garden",
+  "location": "Nationwide",
+  "emoji": "🥡",
+  "storageKey": "inchinsBambooOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Chicken Manchurian", "Gobi Manchurian", "Chicken 65", "Chili Chicken", "Chili Paneer", "Kung Pao Chicken", "Orange Chicken", "Mongolian Chicken", "Sesame Chicken", "General Tso's Chicken", "Szechwan Chicken", "Thai Yellow Curry", "Thai Red Curry", "Thai Green Curry", "Pad Thai", "Hakka Noodles (Chicken)", "Hakka Noodles (Vegetable)", "Fried Rice (Chicken)", "Fried Rice (Vegetable)", "Singapore Rice Noodles", "Chicken Tikka Masala", "Butter Chicken", "Lamb Rogan Josh", "Paneer Butter Masala", "Dal Makhani", "Chana Masala", "Chicken Biryani", "Vegetable Biryani", "Goat Biryani", "Malaysian Laksa", "Tom Yum Soup", "Crispy Honey Chicken", "Dragon Chicken", "Schezwan Fried Rice"]
+    }
+  ]
+}

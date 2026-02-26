@@ -1,0 +1,13 @@
+{
+  "restaurant": "Steak 'n Shake",
+  "location": "Nationwide",
+  "emoji": "🍔",
+  "storageKey": "steakNShakeOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Original Double 'n Cheese", "Double Steakburger Double Cheese", "Bacon 'n Cheese Double Steakburger", "Single Steakburger with Cheese", "Bacon 'n Cheese Single Steakburger", "Triple Steakburger", "Frisco Melt", "Butter Double Steakburger", "Garlic Double Steakburger", "Butter Single Steakburger", "Garlic Single Steakburger", "Western BBQ 'n Bacon Steakburger", "Grilled Cheese", "Steak Frank", "3 PC Chicken Fingers"]
+    }
+  ]
+}

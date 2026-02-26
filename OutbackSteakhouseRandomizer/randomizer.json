@@ -1,0 +1,18 @@
+{
+  "restaurant": "Outback Steakhouse",
+  "location": "Nationwide",
+  "emoji": "🥩",
+  "storageKey": "outbackOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Chimichurri Filet", "Outback Center-Cut Sirloin 6oz", "Outback Center-Cut Sirloin 11oz", "Victoria's Filet Mignon 6oz", "Victoria's Filet Mignon 8oz", "Ribeye 13oz", "Bone-In Ribeye 18oz", "Melbourne Porterhouse 22oz", "Bone-In New York Strip 16oz", "Slow Roasted Prime Rib 12oz", "Slow Roasted Prime Rib 16oz", "Perfectly Grilled Salmon", "Toowoomba Salmon", "Steamed Lobster Tails", "The Bloomin' Burger", "The Outback Burger", "Bloomin' Chicken Sandwich", "Prime Rib Sandwich", "Alice Springs Chicken", "Baby Back Ribs"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Steakhouse Mac & Cheese", "Dressed Baked Potato", "Fresh Steamed Seasonal Veggies", "Aussie Fries", "Sweet Potato", "Loaded Mashed Potatoes", "Homestyle Mashed Potatoes", "Asparagus", "Seasoned Rice", "Over-the-Top Brussels Sprouts", "House Side Salad", "Caesar Side Salad"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "restaurant": "Puerto Vallarta",
+  "location": "Lake Park, NC",
+  "emoji": "🌮",
+  "storageKey": "puertoVallartaOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Burrito", "Chimichanga", "Enchiladas", "Tacos (Beef)", "Tacos (Chicken)", "Tacos (Carnitas)", "Tacos (Al Pastor)", "Tacos (Shrimp)", "Birria Tacos", "Fajitas (Chicken)", "Fajitas (Steak)", "Fajitas (Shrimp)", "Fajitas (Combo)", "Quesadilla", "Tostadas", "Chile Relleno", "Tamales", "Huevos Rancheros", "Carne Asada", "Pollo a la Plancha", "Camarones a la Diabla", "Molcajete", "Torta", "Flautas", "Birria Ramen", "Nachos", "Taco Salad", "Combo Plate"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "restaurant": "Silverlake Ramen",
+  "location": "Charlotte, NC",
+  "emoji": "🍜",
+  "storageKey": "silverlakeRamenOptions",
+  "sections": [
+    {
+      "name": "Main",
+      "pickCount": 1,
+      "items": ["The Classic Ramen", "The Blaze Ramen", "The Shoyu Ramen", "The Shoyu on Fire Ramen", "The Veggie Ramen", "The Garlic Truffle Ramen", "The Spicy Veggie Ramen", "Chicken Karaage Bowl", "Spicy Tuna Bowl", "Soboro Bowl", "Pork Bowl", "Curry Bowl"]
+    },
+    {
+      "name": "Ramen Protein (if ramen)",
+      "pickCount": 1,
+      "items": ["Pork", "Chicken", "Tofu"]
+    }
+  ]
+}

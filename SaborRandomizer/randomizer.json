@@ -1,0 +1,28 @@
+{
+  "restaurant": "Sabor Latin Street Grill",
+  "location": "Charlotte, NC",
+  "emoji": "🫔",
+  "storageKey": "saborOptions",
+  "sections": [
+    {
+      "name": "Order Type",
+      "pickCount": 1,
+      "items": ["Tacos Auténticos (corn tortilla)", "Tacos Americanos (flour tortilla)", "Chimi Shrimp Taco", "BYOB Burrito", "Three Amigos Burrito", "Sabor Especial Burrito", "BYOB Bowl", "Cuban Bowl", "Taco Salad Bowl", "Quesadilla", "Sabor Nachos", "Quesabirria", "Arepas Tradicional", "Gordita", "Empanada"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Shredded Chicken", "Grilled Chicken", "Ground Beef", "Grilled Veggies", "Black Beans", "Refried Beans", "Vegan Chorizo", "Al Pastor Pork", "Chorizo Sausage", "Grilled Steak", "Barbacoa", "Grilled Shrimp"]
+    },
+    {
+      "name": "Street Food Side",
+      "pickCount": 1,
+      "items": ["Carne Asada Fries", "Elote Loco", "Plátanos Maduros", "Chips & Queso", "Fries", "None"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Churros", "Guava Pineapple Empanada", "None"]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "restaurant": "Shoku Sushi & Bar",
+  "location": "Monroe, NC",
+  "emoji": "🍣",
+  "storageKey": "shokuSushiOptions",
+  "sections": [
+    {
+      "name": "Meal",
+      "pickCount": 1,
+      "items": ["California Roll", "Spicy Tuna Roll", "Salmon Roll", "Tuna Roll", "Shrimp Tempura Roll", "Philadelphia Roll", "Veggie Roll", "Eel Avocado Roll", "Yellowtail Roll", "Salmon Avocado Roll", "Spicy Salmon Roll", "Crunchy Roll", "Dragon Roll", "Rainbow Roll", "Spider Roll", "Volcano Roll", "Lion King Roll", "Red Dragon Roll", "Crazy Roll", "Lobster Roll", "Shoku Special Roll", "Las Vegas Roll", "Crunch Munch Roll", "Fire Roll", "Caterpillar Roll", "Sashimi Dinner", "Nigiri Combo", "Hibachi Chicken", "Hibachi Steak", "Hibachi Shrimp", "Hibachi Salmon", "Teriyaki Chicken", "Teriyaki Salmon", "Tempura Dinner", "Udon Noodles", "Chirashi Bowl"]
+    },
+    {
+      "name": "Side (hibachi/teriyaki include fried rice, salad & sweet carrot)",
+      "pickCount": 1,
+      "items": ["Miso Soup", "House Salad", "Edamame", "Seaweed Salad", "White Rice", "Fried Rice", "None"]
+    }
+  ]
+}

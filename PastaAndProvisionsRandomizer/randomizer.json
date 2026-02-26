@@ -1,0 +1,33 @@
+{
+  "restaurant": "Pasta & Provisions",
+  "location": "Charlotte, NC",
+  "emoji": "🍝",
+  "storageKey": "pastaProvisionsOptions",
+  "sections": [
+    {
+      "name": "Order Type",
+      "pickCount": 1,
+      "items": ["Fresh Pasta Dish", "Ravioli", "Sandwich", "Lunch Combo"]
+    },
+    {
+      "name": "Fresh Pasta Flavor",
+      "pickCount": 1,
+      "items": ["Egg Fettuccine", "Spinach Fettuccine", "Tomato Basil Fettuccine", "Lemon Pepper Fettuccine", "Black Pepper Linguine", "Garlic Parsley Linguine", "Roasted Red Pepper Penne", "Whole Wheat Penne", "Egg Pappardelle", "Squid Ink Linguine", "Saffron Tagliatelle", "Herb Tagliatelle", "Porcini Mushroom Pappardelle", "Chipotle Penne"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Marinara", "Pomodoro", "Alfredo", "Pesto", "Bolognese", "Vodka Cream", "Arrabbiata", "Garlic & Oil", "Cacio e Pepe", "Brown Butter Sage"]
+    },
+    {
+      "name": "Ravioli (if selected)",
+      "pickCount": 1,
+      "items": ["Wild Mushroom Ravioli", "Cheese Ravioli", "Lobster Ravioli", "Spinach & Ricotta Ravioli", "Butternut Squash Ravioli", "Short Rib Ravioli", "Chicken Parm Ravioli", "Crab Ravioli", "Sun-Dried Tomato Ravioli", "Pumpkin Ravioli", "Goat Cheese Ravioli", "Sausage Ravioli", "Truffle Ravioli", "Lemon Ricotta Ravioli", "Gnocchi"]
+    },
+    {
+      "name": "Sandwich (if selected)",
+      "pickCount": 1,
+      "items": ["The Royal", "Italian Sub", "Meatball Parm", "Chicken Pesto", "Turkey & Provolone", "Caprese", "Prosciutto & Mozzarella", "Roast Beef & Cheddar"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "restaurant": "CAVA",
+  "location": "Nationwide",
+  "emoji": "🥗",
+  "storageKey": "cavaOptions",
+  "sections": [
+    {
+      "name": "Base",
+      "pickCount": 1,
+      "items": ["Saffron Basmati Rice", "Brown Basmati Rice", "Black Lentils", "Arugula", "Baby Spinach", "Romaine", "Super Greens", "Power Greens", "SplitBread Pita", "No Base"]
+    },
+    {
+      "name": "Dip",
+      "pickCount": 2,
+      "items": ["Crazy Feta", "Hummus", "Tzatziki", "Roasted Eggplant", "Harissa"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Grilled Chicken", "Braised Lamb", "Harissa Honey Chicken", "Grilled Steak", "Falafel", "Impossible Meatballs"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 4,
+      "items": ["Shredded Romaine", "Tomato & Onion", "Cucumber", "Pickled Onions", "Cabbage Slaw", "Corn", "Pita Chips", "Diced Cucumber", "Roasted Red Pepper", "Kalamata Olives", "Lemon Wedge", "Crumbled Feta", "Baked Pita Chips", "Roasted White Sweet Potatoes"]
+    },
+    {
+      "name": "Dressing",
+      "pickCount": 1,
+      "items": ["Lemon Herb Tahini", "Green Harissa", "Skhug", "Garlic Dressing", "Harissa Vinaigrette", "Greek Vinaigrette", "Tangerine Aleppo"]
+    }
+  ]
+}

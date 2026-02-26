@@ -1,0 +1,13 @@
+{
+  "restaurant": "Common Market",
+  "location": "Charlotte, NC",
+  "emoji": "🥪",
+  "storageKey": "commonMarketOptions",
+  "sections": [
+    {
+      "name": "Meal",
+      "pickCount": 1,
+      "items": ["Bagel Naked or with Bling", "Fully Loaded", "Rancho", "Dragon Slayer 2.0", "Meatless Morning", "Vegan Dawn", "The Simple Simon", "Evil Club", "The Californian", "Chicken Capri", "Darby's Roast Beef Deluxe", "Firehouse #8", "Smoked Salmon", "Handsome Henry's Grilled Cheese", "Hot Mama", "Spicy Turkey", "Roast Beef & Spinach Panini", "Reuben", "Chicken Bacon Ranch Melt", "May May", "Vegbano", "Spicy Chick", "Cucumber Crunch", "Kay's Wrap 2.0", "PB Owen", "Scoop Salad", "Common Cobb"]
+    }
+  ]
+}

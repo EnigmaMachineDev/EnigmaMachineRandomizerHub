@@ -1,0 +1,23 @@
+{
+  "restaurant": "Texas Roadhouse",
+  "location": "Nationwide",
+  "emoji": "🤠",
+  "storageKey": "texasRoadhouseOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Hand-Cut Sirloin 6oz", "Hand-Cut Sirloin 8oz", "Ft. Worth Ribeye 12oz", "Ft. Worth Ribeye 14oz", "Dallas Filet 6oz", "Dallas Filet 8oz", "New York Strip 12oz", "Porterhouse T-Bone 23oz", "Half Slab Baby Back Ribs", "Full Slab Baby Back Ribs", "Grilled BBQ Chicken", "Herb Crusted Chicken", "Country Fried Chicken", "Chicken Critters", "Smothered Chicken", "Portobello Mushroom Chicken", "Grilled Salmon 5oz", "Grilled Salmon 8oz", "Grilled Shrimp", "Fried Catfish", "Grilled Pork Chops (Single)", "Grilled Pork Chops (Double)", "Pulled Pork Dinner", "Country Fried Sirloin", "Beef Tips", "Road Kill (Chopped Steak)", "Steak Kabob"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Baked Potato", "Baked Sweet Potato", "Steak Fries", "Mashed Potatoes", "Seasoned Rice", "Fresh Vegetables", "Sauteed Mushrooms", "Sauteed Onions", "Green Beans", "Caesar Salad", "House Salad", "Chili", "Applesauce", "Corn on the Cob", "Cole Slaw"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Baked Potato", "Baked Sweet Potato", "Steak Fries", "Mashed Potatoes", "Seasoned Rice", "Fresh Vegetables", "Sauteed Mushrooms", "Sauteed Onions", "Green Beans", "Caesar Salad", "House Salad", "Chili", "Applesauce", "Corn on the Cob", "Cole Slaw"]
+    }
+  ]
+}

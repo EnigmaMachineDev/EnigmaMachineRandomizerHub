@@ -1,0 +1,18 @@
+{
+  "restaurant": "Kebab Grill & Wings",
+  "location": "Lake Park, NC",
+  "emoji": "🍢",
+  "storageKey": "kebabGrillOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Chicken Kebab Platter", "Lamb Kebab Platter", "Beef Kebab Platter", "Mix Grill Platter (3 Skewers)", "Gyro Platter", "Chicken Shawarma Platter", "Kofta Kebab Platter", "Chicken Tenders", "Fried Shrimp", "Chicken Wings", "Chicken Kebab Sub", "Lamb Kebab Sub", "Gyro Sub", "Chicken Shawarma Sub", "Philly Cheesesteak Sub", "Classic Burger", "Lamb Burger", "Chicken Burger", "Chicken Quesadilla", "Steak Quesadilla", "Chicken Shawarma Wrap", "Gyro Wrap", "Chicken Kebab Wrap"]
+    },
+    {
+      "name": "Side (platters include rice & salad)",
+      "pickCount": 1,
+      "items": ["Fries", "Rice", "Hummus", "Pita Bread", "Side Salad", "None"]
+    }
+  ]
+}

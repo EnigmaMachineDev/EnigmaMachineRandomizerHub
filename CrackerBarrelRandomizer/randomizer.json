@@ -1,0 +1,23 @@
+{
+  "restaurant": "Cracker Barrel",
+  "location": "Nationwide",
+  "emoji": "🪵",
+  "storageKey": "crackerBarrelOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Southern Fried Chicken", "Chicken n' Dumplins", "Homestyle Chicken n' French Toast", "Golden Carolina BBQ Chicken Tenders", "Smoky Southern Grilled Chicken", "Classics Sampler", "Country Fried Steak", "Pot Roast", "Hashbrown Casserole Shepherd's Pie", "New York Strip Steak", "Roast Beef", "Skillet Sirloin Steak Sampler", "Fried Catfish (1 Piece)", "Fried Catfish (2 Pieces)", "Grilled Catfish", "Country Fried Shrimp", "Lemon Pepper Grilled Rainbow Trout", "The Barrel Cheeseburger", "Homestyle Fried Chicken BLT", "Homestyle Grilled Chicken BLT", "Buffalo Buttermilk Ranch Mac n' Cheese"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Mashed Potatoes", "Loaded Mashed Potatoes", "Hashbrown Casserole", "Loaded Hashbrown Casserole", "Mac & Cheese", "Bacon Mac & Cheese", "Green Beans", "Corn", "Carrots", "Fried Cinnamon Apples", "Cole Slaw", "Dumplins", "Turnip Greens", "Fresh Fruit", "Loaded Baked Potato", "Loaded Baked Sweet Potato"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Mashed Potatoes", "Loaded Mashed Potatoes", "Hashbrown Casserole", "Loaded Hashbrown Casserole", "Mac & Cheese", "Bacon Mac & Cheese", "Green Beans", "Corn", "Carrots", "Fried Cinnamon Apples", "Cole Slaw", "Dumplins", "Turnip Greens", "Fresh Fruit", "Loaded Baked Potato", "Loaded Baked Sweet Potato"]
+    }
+  ]
+}

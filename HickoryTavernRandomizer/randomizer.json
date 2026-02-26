@@ -1,0 +1,18 @@
+{
+  "restaurant": "Hickory Tavern",
+  "location": "Charlotte, NC",
+  "emoji": "🍻",
+  "storageKey": "hickoryTavernOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Cedar Plank Salmon", "Chicken Tenders", "Seared Ribeye", "Chicken Caprese", "Jacked Up Chicken", "Char Grilled Ribs", "Classic Tavern Burger", "Mushroom Onion & Swiss Burger", "Smokehouse Burger", "Diablo Burger", "Freedom Burger", "Crispy Bella Burger", "Beer-Battered Cod Tacos", "Shaved Ribeye Tacos", "Citrus Shrimp Tacos", "Ahi Tuna Tacos", "Blackened Pulled Chicken Tacos", "Carolina Cheesesteak", "Classic Reuben", "Turkey Reuben", "Pesto Turkey Club", "The Chicken Sandwich", "Pulled Pork Sandwich", "Buffalo Chicken Wrap", "Fish & Chips", "Food Truck Chicken & Rice", "Lowcountry Shrimp & Grits", "Power Bowl"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Broccoli", "Tater Tots", "French Fries", "Yellow Rice", "Crispy Brussels Sprouts with Bacon", "Cheese Grits", "Tavern Chips", "Sweet Potato Fries", "Coleslaw"]
+    }
+  ]
+}

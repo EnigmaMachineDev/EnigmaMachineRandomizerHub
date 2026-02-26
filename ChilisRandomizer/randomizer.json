@@ -1,0 +1,13 @@
+{
+  "restaurant": "Chili's",
+  "location": "Nationwide",
+  "emoji": "🌶️",
+  "storageKey": "chilisOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Big Smasher Burger", "Double Oldtimer w/ Cheese", "Alex's Santa Fe Burger", "Bacon Rancher Burger", "BBQ Brisket Burger", "Just Bacon Burger", "Oldtimer w/ Cheese", "Chicken Fajitas", "Steak Fajitas", "Shrimp Fajitas", "Crispy Chicken Crispers Combo", "Honey-Chipotle Chicken Crispers Combo", "Nashville Hot Chicken Crispers Combo", "Classic Ribeye", "Classic Sirloin 10oz", "Classic Sirloin 6oz", "Full Order of Ribs", "Half Order of Ribs", "Cajun Pasta", "Ancho Salmon", "Margarita Grilled Chicken", "Chipotle Fresh Mex Bowl", "Chicken Bacon Ranch Quesadillas", "Brisket Quesadillas", "Crispy Chicken Sandwich", "Buffalo Chicken Ranch Sandwich", "Bacon Guac Grilled Chicken Sandwich"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "restaurant": "MOOYAH",
+  "location": "Nationwide",
+  "emoji": "🍔",
+  "storageKey": "mooyahOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Bacon Cheeseburger", "Classic Burger", "Iceburger", "BBQ Bacon Burger", "Spicy Jalapeño Burger", "Mushroom Swiss Burger", "Build Your Own Burger", "Turkey Burger", "The Vegan (Black Bean)", "Hot Dog", "Corn Dog"]
+    }
+  ]
+}

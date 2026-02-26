@@ -1,0 +1,13 @@
+{
+  "restaurant": "Shake Shack",
+  "location": "Nationwide",
+  "emoji": "🍔",
+  "storageKey": "shakeShackOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Single ShackBurger", "Double ShackBurger", "Single SmokeShack", "Double SmokeShack", "Shack Stack", "Single Avocado Bacon Burger", "Double Avocado Bacon Burger", "Single Bacon Cheeseburger", "Double Bacon Cheeseburger", "Chicken Shack", "Avocado Bacon Chicken", "Hot Chicken", "Veggie Shack", "Hot Dog", "Cheese Dog"]
+    }
+  ]
+}

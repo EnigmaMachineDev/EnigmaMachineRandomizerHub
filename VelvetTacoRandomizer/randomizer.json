@@ -1,0 +1,13 @@
+{
+  "restaurant": "Velvet Taco",
+  "location": "Nationwide",
+  "emoji": "🌮",
+  "storageKey": "velvetTacoOptions",
+  "sections": [
+    {
+      "name": "Taco or Bowl",
+      "pickCount": 1,
+      "items": ["Spicy Tikka Chicken Taco", "Buffalo Chicken Taco", "Rotisserie Chicken Taco", "Chicken & Waffle Taco", "Slow-Roasted Angus Brisket Taco", "Grilled Steak Taco", "Chimichurri Steak Taco", "Bacon Smash Burger Taco", "Quesa Birria Pork Duo", "Korean Fried Rice Taco", "Mexi-Cali Shrimp Taco", "Grilled Salmon Taco", "Fish n' Chips Taco", "Beer Battered Cauliflower Taco", "Fried Paneer Cheese Taco", "Nashville Hot Tofu Taco", "Spicy Tikka Chicken Bowl", "Rotisserie Chicken Bowl", "Grilled Steak Bowl", "Slow-Roasted Angus Brisket Bowl", "Seasonal Veggie Bowl", "Mexi-Cali Shrimp Bowl"]
+    }
+  ]
+}

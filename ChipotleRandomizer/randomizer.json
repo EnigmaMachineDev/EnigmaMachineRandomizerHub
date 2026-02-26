@@ -1,0 +1,43 @@
+{
+  "restaurant": "Chipotle",
+  "location": "Nationwide",
+  "emoji": "🌯",
+  "storageKey": "chipotleOptions",
+  "sections": [
+    {
+      "name": "Entree Type",
+      "pickCount": 1,
+      "items": ["Burrito", "Burrito Bowl", "Tacos (3)", "Salad", "Quesadilla"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Chicken", "Steak", "Barbacoa", "Carnitas", "Sofritas", "Veggie"]
+    },
+    {
+      "name": "Rice",
+      "pickCount": 1,
+      "items": ["White Rice", "Brown Rice", "No Rice"]
+    },
+    {
+      "name": "Beans",
+      "pickCount": 1,
+      "items": ["Black Beans", "Pinto Beans", "No Beans"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 3,
+      "items": ["Fresh Tomato Salsa (Mild)", "Roasted Chili Corn Salsa (Medium)", "Tomatillo Green Chili Salsa (Medium)", "Tomatillo Red Chili Salsa (Hot)", "Sour Cream", "Cheese", "Guacamole", "Romaine Lettuce", "Fajita Veggies", "Queso Blanco"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Chips", "Chips & Guacamole", "Chips & Queso", "Chips & Fresh Tomato Salsa", "Side of Guacamole", "None"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Fountain Drink", "Mexican Coca-Cola", "Organic Lemonade", "Organic Apple Juice", "Water", "None"]
+    }
+  ]
+}

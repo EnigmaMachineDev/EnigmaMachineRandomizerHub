@@ -1,0 +1,23 @@
+{
+  "restaurant": "Copper Modern Indian Cuisine",
+  "location": "Charlotte, NC",
+  "emoji": "🍛",
+  "storageKey": "copperOptions",
+  "sections": [
+    {
+      "name": "Dish",
+      "pickCount": 1,
+      "items": ["Tikka Masala", "Saag", "Goan Curry", "Punjabi Tadka Masala", "Vin d'Alho", "Crab Kundan Quorma", "Chicken Mirchi-Malai", "Lamb Kozhambu", "Punjabi Gosht Rara", "Seafood Medley Anjeeri", "Amritsari Battered Cod", "Black Sesame-Apricot-Chili Glazed Chicken Tikka", "Duck Leg Khorma", "Kashmiri Chili-Fennel Roasted Lamb Chops", "Youkon Gold-Green Beans-Mushrooms Curry", "Konkan Spiced Vegetable Curry", "Tofu-Vegetable Kesari", "Saag Paneer", "Paneer Tikka Kadhai Masala", "Goats Cheese Kofta"]
+    },
+    {
+      "name": "Protein (for sauce-based dishes)",
+      "pickCount": 1,
+      "items": ["Vegetables", "Paneer", "Fish", "Seafood", "Chicken", "Lamb", "Goat"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 2,
+      "items": ["Vegetable Bhaji", "Raita", "Naan", "Roti", "Garlic Naan", "Chana Masala", "Kachumber", "Vegetable Pulao", "Achari Paratha", "Mushroom-Peas Kulcha", "Dal"]
+    }
+  ]
+}

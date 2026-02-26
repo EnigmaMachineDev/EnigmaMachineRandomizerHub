@@ -1,0 +1,23 @@
+{
+  "restaurant": "Bonefish Grill",
+  "location": "Nationwide",
+  "emoji": "🐟",
+  "storageKey": "bonefishGrillOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Atlantic Salmon", "Chilean Sea Bass", "Cod Imperial", "Fish & Chips", "Mahi-Mahi", "Rainbow Trout", "Swordfish", "Tilapia", "Ahi Tuna Steak", "Wood-Grilled Shrimp", "Bistro Cut Filet with Chimichurri", "The Angler's Steak", "Lily's Chicken", "Fontina Pork Chop", "Cold Water Lobster Tails"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Garlic Mashed Potatoes", "Jasmine Rice", "French Fries", "Crispy Potatoes", "Steamed Broccoli", "Grilled Asparagus", "Seasonal Vegetables", "Mac & Cheese", "Roasted Corn", "House Salad", "Caesar Side Salad"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Garlic Mashed Potatoes", "Jasmine Rice", "French Fries", "Crispy Potatoes", "Steamed Broccoli", "Grilled Asparagus", "Seasonal Vegetables", "Mac & Cheese", "Roasted Corn", "House Salad", "Caesar Side Salad"]
+    }
+  ]
+}

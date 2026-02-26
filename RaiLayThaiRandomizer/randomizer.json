@@ -1,0 +1,23 @@
+{
+  "restaurant": "Rai Lay Thai",
+  "location": "Charlotte, NC",
+  "emoji": "🍛",
+  "storageKey": "raiLayThaiOptions",
+  "sections": [
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": ["Pad Thai", "Pad See Ew", "Drunken Noodles", "Pad Woon Sen", "Basil Fried Rice", "Pineapple Fried Rice", "Thai Fried Rice", "Green Curry", "Red Curry", "Yellow Curry", "Panang Curry", "Massaman Curry", "Basil Chicken", "Cashew Chicken", "Ginger Stir-Fry", "Garlic Pepper Stir-Fry", "Sweet & Sour", "Crispy Pad Thai", "Spicy Basil Noodles", "Khao Soi", "Lemongrass Chicken", "Sesame Chicken"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Chicken", "Tofu", "Vegetables", "Beef", "Pork", "Shrimp", "Chicken & Shrimp"]
+    },
+    {
+      "name": "Spice Level",
+      "pickCount": 1,
+      "items": ["1", "2", "3", "4", "5"]
+    }
+  ]
+}
