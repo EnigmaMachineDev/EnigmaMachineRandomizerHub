@@ -1,0 +1,38 @@
+{
+  "restaurant": "Taco Bell",
+  "location": "Nationwide",
+  "emoji": "🌮",
+  "storageKey": "tacobellOptions",
+  "sections": [
+    {
+      "name": "Main Item",
+      "pickCount": 1,
+      "items": ["Crunchy Taco", "Soft Taco", "Doritos Locos Taco (Nacho Cheese)", "Doritos Locos Taco (Cool Ranch)", "Burrito Supreme", "Bean Burrito", "Crunchwrap Supreme", "Chalupa Supreme", "Gordita Crunch", "Mexican Pizza", "Nachos BellGrande", "Power Bowl", "Cheesy Gordita Crunch", "Beefy 5-Layer Burrito", "Chicken Quesadilla", "Grilled Cheese Burrito"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Seasoned Beef", "Grilled Chicken", "Steak", "Black Beans", "Refried Beans"]
+    },
+    {
+      "name": "Add-On",
+      "pickCount": 1,
+      "items": ["Extra Cheese", "Sour Cream", "Guacamole", "Jalapeños", "Creamy Jalapeño Sauce", "Nothing"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Cinnamon Twists", "Chips & Nacho Cheese Sauce", "Chips & Guacamole", "Mexican Rice", "Black Beans", "No Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Baja Blast", "Baja Blast Zero Sugar", "Mountain Dew", "Pepsi", "Diet Pepsi", "Starry", "Brisk Iced Tea", "Agua Fresca", "Water"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Cinnabon Delights (2pc)", "Cinnabon Delights (12pc)", "Churro", "None"]
+    }
+  ]
+}

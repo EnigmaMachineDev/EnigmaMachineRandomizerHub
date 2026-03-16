@@ -1,0 +1,30 @@
+{
+  "title": "Restaurant Randomizer",
+  "emoji": "🍽️",
+  "storageKey": "restaurantPickerOptions",
+  "restaurants": [
+    { "name": "Zen Bowl Poke Bowl", "emoji": "🍣", "url": "../ZenBowlPokeBowlRandomizer/" },
+    { "name": "Chipotle", "emoji": "🌯", "url": "../ChipotleRandomizer/" },
+    { "name": "CAVA", "emoji": "🥙", "url": "../CavaRandomizer/" },
+    { "name": "Sabor Latin Street Grill", "emoji": "🌮", "url": "../SaborRandomizer/" },
+    { "name": "Velvet Taco", "emoji": "🌮", "url": "../VelvetTacoRandomizer/" },
+    { "name": "Chili's", "emoji": "🌶️", "url": "../ChilisRandomizer/" },
+    { "name": "Outback Steakhouse", "emoji": "🥩", "url": "../OutbackSteakhouseRandomizer/" },
+    { "name": "Texas Roadhouse", "emoji": "🤠", "url": "../TexasRoadhouseRandomizer/" },
+    { "name": "Bonefish Grill", "emoji": "🐟", "url": "../BonefishGrillRandomizer/" },
+    { "name": "Silverlake Ramen", "emoji": "🍜", "url": "../SilverlakeRamenRandomizer/" },
+    { "name": "Hickory Tavern", "emoji": "🍺", "url": "../HickoryTavernRandomizer/" },
+    { "name": "Rai Lay Thai", "emoji": "🍛", "url": "../RaiLayThaiRandomizer/" },
+    { "name": "Shoku Sushi & Bar", "emoji": "🍣", "url": "../ShokuSushiRandomizer/" },
+    { "name": "Copper Indian Cuisine", "emoji": "🍛", "url": "../CopperRandomizer/" },
+    { "name": "Ilios Crafted Greek", "emoji": "🫒", "url": "../IliosGreekRandomizer/" },
+    { "name": "Common Market", "emoji": "🥪", "url": "../CommonMarketRandomizer/" },
+    { "name": "Pasta & Provisions", "emoji": "🍝", "url": "../PastaAndProvisionsRandomizer/" },
+    { "name": "Shake Shack", "emoji": "🍔", "url": "../ShakeShackRandomizer/" },
+    { "name": "Steak 'n Shake", "emoji": "🥤", "url": "../SteakNShakeRandomizer/" },
+    { "name": "Flower Child", "emoji": "🌸", "url": "../FlowerChildRandomizer/" },
+    { "name": "MOOYAH", "emoji": "🐄", "url": "../MooyahRandomizer/" },
+    { "name": "Cracker Barrel", "emoji": "🪵", "url": "../CrackerBarrelRandomizer/" },
+    { "name": "Inchin's Bamboo Garden", "emoji": "🎍", "url": "../InchinsBambooGardenRandomizer/" }
+  ]
+}

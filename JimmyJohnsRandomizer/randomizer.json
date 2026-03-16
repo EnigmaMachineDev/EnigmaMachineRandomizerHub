@@ -1,0 +1,38 @@
+{
+  "restaurant": "Jimmy John's",
+  "location": "Nationwide",
+  "emoji": "🥪",
+  "storageKey": "jimmyjohnsOptions",
+  "sections": [
+    {
+      "name": "Sandwich",
+      "pickCount": 1,
+      "items": ["Pepe (#1 - Ham)", "Big John (#2 - Roast Beef)", "Totally Tuna (#3)", "Turkey Tom (#4)", "Vito (#5 - Italian)", "Vegetarian (#6)", "Gourmet Smoked Ham Club (#7)", "Billy Club (#8 - Roast Beef)", "Italian Night Club (#9)", "Hunter's Club (#10 - Roast Beef)", "Country Club (#11 - Turkey)", "Beach Club (#12 - Tuna)", "Gourmet Veggie Club (#13)", "Bootlegger Club (#14 - Roast Beef)", "Club Tuna (#15)", "Club Lulu (#16 - Turkey)", "Ultimate Porker (#17 - Ham & Bacon)", "J.J. Gargantuan", "Slim 1 - Ham", "Slim 2 - Roast Beef", "Slim 3 - Tuna", "Slim 4 - Turkey", "Slim 5 - Salami", "Slim 6 - Double Provolone"]
+    },
+    {
+      "name": "Bread",
+      "pickCount": 1,
+      "items": ["French Bread", "Wheat Bread", "Unwich (Lettuce Wrap)"]
+    },
+    {
+      "name": "Size",
+      "pickCount": 1,
+      "items": ["Regular (8\")", "Giant (16\")"]
+    },
+    {
+      "name": "Add-Ons",
+      "pickCount": 2,
+      "items": ["Extra Cheese", "Extra Meat", "Avocado Spread", "Hot Peppers", "Cucumber", "Jalapeño", "Nothing Extra"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Chips (Original)", "Chips (BBQ)", "Chips (Jalapeño)", "Pickle", "Cookie (Chocolate Chip)", "Cookie (Oatmeal Raisin)", "No Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Water", "Lemonade", "Iced Tea"]
+    }
+  ]
+}

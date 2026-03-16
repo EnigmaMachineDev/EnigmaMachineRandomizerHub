@@ -1,0 +1,33 @@
+{
+  "restaurant": "Jack in the Box",
+  "location": "West Coast / Regional",
+  "emoji": "🃏",
+  "storageKey": "jackInTheBoxOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Jumbo Jack", "Jumbo Jack with Cheese", "Sourdough Jack", "Bacon Ultimate Cheeseburger", "Ultimate Cheeseburger", "Jr. Bacon Cheeseburger", "Double Jack", "Sirloin Swiss & Grilled Onion Burger", "Spicy Chicken Sandwich", "Homestyle Ranch Chicken Sandwich", "Grilled Chicken Sandwich", "Chicken Strips (3pc)", "Chicken Strips (5pc)", "Chicken Nuggets (8pc)", "Spicy Nacho Chicken", "Breakfast Jack", "Loaded Breakfast Sandwich", "Sausage Croissant", "Extreme Sausage Sandwich"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Fries", "Medium Fries", "Large Fries", "Curly Fries", "Onion Rings", "Mini Churros", "Seasoned Curly Fries", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Buttermilk Ranch", "BBQ", "Frank's Red Hot Buffalo", "Teriyaki", "Sweet & Sour", "Sriracha Sauce", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Barq's Root Beer", "Iced Tea", "Lemonade", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Oreo Cookie Shake", "Water"]
+    },
+    {
+      "name": "Dessert / Snack",
+      "pickCount": 1,
+      "items": ["Mini Churros (5pc)", "Cheesecake", "Chocolate Overload Cake", "None"]
+    }
+  ]
+}

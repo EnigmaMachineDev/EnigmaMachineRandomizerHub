@@ -1,0 +1,38 @@
+{
+  "restaurant": "Popeyes",
+  "location": "Nationwide",
+  "emoji": "🍗",
+  "storageKey": "popeyesOptions",
+  "sections": [
+    {
+      "name": "Main",
+      "pickCount": 1,
+      "items": ["Chicken Sandwich", "Spicy Chicken Sandwich", "Blackened Chicken Sandwich", "Classic Chicken (2pc)", "Spicy Chicken (2pc)", "Classic Chicken (3pc)", "Spicy Chicken (3pc)", "Classic Tenders (3pc)", "Spicy Tenders (3pc)", "Blackened Tenders (3pc)", "Chicken Nuggets (8pc)", "Shrimp Tackle Box", "Wicked Chicken Sandwich", "Big Box"]
+    },
+    {
+      "name": "Piece Preference",
+      "pickCount": 1,
+      "items": ["Breast", "Thigh", "Wing", "Leg", "Mixed"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Cajun Fries", "Mashed Potatoes & Gravy", "Red Beans & Rice", "Cole Slaw", "Corn on the Cob", "Mac & Cheese", "Biscuit", "Green Beans"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Cajun Fries", "Mashed Potatoes & Gravy", "Red Beans & Rice", "Cole Slaw", "Corn on the Cob", "Mac & Cheese", "Biscuit", "No Second Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Blackened Ranch", "BoldBQ", "Mardi Gras Mustard", "Bayou Buffalo", "Sweet Heat", "Ranch", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Sweet Tea", "Lemonade", "Water"]
+    }
+  ]
+}

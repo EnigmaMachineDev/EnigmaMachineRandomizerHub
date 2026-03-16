@@ -1,0 +1,28 @@
+{
+  "restaurant": "Dunkin'",
+  "location": "Nationwide",
+  "emoji": "🍩",
+  "storageKey": "dunkinOptions",
+  "sections": [
+    {
+      "name": "Coffee / Drink",
+      "pickCount": 1,
+      "items": ["Hot Coffee (Original Blend)", "Hot Coffee (Dark Roast)", "Iced Coffee", "Cold Brew", "Nitro Cold Brew", "Hot Latte", "Iced Latte", "Frozen Coffee", "Cappuccino", "Macchiato", "Americano", "Hot Chocolate", "Chai Latte", "Matcha Latte", "Refresher (Strawberry Dragonfruit)", "Refresher (Peach Passion Fruit)", "Hot Tea", "Iced Tea"]
+    },
+    {
+      "name": "Flavor Swirl",
+      "pickCount": 1,
+      "items": ["French Vanilla", "Caramel", "Hazelnut", "Mocha", "Butter Pecan", "Toasted Almond", "Blueberry", "Coconut", "No Swirl"]
+    },
+    {
+      "name": "Milk / Cream",
+      "pickCount": 1,
+      "items": ["Cream", "Whole Milk", "Skim Milk", "Oat Milk", "Almond Milk", "Coconut Milk", "No Milk"]
+    },
+    {
+      "name": "Food Item",
+      "pickCount": 1,
+      "items": ["Glazed Donut", "Chocolate Frosted Donut", "Strawberry Frosted Donut", "Boston Kreme Donut", "Jelly Donut", "Blueberry Muffin", "Corn Muffin", "Bagel with Cream Cheese", "Croissant", "Bacon Egg & Cheese Sandwich", "Egg & Cheese Sandwich", "Sausage Egg & Cheese", "Hash Browns", "Avocado Toast", "Munchkins (10pc)", "No Food"]
+    }
+  ]
+}

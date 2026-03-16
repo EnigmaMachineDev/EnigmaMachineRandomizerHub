@@ -1,0 +1,33 @@
+{
+  "restaurant": "Burger King",
+  "location": "Nationwide",
+  "emoji": "👑",
+  "storageKey": "burgerkingOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Whopper", "Whopper with Cheese", "Double Whopper", "Triple Whopper", "Bacon Whopper", "Impossible Whopper", "Royal Crispy Chicken", "Royal Crispy Chicken Deluxe", "Spicy Royal Crispy Chicken", "Big Fish Sandwich", "Rodeo Burger", "Bacon King", "Double Bacon King", "Steakhouse King", "Chicken Jr.", "4pc Chicken Nuggets", "8pc Chicken Nuggets", "10pc Chicken Fries"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Fries", "Medium Fries", "Large Fries", "Onion Rings (Small)", "Onion Rings (Medium)", "Onion Rings (Large)", "Apple Slices", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "BBQ", "Honey Mustard", "Sweet & Sour", "Buffalo", "Zesty Sauce", "Ketchup", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Hi-C Orange", "Iced Tea", "Lemonade", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Water"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Chocolate Sundae", "Caramel Sundae", "Oreo Shake", "Dutch Apple Pie", "Soft Serve Cone", "None"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "restaurant": "Chick-fil-A",
+  "location": "Nationwide",
+  "emoji": "🐔",
+  "storageKey": "chickfilaOptions",
+  "sections": [
+    {
+      "name": "Main",
+      "pickCount": 1,
+      "items": ["Original Chicken Sandwich", "Spicy Deluxe Chicken Sandwich", "Spicy Chicken Sandwich", "Deluxe Chicken Sandwich", "Grilled Chicken Sandwich", "Grilled Chicken Club Sandwich", "Spicy Southwest Salad", "Cobb Salad", "Market Salad", "Side Salad", "Chicken Nuggets (8ct)", "Chicken Nuggets (12ct)", "Grilled Nuggets (8ct)", "Grilled Nuggets (12ct)", "Chick-n-Strips (3ct)", "Chick-n-Strips (4ct)", "Chicken Soup", "Breakfast Chicken Biscuit", "Egg White Grill", "Hash Brown Scramble Burrito", "Hash Brown Scramble Bowl", "Chick-fil-A Cool Wrap"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Waffle Fries (Small)", "Waffle Fries (Medium)", "Waffle Fries (Large)", "Mac & Cheese", "Fruit Cup", "Side Salad", "Kale Crunch Side", "Cole Slaw", "Greek Yogurt Parfait", "Chicken Soup", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Chick-fil-A Sauce", "Polynesian Sauce", "Garden Herb Ranch", "Honey Mustard", "BBQ", "Zesty Buffalo", "Sweet & Spicy Sriracha", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Freshly-Brewed Iced Tea (Sweetened)", "Freshly-Brewed Iced Tea (Unsweetened)", "Lemonade", "Frosted Lemonade", "Diet Lemonade", "Frosted Coffee", "Chocolate Milkshake", "Vanilla Milkshake", "Strawberry Milkshake", "Peach Milkshake", "Water", "Apple Juice", "Honest Kids Juice Box"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Chocolate Chunk Cookie", "Brownie", "Icedream Cone", "Icedream Cup", "None"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "restaurant": "Little Caesars",
+  "location": "Nationwide",
+  "emoji": "🍕",
+  "storageKey": "littlecaesarsOptions",
+  "sections": [
+    {
+      "name": "Pizza",
+      "pickCount": 1,
+      "items": ["Hot-N-Ready Classic Pepperoni", "Hot-N-Ready Cheese", "3 Meat Treat", "Ultimate Supreme", "Hula Hawaiian", "Veggie", "ExtraMostBestest Pepperoni", "ExtraMostBestest Cheese", "Deep Deep Dish Pepperoni", "Deep Deep Dish Cheese", "Stuffed Crust Pepperoni", "Stuffed Crust Cheese", "Thin Crust Cheese", "Thin Crust Pepperoni"]
+    },
+    {
+      "name": "Pizza Size",
+      "pickCount": 1,
+      "items": ["Large (14\")", "Deep Deep Dish (8-corner)"]
+    },
+    {
+      "name": "Crazy Bread / Side",
+      "pickCount": 1,
+      "items": ["Crazy Bread (8pc)", "Crazy Combo (Bread + Sauce)", "Italian Cheese Bread", "Pepperoni & Cheese Stuffed Crazy Bread", "Caesar Dip Crazy Bread", "No Side"]
+    },
+    {
+      "name": "Dipping Sauce",
+      "pickCount": 1,
+      "items": ["Buttery Garlic", "Ranch", "Marinara", "Buffalo", "Caesar", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Lipton Iced Tea", "Water"]
+    }
+  ]
+}

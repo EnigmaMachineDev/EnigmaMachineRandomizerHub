@@ -1,0 +1,38 @@
+{
+  "restaurant": "KFC",
+  "location": "Nationwide",
+  "emoji": "🍗",
+  "storageKey": "kfcOptions",
+  "sections": [
+    {
+      "name": "Main",
+      "pickCount": 1,
+      "items": ["Original Recipe Chicken (2pc)", "Original Recipe Chicken (3pc)", "Extra Crispy Chicken (2pc)", "Extra Crispy Chicken (3pc)", "Spicy Crispy Chicken (2pc)", "Chicken Sandwich", "Spicy Chicken Sandwich", "Crispy Colonel Sandwich", "Chicken Littles", "Popcorn Chicken (Small)", "Popcorn Chicken (Large)", "8pc Chicken Nuggets", "Chicken Pot Pie", "Famous Bowl", "Go Cup"]
+    },
+    {
+      "name": "Piece Preference",
+      "pickCount": 1,
+      "items": ["Breast", "Thigh", "Wing", "Drumstick", "Mixed"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Mashed Potatoes & Gravy", "Cole Slaw", "Mac & Cheese", "Corn on the Cob", "Green Beans", "Biscuit", "Secret Recipe Fries", "Sweet Kernel Corn", "House Side Salad"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Mashed Potatoes & Gravy", "Cole Slaw", "Mac & Cheese", "Corn on the Cob", "Green Beans", "Biscuit", "Secret Recipe Fries", "Sweet Kernel Corn", "No Second Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Honey BBQ", "Ranch", "Honey Mustard", "Buffalo", "Colonel's Classic Sauce", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Starry", "Sweet Tea", "Unsweet Tea", "Lemonade", "Water"]
+    }
+  ]
+}

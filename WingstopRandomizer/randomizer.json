@@ -1,0 +1,43 @@
+{
+  "restaurant": "Wingstop",
+  "location": "Nationwide",
+  "emoji": "🍗",
+  "storageKey": "wingstopOptions",
+  "sections": [
+    {
+      "name": "Wing Type",
+      "pickCount": 1,
+      "items": ["Classic (Bone-In)", "Boneless", "Crispy Tenders"]
+    },
+    {
+      "name": "Size",
+      "pickCount": 1,
+      "items": ["6pc", "8pc", "10pc", "15pc", "20pc", "30pc", "50pc"]
+    },
+    {
+      "name": "Flavor",
+      "pickCount": 1,
+      "items": ["Original Hot", "Mild", "Hickory Smoked BBQ", "Garlic Parmesan", "Lemon Pepper", "Spicy Korean Q", "Louisiana Rub (Dry)", "Mango Habanero", "Cajun", "Atomic", "Hawaiian", "Bourbon Glaze", "Hickory Smoked BBQ", "Garlic Parmesan", "Buffalo Ranch"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Classic Fries", "Seasoned Fries", "Cajun Fries", "Cheese Fries", "Loaded Fries", "Ranch Fries", "Coleslaw", "Veggie Sticks", "Corn on the Cob"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Classic Fries", "Seasoned Fries", "Cajun Fries", "Coleslaw", "Veggie Sticks", "No Second Side"]
+    },
+    {
+      "name": "Dipping Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Blue Cheese", "Honey Mustard", "BBQ", "Buffalo", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Lemonade", "Sweet Tea", "Water"]
+    }
+  ]
+}

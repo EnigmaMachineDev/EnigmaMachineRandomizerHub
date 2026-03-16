@@ -1,0 +1,33 @@
+{
+  "restaurant": "Whataburger",
+  "location": "Texas / Southern US",
+  "emoji": "🍔",
+  "storageKey": "whataburgerOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Whataburger", "Double Meat Whataburger", "Triple Meat Whataburger", "Bacon & Cheese Whataburger", "Avocado Bacon Burger", "Mushroom Swiss Burger", "Patty Melt", "Green Chile Double", "Honey BBQ Chicken Strip Sandwich", "Spicy Chicken Sandwich", "Crispy Chicken Sandwich", "Chicken Fajita Taco", "Breakfast on a Bun", "Taquito with Cheese", "Egg & Cheese Biscuit", "Biscuit & Gravy", "Pancake Platter"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Fries", "Medium Fries", "Large Fries", "Onion Rings", "Apple Slices", "Side Salad", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Whataburger Fancy Ketchup", "Spicy Ketchup", "Ranch", "Honey Mustard", "BBQ", "Jalapeño Ranch", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Sweet Tea", "Unsweet Tea", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Peach Shake", "Water"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Hot Apple Pie", "Chocolate Chunk Cookie", "Cinnamon Roll", "None"]
+    }
+  ]
+}

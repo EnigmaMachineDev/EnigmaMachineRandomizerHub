@@ -1,0 +1,28 @@
+{
+  "restaurant": "Raising Cane's",
+  "location": "Nationwide",
+  "emoji": "🐔",
+  "storageKey": "raisingcanesOptions",
+  "sections": [
+    {
+      "name": "Meal",
+      "pickCount": 1,
+      "items": ["The Box Combo (4 Fingers, Fries, Slaw, Toast, Sauce)", "The Caniac Combo (6 Fingers, Fries, Slaw, 2 Toasts, 2 Sauces)", "The 3 Finger Combo (3 Fingers, Fries, Slaw, Toast, Sauce)", "The Sandwich Combo", "The Tailgate (25 Fingers, Family Fries, Slaw, 6 Toasts, 3 Sauces)", "Kids Combo (3 Fingers, Kids Fries, Kids Slaw, Toast, Sauce)"]
+    },
+    {
+      "name": "Extra Dipping Sauce",
+      "pickCount": 1,
+      "items": ["Cane's Sauce (Extra)", "BBQ", "Honey Mustard", "Ranch", "No Extra Sauce"]
+    },
+    {
+      "name": "Extra Side",
+      "pickCount": 1,
+      "items": ["Extra Crinkle-Cut Fries", "Extra Coleslaw", "Extra Texas Toast", "No Extra Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Sweet Tea (The Cane's Classic)", "Lemonade", "Arnold Palmer", "Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Water"]
+    }
+  ]
+}

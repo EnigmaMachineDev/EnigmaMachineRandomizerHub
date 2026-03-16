@@ -1,0 +1,33 @@
+{
+  "restaurant": "Arby's",
+  "location": "Nationwide",
+  "emoji": "🥩",
+  "storageKey": "arbysOptions",
+  "sections": [
+    {
+      "name": "Sandwich",
+      "pickCount": 1,
+      "items": ["Classic Roast Beef", "Half Pound Roast Beef", "Beef 'N Cheddar (Classic)", "Beef 'N Cheddar (Mid)", "Beef 'N Cheddar (Max)", "French Dip & Swiss", "Smokehouse Brisket", "Reuben", "Turkey Ranch & Bacon", "Corned Beef Reuben", "Crispy Fish Sandwich", "Chicken Bacon Swiss", "Crispy Chicken Sandwich", "Spicy Deluxe Crispy Chicken", "Gyro (Traditional)", "Gyro (Turkey)"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Curly Fries (Small)", "Curly Fries (Medium)", "Curly Fries (Large)", "Seasoned Potato Cakes", "Mozzarella Sticks (4pc)", "Mozzarella Sticks (6pc)", "Jalapeño Bites (5pc)", "Steakhouse Onion Rings", "Side Salad", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Arby's Sauce", "Horsey Sauce", "Bronco Berry Sauce", "Honey Mustard", "Ranch", "Buffalo", "Three Pepper", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Jamocha Shake", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Lemonade", "Iced Tea", "Water"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Salted Caramel & Chocolate Cookie", "Chocolate Chunk Cookie", "Turnovers (Apple)", "Turnovers (Cherry)", "None"]
+    }
+  ]
+}

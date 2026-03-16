@@ -1,0 +1,38 @@
+{
+  "restaurant": "Jersey Mike's",
+  "location": "Nationwide",
+  "emoji": "🥪",
+  "storageKey": "jerseymikesOptions",
+  "sections": [
+    {
+      "name": "Sub",
+      "pickCount": 1,
+      "items": ["BLT (#1)", "Jersey Shore Favorite (#2 - Ham & Provolone)", "The American Classic (#3)", "The Number Four (#4 - Ham & Capicola)", "The Super Sub (#5)", "Roast Beef & Provolone (#6)", "Turkey & Provolone (#7)", "Club Sub (#8)", "Club Supreme (#9)", "Tuna Fish (#10)", "Stickball Special (#11 - Roast Beef & Pastrami)", "Cancro Special (#12 - Ham & Salami)", "Italian Sub (#13)", "The Veggie (#55)", "Chipotle Chicken Cheese Steak", "Chicken Philly Cheese Steak", "Original Chicken Philly", "Grilled Pastrami & Swiss", "Grilled Reuben"]
+    },
+    {
+      "name": "Bread",
+      "pickCount": 1,
+      "items": ["White", "Wheat", "Rosemary Parmesan", "Gluten-Free (Extra Charge)", "Wrap", "Bowl (No Bread)"]
+    },
+    {
+      "name": "Size",
+      "pickCount": 1,
+      "items": ["Mini", "Regular", "Giant"]
+    },
+    {
+      "name": "Style",
+      "pickCount": 1,
+      "items": ["Mike's Way (Onions, Lettuce, Tomatoes, Vinegar & Oil, Oregano, Salt)", "Not Mike's Way (Plain)", "Extra Vinegar & Oil", "Extra Hot Peppers"]
+    },
+    {
+      "name": "Extra Toppings",
+      "pickCount": 2,
+      "items": ["Extra Cheese", "Jalapeños", "Banana Peppers", "Avocado", "Extra Meat", "Nothing Extra"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Chips (Original)", "Chips (BBQ)", "Chips (Salt & Vinegar)", "Pickle", "Cookie", "No Side"]
+    }
+  ]
+}

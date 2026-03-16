@@ -1,0 +1,38 @@
+{
+  "restaurant": "Panera Bread",
+  "location": "Nationwide",
+  "emoji": "🥐",
+  "storageKey": "panerabreadOptions",
+  "sections": [
+    {
+      "name": "Main Item",
+      "pickCount": 1,
+      "items": ["Fuji Apple Chicken Salad", "Greek Salad", "Caesar Salad", "Modern Greek Salad with Quinoa", "Strawberry Poppyseed Salad", "Broccoli Cheddar Soup (Bowl)", "French Onion Soup", "Chicken Noodle Soup", "Tomato Soup", "Turkey Sandwich", "Ham Sandwich", "Tuna Sandwich", "Chipotle Chicken Avocado Melt", "Frontega Chicken", "Bacon Turkey Bravo", "Toasted Caprese", "Toasted Steak & White Cheddar", "Flatbread Pizza (Margherita)", "Flatbread Pizza (Chipotle Chicken)", "Mac & Cheese", "Green Goddess Cobb Salad", "Soba Noodle Broth Bowl"]
+    },
+    {
+      "name": "Bread Choice",
+      "pickCount": 1,
+      "items": ["Sourdough", "Whole Grain", "Ciabatta", "French Baguette", "Sesame Semolina", "Tomato Basil", "Asiago Cheese"]
+    },
+    {
+      "name": "You Pick Two - Second Item",
+      "pickCount": 1,
+      "items": ["Half Soup", "Half Salad", "Half Sandwich", "No Second Item"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Baguette", "Apple", "Chips", "Pickle", "No Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Charged Lemonade", "Agave Lemonade", "Iced Green Tea", "Iced Black Tea", "Mango Smoothie", "Strawberry Smoothie", "Hot Coffee", "Iced Coffee", "Cappuccino", "Latte", "Water"]
+    },
+    {
+      "name": "Bakery",
+      "pickCount": 1,
+      "items": ["Chocolate Chip Cookie", "Pecan Braid", "Cinnamon Roll", "Bear Claw", "Blueberry Muffin", "Chocolate Fudge Brownie", "None"]
+    }
+  ]
+}

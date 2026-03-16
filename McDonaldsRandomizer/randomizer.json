@@ -1,0 +1,33 @@
+{
+  "restaurant": "McDonald's",
+  "location": "Nationwide",
+  "emoji": "🍟",
+  "storageKey": "mcdonaldsOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Big Mac", "Quarter Pounder with Cheese", "McDouble", "Double Cheeseburger", "Cheeseburger", "Hamburger", "Filet-O-Fish", "McChicken", "Crispy Chicken Sandwich", "Spicy Crispy Chicken Sandwich", "Chicken McNuggets (10pc)", "Chicken McNuggets (6pc)", "Egg McMuffin", "Sausage McMuffin with Egg", "McGriddles", "Bacon McDouble", "Double Quarter Pounder with Cheese"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Medium Fries", "Large Fries", "Small Fries", "Apple Slices", "Side Salad", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Big Mac Sauce", "BBQ", "Honey Mustard", "Ranch", "Sweet & Sour", "Spicy Buffalo", "Ketchup", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Orange Hi-C", "Sweet Tea", "Unsweet Tea", "Coffee", "McCafé Latte", "McCafé Frappe", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Water", "Orange Juice", "Apple Juice"]
+    },
+    {
+      "name": "Dessert / Extra",
+      "pickCount": 1,
+      "items": ["McFlurry (Oreo)", "McFlurry (M&M)", "Hot Fudge Sundae", "Caramel Sundae", "Apple Pie", "Chocolate Chip Cookie", "Cone", "None"]
+    }
+  ]
+}

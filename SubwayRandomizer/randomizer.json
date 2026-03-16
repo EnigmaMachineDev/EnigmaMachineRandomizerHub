@@ -1,0 +1,48 @@
+{
+  "restaurant": "Subway",
+  "location": "Nationwide",
+  "emoji": "🥖",
+  "storageKey": "subwayOptions",
+  "sections": [
+    {
+      "name": "Bread",
+      "pickCount": 1,
+      "items": ["Italian (White)", "9-Grain Wheat", "9-Grain Honey Oat", "Italian Herbs & Cheese", "Jalapeño Cheddar", "Flatbread", "Wrap"]
+    },
+    {
+      "name": "Size",
+      "pickCount": 1,
+      "items": ["6-inch", "Footlong"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Turkey Breast", "Ham", "Roast Beef", "Tuna", "Chicken Teriyaki", "Oven Roasted Chicken", "Spicy Italian", "Italian BMT", "Meatball Marinara", "Steak & Cheese", "Veggie Delite", "BLT", "Black Forest Ham"]
+    },
+    {
+      "name": "Cheese",
+      "pickCount": 1,
+      "items": ["American", "Pepper Jack", "Provolone", "Swiss", "Monterey Cheddar", "No Cheese"]
+    },
+    {
+      "name": "Toasted",
+      "pickCount": 1,
+      "items": ["Toasted", "Not Toasted"]
+    },
+    {
+      "name": "Veggies",
+      "pickCount": 4,
+      "items": ["Lettuce", "Spinach", "Tomatoes", "Cucumbers", "Green Peppers", "Red Onions", "Olives", "Pickles", "Jalapeños", "Banana Peppers", "Avocado"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 2,
+      "items": ["Ranch", "Honey Mustard", "Sweet Onion", "Chipotle Southwest", "Sriracha", "Buffalo", "Mayonnaise", "Mustard", "Oil & Vinegar", "Salt & Pepper", "No Sauce"]
+    },
+    {
+      "name": "Side & Drink",
+      "pickCount": 1,
+      "items": ["Chips", "Apple Slices", "Cookie", "No Side"]
+    }
+  ]
+}

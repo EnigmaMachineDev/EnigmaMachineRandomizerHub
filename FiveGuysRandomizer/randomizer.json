@@ -1,0 +1,33 @@
+{
+  "restaurant": "Five Guys",
+  "location": "Nationwide",
+  "emoji": "🍔",
+  "storageKey": "fiveguysOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Hamburger", "Cheeseburger", "Bacon Burger", "Bacon Cheeseburger", "Little Hamburger", "Little Cheeseburger", "Little Bacon Burger", "Little Bacon Cheeseburger", "Veggie Sandwich", "Grilled Cheese", "BLT", "Hot Dog", "Cheese Dog", "Bacon Dog", "Bacon Cheese Dog", "Kosher Dog", "Cheese Kosher Dog", "Veggie Dog"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 4,
+      "items": ["Mayo", "Lettuce", "Pickles", "Tomatoes", "Grilled Onions", "Grilled Mushrooms", "Ketchup", "Mustard", "Relish", "Onions (Raw)", "Jalapeño Peppers", "Green Peppers", "A.1. Steak Sauce", "Bar-B-Que Sauce", "Hot Sauce", "Worcestershire Sauce", "Cayenne Pepper Sauce", "Sriracha", "HP Sauce"]
+    },
+    {
+      "name": "Fries",
+      "pickCount": 1,
+      "items": ["Little Fries", "Regular Fries", "Large Fries", "Cajun Style (Little)", "Cajun Style (Regular)", "Cajun Style (Large)", "No Fries"]
+    },
+    {
+      "name": "Milkshake",
+      "pickCount": 1,
+      "items": ["Chocolate Milkshake", "Vanilla Milkshake", "Strawberry Milkshake", "Banana Milkshake", "Oreo Milkshake", "Peanut Butter Milkshake", "Coffee Milkshake", "No Milkshake"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Barq's Root Beer", "Fanta", "Water"]
+    }
+  ]
+}

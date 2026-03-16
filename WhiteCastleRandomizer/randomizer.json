@@ -1,0 +1,33 @@
+{
+  "restaurant": "White Castle",
+  "location": "Midwest / Northeast US",
+  "emoji": "🏰",
+  "storageKey": "whitecastleOptions",
+  "sections": [
+    {
+      "name": "Sliders",
+      "pickCount": 1,
+      "items": ["Original Slider (2pc)", "Original Slider (4pc)", "Cheese Slider (2pc)", "Cheese Slider (4pc)", "Jalapeño Cheese Slider (2pc)", "Bacon Cheese Slider (2pc)", "Double Cheese Slider (2pc)", "Chicken Ring Slider", "Chicken & Cheese Slider", "Fish Slider", "Veggie Slider (Impossible)", "BBQ Pulled Pork Slider", "Breakfast Slider (Egg & Cheese)", "Breakfast Slider (Sausage Egg & Cheese)", "Breakfast Slider (Bacon Egg & Cheese)"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Fries", "Medium Fries", "Large Fries", "Onion Rings (Small)", "Onion Rings (Large)", "Chicken Rings (6pc)", "Chicken Rings (9pc)", "Mozzarella Sticks (3pc)", "Cheese Fries", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Honey Mustard", "BBQ", "Marinara", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Barq's Root Beer", "Hi-C Orange", "Iced Tea", "Water", "Vanilla Shake", "Chocolate Shake", "Strawberry Shake"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Gooey Butter Cake", "Brownie", "Chocolate Shake", "None"]
+    }
+  ]
+}

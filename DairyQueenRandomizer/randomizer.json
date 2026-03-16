@@ -1,0 +1,33 @@
+{
+  "restaurant": "Dairy Queen",
+  "location": "Nationwide",
+  "emoji": "🍦",
+  "storageKey": "dairyqueenOptions",
+  "sections": [
+    {
+      "name": "Blizzard / Ice Cream",
+      "pickCount": 1,
+      "items": ["Oreo Cookie Blizzard", "Reese's Peanut Butter Cup Blizzard", "M&M's Chocolate Candy Blizzard", "Snickers Blizzard", "Chocolate Chip Cookie Dough Blizzard", "Brownie Dough Blizzard", "Strawberry CheeseQuake Blizzard", "Georgia Mud Fudge Blizzard", "Cotton Candy Blizzard", "Pecan Pie Blizzard", "Soft Serve Cone", "Soft Serve Cup", "Banana Split", "Peanut Buster Parfait", "Hot Fudge Sundae", "Caramel Sundae", "DQ Shake (Chocolate)", "DQ Shake (Vanilla)", "DQ Shake (Strawberry)", "Dipped Cone", "Malt"]
+    },
+    {
+      "name": "Blizzard Size",
+      "pickCount": 1,
+      "items": ["Mini", "Small", "Medium", "Large"]
+    },
+    {
+      "name": "Food Item",
+      "pickCount": 1,
+      "items": ["DQ Hamburger", "DQ Cheeseburger", "FlameThrower GrillBurger", "Bacon Double Cheeseburger", "Chicken Strip Basket (4pc)", "Crispy Chicken Sandwich", "Rotisserie-Style Chicken Sandwich", "Hot Dog", "Pretzel Stuffed Dog", "4pc Chicken Strips", "No Food Item"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Onion Rings", "French Fries", "Side Salad", "No Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Root Beer Float", "Lemonade", "Iced Tea", "Water", "MooLatte (Mocha)", "MooLatte (Caramel)", "MooLatte (Coffee)"]
+    }
+  ]
+}

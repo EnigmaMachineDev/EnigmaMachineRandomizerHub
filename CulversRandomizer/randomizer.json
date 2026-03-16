@@ -1,0 +1,33 @@
+{
+  "restaurant": "Culver's",
+  "location": "Midwest US",
+  "emoji": "🧀",
+  "storageKey": "culversOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["ButterBurger (Single)", "ButterBurger (Double)", "ButterBurger (Triple)", "ButterBurger Cheese (Single)", "ButterBurger Cheese (Double)", "Bacon Deluxe (Single)", "Bacon Deluxe (Double)", "Mushroom & Swiss (Single)", "Mushroom & Swiss (Double)", "Sourdough Melt", "Crispy Chicken Sandwich", "Spicy Crispy Chicken", "Grilled Chicken Sandwich", "Fish Sandwich", "Chicken Tenders (2pc)", "Chicken Tenders (3pc)", "Cod Dinner", "Walleye Dinner", "Pot Roast Sandwich"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Crinkle Cut Fries (Small)", "Crinkle Cut Fries (Medium)", "Crinkle Cut Fries (Large)", "Cheese Curds", "Onion Rings", "Cole Slaw", "Side Salad", "Mashed Potatoes & Gravy", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Honey Mustard", "BBQ", "Buffalo", "Ketchup", "No Sauce"]
+    },
+    {
+      "name": "Frozen Custard",
+      "pickCount": 1,
+      "items": ["Scoop of Vanilla", "Scoop of Chocolate", "Concrete Mixer (Reese's)", "Concrete Mixer (Oreo)", "Concrete Mixer (Snickers)", "Concrete Mixer (Strawberry)", "Sundae (Hot Fudge)", "Sundae (Caramel)", "Shake (Vanilla)", "Shake (Chocolate)", "Shake (Strawberry)", "Turtle Sundae", "No Custard"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Lemonade", "Strawberry Lemonade", "Iced Tea", "Root Beer", "Water"]
+    }
+  ]
+}

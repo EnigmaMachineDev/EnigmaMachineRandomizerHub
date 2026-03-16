@@ -1,0 +1,38 @@
+{
+  "restaurant": "Panda Express",
+  "location": "Nationwide",
+  "emoji": "🐼",
+  "storageKey": "pandaexpressOptions",
+  "sections": [
+    {
+      "name": "Meal Size",
+      "pickCount": 1,
+      "items": ["Bowl (1 Side + 1 Entrée)", "Plate (1 Side + 2 Entrées)", "Bigger Plate (1 Side + 3 Entrées)", "Family Feast", "A La Carte"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Chow Mein", "Fried Rice", "White Steamed Rice", "Brown Steamed Rice", "Super Greens (Mixed Vegetables)"]
+    },
+    {
+      "name": "Entrée 1",
+      "pickCount": 1,
+      "items": ["Orange Chicken", "Beijing Beef", "Broccoli Beef", "Kung Pao Chicken", "Honey Walnut Shrimp", "Grilled Teriyaki Chicken", "Black Pepper Chicken", "Mushroom Chicken", "String Bean Chicken Breast", "Sweetfire Chicken Breast", "Honey Sesame Chicken Breast", "Super Greens", "Eggplant Tofu", "Black Pepper Angus Steak", "Firecracker Shrimp"]
+    },
+    {
+      "name": "Entrée 2",
+      "pickCount": 1,
+      "items": ["Orange Chicken", "Beijing Beef", "Broccoli Beef", "Kung Pao Chicken", "Honey Walnut Shrimp", "Grilled Teriyaki Chicken", "Black Pepper Chicken", "Mushroom Chicken", "String Bean Chicken Breast", "Sweetfire Chicken Breast", "Honey Sesame Chicken Breast", "Super Greens", "No Second Entrée"]
+    },
+    {
+      "name": "Appetizer",
+      "pickCount": 1,
+      "items": ["Cream Cheese Rangoon (3pc)", "Chicken Egg Roll", "Veggie Spring Roll", "Apple Pie Roll", "No Appetizer"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Aquafina Water", "Barqs Root Beer", "Lipton Iced Tea", "Lemonade"]
+    }
+  ]
+}

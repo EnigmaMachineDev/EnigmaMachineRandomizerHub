@@ -1,0 +1,33 @@
+{
+  "restaurant": "Hardee's / Carl's Jr.",
+  "location": "Nationwide",
+  "emoji": "⭐",
+  "storageKey": "hardeescarlsjrOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Famous Star with Cheese", "Super Star with Cheese", "Double Western Bacon Cheeseburger", "Western Bacon Cheeseburger", "Thickburger (1/3 lb)", "Thickburger (1/2 lb)", "Mushroom & Swiss Thickburger", "Big Hardee", "Original Round Biscuit", "Spicy Chicken Sandwich", "Crispy Chicken Sandwich", "Fish Sandwich", "Breakfast Burrito", "Biscuit with Bacon", "Biscuit with Sausage", "Loaded Omelet Biscuit"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Fries", "Medium Fries", "Large Fries", "Onion Rings", "Side Salad", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Thousand Island", "Ranch", "BBQ", "Honey Mustard", "Buffalo", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Sweet Tea", "Unsweet Tea", "Lemonade", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Water"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Hand-Scooped Chocolate Shake", "Hand-Scooped Vanilla Shake", "Hand-Scooped Strawberry Shake", "Chocolate Chip Cookie", "None"]
+    }
+  ]
+}

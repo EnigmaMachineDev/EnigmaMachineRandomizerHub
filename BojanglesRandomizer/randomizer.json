@@ -1,0 +1,33 @@
+{
+  "restaurant": "Bojangles",
+  "location": "Southeast US",
+  "emoji": "🍗",
+  "storageKey": "bojanglesOptions",
+  "sections": [
+    {
+      "name": "Main",
+      "pickCount": 1,
+      "items": ["Cajun Filet Biscuit", "Cajun Filet Sandwich", "Spicy Chicken Biscuit", "Country Ham Biscuit", "Sausage Biscuit", "Egg & Cheese Biscuit", "Steak Biscuit", "Bo's Chicken (2pc)", "Bo's Chicken (4pc)", "Chicken Supremes (3pc)", "Chicken Supremes (5pc)", "Tailgate Tender (3pc)", "Tailgate Tender (5pc)", "Pinto Bowl", "BojAngler Fish Sandwich", "Grilled Chicken Sandwich"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Seasoned Fries", "Dirty Rice", "Cajun Pintos", "Cole Slaw", "Macaroni 'N Cheese", "Green Beans", "Bo-Tato Rounds", "Corn on the Cob"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Seasoned Fries", "Dirty Rice", "Cajun Pintos", "Cole Slaw", "Macaroni 'N Cheese", "Biscuit", "No Second Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Honey Mustard", "BBQ", "Buffalo", "Bojangles' Signature Sauce", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Famous Iced Tea (Sweet)", "Famous Iced Tea (Unsweet)", "Lemonade", "Coca-Cola", "Diet Coke", "Sprite", "Water"]
+    }
+  ]
+}

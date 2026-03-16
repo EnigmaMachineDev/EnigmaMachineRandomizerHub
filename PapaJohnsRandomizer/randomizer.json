@@ -1,0 +1,48 @@
+{
+  "restaurant": "Papa John's",
+  "location": "Nationwide",
+  "emoji": "🍕",
+  "storageKey": "papajohnsOptions",
+  "sections": [
+    {
+      "name": "Pizza Size",
+      "pickCount": 1,
+      "items": ["Small (10\")", "Medium (12\")", "Large (14\")", "X-Large (16\")"]
+    },
+    {
+      "name": "Crust",
+      "pickCount": 1,
+      "items": ["Original", "Thin", "Pan", "Stuffed Crust", "Gluten-Free"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Traditional Pizza Sauce", "BBQ", "Garlic Parmesan", "Spinach Alfredo", "No Sauce"]
+    },
+    {
+      "name": "Cheese",
+      "pickCount": 1,
+      "items": ["Regular", "Extra Cheese", "Light Cheese", "No Cheese"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 3,
+      "items": ["Pepperoni", "Sausage", "Bacon", "Grilled Chicken", "Beef", "Ham", "Salami", "Anchovies", "Mushrooms", "Black Olives", "Green Peppers", "Onions", "Banana Peppers", "Jalapeños", "Pineapple", "Roma Tomatoes", "Spinach", "Roasted Red Peppers"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Breadsticks", "Garlic Parmesan Breadsticks", "Cheesesticks", "Bacon Cheddar Cheesesticks", "Wings (Plain)", "Wings (Buffalo)", "Wings (BBQ)", "Chicken Poppers", "No Side"]
+    },
+    {
+      "name": "Dipping Sauce",
+      "pickCount": 1,
+      "items": ["Special Garlic", "Ranch", "Blue Cheese", "BBQ", "Pizza Sauce", "Honey Chipotle", "No Sauce"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Cinnapie", "Double Chocolate Chip Brownie", "Cookie (Chocolate Chip)", "None"]
+    }
+  ]
+}

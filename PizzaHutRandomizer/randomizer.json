@@ -1,0 +1,43 @@
+{
+  "restaurant": "Pizza Hut",
+  "location": "Nationwide",
+  "emoji": "🍕",
+  "storageKey": "pizzahutOptions",
+  "sections": [
+    {
+      "name": "Pizza Size",
+      "pickCount": 1,
+      "items": ["Personal Pan (6\")", "Small (8\")", "Medium (12\")", "Large (14\")"]
+    },
+    {
+      "name": "Crust",
+      "pickCount": 1,
+      "items": ["Original Pan", "Thin 'N Crispy", "Hand Tossed", "Stuffed Crust", "Skinny Slice", "Crispy Crust"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Classic Marinara", "Creamy Garlic Parmesan", "BBQ", "Buffalo"]
+    },
+    {
+      "name": "Cheese",
+      "pickCount": 1,
+      "items": ["Normal Cheese", "Extra Cheese", "Light Cheese"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 3,
+      "items": ["Pepperoni", "Italian Sausage", "Ham", "Bacon", "Beef", "Chicken", "Mushrooms", "Green Peppers", "Red Onions", "Black Olives", "Jalapeños", "Banana Peppers", "Pineapple", "Roma Tomatoes", "Spinach", "Anchovies"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Breadsticks", "Cheese Breadsticks", "Garlic Bread", "Hershey's Chocolate Chip Cookie", "Cinnamon Sticks", "Bone-In Wings", "Boneless Wings", "No Side"]
+    },
+    {
+      "name": "Dipping Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Blue Cheese", "Marinara", "BBQ", "Garlic Butter", "No Sauce"]
+    }
+  ]
+}

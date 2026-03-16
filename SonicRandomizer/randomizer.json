@@ -1,0 +1,38 @@
+{
+  "restaurant": "Sonic Drive-In",
+  "location": "Nationwide",
+  "emoji": "🚗",
+  "storageKey": "sonicOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Sonic Cheeseburger", "SuperSonic Double Cheeseburger", "Bacon Cheeseburger", "Double Bacon Cheeseburger", "Sonic Burger (No Cheese)", "Jumbo Popcorn Chicken", "Crispy Chicken Sandwich", "Classic Chicken Sandwich", "Grilled Chicken Sandwich", "Fish Sandwich", "Corn Dog", "All-American Dog", "Chicago Dog", "New York Dog", "Jalapeño Dog", "Breakfast Burrito", "Breakfast Toaster (Bacon)", "Breakfast Toaster (Sausage)"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Tots", "Medium Tots", "Large Tots", "Small Fries", "Medium Fries", "Large Fries", "Cheese Tots", "Chili Cheese Tots", "Onion Rings", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Honey Mustard", "BBQ", "Buffalo", "Sweet 'N Sour", "Ketchup", "No Sauce"]
+    },
+    {
+      "name": "Slush / Shake",
+      "pickCount": 1,
+      "items": ["Cherry Slush", "Blue Raspberry Slush", "Watermelon Slush", "Strawberry Slush", "Grape Slush", "Lemon Slush", "Ocean Water", "Cherry Limeade", "Limeade", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Banana Shake", "Peanut Butter Shake", "Oreo Shake", "No Slush/Shake"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Cherry Coke", "Vanilla Coke", "Sweet Tea", "Unsweet Tea", "Lemonade", "Water"]
+    },
+    {
+      "name": "Blast / Dessert",
+      "pickCount": 1,
+      "items": ["Oreo Blast", "Reese's Blast", "M&M's Blast", "Butterfinger Blast", "Hot Fudge Sundae", "Caramel Sundae", "Banana Split", "None"]
+    }
+  ]
+}

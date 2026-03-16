@@ -1,0 +1,38 @@
+{
+  "restaurant": "Starbucks",
+  "location": "Nationwide",
+  "emoji": "☕",
+  "storageKey": "starbucksOptions",
+  "sections": [
+    {
+      "name": "Drink Category",
+      "pickCount": 1,
+      "items": ["Hot Coffee", "Iced Coffee", "Cold Brew", "Nitro Cold Brew", "Hot Espresso", "Iced Espresso", "Frappuccino", "Hot Tea", "Iced Tea", "Refresher", "Lemonade"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pike Place Roast", "Blonde Roast", "Dark Roast", "Caffè Americano", "Caffè Latte", "Cappuccino", "Flat White", "Caramel Macchiato", "Vanilla Latte", "Pumpkin Spice Latte", "Peppermint Mocha", "Caramel Frappuccino", "Mocha Frappuccino", "Java Chip Frappuccino", "Vanilla Bean Frappuccino", "Strawberry Frappuccino", "Matcha Latte", "Chai Tea Latte", "Peach Green Tea Lemonade", "Mango Dragonfruit Refresher", "Strawberry Açaí Refresher", "Pink Drink", "Violet Drink", "Iced Brown Sugar Oat Milk Shaken Espresso", "Iced Toasted Vanilla Oat Milk Shaken Espresso", "Honey Oat Milk Latte", "Cold Brew with Cold Foam", "Honey Citrus Mint Tea", "Iced Lavender Cream Oat Milk Matcha"]
+    },
+    {
+      "name": "Size",
+      "pickCount": 1,
+      "items": ["Tall (12oz)", "Grande (16oz)", "Venti (20oz/24oz Cold)", "Trenta (30oz - Cold Only)"]
+    },
+    {
+      "name": "Milk",
+      "pickCount": 1,
+      "items": ["2% Milk (Default)", "Whole Milk", "Nonfat Milk", "Oat Milk", "Almond Milk", "Coconut Milk", "Soy Milk"]
+    },
+    {
+      "name": "Syrup / Customization",
+      "pickCount": 1,
+      "items": ["Vanilla Syrup", "Caramel Sauce", "Hazelnut Syrup", "Brown Sugar Syrup", "Cinnamon Dolce Syrup", "Toffee Nut Syrup", "Raspberry Syrup", "Classic Syrup", "Peppermint Syrup", "Extra Shot of Espresso", "Cold Foam", "Sweet Cream Cold Foam", "No Customization"]
+    },
+    {
+      "name": "Food",
+      "pickCount": 1,
+      "items": ["Butter Croissant", "Chocolate Croissant", "Cheese Danish", "Blueberry Muffin", "Banana Nut Bread", "Pumpkin Loaf", "Chocolate Cake Pop", "Birthday Cake Pop", "Marshmallow Dream Bar", "Chicken & Bacon Artisan Sandwich", "Ham & Swiss Panini", "Egg White & Roasted Red Pepper Sous Vide Egg Bites", "Bacon & Gruyère Sous Vide Egg Bites", "Petite Vanilla Bean Scone", "No Food"]
+    }
+  ]
+}

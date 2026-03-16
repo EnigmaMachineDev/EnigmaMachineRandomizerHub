@@ -1,0 +1,33 @@
+{
+  "restaurant": "Wendy's",
+  "location": "Nationwide",
+  "emoji": "🍔",
+  "storageKey": "wendysOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Dave's Single", "Dave's Double", "Dave's Triple", "Baconator", "Son of Baconator", "Jr. Bacon Cheeseburger", "Jr. Cheeseburger", "Pretzel Bacon Pub Burger", "Spicy Chicken Sandwich", "Classic Chicken Sandwich", "Homestyle Chicken Sandwich", "Grilled Chicken Sandwich", "Crispy Chicken BLT", "4pc Chicken Nuggets", "10pc Chicken Nuggets", "Spicy 4pc Nuggets"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Small Fries", "Medium Fries", "Large Fries", "Baked Potato (Plain)", "Baked Potato (Sour Cream & Chive)", "Baked Potato (Bacon & Cheese)", "Chili (Small)", "Chili (Large)", "Apple Bites", "Side Salad", "No Side"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["BBQ", "Ranch", "Honey Mustard", "Buttermilk Ranch", "Ghost Pepper Ranch", "Sweet & Sour", "Ketchup", "No Sauce"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Lemonade", "Strawberry Lemonade", "Unsweetened Iced Tea", "Frosty-ccino Cold Brew", "Water"]
+    },
+    {
+      "name": "Frosty",
+      "pickCount": 1,
+      "items": ["Chocolate Frosty (Small)", "Vanilla Frosty (Small)", "Chocolate Frosty (Medium)", "Vanilla Frosty (Medium)", "Frosty Float", "No Frosty"]
+    }
+  ]
+}

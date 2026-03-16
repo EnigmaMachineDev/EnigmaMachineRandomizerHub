@@ -1,0 +1,33 @@
+{
+  "restaurant": "Zaxby's",
+  "location": "Southeast US",
+  "emoji": "🍗",
+  "storageKey": "zaxbysOptions",
+  "sections": [
+    {
+      "name": "Main",
+      "pickCount": 1,
+      "items": ["Signature Sandwich", "Spicy Signature Sandwich", "Big Zax Snak Meal", "Chicken Fingerz (5pc)", "Chicken Fingerz (10pc)", "Wings & Things Meal", "Boneless Wings Meal", "Traditional Wings (5pc)", "Traditional Wings (10pc)", "Zalad (Caesar)", "Zalad (Garden)", "Zalad (Kickin' Chicken)", "Nibbler Meal", "The Zaxby's Club Sandwich", "Buffalo Garlic Blaze Sandwich"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Zaxby's Sauce", "Wimpy", "Tongue Torch", "Nuclear", "BBQ", "Honey Mustard", "Ranch", "Teriyaki", "Insane Buffalo", "Garlic Parmesan", "Sweet & Spicy"]
+    },
+    {
+      "name": "Side 1",
+      "pickCount": 1,
+      "items": ["Crinkle Fries", "Coleslaw", "Celery", "Tater Chips", "Corn on the Cob", "Side Zalad", "Fried Mushrooms", "White Cheddar Bites"]
+    },
+    {
+      "name": "Side 2",
+      "pickCount": 1,
+      "items": ["Crinkle Fries", "Coleslaw", "Celery", "Tater Chips", "Texas Toast", "No Second Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Lemonade", "Sweet Tea", "Unsweet Tea", "Water"]
+    }
+  ]
+}

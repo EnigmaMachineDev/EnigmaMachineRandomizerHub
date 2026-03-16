@@ -1,0 +1,33 @@
+{
+  "restaurant": "In-N-Out Burger",
+  "location": "West Coast",
+  "emoji": "🍔",
+  "storageKey": "innoutOptions",
+  "sections": [
+    {
+      "name": "Burger / Main",
+      "pickCount": 1,
+      "items": ["Hamburger", "Cheeseburger", "Double-Double", "3x3", "4x4", "Grilled Cheese (Vegetarian)", "Protein Style (No Bun, Lettuce Wrap)", "Animal Style Burger", "Flying Dutchman (2 patties + 2 cheese, no bun)"]
+    },
+    {
+      "name": "Style",
+      "pickCount": 1,
+      "items": ["Regular", "Animal Style", "Protein Style (Lettuce Wrap)", "No Salt", "Well Done"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 3,
+      "items": ["Lettuce", "Tomato", "Raw Onion", "Grilled Onion", "Spread", "Pickles", "Extra Spread", "Mustard", "Ketchup", "No Toppings"]
+    },
+    {
+      "name": "Fries",
+      "pickCount": 1,
+      "items": ["Regular Fries", "Animal Style Fries", "Well Done Fries", "Cheese Fries", "No Fries"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Dr Pepper", "Root Beer", "Pink Lemonade", "Iced Tea", "Milk", "Hot Cocoa", "Coffee", "Water", "Chocolate Shake", "Vanilla Shake", "Strawberry Shake", "Neapolitan Shake (All 3 Flavors)"]
+    }
+  ]
+}

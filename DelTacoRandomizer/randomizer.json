@@ -1,0 +1,38 @@
+{
+  "restaurant": "Del Taco",
+  "location": "West Coast / Regional",
+  "emoji": "🌮",
+  "storageKey": "deltacoOptions",
+  "sections": [
+    {
+      "name": "Main Item",
+      "pickCount": 1,
+      "items": ["Del Taco (Classic)", "Crunchy Taco", "Soft Taco", "Breakfast Toasted Wrap", "Del Beef Burrito", "Epic Burrito", "Half Pound Red Burrito", "Half Pound Green Burrito", "Epic Stuffed Quesadilla Burger", "Chicken Soft Taco", "Fish Taco", "Crinkle-Cut Fries (Loaded)", "Del Cheeseburger", "Double Del Cheeseburger", "Crispy Chicken Ranch Burrito", "8-Layer Veggie Burrito"]
+    },
+    {
+      "name": "Protein",
+      "pickCount": 1,
+      "items": ["Seasoned Beef", "Grilled Chicken", "Beer-Battered Fish", "Beyond Meat (Plant-Based)", "Refried Beans (Veggie)"]
+    },
+    {
+      "name": "Add-On",
+      "pickCount": 1,
+      "items": ["Extra Cheese", "Sour Cream", "Guacamole", "Jalapeños", "Nothing"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Crinkle-Cut Fries", "Chili Cheese Fries", "Queso Loaded Fries", "Rice", "Refried Beans", "No Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Pepsi", "Diet Pepsi", "Mountain Dew", "Sweet Tea", "Lemonade", "Strawberry Lemonade", "Water"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Churro", "Chocolate Chip Cookie", "None"]
+    }
+  ]
+}

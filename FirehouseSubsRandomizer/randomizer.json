@@ -1,0 +1,43 @@
+{
+  "restaurant": "Firehouse Subs",
+  "location": "Nationwide",
+  "emoji": "🚒",
+  "storageKey": "firehousesubsOptions",
+  "sections": [
+    {
+      "name": "Sub",
+      "pickCount": 1,
+      "items": ["Hook & Ladder (Smoked Turkey & Ham)", "Firehouse Meatball", "Engineer (Roast Beef & Turkey)", "Italian", "Club on a Sub", "Turkey Bacon Ranch", "Veggie", "Beef & Cheddar Brisket", "Chicken Bacon Ranch", "Smokehouse Beef & Cheddar Brisket", "New York Steamer (Corned Beef)", "Tuna Salad", "Captain Sorensen's Datil Pepper Steak", "Loaded Steamer", "Cajun Chicken"]
+    },
+    {
+      "name": "Bread",
+      "pickCount": 1,
+      "items": ["White", "Wheat", "Gluten-Free (Extra Charge)"]
+    },
+    {
+      "name": "Size",
+      "pickCount": 1,
+      "items": ["Small (4\")", "Medium (8\")", "Large (12\")"]
+    },
+    {
+      "name": "Cheese",
+      "pickCount": 1,
+      "items": ["Provolone", "Monterey Jack", "Smoked Cheddar", "American", "No Cheese"]
+    },
+    {
+      "name": "Heat",
+      "pickCount": 1,
+      "items": ["Firehouse Mustard Sauce", "Hot Sauce (Captain Sorensen's Datil Pepper)", "Frank's Red Hot", "No Heat"]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": ["Wavy Chips", "Kettle Chips", "Pickle (Spear)", "Side Salad", "Mac & Cheese", "No Side"]
+    },
+    {
+      "name": "Drink",
+      "pickCount": 1,
+      "items": ["Coca-Cola", "Diet Coke", "Sprite", "Lemonade", "Sweet Tea", "Water"]
+    }
+  ]
+}

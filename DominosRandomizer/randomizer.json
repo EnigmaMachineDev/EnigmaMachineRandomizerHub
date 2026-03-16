@@ -1,0 +1,48 @@
+{
+  "restaurant": "Domino's",
+  "location": "Nationwide",
+  "emoji": "🍕",
+  "storageKey": "dominosOptions",
+  "sections": [
+    {
+      "name": "Pizza Size",
+      "pickCount": 1,
+      "items": ["Small (10\")", "Medium (12\")", "Large (14\")", "X-Large (16\")"]
+    },
+    {
+      "name": "Crust",
+      "pickCount": 1,
+      "items": ["Hand Tossed", "Thin Crust", "Brooklyn Style", "Pan Pizza", "Gluten Free Crust"]
+    },
+    {
+      "name": "Sauce",
+      "pickCount": 1,
+      "items": ["Robust Inspired Tomato Sauce", "Hearty Marinara Sauce", "Honey BBQ Sauce", "Garlic Parmesan White Sauce", "Alfredo Sauce", "Ranch"]
+    },
+    {
+      "name": "Cheese",
+      "pickCount": 1,
+      "items": ["Normal Cheese", "Extra Cheese", "Light Cheese", "No Cheese"]
+    },
+    {
+      "name": "Toppings",
+      "pickCount": 3,
+      "items": ["Pepperoni", "Sausage", "Ham", "Bacon", "Beef", "Chicken", "Mushrooms", "Green Peppers", "Onions", "Black Olives", "Jalapeños", "Banana Peppers", "Pineapple", "Roasted Red Peppers", "Spinach", "Philly Steak", "Salami", "Anchovies"]
+    },
+    {
+      "name": "Side / Appetizer",
+      "pickCount": 1,
+      "items": ["Breadsticks", "Cheesy Bread", "Stuffed Cheesy Bread", "Garlic Bread Twists", "Parmesan Bread Bites", "Chicken Wings (Hot)", "Chicken Wings (BBQ)", "Chicken Wings (Plain)", "No Side"]
+    },
+    {
+      "name": "Dipping Sauce",
+      "pickCount": 1,
+      "items": ["Ranch", "Blue Cheese", "Marinara", "BBQ", "Garlic", "Sweet Mango Habanero", "Creamy Caesar", "No Dipping Sauce"]
+    },
+    {
+      "name": "Dessert",
+      "pickCount": 1,
+      "items": ["Lava Cake", "Cinnamon Bread Twists", "Marbled Cookie Brownie", "None"]
+    }
+  ]
+}
