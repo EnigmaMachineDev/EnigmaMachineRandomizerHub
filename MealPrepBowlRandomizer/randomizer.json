@@ -1,0 +1,267 @@
+{
+  "sections": [
+    {
+      "name": "Base",
+      "options": [
+        "White Rice",
+        "Brown Rice",
+        "Quinoa",
+        "Couscous",
+        "Bulgur",
+        "Farro",
+        "Barley",
+        "Wild Rice",
+        "Cauliflower Rice",
+        "Mixed Greens",
+        "Spinach",
+        "Arugula",
+        "Kale",
+        "Zucchini Noodles",
+        "Sweet Potato (Cubed)",
+        "Pasta",
+        "Polenta"
+      ]
+    },
+    {
+      "name": "Protein",
+      "subsections": [
+        {
+          "name": "Chicken",
+          "options": [
+            "Breast (Grilled)",
+            "Breast (Baked)",
+            "Thighs (Grilled)",
+            "Thighs (Roasted)",
+            "Ground (Seasoned)",
+            "Shredded (Slow Cooked)"
+          ]
+        },
+        {
+          "name": "Turkey",
+          "options": [
+            "Breast (Grilled)",
+            "Breast (Roasted)",
+            "Ground (Seasoned)",
+            "Meatballs"
+          ]
+        },
+        {
+          "name": "Beef",
+          "options": [
+            "Steak (Grilled)",
+            "Ground (Seasoned)",
+            "Roast (Shredded)",
+            "Short Ribs (Braised)",
+            "Meatballs"
+          ]
+        },
+        {
+          "name": "Pork",
+          "options": [
+            "Chops (Grilled)",
+            "Tenderloin (Roasted)",
+            "Shoulder (Pulled)",
+            "Ground (Seasoned)",
+            "Sausage (Sliced)"
+          ]
+        },
+        {
+          "name": "Lamb",
+          "options": [
+            "Chops (Grilled)",
+            "Ground (Seasoned)",
+            "Leg (Roasted)"
+          ]
+        },
+        {
+          "name": "Fish",
+          "options": [
+            "Salmon (Raw)",
+            "Salmon (Grilled)",
+            "Salmon (Baked)",
+            "Tuna (Raw)",
+            "Tuna (Seared)",
+            "Cod (Baked)",
+            "Tilapia (Pan-Fried)",
+            "Mahi Mahi (Grilled)",
+            "Trout (Baked)"
+          ]
+        },
+        {
+          "name": "Shellfish",
+          "options": [
+            "Shrimp (Grilled)",
+            "Shrimp (Sautéed)",
+            "Scallops (Seared)",
+            "Crab (Steamed)"
+          ]
+        },
+        {
+          "name": "Eggs",
+          "options": [
+            "Hard Boiled",
+            "Soft Boiled",
+            "Scrambled",
+            "Fried"
+          ]
+        },
+        {
+          "name": "Tofu",
+          "options": [
+            "Firm (Baked)",
+            "Extra Firm (Grilled)",
+            "Crispy (Pan-Fried)",
+            "Marinated (Baked)"
+          ]
+        },
+        {
+          "name": "Plant-Based",
+          "options": [
+            "Tempeh (Marinated)",
+            "Seitan (Grilled)",
+            "Edamame",
+            "Chickpeas (Roasted)",
+            "Black Beans (Seasoned)",
+            "Lentils (Cooked)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vegetables",
+      "options": [
+        "Broccoli (Roasted)",
+        "Broccoli (Steamed)",
+        "Brussels Sprouts (Roasted)",
+        "Carrots (Roasted)",
+        "Carrots (Steamed)",
+        "Bell Peppers (Roasted)",
+        "Bell Peppers (Sautéed)",
+        "Asparagus (Roasted)",
+        "Asparagus (Grilled)",
+        "Green Beans (Steamed)",
+        "Green Beans (Sautéed)",
+        "Cauliflower (Roasted)",
+        "Zucchini (Grilled)",
+        "Zucchini (Roasted)",
+        "Squash (Roasted)",
+        "Sweet Potato (Roasted)",
+        "Mushrooms (Sautéed)",
+        "Mushrooms (Roasted)",
+        "Onions (Caramelized)",
+        "Onions (Roasted)",
+        "Tomatoes (Roasted)",
+        "Cherry Tomatoes (Roasted)",
+        "Corn (Grilled)",
+        "Corn (Roasted)",
+        "Eggplant (Roasted)",
+        "Cabbage (Roasted)",
+        "Kale (Sautéed)",
+        "Spinach (Sautéed)",
+        "Bok Choy (Sautéed)",
+        "Snap Peas (Steamed)",
+        "Snow Peas (Sautéed)",
+        "Beets (Roasted)",
+        "Cucumber (Fresh)",
+        "Radishes (Pickled)",
+        "Avocado (Sliced)"
+      ]
+    },
+    {
+      "name": "Sauce/Dressing",
+      "options": [
+        "Teriyaki",
+        "Soy Ginger",
+        "Sesame Ginger",
+        "Peanut Sauce",
+        "Tahini",
+        "Hummus",
+        "Tzatziki",
+        "Chimichurri",
+        "Pesto",
+        "Balsamic Vinaigrette",
+        "Lemon Herb Vinaigrette",
+        "Honey Mustard",
+        "Ranch",
+        "Caesar",
+        "Buffalo Sauce",
+        "BBQ Sauce",
+        "Sriracha Mayo",
+        "Garlic Aioli",
+        "Cilantro Lime",
+        "Salsa",
+        "Guacamole",
+        "Miso Ginger",
+        "Ponzu",
+        "Sweet Chili",
+        "Curry Sauce"
+      ]
+    },
+    {
+      "name": "Toppings",
+      "options": [
+        "Avocado",
+        "Cherry Tomatoes",
+        "Cucumber",
+        "Shredded Carrots",
+        "Red Cabbage",
+        "Pickled Onions",
+        "Pickled Jalapeños",
+        "Green Onions",
+        "Fresh Cilantro",
+        "Fresh Parsley",
+        "Fresh Basil",
+        "Corn",
+        "Black Beans",
+        "Chickpeas",
+        "Edamame",
+        "Kimchi",
+        "Sauerkraut",
+        "Olives",
+        "Sun-Dried Tomatoes",
+        "Roasted Red Peppers",
+        "Feta Cheese",
+        "Parmesan Cheese",
+        "Cheddar Cheese",
+        "Goat Cheese",
+        "Mozzarella"
+      ]
+    },
+    {
+      "name": "Crunch",
+      "options": [
+        "Sesame Seeds",
+        "Sunflower Seeds",
+        "Pumpkin Seeds",
+        "Hemp Seeds",
+        "Chia Seeds",
+        "Almonds (Sliced)",
+        "Cashews",
+        "Peanuts",
+        "Walnuts",
+        "Pecans",
+        "Crispy Chickpeas",
+        "Fried Onions",
+        "Croutons",
+        "Tortilla Strips",
+        "Wonton Strips"
+      ]
+    },
+    {
+      "name": "Extra",
+      "options": [
+        "Lime Wedge",
+        "Lemon Wedge",
+        "Hot Sauce",
+        "Sriracha",
+        "Soy Sauce",
+        "Extra Dressing",
+        "Chili Flakes",
+        "Everything Bagel Seasoning",
+        "Nutritional Yeast",
+        "Fresh Herbs",
+        "Microgreens"
+      ]
+    }
+  ]
+}

@@ -1,20 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const methodRollEl = document.getElementById('method-roll');
+    const baseRollEl = document.getElementById('base-roll');
     const proteinRollEl = document.getElementById('protein-roll');
-    const vegetableRollEl = document.getElementById('vegetable-roll');
-    const side1RollEl = document.getElementById('side1-roll');
-    const side2RollEl = document.getElementById('side2-roll');
-    
-    const rerollMethodBtn = document.getElementById('reroll-method');
+    const vegetablesRollEl = document.getElementById('vegetables-roll');
+    const sauceRollEl = document.getElementById('sauce-roll');
+    const toppingsRollEl = document.getElementById('toppings-roll');
+    const crunchRollEl = document.getElementById('crunch-roll');
+    const extraRollEl = document.getElementById('extra-roll');
+
+    const rerollBaseBtn = document.getElementById('reroll-base');
     const rerollProteinBtn = document.getElementById('reroll-protein');
-    const rerollVegetableBtn = document.getElementById('reroll-vegetable');
-    const rerollSide1Btn = document.getElementById('reroll-side1');
-    const rerollSide2Btn = document.getElementById('reroll-side2');
-    const generateMealBtn = document.getElementById('generate-meal');
+    const rerollVegetablesBtn = document.getElementById('reroll-vegetables');
+    const rerollSauceBtn = document.getElementById('reroll-sauce');
+    const rerollToppingsBtn = document.getElementById('reroll-toppings');
+    const rerollCrunchBtn = document.getElementById('reroll-crunch');
+    const rerollExtraBtn = document.getElementById('reroll-extra');
+    const generateBowlBtn = document.getElementById('generate-bowl');
+
+    const STORAGE_KEY = 'mealPrepBowlOptions';
+    const DIETARY_MODE_KEY = 'mealPrepBowlDietaryMode';
+    const VEGETABLE_COUNT = 3;
+    const TOPPING_COUNT = 2;
 
     let data = {};
-    const STORAGE_KEY = 'cookingOptions';
-    const DIETARY_MODE_KEY = 'cookingDietaryMode';
     let options = {};
     let dietaryMode = 'normal';
 
@@ -29,6 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getRandomValue(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function getRandomUniqueValues(arr, count) {
+        const shuffled = arr.slice().sort(() => Math.random() - 0.5);
+        return shuffled.slice(0, Math.min(count, arr.length));
     }
 
     function loadOptions() {
@@ -69,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getAllEnabledProteinOptions() {
         const section = data.sections?.find(s => s.name === 'Protein');
         if (!section || !section.subsections) return [];
-        
+
         let allOptions = [];
         section.subsections.forEach(subsection => {
             const enabledOptions = getEnabledSubsectionOptions('Protein', subsection.name);
@@ -82,115 +94,121 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function filterProteinByDietaryMode(proteinOptions) {
         if (dietaryMode === 'normal') return proteinOptions;
-        
-        const meatSubsections = ['Chicken', 'Turkey', 'Beef', 'Pork', 'Lamb', 'Duck', 'Game Meat', 'Fish', 'Shellfish'];
-        const vegetarianSubsections = ['Eggs', 'Tofu', 'Plant-Based Protein', 'Beans', 'Lentils', 'Seeds'];
-        const veganSubsections = ['Tofu', 'Plant-Based Protein', 'Beans', 'Lentils', 'Seeds'];
-        
+
+        const plantBasedSubsections = ['Plant-Based', 'Tofu'];
+        const vegetarianSubsections = ['Plant-Based', 'Tofu', 'Eggs'];
+        const fishSubsections = ['Fish', 'Shellfish'];
+
         if (dietaryMode === 'vegan') {
-            return proteinOptions.filter(p => veganSubsections.includes(p.subsection));
+            return proteinOptions.filter(p => plantBasedSubsections.includes(p.subsection));
         } else if (dietaryMode === 'vegetarian') {
             return proteinOptions.filter(p => vegetarianSubsections.includes(p.subsection));
-        } else if (dietaryMode === 'carnivore') {
-            return proteinOptions.filter(p => meatSubsections.includes(p.subsection));
+        } else if (dietaryMode === 'pescatarian') {
+            return proteinOptions.filter(p => fishSubsections.includes(p.subsection) || plantBasedSubsections.includes(p.subsection) || p.subsection === 'Eggs');
         }
-        
+
         return proteinOptions;
     }
 
-    function setMethod() {
-        const enabledMethods = getEnabledOptions('Cooking Method');
-        if (enabledMethods.length === 0) {
-            methodRollEl.textContent = 'No cooking methods enabled';
+    function setBase() {
+        const enabledBases = getEnabledOptions('Base');
+        if (enabledBases.length === 0) {
+            baseRollEl.textContent = 'No bases enabled';
             return;
         }
-        const method = getRandomValue(enabledMethods);
-        methodRollEl.textContent = method;
+        baseRollEl.textContent = getRandomValue(enabledBases);
     }
 
     function setProtein() {
         let proteinOptions = getAllEnabledProteinOptions();
         proteinOptions = filterProteinByDietaryMode(proteinOptions);
-        
+
         if (proteinOptions.length === 0) {
             proteinRollEl.textContent = 'No proteins enabled for current dietary mode';
             return;
         }
-        
+
         const protein = getRandomValue(proteinOptions);
         proteinRollEl.textContent = `${protein.subsection} - ${protein.option}`;
     }
 
-    function setVegetable() {
-        if (dietaryMode === 'carnivore') {
-            vegetableRollEl.textContent = 'N/A (Carnivore Mode)';
-            return;
-        }
-        
-        const enabledVegetables = getEnabledOptions('Vegetable');
+    function setVegetables() {
+        const enabledVegetables = getEnabledOptions('Vegetables');
         if (enabledVegetables.length === 0) {
-            vegetableRollEl.textContent = 'No vegetables enabled';
+            vegetablesRollEl.innerHTML = '<li>No vegetables enabled</li>';
             return;
         }
-        const vegetable = getRandomValue(enabledVegetables);
-        vegetableRollEl.textContent = vegetable;
-    }
 
-    function getAvailableSideCategories() {
-        let sideCategories = ['Protein', 'Vegetable', 'Dairy', 'Fruit', 'Grain', 'Nut'];
-        
-        if (dietaryMode === 'vegan') {
-            sideCategories = sideCategories.filter(cat => cat !== 'Dairy');
-        } else if (dietaryMode === 'carnivore') {
-            sideCategories = sideCategories.filter(cat => cat === 'Dairy' || cat === 'Protein');
-        }
-        
-        return sideCategories.filter(cat => {
-            if (cat === 'Protein') {
-                let proteinOptions = getAllEnabledProteinOptions();
-                proteinOptions = filterProteinByDietaryMode(proteinOptions);
-                return proteinOptions.length > 0;
-            }
-            return getEnabledOptions(cat).length > 0;
+        const selected = getRandomUniqueValues(enabledVegetables, VEGETABLE_COUNT);
+        vegetablesRollEl.innerHTML = '';
+        selected.forEach(vegetable => {
+            const li = document.createElement('li');
+            li.textContent = vegetable;
+            vegetablesRollEl.appendChild(li);
         });
     }
 
-    function setSide(sideElement) {
-        const availableCategories = getAvailableSideCategories();
-        
-        if (availableCategories.length === 0) {
-            sideElement.textContent = 'No side options enabled for current dietary mode';
+    function setSauce() {
+        const enabledSauces = getEnabledOptions('Sauce/Dressing');
+        if (enabledSauces.length === 0) {
+            sauceRollEl.textContent = 'No sauces enabled';
             return;
         }
-        
-        const category = getRandomValue(availableCategories);
-        
-        if (category === 'Protein') {
-            let proteinOptions = getAllEnabledProteinOptions();
-            proteinOptions = filterProteinByDietaryMode(proteinOptions);
-            const protein = getRandomValue(proteinOptions);
-            sideElement.innerHTML = `<strong>${category}:</strong> ${protein.subsection} - ${protein.option}`;
-        } else {
-            const enabledOptions = getEnabledOptions(category);
-            const side = getRandomValue(enabledOptions);
-            sideElement.innerHTML = `<strong>${category}:</strong> ${side}`;
+        sauceRollEl.textContent = getRandomValue(enabledSauces);
+    }
+
+    function setToppings() {
+        const enabledToppings = getEnabledOptions('Toppings');
+        if (enabledToppings.length === 0) {
+            toppingsRollEl.innerHTML = '<li>No toppings enabled</li>';
+            return;
         }
+
+        const selected = getRandomUniqueValues(enabledToppings, TOPPING_COUNT);
+        toppingsRollEl.innerHTML = '';
+        selected.forEach(topping => {
+            const li = document.createElement('li');
+            li.textContent = topping;
+            toppingsRollEl.appendChild(li);
+        });
+    }
+
+    function setCrunch() {
+        const enabledCrunches = getEnabledOptions('Crunch');
+        if (enabledCrunches.length === 0) {
+            crunchRollEl.textContent = 'No crunch options enabled';
+            return;
+        }
+        crunchRollEl.textContent = getRandomValue(enabledCrunches);
+    }
+
+    function setExtra() {
+        const enabledExtras = getEnabledOptions('Extra');
+        if (enabledExtras.length === 0) {
+            extraRollEl.textContent = 'No extras enabled';
+            return;
+        }
+        extraRollEl.textContent = getRandomValue(enabledExtras);
     }
 
     function randomizeAll() {
-        setMethod();
+        setBase();
         setProtein();
-        setVegetable();
-        setSide(side1RollEl);
-        setSide(side2RollEl);
+        setVegetables();
+        setSauce();
+        setToppings();
+        setCrunch();
+        setExtra();
     }
 
-    rerollMethodBtn.addEventListener('click', setMethod);
+    rerollBaseBtn.addEventListener('click', setBase);
     rerollProteinBtn.addEventListener('click', setProtein);
-    rerollVegetableBtn.addEventListener('click', setVegetable);
-    rerollSide1Btn.addEventListener('click', () => setSide(side1RollEl));
-    rerollSide2Btn.addEventListener('click', () => setSide(side2RollEl));
-    generateMealBtn.addEventListener('click', randomizeAll);
+    rerollVegetablesBtn.addEventListener('click', setVegetables);
+    rerollSauceBtn.addEventListener('click', setSauce);
+    rerollToppingsBtn.addEventListener('click', setToppings);
+    rerollCrunchBtn.addEventListener('click', setCrunch);
+    rerollExtraBtn.addEventListener('click', setExtra);
+    generateBowlBtn.addEventListener('click', randomizeAll);
 
     function copyResults() {
         const sections = document.querySelectorAll('.container > .section');
@@ -202,7 +220,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const label = header.textContent.trim();
             const itemContainer = section.querySelector('.item-container');
             if (!itemContainer) return;
-            // Check for list items
             const listItems = itemContainer.querySelectorAll('li');
             let value = '';
             if (listItems.length > 0) {
