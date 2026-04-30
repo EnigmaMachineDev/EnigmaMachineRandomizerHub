@@ -1,0 +1,103 @@
+{
+  "categories": {
+    "Running": {
+      "items": [
+        "Easy Jog",
+        "Tempo Run",
+        "Interval Sprints",
+        "Hill Sprints",
+        "Hill Repeats",
+        "Long Slow Distance Run",
+        "Fartlek Run",
+        "Trail Run",
+        "Stair Running",
+        "Pyramid Intervals",
+        "Cruise Intervals",
+        "Negative Split Run",
+        "Progression Run",
+        "Recovery Run",
+        "Sprint Drills"
+      ]
+    },
+    "Cycling": {
+      "items": [
+        "Steady-State Ride",
+        "Hill Climbs",
+        "Sprint Intervals",
+        "Cadence Drills",
+        "Endurance Ride",
+        "Spin Class",
+        "Tabata Sprints on Bike",
+        "Recovery Ride",
+        "Mountain Bike Trail",
+        "Gravel Ride",
+        "Time Trial",
+        "Interval Ride"
+      ]
+    },
+    "Swimming": {
+      "items": [
+        "Freestyle Laps",
+        "Breaststroke Laps",
+        "Backstroke Laps",
+        "Butterfly Laps",
+        "Kick Drills",
+        "Pull Drills",
+        "Endurance Swim",
+        "Interval Swim",
+        "Open Water Swim",
+        "Catch-Up Drill",
+        "Bilateral Breathing Drill",
+        "Stroke Count Drill"
+      ]
+    },
+    "Jump Rope": {
+      "items": [
+        "Basic Jump",
+        "Alternating Feet",
+        "High Knees Jump",
+        "Double Unders",
+        "Speed Skipping",
+        "Boxer Step",
+        "Criss-Cross Jump",
+        "Backwards Jump",
+        "Jump Rope Intervals",
+        "Side Swing",
+        "Triple Unders",
+        "One-Foot Jump"
+      ]
+    },
+    "Low Impact": {
+      "items": [
+        "Brisk Walk",
+        "Power Walk",
+        "Hiking",
+        "Elliptical Machine",
+        "Rowing Machine",
+        "Water Aerobics",
+        "Nordic Walking",
+        "Incline Treadmill Walk",
+        "Dance Aerobics",
+        "Zumba",
+        "Kayaking",
+        "Paddleboarding"
+      ]
+    },
+    "High Impact": {
+      "items": [
+        "Jumping Jacks",
+        "High Knees",
+        "Butt Kicks",
+        "Box Jumps",
+        "Lateral Bounds",
+        "Speed Skater Jumps",
+        "Plyo Jacks",
+        "Tuck Jumps",
+        "Broad Jumps",
+        "Skipping",
+        "Bounding Strides",
+        "Depth Jumps"
+      ]
+    }
+  }
+}

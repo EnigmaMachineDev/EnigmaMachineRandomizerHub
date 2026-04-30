@@ -1,0 +1,109 @@
+{
+  "categories": {
+    "Upper Body Push": {
+      "items": [
+        "Push-ups",
+        "Diamond Push-ups",
+        "Wide Push-ups",
+        "Pike Push-ups",
+        "Decline Push-ups",
+        "Incline Push-ups",
+        "Archer Push-ups",
+        "Clap Push-ups",
+        "Pseudo Planche Push-ups",
+        "Hindu Push-ups",
+        "Wall Push-ups",
+        "Spiderman Push-ups",
+        "T Push-ups",
+        "Tricep Dips",
+        "Chair Dips",
+        "Handstand Push-ups"
+      ]
+    },
+    "Upper Body Pull": {
+      "items": [
+        "Pull-ups",
+        "Chin-ups",
+        "Negative Pull-ups",
+        "L-Sit Pull-ups",
+        "Wide-Grip Pull-ups",
+        "Close-Grip Pull-ups",
+        "Commando Pull-ups",
+        "Inverted Rows",
+        "Australian Pull-ups",
+        "Towel Pull-ups",
+        "Archer Pull-ups",
+        "Mixed-Grip Pull-ups",
+        "Dead Hang"
+      ]
+    },
+    "Lower Body": {
+      "items": [
+        "Squats",
+        "Jump Squats",
+        "Sumo Squats",
+        "Narrow Squats",
+        "Pulse Squats",
+        "Lunges",
+        "Reverse Lunges",
+        "Side Lunges",
+        "Jump Lunges",
+        "Bulgarian Split Squats",
+        "Pistol Squats",
+        "Wall Sit",
+        "Calf Raises",
+        "Glute Bridges",
+        "Hip Thrusts",
+        "Donkey Kicks",
+        "Fire Hydrants",
+        "Step-ups",
+        "Skater Squats",
+        "Box Jumps"
+      ]
+    },
+    "Core": {
+      "items": [
+        "Plank",
+        "Side Plank",
+        "Hollow Body Hold",
+        "Leg Raises",
+        "Hanging Knee Raises",
+        "Bicycle Crunches",
+        "Russian Twists",
+        "V-ups",
+        "Flutter Kicks",
+        "Dead Bug",
+        "Dragon Flags",
+        "Ab Wheel Rollouts",
+        "L-Sit Hold",
+        "Reverse Crunch",
+        "Windshield Wipers",
+        "Frog Crunches",
+        "Tuck-to-Straight Leg Raises",
+        "Plank Hip Dips"
+      ]
+    },
+    "Full Body & Plyometrics": {
+      "items": [
+        "Burpees",
+        "Bear Crawls",
+        "Inchworms",
+        "Mountain Climbers",
+        "Sprawls",
+        "Tuck Jumps",
+        "Broad Jumps",
+        "Star Jumps",
+        "Plank to Push-up",
+        "Jumping Jacks",
+        "Seal Jacks",
+        "High Knees",
+        "Butt Kicks",
+        "Lateral Bounds",
+        "Speed Skater Jumps",
+        "Squat Thrusts",
+        "Handstand Hold",
+        "Crab Walk"
+      ]
+    }
+  }
+}

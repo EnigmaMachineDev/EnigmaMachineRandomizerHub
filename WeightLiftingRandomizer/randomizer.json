@@ -1,0 +1,120 @@
+{
+  "categories": {
+    "Chest": {
+      "items": [
+        "Barbell Bench Press",
+        "Incline Barbell Bench Press",
+        "Decline Barbell Bench Press",
+        "Dumbbell Bench Press",
+        "Incline Dumbbell Bench Press",
+        "Dumbbell Flyes",
+        "Incline Dumbbell Flyes",
+        "Cable Crossover",
+        "Low-to-High Cable Fly",
+        "Pec Deck Machine",
+        "Chest Dips",
+        "Close-Grip Bench Press"
+      ]
+    },
+    "Back": {
+      "items": [
+        "Conventional Deadlift",
+        "Sumo Deadlift",
+        "Barbell Row",
+        "Pendlay Row",
+        "Dumbbell Row",
+        "T-Bar Row",
+        "Cable Row",
+        "Lat Pulldown",
+        "Wide-Grip Lat Pulldown",
+        "Rack Pulls",
+        "Good Mornings",
+        "Straight-Arm Pulldown",
+        "Meadows Row"
+      ]
+    },
+    "Shoulders": {
+      "items": [
+        "Barbell Overhead Press",
+        "Seated Dumbbell Shoulder Press",
+        "Arnold Press",
+        "Lateral Raises",
+        "Front Raises",
+        "Rear Delt Flyes",
+        "Face Pulls",
+        "Upright Row",
+        "Barbell Shrugs",
+        "Dumbbell Shrugs",
+        "Cable Lateral Raise",
+        "Machine Shoulder Press"
+      ]
+    },
+    "Legs": {
+      "items": [
+        "Barbell Back Squat",
+        "Front Squat",
+        "Hack Squat",
+        "Romanian Deadlift",
+        "Leg Press",
+        "Leg Extension",
+        "Lying Leg Curl",
+        "Seated Leg Curl",
+        "Bulgarian Split Squat",
+        "Barbell Lunge",
+        "Walking Lunge",
+        "Standing Calf Raise",
+        "Seated Calf Raise",
+        "Hip Thrust"
+      ]
+    },
+    "Arms": {
+      "items": [
+        "Barbell Curl",
+        "Dumbbell Curl",
+        "Hammer Curl",
+        "Incline Dumbbell Curl",
+        "Preacher Curl",
+        "Cable Curl",
+        "Skull Crushers",
+        "Tricep Pushdown",
+        "Overhead Tricep Extension",
+        "Close-Grip Bench Press",
+        "Tricep Kickbacks",
+        "Cable Overhead Tricep Extension",
+        "Concentration Curl"
+      ]
+    },
+    "Core": {
+      "items": [
+        "Weighted Crunch",
+        "Cable Crunch",
+        "Ab Wheel Rollout",
+        "Decline Sit-up",
+        "Hanging Leg Raise",
+        "Pallof Press",
+        "Cable Wood Chop",
+        "Landmine Rotation",
+        "Weighted Plank",
+        "Barbell Rollout",
+        "Weighted Russian Twist",
+        "Suitcase Carry"
+      ]
+    },
+    "Full Body / Olympic": {
+      "items": [
+        "Clean and Press",
+        "Power Clean",
+        "Hang Clean",
+        "Snatch",
+        "Clean and Jerk",
+        "Thruster",
+        "Barbell Complex",
+        "Kettlebell Swing",
+        "Kettlebell Clean and Press",
+        "Farmer's Carry",
+        "Turkish Get-up",
+        "Push Press"
+      ]
+    }
+  }
+}
