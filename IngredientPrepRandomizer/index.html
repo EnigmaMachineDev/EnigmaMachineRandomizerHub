@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PM3ZXMM8J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3PM3ZXMM8J');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Prep Randomizer - RandomizerTools.net</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn46yPC90ZXh0Pjwvc3ZnPg==" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../templates/nav-styles.css">
+    <script src="../templates/nav-loader.js"></script>
+    <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZToyZjkwZTY3Ni00MjRmLTQyNzEtOGViOS01NGIzYjY3YzFjYTM=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <a href="../index.html" class="back-button">← Back to Hub</a>
+        <div class="container">
+            <h1>Ingredient Prep Randomizer</h1>
+            <a href="options.html" class="options-link">⚙️ Configure Options</a>
+            <button class="reroll-btn" id="generate-prep">Generate Prep Plan</button>
+            <button class="copy-btn" id="copy-results">Copy Results</button>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Meats <span class="pick-count">(2)</span></h2>
+                    <button class="reroll-btn" id="reroll-meat">↻</button>
+                </div>
+                <div class="item-container" id="meat-roll"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Vegetables <span class="pick-count">(4)</span></h2>
+                    <button class="reroll-btn" id="reroll-vegetable">↻</button>
+                </div>
+                <div class="item-container" id="vegetable-roll"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Bean / Legume</h2>
+                    <button class="reroll-btn" id="reroll-bean">↻</button>
+                </div>
+                <div class="item-container" id="bean-roll"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Grain</h2>
+                    <button class="reroll-btn" id="reroll-grain">↻</button>
+                </div>
+                <div class="item-container" id="grain-roll"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Fruits <span class="pick-count">(2)</span></h2>
+                    <button class="reroll-btn" id="reroll-fruit">↻</button>
+                </div>
+                <div class="item-container" id="fruit-roll"></div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <h2>Sauce / Marinade</h2>
+                    <button class="reroll-btn" id="reroll-sauce">↻</button>
+                </div>
+                <div class="item-container" id="sauce-roll"></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container about-section">
+        <h2 class="category-title">About This Tool</h2>
+        <div class="about-content">
+            <p>Welcome to the Ingredient Prep Randomizer! This tool generates a weekly ingredient prep plan to help you break out of cooking ruts and add variety to your meals.</p>
+            <p>Each roll gives you <strong>2 meats</strong>, <strong>4 vegetables</strong>, <strong>1 bean/legume</strong>, <strong>1 grain</strong>, <strong>2 fruits</strong>, and <strong>1 sauce or marinade</strong> — a complete foundation to batch prep and build meals from all week long.</p>
+            <h3>Suggested Additional Prep Items</h3>
+            <p>Based on meal prep research, consider also prepping: <strong>Fresh Herbs</strong> (chop and freeze in oil for convenience) and <strong>Nuts/Seeds</strong> (toast in bulk for healthy toppings and snacking throughout the week).</p>
+            <h3>How to Use</h3>
+            <p>Click "Generate Prep Plan" to get a full weekly ingredient list. Use the individual reroll buttons (↻) to swap out specific categories while keeping the rest. Visit the options page to enable or disable specific ingredients to match what you like or have available.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+        <div class="coffee-link">
+            <a href="https://buymeacoffee.com/EnigmaMachineDev" target="_blank" rel="noopener noreferrer">
+                ☕ Buy me a coffee
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
