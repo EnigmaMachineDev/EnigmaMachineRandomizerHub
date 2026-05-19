@@ -168,14 +168,6 @@ h1 { margin-bottom: 1.5rem; }
     line-height: 2em;
 }
 
-.result-link {
-    font-size: 1.15em;
-    color: #88e888;
-    font-weight: bold;
-    line-height: 2em;
-    text-decoration: underline;
-}
-
 .result-list {
     list-style: disc;
     margin: 0.25rem 0;
@@ -211,11 +203,6 @@ a:hover { color: #88e888; }
 }
 
 .category-title { text-align: center; margin-bottom: 1.5rem; }
-
-.picker-name { font-size: 2rem; display: block; margin-bottom: 1rem; }
-.picker-link { display: inline-block; margin-top: 0.5rem; padding: 0.6rem 1.4rem; background: #4caf50; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: background 0.2s; }
-.picker-link:hover { background: #66cc66; }
-.picker-result .item-container { display: flex; flex-direction: column; align-items: center; padding: 1.5rem; }
 
 .footer { margin-top: 2rem; text-align: center; padding: 1rem; width: 100%; }
 .footer .nav-links a { margin: 0 0.75rem; color: #66cc66; text-decoration: none; }

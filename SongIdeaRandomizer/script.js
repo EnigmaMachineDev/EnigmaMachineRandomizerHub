@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bpmEl = document.getElementById('bpm');
     const timeSignatureEl = document.getElementById('time-signature');
     const keyEl = document.getElementById('key');
+    const keyNotesEl = document.getElementById('key-notes');
     const genreEl = document.getElementById('genre');
     const moodEl = document.getElementById('mood');
     const focusInstrumentEl = document.getElementById('focus-instrument');
@@ -14,12 +15,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const STORAGE_KEY = 'songIdeaOptions';
     let options = {};
 
+    const modeIntervals = {
+        'Ionian':     [0, 2, 4, 5, 7, 9, 11],
+        'Dorian':     [0, 2, 3, 5, 7, 9, 10],
+        'Phrygian':   [0, 1, 3, 5, 7, 8, 10],
+        'Lydian':     [0, 2, 4, 6, 7, 9, 11],
+        'Mixolydian': [0, 2, 4, 5, 7, 9, 10],
+        'Aeolian':    [0, 2, 3, 5, 7, 8, 10],
+        'Locrian':    [0, 1, 3, 5, 6, 8, 10]
+    };
+    const chromaticSharps = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    const chromaticFlats  = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+    // Semitones from mode root back to the parent Ionian (major) root
+    const modeParentOffset = {
+        'Ionian': 0, 'Dorian': 2, 'Phrygian': 4, 'Lydian': 5,
+        'Mixolydian': 7, 'Aeolian': 9, 'Locrian': 11
+    };
+    // Parent major key indices that use flat accidentals: Db(1), Eb(3), F(5), Ab(8), Bb(10)
+    const flatParentKeys = new Set([1, 3, 5, 8, 10]);
+    const rootToIndex = {
+        'C': 0, 'C#/Db': 1, 'D': 2, 'D#/Eb': 3, 'E': 4, 'F': 5,
+        'F#/Gb': 6, 'G': 7, 'G#/Ab': 8, 'A': 9, 'A#/Bb': 10, 'B': 11
+    };
+
+    function getScaleNotes(root, mode) {
+        const intervals = modeIntervals[mode];
+        if (!intervals) return '';
+        const rootIdx = rootToIndex[root];
+        if (rootIdx === undefined) return '';
+        const parentIdx = (rootIdx - (modeParentOffset[mode] || 0) + 12) % 12;
+        const chromatic = flatParentKeys.has(parentIdx) ? chromaticFlats : chromaticSharps;
+        return intervals.map(i => chromatic[(rootIdx + i) % 12]).join('  ');
+    }
+
     const categoryMap = {
         'time-signature': 'time_signatures',
         'genre': 'genres',
         'mood': 'moods',
         'focus-instrument': 'focus_instruments',
-        'chord-progression': 'chord_progressions',
         'song-structure': 'song_structures',
         'root-note': 'root_notes',
         'mode': 'modes'
@@ -82,12 +115,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const mode = getRandomItem(enabledModes);
         if (root && mode) {
             keyEl.textContent = root + ' ' + mode;
+            keyNotesEl.textContent = getScaleNotes(root, mode);
         } else if (root) {
             keyEl.textContent = root;
+            keyNotesEl.textContent = '';
         } else if (mode) {
             keyEl.textContent = mode;
+            keyNotesEl.textContent = '';
         } else {
             keyEl.textContent = 'N/A';
+            keyNotesEl.textContent = '';
         }
     }
 
@@ -97,6 +134,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const items = getEnabledItems(categoryKey);
         const item = getRandomItem(items);
         el.textContent = item || 'N/A';
+    }
+
+    function rollChordProgression() {
+        const length = Math.floor(Math.random() * 7) + 2;
+        const degrees = [];
+        for (let i = 0; i < length; i++) {
+            degrees.push(Math.floor(Math.random() * 7) + 1);
+        }
+        chordProgressionEl.textContent = degrees.join('-');
     }
 
     function rollStructure() {
@@ -112,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rollCategory('genre');
         rollCategory('mood');
         rollCategory('focus-instrument');
-        rollCategory('chord-progression');
+        rollChordProgression();
         rollStructure();
     }
 
@@ -132,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('reroll-genre').addEventListener('click', () => rollCategory('genre'));
             document.getElementById('reroll-mood').addEventListener('click', () => rollCategory('mood'));
             document.getElementById('reroll-focus-instrument').addEventListener('click', () => rollCategory('focus-instrument'));
-            document.getElementById('reroll-chord-progression').addEventListener('click', () => rollCategory('chord-progression'));
+            document.getElementById('reroll-chord-progression').addEventListener('click', rollChordProgression);
             document.getElementById('reroll-song-structure').addEventListener('click', rollStructure);
         })
         .catch(error => console.error('Error loading data:', error));

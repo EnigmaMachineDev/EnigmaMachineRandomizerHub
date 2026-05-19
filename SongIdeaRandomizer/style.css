@@ -95,6 +95,14 @@ h2 {
     padding-left: 10px;
 }
 
+.key-notes {
+    font-size: 0.85em;
+    color: #7ab87a;
+    padding-left: 10px;
+    margin-top: 0.2rem;
+    letter-spacing: 0.08em;
+}
+
 .reroll-btn {
     background: none;
     color: #66cc66;

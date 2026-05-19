@@ -22,11 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryDisplayNames = {
         'time_signatures': 'Time Signatures',
         'root_notes': 'Root Notes',
-        'modes': 'Modes / Scales',
+        'modes': 'Modes',
         'genres': 'Genres',
         'focus_instruments': 'Focus Instruments',
         'song_structures': 'Song Structures',
-        'chord_progressions': 'Chord Progressions',
         'moods': 'Moods'
     };
 
@@ -38,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'genres',
         'moods',
         'focus_instruments',
-        'chord_progressions',
         'song_structures'
     ];
 

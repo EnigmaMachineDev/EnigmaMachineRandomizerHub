@@ -1,0 +1,70 @@
+{
+  "restaurant": "Leroy Fox Kitchen & Cocktails",
+  "location": "Charlotte, NC",
+  "emoji": "🦊",
+  "storageKey": "leroyFoxOptions",
+  "sections": [
+    {
+      "name": "Starter",
+      "pickCount": 1,
+      "items": [
+        "Zucchini Fries",
+        "Pretzel Bites",
+        "Braised Chicken Nachos",
+        "Buffalo Chicken Dip",
+        "Buffalo Cauliflower",
+        "Thai Chili Cauliflower",
+        "Pimento Cheese",
+        "Golden Chicken Nuggets",
+        "Chicken Lettuce Wraps",
+        "Parmesan Rosemary Truffle Fries",
+        "Fox Den Wings"
+      ]
+    },
+    {
+      "name": "Entree",
+      "pickCount": 1,
+      "items": [
+        "1/4 South Fried Chicken",
+        "1/4 North Fried Chicken",
+        "Chicken & Waffles",
+        "Chicken Fried Chicken",
+        "Buffalo Chicken Sandwich",
+        "Honey Buffalo Chicken Sandwich",
+        "Pimento & Egg Sandwich",
+        "Favorite Chicken Sandwich",
+        "Chicken Fried Chicken Sandwich",
+        "Sweet Caroline Dip",
+        "Blake's Burger",
+        "Shrimp Wrap",
+        "Chicken Club Wrap",
+        "Black Bean Wrap",
+        "Salmon BLT",
+        "Grilled Greek Chicken Pita",
+        "Chicken Grill",
+        "Grilled Salmon",
+        "Southwestern Chopped Salad",
+        "Honey Buffalo Chicken Salad",
+        "Berry Almond Grilled Chicken Salad",
+        "Citrus Grilled Salmon Salad",
+        "Greek Chicken Bowl",
+        "Golden Nugget Bowl",
+        "The Elizabeth"
+      ]
+    },
+    {
+      "name": "Side",
+      "pickCount": 1,
+      "items": [
+        "Cajun French Fries",
+        "Sweet Potato Tots",
+        "Side Salad",
+        "Jalapeno Cheddar Cornbread",
+        "Mac & Cheese",
+        "Brussels Sprouts with Bacon",
+        "Mashed Potatoes with Sausage Gravy",
+        "Hash Brown Casserole"
+      ]
+    }
+  ]
+}

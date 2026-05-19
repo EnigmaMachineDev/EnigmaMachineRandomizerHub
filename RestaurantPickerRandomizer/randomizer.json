@@ -25,6 +25,7 @@
     { "name": "Flower Child", "emoji": "🌸", "url": "../FlowerChildRandomizer/" },
     { "name": "MOOYAH", "emoji": "🐄", "url": "../MooyahRandomizer/" },
     { "name": "Cracker Barrel", "emoji": "🪵", "url": "../CrackerBarrelRandomizer/" },
-    { "name": "Inchin's Bamboo Garden", "emoji": "🎍", "url": "../InchinsBambooGardenRandomizer/" }
+    { "name": "Inchin's Bamboo Garden", "emoji": "🎍", "url": "../InchinsBambooGardenRandomizer/" },
+    { "name": "Leroy Fox Kitchen & Cocktails", "emoji": "🦊", "url": "../LeroyFoxRandomizer/" }
   ]
 }

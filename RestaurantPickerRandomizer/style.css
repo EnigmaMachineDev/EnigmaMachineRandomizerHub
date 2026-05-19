@@ -168,6 +168,14 @@ h1 { margin-bottom: 1.5rem; }
     line-height: 2em;
 }
 
+.result-link {
+    font-size: 1.15em;
+    color: #88e888;
+    font-weight: bold;
+    line-height: 2em;
+    text-decoration: underline;
+}
+
 .result-list {
     list-style: disc;
     margin: 0.25rem 0;

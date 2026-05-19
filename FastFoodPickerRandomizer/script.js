@@ -1,16 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
     let data = {};
+    let options = {};
+    let STORAGE_KEY = 'fastFoodPickerOptions';
 
     fetch('randomizer.json')
         .then(res => res.json())
         .then(jsonData => {
             data = jsonData;
+            STORAGE_KEY = data.storageKey || STORAGE_KEY;
+            loadOptions();
         });
+
+    function loadOptions() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+            try { options = JSON.parse(saved); }
+            catch (e) { options = {}; }
+        }
+    }
+
+    function isEnabled(name) {
+        if (!options.restaurants) return true;
+        if (options.restaurants[name] === undefined) return true;
+        return options.restaurants[name];
+    }
 
     function pickRandom() {
         if (!data.restaurants || data.restaurants.length === 0) return;
-        const pick = data.restaurants[Math.floor(Math.random() * data.restaurants.length)];
+        const enabled = data.restaurants.filter(r => isEnabled(r.name));
+        if (enabled.length === 0) {
+            showEmpty();
+            return;
+        }
+        const pick = enabled[Math.floor(Math.random() * enabled.length)];
         showResult(pick);
+    }
+
+    function showEmpty() {
+        const container = document.getElementById('result-container');
+        container.innerHTML = '';
+        const p = document.createElement('p');
+        p.className = 'result-empty';
+        p.textContent = 'No restaurants enabled. Configure options to enable some.';
+        container.appendChild(p);
     }
 
     function showResult(pick) {
@@ -37,10 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const link = document.createElement('a');
         link.href = pick.url;
-        link.className = 'result-single';
+        link.className = 'result-link';
         link.textContent = pick.name + ' →';
-        link.style.textDecoration = 'underline';
-        link.style.color = 'inherit';
 
         itemContainer.appendChild(link);
         section.appendChild(header);
