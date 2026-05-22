@@ -1,9 +1,8 @@
 {
   "bases": [
     "Sushi Rice",
-    "Spring Mix",
-    "Spinach",
-    "Quinoa (+$2)"
+    "Brown Rice",
+    "Spring Mix"
   ],
   "proteins": [
     "Tuna*",
@@ -17,13 +16,12 @@
     "Tofu"
   ],
   "toppings": [
-    "Jalapeños",
+    "Jalapeño",
     "Edamame",
     "Carrot",
-    "Masago",
-    "Green Onions",
     "Pickled Ginger",
     "Cucumber",
+    "Corn",
     "Oshinko Radish",
     "Cilantro",
     "Steamed Broccoli",
@@ -32,12 +30,14 @@
     "Seaweed Salad (+$1)"
   ],
   "sauces": [
+    "Teriyaki Sauce",
+    "Wasabi Sauce",
+    "Sriracha",
+    "Gochujang",
     "Poke Sauce",
     "Shrimp Sauce",
     "Ponzu Sauce",
     "Spicy Mayo",
-    "Eel Sauce",
-    "Wasabi Sauce",
-    "Sriracha"
+    "Eel Sauce"
   ]
 }
