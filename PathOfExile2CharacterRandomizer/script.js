@@ -13,17 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const rerollWeaponSkillsBtn = document.getElementById('reroll-weapon-skills');
     const rerollDefenseBtn = document.getElementById('reroll-defense');
 
-    const ascendancySkills = {
-        "Pathfinder": ["Bleeding Concoction", "Acidic Concoction", "Shattering Concoction", "Fulminating Concoction", "Explosive Concoction"],
-        "Smith of Kitava": ["Manifest Weapon"],
-        "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry", "Ancestral Spirits"],
-        "Invoker": ["Elemental Expression"],
-        "Infernalist": ["Summon Infernal Hound"],
-        "Amazon": ["Elemental Surge"],
-        "Shaman": ["Apocalypse"],
-        "Oracle": ["Align Fate"]
-    };
-
     fetch('randomizer.json')
         .then(response => response.json())
         .then(jsonData => {
@@ -73,9 +62,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function rollClassAndAscendancy() {
-        const randomClass = getRandomItem(getEnabledItems('classes'));
-        if (!randomClass) return;
-        const randomAscendancy = getRandomItem(randomClass.ascendancies);
+        const availableClasses = (data.classes || []).filter(cls =>
+            isEnabled('classes', cls.name) &&
+            cls.ascendancies.some(a => isEnabled('ascendancies', a))
+        );
+        if (availableClasses.length === 0) {
+            currentAscendancy = null;
+            classResultEl.innerHTML = `<strong>Class:</strong> None available<br><strong>Ascendancy:</strong> Check options`;
+            return;
+        }
+        const randomClass = getRandomItem(availableClasses);
+        const enabledAscendancies = randomClass.ascendancies.filter(a => isEnabled('ascendancies', a));
+        const randomAscendancy = getRandomItem(enabledAscendancies);
         if (!randomAscendancy) return;
         currentAscendancy = randomAscendancy;
         classResultEl.innerHTML = `<strong>Class:</strong> ${randomClass.name}<br><strong>Ascendancy:</strong> ${randomAscendancy}`;
@@ -87,13 +85,16 @@ document.addEventListener('DOMContentLoaded', () => {
             weaponSkillsResultEl.innerHTML = `<strong>Weapon Type:</strong> No weapons selected<br><strong>Main Skill(s):</strong> None`;
             return;
         }
-        
+
         const randomWeapon = getRandomItem(enabledWeapons);
         if (!randomWeapon) return;
 
-        let skillPool = [...randomWeapon.skills];
-        if (currentAscendancy && ascendancySkills[currentAscendancy]) {
-            skillPool.push(...ascendancySkills[currentAscendancy]);
+        const enabledSkills = randomWeapon.skills.filter(s => isEnabled('skills', s));
+        let skillPool = enabledSkills.length > 0 ? enabledSkills : [...randomWeapon.skills];
+        if (currentAscendancy && data.ascendancySkills && data.ascendancySkills[currentAscendancy]) {
+            const ascSkills = data.ascendancySkills[currentAscendancy];
+            const enabledAscSkills = ascSkills.filter(s => isEnabled('skills', s));
+            skillPool.push(...(enabledAscSkills.length > 0 ? enabledAscSkills : ascSkills));
         }
 
         const numSkills = Math.floor(Math.random() * 3) + 1;

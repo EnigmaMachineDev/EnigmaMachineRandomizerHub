@@ -127,7 +127,7 @@
 }
 
 .category-section:not(.collapsed) .options-grid {
-    max-height: 5000px;
+    max-height: 30000px;
 }
 
 /* Hide controls and grid when collapsed */
@@ -184,6 +184,54 @@
     display: flex;
     gap: 0.5rem;
     margin-bottom: 1rem;
+}
+
+.class-group-header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #66cc66;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 0.25rem 0.25rem;
+    border-bottom: 1px solid #333;
+    margin-top: 0.5rem;
+}
+
+.class-group-header:first-child {
+    margin-top: 0;
+}
+
+.class-group-header input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #66cc66;
+    flex-shrink: 0;
+}
+
+.class-group-header label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.skill-group-header {
+    grid-column: 1 / -1;
+    color: #66cc66;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 0.25rem 0.25rem;
+    border-bottom: 1px solid #333;
+    margin-top: 0.5rem;
+}
+
+.skill-group-header:first-child {
+    margin-top: 0;
 }
 
 @media (max-width: 768px) {

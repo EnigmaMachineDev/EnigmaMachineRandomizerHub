@@ -3,11 +3,11 @@
     { "name": "Witch", "ascendancies": ["Infernalist", "Blood Mage", "Lich", "Abyssal Lich"] },
     { "name": "Sorceress", "ascendancies": ["Stormweaver", "Chronomancer", "Disciple of Varashta"] },
     { "name": "Druid", "ascendancies": ["Oracle", "Shaman"] },
-    { "name": "Monk", "ascendancies": ["Invoker", "Acolyte of Chayula"] },
+    { "name": "Monk", "ascendancies": ["Invoker", "Acolyte of Chayula", "Martial Artist"] },
     { "name": "Ranger", "ascendancies": ["Deadeye", "Pathfinder"] },
     { "name": "Mercenary", "ascendancies": ["Witchhunter", "Gemling Legionnaire", "Tactician"] },
     { "name": "Warrior", "ascendancies": ["Titan", "Warbringer", "Smith of Kitava"] },
-    { "name": "Huntress", "ascendancies": ["Amazon", "Ritualist"] }
+    { "name": "Huntress", "ascendancies": ["Amazon", "Ritualist", "Spirit Walker"] }
   ],
   "weapons": [
     {
@@ -352,6 +352,17 @@
       ]
     }
   ],
+  "ascendancySkills": {
+    "Pathfinder": ["Bleeding Concoction", "Acidic Concoction", "Shattering Concoction", "Fulminating Concoction", "Explosive Concoction"],
+    "Smith of Kitava": ["Manifest Weapon"],
+    "Warbringer": ["Seismic Cry", "Infernal Cry", "Fortifying Cry", "Ancestral Cry", "Ancestral Spirits"],
+    "Invoker": ["Elemental Expression"],
+    "Infernalist": ["Summon Infernal Hound"],
+    "Amazon": ["Elemental Surge"],
+    "Shaman": ["Apocalypse"],
+    "Oracle": ["Align Fate"],
+    "Gemling Legionnaire": ["Virtuous Barrier"]
+  },
   "defense": [
     { "name": "Armour" },
     { "name": "Armour and Energy Shield" },

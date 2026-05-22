@@ -19,21 +19,83 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error loading options:', error));
 
-    function initializeOptions(data) {
-        Object.keys(data).forEach(categoryKey => {
-            const categoryData = data[categoryKey];
-            if (Array.isArray(categoryData) && categoryData.length > 0) {
-                const categoryName = categoryKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                addCategory(categoryKey, categoryName, categoryData);
-            } else if (typeof categoryData === 'object' && categoryData !== null && !Array.isArray(categoryData)) {
-                Object.keys(categoryData).forEach(subKey => {
-                    if (Array.isArray(categoryData[subKey]) && categoryData[subKey].length > 0) {
-                        const subCategoryName = subKey.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                        addCategory(subKey, subCategoryName, categoryData[subKey]);
-                    }
-                });
-            }
+    function addClassAscendancySection(classes) {
+        const totalAsc = classes.reduce((sum, cls) => sum + cls.ascendancies.length, 0);
+        const section = document.createElement('div');
+        section.className = 'category-section collapsed';
+
+        const header = document.createElement('div');
+        header.className = 'category-header';
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'category-title';
+        titleDiv.innerHTML = `Classes & Ascendancies <span class="category-count">(${classes.length} classes, ${totalAsc} ascendancies)</span>`;
+        const icon = document.createElement('span');
+        icon.className = 'collapse-icon';
+        icon.textContent = '▼';
+        header.appendChild(titleDiv);
+        header.appendChild(icon);
+
+        const controls = document.createElement('div');
+        controls.className = 'category-controls';
+        const selectBtn = document.createElement('button');
+        selectBtn.className = 'category-btn';
+        selectBtn.textContent = 'Select All';
+        selectBtn.addEventListener('click', (e) => { e.stopPropagation(); section.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true); });
+        const deselectBtn = document.createElement('button');
+        deselectBtn.className = 'category-btn';
+        deselectBtn.textContent = 'Deselect All';
+        deselectBtn.addEventListener('click', (e) => { e.stopPropagation(); section.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false); });
+        controls.appendChild(selectBtn);
+        controls.appendChild(deselectBtn);
+
+        const grid = document.createElement('div');
+        grid.className = 'options-grid';
+
+        classes.forEach(cls => {
+            const groupHeader = document.createElement('div');
+            groupHeader.className = 'class-group-header';
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.id = `opt-classes-${cls.name.replace(/[^a-zA-Z0-9]/g, '-')}`;
+            cb.checked = true;
+            cb.dataset.category = 'classes';
+            cb.dataset.id = cls.name;
+            const lbl = document.createElement('label');
+            lbl.htmlFor = cb.id;
+            lbl.textContent = cls.name;
+            groupHeader.appendChild(cb);
+            groupHeader.appendChild(lbl);
+            grid.appendChild(groupHeader);
+            cls.ascendancies.forEach(asc => addOption(grid, 'ascendancies', asc, asc));
         });
+
+        header.addEventListener('click', () => section.classList.toggle('collapsed'));
+        section.appendChild(header);
+        section.appendChild(controls);
+        section.appendChild(grid);
+        categoriesContainer.appendChild(section);
+    }
+
+    function initializeOptions(data) {
+        addClassAscendancySection(data.classes || []);
+        addCategory('weapons', 'Weapons', data.weapons || []);
+        addCategory('defense', 'Defense', data.defense || []);
+
+        const skillGroups = [];
+        const seen = new Set();
+        (data.weapons || []).forEach(weapon => {
+            const items = [];
+            weapon.skills.forEach(s => { if (!seen.has(s)) { seen.add(s); items.push({ name: s }); } });
+            if (items.length) skillGroups.push({ label: weapon.name, items });
+        });
+        if (data.ascendancySkills) {
+            const items = [];
+            Object.values(data.ascendancySkills).forEach(skills => {
+                skills.forEach(s => { if (!seen.has(s)) { seen.add(s); items.push({ name: s }); } });
+            });
+            if (items.length) skillGroups.push({ label: 'Ascendancy', items });
+        }
+        addGroupedCategory('skills', 'Skills', skillGroups);
     }
 
     function addCategory(categoryKey, categoryName, items) {
@@ -90,6 +152,54 @@ document.addEventListener('DOMContentLoaded', () => {
             section.classList.toggle('collapsed');
         };
 
+        section.appendChild(header);
+        section.appendChild(controls);
+        section.appendChild(grid);
+        categoriesContainer.appendChild(section);
+    }
+
+    function addGroupedCategory(categoryKey, categoryName, groups) {
+        const totalItems = groups.reduce((sum, g) => sum + g.items.length, 0);
+        const section = document.createElement('div');
+        section.className = 'category-section collapsed';
+        section.dataset.category = categoryKey;
+
+        const header = document.createElement('div');
+        header.className = 'category-header';
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'category-title';
+        titleDiv.innerHTML = `${categoryName} <span class="category-count">(${totalItems} items)</span>`;
+        const icon = document.createElement('span');
+        icon.className = 'collapse-icon';
+        icon.textContent = '▼';
+        header.appendChild(titleDiv);
+        header.appendChild(icon);
+
+        const controls = document.createElement('div');
+        controls.className = 'category-controls';
+        const selectBtn = document.createElement('button');
+        selectBtn.className = 'category-btn';
+        selectBtn.textContent = 'Select All';
+        selectBtn.onclick = (e) => { e.stopPropagation(); section.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true); };
+        const deselectBtn = document.createElement('button');
+        deselectBtn.className = 'category-btn';
+        deselectBtn.textContent = 'Deselect All';
+        deselectBtn.onclick = (e) => { e.stopPropagation(); section.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false); };
+        controls.appendChild(selectBtn);
+        controls.appendChild(deselectBtn);
+
+        const grid = document.createElement('div');
+        grid.className = 'options-grid';
+
+        groups.forEach(group => {
+            const groupHeader = document.createElement('div');
+            groupHeader.className = 'skill-group-header';
+            groupHeader.textContent = group.label;
+            grid.appendChild(groupHeader);
+            group.items.forEach(item => addOption(grid, categoryKey, item.name, item.name));
+        });
+
+        header.addEventListener('click', () => section.classList.toggle('collapsed'));
         section.appendChild(header);
         section.appendChild(controls);
         section.appendChild(grid);
