@@ -38,7 +38,7 @@
         "Plasma Pistol",
         "Inferno Pistol",
         "Neo-Volkite Pistol",
-        "Bolt Carbine Sidearm"
+        "Bolt Carbine One-Handed"
       ],
       "melee": [
         "Chainsword",
@@ -74,7 +74,7 @@
         "Heavy Bolt Pistol",
         "Plasma Pistol",
         "Neo-Volkite Pistol",
-        "Bolt Carbine Sidearm"
+        "Bolt Carbine One-Handed"
       ],
       "melee": [
         "Chainsword",
@@ -164,7 +164,7 @@
     "Plasma Pistol",
     "Inferno Pistol",
     "Neo-Volkite Pistol",
-    "Bolt Carbine Sidearm"
+    "Bolt Carbine One-Handed"
   ],
   "allMelee": [
     "Chainsword",
@@ -196,7 +196,7 @@
     {"name": "Exorcists", "dlc": false},
     {"name": "Doom Eagles", "dlc": true},
     {"name": "Genesis Chapter", "dlc": true},
-    {"name": "Liberators", "dlc": true},
+    {"name": "Libators", "dlc": true},
     {"name": "Novamarines", "dlc": true},
     {"name": "Praetors of Orpheus", "dlc": true},
     {"name": "Scythes of the Emperor", "dlc": true},
@@ -253,7 +253,11 @@
     {"name": "Black Vipers", "dlc": true},
     {"name": "Covenant of Fire", "dlc": true},
     {"name": "Dragonspears", "dlc": true},
-    {"name": "Dark Krakens", "dlc": true}
+    {"name": "Dark Krakens", "dlc": true},
+    {"name": "Brazen Claws", "dlc": true},
+    {"name": "Red Talons", "dlc": true},
+    {"name": "Sons of Medusa", "dlc": true},
+    {"name": "Iron Lords", "dlc": true}
   ],
   "missions": [
     "Inferno",
