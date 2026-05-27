@@ -37,7 +37,8 @@
         "Heavy Bolt Pistol",
         "Plasma Pistol",
         "Inferno Pistol",
-        "Neo-Volkite Pistol"
+        "Neo-Volkite Pistol",
+        "Bolt Carbine Sidearm"
       ],
       "melee": [
         "Chainsword",
@@ -72,7 +73,8 @@
         "Bolt Pistol",
         "Heavy Bolt Pistol",
         "Plasma Pistol",
-        "Neo-Volkite Pistol"
+        "Neo-Volkite Pistol",
+        "Bolt Carbine Sidearm"
       ],
       "melee": [
         "Chainsword",
@@ -161,7 +163,8 @@
     "Heavy Bolt Pistol",
     "Plasma Pistol",
     "Inferno Pistol",
-    "Neo-Volkite Pistol"
+    "Neo-Volkite Pistol",
+    "Bolt Carbine Sidearm"
   ],
   "allMelee": [
     "Chainsword",
@@ -265,6 +268,7 @@
     "Siege",
     "Vortex",
     "Reclamation",
-    "Disruption"
+    "Disruption",
+    "Purgation"
   ]
 }
