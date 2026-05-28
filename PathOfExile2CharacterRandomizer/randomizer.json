@@ -324,6 +324,32 @@
       ]
     },
     {
+      "name": "Runic Skills",
+      "skills": [
+        "Animus Exchange",
+        "Animus Splinters",
+        "Bitter Dead",
+        "Conductive Runes",
+        "Detonate Living",
+        "Eternal March",
+        "Explosive Transmutation",
+        "Fragments of the Past",
+        "Frostflame Nova",
+        "Grim Pillars",
+        "Hollow Shell",
+        "Leylines",
+        "Powered by Verisium",
+        "Refutation",
+        "Remnants of Kalguur",
+        "Repulsion",
+        "Runic Reprieve",
+        "Skyfall",
+        "Triskelion Cascade",
+        "Verisium Manifestations",
+        "Voltaic Barrier"
+      ]
+    },
+    {
       "name": "Talisman",
       "skills": [
         "Molten Crash",
