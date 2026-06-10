@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 body {
-    background-color: #222222;
-    color: #66cc66;
-    font-family: monospace;
+    background-color: #0a0f0a;
+    color: #c8e6c8;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +21,7 @@ body.sidebar-closed {
 
 
 .back-button {
-    color: #66cc66;
+    color: #4a8c4a;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -36,7 +37,7 @@ body.sidebar-closed {
 }
 
 .container {
-    background-color: #333333;
+    background-color: #142014;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -47,12 +48,12 @@ body.sidebar-closed {
 
 h1 {
     margin-bottom: 2rem;
-    color: #66cc66;
+    color: #4a8c4a;
 }
 
 h2 {
     margin-bottom: 1rem;
-    color: #66cc66;
+    color: #4a8c4a;
 }
 
 .section {
@@ -76,30 +77,30 @@ h2 {
 
 .input-field label {
     margin-bottom: 0.5rem;
-    color: #66cc66;
+    color: #4a8c4a;
     font-weight: bold;
 }
 
 .input-field input {
-    background-color: #222222;
-    color: #66cc66;
-    border: 1px solid #66cc66;
+    background-color: #0a0f0a;
+    color: #4a8c4a;
+    border: 1px solid #4a8c4a;
     padding: 0.5rem;
     border-radius: 5px;
-    font-family: monospace;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     font-size: 1em;
     width: 100%;
 }
 
 .input-field input:focus {
     outline: none;
-    border-color: #88e888;
+    border-color: #6abf6a;
     box-shadow: 0 0 5px rgba(102, 204, 102, 0.5);
 }
 
 .generate-btn {
-    background-color: #66cc66;
-    color: #222222;
+    background-color: #4a8c4a;
+    color: #0a0f0a;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -110,7 +111,7 @@ h2 {
 }
 
 .generate-btn:hover {
-    background-color: #88e888;
+    background-color: #6abf6a;
 }
 
 .result-container {
@@ -123,17 +124,17 @@ h2 {
 .result-number {
     font-size: 3em;
     font-weight: bold;
-    color: #66cc66;
+    color: #4a8c4a;
 }
 
 a {
-    color: #66cc66;
+    color: #4a8c4a;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #88e888;
+    color: #6abf6a;
     text-decoration: underline;
 }
 

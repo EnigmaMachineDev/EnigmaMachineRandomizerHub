@@ -4,7 +4,7 @@
 
 .about-content {
     background: var(--card-bg);
-    border: 1px solid rgba(0, 255, 0, 0.1);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 30px;
     font-size: 1.1rem;

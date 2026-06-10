@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 body {
-    background-color: #222222;
-    color: #66cc66;
-    font-family: monospace;
+    background-color: #0a0f0a;
+    color: #c8e6c8;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +21,7 @@ body.sidebar-closed {
 
 
 .back-button {
-    color: #66cc66;
+    color: #4a8c4a;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -46,7 +47,7 @@ body.sidebar-closed {
 
 /* Sidebar Styles */
 .sidebar {
-    background-color: #333333;
+    background-color: #142014;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -60,7 +61,7 @@ body.sidebar-closed {
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: center;
-    color: #66cc66;
+    color: #4a8c4a;
     font-size: 1.2em;
 }
 
@@ -79,17 +80,17 @@ body.sidebar-closed {
 }
 
 .checkbox-container::-webkit-scrollbar-track {
-    background: #222222;
+    background: #0a0f0a;
     border-radius: 4px;
 }
 
 .checkbox-container::-webkit-scrollbar-thumb {
-    background: #66cc66;
+    background: #4a8c4a;
     border-radius: 4px;
 }
 
 .checkbox-container::-webkit-scrollbar-thumb:hover {
-    background: #88e888;
+    background: #6abf6a;
 }
 
 .checkbox-item {
@@ -103,14 +104,14 @@ body.sidebar-closed {
 }
 
 .checkbox-item:hover {
-    background-color: #444444;
+    background-color: #1e3a1e;
 }
 
 .checkbox-item input[type="checkbox"] {
     cursor: pointer;
     width: 16px;
     height: 16px;
-    accent-color: #66cc66;
+    accent-color: #4a8c4a;
 }
 
 .checkbox-item label {
@@ -125,30 +126,30 @@ body.sidebar-closed {
     gap: 0.5rem;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #444;
+    border-top: 1px solid #1e3a1e;
 }
 
 .sidebar-btn {
-    background-color: #444444;
-    color: #66cc66;
-    border: 1px solid #66cc66;
+    background-color: #1e3a1e;
+    color: #4a8c4a;
+    border: 1px solid #4a8c4a;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9em;
-    font-family: monospace;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     transition: all 0.3s;
 }
 
 .sidebar-btn:hover {
-    background-color: #555555;
-    border-color: #88e888;
-    color: #88e888;
+    background-color: #1a2e1a;
+    border-color: #6abf6a;
+    color: #6abf6a;
 }
 
 /* Main Container */
 .container {
-    background-color: #333333;
+    background-color: #142014;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -161,8 +162,8 @@ h1 {
 }
 
 #generate-loadout {
-    background-color: #66cc66;
-    color: #222222;
+    background-color: #4a8c4a;
+    color: #0a0f0a;
     border: none;
     padding: 15px 30px;
     border-radius: 8px;
@@ -175,7 +176,7 @@ h1 {
 }
 
 #generate-loadout:hover {
-    background-color: #88e888;
+    background-color: #6abf6a;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
@@ -187,7 +188,7 @@ h1 {
 
 .section {
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #1e3a1e;
     padding-bottom: 1.5rem;
     text-align: left;
 }
@@ -220,8 +221,8 @@ h2 {
 
 .reroll-btn {
     background: none;
-    color: #66cc66;
-    border: 1px solid #66cc66;
+    color: #4a8c4a;
+    border: 1px solid #4a8c4a;
     cursor: pointer;
     margin-left: 10px;
     border-radius: 50%;
@@ -236,18 +237,18 @@ h2 {
 }
 
 .reroll-btn:hover {
-    background-color: #444;
-    border-color: #888;
+    background-color: #1e3a1e;
+    border-color: #7a9f7a;
 }
 
 a {
-    color: #66cc66;
+    color: #4a8c4a;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #88e888;
+    color: #6abf6a;
     text-decoration: underline;
 }
 
@@ -271,9 +272,9 @@ a:hover {
 
 .options-link {
     display: inline-block;
-    background-color: #444;
-    color: #66cc66;
-    border: 1px solid #66cc66;
+    background-color: #1e3a1e;
+    color: #4a8c4a;
+    border: 1px solid #4a8c4a;
     padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
@@ -283,17 +284,17 @@ a:hover {
 }
 
 .options-link:hover {
-    background-color: #555;
-    color: #88e888;
+    background-color: #1a2e1a;
+    color: #6abf6a;
     text-decoration: none;
 }
 
 /* Responsive Design */
 
 .copy-btn {
-    background-color: #444;
-    color: #66cc66;
-    border: 1px solid #66cc66;
+    background-color: #1e3a1e;
+    color: #4a8c4a;
+    border: 1px solid #4a8c4a;
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -303,9 +304,9 @@ a:hover {
 }
 
 .copy-btn:hover {
-    background-color: #555;
-    color: #88e888;
-    border-color: #88e888;
+    background-color: #1a2e1a;
+    color: #6abf6a;
+    border-color: #6abf6a;
 }
 
 @media (max-width: 768px) {
@@ -337,7 +338,7 @@ a:hover {
 
 /* Footer Styles */
 .footer {
-    background: #0f0f0f;
+    background: #0a0f0a;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px 20px;
     text-align: center;
@@ -351,7 +352,7 @@ a:hover {
 }
 
 .nav-links a {
-    color: #66cc66;
+    color: #4a8c4a;
     font-size: 1.2rem;
     margin: 0 15px;
     text-decoration: none;
@@ -359,7 +360,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-    color: #88e888;
+    color: #6abf6a;
 }
 
 .main-container {
@@ -369,12 +370,12 @@ a:hover {
 }
 
 .category-title {
-    color: #66cc66;
+    color: #4a8c4a;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 25px;
     padding-left: 15px;
-    border-left: 4px solid #66cc66;
+    border-left: 4px solid #4a8c4a;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
