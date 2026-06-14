@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const fretTypeEl = document.getElementById('fret-type');
     const stringCountEl = document.getElementById('string-count');
     const scaleLengthEl = document.getElementById('scale-length');
-    const pickupConfigEl = document.getElementById('pickup-config');
-    const pickupTypeEl = document.getElementById('pickup-type');
+    const neckPickupEl = document.getElementById('neck-pickup');
+    const bridgePickupEl = document.getElementById('bridge-pickup');
+    const poleSizeEl = document.getElementById('pole-size');
+    const magnetTypeEl = document.getElementById('magnet-type');
+    const pickupCoverEl = document.getElementById('pickup-cover');
+    const electronicsEl = document.getElementById('electronics');
     const bridgeEl = document.getElementById('bridge');
     const stringSpacingEl = document.getElementById('string-spacing');
     const hardwareFinishEl = document.getElementById('hardware-finish');
@@ -32,8 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'fret-type': 'Fret Type',
         'string-count': 'String Count',
         'scale-length': 'Scale Length',
-        'pickup-config': 'Pickup Configuration',
-        'pickup-type': 'Pickup Type',
+        'neck-pickup': 'Neck Pickup',
+        'bridge-pickup': 'Bridge Pickup',
+        'pole-size': 'Pole Size',
+        'magnet-type': 'Magnet Type',
+        'pickup-cover': 'Pickup Cover',
+        'electronics': 'Electronics',
         'bridge': 'Bridge',
         'string-spacing': 'String Spacing',
         'hardware-finish': 'Hardware Finish',
@@ -52,8 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'fret-type': fretTypeEl,
         'string-count': stringCountEl,
         'scale-length': scaleLengthEl,
-        'pickup-config': pickupConfigEl,
-        'pickup-type': pickupTypeEl,
+        'neck-pickup': neckPickupEl,
+        'bridge-pickup': bridgePickupEl,
+        'pole-size': poleSizeEl,
+        'magnet-type': magnetTypeEl,
+        'pickup-cover': pickupCoverEl,
+        'electronics': electronicsEl,
         'bridge': bridgeEl,
         'string-spacing': stringSpacingEl,
         'hardware-finish': hardwareFinishEl,
@@ -137,8 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const nw = neckWoodEl.textContent;
         const fw = fretboardWoodEl.textContent;
         const ft = fretTypeEl.textContent;
-        const pc = pickupConfigEl.textContent;
-        const pt = pickupTypeEl.textContent;
+        const np2 = neckPickupEl.textContent;
+        const bp = bridgePickupEl.textContent;
+        const ps = poleSizeEl.textContent;
+        const mag = magnetTypeEl.textContent;
+        const cov = pickupCoverEl.textContent;
+        const el = electronicsEl.textContent;
         const sl = scaleLengthEl.textContent;
         const np = neckProfileEl.textContent;
         const br = bridgeEl.textContent;
@@ -151,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         summaryText.textContent = `A ${sc} bass with a ${bw} body and ${nw} neck, ` +
             `featuring a ${fw} fretboard with ${ft}. ` +
-            `Electronics: ${pc} in ${pt} configuration. ` +
+            `Pickups: Neck — ${np2}, Bridge — ${bp}; ${ps} poles, ${mag} magnets, ${cov.toLowerCase()}, ${el.toLowerCase()}. ` +
             `Scale: ${sl} with ${np} neck profile. ` +
             `${br} bridge at ${ss} string spacing with ${hf} hardware. ` +
             `${pa} paint with ${fi} finish. ` +

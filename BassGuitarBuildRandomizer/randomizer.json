@@ -97,33 +97,58 @@
     {"name": "Long Scale (35\"+)"},
     {"name": "Multi-Scale"}
   ],
-  "Pickup Configuration": [
-    {"name": "Single P-Style (Split-Coil)"},
-    {"name": "Single J-Style (Bridge)"},
-    {"name": "Single J-Style (Neck)"},
-    {"name": "Dual J-Style (JJ)"},
-    {"name": "P + J Configuration (PJ)"},
-    {"name": "Dual P-Style (PP)"},
-    {"name": "Dual Humbuckers (HH)"},
-    {"name": "Single Humbucker (Bridge)"},
-    {"name": "Single Humbucker (Neck)"},
-    {"name": "P + Humbucker"},
-    {"name": "J + Humbucker"},
-    {"name": "Soapbar Single"},
-    {"name": "Dual Soapbar"},
-    {"name": "Single MM-Style (Music Man)"},
-    {"name": "Dual MM-Style"},
-    {"name": "MM + J Configuration"},
-    {"name": "MM + P Configuration"},
-    {"name": "MM + Humbucker"},
-    {"name": "Triple Single-Coil"},
-    {"name": "P-90 Single"},
-    {"name": "Dual P-90"},
-    {"name": "Triple Humbuckers"}
+  "Neck Pickup": [
+    {"name": "Jazz"},
+    {"name": "Jazz Split"},
+    {"name": "Precision"},
+    {"name": "Reverse Precision"},
+    {"name": "Single Coil Soapbar"},
+    {"name": "Split Coil Soapbar"},
+    {"name": "Precision Soapbar"},
+    {"name": "Reverse Precision Soapbar"},
+    {"name": "Dual Coil Series Humbucker Soapbar"},
+    {"name": "Dual Coil Parallel Humbucker Soapbar"},
+    {"name": "Quad Coil Soapbar"},
+    {"name": "Dual Coil Series MM"},
+    {"name": "Dual Coil Parallel MM"},
+    {"name": "Quad Coil MM"}
   ],
-  "Pickup Type": [
-    {"name": "Passive"},
-    {"name": "Active"}
+  "Bridge Pickup": [
+    {"name": "Jazz"},
+    {"name": "Jazz Split"},
+    {"name": "Precision"},
+    {"name": "Reverse Precision"},
+    {"name": "Single Coil Soapbar"},
+    {"name": "Split Coil Soapbar"},
+    {"name": "Precision Soapbar"},
+    {"name": "Reverse Precision Soapbar"},
+    {"name": "Dual Coil Series Humbucker Soapbar"},
+    {"name": "Dual Coil Parallel Humbucker Soapbar"},
+    {"name": "Quad Coil Soapbar"},
+    {"name": "Dual Coil Series MM"},
+    {"name": "Dual Coil Parallel MM"},
+    {"name": "Quad Coil MM"}
+  ],
+  "Pole Size": [
+    {"name": "Small"},
+    {"name": "Medium"},
+    {"name": "Large"},
+    {"name": "Blade"}
+  ],
+  "Magnet Type": [
+    {"name": "Alnico 2 (A2)"},
+    {"name": "Alnico 3 (A3)"},
+    {"name": "Alnico 5 (A5)"},
+    {"name": "Ceramic"},
+    {"name": "Neodymium"}
+  ],
+  "Pickup Cover": [
+    {"name": "Covered"},
+    {"name": "Exposed"}
+  ],
+  "Electronics": [
+    {"name": "Active"},
+    {"name": "Passive"}
   ],
   "Bridge": [
     {"name": "Vintage Bent Plate", "headless": false},
